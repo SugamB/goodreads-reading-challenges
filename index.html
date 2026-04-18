@@ -347,12 +347,9 @@ function renderChallengeGrid() {
   
   const html = rawDatabase.challenges.map(c => {
     const isSelected = selectedChallenges.has(c.id);
-    
-    // Apply filters
     if (f === 'selected' && !isSelected) return '';
     if (f === 'unselected' && isSelected) return '';
     if (q && !c.name.toLowerCase().includes(q)) return '';
-    
     countShown++;
 
     return `
@@ -374,9 +371,7 @@ function renderChallengeGrid() {
 $('search-challenges').addEventListener('input', renderChallengeGrid);
 $('filter-challenges').addEventListener('change', renderChallengeGrid);
 
-// Delegate clicks in the sidebar
 $('challenge-grid').addEventListener('click', async (e) => {
-    // Check if copy button was clicked
     const copyBtn = e.target.closest('.copy-list-btn');
     if (copyBtn) {
         e.stopPropagation();
@@ -398,7 +393,6 @@ $('challenge-grid').addEventListener('click', async (e) => {
         return;
     }
 
-    // Otherwise, toggle the challenge selection
     const item = e.target.closest('.challenge-item');
     if (!item) return;
     const id = item.getAttribute('data-id');
@@ -479,7 +473,7 @@ function recomputeActiveData() {
 
 function renderAll() {
   renderLibrary();
-  renderResults(currentOptimalMode, true); // Retain last mode when updating
+  renderResults(currentOptimalMode, false);
   renderSheet();
 }
 
@@ -502,7 +496,6 @@ function renderLibrary() {
   $('library-stats').textContent = `${total} Total Books | 📌 ${inc} Must Read | ✕ ${exc} Avoided`;
 
   const q = search.toLowerCase();
-  
   const books = activeData.books
     .filter(b => b.title.toLowerCase().includes(q))
     .filter(b => {
@@ -531,8 +524,10 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
+  
+  let failedSingleCategories = []; // Track categories that fail the "No Overlaps" logic
 
-  // Parse statuses
+  // 1. Process "Must Read" and build "available" list
   activeData.books.forEach(b => {
     if (bookStatus[b.id] === 'include') {
       selected.push(b);
@@ -543,7 +538,7 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   });
 
   if (mode === 'overlap') {
-      // RARITY-WEIGHTED GREEDY SET COVER
+      // --- MAX OVERLAP LOGIC ---
       while (uncovered.size > 0 && available.length > 0) {
         const catCounts = {};
         uncovered.forEach(c => catCounts[c] = 0);
@@ -551,7 +546,6 @@ function renderResults(mode = 'overlap', forceRandom = false) {
 
         let bestBook = null;
         let maxCov = 0;
-        let bestRarityScore = Infinity; 
         let candidates = [];
 
         for (const b of available) {
@@ -559,58 +553,63 @@ function renderResults(mode = 'overlap', forceRandom = false) {
           const cov = covCats.length;
           if (cov === 0) continue;
 
-          if (forceRandom) {
+          if (cov > maxCov) {
+              maxCov = cov; candidates = [b];
+          } else if (cov === maxCov) {
               candidates.push(b);
-          } else {
-              const rarityScore = Math.min(...covCats.map(c => catCounts[c]));
-              if (cov > maxCov) {
-                  maxCov = cov; bestRarityScore = rarityScore; bestBook = b;
-              } else if (cov === maxCov && rarityScore < bestRarityScore) {
-                  bestRarityScore = rarityScore; bestBook = b;
-              }
           }
         }
 
-        if (forceRandom) {
-            if (candidates.length === 0) break;
-            bestBook = candidates[Math.floor(Math.random() * candidates.length)];
-        }
-
-        if (!bestBook) break;
+        if (candidates.length === 0) break;
+        bestBook = forceRandom ? candidates[Math.floor(Math.random() * candidates.length)] : candidates[0];
+        
         selected.push(bestBook);
         bestBook.categories.forEach(c => uncovered.delete(c));
         available = available.filter(b => b.id !== bestBook.id);
       }
+      
   } else if (mode === 'single') {
-      // 1-PER CHALLENGE LOGIC (Strictly independent books per category)
+      // --- STRICTLY NO OVERLAPS LOGIC ---
+      // We explicitly hunt for books that cover exactly ONE active category.
+      const pureBooks = available.filter(b => b.categories.length === 1);
+
       const tempUncovered = Array.from(uncovered);
       for (const c of tempUncovered) {
-          if (!uncovered.has(c)) continue; // Might have been covered by a Must Read
+          if (!uncovered.has(c)) continue; 
           
-          const cands = available.filter(b => b.categories.includes(c));
+          const cands = pureBooks.filter(b => b.categories.includes(c));
           if (cands.length > 0) {
               const pick = cands[Math.floor(Math.random() * cands.length)];
               selected.push(pick);
               uncovered.delete(c);
-              // Notice we DO NOT delete the other categories this book might cover!
-              // This guarantees the loop will still pick another separate book for the remaining categories.
-              available = available.filter(b => b.id !== pick.id); 
+              // Remove the picked book from available pool
+              const index = pureBooks.findIndex(b => b.id === pick.id);
+              if(index !== -1) pureBooks.splice(index, 1);
+          } else {
+              // Could not find a book without overlaps for this category
+              failedSingleCategories.push(c);
           }
       }
   }
 
   lastOptimal = { selected, uncovered: Array.from(uncovered) };
-  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${selected.length} Books (${mode === 'single' ? '1 per challenge' : 'Overlaps maximized'})`;
+  
+  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${selected.length} Books (${mode === 'single' ? 'No overlaps allowed' : 'Maximized overlaps'})`;
 
   let html = '';
-  if (uncovered.size > 0) {
-      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Remaining: ${Array.from(uncovered).map(escapeHtml).join(', ')}. Try removing some "Avoid" filters.</div></div>`;
+  
+  if (mode === 'single' && failedSingleCategories.length > 0) {
+      html += `<div class="banner warn"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another challenge, or has been marked "Avoid".</small></div></div>`;
+  }
+  
+  if (uncovered.size > 0 && mode === 'overlap') {
+      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
   }
 
   if (activeCats.size === 0) {
       html += '<div class="empty">No challenges selected.</div>';
   } else if (!selected.length) {
-      html += '<div class="empty">No books available for optimal path.</div>';
+      html += '<div class="empty">No books available for this path.</div>';
   } else {
       html += `<div class="book-grid">` + selected.map(b => `
         <div class="book-card optimal">
@@ -629,7 +628,6 @@ function renderResults(mode = 'overlap', forceRandom = false) {
 function renderSheet() {
   const tbody = $('sheet-body');
   let html = '';
-  
   activeData.sections.forEach((sec, i) => {
     if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
     const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
@@ -637,7 +635,6 @@ function renderSheet() {
       html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
     });
   });
-  
   tbody.innerHTML = html;
   $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
 }
@@ -646,7 +643,6 @@ function renderSheet() {
 document.body.addEventListener('click', (e) => {
   const stopParent = e.target.closest('[data-stop]');
   
-  // Status set logic
   const setBtn = e.target.closest('[data-status-set]');
   if (setBtn) {
     e.preventDefault(); e.stopPropagation();
@@ -655,7 +651,6 @@ document.body.addEventListener('click', (e) => {
     return;
   }
   
-  // Highlight Challenge in Sidebar Logic
   const loc = e.target.closest('[data-locate]');
   if (loc) {
     if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
@@ -666,7 +661,7 @@ document.body.addEventListener('click', (e) => {
     if (el) {
       el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       el.classList.remove('highlight');
-      void el.offsetWidth; // Trigger reflow
+      void el.offsetWidth;
       el.classList.add('highlight');
     }
   }
@@ -695,7 +690,6 @@ $('btn-reset').addEventListener('click', () => {
   toast('Filters reset', 'success');
 });
 
-// Shuffle buttons
 $('btn-shuffle-overlap').addEventListener('click', () => renderResults('overlap', true));
 $('btn-shuffle-single').addEventListener('click', () => renderResults('single', true));
 

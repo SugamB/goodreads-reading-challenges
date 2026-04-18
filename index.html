@@ -56,12 +56,16 @@
   @media (max-width: 900px) { .dashboard { grid-template-columns: 1fr; } }
 
   /* Sidebar (Challenges) */
-  .sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 88px; }
-  .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4px; }
+  .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; }
+  .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
   .sidebar-header h2 { font-size: 16px; margin: 0; }
   .sidebar-actions { display: flex; gap: 4px; }
   
-  .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 160px); overflow-y: auto; padding-right: 4px; }
+  .sidebar-filters { display: flex; flex-direction: column; gap: 8px; background: var(--card); padding: 12px; border-radius: 8px; border: 1px solid var(--border); box-shadow: var(--shadow-soft);}
+  .sidebar-filters input, .sidebar-filters select { width: 100%; padding: 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--fg); font-size: 12px; outline: none; }
+  .sidebar-meta { font-size: 11px; color: var(--muted-fg); font-weight: 600; text-align: right; }
+
+  .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 240px); overflow-y: auto; padding-right: 4px; scroll-behavior: smooth; }
   .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); }
   .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
   .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
@@ -69,6 +73,12 @@
   .challenge-info { flex-grow: 1; }
   .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
   .challenge-info span { font-size: 11px; color: var(--muted-fg); }
+  
+  /* Flash animation for sidebar items */
+  @keyframes flash-yellow { 0% { background-color: var(--warning-soft); border-color: var(--warning); } 100% { background-color: var(--card); border-color: var(--border); } }
+  @keyframes flash-yellow-selected { 0% { background-color: var(--warning-soft); border-color: var(--warning); } 100% { background-color: var(--primary-soft); border-color: var(--primary); } }
+  .challenge-item.flash { animation: flash-yellow 1.5s ease-out; }
+  .challenge-item.selected.flash { animation: flash-yellow-selected 1.5s ease-out; }
 
   /* Main Content Area */
   .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
@@ -86,11 +96,11 @@
   
   /* Filter Row */
   .filter-row { display: flex; gap: 8px; width: 100%; max-width: 500px; }
-  .filter-row .search { flex: 1; position: relative; } /* Search takes most space */
+  .filter-row .search { flex: 1; position: relative; } 
   .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
   .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
   .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
-  .filter-row select { width: 110px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; } /* Dropdown is shorter */
+  .filter-row select { width: 110px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; } 
 
   .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
@@ -100,17 +110,19 @@
   .book-card:hover { border-color: var(--primary); transform: translateY(-2px); }
   .book-card.avoid { border-left: 4px solid var(--destructive); }
   .book-card.optimal { border-left: 4px solid var(--primary); }
+  .book-card.target { border-left: 4px solid var(--success); background: var(--success-soft); }
   
   .book-title { font-weight: 700; font-size: 14px; color: var(--fg); display: inline-block; line-height: 1.3;}
   .book-title:hover { color: var(--primary); text-decoration: underline; }
   
   .tags { display: flex; flex-wrap: wrap; gap: 4px; }
-  .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); }
+  .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: 0.15s;}
+  .tag:hover { color: var(--primary); border-color: var(--primary); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
 
   /* Status Buttons */
-  .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-  .status-group button { flex: 1; border: none; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 6px 10px; transition: .15s; }
+  .status-group { display: inline-flex; background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%;}
+  .status-group button { flex: 1; border: none; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 8px 6px; transition: .15s; }
   .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
   .status-group button.active.inc { background: var(--success); color: #fff; }
   .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
@@ -165,11 +177,23 @@
   <!-- Sidebar: Challenges -->
   <aside class="sidebar">
     <div class="sidebar-header">
-      <h2>Select Challenges</h2>
+      <h2>Challenges</h2>
       <div class="sidebar-actions">
         <button class="btn ghost sm" id="btn-select-all">All</button>
         <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
       </div>
+    </div>
+    <div class="sidebar-filters">
+        <input type="text" id="sidebar-search" placeholder="Filter challenges..." />
+        <div style="display: flex; gap: 8px;">
+            <select id="sidebar-sort">
+                <option value="name-asc">Sort: A-Z</option>
+                <option value="name-desc">Sort: Z-A</option>
+                <option value="count-desc">Sort: Most Books</option>
+                <option value="count-asc">Sort: Fewest Books</option>
+            </select>
+        </div>
+        <div class="sidebar-meta"><span id="sidebar-count">0 / 0</span> selected</div>
     </div>
     <div id="challenge-grid" class="challenge-list">
       <!-- Injected via JS -->
@@ -195,11 +219,11 @@
           <div class="search"><input id="search-input" type="text" placeholder="Search title or author..." /></div>
           <select id="status-filter">
             <option value="all">All Status</option>
-            <option value="include">✓ Read</option>
+            <option value="include">📌 Target</option>
             <option value="exclude">✕ Avoid</option>
           </select>
         </div>
-        <button class="btn ghost sm" id="btn-reset" title="Reset Read/Avoid statuses">🔄 Reset</button>
+        <button class="btn ghost sm" id="btn-reset" title="Reset all statuses">🔄 Reset</button>
       </div>
       <div class="workspace-content">
         <div class="book-grid" id="list-books"></div>
@@ -213,8 +237,9 @@
           <h3>Your Shortest Path</h3>
           <p id="optimal-stats">The mathematically smallest set of books to hit your goals.</p>
         </div>
-        <div style="display:flex; gap:8px;">
-          <button class="btn ghost sm" id="btn-shuffle">🎲 Alternate Path</button>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="btn ghost sm" id="btn-shuffle-overlap" title="Find a new path maximizing overlaps">🎲 Alternate (Overlaps)</button>
+          <button class="btn ghost sm" id="btn-shuffle-random" title="Pick exactly 1 random book per challenge">🎲 Alternate (1-Per)</button>
           <button class="btn outline sm" id="btn-copy-optimal">📋 Copy List</button>
         </div>
       </div>
@@ -228,14 +253,14 @@
     <div id="view-spreadsheet" class="hidden">
       <div class="workspace-header">
         <div class="workspace-title">
-          <h3>Overlap Spreadsheet</h3>
-          <p id="convert-sub">Ready to paste into Excel or Google Sheets.</p>
+          <h3>Challenge Spreadsheet</h3>
+          <p id="convert-sub">Groups books by their exact combination of challenges.</p>
         </div>
         <button class="btn outline sm" id="btn-copy-sheet">📋 Copy for Excel</button>
       </div>
       <div class="workspace-content" style="padding: 0;">
         <table class="sheet">
-          <thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead>
+          <thead><tr><th>Challenge Combination</th><th>Books</th></tr></thead>
           <tbody id="sheet-body"></tbody>
         </table>
       </div>
@@ -266,9 +291,13 @@ let currentTab = 'library';
 let search = '';
 let statusFilter = 'all';
 
+let sidebarSearch = '';
+let sidebarSort = 'name-asc';
+
 // --- HELPERS ---
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeId = (s) => 'id-' + btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
 function toast(msg, kind='') {
   const host = $('toast-host');
@@ -297,31 +326,61 @@ async function loadData() {
     if (!res.ok) throw new Error("Could not load data.json");
     rawDatabase = await res.json();
     
-    // Assign a safe internal ID to each book to avoid HTML escaping bugs with titles
+    // Assign a safe internal ID to each book to avoid HTML escaping bugs
     rawDatabase.books.forEach((b, idx) => { b.id = 'b_' + idx; });
 
     const dt = new Date(rawDatabase.lastUpdated);
     $('last-updated').textContent = `Last synced: ${dt.toLocaleDateString()} ${dt.toLocaleTimeString()}`;
-    renderChallengeGrid();
+    renderChallengeSidebar();
   } catch (err) {
     $('last-updated').textContent = "Failed to load database. Ensure data.json exists.";
   }
 }
 
-function renderChallengeGrid() {
-  const grid = $('challenge-grid');
-  grid.innerHTML = rawDatabase.challenges.map(c => `
-    <div class="challenge-item" data-id="${escapeHtml(c.id)}">
-      <input type="checkbox" />
-      <div class="challenge-info">
-        <strong>${escapeHtml(c.name)}</strong>
-        <span>${c.count} books</span>
-      </div>
-    </div>
-  `).join('');
+// --- SIDEBAR RENDERING & LOGIC ---
+function renderChallengeSidebar() {
+    let sorted = [...rawDatabase.challenges];
+    
+    // Apply search
+    if (sidebarSearch) {
+        const q = sidebarSearch.toLowerCase();
+        sorted = sorted.filter(c => c.name.toLowerCase().includes(q));
+    }
+    
+    // Apply sort
+    sorted.sort((a, b) => {
+        if (sidebarSort === 'name-asc') return a.name.localeCompare(b.name);
+        if (sidebarSort === 'name-desc') return b.name.localeCompare(a.name);
+        if (sidebarSort === 'count-desc') return b.count - a.count;
+        if (sidebarSort === 'count-asc') return a.count - b.count;
+    });
+
+    $('sidebar-count').textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length}`;
+
+    const grid = $('challenge-grid');
+    grid.innerHTML = sorted.map(c => {
+        const isSelected = selectedChallenges.has(c.id);
+        return `
+        <div class="challenge-item ${isSelected ? 'selected' : ''}" data-id="${escapeHtml(c.id)}" id="sidebar-item-${safeId(c.id)}">
+          <input type="checkbox" ${isSelected ? 'checked' : ''} />
+          <div class="challenge-info">
+            <strong>${escapeHtml(c.name)}</strong>
+            <span>${c.count} books</span>
+          </div>
+        </div>
+      `;
+    }).join('') || '<div style="padding:10px; color:var(--muted-fg); font-size:12px; text-align:center;">No challenges match filter.</div>';
 }
 
-// Delegate click for challenge grid
+$('sidebar-search').addEventListener('input', (e) => {
+    sidebarSearch = e.target.value;
+    renderChallengeSidebar();
+});
+$('sidebar-sort').addEventListener('change', (e) => {
+    sidebarSort = e.target.value;
+    renderChallengeSidebar();
+});
+
 $('challenge-grid').addEventListener('click', (e) => {
     const item = e.target.closest('.challenge-item');
     if (!item) return;
@@ -330,39 +389,23 @@ $('challenge-grid').addEventListener('click', (e) => {
     if (selectedChallenges.has(id)) selectedChallenges.delete(id);
     else selectedChallenges.add(id);
     
-    document.querySelectorAll('.challenge-item').forEach(el => {
-        const isSel = selectedChallenges.has(el.dataset.id);
-        el.classList.toggle('selected', isSel);
-        el.querySelector('input').checked = isSel;
-    });
-
+    renderChallengeSidebar();
     recomputeActiveData();
 });
 
 $('btn-select-all').addEventListener('click', () => {
   rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id));
-  document.querySelectorAll('.challenge-item').forEach(el => { el.classList.add('selected'); el.querySelector('input').checked=true; });
+  renderChallengeSidebar();
   recomputeActiveData();
 });
 
 $('btn-clear-selection').addEventListener('click', () => {
   selectedChallenges.clear();
-  document.querySelectorAll('.challenge-item').forEach(el => { el.classList.remove('selected'); el.querySelector('input').checked=false; });
+  renderChallengeSidebar();
   recomputeActiveData();
 });
 
 // --- COMPUTE OVERLAPS AND STATE ON THE FLY ---
-function getSubsets(array, minSize = 2) {
-    const result = [];
-    const n = array.length;
-    for (let i = 1; i < 1 << n; i++) {
-        const subset = [];
-        for (let j = 0; j < n; j++) if ((i >> j) & 1) subset.push(array[j]);
-        if (subset.length >= minSize) result.push(subset);
-    }
-    return result;
-}
-
 function recomputeActiveData() {
   if (selectedChallenges.size === 0) {
     $('workspace').classList.add('hidden');
@@ -380,23 +423,19 @@ function recomputeActiveData() {
   rawDatabase.books.forEach(b => {
     const relevantCats = b.challenges.filter(c => selectedChallenges.has(c));
     if (relevantCats.length > 0) {
-      // Create a working copy of the book with only the relevant categories
       const workingBook = { ...b, categories: relevantCats };
       activeData.books.push(workingBook);
       
       if (!bookStatus[b.id]) bookStatus[b.id] = 'neutral';
       
-      if (relevantCats.length >= 2) {
-        const subsets = getSubsets(relevantCats, 2);
-        subsets.forEach(subset => {
-          const key = subset.sort().join(" + ");
-          if(!overlapMap.has(key)) overlapMap.set(key, { categories: subset, books: [] });
-          overlapMap.get(key).books.push(workingBook);
-        });
-      }
+      // Grouping for Spreadsheet by exact combination
+      const key = relevantCats.sort().join(" + ");
+      if(!overlapMap.has(key)) overlapMap.set(key, { categories: relevantCats, books: [] });
+      overlapMap.get(key).books.push(workingBook);
     }
   });
 
+  // Sort groups: most challenges to fewest, then most books to fewest
   activeData.sections = Array.from(overlapMap.values()).sort((a,b) => {
     if (b.categories.length !== a.categories.length) return b.categories.length - a.categories.length;
     return b.books.length - a.books.length;
@@ -417,9 +456,9 @@ function statusButtonsHTML(bookId) {
   const s = bookStatus[bookId] || 'neutral';
   return `
     <div class="status-group" data-stop>
-      <button class="inc ${s==='include'?'active':''}" data-status-set="${bookId}" data-status="include">✓ Read</button>
-      <button class="neu ${s==='neutral'?'active':''}" data-status-set="${bookId}" data-status="neutral">Auto</button>
-      <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude">✕ Avoid</button>
+      <button class="inc ${s==='include'?'active':''}" data-status-set="${bookId}" data-status="include" title="Lock this into the Optimal list">📌 Target</button>
+      <button class="neu ${s==='neutral'?'active':''}" data-status-set="${bookId}" data-status="neutral" title="Let the optimizer decide">Auto</button>
+      <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude" title="Never pick this book">✕ Avoid</button>
     </div>
   `;
 }
@@ -429,7 +468,7 @@ function renderLibrary() {
   const inc = activeData.books.filter(b => bookStatus[b.id] === 'include').length;
   const exc = activeData.books.filter(b => bookStatus[b.id] === 'exclude').length;
   
-  $('library-stats').textContent = `${total} Total Books | ✓ ${inc} Read | ✕ ${exc} Avoided`;
+  $('library-stats').textContent = `${total} Total Books | 📌 ${inc} Targeted | ✕ ${exc} Avoided`;
 
   const q = search.toLowerCase();
   
@@ -445,25 +484,24 @@ function renderLibrary() {
     
   const lb = $('list-books');
   lb.innerHTML = books.map(b => `
-    <div class="book-card ${bookStatus[b.id] === 'exclude' ? 'avoid' : ''}">
+    <div class="book-card ${bookStatus[b.id] === 'exclude' ? 'avoid' : ''} ${bookStatus[b.id] === 'include' ? 'target' : ''}">
       <div>
         <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-        <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown')}</div>
-        <div class="tags">${b.categories.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join('')}</div>
+        <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown Author')}</div>
+        <div class="tags">${b.categories.map(c => `<span class="tag" data-click-challenge="${escapeHtml(c)}">${escapeHtml(c)}</span>`).join('')}</div>
       </div>
       <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
     </div>
   `).join('') || '<div class="empty"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
 }
 
-function renderResults(forceRandom = false) {
+function renderResults(forceRandom = false, onePerChallenge = false) {
   const activeCats = new Set(activeData.categories);
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
   let hasOverlaps = false;
 
-  // Track what needs to be avoided globally
   const avoidList = [];
 
   activeData.books.forEach(b => {
@@ -480,13 +518,11 @@ function renderResults(forceRandom = false) {
     }
   });
 
-  const randomMode = !hasOverlaps && selected.length === 0;
+  const randomMode = (!hasOverlaps && selected.length === 0) || onePerChallenge;
 
   // --- RARITY-WEIGHTED GREEDY SET COVER ---
-  // This ensures we mathematically pick the fewest books by targeting rare challenges first
   while (uncovered.size > 0 && available.length > 0) {
     
-    // 1. Calculate rarity of each remaining uncovered category
     const catCounts = {};
     uncovered.forEach(c => catCounts[c] = 0);
     available.forEach(b => {
@@ -496,9 +532,6 @@ function renderResults(forceRandom = false) {
     let bestBook = null;
     let maxCov = 0;
     let bestRarityScore = Infinity; 
-
-    // 2. Pick the book covering the most categories. If tie, pick the one covering the rarest category.
-    // If forceRandom, ignore optimization and just pick valid ones.
     let candidates = [];
 
     for (const b of available) {
@@ -514,6 +547,9 @@ function renderResults(forceRandom = false) {
               maxCov = cov; bestRarityScore = rarityScore; bestBook = b;
           } else if (cov === maxCov && rarityScore < bestRarityScore) {
               bestRarityScore = rarityScore; bestBook = b;
+          } else if (cov === maxCov && rarityScore === bestRarityScore) {
+              // Same exact overlap efficiency, randomize between them
+              if (Math.random() > 0.5) bestBook = b;
           }
       }
     }
@@ -527,15 +563,22 @@ function renderResults(forceRandom = false) {
 
     selected.push(bestBook);
     bestBook.categories.forEach(c => uncovered.delete(c));
-    available = available.filter(b => b.id !== bestBook.id);
+    
+    // Remove picked book. If onePerChallenge, remove all books that overlap *any* of its categories.
+    if (onePerChallenge) {
+        const pickedCats = new Set(bestBook.categories);
+        available = available.filter(b => !b.categories.some(c => pickedCats.has(c)));
+    } else {
+        available = available.filter(b => b.id !== bestBook.id);
+    }
   }
 
   lastOptimal = { selected, uncovered: Array.from(uncovered) };
-  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Shortest Path: ${selected.length} Books`;
+  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path Length: ${selected.length} Books`;
 
   let html = '';
   if (randomMode) {
-    html += `<div class="banner"><div style="font-size:18px;">ℹ️</div><div><strong>No overlaps found.</strong> Showing one random book per challenge.</div></div>`;
+    html += `<div class="banner"><div style="font-size:18px;">ℹ️</div><div><strong>One Random Book Per Challenge.</strong> Selecting 1 random book per challenge.</div></div>`;
   }
   if (uncovered.size > 0) {
       html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Remaining: ${Array.from(uncovered).map(escapeHtml).join(', ')}. Try un-excluding some books.</div></div>`;
@@ -550,8 +593,8 @@ function renderResults(forceRandom = false) {
         <div class="book-card optimal">
             <div>
                 <a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-                <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown')}</div>
-                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}">${escapeHtml(c)}</span>`).join('')}</div>
+                <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown Author')}</div>
+                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}" data-click-challenge="${escapeHtml(c)}">${escapeHtml(c)}</span>`).join('')}</div>
             </div>
             <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
         </div>
@@ -564,20 +607,25 @@ function renderResults(forceRandom = false) {
   avoidList.sort((a,b) => b.cnt - a.cnt);
   if (avoidList.length > 0) {
     $('output-avoid').innerHTML = `
-      <div class="workspace-title" style="margin-bottom: 12px;"><h3>Avoid List (${avoidList.length})</h3><p>These books overlap multiple challenges, but you have not marked them as Read.</p></div>
+      <div class="workspace-title" style="margin-bottom: 12px; border-top: 1px solid var(--border); padding-top:24px;">
+        <h3>Avoid List (${avoidList.length})</h3>
+        <p>These books overlap multiple challenges, but you have not marked them as Targeted.</p>
+      </div>
       <div class="book-grid">
       ${avoidList.map(item => `
         <div class="book-card avoid">
           <div>
             <a class="book-title" href="${item.b.url}" target="_blank" data-stop>${escapeHtml(item.b.title)}</a>
             <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">Overlaps ${item.cnt} challenges</div>
-            <div class="tags">${item.cats.map(c=>`<span class="tag danger">${escapeHtml(c)}</span>`).join('')}</div>
+            <div class="tags">${item.cats.map(c=>`<span class="tag danger" data-click-challenge="${escapeHtml(c)}">${escapeHtml(c)}</span>`).join('')}</div>
           </div>
           <div style="margin-top:10px;">${statusButtonsHTML(item.b.id)}</div>
         </div>
       `).join('')}</div>`;
+      $('output-avoid').classList.remove('hidden');
   } else {
-    $('output-avoid').innerHTML = '<div class="banner ok">✅ No multi-challenge overlaps to avoid.</div>';
+    $('output-avoid').innerHTML = '';
+    $('output-avoid').classList.add('hidden');
   }
 }
 
@@ -586,21 +634,38 @@ function renderSheet() {
   tbody.innerHTML = '';
   activeData.sections.forEach((sec, i) => {
     if (i > 0) tbody.innerHTML += '<tr class="spacer"><td colspan="2"></td></tr>';
-    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
+    // Format combination correctly regardless of overlap count
+    const label = `${sec.categories.join(' + ')} (Count: ${sec.books.length})`;
     sec.books.forEach((b, idx) => {
       tbody.innerHTML += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
     });
   });
-  $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
+  $('convert-sub').textContent = `${activeData.sections.length} challenge combinations populated.`;
 }
 
 // --- EVENT DELEGATION FOR UI INTERACTIONS ---
 document.body.addEventListener('click', (e) => {
+  // Status buttons
   const setBtn = e.target.closest('[data-status-set]');
   if (setBtn) {
     e.preventDefault(); e.stopPropagation();
     bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
     renderAll();
+    return;
+  }
+  
+  // Tag Click -> Highlight Sidebar Challenge
+  const tag = e.target.closest('[data-click-challenge]');
+  if (tag) {
+      e.preventDefault(); e.stopPropagation();
+      const cId = tag.getAttribute('data-click-challenge');
+      const sideItem = document.getElementById(`sidebar-item-${safeId(cId)}`);
+      if (sideItem) {
+          sideItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          sideItem.classList.remove('flash');
+          void sideItem.offsetWidth; // trigger reflow
+          sideItem.classList.add('flash');
+      }
   }
 });
 
@@ -624,10 +689,11 @@ $('btn-reset').addEventListener('click', () => {
   $('search-input').value = ''; search = '';
   $('status-filter').value = 'all'; statusFilter = 'all';
   renderAll();
-  toast('Filters reset', 'success');
+  toast('Statuses reset', 'success');
 });
 
-$('btn-shuffle').addEventListener('click', () => renderResults(true));
+$('btn-shuffle-overlap').addEventListener('click', () => renderResults(true, false));
+$('btn-shuffle-random').addEventListener('click', () => renderResults(true, true));
 
 // --- ROBUST COPY LOGIC ---
 $('btn-copy-optimal').addEventListener('click', async () => {
@@ -644,12 +710,12 @@ $('btn-copy-optimal').addEventListener('click', async () => {
 });
 
 $('btn-copy-sheet').addEventListener('click', async () => {
-  let html = '<table><thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead><tbody>';
-  let plain = 'Challenge Combination\tCommon Books\n';
+  let html = '<table><thead><tr><th>Challenge Combination</th><th>Books</th></tr></thead><tbody>';
+  let plain = 'Challenge Combination\tBooks\n';
   
   activeData.sections.forEach((sec, i) => {
     if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
-    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
+    const label = `${sec.categories.join(' + ')} (Count: ${sec.books.length})`;
     sec.books.forEach((b, idx) => {
       const cat = idx === 0 ? label : '';
       html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a></td></tr>`;

@@ -3,102 +3,53 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Book Challenge Toolkit — Optimizer & Spreadsheet Converter</title>
-<meta name="description" content="Optimize your Goodreads reading challenges and convert challenge overlap markdown to a spreadsheet — in one place, with dark mode." />
+<title>Goodreads Challenge Optimizer</title>
+<meta name="description" content="Select your Goodreads reading challenges, discover overlaps, and optimize your reading list." />
 <style>
   :root {
-    --bg: #f6f7fb;
-    --fg: #16182b;
-    --muted-fg: #6b7185;
-    --card: #ffffff;
-    --border: #e4e6ee;
-    --muted: #f1f2f7;
-    --accent: #eef0fb;
-    --primary: #5b67e8;
-    --primary-fg: #ffffff;
-    --primary-soft: #eceffd;
-    --success: #16a34a;
-    --success-soft: #e6f6ec;
-    --warning: #d97706;
-    --warning-soft: #fdf2da;
-    --destructive: #dc2626;
-    --destructive-soft: #fde8e8;
-    --radius: 12px;
+    --bg: #f6f7fb; --fg: #16182b; --muted-fg: #6b7185; --card: #ffffff;
+    --border: #e4e6ee; --muted: #f1f2f7; --accent: #eef0fb; --primary: #5b67e8;
+    --primary-fg: #ffffff; --primary-soft: #eceffd; --success: #16a34a;
+    --success-soft: #e6f6ec; --warning: #d97706; --warning-soft: #fdf2da;
+    --destructive: #dc2626; --destructive-soft: #fde8e8; --radius: 12px;
     --shadow-soft: 0 1px 2px rgba(15,18,40,.04), 0 6px 18px rgba(15,18,40,.05);
     --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
   html.dark {
-    --bg: #11131c;
-    --fg: #f1f2f7;
-    --muted-fg: #9aa0b5;
-    --card: #1a1d2a;
-    --border: #2a2e40;
-    --muted: #1f2230;
-    --accent: #262a3d;
-    --primary: #818cf8;
-    --primary-fg: #11131c;
-    --primary-soft: #232846;
-    --success: #4ade80;
-    --success-soft: #1f3328;
-    --warning: #fbbf24;
-    --warning-soft: #3b2e16;
-    --destructive: #f87171;
-    --destructive-soft: #3a1f1f;
+    --bg: #11131c; --fg: #f1f2f7; --muted-fg: #9aa0b5; --card: #1a1d2a;
+    --border: #2a2e40; --muted: #1f2230; --accent: #262a3d; --primary: #818cf8;
+    --primary-fg: #11131c; --primary-soft: #232846; --success: #4ade80;
+    --success-soft: #1f3328; --warning: #fbbf24; --warning-soft: #3b2e16;
+    --destructive: #f87171; --destructive-soft: #3a1f1f;
   }
   *, *::before, *::after { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; }
-  body { min-height: 100vh; }
-  a { color: inherit; }
-  button { font-family: inherit; cursor: pointer; }
-  ::selection { background: color-mix(in oklab, var(--primary) 35%, transparent); }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
-  /* Header */
-  header.app {
-    position: sticky; top: 0; z-index: 30;
-    backdrop-filter: blur(10px);
-    background: color-mix(in oklab, var(--bg) 80%, transparent);
-    border-bottom: 1px solid var(--border);
-  }
+  header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
   .header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .brand { display: flex; align-items: center; gap: 10px; }
   .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); }
   .brand h1 { font-size: 15px; margin: 0; font-weight: 700; }
   .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); }
   .header-actions { display: flex; align-items: center; gap: 6px; }
-  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border) !important; }
+
+  /* Header links (Ko-fi & Feedback) */
+  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border) !important; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s;}
   .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent) !important; color: #ff5e5b !important; border-color: color-mix(in oklab, #ff5e5b 30%, transparent) !important; }
   .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent) !important; }
   @media (max-width: 540px) { .link-label { display: none; } .header-link { padding: 6px 8px; } }
 
   main { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; display: flex; flex-direction: column; gap: 20px; }
-
-  /* Hero */
-  .hero {
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 28px;
-    background:
-      radial-gradient(900px 240px at 0% 0%, color-mix(in oklab, var(--primary) 16%, transparent), transparent 70%),
-      var(--card);
-    box-shadow: var(--shadow-soft);
-  }
-  .hero .eyebrow { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--primary); }
-  .hero h2 { margin: 8px 0 6px; font-size: 26px; line-height: 1.2; letter-spacing: -0.01em; }
-  .hero p { margin: 0; color: var(--muted-fg); font-size: 14px; max-width: 640px; }
-  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .stat { font-size: 12px; padding: 6px 10px; background: var(--card); border: 1px solid var(--border); border-radius: 8px; }
-  .stat strong { color: var(--fg); }
-
-  /* Cards */
+  
   .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); overflow: hidden; }
   .card-head { padding: 14px 18px; border-bottom: 1px solid var(--border); background: color-mix(in oklab, var(--muted) 70%, transparent); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
   .card-head h3 { margin: 0; font-size: 14px; }
-  .card-head .sub { font-size: 12px; color: var(--muted-fg); }
+  .card-head .sub { font-size: 12px; color: var(--muted-fg); margin-top: 2px;}
   .card-body { padding: 16px 18px; }
 
-  /* Buttons */
   .btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
   .btn:hover { filter: brightness(.95); }
   .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
@@ -108,71 +59,57 @@
   .btn.sm { padding: 6px 10px; font-size: 12px; }
   .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
 
-  /* Textarea / inputs */
-  textarea, input[type=text], select {
-    width: 100%; padding: 10px 12px; border: 1px solid var(--border);
-    border-radius: 8px; background: var(--card); color: var(--fg);
-    font-family: inherit; font-size: 13px; outline: none; transition: border-color .15s, box-shadow .15s;
-  }
-  textarea:focus, input:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
-  textarea { min-height: 220px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-  code.inline { font-family: ui-monospace, monospace; background: var(--muted); padding: 1px 5px; border-radius: 4px; font-size: 11.5px; }
+  input[type=text], select { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--fg); font-size: 13px; outline: none; }
+  input:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
+
+  /* Challenge Selector Grid */
+  .challenge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; margin-top: 12px; }
+  .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--muted); cursor: pointer; transition: 0.2s; }
+  .challenge-item:hover { border-color: var(--primary); }
+  .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
+  .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; }
+  .challenge-info { flex-grow: 1; }
+  .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
+  .challenge-info span { font-size: 11px; color: var(--muted-fg); }
 
   /* Mode tabs */
   .mode-tabs { display: inline-flex; padding: 4px; gap: 4px; background: var(--muted); border: 1px solid var(--border); border-radius: 10px; }
-  .mode-tabs button { background: transparent; border: 0; padding: 8px 14px; border-radius: 7px; font-size: 13px; font-weight: 600; color: var(--muted-fg); display: inline-flex; align-items: center; gap: 6px; }
+  .mode-tabs button { background: transparent; border: 0; padding: 8px 14px; border-radius: 7px; font-size: 13px; font-weight: 600; color: var(--muted-fg); }
   .mode-tabs button.active { background: var(--card); color: var(--fg); box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-
-  /* Inner tabs */
   .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; }
   .tabs button { background: transparent; border: 0; padding: 8px; border-radius: 6px; font-size: 12.5px; font-weight: 600; color: var(--muted-fg); }
   .tabs button.active { background: var(--card); color: var(--fg); box-shadow: 0 1px 2px rgba(0,0,0,.05); }
 
-  /* Layouts */
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
-
-  /* Stats banner */
+  
   .stats-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
   .stats-bar .lab { color: var(--muted-fg); }
   .stats-bar .ok { color: var(--success); font-weight: 700; }
   .stats-bar .bad { color: var(--destructive); font-weight: 700; }
 
-  /* Search row */
   .search-row { display: flex; gap: 8px; margin-top: 10px; }
   .search-row .search { flex: 1; position: relative; }
   .search-row .search input { padding-left: 30px; }
   .search-row .search::before { content: "🔍"; position: absolute; left: 8px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
-  .search-row select { width: 140px; }
 
-  /* List */
   .list { margin-top: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px; display: flex; flex-direction: column; gap: 8px; }
   .list-item { padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); transition: background .2s; }
-  .list-item.highlight { animation: pulse 1.6s ease-out; }
-  @keyframes pulse {
-    0% { background: var(--card); }
-    20% { background: var(--primary-soft); box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 25%, transparent); }
-    100% { background: var(--card); }
-  }
   .item-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-  .book-title { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--fg); display: inline-flex; align-items: center; gap: 4px; }
-  .book-title:hover { color: var(--primary); }
-  .book-title .ext { font-size: 10px; opacity: .55; }
+  .book-title { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--fg); }
+  .book-title:hover { color: var(--primary); text-decoration: underline; }
   .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-  .tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: .15s; }
-  .tag:hover { border-color: var(--primary); color: var(--primary); }
-  .tag.inactive { text-decoration: line-through; opacity: .55; }
+  .tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
+  .tag.inactive { text-decoration: line-through; opacity: .55; }
 
-  /* Status toggle */
   .status { display: inline-flex; gap: 2px; padding: 2px; background: var(--muted); border: 1px solid var(--border); border-radius: 7px; }
-  .status button { border: 0; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 4px 8px; border-radius: 5px; display: inline-flex; align-items: center; gap: 3px; }
+  .status button { border: 0; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 4px 8px; border-radius: 5px; }
   .status button:hover { color: var(--fg); }
   .status button.active.inc { background: var(--success); color: #fff; }
   .status button.active.neu { background: var(--muted-fg); color: var(--bg); }
   .status button.active.exc { background: var(--destructive); color: #fff; }
 
-  /* Switch */
   .switch { position: relative; display: inline-block; width: 36px; height: 20px; flex-shrink: 0; }
   .switch input { opacity: 0; width: 0; height: 0; }
   .slider { position: absolute; inset: 0; background: var(--muted-fg); border-radius: 999px; transition: .2s; cursor: pointer; }
@@ -180,43 +117,20 @@
   .switch input:checked + .slider { background: var(--success); }
   .switch input:checked + .slider::before { transform: translateX(16px); }
 
-  /* Result cards */
-  .result-card { padding: 12px; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; background: var(--card); cursor: pointer; transition: transform .15s, background .15s; }
-  .result-card:hover { transform: translateY(-1px); background: color-mix(in oklab, var(--accent) 50%, var(--card)); }
+  .result-card { padding: 12px; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; background: var(--card); }
   .result-card.avoid { border-left-color: var(--destructive); }
-
-  /* Banners */
   .banner { display: flex; gap: 10px; padding: 12px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; }
   .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
-  .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
-  .banner small { color: var(--muted-fg); display: block; margin-top: 4px; }
-
-  /* Empty states */
   .empty { text-align: center; padding: 36px 18px; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted-fg); font-size: 13px; }
 
-  /* Spreadsheet table */
   .sheet-wrap { max-height: 60vh; overflow: auto; }
   table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; }
-  table.sheet th { position: sticky; top: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted-fg); }
+  table.sheet th { position: sticky; top: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); }
   table.sheet td { border-bottom: 1px solid var(--border); padding: 10px 14px; vertical-align: top; }
   table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 40%; }
   table.sheet tr.spacer td { background: color-mix(in oklab, var(--muted) 60%, transparent); height: 8px; padding: 0; }
-  table.sheet tr:hover td:not(.spacer) { background: color-mix(in oklab, var(--accent) 40%, transparent); }
-  table.sheet a { color: var(--primary); text-decoration: none; }
-  table.sheet a:hover { text-decoration: underline; }
 
-  /* Toast */
-  #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
-  .toast { padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
-  .toast.success { background: var(--success); color: #fff; }
-  .toast.error { background: var(--destructive); color: #fff; }
-  @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
-  /* Helpers */
-  .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-  .muted { color: var(--muted-fg); font-size: 12px; }
   .hidden { display: none !important; }
-  footer { text-align: center; padding: 12px; color: var(--muted-fg); font-size: 12px; }
 </style>
 </head>
 <body>
@@ -226,107 +140,82 @@
     <div class="brand">
       <div class="brand-mark">📚</div>
       <div>
-        <h1>Book Challenge Toolkit</h1>
-        <p>Optimize challenges · Export spreadsheets</p>
+        <h1>Goodreads Challenge Optimizer</h1>
+        <p id="last-updated">Loading database...</p>
       </div>
     </div>
     <div class="header-actions">
-      <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="btn ghost header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
-      <a href="https://docs.google.com/forms/d/1DEVY531vE3geAxmKLumf3DBKidbInquz2KuM1wq52fY/" target="_blank" class="btn ghost header-link">💬 <span class="link-label">Feedback</span></a>
-      <button class="btn icon ghost" id="theme-toggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+      <!-- Added Ko-fi and Feedback Buttons back here -->
+      <a href="https://ko-fi.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
+      <a href="mailto:your_email@example.com" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
+      <button class="btn icon ghost" id="theme-toggle">🌙</button>
     </div>
   </div>
 </header>
 
 <main>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="eyebrow">✨ Two tools, one input</div>
-    <h2>Master your Goodreads challenges</h2>
-    <p>Paste your challenge overlap markdown once, then either pick the smallest set of books that covers every challenge, or copy the data straight into Excel or Google Sheets.</p>
-    <div class="stats hidden" id="hero-stats">
-      <div class="stat"><strong id="stat-books">0</strong> Books</div>
-      <div class="stat"><strong id="stat-sections">0</strong> Combinations</div>
-      <div class="stat"><strong id="stat-cats">0</strong> Categories</div>
-    </div>
-  </section>
-
-  <!-- Markdown input -->
+  <!-- Step 1: Select Challenges -->
   <section class="card">
     <div class="card-head">
       <div>
-        <h3>📝 Paste your Goodreads combination markdown</h3>
-        <div class="sub">Use the <code class="inline">### [Challenge] + [Challenge]</code> format with bullet-list books underneath.</div>
+        <h3>1. Select Your Challenges</h3>
+        <div class="sub">Choose the lists you want to read from. Overlaps are computed automatically.</div>
+      </div>
+      <div style="display:flex; gap:6px;">
+        <button class="btn outline sm" id="btn-select-all">Select All</button>
+        <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
       </div>
     </div>
     <div class="card-body">
-      <textarea id="md-input" placeholder="### [Challenge A (130 books)](link) + [Challenge B (104 books)](link)
-**Common: 2 books**
-- [Atomic Habits](https://...)"></textarea>
-      <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;">
-        <button class="btn" id="btn-parse">✨ Parse data</button>
-        <button class="btn outline" id="btn-sample">Load sample</button>
-        <button class="btn ghost" id="btn-clear">🗑️ Clear</button>
+      <div id="challenge-grid" class="challenge-grid">
+        <!-- Injected via JS -->
       </div>
     </div>
   </section>
 
-  <!-- Mode tabs -->
-  <div class="mode-tabs" role="tablist" aria-label="Mode">
-    <button id="mode-optimize" class="active">✨ Optimize</button>
+  <!-- Navigation -->
+  <div class="mode-tabs hidden" id="main-nav">
+    <button id="mode-optimize" class="active">✨ Optimizer</button>
     <button id="mode-convert">▦ Spreadsheet</button>
   </div>
 
   <!-- OPTIMIZE VIEW -->
-  <section id="view-optimize">
-    <div id="optimize-empty" class="card"><div class="card-body"><div class="empty">✨ Parse your markdown to start optimizing.</div></div></div>
-
-    <div id="optimize-grid" class="grid-2 hidden">
-      <!-- LEFT -->
+  <section id="view-optimize" class="hidden">
+    <div class="grid-2">
+      <!-- Configure -->
       <div class="card">
         <div class="card-head">
-          <div>
-            <h3>1. Configure</h3>
-            <div class="sub">Mark books you've read or want to avoid, toggle categories.</div>
-          </div>
+          <div><h3>2. Configure Library</h3><div class="sub">Mark books you've read or want to avoid.</div></div>
           <button class="btn ghost sm" id="btn-reset">🔄 Reset</button>
         </div>
         <div class="card-body">
           <div class="stats-bar" id="stats-bar"></div>
-
           <div class="tabs" style="margin-top:12px;">
             <button id="tab-books" class="active">📖 Books</button>
-            <button id="tab-cats">🏷️ Categories</button>
+            <button id="tab-cats">🏷️ Challenges</button>
           </div>
-
           <div class="search-row">
-            <div class="search">
-              <input id="search-input" type="text" placeholder="Search books..." />
-            </div>
+            <div class="search"><input id="search-input" type="text" placeholder="Search..." /></div>
             <select id="status-filter">
               <option value="all">All</option>
-              <option value="include">✓ Included</option>
-              <option value="exclude">✕ Excluded</option>
+              <option value="include">✓ Read</option>
+              <option value="exclude">✕ Avoid</option>
             </select>
           </div>
-
           <div class="list" id="list-books"></div>
           <div class="list hidden" id="list-cats"></div>
         </div>
       </div>
 
-      <!-- RIGHT -->
+      <!-- Results -->
       <div class="card">
         <div class="card-head">
-          <div>
-            <h3>2. Results</h3>
-            <div class="sub">Live-updates as you adjust filters.</div>
-          </div>
-          <button class="btn outline sm hidden" id="btn-copy-optimal">📋 Copy</button>
+          <div><h3>3. Optimal Reading List</h3><div class="sub">Smallest set of books to hit your goals.</div></div>
+          <button class="btn outline sm" id="btn-copy-optimal">📋 Copy List</button>
         </div>
         <div class="card-body">
           <div class="tabs">
-            <button id="tab-optimal" class="active">🏆 Optimal list</button>
+            <button id="tab-optimal" class="active">🏆 Optimal</button>
             <button id="tab-avoid">⚠️ Avoid (<span id="avoid-count">0</span>)</button>
           </div>
           <div id="output-optimal" style="margin-top:14px;"></div>
@@ -337,217 +226,164 @@
   </section>
 
   <!-- CONVERT VIEW -->
-  <section id="view-convert" class="hidden">
-    <div id="convert-empty" class="card"><div class="card-body"><div class="empty">▦ Parse your markdown to see the spreadsheet preview.</div></div></div>
-    <div class="card hidden" id="convert-card">
-      <div class="card-head">
-        <div>
-          <h3>Spreadsheet preview</h3>
-          <div class="sub" id="convert-sub"></div>
-        </div>
-        <button class="btn sm" id="btn-copy-sheet">📋 Copy for Sheets</button>
-      </div>
-      <div class="sheet-wrap">
-        <table class="sheet">
-          <thead>
-            <tr><th>Category combination</th><th>Common books</th></tr>
-          </thead>
-          <tbody id="sheet-body"></tbody>
-        </table>
-      </div>
+  <section id="view-convert" class="card hidden">
+    <div class="card-head">
+      <div><h3>Spreadsheet (Overlapping Books)</h3><div class="sub" id="convert-sub"></div></div>
+      <button class="btn sm" id="btn-copy-sheet">📋 Copy for Excel</button>
+    </div>
+    <div class="sheet-wrap">
+      <table class="sheet">
+        <thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead>
+        <tbody id="sheet-body"></tbody>
+      </table>
     </div>
   </section>
 
-  <footer>Built for readers who like to plan their year of books.</footer>
 </main>
 
-<div id="toast-host"></div>
-
 <script>
-/* ============== STATE ============== */
-const SAMPLE = `### [Choice Archive (130 books)](https://example.com/a) + [Lasting Reads (104 books)](https://example.com/b) + [Star Selections (96 books)](https://example.com/c)
-**Common: 1 book**
+// --- GLOBAL STATE ---
+let rawDatabase = { challenges: [], books: [] };
+let selectedChallenges = new Set();
+let activeData = { sections: [], books: {}, categories: [] };
+let bookStatus = {}; 
+let catActive = {}; 
 
-- [On Earth We're Briefly Gorgeous](https://www.goodreads.com/book/show/41880609)
-
-### [Challenge Faves (144 books)](https://example.com/d) + [Choice Archive (130 books)](https://example.com/a)
-**Common: 2 books**
-
-- [Tomorrow, and Tomorrow, and Tomorrow](https://www.goodreads.com/book/show/58784475)
-- [Piranesi](https://www.goodreads.com/book/show/50202953)
-
-### [Lasting Reads (104 books)](https://example.com/b) + [Star Selections (96 books)](https://example.com/c)
-**Common: 1 book**
-
-- [The Overstory](https://www.goodreads.com/book/show/40180098)`;
-
-let data = { sections: [], books: {}, categories: [] };
-let bookStatus = {};   // title -> 'include'|'neutral'|'exclude'
-let catActive = {};    // category -> bool
 let mode = 'optimize';
 let leftTab = 'books';
 let rightTab = 'optimal';
 let search = '';
 let statusFilter = 'all';
 
-/* ============== HELPERS ============== */
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const decodeEntities = (s) => { const ta = document.createElement('textarea'); ta.innerHTML = s; return ta.value; };
-const safeId = (s) => 'id-' + btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
-function toast(msg, kind='') {
-  const host = $('toast-host');
-  const el = document.createElement('div');
-  el.className = 'toast ' + kind;
-  el.textContent = msg;
-  host.appendChild(el);
-  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; }, 2200);
-  setTimeout(() => el.remove(), 2600);
-}
-
-/* ============== THEME ============== */
-function initTheme() {
-  const stored = localStorage.getItem('bct-theme');
-  const dark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
-  document.documentElement.classList.toggle('dark', dark);
-  $('theme-toggle').textContent = dark ? '☀️' : '🌙';
-}
+// --- THEME ---
 $('theme-toggle').addEventListener('click', () => {
   const isDark = document.documentElement.classList.toggle('dark');
-  localStorage.setItem('bct-theme', isDark ? 'dark' : 'light');
   $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
 });
-initTheme();
+if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.add('dark');
+    $('theme-toggle').textContent = '☀️';
+}
 
-/* ============== PARSER ============== */
-function parseMarkdown(input) {
-  const sections = [], books = {}, catSet = new Set();
-  if (!input.trim()) return { sections, books, categories: [] };
-  const blocks = input.split(/^###\s+/m).filter(b => b.trim());
-  for (const block of blocks) {
-    const lines = block.split('\n');
-    const header = lines[0] || '';
-    const rich = [...header.matchAll(/\[([^\]]*?)\s*\(\d+\s*books?\)\]/gi)].map(m => decodeEntities(m[1].trim()));
-    const fallback = [...header.matchAll(/\[(.*?)\]/g)].map(m => decodeEntities(m[1].trim()));
-    const cats = (rich.length ? rich : fallback).filter(Boolean);
-    if (!cats.length) continue;
-    cats.forEach(c => catSet.add(c));
-    const commonMatch = block.match(/\*\*Common:\s*(.*?)\*\*/i);
-    const commonText = commonMatch ? commonMatch[1].trim() : null;
-    const sBooks = [];
-    for (const ln of lines) {
-      const m = ln.trim().match(/^- \[(.*?)\]\((.*?)\)/);
-      if (!m) continue;
-      const title = decodeEntities(m[1]);
-      const url = m[2];
-      sBooks.push({ title, url });
-      if (!books[title]) books[title] = { title, url, categories: [] };
-      cats.forEach(c => { if (!books[title].categories.includes(c)) books[title].categories.push(c); });
-    }
-    sections.push({ categories: cats, commonText, books: sBooks });
+// --- INITIAL FETCH ---
+async function loadData() {
+  try {
+    const res = await fetch('data.json');
+    if (!res.ok) throw new Error("Could not load data.json");
+    rawDatabase = await res.json();
+    const dt = new Date(rawDatabase.lastUpdated);
+    $('last-updated').textContent = `Last synced: ${dt.toLocaleDateString()} ${dt.toLocaleTimeString()}`;
+    renderChallengeGrid();
+  } catch (err) {
+    $('last-updated').textContent = "Failed to load database. Ensure data.json exists.";
   }
-  return { sections, books, categories: Array.from(catSet) };
 }
 
-/* ============== INPUT ACTIONS ============== */
-$('btn-sample').addEventListener('click', () => { $('md-input').value = SAMPLE; });
-$('btn-clear').addEventListener('click', () => { $('md-input').value = ''; });
-$('btn-parse').addEventListener('click', () => {
-  const text = $('md-input').value;
-  if (!text.trim()) { toast('Paste some markdown first', 'error'); return; }
-  const parsed = parseMarkdown(text);
-  if (!parsed.sections.length) { toast("Couldn't find any combinations. Check the format.", 'error'); return; }
-  data = parsed;
-  bookStatus = {}; Object.keys(data.books).forEach(t => bookStatus[t] = 'neutral');
-  catActive = {}; data.categories.forEach(c => catActive[c] = true);
-  search = ''; statusFilter = 'all';
-  $('search-input').value = '';
-  $('status-filter').value = 'all';
-  renderAll();
-  toast(`Parsed ${parsed.sections.length} combinations · ${Object.keys(parsed.books).length} books`, 'success');
+function renderChallengeGrid() {
+  const grid = $('challenge-grid');
+  grid.innerHTML = rawDatabase.challenges.map(c => `
+    <div class="challenge-item" data-id="${c.id}" onclick="toggleChallenge('${c.id}')">
+      <input type="checkbox" id="chk-${c.id}" />
+      <div class="challenge-info">
+        <strong>${escapeHtml(c.name)}</strong>
+        <span>${c.count} books</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+window.toggleChallenge = function(id) {
+  if (selectedChallenges.has(id)) {
+    selectedChallenges.delete(id);
+  } else {
+    selectedChallenges.add(id);
+  }
+  
+  document.querySelectorAll('.challenge-item').forEach(el => {
+    const isSel = selectedChallenges.has(el.dataset.id);
+    el.classList.toggle('selected', isSel);
+    el.querySelector('input').checked = isSel;
+  });
+
+  recomputeActiveData();
+};
+
+$('btn-select-all').addEventListener('click', () => {
+  rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id));
+  renderChallengeGrid(); // brute force UI refresh
+  document.querySelectorAll('.challenge-item').forEach(el => { el.classList.add('selected'); el.querySelector('input').checked=true; });
+  recomputeActiveData();
 });
 
-/* ============== MODE TABS ============== */
-$('mode-optimize').addEventListener('click', () => setMode('optimize'));
-$('mode-convert').addEventListener('click', () => setMode('convert'));
-function setMode(m) {
-  mode = m;
-  $('mode-optimize').classList.toggle('active', m === 'optimize');
-  $('mode-convert').classList.toggle('active', m === 'convert');
-  $('view-optimize').classList.toggle('hidden', m !== 'optimize');
-  $('view-convert').classList.toggle('hidden', m !== 'convert');
-}
-
-/* ============== INNER TABS ============== */
-$('tab-books').addEventListener('click', () => switchLeftTab('books'));
-$('tab-cats').addEventListener('click', () => switchLeftTab('cats'));
-function switchLeftTab(t) {
-  leftTab = t;
-  $('tab-books').classList.toggle('active', t === 'books');
-  $('tab-cats').classList.toggle('active', t === 'cats');
-  $('list-books').classList.toggle('hidden', t !== 'books');
-  $('list-cats').classList.toggle('hidden', t !== 'cats');
-  $('search-input').placeholder = t === 'books' ? 'Search books...' : 'Search categories...';
-  const sel = $('status-filter');
-  sel.innerHTML = t === 'books'
-    ? '<option value="all">All</option><option value="include">✓ Included</option><option value="exclude">✕ Excluded</option>'
-    : '<option value="all">All</option><option value="active">Active</option><option value="ignored">Ignored</option>';
-  statusFilter = 'all'; sel.value = 'all';
-  renderLeft();
-}
-
-$('tab-optimal').addEventListener('click', () => switchRightTab('optimal'));
-$('tab-avoid').addEventListener('click', () => switchRightTab('avoid'));
-function switchRightTab(t) {
-  rightTab = t;
-  $('tab-optimal').classList.toggle('active', t === 'optimal');
-  $('tab-avoid').classList.toggle('active', t === 'avoid');
-  $('output-optimal').classList.toggle('hidden', t !== 'optimal');
-  $('output-avoid').classList.toggle('hidden', t !== 'avoid');
-  $('btn-copy-optimal').classList.toggle('hidden', t !== 'optimal' || !Object.keys(data.books).length);
-}
-
-$('search-input').addEventListener('input', (e) => { search = e.target.value; renderLeft(); });
-$('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLeft(); });
-$('btn-reset').addEventListener('click', () => {
-  Object.keys(bookStatus).forEach(k => bookStatus[k] = 'neutral');
-  data.categories.forEach(c => catActive[c] = true);
-  search = ''; statusFilter = 'all';
-  $('search-input').value = ''; $('status-filter').value = 'all';
-  renderAll();
-  toast('Filters reset', 'success');
+$('btn-clear-selection').addEventListener('click', () => {
+  selectedChallenges.clear();
+  document.querySelectorAll('.challenge-item').forEach(el => { el.classList.remove('selected'); el.querySelector('input').checked=false; });
+  recomputeActiveData();
 });
 
-/* ============== RENDERING ============== */
+// --- COMPUTE OVERLAPS AND STATE ON THE FLY ---
+function getSubsets(array, minSize = 2) {
+    const result = [];
+    const n = array.length;
+    for (let i = 1; i < 1 << n; i++) {
+        const subset = [];
+        for (let j = 0; j < n; j++) if ((i >> j) & 1) subset.push(array[j]);
+        if (subset.length >= minSize) result.push(subset);
+    }
+    return result;
+}
+
+function recomputeActiveData() {
+  if (selectedChallenges.size === 0) {
+    $('main-nav').classList.add('hidden');
+    $('view-optimize').classList.add('hidden');
+    $('view-convert').classList.add('hidden');
+    return;
+  }
+  
+  $('main-nav').classList.remove('hidden');
+  $('view-optimize').classList.remove('hidden');
+
+  activeData.categories = Array.from(selectedChallenges);
+  activeData.books = {};
+  const overlapMap = new Map();
+
+  rawDatabase.books.forEach(b => {
+    const relevantCats = b.challenges.filter(c => selectedChallenges.has(c));
+    if (relevantCats.length > 0) {
+      activeData.books[b.title] = { title: b.title, url: b.url, categories: relevantCats };
+      if (!bookStatus[b.title]) bookStatus[b.title] = 'neutral';
+      
+      if (relevantCats.length >= 2) {
+        const subsets = getSubsets(relevantCats, 2);
+        subsets.forEach(subset => {
+          const key = subset.sort().join(" + ");
+          if(!overlapMap.has(key)) overlapMap.set(key, { categories: subset, books: [] });
+          overlapMap.get(key).books.push(b);
+        });
+      }
+    }
+  });
+
+  activeData.categories.forEach(c => { if(catActive[c] === undefined) catActive[c] = true; });
+
+  activeData.sections = Array.from(overlapMap.values()).sort((a,b) => {
+    if (b.categories.length !== a.categories.length) return b.categories.length - a.categories.length;
+    return b.books.length - a.books.length;
+  });
+
+  renderAll();
+}
+
+// --- OPTIMIZER & RENDER LOGIC ---
+
 function renderAll() {
-  const has = data.sections.length > 0;
-  $('hero-stats').classList.toggle('hidden', !has);
-  $('stat-books').textContent = Object.keys(data.books).length;
-  $('stat-sections').textContent = data.sections.length;
-  $('stat-cats').textContent = data.categories.length;
-
-  $('optimize-empty').classList.toggle('hidden', has);
-  $('optimize-grid').classList.toggle('hidden', !has);
-  $('convert-empty').classList.toggle('hidden', has);
-  $('convert-card').classList.toggle('hidden', !has);
-
-  if (!has) return;
   renderLeft();
   renderResults();
   renderSheet();
-}
-
-function renderStatsBar() {
-  const total = Object.keys(data.books).length;
-  const inc = Object.values(bookStatus).filter(s => s === 'include').length;
-  const exc = Object.values(bookStatus).filter(s => s === 'exclude').length;
-  const cTotal = data.categories.length;
-  const cAct = data.categories.filter(c => catActive[c]).length;
-  $('stats-bar').innerHTML = `
-    <div><span class="lab">Books</span> <strong>${total}</strong> <span class="ok">✓ ${inc}</span> <span class="bad">✕ ${exc}</span></div>
-    <div><span class="lab">Categories</span> <strong>${cTotal}</strong> <span class="ok">● ${cAct}</span> <span class="lab">○ ${cTotal - cAct}</span></div>
-  `;
 }
 
 function statusButtonsHTML(title) {
@@ -562,93 +398,57 @@ function statusButtonsHTML(title) {
 }
 
 function renderLeft() {
-  renderStatsBar();
-  const q = search.toLowerCase();
+  const total = Object.keys(activeData.books).length;
+  const inc = Object.values(activeData.books).filter(b => bookStatus[b.title] === 'include').length;
+  const exc = Object.values(activeData.books).filter(b => bookStatus[b.title] === 'exclude').length;
+  const cTotal = activeData.categories.length;
+  const cAct = activeData.categories.filter(c => catActive[c]).length;
+  
+  $('stats-bar').innerHTML = `
+    <div><span class="lab">Books</span> <strong>${total}</strong> <span class="ok">✓ ${inc}</span> <span class="bad">✕ ${exc}</span></div>
+    <div><span class="lab">Challenges</span> <strong>${cTotal}</strong> <span class="ok">● ${cAct}</span> <span class="lab">○ ${cTotal - cAct}</span></div>
+  `;
 
-  // Books
+  const q = search.toLowerCase();
+  
   const lb = $('list-books');
-  const books = Object.values(data.books)
+  const books = Object.values(activeData.books)
     .filter(b => b.title.toLowerCase().includes(q))
     .filter(b => {
-      const s = bookStatus[b.title] || 'neutral';
+      const s = bookStatus[b.title];
       if (statusFilter === 'all') return true;
       if (statusFilter === 'include') return s === 'include';
       if (statusFilter === 'exclude') return s === 'exclude';
       return true;
-    })
-    .sort((a,b) => a.title.localeCompare(b.title));
-  if (!books.length) {
-    lb.innerHTML = `<div class="empty">No books match.</div>`;
-  } else {
-    lb.innerHTML = books.map(b => {
-      const id = 'book-' + safeId(b.title);
-      const tags = b.categories.map(c => {
-        const cid = 'cat-' + safeId(c);
-        const inactive = !catActive[c] ? ' inactive' : '';
-        return `<span class="tag${inactive}" data-locate="${cid}" data-locate-tab="cats">${escapeHtml(c)}</span>`;
-      }).join('');
-      return `
-        <div class="list-item" id="${id}">
-          <div class="item-head">
-            <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" rel="noopener">${escapeHtml(b.title)} <span class="ext">↗</span></a>
-            ${statusButtonsHTML(b.title)}
-          </div>
-          <div class="tags">${tags}</div>
-        </div>
-      `;
-    }).join('');
-  }
+    }).sort((a,b) => a.title.localeCompare(b.title));
+    
+  lb.innerHTML = books.map(b => `
+    <div class="list-item">
+      <div class="item-head">
+        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank">${escapeHtml(b.title)}</a>
+        ${statusButtonsHTML(b.title)}
+      </div>
+      <div class="tags">${b.categories.map(c => `<span class="tag ${catActive[c]?'':'inactive'}">${escapeHtml(c)}</span>`).join('')}</div>
+    </div>
+  `).join('') || '<div class="empty">No books found.</div>';
 
-  // Categories
   const lc = $('list-cats');
-  const cats = data.categories
-    .filter(c => c.toLowerCase().includes(q))
-    .filter(c => {
-      if (statusFilter === 'all') return true;
-      if (statusFilter === 'active') return catActive[c];
-      if (statusFilter === 'ignored') return !catActive[c];
-      return true;
-    })
-    .sort();
-  if (!cats.length) {
-    lc.innerHTML = `<div class="empty">No categories match.</div>`;
-  } else {
-    lc.innerHTML = cats.map(c => {
-      const id = 'cat-' + safeId(c);
-      const isActive = catActive[c];
-      return `
-        <div class="list-item" id="${id}">
-          <div class="item-head" style="align-items:center;">
-            <div style="font-weight:600; font-size:13.5px; ${isActive?'':'text-decoration:line-through; color:var(--muted-fg);'}">${escapeHtml(c)}</div>
-            <label class="switch">
-              <input type="checkbox" data-cat-toggle="${escapeHtml(c)}" ${isActive?'checked':''}>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-      `;
-    }).join('');
-  }
+  const cats = activeData.categories.filter(c => c.toLowerCase().includes(q)).sort();
+  lc.innerHTML = cats.map(c => `
+    <div class="list-item"><div class="item-head" style="align-items:center;">
+      <div style="font-weight:600; font-size:13px; ${catActive[c]?'':'text-decoration:line-through;opacity:0.5'}">${escapeHtml(c)}</div>
+      <label class="switch"><input type="checkbox" data-cat-toggle="${escapeHtml(c)}" ${catActive[c]?'checked':''}><span class="slider"></span></label>
+    </div></div>
+  `).join('') || '<div class="empty">No challenges found.</div>';
 }
 
-/* ============== OPTIMIZER LOGIC ============== */
-let lastOptimal = { selected: [], uncovered: [] };
-
-function calcOptimal(forceRandom = false) {
-  const activeCats = new Set(data.categories.filter(c => catActive[c]));
+function renderResults() {
+  const activeCats = new Set(activeData.categories.filter(c => catActive[c]));
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
-  let hasOverlaps = false, hasExcludedOverlaps = false;
 
-  for (const [t, b] of Object.entries(data.books)) {
-    const cnt = b.categories.filter(c => activeCats.has(c)).length;
-    if (cnt > 1) {
-      if (bookStatus[t] !== 'exclude') hasOverlaps = true; else hasExcludedOverlaps = true;
-    }
-  }
-
-  for (const [t, b] of Object.entries(data.books)) {
+  for (const [t, b] of Object.entries(activeData.books)) {
     if (bookStatus[t] === 'include') {
       selected.push(t);
       b.categories.forEach(c => activeCats.has(c) && uncovered.delete(c));
@@ -657,260 +457,94 @@ function calcOptimal(forceRandom = false) {
     }
   }
 
-  const randomMode = !hasOverlaps && selected.length === 0;
   while (uncovered.size > 0 && available.length) {
     let candidates = [], max = 0;
     for (const t of available) {
-      const cov = data.books[t].categories.filter(c => uncovered.has(c)).length;
-      if (randomMode || forceRandom) { if (cov > 0) candidates.push(t); }
-      else if (cov > max) { max = cov; candidates = [t]; }
+      const cov = activeData.books[t].categories.filter(c => uncovered.has(c)).length;
+      if (cov > max) { max = cov; candidates = [t]; }
       else if (cov === max && max > 0) candidates.push(t);
     }
     if (!candidates.length) break;
     const pick = candidates[Math.floor(Math.random() * candidates.length)];
     selected.push(pick);
-    data.books[pick].categories.forEach(c => activeCats.has(c) && uncovered.delete(c));
+    activeData.books[pick].categories.forEach(c => activeCats.has(c) && uncovered.delete(c));
     available = available.filter(b => b !== pick);
   }
 
-  return { selected, uncovered: [...uncovered], activeCats, randomMode, hasExcludedOverlaps };
-}
-
-function calcAvoid() {
-  const activeCats = new Set(data.categories.filter(c => catActive[c]));
-  const out = [];
-  for (const [t, b] of Object.entries(data.books)) {
-    const cnt = b.categories.filter(c => activeCats.has(c)).length;
-    if (cnt > 1 && bookStatus[t] !== 'include') out.push({ title: t, count: cnt });
-  }
-  return { list: out.sort((a,b) => b.count - a.count), activeCats };
-}
-
-function renderResults(forceRandom = false) {
-  if (!data.categories.length) return;
-
-  // OPTIMAL
-  const r = calcOptimal(forceRandom);
-  lastOptimal = r;
-  const out = $('output-optimal');
-
-  let html = '';
-  if (r.randomMode) {
-    html += `<div class="banner">
-      <div style="font-size:18px;">ℹ️</div>
-      <div><strong>No overlaps found.</strong> Showing one random book per active category.
-        ${r.hasExcludedOverlaps ? '<small>Some overlapping books exist but are set to "Avoid".</small>' : ''}
-      </div>
-    </div>`;
-  }
-
-  html += `
-    <div class="row" style="margin: ${r.randomMode ? '12px 0' : '0 0 12px'};">
-      <div>
-        <div style="font-weight:700; font-size:14px;">${r.selected.length} book${r.selected.length===1?'':'s'} selected</div>
-        <div class="muted">Covers ${r.activeCats.size - r.uncovered.length} / ${r.activeCats.size} active categories</div>
-      </div>
-      <button class="btn ghost sm" id="btn-shuffle">🎲 Shuffle</button>
-    </div>
+  $('output-optimal').innerHTML = `
+    <div style="font-weight:700; font-size:14px; margin-bottom:12px;">${selected.length} optimal books selected</div>
     <div class="list" style="margin-top:0;">
+      ${selected.map(t => {
+        const b = activeData.books[t];
+        return `<div class="result-card"><div class="item-head"><a class="book-title" href="${b.url}" target="_blank">${escapeHtml(t)}</a></div>
+        <div class="tags">${b.categories.filter(c=>activeCats.has(c)).map(c=>`<span class="tag">${escapeHtml(c)}</span>`).join('')}</div></div>`;
+      }).join('') || '<div class="empty">No books available for optimal path.</div>'}
+    </div>
   `;
 
-  if (r.activeCats.size === 0) {
-    html += `<div class="empty">All categories are excluded.</div>`;
-  } else if (!r.selected.length) {
-    html += `<div class="empty">No books available.</div>`;
-  } else {
-    html += r.selected.map(t => {
-      const b = data.books[t];
-      const id = 'book-' + safeId(t);
-      const tags = b.categories.filter(c => r.activeCats.has(c))
-        .map(c => `<span class="tag" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('');
-      return `
-        <div class="result-card" data-locate="${id}" data-locate-tab="books">
-          <div class="item-head">
-            <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" rel="noopener" data-stop>${escapeHtml(t)} <span class="ext">↗</span></a>
-          </div>
-          <div class="tags">${tags}</div>
-        </div>
-      `;
-    }).join('');
+  const avoidList = [];
+  for (const [t, b] of Object.entries(activeData.books)) {
+    const cnt = b.categories.filter(c => activeCats.has(c)).length;
+    if (cnt > 1 && bookStatus[t] !== 'include') avoidList.push({ t, cnt, cats: b.categories.filter(c=>activeCats.has(c)) });
   }
-  html += `</div>`;
+  avoidList.sort((a,b) => b.cnt - a.cnt);
+  $('avoid-count').textContent = avoidList.length;
 
-  if (r.uncovered.length) {
-    html += `<div class="banner warn" style="margin-top:12px;">
-      <div>
-        <strong>⚠️ Uncovered categories:</strong>
-        <ul style="margin:6px 0 0; padding-left:18px; font-size:12px;">
-          ${r.uncovered.map(c => `<li>${escapeHtml(c)}</li>`).join('')}
-        </ul>
-      </div>
-    </div>`;
-  }
-  out.innerHTML = html;
-  const sh = document.getElementById('btn-shuffle');
-  if (sh) sh.addEventListener('click', () => renderResults(true));
-
-  // AVOID
-  const a = calcAvoid();
-  $('avoid-count').textContent = a.list.length;
-  const ao = $('output-avoid');
-  if (!a.list.length) {
-    ao.innerHTML = `<div class="banner ok"><div>✅ No active overlapping books to avoid.</div></div>`;
-  } else {
-    ao.innerHTML = `
-      <div style="margin-bottom:12px;">
-        <div style="font-weight:700; font-size:14px;">${a.list.length} book${a.list.length===1?'':'s'} to avoid</div>
-        <div class="muted">These overlap multiple <em>active</em> categories.</div>
-      </div>
-      <div class="list" style="margin-top:0;">
-        ${a.list.map(item => {
-          const b = data.books[item.title];
-          const id = 'book-' + safeId(item.title);
-          const tags = b.categories.filter(c => a.activeCats.has(c))
-            .map(c => `<span class="tag danger" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('');
-          return `
-            <div class="result-card avoid" data-locate="${id}" data-locate-tab="books">
-              <div class="item-head">
-                <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" rel="noopener" data-stop>${escapeHtml(item.title)} <span class="ext">↗</span></a>
-              </div>
-              <div class="muted" style="margin-top:4px;">Overlaps ${item.count} active categories:</div>
-              <div class="tags">${tags}</div>
-            </div>
-          `;
-        }).join('')}
-      </div>
-    `;
-  }
-
-  $('btn-copy-optimal').classList.toggle('hidden', rightTab !== 'optimal');
+  $('output-avoid').innerHTML = avoidList.map(item => `
+    <div class="result-card avoid"><div class="item-head"><a class="book-title" href="${activeData.books[item.t].url}" target="_blank">${escapeHtml(item.t)}</a></div>
+    <div style="font-size:11px;color:var(--muted-fg);margin-top:4px;">Overlaps ${item.cnt} active challenges</div>
+    <div class="tags">${item.cats.map(c=>`<span class="tag danger">${escapeHtml(c)}</span>`).join('')}</div></div>
+  `).join('') || '<div class="banner ok">✅ No active overlaps to avoid.</div>';
 }
 
-/* ============== EVENT DELEGATION ============== */
-document.body.addEventListener('click', (e) => {
-  const stopParent = e.target.closest('[data-stop]');
-  // status set
-  const setBtn = e.target.closest('[data-status-set]');
-  if (setBtn) {
-    e.stopPropagation();
-    const title = setBtn.getAttribute('data-status-set');
-    const status = setBtn.getAttribute('data-status');
-    bookStatus[title] = status;
-    renderLeft();
-    renderResults();
-    return;
-  }
-  // locate
-  const loc = e.target.closest('[data-locate]');
-  if (loc) {
-    if (stopParent && stopParent !== loc && stopParent.contains(e.target)) {
-      // prevent locate when clicking link/status inside
-    }
-    const id = loc.getAttribute('data-locate');
-    const tab = loc.getAttribute('data-locate-tab');
-    if (tab && tab !== leftTab) switchLeftTab(tab);
-    setTimeout(() => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.remove('highlight');
-        void el.offsetWidth;
-        el.classList.add('highlight');
-      }
-    }, 60);
-  }
-});
-
-document.body.addEventListener('change', (e) => {
-  const t = e.target.closest('[data-cat-toggle]');
-  if (t) {
-    const c = t.getAttribute('data-cat-toggle');
-    catActive[c] = t.checked;
-    renderLeft();
-    renderResults();
-  }
-});
-
-/* prevent locate when clicking inner links */
-document.body.addEventListener('click', (e) => {
-  if (e.target.closest('a') || e.target.closest('.status')) e.stopPropagation();
-}, true);
-
-/* ============== COPY OPTIMAL ============== */
-$('btn-copy-optimal').addEventListener('click', async () => {
-  if (!lastOptimal.selected.length) return;
-  const activeCats = new Set(data.categories.filter(c => catActive[c]));
-  let md = '### 📚 My Optimal Reading List\n\n';
-  lastOptimal.selected.forEach(t => {
-    const b = data.books[t];
-    const tags = b.categories.filter(c => activeCats.has(c)).join(', ');
-    md += `- [${t}](${b.url}) *(Covers: ${tags})*\n`;
-  });
-  try {
-    await navigator.clipboard.writeText(md);
-    toast('Optimal list copied as markdown', 'success');
-  } catch { toast('Could not copy', 'error'); }
-});
-
-/* ============== SPREADSHEET VIEW ============== */
 function renderSheet() {
   const tbody = $('sheet-body');
   tbody.innerHTML = '';
-  data.sections.forEach((sec, i) => {
-    if (i > 0) {
-      const sp = document.createElement('tr');
-      sp.className = 'spacer';
-      sp.innerHTML = '<td class="spacer" colspan="2"></td>';
-      tbody.appendChild(sp);
-    }
-    const label = sec.categories.join(' + ') + (sec.commonText ? ` (${sec.commonText})` : '');
+  activeData.sections.forEach((sec, i) => {
+    if (i > 0) tbody.innerHTML += '<tr class="spacer"><td colspan="2"></td></tr>';
+    const label = sec.categories.join(' + ');
     sec.books.forEach((b, idx) => {
-      const tr = document.createElement('tr');
-      tr.innerHTML = `<td class="cat">${idx === 0 ? escapeHtml(label) : ''}</td>
-        <td><a href="${escapeHtml(b.url)}" target="_blank" rel="noopener">${escapeHtml(b.title)}</a></td>`;
-      tbody.appendChild(tr);
+      tbody.innerHTML += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
     });
   });
-  $('convert-sub').textContent = `${data.sections.length} combinations · ${Object.keys(data.books).length} books · Ready to paste into Excel/Sheets`;
+  $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
 }
 
-$('btn-copy-sheet').addEventListener('click', async () => {
-  let html = '<table><thead><tr><th>Category Combination</th><th>Common Books</th></tr></thead><tbody>';
-  let plain = 'Category Combination\tCommon Books\n';
-  data.sections.forEach((sec, i) => {
-    if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
-    const label = sec.categories.join(' + ') + (sec.commonText ? ` (${sec.commonText})` : '');
-    sec.books.forEach((b, idx) => {
-      const cat = idx === 0 ? label : '';
-      html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a></td></tr>`;
-      plain += `${cat}\t${b.title}\n`;
-    });
-  });
-  html += '</tbody></table>';
+// --- EVENT LISTENERS ---
+$('mode-optimize').addEventListener('click', () => { mode='optimize'; $('mode-optimize').classList.add('active'); $('mode-convert').classList.remove('active'); $('view-optimize').classList.remove('hidden'); $('view-convert').classList.add('hidden'); });
+$('mode-convert').addEventListener('click', () => { mode='convert'; $('mode-convert').classList.add('active'); $('mode-optimize').classList.remove('active'); $('view-convert').classList.remove('hidden'); $('view-optimize').classList.add('hidden'); });
 
-  try {
-    if (navigator.clipboard && window.ClipboardItem) {
-      await navigator.clipboard.write([new ClipboardItem({
-        'text/html': new Blob([html], { type: 'text/html' }),
-        'text/plain': new Blob([plain], { type: 'text/plain' }),
-      })]);
-    } else {
-      await navigator.clipboard.writeText(plain);
-    }
-    toast('Copied — paste into Excel or Google Sheets', 'success');
-  } catch {
-    // selection fallback
-    const range = document.createRange();
-    range.selectNodeContents(document.querySelector('table.sheet'));
-    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
-    try { document.execCommand('copy'); toast('Copied!', 'success'); }
-    catch { toast('Could not copy', 'error'); }
-    sel.removeAllRanges();
+$('tab-books').addEventListener('click', () => { leftTab='books'; $('tab-books').classList.add('active'); $('tab-cats').classList.remove('active'); $('list-books').classList.remove('hidden'); $('list-cats').classList.add('hidden'); renderLeft();});
+$('tab-cats').addEventListener('click', () => { leftTab='cats'; $('tab-cats').classList.add('active'); $('tab-books').classList.remove('active'); $('list-cats').classList.remove('hidden'); $('list-books').classList.add('hidden'); renderLeft();});
+
+$('tab-optimal').addEventListener('click', () => { rightTab='optimal'; $('tab-optimal').classList.add('active'); $('tab-avoid').classList.remove('active'); $('output-optimal').classList.remove('hidden'); $('output-avoid').classList.add('hidden'); });
+$('tab-avoid').addEventListener('click', () => { rightTab='avoid'; $('tab-avoid').classList.add('active'); $('tab-optimal').classList.remove('active'); $('output-avoid').classList.remove('hidden'); $('output-optimal').classList.add('hidden'); });
+
+$('search-input').addEventListener('input', (e) => { search = e.target.value; renderLeft(); });
+$('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLeft(); });
+
+document.body.addEventListener('click', e => {
+  const setBtn = e.target.closest('[data-status-set]');
+  if (setBtn) {
+    bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
+    renderLeft(); renderResults();
   }
 });
+document.body.addEventListener('change', e => {
+  const t = e.target.closest('[data-cat-toggle]');
+  if (t) { catActive[t.dataset.catToggle] = t.checked; renderLeft(); renderResults(); }
+});
 
-/* ============== INIT ============== */
-renderAll();
+$('btn-reset').addEventListener('click', () => {
+  for(let k in bookStatus) bookStatus[k] = 'neutral';
+  for(let k in catActive) catActive[k] = true;
+  $('search-input').value = ''; search = '';
+  $('status-filter').value = 'all'; statusFilter = 'all';
+  renderAll();
+});
+
+// Start the app
+loadData();
 </script>
 </body>
 </html>

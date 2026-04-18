@@ -23,13 +23,14 @@
     --destructive: #f87171; --destructive-soft: #3a1f1f;
   }
   *, *::before, *::after { box-sizing: border-box; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;}
   a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
+  /* Header */
   header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
-  .header-inner { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .header-inner { max-width: 1400px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .brand { display: flex; align-items: center; gap: 10px; }
   .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); }
   .brand h1 { font-size: 15px; margin: 0; font-weight: 700; }
@@ -41,15 +42,7 @@
   .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent) !important; }
   @media (max-width: 540px) { .link-label { display: none; } .header-link { padding: 6px 8px; } }
 
-  main { max-width: 1200px; margin: 0 auto; padding: 24px 20px 60px; display: flex; flex-direction: column; gap: 20px; }
-  
-  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); overflow: hidden; }
-  .card-head { padding: 14px 18px; border-bottom: 1px solid var(--border); background: color-mix(in oklab, var(--muted) 70%, transparent); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-  .card-head h3 { margin: 0; font-size: 14px; }
-  .card-head .sub { font-size: 12px; color: var(--muted-fg); margin-top: 2px;}
-  .card-body { padding: 16px 18px; }
-
-  .btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
   .btn:hover { filter: brightness(.95); }
   .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
   .btn.outline:hover { background: var(--muted); }
@@ -58,102 +51,94 @@
   .btn.sm { padding: 6px 10px; font-size: 12px; }
   .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
 
-  input[type=text], select { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--fg); font-size: 13px; outline: none; }
-  input:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
+  /* Dashboard Layout */
+  .dashboard { display: grid; grid-template-columns: 320px 1fr; gap: 24px; max-width: 1400px; margin: 0 auto; padding: 24px 20px; align-items: start; }
+  @media (max-width: 900px) { .dashboard { grid-template-columns: 1fr; } }
 
-  /* Challenge Selector Grid */
-  .challenge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; margin-top: 12px; }
-  .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--muted); cursor: pointer; transition: 0.2s; }
-  .challenge-item:hover { border-color: var(--primary); }
+  /* Sidebar (Challenges) */
+  .sidebar { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 88px; }
+  .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4px; }
+  .sidebar-header h2 { font-size: 16px; margin: 0; }
+  .sidebar-actions { display: flex; gap: 4px; }
+  
+  .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 160px); overflow-y: auto; padding-right: 4px; }
+  .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); }
+  .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
   .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
   .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; }
   .challenge-info { flex-grow: 1; }
   .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
   .challenge-info span { font-size: 11px; color: var(--muted-fg); }
 
-  /* Mode tabs */
-  .mode-tabs { display: inline-flex; padding: 4px; gap: 4px; background: var(--muted); border: 1px solid var(--border); border-radius: 10px; }
-  .mode-tabs button { background: transparent; border: 0; padding: 8px 14px; border-radius: 7px; font-size: 13px; font-weight: 600; color: var(--muted-fg); }
-  .mode-tabs button.active { background: var(--card); color: var(--fg); box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-  .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 4px; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; }
-  .tabs button { background: transparent; border: 0; padding: 8px; border-radius: 6px; font-size: 12.5px; font-weight: 600; color: var(--muted-fg); }
-  .tabs button.active { background: var(--card); color: var(--fg); box-shadow: 0 1px 2px rgba(0,0,0,.05); }
-
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  @media (max-width: 900px) { .grid-2 { grid-template-columns: 1fr; } }
+  /* Main Content Area */
+  .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
   
-  .stats-bar { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 10px 12px; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; font-size: 12px; }
-  .stats-bar .lab { color: var(--muted-fg); }
-  .stats-bar .ok { color: var(--success); font-weight: 700; }
-  .stats-bar .bad { color: var(--destructive); font-weight: 700; }
+  /* Tabs */
+  .workspace-tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--muted); padding: 8px 12px 0 12px; gap: 4px; overflow-x: auto; border-radius: var(--radius) var(--radius) 0 0; }
+  .workspace-tabs button { background: transparent; border: 1px solid transparent; border-bottom: none; padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--muted-fg); border-radius: 8px 8px 0 0; transition: .15s; white-space: nowrap; }
+  .workspace-tabs button:hover { color: var(--fg); background: color-mix(in oklab, var(--card) 50%, transparent); }
+  .workspace-tabs button.active { background: var(--card); color: var(--fg); border-color: var(--border); box-shadow: 0 -2px 0 var(--primary) inset; }
 
-  .search-row { display: flex; gap: 8px; margin-top: 10px; }
-  .search-row .search { flex: 1; position: relative; }
-  .search-row .search input { padding-left: 30px; }
-  .search-row .search::before { content: "🔍"; position: absolute; left: 8px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
-
-  .list { margin-top: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px; display: flex; flex-direction: column; gap: 8px; }
-  .list-item { padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); transition: background .2s; }
-  .item-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-  .book-title { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--fg); display: inline-flex; align-items: center; gap: 4px;}
-  .book-title:hover { color: var(--primary); }
-  .book-title .ext { font-size: 10px; opacity: .55; }
+  /* Workspace Header & Actions */
+  .workspace-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .workspace-title h3 { margin: 0; font-size: 16px; }
+  .workspace-title p { margin: 4px 0 0 0; font-size: 12px; color: var(--muted-fg); }
   
-  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-  .tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: .15s; }
-  .tag:hover { border-color: var(--primary); color: var(--primary); }
+  /* Filter Row */
+  .filter-row { display: flex; gap: 8px; width: 100%; max-width: 500px; }
+  .filter-row .search { flex: 1; position: relative; } /* Search takes most space */
+  .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
+  .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
+  .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
+  .filter-row select { width: 110px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; } /* Dropdown is shorter */
+
+  .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
+
+  /* Lists & Cards */
+  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
+  .book-card { padding: 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); display: flex; flex-direction: column; justify-content: space-between; gap: 12px; transition: .15s; box-shadow: var(--shadow-soft); }
+  .book-card:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .book-card.avoid { border-left: 4px solid var(--destructive); }
+  .book-card.optimal { border-left: 4px solid var(--primary); }
+  
+  .book-title { font-weight: 700; font-size: 14px; color: var(--fg); display: inline-block; line-height: 1.3;}
+  .book-title:hover { color: var(--primary); text-decoration: underline; }
+  
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
-  .tag.inactive { text-decoration: line-through; opacity: .55; }
 
-  /* Highlight Animation for scroll tracking */
-  .list-item.highlight { animation: pulse 1.6s ease-out; }
-  @keyframes pulse {
-    0% { background: var(--card); }
-    20% { background: var(--primary-soft); box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 25%, transparent); }
-    100% { background: var(--card); }
-  }
+  /* Status Buttons */
+  .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .status-group button { flex: 1; border: none; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 6px 10px; transition: .15s; }
+  .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
+  .status-group button.active.inc { background: var(--success); color: #fff; }
+  .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
+  .status-group button.active.exc { background: var(--destructive); color: #fff; }
+  .status-group button:not(:last-child) { border-right: 1px solid var(--border); }
 
-  .status { display: inline-flex; gap: 2px; padding: 2px; background: var(--muted); border: 1px solid var(--border); border-radius: 7px; }
-  .status button { border: 0; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 4px 8px; border-radius: 5px; }
-  .status button:hover { color: var(--fg); }
-  .status button.active.inc { background: var(--success); color: #fff; }
-  .status button.active.neu { background: var(--muted-fg); color: var(--bg); }
-  .status button.active.exc { background: var(--destructive); color: #fff; }
-
-  .switch { position: relative; display: inline-block; width: 36px; height: 20px; flex-shrink: 0; }
-  .switch input { opacity: 0; width: 0; height: 0; }
-  .slider { position: absolute; inset: 0; background: var(--muted-fg); border-radius: 999px; transition: .2s; cursor: pointer; }
-  .slider::before { content: ""; position: absolute; height: 14px; width: 14px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: .2s; }
-  .switch input:checked + .slider { background: var(--success); }
-  .switch input:checked + .slider::before { transform: translateX(16px); }
-
-  .result-card { padding: 12px; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; background: var(--card); cursor: pointer; transition: transform .15s, background .15s;}
-  .result-card:hover { transform: translateY(-1px); background: color-mix(in oklab, var(--accent) 50%, var(--card)); }
-  .result-card.avoid { border-left-color: var(--destructive); }
-  
-  .banner { display: flex; gap: 10px; padding: 12px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; }
+  /* Banners */
+  .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
   .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
-  .empty { text-align: center; padding: 36px 18px; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted-fg); font-size: 13px; }
+  .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
+  .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .empty .icon { font-size: 32px; }
 
-  .sheet-wrap { max-height: 60vh; overflow: auto; }
-  table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; }
-  table.sheet th { position: sticky; top: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .04em;}
-  table.sheet td { border-bottom: 1px solid var(--border); padding: 10px 14px; vertical-align: top; }
-  table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 40%; }
-  table.sheet tr.spacer td { background: color-mix(in oklab, var(--muted) 60%, transparent); height: 8px; padding: 0; }
-  table.sheet tr:hover td:not(.spacer) { background: color-mix(in oklab, var(--accent) 40%, transparent); }
-  table.sheet a { color: var(--primary); text-decoration: none; }
-  table.sheet a:hover { text-decoration: underline; }
+  /* Spreadsheet */
+  table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; background: var(--card); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-soft); }
+  table.sheet th { background: var(--muted); border-bottom: 1px solid var(--border); padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .05em; }
+  table.sheet td { border-bottom: 1px solid var(--border); padding: 12px 16px; vertical-align: top; }
+  table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 45%; }
+  table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
+  table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
 
   /* Toast */
   #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
-  .toast { padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
+  .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
   .toast.success { background: var(--success); color: #fff; }
   .toast.error { background: var(--destructive); color: #fff; }
   @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-  .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-  .muted { color: var(--muted-fg); font-size: 12px; }
   .hidden { display: none !important; }
 </style>
 </head>
@@ -169,7 +154,6 @@
       </div>
     </div>
     <div class="header-actions">
-      <!-- Added Ko-fi and Feedback Buttons back here -->
       <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
       <a href="https://docs.google.com/forms/d/1DEVY531vE3geAxmKLumf3DBKidbInquz2KuM1wq52fY/" target="_blank" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
       <button class="btn icon ghost" id="theme-toggle">🌙</button>
@@ -177,93 +161,96 @@
   </div>
 </header>
 
-<main>
-  <!-- Step 1: Select Challenges -->
-  <section class="card">
-    <div class="card-head">
-      <div>
-        <h3>1. Select Your Challenges</h3>
-        <div class="sub">Choose the lists you want to read from. Overlaps are computed automatically.</div>
-      </div>
-      <div style="display:flex; gap:6px;">
-        <button class="btn outline sm" id="btn-select-all">Select All</button>
+<div class="dashboard">
+  <!-- Sidebar: Challenges -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Select Challenges</h2>
+      <div class="sidebar-actions">
+        <button class="btn ghost sm" id="btn-select-all">All</button>
         <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
       </div>
     </div>
-    <div class="card-body">
-      <div id="challenge-grid" class="challenge-grid">
-        <!-- Injected via JS -->
+    <div id="challenge-grid" class="challenge-list">
+      <!-- Injected via JS -->
+    </div>
+  </aside>
+
+  <!-- Main Workspace -->
+  <main class="workspace hidden" id="workspace">
+    <div class="workspace-tabs">
+      <button id="tab-library" class="active">📚 Master Library</button>
+      <button id="tab-optimal">✨ Optimal Path</button>
+      <button id="tab-spreadsheet">▦ Spreadsheet</button>
+    </div>
+
+    <!-- LIBRARY VIEW -->
+    <div id="view-library">
+      <div class="workspace-header">
+        <div class="workspace-title">
+          <h3>Configure Books</h3>
+          <p id="library-stats">Showing books from selected challenges.</p>
+        </div>
+        <div class="filter-row">
+          <div class="search"><input id="search-input" type="text" placeholder="Search title or author..." /></div>
+          <select id="status-filter">
+            <option value="all">All Status</option>
+            <option value="include">✓ Read</option>
+            <option value="exclude">✕ Avoid</option>
+          </select>
+        </div>
+        <button class="btn ghost sm" id="btn-reset" title="Reset Read/Avoid statuses">🔄 Reset</button>
+      </div>
+      <div class="workspace-content">
+        <div class="book-grid" id="list-books"></div>
       </div>
     </div>
-  </section>
 
-  <!-- Navigation -->
-  <div class="mode-tabs hidden" id="main-nav">
-    <button id="mode-optimize" class="active">✨ Optimizer</button>
-    <button id="mode-convert">▦ Spreadsheet</button>
-  </div>
-
-  <!-- OPTIMIZE VIEW -->
-  <section id="view-optimize" class="hidden">
-    <div class="grid-2">
-      <!-- Configure -->
-      <div class="card">
-        <div class="card-head">
-          <div><h3>2. Configure Library</h3><div class="sub">Mark books you've read or want to avoid.</div></div>
-          <button class="btn ghost sm" id="btn-reset">🔄 Reset</button>
+    <!-- OPTIMAL PATH VIEW -->
+    <div id="view-optimal" class="hidden">
+      <div class="workspace-header">
+        <div class="workspace-title">
+          <h3>Your Shortest Path</h3>
+          <p id="optimal-stats">The mathematically smallest set of books to hit your goals.</p>
         </div>
-        <div class="card-body">
-          <div class="stats-bar" id="stats-bar"></div>
-          <div class="tabs" style="margin-top:12px;">
-            <button id="tab-books" class="active">📖 Books</button>
-            <button id="tab-cats">🏷️ Challenges</button>
-          </div>
-          <div class="search-row">
-            <div class="search"><input id="search-input" type="text" placeholder="Search..." /></div>
-            <select id="status-filter">
-              <option value="all">All</option>
-              <option value="include">✓ Read</option>
-              <option value="exclude">✕ Avoid</option>
-            </select>
-          </div>
-          <div class="list" id="list-books"></div>
-          <div class="list hidden" id="list-cats"></div>
-        </div>
-      </div>
-
-      <!-- Results -->
-      <div class="card">
-        <div class="card-head">
-          <div><h3>3. Optimal Reading List</h3><div class="sub">Smallest set of books to hit your goals.</div></div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn ghost sm" id="btn-shuffle">🎲 Alternate Path</button>
           <button class="btn outline sm" id="btn-copy-optimal">📋 Copy List</button>
         </div>
-        <div class="card-body">
-          <div class="tabs">
-            <button id="tab-optimal" class="active">🏆 Optimal</button>
-            <button id="tab-avoid">⚠️ Avoid (<span id="avoid-count">0</span>)</button>
-          </div>
-          <div id="output-optimal" style="margin-top:14px;"></div>
-          <div id="output-avoid" style="margin-top:14px;" class="hidden"></div>
-        </div>
+      </div>
+      <div class="workspace-content">
+        <div id="output-optimal"></div>
+        <div id="output-avoid" style="margin-top:24px;"></div>
       </div>
     </div>
-  </section>
 
-  <!-- CONVERT VIEW -->
-  <section id="view-convert" class="card hidden">
-    <div class="card-head">
-      <div><h3>Spreadsheet (Overlapping Books)</h3><div class="sub" id="convert-sub"></div></div>
-      <button class="btn sm" id="btn-copy-sheet">📋 Copy for Excel</button>
+    <!-- SPREADSHEET VIEW -->
+    <div id="view-spreadsheet" class="hidden">
+      <div class="workspace-header">
+        <div class="workspace-title">
+          <h3>Overlap Spreadsheet</h3>
+          <p id="convert-sub">Ready to paste into Excel or Google Sheets.</p>
+        </div>
+        <button class="btn outline sm" id="btn-copy-sheet">📋 Copy for Excel</button>
+      </div>
+      <div class="workspace-content" style="padding: 0;">
+        <table class="sheet">
+          <thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead>
+          <tbody id="sheet-body"></tbody>
+        </table>
+      </div>
     </div>
-    <div class="sheet-wrap">
-      <table class="sheet">
-        <thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead>
-        <tbody id="sheet-body"></tbody>
-      </table>
-    </div>
-  </section>
+  </main>
 
-</main>
+  <!-- Empty State before selection -->
+  <main class="workspace" id="workspace-empty" style="justify-content: center;">
+    <div class="empty" style="border:none;">
+      <div class="icon">👈</div>
+      <h2>Select your challenges</h2>
+      <p>Pick at least one challenge from the sidebar to start optimizing your reading list.</p>
+    </div>
+  </main>
+</div>
 
 <div id="toast-host"></div>
 
@@ -271,21 +258,17 @@
 // --- GLOBAL STATE ---
 let rawDatabase = { challenges: [], books: [] };
 let selectedChallenges = new Set();
-let activeData = { sections: [], books: {}, categories: [] };
-let bookStatus = {}; 
-let catActive = {}; 
+let activeData = { sections: [], books: [], categories: [] };
+let bookStatus = {}; // Maps unique internal ID to 'include' | 'exclude' | 'neutral'
 let lastOptimal = { selected: [], uncovered: [] };
 
-let mode = 'optimize';
-let leftTab = 'books';
-let rightTab = 'optimal';
+let currentTab = 'library';
 let search = '';
 let statusFilter = 'all';
 
 // --- HELPERS ---
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const safeId = (s) => 'id-' + btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
 function toast(msg, kind='') {
   const host = $('toast-host');
@@ -313,6 +296,10 @@ async function loadData() {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error("Could not load data.json");
     rawDatabase = await res.json();
+    
+    // Assign a safe internal ID to each book to avoid HTML escaping bugs with titles
+    rawDatabase.books.forEach((b, idx) => { b.id = 'b_' + idx; });
+
     const dt = new Date(rawDatabase.lastUpdated);
     $('last-updated').textContent = `Last synced: ${dt.toLocaleDateString()} ${dt.toLocaleTimeString()}`;
     renderChallengeGrid();
@@ -325,7 +312,7 @@ function renderChallengeGrid() {
   const grid = $('challenge-grid');
   grid.innerHTML = rawDatabase.challenges.map(c => `
     <div class="challenge-item" data-id="${escapeHtml(c.id)}">
-      <input type="checkbox" id="chk-${safeId(c.id)}" />
+      <input type="checkbox" />
       <div class="challenge-info">
         <strong>${escapeHtml(c.name)}</strong>
         <span>${c.count} books</span>
@@ -334,17 +321,14 @@ function renderChallengeGrid() {
   `).join('');
 }
 
-// Delegate click for challenge grid to avoid inline apostrophe escaping bugs
+// Delegate click for challenge grid
 $('challenge-grid').addEventListener('click', (e) => {
     const item = e.target.closest('.challenge-item');
     if (!item) return;
     const id = item.getAttribute('data-id');
 
-    if (selectedChallenges.has(id)) {
-        selectedChallenges.delete(id);
-    } else {
-        selectedChallenges.add(id);
-    }
+    if (selectedChallenges.has(id)) selectedChallenges.delete(id);
+    else selectedChallenges.add(id);
     
     document.querySelectorAll('.challenge-item').forEach(el => {
         const isSel = selectedChallenges.has(el.dataset.id);
@@ -357,7 +341,6 @@ $('challenge-grid').addEventListener('click', (e) => {
 
 $('btn-select-all').addEventListener('click', () => {
   rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id));
-  renderChallengeGrid(); 
   document.querySelectorAll('.challenge-item').forEach(el => { el.classList.add('selected'); el.querySelector('input').checked=true; });
   recomputeActiveData();
 });
@@ -382,37 +365,37 @@ function getSubsets(array, minSize = 2) {
 
 function recomputeActiveData() {
   if (selectedChallenges.size === 0) {
-    $('main-nav').classList.add('hidden');
-    $('view-optimize').classList.add('hidden');
-    $('view-convert').classList.add('hidden');
+    $('workspace').classList.add('hidden');
+    $('workspace-empty').classList.remove('hidden');
     return;
   }
   
-  $('main-nav').classList.remove('hidden');
-  $('view-optimize').classList.remove('hidden');
+  $('workspace').classList.remove('hidden');
+  $('workspace-empty').classList.add('hidden');
 
   activeData.categories = Array.from(selectedChallenges);
-  activeData.books = {};
+  activeData.books = [];
   const overlapMap = new Map();
 
   rawDatabase.books.forEach(b => {
     const relevantCats = b.challenges.filter(c => selectedChallenges.has(c));
     if (relevantCats.length > 0) {
-      activeData.books[b.title] = { title: b.title, url: b.url, categories: relevantCats };
-      if (!bookStatus[b.title]) bookStatus[b.title] = 'neutral';
+      // Create a working copy of the book with only the relevant categories
+      const workingBook = { ...b, categories: relevantCats };
+      activeData.books.push(workingBook);
+      
+      if (!bookStatus[b.id]) bookStatus[b.id] = 'neutral';
       
       if (relevantCats.length >= 2) {
         const subsets = getSubsets(relevantCats, 2);
         subsets.forEach(subset => {
           const key = subset.sort().join(" + ");
           if(!overlapMap.has(key)) overlapMap.set(key, { categories: subset, books: [] });
-          overlapMap.get(key).books.push(b);
+          overlapMap.get(key).books.push(workingBook);
         });
       }
     }
   });
-
-  activeData.categories.forEach(c => { if(catActive[c] === undefined) catActive[c] = true; });
 
   activeData.sections = Array.from(overlapMap.values()).sort((a,b) => {
     if (b.categories.length !== a.categories.length) return b.categories.length - a.categories.length;
@@ -422,171 +405,180 @@ function recomputeActiveData() {
   renderAll();
 }
 
-// --- OPTIMIZER & RENDER LOGIC ---
+// --- RENDERING LOGIC ---
 
 function renderAll() {
-  renderLeft();
+  renderLibrary();
   renderResults();
   renderSheet();
 }
 
-function statusButtonsHTML(title) {
-  const s = bookStatus[title] || 'neutral';
+function statusButtonsHTML(bookId) {
+  const s = bookStatus[bookId] || 'neutral';
   return `
-    <div class="status" data-stop>
-      <button class="inc ${s==='include'?'active':''}" data-status-set="${escapeHtml(title)}" data-status="include">✓ Read</button>
-      <button class="neu ${s==='neutral'?'active':''}" data-status-set="${escapeHtml(title)}" data-status="neutral">Auto</button>
-      <button class="exc ${s==='exclude'?'active':''}" data-status-set="${escapeHtml(title)}" data-status="exclude">✕ Avoid</button>
+    <div class="status-group" data-stop>
+      <button class="inc ${s==='include'?'active':''}" data-status-set="${bookId}" data-status="include">✓ Read</button>
+      <button class="neu ${s==='neutral'?'active':''}" data-status-set="${bookId}" data-status="neutral">Auto</button>
+      <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude">✕ Avoid</button>
     </div>
   `;
 }
 
-function renderLeft() {
-  const total = Object.keys(activeData.books).length;
-  const inc = Object.values(activeData.books).filter(b => bookStatus[b.title] === 'include').length;
-  const exc = Object.values(activeData.books).filter(b => bookStatus[b.title] === 'exclude').length;
-  const cTotal = activeData.categories.length;
-  const cAct = activeData.categories.filter(c => catActive[c]).length;
+function renderLibrary() {
+  const total = activeData.books.length;
+  const inc = activeData.books.filter(b => bookStatus[b.id] === 'include').length;
+  const exc = activeData.books.filter(b => bookStatus[b.id] === 'exclude').length;
   
-  $('stats-bar').innerHTML = `
-    <div><span class="lab">Books</span> <strong>${total}</strong> <span class="ok">✓ ${inc}</span> <span class="bad">✕ ${exc}</span></div>
-    <div><span class="lab">Challenges</span> <strong>${cTotal}</strong> <span class="ok">● ${cAct}</span> <span class="lab">○ ${cTotal - cAct}</span></div>
-  `;
+  $('library-stats').textContent = `${total} Total Books | ✓ ${inc} Read | ✕ ${exc} Avoided`;
 
   const q = search.toLowerCase();
   
-  // Left: Books List
-  const lb = $('list-books');
-  const books = Object.values(activeData.books)
-    .filter(b => b.title.toLowerCase().includes(q))
+  const books = activeData.books
+    .filter(b => b.title.toLowerCase().includes(q) || (b.author && b.author.toLowerCase().includes(q)))
     .filter(b => {
-      const s = bookStatus[b.title];
+      const s = bookStatus[b.id];
       if (statusFilter === 'all') return true;
       if (statusFilter === 'include') return s === 'include';
       if (statusFilter === 'exclude') return s === 'exclude';
       return true;
     }).sort((a,b) => a.title.localeCompare(b.title));
     
-  lb.innerHTML = books.map(b => {
-    const id = 'book-' + safeId(b.title);
-    return `
-    <div class="list-item" id="${id}">
-      <div class="item-head">
-        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)} <span class="ext">↗</span></a>
-        ${statusButtonsHTML(b.title)}
+  const lb = $('list-books');
+  lb.innerHTML = books.map(b => `
+    <div class="book-card ${bookStatus[b.id] === 'exclude' ? 'avoid' : ''}">
+      <div>
+        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
+        <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown')}</div>
+        <div class="tags">${b.categories.map(c => `<span class="tag">${escapeHtml(c)}</span>`).join('')}</div>
       </div>
-      <div class="tags">${b.categories.map(c => `<span class="tag ${catActive[c]?'':'inactive'}" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div>
+      <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
     </div>
-  `}).join('') || '<div class="empty">No books found.</div>';
-
-  // Left: Categories List
-  const lc = $('list-cats');
-  const cats = activeData.categories.filter(c => c.toLowerCase().includes(q)).sort();
-  lc.innerHTML = cats.map(c => {
-      const id = 'cat-' + safeId(c);
-      return `
-    <div class="list-item" id="${id}"><div class="item-head" style="align-items:center;">
-      <div style="font-weight:600; font-size:13px; ${catActive[c]?'':'text-decoration:line-through;opacity:0.5'}">${escapeHtml(c)}</div>
-      <label class="switch"><input type="checkbox" data-cat-toggle="${escapeHtml(c)}" ${catActive[c]?'checked':''}><span class="slider"></span></label>
-    </div></div>
-  `}).join('') || '<div class="empty">No challenges found.</div>';
+  `).join('') || '<div class="empty"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
 }
 
 function renderResults(forceRandom = false) {
-  const activeCats = new Set(activeData.categories.filter(c => catActive[c]));
+  const activeCats = new Set(activeData.categories);
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
-  let hasOverlaps = false, hasExcludedOverlaps = false;
+  let hasOverlaps = false;
 
-  for (const [t, b] of Object.entries(activeData.books)) {
-    const cnt = b.categories.filter(c => activeCats.has(c)).length;
-    if (cnt > 1) {
-        if (bookStatus[t] !== 'exclude') hasOverlaps = true; else hasExcludedOverlaps = true;
-    }
-  }
+  // Track what needs to be avoided globally
+  const avoidList = [];
 
-  for (const [t, b] of Object.entries(activeData.books)) {
-    if (bookStatus[t] === 'include') {
-      selected.push(t);
-      b.categories.forEach(c => activeCats.has(c) && uncovered.delete(c));
-    } else if (bookStatus[t] !== 'exclude') {
-      available.push(t);
+  activeData.books.forEach(b => {
+    if (b.categories.length > 1) {
+        if (bookStatus[b.id] !== 'exclude') hasOverlaps = true;
+        if (bookStatus[b.id] !== 'include') avoidList.push({ b, cnt: b.categories.length });
     }
-  }
+
+    if (bookStatus[b.id] === 'include') {
+      selected.push(b);
+      b.categories.forEach(c => uncovered.delete(c));
+    } else if (bookStatus[b.id] !== 'exclude') {
+      available.push(b);
+    }
+  });
 
   const randomMode = !hasOverlaps && selected.length === 0;
 
-  while (uncovered.size > 0 && available.length) {
-    let candidates = [], max = 0;
-    for (const t of available) {
-      const cov = activeData.books[t].categories.filter(c => uncovered.has(c)).length;
-      if (randomMode || forceRandom) { if (cov > 0) candidates.push(t); }
-      else if (cov > max) { max = cov; candidates = [t]; }
-      else if (cov === max && max > 0) candidates.push(t);
+  // --- RARITY-WEIGHTED GREEDY SET COVER ---
+  // This ensures we mathematically pick the fewest books by targeting rare challenges first
+  while (uncovered.size > 0 && available.length > 0) {
+    
+    // 1. Calculate rarity of each remaining uncovered category
+    const catCounts = {};
+    uncovered.forEach(c => catCounts[c] = 0);
+    available.forEach(b => {
+        b.categories.forEach(c => { if (uncovered.has(c)) catCounts[c]++; });
+    });
+
+    let bestBook = null;
+    let maxCov = 0;
+    let bestRarityScore = Infinity; 
+
+    // 2. Pick the book covering the most categories. If tie, pick the one covering the rarest category.
+    // If forceRandom, ignore optimization and just pick valid ones.
+    let candidates = [];
+
+    for (const b of available) {
+      const covCats = b.categories.filter(c => uncovered.has(c));
+      const cov = covCats.length;
+      if (cov === 0) continue;
+
+      if (randomMode || forceRandom) {
+          candidates.push(b);
+      } else {
+          const rarityScore = Math.min(...covCats.map(c => catCounts[c]));
+          if (cov > maxCov) {
+              maxCov = cov; bestRarityScore = rarityScore; bestBook = b;
+          } else if (cov === maxCov && rarityScore < bestRarityScore) {
+              bestRarityScore = rarityScore; bestBook = b;
+          }
+      }
     }
-    if (!candidates.length) break;
-    const pick = candidates[Math.floor(Math.random() * candidates.length)];
-    selected.push(pick);
-    activeData.books[pick].categories.forEach(c => activeCats.has(c) && uncovered.delete(c));
-    available = available.filter(b => b !== pick);
+
+    if (randomMode || forceRandom) {
+        if (candidates.length === 0) break;
+        bestBook = candidates[Math.floor(Math.random() * candidates.length)];
+    }
+
+    if (!bestBook) break;
+
+    selected.push(bestBook);
+    bestBook.categories.forEach(c => uncovered.delete(c));
+    available = available.filter(b => b.id !== bestBook.id);
   }
 
   lastOptimal = { selected, uncovered: Array.from(uncovered) };
+  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Shortest Path: ${selected.length} Books`;
 
   let html = '';
   if (randomMode) {
-    html += `<div class="banner"><div style="font-size:18px;">ℹ️</div><div><strong>No overlaps found.</strong> Showing one random book per active challenge. ${hasExcludedOverlaps ? '<small>Some overlapping books exist but are set to "Avoid".</small>' : ''}</div></div>`;
+    html += `<div class="banner"><div style="font-size:18px;">ℹ️</div><div><strong>No overlaps found.</strong> Showing one random book per challenge.</div></div>`;
+  }
+  if (uncovered.size > 0) {
+      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Remaining: ${Array.from(uncovered).map(escapeHtml).join(', ')}. Try un-excluding some books.</div></div>`;
   }
 
-  html += `
-    <div class="row" style="margin: ${randomMode ? '12px 0' : '0 0 12px'};">
-      <div>
-        <div style="font-weight:700; font-size:14px;">${selected.length} book${selected.length===1?'':'s'} selected</div>
-        <div class="muted">Covers ${activeCats.size - uncovered.size} / ${activeCats.size} active challenges</div>
-      </div>
-      <button class="btn ghost sm" id="btn-shuffle">🎲 Shuffle</button>
-    </div>
-    <div class="list" style="margin-top:0;">
-  `;
-
   if (activeCats.size === 0) {
-      html += '<div class="empty">All challenges are excluded.</div>';
+      html += '<div class="empty">No challenges selected.</div>';
   } else if (!selected.length) {
       html += '<div class="empty">No books available for optimal path.</div>';
   } else {
-      html += selected.map(t => {
-        const b = activeData.books[t];
-        const id = 'book-' + safeId(t);
-        return `<div class="result-card" data-locate="${id}" data-locate-tab="books"><div class="item-head"><a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(t)} <span class="ext">↗</span></a></div>
-        <div class="tags">${b.categories.filter(c=>activeCats.has(c)).map(c=>`<span class="tag" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div></div>`;
-      }).join('');
-  }
-  html += `</div>`;
-  
-  if (uncovered.size > 0) {
-      html += `<div class="banner warn" style="margin-top:12px;"><div><strong>⚠️ Uncovered challenges:</strong><ul style="margin:6px 0 0; padding-left:18px; font-size:12px;">${Array.from(uncovered).map(c=>`<li>${escapeHtml(c)}</li>`).join('')}</ul></div></div>`;
+      html += `<div class="book-grid">` + selected.map(b => `
+        <div class="book-card optimal">
+            <div>
+                <a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
+                <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">by ${escapeHtml(b.author || 'Unknown')}</div>
+                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}">${escapeHtml(c)}</span>`).join('')}</div>
+            </div>
+            <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
+        </div>
+      `).join('') + `</div>`;
   }
 
   $('output-optimal').innerHTML = html;
-  
-  const sh = document.getElementById('btn-shuffle');
-  if (sh) sh.addEventListener('click', () => renderResults(true));
 
-  // Avoid
-  const avoidList = [];
-  for (const [t, b] of Object.entries(activeData.books)) {
-    const cnt = b.categories.filter(c => activeCats.has(c)).length;
-    if (cnt > 1 && bookStatus[t] !== 'include') avoidList.push({ t, cnt, cats: b.categories.filter(c=>activeCats.has(c)) });
-  }
+  // Avoid List rendering
   avoidList.sort((a,b) => b.cnt - a.cnt);
-  $('avoid-count').textContent = avoidList.length;
-
-  $('output-avoid').innerHTML = avoidList.map(item => `
-    <div class="result-card avoid" data-locate="book-${safeId(item.t)}" data-locate-tab="books"><div class="item-head"><a class="book-title" href="${activeData.books[item.t].url}" target="_blank" data-stop>${escapeHtml(item.t)} <span class="ext">↗</span></a></div>
-    <div style="font-size:11px;color:var(--muted-fg);margin-top:4px;">Overlaps ${item.cnt} active challenges</div>
-    <div class="tags">${item.cats.map(c=>`<span class="tag danger" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div></div>
-  `).join('') || '<div class="banner ok">✅ No active overlaps to avoid.</div>';
+  if (avoidList.length > 0) {
+    $('output-avoid').innerHTML = `
+      <div class="workspace-title" style="margin-bottom: 12px;"><h3>Avoid List (${avoidList.length})</h3><p>These books overlap multiple challenges, but you have not marked them as Read.</p></div>
+      <div class="book-grid">
+      ${avoidList.map(item => `
+        <div class="book-card avoid">
+          <div>
+            <a class="book-title" href="${item.b.url}" target="_blank" data-stop>${escapeHtml(item.b.title)}</a>
+            <div style="font-size:11px; color:var(--muted-fg); margin: 4px 0 10px 0;">Overlaps ${item.cnt} challenges</div>
+            <div class="tags">${item.cats.map(c=>`<span class="tag danger">${escapeHtml(c)}</span>`).join('')}</div>
+          </div>
+          <div style="margin-top:10px;">${statusButtonsHTML(item.b.id)}</div>
+        </div>
+      `).join('')}</div>`;
+  } else {
+    $('output-avoid').innerHTML = '<div class="banner ok">✅ No multi-challenge overlaps to avoid.</div>';
+  }
 }
 
 function renderSheet() {
@@ -604,87 +596,46 @@ function renderSheet() {
 
 // --- EVENT DELEGATION FOR UI INTERACTIONS ---
 document.body.addEventListener('click', (e) => {
-  const stopParent = e.target.closest('[data-stop]');
-  
-  // Status set logic
   const setBtn = e.target.closest('[data-status-set]');
   if (setBtn) {
-    e.stopPropagation();
+    e.preventDefault(); e.stopPropagation();
     bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
-    renderLeft(); renderResults();
-    return;
-  }
-  
-  // Scroll & Highlight Locating Logic
-  const loc = e.target.closest('[data-locate]');
-  if (loc) {
-    if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
-    const id = loc.getAttribute('data-locate');
-    const tab = loc.getAttribute('data-locate-tab');
-    
-    // Switch tabs if necessary
-    if (tab && tab !== leftTab) {
-        leftTab = tab;
-        $('tab-books').classList.toggle('active', tab === 'books');
-        $('tab-cats').classList.toggle('active', tab === 'cats');
-        $('list-books').classList.toggle('hidden', tab !== 'books');
-        $('list-cats').classList.toggle('hidden', tab !== 'cats');
-    }
-    
-    // Smooth scroll and highlight
-    setTimeout(() => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.remove('highlight');
-        void el.offsetWidth; // Trigger reflow
-        el.classList.add('highlight');
-      }
-    }, 60);
+    renderAll();
   }
 });
-
-document.body.addEventListener('change', e => {
-  const t = e.target.closest('[data-cat-toggle]');
-  if (t) { catActive[t.dataset.catToggle] = t.checked; renderLeft(); renderResults(); }
-});
-
-// Prevent locate when clicking inner links
-document.body.addEventListener('click', (e) => {
-  if (e.target.closest('a') || e.target.closest('.status')) e.stopPropagation();
-}, true);
 
 // --- TAB NAVIGATIONS ---
-$('mode-optimize').addEventListener('click', () => { mode='optimize'; $('mode-optimize').classList.add('active'); $('mode-convert').classList.remove('active'); $('view-optimize').classList.remove('hidden'); $('view-convert').classList.add('hidden'); });
-$('mode-convert').addEventListener('click', () => { mode='convert'; $('mode-convert').classList.add('active'); $('mode-optimize').classList.remove('active'); $('view-convert').classList.remove('hidden'); $('view-optimize').classList.add('hidden'); });
+function switchTab(tab) {
+    currentTab = tab;
+    ['library', 'optimal', 'spreadsheet'].forEach(t => {
+        $(`tab-${t}`).classList.toggle('active', t === tab);
+        $(`view-${t}`).classList.toggle('hidden', t !== tab);
+    });
+}
+$('tab-library').addEventListener('click', () => switchTab('library'));
+$('tab-optimal').addEventListener('click', () => switchTab('optimal'));
+$('tab-spreadsheet').addEventListener('click', () => switchTab('spreadsheet'));
 
-$('tab-books').addEventListener('click', () => { leftTab='books'; $('tab-books').classList.add('active'); $('tab-cats').classList.remove('active'); $('list-books').classList.remove('hidden'); $('list-cats').classList.add('hidden'); renderLeft();});
-$('tab-cats').addEventListener('click', () => { leftTab='cats'; $('tab-cats').classList.add('active'); $('tab-books').classList.remove('active'); $('list-cats').classList.remove('hidden'); $('list-books').classList.add('hidden'); renderLeft();});
-
-$('tab-optimal').addEventListener('click', () => { rightTab='optimal'; $('tab-optimal').classList.add('active'); $('tab-avoid').classList.remove('active'); $('output-optimal').classList.remove('hidden'); $('output-avoid').classList.add('hidden'); });
-$('tab-avoid').addEventListener('click', () => { rightTab='avoid'; $('tab-avoid').classList.add('active'); $('tab-optimal').classList.remove('active'); $('output-avoid').classList.remove('hidden'); $('output-optimal').classList.add('hidden'); });
-
-$('search-input').addEventListener('input', (e) => { search = e.target.value; renderLeft(); });
-$('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLeft(); });
+$('search-input').addEventListener('input', (e) => { search = e.target.value; renderLibrary(); });
+$('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLibrary(); });
 
 $('btn-reset').addEventListener('click', () => {
-  for(let k in bookStatus) bookStatus[k] = 'neutral';
-  for(let k in catActive) catActive[k] = true;
+  bookStatus = {};
   $('search-input').value = ''; search = '';
   $('status-filter').value = 'all'; statusFilter = 'all';
   renderAll();
   toast('Filters reset', 'success');
 });
 
+$('btn-shuffle').addEventListener('click', () => renderResults(true));
+
 // --- ROBUST COPY LOGIC ---
 $('btn-copy-optimal').addEventListener('click', async () => {
   if (!lastOptimal.selected.length) return;
-  const activeCats = new Set(activeData.categories.filter(c => catActive[c]));
   let md = '### 📚 My Optimal Reading List\n\n';
-  lastOptimal.selected.forEach(t => {
-    const b = activeData.books[t];
-    const tags = b.categories.filter(c => activeCats.has(c)).join(', ');
-    md += `- [${t}](${b.url}) *(Covers: ${tags})*\n`;
+  lastOptimal.selected.forEach(b => {
+    const tags = b.categories.join(', ');
+    md += `- [${b.title}](${b.url}) *(Covers: ${tags})*\n`;
   });
   try {
     await navigator.clipboard.writeText(md);
@@ -718,7 +669,6 @@ $('btn-copy-sheet').addEventListener('click', async () => {
     }
     toast('Copied — paste into Excel or Sheets', 'success');
   } catch {
-    // legacy fallback
     const range = document.createRange();
     range.selectNodeContents(document.querySelector('table.sheet'));
     const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);

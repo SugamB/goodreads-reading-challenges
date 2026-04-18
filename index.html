@@ -36,7 +36,6 @@
   .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); }
   .header-actions { display: flex; align-items: center; gap: 6px; }
 
-  /* Header links (Ko-fi & Feedback) */
   .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border) !important; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s;}
   .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent) !important; color: #ff5e5b !important; border-color: color-mix(in oklab, #ff5e5b 30%, transparent) !important; }
   .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent) !important; }
@@ -96,12 +95,23 @@
   .list { margin-top: 12px; max-height: 60vh; overflow-y: auto; padding-right: 4px; display: flex; flex-direction: column; gap: 8px; }
   .list-item { padding: 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); transition: background .2s; }
   .item-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
-  .book-title { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--fg); }
-  .book-title:hover { color: var(--primary); text-decoration: underline; }
+  .book-title { font-weight: 700; font-size: 13.5px; text-decoration: none; color: var(--fg); display: inline-flex; align-items: center; gap: 4px;}
+  .book-title:hover { color: var(--primary); }
+  .book-title .ext { font-size: 10px; opacity: .55; }
+  
   .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
-  .tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); }
+  .tag { font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: .15s; }
+  .tag:hover { border-color: var(--primary); color: var(--primary); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
   .tag.inactive { text-decoration: line-through; opacity: .55; }
+
+  /* Highlight Animation for scroll tracking */
+  .list-item.highlight { animation: pulse 1.6s ease-out; }
+  @keyframes pulse {
+    0% { background: var(--card); }
+    20% { background: var(--primary-soft); box-shadow: 0 0 0 4px color-mix(in oklab, var(--primary) 25%, transparent); }
+    100% { background: var(--card); }
+  }
 
   .status { display: inline-flex; gap: 2px; padding: 2px; background: var(--muted); border: 1px solid var(--border); border-radius: 7px; }
   .status button { border: 0; background: transparent; font-size: 11px; font-weight: 700; color: var(--muted-fg); padding: 4px 8px; border-radius: 5px; }
@@ -117,19 +127,33 @@
   .switch input:checked + .slider { background: var(--success); }
   .switch input:checked + .slider::before { transform: translateX(16px); }
 
-  .result-card { padding: 12px; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; background: var(--card); }
+  .result-card { padding: 12px; border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 10px; background: var(--card); cursor: pointer; transition: transform .15s, background .15s;}
+  .result-card:hover { transform: translateY(-1px); background: color-mix(in oklab, var(--accent) 50%, var(--card)); }
   .result-card.avoid { border-left-color: var(--destructive); }
+  
   .banner { display: flex; gap: 10px; padding: 12px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; }
   .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
   .empty { text-align: center; padding: 36px 18px; border: 1px dashed var(--border); border-radius: 10px; color: var(--muted-fg); font-size: 13px; }
 
   .sheet-wrap { max-height: 60vh; overflow: auto; }
   table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; }
-  table.sheet th { position: sticky; top: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); }
+  table.sheet th { position: sticky; top: 0; background: var(--card); border-bottom: 1px solid var(--border); padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .04em;}
   table.sheet td { border-bottom: 1px solid var(--border); padding: 10px 14px; vertical-align: top; }
   table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 40%; }
   table.sheet tr.spacer td { background: color-mix(in oklab, var(--muted) 60%, transparent); height: 8px; padding: 0; }
+  table.sheet tr:hover td:not(.spacer) { background: color-mix(in oklab, var(--accent) 40%, transparent); }
+  table.sheet a { color: var(--primary); text-decoration: none; }
+  table.sheet a:hover { text-decoration: underline; }
 
+  /* Toast */
+  #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
+  .toast { padding: 10px 14px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
+  .toast.success { background: var(--success); color: #fff; }
+  .toast.error { background: var(--destructive); color: #fff; }
+  @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .muted { color: var(--muted-fg); font-size: 12px; }
   .hidden { display: none !important; }
 </style>
 </head>
@@ -146,8 +170,8 @@
     </div>
     <div class="header-actions">
       <!-- Added Ko-fi and Feedback Buttons back here -->
-      <a href="https://ko-fi.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
-      <a href="mailto:your_email@example.com" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
+      <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
+      <a href="https://docs.google.com/forms/d/1DEVY531vE3geAxmKLumf3DBKidbInquz2KuM1wq52fY/" target="_blank" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
       <button class="btn icon ghost" id="theme-toggle">🌙</button>
     </div>
   </div>
@@ -241,6 +265,8 @@
 
 </main>
 
+<div id="toast-host"></div>
+
 <script>
 // --- GLOBAL STATE ---
 let rawDatabase = { challenges: [], books: [] };
@@ -248,6 +274,7 @@ let selectedChallenges = new Set();
 let activeData = { sections: [], books: {}, categories: [] };
 let bookStatus = {}; 
 let catActive = {}; 
+let lastOptimal = { selected: [], uncovered: [] };
 
 let mode = 'optimize';
 let leftTab = 'books';
@@ -255,8 +282,20 @@ let rightTab = 'optimal';
 let search = '';
 let statusFilter = 'all';
 
+// --- HELPERS ---
 const $ = (id) => document.getElementById(id);
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeId = (s) => 'id-' + btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
+
+function toast(msg, kind='') {
+  const host = $('toast-host');
+  const el = document.createElement('div');
+  el.className = 'toast ' + kind;
+  el.textContent = msg;
+  host.appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; }, 2200);
+  setTimeout(() => el.remove(), 2600);
+}
 
 // --- THEME ---
 $('theme-toggle').addEventListener('click', () => {
@@ -285,8 +324,8 @@ async function loadData() {
 function renderChallengeGrid() {
   const grid = $('challenge-grid');
   grid.innerHTML = rawDatabase.challenges.map(c => `
-    <div class="challenge-item" data-id="${c.id}" onclick="toggleChallenge('${c.id}')">
-      <input type="checkbox" id="chk-${c.id}" />
+    <div class="challenge-item" data-id="${escapeHtml(c.id)}">
+      <input type="checkbox" id="chk-${safeId(c.id)}" />
       <div class="challenge-info">
         <strong>${escapeHtml(c.name)}</strong>
         <span>${c.count} books</span>
@@ -295,25 +334,30 @@ function renderChallengeGrid() {
   `).join('');
 }
 
-window.toggleChallenge = function(id) {
-  if (selectedChallenges.has(id)) {
-    selectedChallenges.delete(id);
-  } else {
-    selectedChallenges.add(id);
-  }
-  
-  document.querySelectorAll('.challenge-item').forEach(el => {
-    const isSel = selectedChallenges.has(el.dataset.id);
-    el.classList.toggle('selected', isSel);
-    el.querySelector('input').checked = isSel;
-  });
+// Delegate click for challenge grid to avoid inline apostrophe escaping bugs
+$('challenge-grid').addEventListener('click', (e) => {
+    const item = e.target.closest('.challenge-item');
+    if (!item) return;
+    const id = item.getAttribute('data-id');
 
-  recomputeActiveData();
-};
+    if (selectedChallenges.has(id)) {
+        selectedChallenges.delete(id);
+    } else {
+        selectedChallenges.add(id);
+    }
+    
+    document.querySelectorAll('.challenge-item').forEach(el => {
+        const isSel = selectedChallenges.has(el.dataset.id);
+        el.classList.toggle('selected', isSel);
+        el.querySelector('input').checked = isSel;
+    });
+
+    recomputeActiveData();
+});
 
 $('btn-select-all').addEventListener('click', () => {
   rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id));
-  renderChallengeGrid(); // brute force UI refresh
+  renderChallengeGrid(); 
   document.querySelectorAll('.challenge-item').forEach(el => { el.classList.add('selected'); el.querySelector('input').checked=true; });
   recomputeActiveData();
 });
@@ -411,6 +455,7 @@ function renderLeft() {
 
   const q = search.toLowerCase();
   
+  // Left: Books List
   const lb = $('list-books');
   const books = Object.values(activeData.books)
     .filter(b => b.title.toLowerCase().includes(q))
@@ -422,31 +467,44 @@ function renderLeft() {
       return true;
     }).sort((a,b) => a.title.localeCompare(b.title));
     
-  lb.innerHTML = books.map(b => `
-    <div class="list-item">
+  lb.innerHTML = books.map(b => {
+    const id = 'book-' + safeId(b.title);
+    return `
+    <div class="list-item" id="${id}">
       <div class="item-head">
-        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank">${escapeHtml(b.title)}</a>
+        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)} <span class="ext">↗</span></a>
         ${statusButtonsHTML(b.title)}
       </div>
-      <div class="tags">${b.categories.map(c => `<span class="tag ${catActive[c]?'':'inactive'}">${escapeHtml(c)}</span>`).join('')}</div>
+      <div class="tags">${b.categories.map(c => `<span class="tag ${catActive[c]?'':'inactive'}" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div>
     </div>
-  `).join('') || '<div class="empty">No books found.</div>';
+  `}).join('') || '<div class="empty">No books found.</div>';
 
+  // Left: Categories List
   const lc = $('list-cats');
   const cats = activeData.categories.filter(c => c.toLowerCase().includes(q)).sort();
-  lc.innerHTML = cats.map(c => `
-    <div class="list-item"><div class="item-head" style="align-items:center;">
+  lc.innerHTML = cats.map(c => {
+      const id = 'cat-' + safeId(c);
+      return `
+    <div class="list-item" id="${id}"><div class="item-head" style="align-items:center;">
       <div style="font-weight:600; font-size:13px; ${catActive[c]?'':'text-decoration:line-through;opacity:0.5'}">${escapeHtml(c)}</div>
       <label class="switch"><input type="checkbox" data-cat-toggle="${escapeHtml(c)}" ${catActive[c]?'checked':''}><span class="slider"></span></label>
     </div></div>
-  `).join('') || '<div class="empty">No challenges found.</div>';
+  `}).join('') || '<div class="empty">No challenges found.</div>';
 }
 
-function renderResults() {
+function renderResults(forceRandom = false) {
   const activeCats = new Set(activeData.categories.filter(c => catActive[c]));
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
+  let hasOverlaps = false, hasExcludedOverlaps = false;
+
+  for (const [t, b] of Object.entries(activeData.books)) {
+    const cnt = b.categories.filter(c => activeCats.has(c)).length;
+    if (cnt > 1) {
+        if (bookStatus[t] !== 'exclude') hasOverlaps = true; else hasExcludedOverlaps = true;
+    }
+  }
 
   for (const [t, b] of Object.entries(activeData.books)) {
     if (bookStatus[t] === 'include') {
@@ -457,11 +515,14 @@ function renderResults() {
     }
   }
 
+  const randomMode = !hasOverlaps && selected.length === 0;
+
   while (uncovered.size > 0 && available.length) {
     let candidates = [], max = 0;
     for (const t of available) {
       const cov = activeData.books[t].categories.filter(c => uncovered.has(c)).length;
-      if (cov > max) { max = cov; candidates = [t]; }
+      if (randomMode || forceRandom) { if (cov > 0) candidates.push(t); }
+      else if (cov > max) { max = cov; candidates = [t]; }
       else if (cov === max && max > 0) candidates.push(t);
     }
     if (!candidates.length) break;
@@ -471,17 +532,48 @@ function renderResults() {
     available = available.filter(b => b !== pick);
   }
 
-  $('output-optimal').innerHTML = `
-    <div style="font-weight:700; font-size:14px; margin-bottom:12px;">${selected.length} optimal books selected</div>
-    <div class="list" style="margin-top:0;">
-      ${selected.map(t => {
-        const b = activeData.books[t];
-        return `<div class="result-card"><div class="item-head"><a class="book-title" href="${b.url}" target="_blank">${escapeHtml(t)}</a></div>
-        <div class="tags">${b.categories.filter(c=>activeCats.has(c)).map(c=>`<span class="tag">${escapeHtml(c)}</span>`).join('')}</div></div>`;
-      }).join('') || '<div class="empty">No books available for optimal path.</div>'}
+  lastOptimal = { selected, uncovered: Array.from(uncovered) };
+
+  let html = '';
+  if (randomMode) {
+    html += `<div class="banner"><div style="font-size:18px;">ℹ️</div><div><strong>No overlaps found.</strong> Showing one random book per active challenge. ${hasExcludedOverlaps ? '<small>Some overlapping books exist but are set to "Avoid".</small>' : ''}</div></div>`;
+  }
+
+  html += `
+    <div class="row" style="margin: ${randomMode ? '12px 0' : '0 0 12px'};">
+      <div>
+        <div style="font-weight:700; font-size:14px;">${selected.length} book${selected.length===1?'':'s'} selected</div>
+        <div class="muted">Covers ${activeCats.size - uncovered.size} / ${activeCats.size} active challenges</div>
+      </div>
+      <button class="btn ghost sm" id="btn-shuffle">🎲 Shuffle</button>
     </div>
+    <div class="list" style="margin-top:0;">
   `;
 
+  if (activeCats.size === 0) {
+      html += '<div class="empty">All challenges are excluded.</div>';
+  } else if (!selected.length) {
+      html += '<div class="empty">No books available for optimal path.</div>';
+  } else {
+      html += selected.map(t => {
+        const b = activeData.books[t];
+        const id = 'book-' + safeId(t);
+        return `<div class="result-card" data-locate="${id}" data-locate-tab="books"><div class="item-head"><a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(t)} <span class="ext">↗</span></a></div>
+        <div class="tags">${b.categories.filter(c=>activeCats.has(c)).map(c=>`<span class="tag" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div></div>`;
+      }).join('');
+  }
+  html += `</div>`;
+  
+  if (uncovered.size > 0) {
+      html += `<div class="banner warn" style="margin-top:12px;"><div><strong>⚠️ Uncovered challenges:</strong><ul style="margin:6px 0 0; padding-left:18px; font-size:12px;">${Array.from(uncovered).map(c=>`<li>${escapeHtml(c)}</li>`).join('')}</ul></div></div>`;
+  }
+
+  $('output-optimal').innerHTML = html;
+  
+  const sh = document.getElementById('btn-shuffle');
+  if (sh) sh.addEventListener('click', () => renderResults(true));
+
+  // Avoid
   const avoidList = [];
   for (const [t, b] of Object.entries(activeData.books)) {
     const cnt = b.categories.filter(c => activeCats.has(c)).length;
@@ -491,9 +583,9 @@ function renderResults() {
   $('avoid-count').textContent = avoidList.length;
 
   $('output-avoid').innerHTML = avoidList.map(item => `
-    <div class="result-card avoid"><div class="item-head"><a class="book-title" href="${activeData.books[item.t].url}" target="_blank">${escapeHtml(item.t)}</a></div>
+    <div class="result-card avoid" data-locate="book-${safeId(item.t)}" data-locate-tab="books"><div class="item-head"><a class="book-title" href="${activeData.books[item.t].url}" target="_blank" data-stop>${escapeHtml(item.t)} <span class="ext">↗</span></a></div>
     <div style="font-size:11px;color:var(--muted-fg);margin-top:4px;">Overlaps ${item.cnt} active challenges</div>
-    <div class="tags">${item.cats.map(c=>`<span class="tag danger">${escapeHtml(c)}</span>`).join('')}</div></div>
+    <div class="tags">${item.cats.map(c=>`<span class="tag danger" data-locate="cat-${safeId(c)}" data-locate-tab="cats">${escapeHtml(c)}</span>`).join('')}</div></div>
   `).join('') || '<div class="banner ok">✅ No active overlaps to avoid.</div>';
 }
 
@@ -502,7 +594,7 @@ function renderSheet() {
   tbody.innerHTML = '';
   activeData.sections.forEach((sec, i) => {
     if (i > 0) tbody.innerHTML += '<tr class="spacer"><td colspan="2"></td></tr>';
-    const label = sec.categories.join(' + ');
+    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
     sec.books.forEach((b, idx) => {
       tbody.innerHTML += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
     });
@@ -510,7 +602,59 @@ function renderSheet() {
   $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
 }
 
-// --- EVENT LISTENERS ---
+// --- EVENT DELEGATION FOR UI INTERACTIONS ---
+document.body.addEventListener('click', (e) => {
+  const stopParent = e.target.closest('[data-stop]');
+  
+  // Status set logic
+  const setBtn = e.target.closest('[data-status-set]');
+  if (setBtn) {
+    e.stopPropagation();
+    bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
+    renderLeft(); renderResults();
+    return;
+  }
+  
+  // Scroll & Highlight Locating Logic
+  const loc = e.target.closest('[data-locate]');
+  if (loc) {
+    if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
+    const id = loc.getAttribute('data-locate');
+    const tab = loc.getAttribute('data-locate-tab');
+    
+    // Switch tabs if necessary
+    if (tab && tab !== leftTab) {
+        leftTab = tab;
+        $('tab-books').classList.toggle('active', tab === 'books');
+        $('tab-cats').classList.toggle('active', tab === 'cats');
+        $('list-books').classList.toggle('hidden', tab !== 'books');
+        $('list-cats').classList.toggle('hidden', tab !== 'cats');
+    }
+    
+    // Smooth scroll and highlight
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.classList.remove('highlight');
+        void el.offsetWidth; // Trigger reflow
+        el.classList.add('highlight');
+      }
+    }, 60);
+  }
+});
+
+document.body.addEventListener('change', e => {
+  const t = e.target.closest('[data-cat-toggle]');
+  if (t) { catActive[t.dataset.catToggle] = t.checked; renderLeft(); renderResults(); }
+});
+
+// Prevent locate when clicking inner links
+document.body.addEventListener('click', (e) => {
+  if (e.target.closest('a') || e.target.closest('.status')) e.stopPropagation();
+}, true);
+
+// --- TAB NAVIGATIONS ---
 $('mode-optimize').addEventListener('click', () => { mode='optimize'; $('mode-optimize').classList.add('active'); $('mode-convert').classList.remove('active'); $('view-optimize').classList.remove('hidden'); $('view-convert').classList.add('hidden'); });
 $('mode-convert').addEventListener('click', () => { mode='convert'; $('mode-convert').classList.add('active'); $('mode-optimize').classList.remove('active'); $('view-convert').classList.remove('hidden'); $('view-optimize').classList.add('hidden'); });
 
@@ -523,24 +667,65 @@ $('tab-avoid').addEventListener('click', () => { rightTab='avoid'; $('tab-avoid'
 $('search-input').addEventListener('input', (e) => { search = e.target.value; renderLeft(); });
 $('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLeft(); });
 
-document.body.addEventListener('click', e => {
-  const setBtn = e.target.closest('[data-status-set]');
-  if (setBtn) {
-    bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
-    renderLeft(); renderResults();
-  }
-});
-document.body.addEventListener('change', e => {
-  const t = e.target.closest('[data-cat-toggle]');
-  if (t) { catActive[t.dataset.catToggle] = t.checked; renderLeft(); renderResults(); }
-});
-
 $('btn-reset').addEventListener('click', () => {
   for(let k in bookStatus) bookStatus[k] = 'neutral';
   for(let k in catActive) catActive[k] = true;
   $('search-input').value = ''; search = '';
   $('status-filter').value = 'all'; statusFilter = 'all';
   renderAll();
+  toast('Filters reset', 'success');
+});
+
+// --- ROBUST COPY LOGIC ---
+$('btn-copy-optimal').addEventListener('click', async () => {
+  if (!lastOptimal.selected.length) return;
+  const activeCats = new Set(activeData.categories.filter(c => catActive[c]));
+  let md = '### 📚 My Optimal Reading List\n\n';
+  lastOptimal.selected.forEach(t => {
+    const b = activeData.books[t];
+    const tags = b.categories.filter(c => activeCats.has(c)).join(', ');
+    md += `- [${t}](${b.url}) *(Covers: ${tags})*\n`;
+  });
+  try {
+    await navigator.clipboard.writeText(md);
+    toast('Optimal list copied as markdown', 'success');
+  } catch { toast('Could not copy', 'error'); }
+});
+
+$('btn-copy-sheet').addEventListener('click', async () => {
+  let html = '<table><thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead><tbody>';
+  let plain = 'Challenge Combination\tCommon Books\n';
+  
+  activeData.sections.forEach((sec, i) => {
+    if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
+    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
+    sec.books.forEach((b, idx) => {
+      const cat = idx === 0 ? label : '';
+      html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a></td></tr>`;
+      plain += `${cat}\t${b.title}\n`;
+    });
+  });
+  html += '</tbody></table>';
+
+  try {
+    if (navigator.clipboard && window.ClipboardItem) {
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/html': new Blob([html], { type: 'text/html' }),
+        'text/plain': new Blob([plain], { type: 'text/plain' }),
+      })]);
+    } else {
+      await navigator.clipboard.writeText(plain);
+    }
+    toast('Copied — paste into Excel or Sheets', 'success');
+  } catch {
+    // legacy fallback
+    const range = document.createRange();
+    range.selectNodeContents(document.querySelector('table.sheet'));
+    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    try { document.execCommand('copy'); toast('Copied!', 'success'); }
+    catch { toast('Could not copy', 'error'); }
+    sel.removeAllRanges();
+  }
 });
 
 // Start the app

@@ -24,7 +24,7 @@
   }
   *, *::before, *::after { box-sizing: border-box; }
   body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;}
-  a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; }
+  a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; outline: none; }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
@@ -37,11 +37,10 @@
   .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); }
   .header-actions { display: flex; align-items: center; gap: 6px; }
 
-  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border) !important; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s;}
-  .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent) !important; color: #ff5e5b !important; border-color: color-mix(in oklab, #ff5e5b 30%, transparent) !important; }
-  .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent) !important; }
-  @media (max-width: 540px) { .link-label { display: none; } .header-link { padding: 6px 8px; } }
-
+  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s;}
+  .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent); color: #ff5e5b; border-color: color-mix(in oklab, #ff5e5b 30%, transparent); }
+  .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent); }
+  
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
   .btn:hover { filter: brightness(.95); }
   .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
@@ -51,19 +50,20 @@
   .btn.sm { padding: 6px 10px; font-size: 12px; }
   .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
 
+  /* Pro Badge */
+  .badge-pro { background: linear-gradient(135deg, #fbbf24, #d97706); color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; text-shadow: 0 1px 1px rgba(0,0,0,0.2); vertical-align: middle; }
+
   /* Dashboard Layout */
   .dashboard { display: grid; grid-template-columns: 340px 1fr; gap: 24px; max-width: 1400px; margin: 0 auto; padding: 24px 20px; align-items: start; }
-  @media (max-width: 900px) { .dashboard { grid-template-columns: 1fr; } }
-
+  
   /* Sidebar (Challenges) */
+  .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; opacity: 0; transition: opacity 0.3s; }
   .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; }
   .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
-  .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); }
-  
+  .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); display: flex; align-items: center; gap: 8px;}
   .sidebar-filters { display: flex; gap: 6px; width: 100%; }
   .sidebar-filters input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; }
   .sidebar-filters select { width: 90px; padding: 8px 6px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; }
-  
   .sidebar-actions { display: flex; gap: 6px; }
   .sidebar-actions button { flex: 1; }
   
@@ -72,25 +72,21 @@
   .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
   .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
   .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; }
-  .challenge-info { flex-grow: 1; }
+  .challenge-info { flex-grow: 1; padding-right: 20px;}
   .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
   .challenge-info span { font-size: 11px; color: var(--muted-fg); }
   
-  .copy-list-btn { position: absolute; right: 8px; top: 10px; opacity: 0.5; padding: 4px; font-size: 14px; border-radius: 6px; }
-  .challenge-item:hover .copy-list-btn { opacity: 1; }
-  .copy-list-btn:hover { background: var(--border); color: var(--fg); }
+  .chal-actions { position: absolute; right: 8px; top: 10px; display: flex; gap: 2px; opacity: 0.3; transition: 0.2s;}
+  .challenge-item:hover .chal-actions { opacity: 1; }
+  .chal-actions button { background: transparent; border: none; font-size: 13px; padding: 4px; border-radius: 4px; cursor: pointer; color: var(--muted-fg); }
+  .chal-actions button:hover { background: var(--border); color: var(--fg); }
+  .chal-actions button.delete:hover { background: var(--destructive-soft); color: var(--destructive); }
 
-  /* Flash Highlight Animation */
   .challenge-item.highlight { animation: pulse 1.6s ease-out; }
-  @keyframes pulse {
-    0% { background: var(--card); }
-    20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); }
-    100% { background: var(--card); }
-  }
+  @keyframes pulse { 0% { background: var(--card); } 20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); } 100% { background: var(--card); } }
 
   /* Main Content Area */
   .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
-  
   .workspace-tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--muted); padding: 8px 12px 0 12px; gap: 4px; overflow-x: auto; border-radius: var(--radius) var(--radius) 0 0; }
   .workspace-tabs button { background: transparent; border: 1px solid transparent; border-bottom: none; padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--muted-fg); border-radius: 8px 8px 0 0; transition: .15s; white-space: nowrap; }
   .workspace-tabs button:hover { color: var(--fg); background: color-mix(in oklab, var(--card) 50%, transparent); }
@@ -109,7 +105,6 @@
 
   .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
-  /* Lists & Cards */
   .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
   .book-card { padding: 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); display: flex; flex-direction: column; justify-content: space-between; gap: 12px; transition: .15s; box-shadow: var(--shadow-soft); }
   .book-card:hover { border-color: var(--primary); transform: translateY(-2px); }
@@ -124,7 +119,6 @@
   .tag:hover { background: var(--border); color: var(--fg); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
 
-  /* Status Buttons */
   .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; }
   .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 8px 10px; transition: .15s; }
   .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
@@ -133,14 +127,12 @@
   .status-group button.active.exc { background: var(--destructive); color: #fff; }
   .status-group button:not(:last-child) { border-right: 1px solid var(--border); }
 
-  /* Banners */
   .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
   .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
   .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
   .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
   .empty .icon { font-size: 32px; }
 
-  /* Spreadsheet */
   table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; background: var(--card); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-soft); }
   table.sheet th { background: var(--muted); border-bottom: 1px solid var(--border); padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .05em; }
   table.sheet td { border-bottom: 1px solid var(--border); padding: 12px 16px; vertical-align: top; }
@@ -148,14 +140,46 @@
   table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
   table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
 
-  /* Toast */
-  #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 100; }
+  /* Modals */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.2s; padding: 20px; backdrop-filter: blur(4px);}
+  .modal-overlay.active { opacity: 1; pointer-events: auto; }
+  .modal { background: var(--card); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: translateY(20px); transition: 0.2s; display: flex; flex-direction: column; max-height: 90vh;}
+  .modal-overlay.active .modal { transform: translateY(0); }
+  .modal-head { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .modal-head h3 { margin: 0; font-size: 16px; }
+  .modal-body { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+  .modal-body label { font-size: 12px; font-weight: 600; color: var(--fg); display: block; margin-bottom: 4px; }
+  .modal-body input, .modal-body textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-family: inherit; font-size: 13px; }
+  .modal-body textarea { min-height: 150px; resize: vertical; white-space: pre; }
+  .modal-foot { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 10px; background: var(--muted); border-radius: 0 0 12px 12px;}
+
+  /* Pro Modal Specific */
+  .pro-modal .icon-large { font-size: 48px; margin-bottom: 10px; }
+  .pro-modal p { color: var(--muted-fg); line-height: 1.5; font-size: 14px; margin-bottom: 24px;}
+  .pro-actions { display: flex; flex-direction: column; gap: 12px; }
+  .pro-actions .row-btns { display: flex; gap: 10px; flex-wrap: wrap;}
+  .pro-actions .row-btns .btn { flex: 1; min-width: 140px; }
+
+  #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 200; }
   .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
   .toast.success { background: var(--success); color: #fff; }
   .toast.error { background: var(--destructive); color: #fff; }
   @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
   .hidden { display: none !important; }
+  .mobile-toggle { display: none; }
+
+  /* Responsive Mobile Design */
+  @media (max-width: 900px) {
+    .link-label { display: none; }
+    .mobile-toggle { display: inline-flex; }
+    .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
+    .sidebar.open { transform: translateX(0); }
+    .sidebar-backdrop.open { display: block; opacity: 1; }
+    .workspace-header { flex-direction: column; align-items: flex-start; }
+    .filter-row { max-width: 100%; }
+    .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
+  }
 </style>
 </head>
 <body>
@@ -163,26 +187,27 @@
 <header class="app">
   <div class="header-inner">
     <div class="brand">
+      <button class="btn icon ghost mobile-toggle" id="btn-menu" aria-label="Menu">☰</button>
       <div class="brand-mark">📚</div>
       <div>
-        <h1>Goodreads Challenge Optimizer</h1>
-        <p id="last-updated">Loading database...</p>
+        <h1>Challenge Optimizer</h1>
+        <p id="last-updated">Loading...</p>
       </div>
     </div>
     <div class="header-actions">
       <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Ko-fi</span></a>
-      <a href="https://docs.google.com/forms/d/1DEVY531vE3geAxmKLumf3DBKidbInquz2KuM1wq52fY/" target="_blank" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
+      <a href="mailto:sugambkt@gmail.com?subject=Goodreads Optimizer Feedback" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
       <button class="btn icon ghost" id="theme-toggle">🌙</button>
     </div>
   </div>
 </header>
 
 <div class="dashboard">
-  <!-- Sidebar: Challenges -->
-  <aside class="sidebar">
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+  <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Challenges</h2>
-      <span class="muted" id="sidebar-counts" style="font-size: 12px; color: var(--muted-fg);">0 / 0</span>
+      <button class="btn ghost sm" id="btn-add-custom" title="Add your own reading list">➕ Custom List <span class="badge-pro">PRO</span></button>
     </div>
     
     <div class="sidebar-filters">
@@ -195,21 +220,21 @@
     </div>
 
     <div class="sidebar-actions">
-      <button class="btn ghost sm" id="btn-select-all">Select All</button>
+      <button class="btn outline sm" id="btn-select-all">Select All</button>
       <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
     </div>
+    <div style="font-size: 11px; color: var(--muted-fg); text-align: right;" id="sidebar-counts">0 / 0 selected</div>
 
     <div id="challenge-grid" class="challenge-list">
       <!-- Injected via JS -->
     </div>
   </aside>
 
-  <!-- Main Workspace -->
   <main class="workspace hidden" id="workspace">
     <div class="workspace-tabs">
       <button id="tab-library" class="active">📚 Master Library</button>
       <button id="tab-optimal">✨ Optimal Path</button>
-      <button id="tab-spreadsheet">▦ Spreadsheet</button>
+      <button id="tab-spreadsheet">▦ Spreadsheet <span class="badge-pro">PRO</span></button>
     </div>
 
     <!-- LIBRARY VIEW -->
@@ -243,13 +268,11 @@
         </div>
         <div style="display:flex; gap:8px; flex-wrap:wrap;">
           <button class="btn ghost sm" id="btn-shuffle-overlap" title="Find a path using overlapping books">🎲 Alternate (Overlaps)</button>
-          <button class="btn ghost sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">🎲 Alternate (1-per)</button>
+          <button class="btn ghost sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">🎲 Alternate (No Overlaps)</button>
           <button class="btn outline sm" id="btn-copy-optimal">📋 Copy List</button>
         </div>
       </div>
-      <div class="workspace-content" id="output-optimal">
-        <!-- Rendered via JS -->
-      </div>
+      <div class="workspace-content" id="output-optimal"></div>
     </div>
 
     <!-- SPREADSHEET VIEW -->
@@ -270,7 +293,7 @@
     </div>
   </main>
 
-  <!-- Empty State before selection -->
+  <!-- Empty State -->
   <main class="workspace" id="workspace-empty" style="justify-content: center;">
     <div class="empty" style="border:none;">
       <div class="icon">👈</div>
@@ -280,20 +303,82 @@
   </main>
 </div>
 
+<!-- Modal: Custom List -->
+<div class="modal-overlay" id="custom-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modal-title">Add Custom List</h3>
+      <button class="btn icon ghost" id="btn-close-modal">✕</button>
+    </div>
+    <div class="modal-body">
+      <div>
+        <label>List Name</label>
+        <input type="text" id="custom-name" placeholder="e.g., My TBR 2026" autocomplete="off" />
+      </div>
+      <div>
+        <label>Books (One per line, or Markdown list)</label>
+        <textarea id="custom-books" placeholder="- [Atomic Habits](https://goodreads.com/...)&#10;- Project Hail Mary&#10;The Hobbit"></textarea>
+      </div>
+      <input type="hidden" id="custom-id" />
+    </div>
+    <div class="modal-foot">
+      <button class="btn ghost" id="btn-cancel-modal">Cancel</button>
+      <button class="btn" id="btn-save-custom">Save List</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Pro Feature Unlock -->
+<div class="modal-overlay" id="pro-modal">
+  <div class="modal pro-modal" style="text-align: center; max-width: 420px; padding: 30px 20px;">
+    <div class="icon-large">🎁</div>
+    <h2 style="margin: 0 0 12px 0; color: var(--fg);">"Pro" Feature Unlocked!</h2>
+    <p>Don't worry, every feature here is 100% free! I built this tool to help readers easily plan their goals.</p>
+    <p>If this tool saves you time, please consider buying me a coffee or sharing your feedback to help me improve it.</p>
+    
+    <div class="pro-actions">
+      <div class="row-btns">
+        <a href="https://ko-fi.com/unikuez" target="_blank" class="btn coffee-link" style="border:none; color:#fff !important; background:#ff5e5b !important;">☕ Buy me a coffee</a>
+        <a href="mailto:sugambkt@gmail.com?subject=Goodreads Optimizer Feedback" class="btn outline">💬 Send Feedback</a>
+      </div>
+      <button class="btn ghost" id="btn-continue-pro" style="margin-top: 8px;">Continue to feature →</button>
+    </div>
+  </div>
+</div>
+
 <div id="toast-host"></div>
 
 <script>
 // --- GLOBAL STATE ---
-let rawDatabase = { challenges: [], books: [] };
+const FALLBACK_DATA = {
+    lastUpdated: new Date().toISOString(),
+    challenges: [
+        { id: "fallback_1", name: "Sample: Mystery Tropes", url: "#", count: 3 },
+        { id: "fallback_2", name: "Sample: Sci-Fi Epics", url: "#", count: 3 },
+        { id: "fallback_3", name: "Sample: Staff Picks", url: "#", count: 3 }
+    ],
+    books: [
+        { title: "The Martian", url: "https://www.goodreads.com/book/show/18007564-the-martian", challenges: ["fallback_2", "fallback_3"] },
+        { title: "Dune", url: "https://www.goodreads.com/book/show/44767458-dune", challenges: ["fallback_2"] },
+        { title: "Gone Girl", url: "https://www.goodreads.com/book/show/19288043-gone-girl", challenges: ["fallback_1", "fallback_3"] },
+        { title: "The Silent Patient", url: "https://www.goodreads.com/book/show/40097951-the-silent-patient", challenges: ["fallback_1"] },
+        { title: "Project Hail Mary", url: "https://www.goodreads.com/book/show/54493401-project-hail-mary", challenges: ["fallback_1", "fallback_2", "fallback_3"] }
+    ]
+};
+
+let baseDatabase = { challenges: [], books: [] }; 
+let rawDatabase = { challenges: [], books: [] }; 
+let customLists = {}; 
+
 let selectedChallenges = new Set();
 let activeData = { sections: [], books: [], categories: [] };
-let bookStatus = {}; // Maps unique internal ID to 'include' | 'exclude' | 'neutral'
+let bookStatus = {}; 
 let lastOptimal = { selected: [], uncovered: [] };
 
 let currentTab = 'library';
 let search = '';
 let statusFilter = 'all';
-let currentOptimalMode = 'overlap'; // 'overlap' or 'single'
+let currentOptimalMode = 'overlap';
 
 // --- HELPERS ---
 const $ = (id) => document.getElementById(id);
@@ -310,7 +395,7 @@ function toast(msg, kind='') {
   setTimeout(() => el.remove(), 2600);
 }
 
-// --- THEME ---
+// --- THEME & MOBILE MENU ---
 $('theme-toggle').addEventListener('click', () => {
   const isDark = document.documentElement.classList.toggle('dark');
   $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
@@ -320,21 +405,72 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
     $('theme-toggle').textContent = '☀️';
 }
 
-// --- INITIAL FETCH ---
+$('btn-menu').addEventListener('click', () => {
+    $('sidebar').classList.add('open');
+    $('sidebar-backdrop').classList.add('open');
+});
+$('sidebar-backdrop').addEventListener('click', () => {
+    $('sidebar').classList.remove('open');
+    $('sidebar-backdrop').classList.remove('open');
+});
+
+// --- PRO FEATURE LOGIC ---
+let pendingProCallback = null;
+function handleProFeature(callback) {
+    if (localStorage.getItem('gr_pro_unlocked')) {
+        callback();
+    } else {
+        pendingProCallback = callback;
+        $('pro-modal').classList.add('active');
+    }
+}
+$('btn-continue-pro').addEventListener('click', () => {
+    localStorage.setItem('gr_pro_unlocked', 'true');
+    $('pro-modal').classList.remove('active');
+    if (pendingProCallback) pendingProCallback();
+});
+
+// --- DATA LOADING & MERGING ---
 async function loadData() {
   try {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error("Could not load data.json");
-    rawDatabase = await res.json();
-    
-    rawDatabase.books.forEach((b, idx) => { b.id = 'b_' + idx; });
-
-    const dt = new Date(rawDatabase.lastUpdated);
+    baseDatabase = await res.json();
+    const dt = new Date(baseDatabase.lastUpdated);
     $('last-updated').textContent = `Last synced: ${dt.toLocaleDateString()} ${dt.toLocaleTimeString()}`;
-    renderChallengeGrid();
   } catch (err) {
-    $('last-updated').textContent = "Failed to load database. Ensure data.json exists.";
+    console.warn("Using fallback data for local testing.");
+    baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA));
+    $('last-updated').textContent = "Using offline sample data.";
   }
+  
+  const stored = localStorage.getItem('gr_custom_lists');
+  if (stored) {
+      try { customLists = JSON.parse(stored); } catch(e) { customLists = {}; }
+  }
+  buildRawDatabase();
+}
+
+function buildRawDatabase() {
+    rawDatabase = JSON.parse(JSON.stringify(baseDatabase));
+    rawDatabase.books.forEach(b => { b.id = 'b_' + safeId(b.title); });
+
+    for (const [cId, cData] of Object.entries(customLists)) {
+        rawDatabase.challenges.unshift({ id: cId, name: cData.name, url: "#", count: cData.books.length, isCustom: true });
+        
+        cData.books.forEach(cb => {
+            const bId = 'b_' + safeId(cb.title);
+            let existing = rawDatabase.books.find(b => b.id === bId);
+            if (!existing) {
+                existing = { id: bId, title: cb.title, url: cb.url || '#', challenges: [] };
+                rawDatabase.books.push(existing);
+            }
+            if (!existing.challenges.includes(cId)) existing.challenges.push(cId);
+        });
+    }
+    
+    renderChallengeGrid();
+    recomputeActiveData();
 }
 
 // --- SIDEBAR RENDERING ---
@@ -342,29 +478,34 @@ function renderChallengeGrid() {
   const grid = $('challenge-grid');
   const q = $('search-challenges').value.toLowerCase();
   const f = $('filter-challenges').value;
-
-  let countShown = 0;
   
   const html = rawDatabase.challenges.map(c => {
     const isSelected = selectedChallenges.has(c.id);
     if (f === 'selected' && !isSelected) return '';
     if (f === 'unselected' && isSelected) return '';
     if (q && !c.name.toLowerCase().includes(q)) return '';
-    countShown++;
+
+    const customActions = c.isCustom ? `
+      <button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button>
+      <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>
+    ` : '';
 
     return `
       <div class="challenge-item ${isSelected ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}">
         <input type="checkbox" ${isSelected ? 'checked' : ''} />
         <div class="challenge-info">
-          <strong>${escapeHtml(c.name)}</strong>
+          <strong>${c.isCustom ? '⭐ ' : ''}${escapeHtml(c.name)}</strong>
           <span>${c.count} books</span>
         </div>
-        <button class="btn icon ghost sm copy-list-btn" title="Copy this list to clipboard" data-id="${escapeHtml(c.id)}">📋</button>
+        <div class="chal-actions">
+            ${customActions}
+            <button class="copy-list-btn" title="Copy to clipboard" data-id="${escapeHtml(c.id)}">📋</button>
+        </div>
       </div>
     `;
   }).join('');
   
-  grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px;">No challenges match filter.</div>';
+  grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px; border:none;">No challenges match filter.</div>';
   $('sidebar-counts').textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
 }
 
@@ -372,25 +513,40 @@ $('search-challenges').addEventListener('input', renderChallengeGrid);
 $('filter-challenges').addEventListener('change', renderChallengeGrid);
 
 $('challenge-grid').addEventListener('click', async (e) => {
-    const copyBtn = e.target.closest('.copy-list-btn');
-    if (copyBtn) {
+    const btn = e.target.closest('button');
+    if (btn) {
         e.stopPropagation();
-        const chalId = copyBtn.getAttribute('data-id');
-        const chalMeta = rawDatabase.challenges.find(c => c.id === chalId);
-        const books = rawDatabase.books.filter(b => b.challenges.includes(chalId));
+        const chalId = btn.getAttribute('data-id');
         
-        let txt = `=HYPERLINK("${chalMeta.url}", "${escapeHtml(chalMeta.name)} (${books.length} books)")\n`;
-        books.forEach(b => {
-            txt += `=HYPERLINK("${b.url}", "${b.title.replace(/"/g, '""')}")\n`;
-        });
-        
-        try {
-            await navigator.clipboard.writeText(txt);
-            toast('Copied list to clipboard!', 'success');
-        } catch {
-            toast('Failed to copy', 'error');
+        if (btn.classList.contains('copy-list-btn')) {
+            const chalMeta = rawDatabase.challenges.find(c => c.id === chalId);
+            const books = rawDatabase.books.filter(b => b.challenges.includes(chalId));
+            let txt = `=HYPERLINK("${chalMeta.url}", "${escapeHtml(chalMeta.name)} (${books.length} books)")\n`;
+            books.forEach(b => { txt += `=HYPERLINK("${b.url}", "${b.title.replace(/"/g, '""')}")\n`; });
+            try { await navigator.clipboard.writeText(txt); toast('List copied!', 'success'); } catch { toast('Failed to copy', 'error'); }
+            return;
         }
-        return;
+        
+        if (btn.classList.contains('delete')) {
+            if (confirm("Delete this custom list?")) {
+                delete customLists[chalId];
+                selectedChallenges.delete(chalId);
+                localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
+                buildRawDatabase();
+                toast('List deleted', 'success');
+            }
+            return;
+        }
+
+        if (btn.classList.contains('edit')) {
+            const cData = customLists[chalId];
+            $('custom-id').value = chalId;
+            $('custom-name').value = cData.name;
+            $('custom-books').value = cData.books.map(b => b.url !== '#' ? `- [${b.title}](${b.url})` : b.title).join('\n');
+            $('modal-title').textContent = "Edit Custom List";
+            $('custom-modal').classList.add('active');
+            return;
+        }
     }
 
     const item = e.target.closest('.challenge-item');
@@ -404,16 +560,42 @@ $('challenge-grid').addEventListener('click', async (e) => {
     recomputeActiveData();
 });
 
-$('btn-select-all').addEventListener('click', () => {
-  rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id));
-  renderChallengeGrid();
-  recomputeActiveData();
+$('btn-select-all').addEventListener('click', () => { rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); renderChallengeGrid(); recomputeActiveData(); });
+$('btn-clear-selection').addEventListener('click', () => { selectedChallenges.clear(); renderChallengeGrid(); recomputeActiveData(); });
+
+// --- CUSTOM LIST MODAL (PRO) ---
+$('btn-add-custom').addEventListener('click', () => {
+    handleProFeature(() => {
+        $('custom-id').value = ''; $('custom-name').value = ''; $('custom-books').value = '';
+        $('modal-title').textContent = "Add Custom List";
+        $('custom-modal').classList.add('active');
+    });
 });
 
-$('btn-clear-selection').addEventListener('click', () => {
-  selectedChallenges.clear();
-  renderChallengeGrid();
-  recomputeActiveData();
+$('btn-close-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
+$('btn-cancel-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
+
+$('btn-save-custom').addEventListener('click', () => {
+    const name = $('custom-name').value.trim();
+    const text = $('custom-books').value.trim();
+    if (!name || !text) return toast("Please provide a name and at least one book.", "error");
+
+    const id = $('custom-id').value || 'c_custom_' + Date.now();
+    const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+    
+    const parsedBooks = lines.map(line => {
+        const mdMatch = line.match(/\[(.*?)\]\((.*?)\)/);
+        if (mdMatch) return { title: mdMatch[1].trim(), url: mdMatch[2].trim() };
+        return { title: line.replace(/^[-*•]\s+/, '').trim(), url: '#' };
+    });
+
+    customLists[id] = { name, books: parsedBooks };
+    localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
+    
+    $('custom-modal').classList.remove('active');
+    selectedChallenges.add(id); 
+    buildRawDatabase();
+    toast("Custom list saved!", "success");
 });
 
 // --- COMPUTE OVERLAPS AND STATE ON THE FLY ---
@@ -432,6 +614,7 @@ function recomputeActiveData() {
   if (selectedChallenges.size === 0) {
     $('workspace').classList.add('hidden');
     $('workspace-empty').classList.remove('hidden');
+    if(window.innerWidth < 900) { $('sidebar').classList.remove('open'); $('sidebar-backdrop').classList.remove('open'); }
     return;
   }
   
@@ -447,7 +630,6 @@ function recomputeActiveData() {
     if (relevantCats.length > 0) {
       const workingBook = { ...b, categories: relevantCats };
       activeData.books.push(workingBook);
-      
       if (!bookStatus[b.id]) bookStatus[b.id] = 'neutral';
       
       if (relevantCats.length >= 2) {
@@ -470,12 +652,7 @@ function recomputeActiveData() {
 }
 
 // --- RENDERING LOGIC ---
-
-function renderAll() {
-  renderLibrary();
-  renderResults(currentOptimalMode, false);
-  renderSheet();
-}
+function renderAll() { renderLibrary(); renderResults(currentOptimalMode, false); renderSheet(); }
 
 function statusButtonsHTML(bookId) {
   const s = bookStatus[bookId] || 'neutral';
@@ -486,6 +663,11 @@ function statusButtonsHTML(bookId) {
       <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude" title="Prevent algorithm from using this book">✕ Avoid</button>
     </div>
   `;
+}
+
+function resolveChallengeName(id) {
+    const c = rawDatabase.challenges.find(x => x.id === id);
+    return c ? c.name : id;
 }
 
 function renderLibrary() {
@@ -511,7 +693,7 @@ function renderLibrary() {
     <div class="book-card ${bookStatus[b.id] === 'exclude' ? 'avoid' : ''}">
       <div>
         <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-        <div class="tags">${b.categories.map(c => `<span class="tag" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(c)}</span>`).join('')}</div>
+        <div class="tags">${b.categories.map(c => `<span class="tag" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('')}</div>
       </div>
       <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
     </div>
@@ -524,10 +706,9 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   const uncovered = new Set(activeCats);
   const selected = [];
   let available = [];
-  
-  let failedSingleCategories = []; // Track categories that fail the "No Overlaps" logic
+  let failedSingleCategories = []; 
 
-  // 1. Process "Must Read" and build "available" list
+  // 1. Process "Must Read"
   activeData.books.forEach(b => {
     if (bookStatus[b.id] === 'include') {
       selected.push(b);
@@ -538,7 +719,6 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   });
 
   if (mode === 'overlap') {
-      // --- MAX OVERLAP LOGIC ---
       while (uncovered.size > 0 && available.length > 0) {
         const catCounts = {};
         uncovered.forEach(c => catCounts[c] = 0);
@@ -553,11 +733,8 @@ function renderResults(mode = 'overlap', forceRandom = false) {
           const cov = covCats.length;
           if (cov === 0) continue;
 
-          if (cov > maxCov) {
-              maxCov = cov; candidates = [b];
-          } else if (cov === maxCov) {
-              candidates.push(b);
-          }
+          if (cov > maxCov) { maxCov = cov; candidates = [b]; } 
+          else if (cov === maxCov) { candidates.push(b); }
         }
 
         if (candidates.length === 0) break;
@@ -569,41 +746,34 @@ function renderResults(mode = 'overlap', forceRandom = false) {
       }
       
   } else if (mode === 'single') {
-      // --- STRICTLY NO OVERLAPS LOGIC ---
-      // We explicitly hunt for books that cover exactly ONE active category.
       const pureBooks = available.filter(b => b.categories.length === 1);
-
       const tempUncovered = Array.from(uncovered);
       for (const c of tempUncovered) {
           if (!uncovered.has(c)) continue; 
-          
           const cands = pureBooks.filter(b => b.categories.includes(c));
           if (cands.length > 0) {
               const pick = cands[Math.floor(Math.random() * cands.length)];
               selected.push(pick);
               uncovered.delete(c);
-              // Remove the picked book from available pool
               const index = pureBooks.findIndex(b => b.id === pick.id);
               if(index !== -1) pureBooks.splice(index, 1);
           } else {
-              // Could not find a book without overlaps for this category
               failedSingleCategories.push(c);
           }
       }
   }
 
   lastOptimal = { selected, uncovered: Array.from(uncovered) };
-  
   $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${selected.length} Books (${mode === 'single' ? 'No overlaps allowed' : 'Maximized overlaps'})`;
 
   let html = '';
   
   if (mode === 'single' && failedSingleCategories.length > 0) {
-      html += `<div class="banner warn"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another challenge, or has been marked "Avoid".</small></div></div>`;
+      html += `<div class="banner warn"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
   }
   
   if (uncovered.size > 0 && mode === 'overlap') {
-      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
+      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
   }
 
   if (activeCats.size === 0) {
@@ -615,7 +785,7 @@ function renderResults(mode = 'overlap', forceRandom = false) {
         <div class="book-card optimal">
             <div>
                 <a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(c)}</span>`).join('')}</div>
+                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('')}</div>
             </div>
             <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
         </div>
@@ -630,7 +800,7 @@ function renderSheet() {
   let html = '';
   activeData.sections.forEach((sec, i) => {
     if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
-    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
+    const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
     sec.books.forEach((b, idx) => {
       html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
     });
@@ -656,6 +826,8 @@ document.body.addEventListener('click', (e) => {
     if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
     e.stopPropagation();
     
+    if(window.innerWidth < 900) { $('sidebar').classList.add('open'); $('sidebar-backdrop').classList.add('open'); }
+
     const id = loc.getAttribute('data-locate');
     const el = document.getElementById(id);
     if (el) {
@@ -677,7 +849,11 @@ function switchTab(tab) {
 }
 $('tab-library').addEventListener('click', () => switchTab('library'));
 $('tab-optimal').addEventListener('click', () => switchTab('optimal'));
-$('tab-spreadsheet').addEventListener('click', () => switchTab('spreadsheet'));
+
+// PRO SPREADSHEET TAB
+$('tab-spreadsheet').addEventListener('click', () => {
+    handleProFeature(() => switchTab('spreadsheet'));
+});
 
 $('search-input').addEventListener('input', (e) => { search = e.target.value; renderLibrary(); });
 $('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLibrary(); });
@@ -698,13 +874,10 @@ $('btn-copy-optimal').addEventListener('click', async () => {
   if (!lastOptimal.selected.length) return;
   let md = '### 📚 My Optimal Reading List\n\n';
   lastOptimal.selected.forEach(b => {
-    const tags = b.categories.join(', ');
+    const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
     md += `- [${b.title}](${b.url}) *(Covers: ${tags})*\n`;
   });
-  try {
-    await navigator.clipboard.writeText(md);
-    toast('Optimal list copied as markdown', 'success');
-  } catch { toast('Could not copy', 'error'); }
+  try { await navigator.clipboard.writeText(md); toast('List copied as markdown', 'success'); } catch { toast('Could not copy', 'error'); }
 });
 
 $('btn-copy-sheet').addEventListener('click', async () => {
@@ -713,7 +886,7 @@ $('btn-copy-sheet').addEventListener('click', async () => {
   
   activeData.sections.forEach((sec, i) => {
     if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
-    const label = `${sec.categories.join(' + ')} (Common: ${sec.books.length} books)`;
+    const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
     sec.books.forEach((b, idx) => {
       const cat = idx === 0 ? label : '';
       html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a></td></tr>`;
@@ -724,20 +897,16 @@ $('btn-copy-sheet').addEventListener('click', async () => {
 
   try {
     if (navigator.clipboard && window.ClipboardItem) {
-      await navigator.clipboard.write([new ClipboardItem({
-        'text/html': new Blob([html], { type: 'text/html' }),
-        'text/plain': new Blob([plain], { type: 'text/plain' }),
-      })]);
-    } else {
-      await navigator.clipboard.writeText(plain);
-    }
+      await navigator.clipboard.write([
+        new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([plain], { type: 'text/plain' }) })
+      ]);
+    } else { await navigator.clipboard.writeText(plain); }
     toast('Copied — paste into Excel or Sheets', 'success');
   } catch {
     const range = document.createRange();
     range.selectNodeContents(document.querySelector('table.sheet'));
     const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
-    try { document.execCommand('copy'); toast('Copied!', 'success'); }
-    catch { toast('Could not copy', 'error'); }
+    try { document.execCommand('copy'); toast('Copied!', 'success'); } catch { toast('Could not copy', 'error'); }
     sel.removeAllRanges();
   }
 });

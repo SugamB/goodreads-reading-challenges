@@ -1,45 +1,1999 @@
 {
-  "lastUpdated": "2026-04-18T18:23:48.219Z",
+  "lastUpdated": "2026-05-01T13:11:22.931Z",
   "challenges": [
     {
-      "id": "Community Picks",
-      "name": "Community Picks",
-      "url": "https://www.goodreads.com/blog/show/3093?ref=gradp_communitypicks",
-      "count": 136
-    },
-    {
-      "id": "Trending Books",
-      "name": "Trending Books",
-      "url": "https://www.goodreads.com/blog/show/3079?ref=gradp_trendingbooks",
-      "count": 140
-    },
-    {
-      "id": "Marathon Reader",
-      "name": "Marathon Reader",
-      "url": "https://www.goodreads.com/blog/show/3087?ref=gradp_marathonreader",
-      "count": 100
-    },
-    {
-      "id": "Editors' Picks",
-      "name": "Editors' Picks",
-      "url": "https://www.goodreads.com/blog/show/3089?ref=gradp_editorspicks",
-      "count": 120
+      "id": "AAPI Heritage",
+      "name": "AAPI Heritage",
+      "url": "https://www.goodreads.com/blog/show/3048",
+      "count": 132
     },
     {
       "id": "Books on Books",
       "name": "Books on Books",
-      "url": "https://www.goodreads.com/blog/show/3090?ref=gradp_booksonbooks",
+      "url": "https://www.goodreads.com/blog/show/3090",
       "count": 144
+    },
+    {
+      "id": "Community Picks",
+      "name": "Community Picks",
+      "url": "https://www.goodreads.com/blog/show/3093",
+      "count": 136
+    },
+    {
+      "id": "Editors' Picks",
+      "name": "Editors' Picks",
+      "url": "https://www.goodreads.com/blog/show/3089",
+      "count": 120
+    },
+    {
+      "id": "Marathon Reader",
+      "name": "Marathon Reader",
+      "url": "https://www.goodreads.com/blog/show/3087",
+      "count": 100
+    },
+    {
+      "id": "Trending Books",
+      "name": "Trending Books",
+      "url": "https://www.goodreads.com/blog/show/3079",
+      "count": 140
     }
   ],
   "books": [
     {
-      "title": "It's Not Her",
+      "title": "The Last of Earth",
+      "url": "https://www.goodreads.com/book/show/231363155",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "My Dear You",
+      "url": "https://www.goodreads.com/book/show/238226950",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Dreamt I Found You",
+      "url": "https://www.goodreads.com/book/show/239680392",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Discipline",
+      "url": "https://www.goodreads.com/book/show/231681778",
+      "challenges": [
+        "AAPI Heritage",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Under Water",
+      "url": "https://www.goodreads.com/book/show/236772855",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "All the World Can Hold",
+      "url": "https://www.goodreads.com/book/show/235991949",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Japanese Gothic",
+      "url": "https://www.goodreads.com/book/show/233333688",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Honey in the Wound",
+      "url": "https://www.goodreads.com/book/show/235992600",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Age of Calamities",
+      "url": "https://www.goodreads.com/book/show/231126882",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "A Midnight Pastry Shop Called Hwawoldang",
+      "url": "https://www.goodreads.com/book/show/231388861",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Elsewhere Express",
+      "url": "https://www.goodreads.com/book/show/232149892",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "How to Commit a Postcolonial Murder",
+      "url": "https://www.goodreads.com/book/show/231266757",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Poet Empress",
+      "url": "https://www.goodreads.com/book/show/231680079",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "A Beast Slinks Towards Beijing",
+      "url": "https://www.goodreads.com/book/show/232241619",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "And the Ancestors Sing",
+      "url": "https://www.goodreads.com/book/show/230600972",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Bad Asians",
+      "url": "https://www.goodreads.com/book/show/231126783",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "I Love You Don&apos;t Die",
+      "url": "https://www.goodreads.com/book/show/236643256",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Crown City (Japantown Mystery #3)",
+      "url": "https://www.goodreads.com/book/show/234353362",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Hooked",
+      "url": "https://www.goodreads.com/book/show/238969853",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Take",
+      "url": "https://www.goodreads.com/book/show/235404665",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Molka",
+      "url": "https://www.goodreads.com/book/show/228398323",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Subtle Art of Folding Space",
+      "url": "https://www.goodreads.com/book/show/231127269",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Boring Asian Female",
+      "url": "https://www.goodreads.com/book/show/239433082",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Livonia Chow Mein",
+      "url": "https://www.goodreads.com/book/show/235992038",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Plans I Have for You",
+      "url": "https://www.goodreads.com/book/show/235991889",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Valley of Vengeful Ghosts",
+      "url": "https://www.goodreads.com/book/show/235672472",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "American Han",
+      "url": "https://www.goodreads.com/book/show/238142763",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Whidbey",
+      "url": "https://www.goodreads.com/book/show/236079795",
+      "challenges": [
+        "AAPI Heritage",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "The Pohaku",
+      "url": "https://www.goodreads.com/book/show/232735601",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Rebel English Academy",
+      "url": "https://www.goodreads.com/book/show/234101021",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Legend of the Nine-Tailed Fox",
+      "url": "https://www.goodreads.com/book/show/235992696",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Girl with a Thousand Faces",
+      "url": "https://www.goodreads.com/book/show/240019948",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Obake Code",
+      "url": "https://www.goodreads.com/book/show/234313856",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Just Friends",
+      "url": "https://www.goodreads.com/book/show/235991978",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Questions 27 &amp; 28",
+      "url": "https://www.goodreads.com/book/show/231387327",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Celestial Lights",
+      "url": "https://www.goodreads.com/book/show/232234360",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Sakura",
+      "url": "https://www.goodreads.com/book/show/235672425",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "A Killer in the Family",
+      "url": "https://www.goodreads.com/book/show/231126949",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Cleo Dang Would Rather Be Dead",
+      "url": "https://www.goodreads.com/book/show/235992395",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Ms. Mebel Goes Back to the Chopping Block",
+      "url": "https://www.goodreads.com/book/show/239433100",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Double Happiness",
+      "url": "https://www.goodreads.com/book/show/240381682",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Everyday Movement",
+      "url": "https://www.goodreads.com/book/show/233717203",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Enemies to Lovers",
+      "url": "https://www.goodreads.com/book/show/238179132",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Flashlight",
+      "url": "https://www.goodreads.com/book/show/219743621",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Mrs. Shim Is a Killer",
+      "url": "https://www.goodreads.com/book/show/239132025",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Midnight Taxi",
+      "url": "https://www.goodreads.com/book/show/233717189",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Greedy",
+      "url": "https://www.goodreads.com/book/show/234352794",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Superfan",
+      "url": "https://www.goodreads.com/book/show/231127415",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Read Between the Lies",
+      "url": "https://www.goodreads.com/book/show/239827370",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Fourth Princess",
+      "url": "https://www.goodreads.com/book/show/234621445",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Rings of Fate (Curses and Crowns, #1)",
+      "url": "https://www.goodreads.com/book/show/203938054",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "One &amp; Only",
+      "url": "https://www.goodreads.com/book/show/238872971",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Burn the Sea",
+      "url": "https://www.goodreads.com/book/show/238615737",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Killing Spell",
+      "url": "https://www.goodreads.com/book/show/224004023",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "That Which Feeds Us",
+      "url": "https://www.goodreads.com/book/show/241675506",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "This Is Where the Serpent Lives",
+      "url": "https://www.goodreads.com/book/show/231363119",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Missing Sam",
+      "url": "https://www.goodreads.com/book/show/232884526",
+      "challenges": [
+        "AAPI Heritage",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Minbak",
+      "url": "https://www.goodreads.com/book/show/235793220",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Sisters in Yellow",
+      "url": "https://www.goodreads.com/book/show/237693055",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Complex",
+      "url": "https://www.goodreads.com/book/show/236116680",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Emperor of Gladness",
+      "url": "https://www.goodreads.com/book/show/219848315",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Bat Eater and Other Names for Cora Zeng",
+      "url": "https://www.goodreads.com/book/show/218185743",
+      "challenges": [
+        "AAPI Heritage",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Katabasis",
+      "url": "https://www.goodreads.com/book/show/210191773",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Vera Wong&apos;s Guide to Snooping [On a Dead Man] (Vera Wong, #2)",
+      "url": "https://www.goodreads.com/book/show/215805924",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Julie Chan Is Dead",
+      "url": "https://www.goodreads.com/book/show/220195725",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Audition",
+      "url": "https://www.goodreads.com/book/show/216247518",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The English Problem",
+      "url": "https://www.goodreads.com/book/show/212806722",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Detective Aunty (Kausar Khan Investigates, #1)",
+      "url": "https://www.goodreads.com/book/show/217223352",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Lotus Shoes",
+      "url": "https://www.goodreads.com/book/show/213888716",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Old Soul",
+      "url": "https://www.goodreads.com/book/show/211178725",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Break Room",
+      "url": "https://www.goodreads.com/book/show/241408957",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Homeseeking",
+      "url": "https://www.goodreads.com/book/show/223422252",
+      "challenges": [
+        "AAPI Heritage",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "Mỹ Documents",
+      "url": "https://www.goodreads.com/book/show/216247494",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "I Leave It Up to You",
+      "url": "https://www.goodreads.com/book/show/214399236",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Family Recipe",
+      "url": "https://www.goodreads.com/book/show/214208247",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Matchmaker",
+      "url": "https://www.goodreads.com/book/show/212806630",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Our Beautiful Boys",
+      "url": "https://www.goodreads.com/book/show/214986231",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Immaculate Conception",
+      "url": "https://www.goodreads.com/book/show/217453576",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Luminous",
+      "url": "https://www.goodreads.com/book/show/214151232",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Disappoint Me",
+      "url": "https://www.goodreads.com/book/show/218153678",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Book of Records",
+      "url": "https://www.goodreads.com/book/show/218569917",
+      "challenges": [
+        "AAPI Heritage",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Awake in the Floating City",
+      "url": "https://www.goodreads.com/book/show/217453585",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Blob: A Love Story",
+      "url": "https://www.goodreads.com/book/show/212994452",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Saltcrop",
+      "url": "https://www.goodreads.com/book/show/222376600",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Immortal",
+      "url": "https://www.goodreads.com/book/show/211642122",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Yours, Eventually",
+      "url": "https://www.goodreads.com/book/show/216522680",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Water Moon",
+      "url": "https://www.goodreads.com/book/show/211479192",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "We Do Not Part",
+      "url": "https://www.goodreads.com/book/show/205436018",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Phoenix Pencil Company",
+      "url": "https://www.goodreads.com/book/show/220652184",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Vanishing World",
+      "url": "https://www.goodreads.com/book/show/219300660",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The South",
+      "url": "https://www.goodreads.com/book/show/217387871",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Original Daughter",
+      "url": "https://www.goodreads.com/book/show/217245582",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Alchemised",
+      "url": "https://www.goodreads.com/book/show/222490389",
+      "challenges": [
+        "AAPI Heritage",
+        "Marathon Reader",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Loneliness of Sonia and Sunny",
+      "url": "https://www.goodreads.com/book/show/222683974",
+      "challenges": [
+        "AAPI Heritage",
+        "Marathon Reader",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Midnight Timetable: A Novel in Ghost Stories",
+      "url": "https://www.goodreads.com/book/show/223296389",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Loved One",
+      "url": "https://www.goodreads.com/book/show/221473262",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Best Offer Wins",
+      "url": "https://www.goodreads.com/book/show/231126811",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "A Guardian and a Thief",
+      "url": "https://www.goodreads.com/book/show/232207672",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "What Hunger",
+      "url": "https://www.goodreads.com/book/show/219445683",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "These Memories Do Not Belong to Us",
+      "url": "https://www.goodreads.com/book/show/221452836",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Moderation",
+      "url": "https://www.goodreads.com/book/show/221251742",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Lightbreakers",
+      "url": "https://www.goodreads.com/book/show/226743876",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "I&apos;ll Follow You",
+      "url": "https://www.goodreads.com/book/show/234481515",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Satisfaction Café",
+      "url": "https://www.goodreads.com/book/show/220160649",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Memory Hunters (The Consecrated, #1)",
+      "url": "https://www.goodreads.com/book/show/219236780",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Where Are You Really From",
+      "url": "https://www.goodreads.com/book/show/221754305",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Wanting",
+      "url": "https://www.goodreads.com/book/show/220517410",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Gingko Season",
+      "url": "https://www.goodreads.com/book/show/218569834",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Light and Thread",
+      "url": "https://www.goodreads.com/book/show/230422844",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Who We Are Becoming Matters: The Courage, Wisdom, and Aloha We Need in a Timeplace of Collapse",
+      "url": "https://www.goodreads.com/book/show/233717430",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "We Mend with Gold: An Immigrant Daughter&apos;s Reckoning with American Christianity",
+      "url": "https://www.goodreads.com/book/show/235848745",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Eat Bitter: A Story About Guts, and Food",
+      "url": "https://www.goodreads.com/book/show/240490880",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "A Place for What We Lose: A Daughter&apos;s Return to Tule Lake",
+      "url": "https://www.goodreads.com/book/show/242215799",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "A Room in Bombay: A Memoir",
+      "url": "https://www.goodreads.com/book/show/233411607",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Life After Ambition: A &quot;Good Enough&quot; Memoir",
+      "url": "https://www.goodreads.com/book/show/235992837",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Other Side of Change: Who We Become When Life Makes Other Plans",
+      "url": "https://www.goodreads.com/book/show/231404078",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Strangers in the Land: Exclusion, Belonging, and the Epic Story of the Chinese in America",
+      "url": "https://www.goodreads.com/book/show/217245552",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Fetishized: A Reckoning with Yellow Fever, Feminism, and Beauty",
+      "url": "https://www.goodreads.com/book/show/221754280",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Kuleana: A Story of Family, Land, and Legacy in Old Hawai&apos;i",
+      "url": "https://www.goodreads.com/book/show/217388255",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Asian/Other: Life, Poems, and the Problem of Memoir",
+      "url": "https://www.goodreads.com/book/show/213395485",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Water Mirror Echo: Bruce Lee and the Making of Asian America – A Powerful Story from Counterculture to Hollywood Legend",
+      "url": "https://www.goodreads.com/book/show/222904071",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Mother Mary Comes to Me",
+      "url": "https://www.goodreads.com/book/show/224004055",
+      "challenges": [
+        "AAPI Heritage",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Bibliophobia",
+      "url": "https://www.goodreads.com/book/show/212806663",
+      "challenges": [
+        "AAPI Heritage",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Accidentally on Purpose",
+      "url": "https://www.goodreads.com/book/show/218075335",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Restaurant Kid: A Memoir of Family and Belonging",
+      "url": "https://www.goodreads.com/book/show/214151670",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Good Soil: The Education of an Accidental Farmhand",
+      "url": "https://www.goodreads.com/book/show/215361966",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Clam Down: A Metamorphosis",
+      "url": "https://www.goodreads.com/book/show/218460348",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Things in Nature Merely Grow",
+      "url": "https://www.goodreads.com/book/show/221164555",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Year of the Water Horse: A Memoir",
+      "url": "https://www.goodreads.com/book/show/224003979",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Firstborn: A Memoir",
+      "url": "https://www.goodreads.com/book/show/214986210",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The True Happiness Company: How a Girl Like Me Falls for a Cult Like That",
+      "url": "https://www.goodreads.com/book/show/215361994",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Unassimilable: An Asian Diasporic Manifesto for the Twenty-First Century – A Hard-Hitting Scholar-Activist Memoir on Revolutionary Politics",
+      "url": "https://www.goodreads.com/book/show/211642057",
+      "challenges": [
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Correspondent",
+      "url": "https://www.goodreads.com/book/show/223001257",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "People Like Us",
+      "url": "https://www.goodreads.com/book/show/221251749",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "What We Can Know",
+      "url": "https://www.goodreads.com/book/show/223854881",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Death of the Author",
+      "url": "https://www.goodreads.com/book/show/214283593",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Award",
+      "url": "https://www.goodreads.com/book/show/228665865",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Son of Nobody",
+      "url": "https://www.goodreads.com/book/show/233411679",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Is This a Cry for Help?",
+      "url": "https://www.goodreads.com/book/show/235993013",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Love by the Book",
+      "url": "https://www.goodreads.com/book/show/231127042",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Lost Book of Elizabeth Barton",
+      "url": "https://www.goodreads.com/book/show/231126959",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Adjunct",
+      "url": "https://www.goodreads.com/book/show/235992288",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "We Love You, Bunny (Bunny, #2)",
+      "url": "https://www.goodreads.com/book/show/220595449",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Trust",
+      "url": "https://www.goodreads.com/book/show/58210933",
+      "challenges": [
+        "Books on Books",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The City and Its Uncertain Walls",
+      "url": "https://www.goodreads.com/book/show/209192695",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "More Than Enough",
+      "url": "https://www.goodreads.com/book/show/234943545",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Our Missing Hearts",
+      "url": "https://www.goodreads.com/book/show/60149573",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Writers &amp; Lovers",
+      "url": "https://www.goodreads.com/book/show/45289222",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Ending Writes Itself",
+      "url": "https://www.goodreads.com/book/show/236447384",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Woman Down",
+      "url": "https://www.goodreads.com/book/show/241458703",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Get Away with Murder",
+      "url": "https://www.goodreads.com/book/show/231126906",
+      "challenges": [
+        "Books on Books",
+        "Community Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Yellowface",
+      "url": "https://www.goodreads.com/book/show/62047984",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Harlem Rhapsody",
+      "url": "https://www.goodreads.com/book/show/212806640",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Bitter Sweet",
+      "url": "https://www.goodreads.com/book/show/220239023",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Queens of Crime",
+      "url": "https://www.goodreads.com/book/show/211003830",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "After Hours at Dooryard Books",
+      "url": "https://www.goodreads.com/book/show/240719965",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Colored Television",
+      "url": "https://www.goodreads.com/book/show/201102398",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Book Lovers",
+      "url": "https://www.goodreads.com/book/show/58690308",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Astral Library",
+      "url": "https://www.goodreads.com/book/show/235289982",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "This Kingdom Will Not Kill Me (Maggie the Undying, #1)",
+      "url": "https://www.goodreads.com/book/show/231680045",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book Witch",
+      "url": "https://www.goodreads.com/book/show/238226952",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Write a Love Story",
+      "url": "https://www.goodreads.com/book/show/236847870",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Murder Your Darlings",
+      "url": "https://www.goodreads.com/book/show/231388851",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Everlasting",
+      "url": "https://www.goodreads.com/book/show/226850464",
+      "challenges": [
+        "Books on Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "A Novel Love Story",
+      "url": "https://www.goodreads.com/book/show/199261152",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Glowing Hours",
+      "url": "https://www.goodreads.com/book/show/232794118",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Ghostwriter",
+      "url": "https://www.goodreads.com/book/show/218644981",
+      "challenges": [
+        "Books on Books",
+        "Community Picks",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "It&apos;s Me They Follow",
+      "url": "https://www.goodreads.com/book/show/222904031",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Ladies in Hating (Belvoir&apos;s Library, #3)",
+      "url": "https://www.goodreads.com/book/show/222376849",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Lost Story of Eva Fuentes",
+      "url": "https://www.goodreads.com/book/show/220239094",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Quiet Librarian",
+      "url": "https://www.goodreads.com/book/show/214175092",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Library of Fates",
+      "url": "https://www.goodreads.com/book/show/223421690",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Missing Pages",
+      "url": "https://www.goodreads.com/book/show/227991193",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Busybody Book Club",
+      "url": "https://www.goodreads.com/book/show/218153882",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book of Lost Hours",
+      "url": "https://www.goodreads.com/book/show/220161572",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Grieve Like a Victorian: A funny, heartwarming love story – A Library Journal Best Book of 2025 Romantic Comedy Fiction Novel",
+      "url": "https://www.goodreads.com/book/show/220140292",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Cloud Cuckoo Land",
+      "url": "https://www.goodreads.com/book/show/56783258",
+      "challenges": [
+        "Books on Books",
+        "Editors' Picks",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "The Sentence",
+      "url": "https://www.goodreads.com/book/show/56816904",
+      "challenges": [
+        "Books on Books",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Book of Forbidden Words",
+      "url": "https://www.goodreads.com/book/show/234313845",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Unwritten Rules of Magic",
+      "url": "https://www.goodreads.com/book/show/231127286",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Disorientation",
+      "url": "https://www.goodreads.com/book/show/58350424",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book Eaters",
+      "url": "https://www.goodreads.com/book/show/58724745",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Write Off",
+      "url": "https://www.goodreads.com/book/show/238227084",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Malice House",
+      "url": "https://www.goodreads.com/book/show/59851359",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Who Is Maud Dixon?",
+      "url": "https://www.goodreads.com/book/show/52320705",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "By Any Other Name",
+      "url": "https://www.goodreads.com/book/show/203337138",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Survive a Horror Story",
+      "url": "https://www.goodreads.com/book/show/219542927",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Reading List",
+      "url": "https://www.goodreads.com/book/show/55276648",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Welcome to the Hyunam-dong Bookshop",
+      "url": "https://www.goodreads.com/book/show/199437939",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Read a Book",
+      "url": "https://www.goodreads.com/book/show/62365896",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Personal Librarian",
+      "url": "https://www.goodreads.com/book/show/55333938",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Bookstore Diaries",
+      "url": "https://www.goodreads.com/book/show/234041217",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book Tour",
+      "url": "https://www.goodreads.com/book/show/235699965",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Secret Book Society",
+      "url": "https://www.goodreads.com/book/show/222850723",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Last Word",
+      "url": "https://www.goodreads.com/book/show/61767163",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "You Are Fatally Invited",
+      "url": "https://www.goodreads.com/book/show/213243937",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Jane and Dan at the End of the World",
+      "url": "https://www.goodreads.com/book/show/214268974",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Bookbinder&apos;s Secret",
+      "url": "https://www.goodreads.com/book/show/231127283",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Ghost Town",
+      "url": "https://www.goodreads.com/book/show/235991946",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Not in My Book",
+      "url": "https://www.goodreads.com/book/show/203194039",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Lula Dean&apos;s Little Library of Banned Books",
+      "url": "https://www.goodreads.com/book/show/200987258",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Echo of Old Books",
+      "url": "https://www.goodreads.com/book/show/62060282",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Ink Blood Sister Scribe",
+      "url": "https://www.goodreads.com/book/show/62854842",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "A Lady for All Seasons",
+      "url": "https://www.goodreads.com/book/show/236115757",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Finest Print",
+      "url": "https://www.goodreads.com/book/show/219298188",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Watermark",
+      "url": "https://www.goodreads.com/book/show/216190434",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Sisters of Book Row",
+      "url": "https://www.goodreads.com/book/show/235672415",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "This Book Made Me Think of You",
+      "url": "https://www.goodreads.com/book/show/232794526",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Finders Keepers",
+      "url": "https://www.goodreads.com/book/show/227948521",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "That&apos;s Not How It Happened",
+      "url": "https://www.goodreads.com/book/show/226388148",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "An Academic Affair",
+      "url": "https://www.goodreads.com/book/show/224003821",
+      "challenges": [
+        "Books on Books",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Charmed Library",
+      "url": "https://www.goodreads.com/book/show/229098217",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Dictionary of Lost Words",
+      "url": "https://www.goodreads.com/book/show/54814839",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "What You Are Looking for Is in the Library",
+      "url": "https://www.goodreads.com/book/show/91274427",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Paris Library",
+      "url": "https://www.goodreads.com/book/show/52761909",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book That Wouldn’t Burn (The Library Trilogy, #1)",
+      "url": "https://www.goodreads.com/book/show/61612864",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "No Two Persons",
+      "url": "https://www.goodreads.com/book/show/60196684",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Plot (The Book Series, #1)",
+      "url": "https://www.goodreads.com/book/show/55315487",
+      "challenges": [
+        "Books on Books",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "The Banned Bookshop of Maggie Banks",
+      "url": "https://www.goodreads.com/book/show/60305890",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Thank You for Listening",
+      "url": "https://www.goodreads.com/book/show/59314703",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book of Form and Emptiness",
+      "url": "https://www.goodreads.com/book/show/57004637",
+      "challenges": [
+        "Books on Books",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "Battle of the Bookstores",
+      "url": "https://www.goodreads.com/book/show/218460257",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Seven Days in June",
+      "url": "https://www.goodreads.com/book/show/57378707",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Cemetery of Untold Stories",
+      "url": "https://www.goodreads.com/book/show/195820829",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Neighbor Favor (The Greene Sisters, #1)",
+      "url": "https://www.goodreads.com/book/show/61111295",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Twyford Code",
+      "url": "https://www.goodreads.com/book/show/61411926",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "By the Book (Meant to Be, #2)",
+      "url": "https://www.goodreads.com/book/show/58950845",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Once Upon a Time in Dollywood",
+      "url": "https://www.goodreads.com/book/show/223854466",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Or What You Will",
+      "url": "https://www.goodreads.com/book/show/45174884",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Everyone on This Train Is a Suspect (Ernest Cunningham, #2)",
+      "url": "https://www.goodreads.com/book/show/167006698",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "This Book Won&apos;t Burn",
+      "url": "https://www.goodreads.com/book/show/198493806",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Marble Hall Murders (Susan Ryeland, #3)",
+      "url": "https://www.goodreads.com/book/show/217432789",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book Censor&apos;s Library",
+      "url": "https://www.goodreads.com/book/show/175678711",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book Club for Troublesome Women",
+      "url": "https://www.goodreads.com/book/show/216052751",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Idea Machine: How Books Built Our World and Shape Our Future",
+      "url": "https://www.goodreads.com/book/show/223358375",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "How to Read Now",
+      "url": "https://www.goodreads.com/book/show/60018643",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Every Day I Read: 53 Ways to Get Closer to Books",
+      "url": "https://www.goodreads.com/book/show/223319316",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Black-Owned: The Revolutionary Life of the Black Bookstore",
+      "url": "https://www.goodreads.com/book/show/226744092",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "A Danger to the Minds of Young Girls: Margaret C. Anderson, Book Bans, and the Fight to Modernize Literature",
+      "url": "https://www.goodreads.com/book/show/220160124",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "That Librarian: The Fight Against Book Banning in America",
+      "url": "https://www.goodreads.com/book/show/203579067",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "These Precious Days: Essays",
+      "url": "https://www.goodreads.com/book/show/56922687",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Unread: A Memoir of Learning (and Loving) to Read on TikTok",
+      "url": "https://www.goodreads.com/book/show/235629842",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "One Aladdin Two Lamps",
+      "url": "https://www.goodreads.com/book/show/234100962",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Jane Austen&apos;s Bookshelf",
+      "url": "https://www.goodreads.com/book/show/214152206",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Bad Indians Book Club: Reading at the Edge of a Thousand Worlds",
+      "url": "https://www.goodreads.com/book/show/222850887",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Bookshop: A History of the American Bookstore",
+      "url": "https://www.goodreads.com/book/show/201751300",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Bookish: How Reading Shapes Our Lives",
+      "url": "https://www.goodreads.com/book/show/235992758",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Monsters in the Archives: My Year of Fear with Stephen King",
+      "url": "https://www.goodreads.com/book/show/239151034",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Ex Libris: 100+ Books to Read and Reread",
+      "url": "https://www.goodreads.com/book/show/51151753",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Why We Read: On Bookworms, Libraries, and Just One More Page Before Lights Out – A Hilarious Guide for Book Lovers and Lifelong Readers",
+      "url": "https://www.goodreads.com/book/show/127975811",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "A Swim in a Pond in the Rain",
+      "url": "https://www.goodreads.com/book/show/53487237",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Gather Me: A Memoir in Praise of the Books That Saved Me",
+      "url": "https://www.goodreads.com/book/show/60372120",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Read Dangerously: The Subversive Power of Literature in Troubled Times",
+      "url": "https://www.goodreads.com/book/show/49867396",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Book and Dagger: How Scholars and Librarians Became the Unlikely Spies of World War II",
+      "url": "https://www.goodreads.com/book/show/199793672",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "101 Horror Books to Read Before You&apos;re Murdered",
+      "url": "https://www.goodreads.com/book/show/61963198",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Genius of Judy: How Judy Blume Rewrote Childhood for All of Us",
+      "url": "https://www.goodreads.com/book/show/199797799",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "On Morrison",
+      "url": "https://www.goodreads.com/book/show/232207640",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The CIA Book Club: The Secret Mission to Win the Cold War with Forbidden Literature",
+      "url": "https://www.goodreads.com/book/show/222292403",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Toni Morrison Book Club",
+      "url": "https://www.goodreads.com/book/show/52062356",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Unfinished Business: Notes of a Chronic Re-reader",
+      "url": "https://www.goodreads.com/book/show/45892264",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Orwell&apos;s Roses",
+      "url": "https://www.goodreads.com/book/show/56557019",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Fear Less: Poetry in Perilous Times",
+      "url": "https://www.goodreads.com/book/show/223736217",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Let the Poets Govern: A Declaration of Freedom",
+      "url": "https://www.goodreads.com/book/show/235699935",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Shut Up and Read: A Memoir from Harriett’s Bookshop",
+      "url": "https://www.goodreads.com/book/show/236844744",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Judy Blume: A Life",
+      "url": "https://www.goodreads.com/book/show/236116694",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Positive Obsession: The Life and Times of Octavia E. Butler",
+      "url": "https://www.goodreads.com/book/show/221228026",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Gertrude Stein: An Afterlife",
+      "url": "https://www.goodreads.com/book/show/224003754",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Baldwin: A Love Story",
+      "url": "https://www.goodreads.com/book/show/217387674",
+      "challenges": [
+        "Books on Books",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Mark Twain",
+      "url": "https://www.goodreads.com/book/show/219158874",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "In the Margins: On the Pleasures of Reading and Writing",
+      "url": "https://www.goodreads.com/book/show/58949461",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Unabridged: The Thrill of (and Threat to) the Modern Dictionary",
+      "url": "https://www.goodreads.com/book/show/228110298",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Writing During the Apocalypse: Reflections on the Great Unraveling",
+      "url": "https://www.goodreads.com/book/show/230791895",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Book-Makers: A History of the Book in Eighteen Lives",
+      "url": "https://www.goodreads.com/book/show/195430889",
+      "challenges": [
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "It&apos;s Not Her",
       "url": "https://www.goodreads.com/book/show/230443142",
       "challenges": [
         "Community Picks",
-        "Trending Books",
-        "Editors' Picks"
+        "Editors' Picks",
+        "Trending Books"
       ]
     },
     {
@@ -50,7 +2004,7 @@
       ]
     },
     {
-      "title": "My Husband's Wife",
+      "title": "My Husband&apos;s Wife",
       "url": "https://www.goodreads.com/book/show/231127462",
       "challenges": [
         "Community Picks",
@@ -89,31 +2043,8 @@
       ]
     },
     {
-      "title": "How to Get Away with Murder",
-      "url": "https://www.goodreads.com/book/show/231126906",
-      "challenges": [
-        "Community Picks",
-        "Trending Books",
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Whidbey",
-      "url": "https://www.goodreads.com/book/show/236079795",
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "The Keeper (Cal Hooper, #3)",
       "url": "https://www.goodreads.com/book/show/238227104",
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
-      "title": "Missing Sam",
-      "url": "https://www.goodreads.com/book/show/232884526",
       "challenges": [
         "Community Picks"
       ]
@@ -135,13 +2066,6 @@
     {
       "title": "We Are All Guilty Here (North Falls, #1)",
       "url": "https://www.goodreads.com/book/show/221544394",
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
-      "title": "The Ghostwriter",
-      "url": "https://www.goodreads.com/book/show/234069612",
       "challenges": [
         "Community Picks"
       ]
@@ -184,7 +2108,7 @@
       ]
     },
     {
-      "title": "She Didn't See It Coming",
+      "title": "She Didn&apos;t See It Coming",
       "url": "https://www.goodreads.com/book/show/220999092",
       "challenges": [
         "Community Picks"
@@ -198,7 +2122,7 @@
       ]
     },
     {
-      "title": "Don't Let Him In",
+      "title": "Don&apos;t Let Him In",
       "url": "https://www.goodreads.com/book/show/220160814",
       "challenges": [
         "Community Picks"
@@ -329,10 +2253,11 @@
       ]
     },
     {
-      "title": "Vera Wong's Unsolicited Advice for Murderers (Vera Wong, #1)",
+      "title": "Vera Wong&apos;s Unsolicited Advice for Murderers (Vera Wong, #1)",
       "url": "https://www.goodreads.com/book/show/61827543",
       "challenges": [
-        "Community Picks"
+        "Community Picks",
+        "Editors' Picks"
       ]
     },
     {
@@ -432,7 +2357,8 @@
       "title": "The Overnight Guest",
       "url": "https://www.goodreads.com/book/show/60164470",
       "challenges": [
-        "Community Picks"
+        "Community Picks",
+        "Editors' Picks"
       ]
     },
     {
@@ -513,14 +2439,6 @@
       ]
     },
     {
-      "title": "The Plot (The Book Series, #1)",
-      "url": "https://www.goodreads.com/book/show/55315487",
-      "challenges": [
-        "Community Picks",
-        "Books on Books"
-      ]
-    },
-    {
       "title": "The Night She Disappeared",
       "url": "https://www.goodreads.com/book/show/55922299",
       "challenges": [
@@ -577,7 +2495,7 @@
       ]
     },
     {
-      "title": "His & Hers",
+      "title": "His &amp; Hers",
       "url": "https://www.goodreads.com/book/show/45885495",
       "challenges": [
         "Community Picks"
@@ -878,7 +2796,7 @@
       ]
     },
     {
-      "title": "Don't Let Go",
+      "title": "Don&apos;t Let Go",
       "url": "https://www.goodreads.com/book/show/34001659",
       "challenges": [
         "Community Picks"
@@ -1004,944 +2922,737 @@
       ]
     },
     {
-      "title": "Heart the Lover",
-      "url": "https://www.goodreads.com/book/show/228110489",
+      "title": "Wild Dark Shore",
+      "url": "https://www.goodreads.com/book/show/211004089",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Lost Lambs",
-      "url": "https://www.goodreads.com/book/show/231127175",
+      "title": "Intermezzo",
+      "url": "https://www.goodreads.com/book/show/208931300",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Half His Age",
-      "url": "https://www.goodreads.com/book/show/240424526",
+      "title": "Margo&apos;s Got Money Troubles",
+      "url": "https://www.goodreads.com/book/show/199534613",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Loneliness of Sonia and Sunny",
-      "url": "https://www.goodreads.com/book/show/222683974",
+      "title": "Martyr!",
+      "url": "https://www.goodreads.com/book/show/139400713",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "A Guardian and a Thief",
-      "url": "https://www.goodreads.com/book/show/232207672",
+      "title": "Tom Lake",
+      "url": "https://www.goodreads.com/book/show/63241104",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "What We Can Know",
-      "url": "https://www.goodreads.com/book/show/223854881",
+      "title": "Nightcrawling",
+      "url": "https://www.goodreads.com/book/show/58537371",
       "challenges": [
-        "Trending Books",
-        "Books on Books"
+        "Editors' Picks"
       ]
     },
     {
       "title": "Cursed Daughters",
       "url": "https://www.goodreads.com/book/show/227429747",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Olga Dies Dreaming",
+      "url": "https://www.goodreads.com/book/show/57693171",
+      "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Vigil",
-      "url": "https://www.goodreads.com/book/show/238873074",
+      "title": "Demon Copperhead",
+      "url": "https://www.goodreads.com/book/show/60194162",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks",
+        "Marathon Reader"
       ]
     },
     {
-      "title": "Before I Forget",
-      "url": "https://www.goodreads.com/book/show/222376558",
+      "title": "The Bee Sting",
+      "url": "https://www.goodreads.com/book/show/62039166",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks",
+        "Marathon Reader"
       ]
     },
     {
-      "title": "Where the Wildflowers Grow",
-      "url": "https://www.goodreads.com/book/show/222476127",
+      "title": "Junie",
+      "url": "https://www.goodreads.com/book/show/212806648",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Good People",
-      "url": "https://www.goodreads.com/book/show/233717140",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "So Old, So Young",
-      "url": "https://www.goodreads.com/book/show/235992675",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Buckeye",
-      "url": "https://www.goodreads.com/book/show/221251828",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Mad Wife",
-      "url": "https://www.goodreads.com/book/show/223665360",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Keeper of Lost Children",
-      "url": "https://www.goodreads.com/book/show/235992421",
-      "challenges": [
-        "Trending Books",
         "Editors' Picks"
       ]
     },
     {
-      "title": "Canticle",
-      "url": "https://www.goodreads.com/book/show/223957541",
+      "title": "The Lion Women of Tehran",
+      "url": "https://www.goodreads.com/book/show/199798217",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Seven Daughters of Dupree",
-      "url": "https://www.goodreads.com/book/show/235992776",
+      "title": "The Safekeep",
+      "url": "https://www.goodreads.com/book/show/199798201",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Women of a Promiscuous Nature",
-      "url": "https://www.goodreads.com/book/show/232209420",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Lady Tremaine",
-      "url": "https://www.goodreads.com/book/show/231126977",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "A Far-Flung Life",
-      "url": "https://www.goodreads.com/book/show/238252741",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Lost Story of Eva Fuentes",
-      "url": "https://www.goodreads.com/book/show/220239094",
-      "challenges": [
-        "Trending Books",
-        "Books on Books"
+        "Editors' Picks"
       ]
     },
     {
       "title": "Kin",
       "url": "https://www.goodreads.com/book/show/241126800",
       "challenges": [
-        "Trending Books",
-        "Editors' Picks"
-      ]
-    },
-    {
-      "title": "Cleopatra",
-      "url": "https://www.goodreads.com/book/show/234943561",
-      "challenges": [
+        "Editors' Picks",
         "Trending Books"
       ]
     },
     {
-      "title": "Burn Down Master's House",
-      "url": "https://www.goodreads.com/book/show/232209360",
+      "title": "There Are Rivers in the Sky",
+      "url": "https://www.goodreads.com/book/show/202468422",
       "challenges": [
-        "Trending Books",
         "Editors' Picks"
       ]
     },
     {
-      "title": "The Strength of the Few (Hierarchy, #2)",
-      "url": "https://www.goodreads.com/book/show/169485073",
+      "title": "Keeper of Lost Children",
+      "url": "https://www.goodreads.com/book/show/235992421",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Frozen River",
+      "url": "https://www.goodreads.com/book/show/112975658",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Covenant of Water",
+      "url": "https://www.goodreads.com/book/show/180357146",
+      "challenges": [
+        "Editors' Picks",
         "Marathon Reader"
       ]
     },
     {
-      "title": "The Astral Library",
-      "url": "https://www.goodreads.com/book/show/235289973",
+      "title": "Burn Down Master&apos;s House",
+      "url": "https://www.goodreads.com/book/show/232209360",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "I, Medusa",
-      "url": "https://www.goodreads.com/book/show/228537678",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Brigands & Breadknives (Legends & Lattes, #2)",
-      "url": "https://www.goodreads.com/book/show/222376572",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Agnes Aubert's Mystical Cat Shelter",
-      "url": "https://www.goodreads.com/book/show/234352814",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Red Winter",
-      "url": "https://www.goodreads.com/book/show/231679954",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "King Sorrow",
-      "url": "https://www.goodreads.com/book/show/223420465",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Poet Empress",
-      "url": "https://www.goodreads.com/book/show/231680079",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Everlasting",
-      "url": "https://www.goodreads.com/book/show/226850464",
-      "challenges": [
-        "Trending Books",
         "Editors' Picks",
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Elsewhere Express",
-      "url": "https://www.goodreads.com/book/show/237641101",
+      "title": "Glorious Exploits",
+      "url": "https://www.goodreads.com/book/show/127278133",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Loot",
+      "url": "https://www.goodreads.com/book/show/63836365",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Violin Conspiracy",
+      "url": "https://www.goodreads.com/book/show/58386733",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "When the Tides Held the Moon",
+      "url": "https://www.goodreads.com/book/show/213075628",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Shots You Take",
+      "url": "https://www.goodreads.com/book/show/210202493",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "August Lane",
+      "url": "https://www.goodreads.com/book/show/221179148",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Heart Principle (The Kiss Quotient, #3)",
+      "url": "https://www.goodreads.com/book/show/50056075",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Wild Rain (Women Who Dare, #2)",
+      "url": "https://www.goodreads.com/book/show/43701060",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "An Island Princess Starts a Scandal (Las Leonas, #2)",
+      "url": "https://www.goodreads.com/book/show/63028658",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Bride (Bride, #1)",
+      "url": "https://www.goodreads.com/book/show/181344829",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Funny Story",
+      "url": "https://www.goodreads.com/book/show/194802722",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Trial of the Sun Queen (Artefacts of Ouranos, #1)",
+      "url": "https://www.goodreads.com/book/show/191755077",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "A Lady for a Duke",
+      "url": "https://www.goodreads.com/book/show/57007967",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "A Love Song for Ricki Wilde",
+      "url": "https://www.goodreads.com/book/show/173404023",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Tusk Love",
+      "url": "https://www.goodreads.com/book/show/219848368",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Raven Scholar (Eternal Path Trilogy, #1)",
+      "url": "https://www.goodreads.com/book/show/217182392",
+      "challenges": [
+        "Editors' Picks",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "Mad Sisters of Esi",
+      "url": "https://www.goodreads.com/book/show/221254185",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Metal from Heaven",
+      "url": "https://www.goodreads.com/book/show/205762592",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Starseekers",
+      "url": "https://www.goodreads.com/book/show/231127196",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Saint of Bright Doors",
+      "url": "https://www.goodreads.com/book/show/61884985",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Jasmine Throne (The Burning Kingdoms, #1)",
+      "url": "https://www.goodreads.com/book/show/50523477",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Will of the Many (Hierarchy, #1)",
+      "url": "https://www.goodreads.com/book/show/58416952",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "The Witch Roads (The Witch Roads, #1)",
+      "url": "https://www.goodreads.com/book/show/217388109",
+      "challenges": [
+        "Editors' Picks"
       ]
     },
     {
       "title": "An Arcane Inheritance",
       "url": "https://www.goodreads.com/book/show/222476126",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Shadow of the Gods (The Bloodsworn Saga, #1)",
+      "url": "https://www.goodreads.com/book/show/52694527",
+      "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Snake-Eater",
-      "url": "https://www.goodreads.com/book/show/226957129",
+      "title": "The Summer War",
+      "url": "https://www.goodreads.com/book/show/222683998",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "In Her Own League",
-      "url": "https://www.goodreads.com/book/show/230926478",
+      "title": "The Reformatory",
+      "url": "https://www.goodreads.com/book/show/62919847",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "No Matter What",
-      "url": "https://www.goodreads.com/book/show/236772706",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Night We Met (Say You'll Remember Me, #2)",
-      "url": "https://www.goodreads.com/book/show/231801371",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Tourist Season (The Seasons of Carnage Trilogy, #1)",
-      "url": "https://www.goodreads.com/book/show/231299870",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "In Your Dreams (When in Rome, #4)",
-      "url": "https://www.goodreads.com/book/show/231148139",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "And Now, Back to You (Heartstrings, #2)",
-      "url": "https://www.goodreads.com/book/show/217513554",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Defender (Gods of the Game, #2)",
-      "url": "https://www.goodreads.com/book/show/223428403",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "How to Kill a Guy in Ten Dates",
-      "url": "https://www.goodreads.com/book/show/235991925",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "One & Only",
-      "url": "https://www.goodreads.com/book/show/238872971",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Wild Card (Vancouver Storm, #5)",
-      "url": "https://www.goodreads.com/book/show/232794931",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "An Academic Affair",
-      "url": "https://www.goodreads.com/book/show/224003821",
-      "challenges": [
-        "Trending Books",
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "This Book Made Me Think of You",
-      "url": "https://www.goodreads.com/book/show/232794526",
-      "challenges": [
-        "Trending Books",
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Daggermouth (The Heart, #1)",
-      "url": "https://www.goodreads.com/book/show/239960837",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Half City (Harker Academy, #1)",
-      "url": "https://www.goodreads.com/book/show/233717187",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Mate (Bride, #2)",
-      "url": "https://www.goodreads.com/book/show/228256271",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Alchemised",
-      "url": "https://www.goodreads.com/book/show/222490389",
-      "challenges": [
-        "Trending Books",
+        "Editors' Picks",
         "Marathon Reader"
       ]
     },
     {
-      "title": "Wild Reverence",
-      "url": "https://www.goodreads.com/book/show/222376906",
+      "title": "The Buffalo Hunter Hunter",
+      "url": "https://www.goodreads.com/book/show/214565614",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Our Vicious Oaths",
-      "url": "https://www.goodreads.com/book/show/224057573",
+      "title": "A Dowry of Blood (A Dowry of Blood, #1)",
+      "url": "https://www.goodreads.com/book/show/56666839",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "A Vow in Vengeance (Immortal Desires, #1)",
-      "url": "https://www.goodreads.com/book/show/230614708",
+      "title": "Our Share of Night",
+      "url": "https://www.goodreads.com/book/show/61111034",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Graceless Heart (The Spellbound History, #1)",
-      "url": "https://www.goodreads.com/book/show/231126993",
+      "title": "Our Wives Under the Sea",
+      "url": "https://www.goodreads.com/book/show/58724816",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "We Who Will Die (Empire of Blood, #1)",
-      "url": "https://www.goodreads.com/book/show/225910699",
+      "title": "We Used to Live Here",
+      "url": "https://www.goodreads.com/book/show/199798006",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Violet Thistlewaite Is Not a Villain Anymore",
-      "url": "https://www.goodreads.com/book/show/228142770",
+      "title": "The Eyes Are the Best Part",
+      "url": "https://www.goodreads.com/book/show/195703882",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Wicked Onyx (The Veritas Legacy #1)",
-      "url": "https://www.goodreads.com/book/show/236161369",
+      "title": "Diavola",
+      "url": "https://www.goodreads.com/book/show/157035866",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Good Spirits (Ghosted, #1)",
-      "url": "https://www.goodreads.com/book/show/222279220",
+      "title": "Lone Women",
+      "url": "https://www.goodreads.com/book/show/60460704",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Play Nice",
-      "url": "https://www.goodreads.com/book/show/222419303",
+      "title": "Monstrilio",
+      "url": "https://www.goodreads.com/book/show/62888191",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "You Weren't Meant to Be Human",
-      "url": "https://www.goodreads.com/book/show/224004327",
+      "title": "The Devil Takes You Home",
+      "url": "https://www.goodreads.com/book/show/58978299",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "A Box Full of Darkness",
-      "url": "https://www.goodreads.com/book/show/231681636",
+      "title": "How High We Go in the Dark",
+      "url": "https://www.goodreads.com/book/show/57850265",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "What Stalks the Deep (Sworn Soldier, #3)",
-      "url": "https://www.goodreads.com/book/show/222376665",
+      "title": "The School for Good Mothers",
+      "url": "https://www.goodreads.com/book/show/57846320",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Coffin Moon",
-      "url": "https://www.goodreads.com/book/show/222419255",
+      "title": "The Expert of Subtle Revisions",
+      "url": "https://www.goodreads.com/book/show/214986234",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Dark Sisters",
-      "url": "https://www.goodreads.com/book/show/222376679",
+      "title": "There Is No Antimemetics Division",
+      "url": "https://www.goodreads.com/book/show/223362266",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Haunting of Paynes Hollow",
-      "url": "https://www.goodreads.com/book/show/222377103",
+      "title": "Service Model",
+      "url": "https://www.goodreads.com/book/show/195790861",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "This House Will Feed",
-      "url": "https://www.goodreads.com/book/show/232209447",
+      "title": "The Blueprint",
+      "url": "https://www.goodreads.com/book/show/199248447",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "We Love You, Bunny (Bunny, #2)",
-      "url": "https://www.goodreads.com/book/show/220595449",
+      "title": "The Stardust Grail",
+      "url": "https://www.goodreads.com/book/show/195791479",
       "challenges": [
-        "Trending Books",
-        "Books on Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Breathe In, Bleed Out",
-      "url": "https://www.goodreads.com/book/show/221490948",
+      "title": "Sky Full of Elephants",
+      "url": "https://www.goodreads.com/book/show/207293815",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Nothing Tastes as Good",
-      "url": "https://www.goodreads.com/book/show/235992833",
+      "title": "Singer Distance",
+      "url": "https://www.goodreads.com/book/show/60583990",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "You Did Nothing Wrong",
-      "url": "https://www.goodreads.com/book/show/231126846",
+      "title": "The Other Valley",
+      "url": "https://www.goodreads.com/book/show/176450755",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The First Time I Saw Him (Hannah Hall, #2)",
-      "url": "https://www.goodreads.com/book/show/236156146",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Best Offer Wins",
-      "url": "https://www.goodreads.com/book/show/231126811",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Nash Falls (Walter Nash, #1)",
-      "url": "https://www.goodreads.com/book/show/228646251",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Dead in the Water",
-      "url": "https://www.goodreads.com/book/show/230794673",
-      "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
       "title": "Operation Bounce House",
       "url": "https://www.goodreads.com/book/show/233717212",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Mechanize My Hands to War",
+      "url": "https://www.goodreads.com/book/show/202104262",
+      "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "The Merge",
-      "url": "https://www.goodreads.com/book/show/223614634",
+      "title": "Doppelganger: A Trip into the Mirror World",
+      "url": "https://www.goodreads.com/book/show/138505710",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Saltcrop",
-      "url": "https://www.goodreads.com/book/show/222376600",
+      "title": "Poverty, by America",
+      "url": "https://www.goodreads.com/book/show/61358638",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Detour (Detour, #1)",
-      "url": "https://www.goodreads.com/book/show/235699937",
+      "title": "How to Say Babylon",
+      "url": "https://www.goodreads.com/book/show/62919742",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Local Heavens",
-      "url": "https://www.goodreads.com/book/show/230809549",
+      "title": "Hijab Butch Blues",
+      "url": "https://www.goodreads.com/book/show/61111274",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "All That We See or Seem (Julia Z, #1)",
-      "url": "https://www.goodreads.com/book/show/224004657",
+      "title": "Black AF History: The Un-Whitewashed Story of America",
+      "url": "https://www.goodreads.com/book/show/55959466",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Iron Garden Sutra (The Cosmic Wheel, #1)",
-      "url": "https://www.goodreads.com/book/show/229139787",
+      "title": "King: A Life",
+      "url": "https://www.goodreads.com/book/show/62039291",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Slow Gods",
-      "url": "https://www.goodreads.com/book/show/223296158",
+      "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
+      "url": "https://www.goodreads.com/book/show/61714633",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Fake Skating",
-      "url": "https://www.goodreads.com/book/show/223262140",
+      "title": "The Kingdom, the Power, and the Glory: American Evangelicals in an Age of Extremism",
+      "url": "https://www.goodreads.com/book/show/127653704",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Hazelthorn",
-      "url": "https://www.goodreads.com/book/show/220909040",
+      "title": "Nuclear War: A Scenario",
+      "url": "https://www.goodreads.com/book/show/182733784",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Falling Like Leaves (Bramble Falls, #1)",
-      "url": "https://www.goodreads.com/book/show/218873208",
+      "title": "The Message",
+      "url": "https://www.goodreads.com/book/show/210943364",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The House Saphir",
-      "url": "https://www.goodreads.com/book/show/221604746",
+      "title": "There&apos;s Always This Year: On Basketball and Ascension",
+      "url": "https://www.goodreads.com/book/show/181346634",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Sisters in the Wind",
-      "url": "https://www.goodreads.com/book/show/225699546",
+      "title": "When the Sea Came Alive: An Oral History of D-Day",
+      "url": "https://www.goodreads.com/book/show/199797834",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Scammer",
-      "url": "https://www.goodreads.com/book/show/223338983",
+      "title": "The Demon of Unrest: A Saga of Hubris, Heartbreak, and Heroism at the Dawn of the Civil War",
+      "url": "https://www.goodreads.com/book/show/195608683",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Beth Is Dead",
-      "url": "https://www.goodreads.com/book/show/235991966",
+      "title": "Challenger: A True Story of Heroism and Disaster on the Edge of Space",
+      "url": "https://www.goodreads.com/book/show/199798785",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "A Stage Set for Villains",
-      "url": "https://www.goodreads.com/book/show/239780635",
+      "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land",
+      "url": "https://www.goodreads.com/book/show/199393033",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Swan's Daughter",
-      "url": "https://www.goodreads.com/book/show/228393488",
+      "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
+      "url": "https://www.goodreads.com/book/show/191746386",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Never Ever After (Never Ever After, #1)",
-      "url": "https://www.goodreads.com/book/show/223296202",
+      "title": "Cobalt Red: How the Blood of the Congo Powers Our Lives",
+      "url": "https://www.goodreads.com/book/show/60784614",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Sun and the Starmaker",
-      "url": "https://www.goodreads.com/book/show/222168124",
+      "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
+      "url": "https://www.goodreads.com/book/show/43868109",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Queen of Faces (Queen of Faces, #1)",
-      "url": "https://www.goodreads.com/book/show/231779652",
+      "title": "How the Word Is Passed: A Reckoning with the History of Slavery Across America",
+      "url": "https://www.goodreads.com/book/show/55643287",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Crying in H Mart",
+      "url": "https://www.goodreads.com/book/show/54814676",
+      "challenges": [
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "House of Sticks",
+      "url": "https://www.goodreads.com/book/show/55710553",
+      "challenges": [
+        "Editors' Picks"
       ]
     },
     {
       "title": "Replaceable You: Adventures in Human Anatomy",
       "url": "https://www.goodreads.com/book/show/223736287",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "A Swim in a Pond in the Rain: In Which Four Russians Give a Master Class on Writing, Reading, and Life",
+      "url": "https://www.goodreads.com/book/show/55290026",
+      "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Enshittification: Why Everything Suddenly Got Worse and What to Do About It",
-      "url": "https://www.goodreads.com/book/show/222376640",
+      "title": "The Disordered Cosmos: A Journey into Dark Matter, Spacetime, and Dreams Deferred",
+      "url": "https://www.goodreads.com/book/show/54455629",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Separation of Church and Hate: A Sane Person's Guide to Taking Back the Bible from Fundamentalists, Fascists, and Flock-Fleecing Frauds",
-      "url": "https://www.goodreads.com/book/show/220160840",
+      "title": "Paradise: One Town&apos;s Struggle to Survive an American Wildfire",
+      "url": "https://www.goodreads.com/book/show/56024292",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Art of Spending Money: Simple Choices for a Richer Life",
-      "url": "https://www.goodreads.com/book/show/231148075",
+      "title": "A Marriage at Sea: A True Story of Love, Obsession, and Shipwreck",
+      "url": "https://www.goodreads.com/book/show/220239083",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "The Tragedy of True Crime: Four Guilty Men and the Stories That Define Us",
-      "url": "https://www.goodreads.com/book/show/222376732",
+      "title": "1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation",
+      "url": "https://www.goodreads.com/book/show/228142780",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "End of Days: Ruby Ridge, the Apocalypse, and the Unmaking of America",
-      "url": "https://www.goodreads.com/book/show/235629746",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
-      "url": "https://www.goodreads.com/book/show/228646231",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Football",
-      "url": "https://www.goodreads.com/book/show/239522729",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Writing Creativity and Soul",
-      "url": "https://www.goodreads.com/book/show/223854654",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Scream With Me: Horror Films and the Rise of American Feminism, 1968-1980",
-      "url": "https://www.goodreads.com/book/show/224003717",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Chasing Evil: Shocking Crimes, Supernatural Forces, and an FBI Agent’s Search for Hope and Justice",
-      "url": "https://www.goodreads.com/book/show/211003709",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "99 Ways to Die: And How to Avoid Them",
-      "url": "https://www.goodreads.com/book/show/231126833",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice",
+      "title": "Nobody&apos;s Girl: A Memoir of Surviving Abuse and Fighting for Justice",
       "url": "https://www.goodreads.com/book/show/193388653",
       "challenges": [
-        "Trending Books",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
+      "url": "https://www.goodreads.com/book/show/223436601",
+      "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Strangers: A Memoir of Marriage",
-      "url": "https://www.goodreads.com/book/show/231108670",
+      "title": "One Day, Everyone Will Have Always Been Against This",
+      "url": "https://www.goodreads.com/book/show/213870084",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Awake",
-      "url": "https://www.goodreads.com/book/show/224004520",
+      "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
+      "url": "https://www.goodreads.com/book/show/220341389",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Finding My Way",
-      "url": "https://www.goodreads.com/book/show/235364773",
+      "title": "The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny",
+      "url": "https://www.goodreads.com/book/show/220481360",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "All the Way to the River",
-      "url": "https://www.goodreads.com/book/show/223405886",
+      "title": "I&apos;m Glad My Mom Died",
+      "url": "https://www.goodreads.com/book/show/59366244",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Book of Lives: A Memoir of Sorts",
-      "url": "https://www.goodreads.com/book/show/223854625",
+      "title": "River of the Gods: Genius, Courage and Betrayal in the Search for the Source of the Nile",
+      "url": "https://www.goodreads.com/book/show/58777696",
       "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
-      "title": "Homeschooled: A Memoir",
-      "url": "https://www.goodreads.com/book/show/233333691",
+      "title": "The Song of the Cell: An Exploration of Medicine and the New Human",
+      "url": "https://www.goodreads.com/book/show/60321392",
       "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Mother Mary Comes to Me",
-      "url": "https://www.goodreads.com/book/show/224004055",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Paper Girl: A Memoir of Home and Family in a Fractured America",
-      "url": "https://www.goodreads.com/book/show/223362031",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Vagabond",
-      "url": "https://www.goodreads.com/book/show/225819054",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "A Hymn to Life: Shame Has to Change Sides",
-      "url": "https://www.goodreads.com/book/show/236066320",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Irish Goodbye: Micro-Memoirs",
-      "url": "https://www.goodreads.com/book/show/233411621",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
-      "url": "https://www.goodreads.com/book/show/211179569",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Family of Spies",
-      "url": "https://www.goodreads.com/book/show/222376793",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
-      "url": "https://www.goodreads.com/book/show/226573163",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "We the People: A History of the U.S. Constitution",
-      "url": "https://www.goodreads.com/book/show/223736225",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery",
-      "url": "https://www.goodreads.com/book/show/222376731",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "We Survived the Night",
-      "url": "https://www.goodreads.com/book/show/223854579",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Motherland: A Feminist History of Modern Russia, from Revolution to Autocracy",
-      "url": "https://www.goodreads.com/book/show/199793344",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare's Greatest Rival",
-      "url": "https://www.goodreads.com/book/show/223736238",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "American Struggle: Democracy, Dissent, and the Pursuit of a More Perfect Union: An Anthology",
-      "url": "https://www.goodreads.com/book/show/234352805",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "The Sea Captain's Wife",
-      "url": "https://www.goodreads.com/book/show/222376483",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "History Matters",
-      "url": "https://www.goodreads.com/book/show/228062187",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
-      "url": "https://www.goodreads.com/book/show/222476092",
-      "challenges": [
-        "Trending Books"
+        "Editors' Picks"
       ]
     },
     {
@@ -2148,7 +3859,7 @@
       ]
     },
     {
-      "title": "Midnight's Children",
+      "title": "Midnight&apos;s Children",
       "url": "https://www.goodreads.com/book/show/9124721",
       "challenges": [
         "Marathon Reader"
@@ -2218,7 +3929,7 @@
       ]
     },
     {
-      "title": "Jonathan Strange & Mr Norrell",
+      "title": "Jonathan Strange &amp; Mr Norrell",
       "url": "https://www.goodreads.com/book/show/76852",
       "challenges": [
         "Marathon Reader"
@@ -2239,7 +3950,7 @@
       ]
     },
     {
-      "title": "The Amazing Adventures of Kavalier & Clay",
+      "title": "The Amazing Adventures of Kavalier &amp; Clay",
       "url": "https://www.goodreads.com/book/show/3985",
       "challenges": [
         "Marathon Reader"
@@ -2281,15 +3992,6 @@
       ]
     },
     {
-      "title": "Cloud Cuckoo Land",
-      "url": "https://www.goodreads.com/book/show/56783258",
-      "challenges": [
-        "Marathon Reader",
-        "Editors' Picks",
-        "Books on Books"
-      ]
-    },
-    {
       "title": "Wellness",
       "url": "https://www.goodreads.com/book/show/65650229",
       "challenges": [
@@ -2318,27 +4020,6 @@
       ]
     },
     {
-      "title": "The Bee Sting",
-      "url": "https://www.goodreads.com/book/show/195790771",
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
-      "title": "The Raven Scholar (Eternal Path Trilogy, #1)",
-      "url": "https://www.goodreads.com/book/show/213930700",
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
-      "title": "Homeseeking",
-      "url": "https://www.goodreads.com/book/show/211025407",
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
       "title": "Fox",
       "url": "https://www.goodreads.com/book/show/219441105",
       "challenges": [
@@ -2348,13 +4029,6 @@
     {
       "title": "Workhorse",
       "url": "https://www.goodreads.com/book/show/211004034",
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
-      "title": "The Loneliness of Sonia and Sunny",
-      "url": "https://www.goodreads.com/book/show/222890326",
       "challenges": [
         "Marathon Reader"
       ]
@@ -2416,22 +4090,6 @@
       ]
     },
     {
-      "title": "The Covenant of Water",
-      "url": "https://www.goodreads.com/book/show/180357146",
-      "challenges": [
-        "Marathon Reader",
-        "Editors' Picks"
-      ]
-    },
-    {
-      "title": "Demon Copperhead",
-      "url": "https://www.goodreads.com/book/show/60194162",
-      "challenges": [
-        "Marathon Reader",
-        "Editors' Picks"
-      ]
-    },
-    {
       "title": "All the Light We Cannot See",
       "url": "https://www.goodreads.com/book/show/18143977",
       "challenges": [
@@ -2488,14 +4146,6 @@
       ]
     },
     {
-      "title": "The Reformatory",
-      "url": "https://www.goodreads.com/book/show/62919847",
-      "challenges": [
-        "Marathon Reader",
-        "Editors' Picks"
-      ]
-    },
-    {
       "title": "The Love Songs of W.E.B. Du Bois",
       "url": "https://www.goodreads.com/book/show/51183428",
       "challenges": [
@@ -2542,6 +4192,14 @@
       "url": "https://www.goodreads.com/book/show/18952341",
       "challenges": [
         "Marathon Reader"
+      ]
+    },
+    {
+      "title": "The Strength of the Few (Hierarchy, #2)",
+      "url": "https://www.goodreads.com/book/show/169485073",
+      "challenges": [
+        "Marathon Reader",
+        "Trending Books"
       ]
     },
     {
@@ -2622,14 +4280,6 @@
       ]
     },
     {
-      "title": "The Book of Form and Emptiness",
-      "url": "https://www.goodreads.com/book/show/57004637",
-      "challenges": [
-        "Marathon Reader",
-        "Books on Books"
-      ]
-    },
-    {
       "title": "A Little Life",
       "url": "https://www.goodreads.com/book/show/22822858",
       "challenges": [
@@ -2637,1610 +4287,752 @@
       ]
     },
     {
-      "title": "Wild Dark Shore",
-      "url": "https://www.goodreads.com/book/show/211004089",
+      "title": "Heart the Lover",
+      "url": "https://www.goodreads.com/book/show/228110489",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Intermezzo",
-      "url": "https://www.goodreads.com/book/show/208931300",
+      "title": "Lost Lambs",
+      "url": "https://www.goodreads.com/book/show/231127175",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Margo's Got Money Troubles",
-      "url": "https://www.goodreads.com/book/show/199534613",
+      "title": "Half His Age",
+      "url": "https://www.goodreads.com/book/show/240424526",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Martyr!",
-      "url": "https://www.goodreads.com/book/show/139400713",
+      "title": "Vigil",
+      "url": "https://www.goodreads.com/book/show/238873074",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Tom Lake",
-      "url": "https://www.goodreads.com/book/show/63241104",
+      "title": "Before I Forget",
+      "url": "https://www.goodreads.com/book/show/222376558",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Nightcrawling",
-      "url": "https://www.goodreads.com/book/show/58537371",
+      "title": "Where the Wildflowers Grow",
+      "url": "https://www.goodreads.com/book/show/222476127",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Sentence",
-      "url": "https://www.goodreads.com/book/show/56816904",
+      "title": "Good People",
+      "url": "https://www.goodreads.com/book/show/233717140",
       "challenges": [
-        "Editors' Picks",
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Olga Dies Dreaming",
-      "url": "https://www.goodreads.com/book/show/57693171",
+      "title": "So Old, So Young",
+      "url": "https://www.goodreads.com/book/show/235992675",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Bee Sting",
-      "url": "https://www.goodreads.com/book/show/62039166",
+      "title": "Buckeye",
+      "url": "https://www.goodreads.com/book/show/221251828",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Junie",
-      "url": "https://www.goodreads.com/book/show/212806648",
+      "title": "The Mad Wife",
+      "url": "https://www.goodreads.com/book/show/223665360",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Lion Women of Tehran",
-      "url": "https://www.goodreads.com/book/show/199798217",
+      "title": "Canticle",
+      "url": "https://www.goodreads.com/book/show/223957541",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Safekeep",
-      "url": "https://www.goodreads.com/book/show/199798201",
+      "title": "The Seven Daughters of Dupree",
+      "url": "https://www.goodreads.com/book/show/235992776",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "There Are Rivers in the Sky",
-      "url": "https://www.goodreads.com/book/show/202468422",
+      "title": "Women of a Promiscuous Nature",
+      "url": "https://www.goodreads.com/book/show/232209420",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Frozen River",
-      "url": "https://www.goodreads.com/book/show/112975658",
+      "title": "Lady Tremaine",
+      "url": "https://www.goodreads.com/book/show/231126977",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Glorious Exploits",
-      "url": "https://www.goodreads.com/book/show/127278133",
+      "title": "A Far-Flung Life",
+      "url": "https://www.goodreads.com/book/show/238252741",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Loot",
-      "url": "https://www.goodreads.com/book/show/63836365",
+      "title": "Cleopatra",
+      "url": "https://www.goodreads.com/book/show/234943561",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Trust",
-      "url": "https://www.goodreads.com/book/show/58210933",
+      "title": "I, Medusa",
+      "url": "https://www.goodreads.com/book/show/228537678",
       "challenges": [
-        "Editors' Picks",
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Ghostwriter",
-      "url": "https://www.goodreads.com/book/show/218644981",
+      "title": "Brigands &amp; Breadknives (Legends &amp; Lattes, #2)",
+      "url": "https://www.goodreads.com/book/show/222376572",
       "challenges": [
-        "Editors' Picks",
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Vera Wong's Unsolicited Advice for Murderers (Vera Wong #1)",
-      "url": "https://www.goodreads.com/book/show/61327512",
+      "title": "Agnes Aubert&apos;s Mystical Cat Shelter",
+      "url": "https://www.goodreads.com/book/show/234352814",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Violin Conspiracy",
-      "url": "https://www.goodreads.com/book/show/58386733",
+      "title": "The Red Winter",
+      "url": "https://www.goodreads.com/book/show/231679954",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Overnight Guest",
-      "url": "https://www.goodreads.com/book/show/57649351",
+      "title": "King Sorrow",
+      "url": "https://www.goodreads.com/book/show/223420465",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "When the Tides Held the Moon",
-      "url": "https://www.goodreads.com/book/show/213075628",
+      "title": "Snake-Eater",
+      "url": "https://www.goodreads.com/book/show/226957129",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Shots You Take",
-      "url": "https://www.goodreads.com/book/show/210202493",
+      "title": "In Her Own League",
+      "url": "https://www.goodreads.com/book/show/230926478",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "August Lane",
-      "url": "https://www.goodreads.com/book/show/221179148",
+      "title": "No Matter What",
+      "url": "https://www.goodreads.com/book/show/236772706",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Heart Principle (The Kiss Quotient, #3)",
-      "url": "https://www.goodreads.com/book/show/50056075",
+      "title": "The Night We Met (Say You&apos;ll Remember Me, #2)",
+      "url": "https://www.goodreads.com/book/show/231801371",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Wild Rain (Women Who Dare, #2)",
-      "url": "https://www.goodreads.com/book/show/43701060",
+      "title": "Tourist Season (The Seasons of Carnage Trilogy, #1)",
+      "url": "https://www.goodreads.com/book/show/231299870",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "An Island Princess Starts a Scandal (Las Leonas, #2)",
-      "url": "https://www.goodreads.com/book/show/63028658",
+      "title": "In Your Dreams (When in Rome, #4)",
+      "url": "https://www.goodreads.com/book/show/231148139",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Bride (Bride, #1)",
-      "url": "https://www.goodreads.com/book/show/181344829",
+      "title": "And Now, Back to You (Heartstrings, #2)",
+      "url": "https://www.goodreads.com/book/show/217513554",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Funny Story",
-      "url": "https://www.goodreads.com/book/show/194802722",
+      "title": "The Defender (Gods of the Game, #2)",
+      "url": "https://www.goodreads.com/book/show/223428403",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Trial of the Sun Queen (Artefacts of Ouranos, #1)",
-      "url": "https://www.goodreads.com/book/show/191755077",
+      "title": "How to Kill a Guy in Ten Dates",
+      "url": "https://www.goodreads.com/book/show/235991925",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "A Lady for a Duke",
-      "url": "https://www.goodreads.com/book/show/57007967",
+      "title": "The Wild Card (Vancouver Storm, #5)",
+      "url": "https://www.goodreads.com/book/show/232794931",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "A Love Song for Ricki Wilde",
-      "url": "https://www.goodreads.com/book/show/173404023",
+      "title": "Daggermouth (The Heart, #1)",
+      "url": "https://www.goodreads.com/book/show/239960837",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Tusk Love",
-      "url": "https://www.goodreads.com/book/show/219848368",
+      "title": "Half City (Harker Academy, #1)",
+      "url": "https://www.goodreads.com/book/show/233717187",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Raven Scholar (Eternal Path Trilogy, #1)",
-      "url": "https://www.goodreads.com/book/show/217182392",
+      "title": "Mate (Bride, #2)",
+      "url": "https://www.goodreads.com/book/show/228256271",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Mad Sisters of Esi",
-      "url": "https://www.goodreads.com/book/show/221254185",
+      "title": "Wild Reverence",
+      "url": "https://www.goodreads.com/book/show/222376906",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Metal from Heaven",
-      "url": "https://www.goodreads.com/book/show/205762592",
+      "title": "Our Vicious Oaths",
+      "url": "https://www.goodreads.com/book/show/224057573",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Starseekers",
-      "url": "https://www.goodreads.com/book/show/231127196",
+      "title": "A Vow in Vengeance (Immortal Desires, #1)",
+      "url": "https://www.goodreads.com/book/show/230614708",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Saint of Bright Doors",
-      "url": "https://www.goodreads.com/book/show/61884985",
+      "title": "Graceless Heart (The Spellbound History, #1)",
+      "url": "https://www.goodreads.com/book/show/231126993",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Jasmine Throne (The Burning Kingdoms, #1)",
-      "url": "https://www.goodreads.com/book/show/50523477",
+      "title": "We Who Will Die (Empire of Blood, #1)",
+      "url": "https://www.goodreads.com/book/show/225910699",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Will of the Many (Hierarchy, #1)",
-      "url": "https://www.goodreads.com/book/show/58416952",
+      "title": "Violet Thistlewaite Is Not a Villain Anymore",
+      "url": "https://www.goodreads.com/book/show/228142770",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Witch Roads (The Witch Roads, #1)",
-      "url": "https://www.goodreads.com/book/show/217388109",
+      "title": "Wicked Onyx (The Veritas Legacy, #1)",
+      "url": "https://www.goodreads.com/book/show/236161369",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Shadow of the Gods (The Bloodsworn Saga, #1)",
-      "url": "https://www.goodreads.com/book/show/52694527",
+      "title": "Good Spirits (Ghosted, #1)",
+      "url": "https://www.goodreads.com/book/show/222279220",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Summer War",
-      "url": "https://www.goodreads.com/book/show/222683998",
+      "title": "Play Nice",
+      "url": "https://www.goodreads.com/book/show/222419303",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Buffalo Hunter Hunter",
-      "url": "https://www.goodreads.com/book/show/214565614",
+      "title": "You Weren&apos;t Meant to Be Human",
+      "url": "https://www.goodreads.com/book/show/224004327",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Bat Eater and Other Names for Cora Zeng",
-      "url": "https://www.goodreads.com/book/show/218185743",
+      "title": "A Box Full of Darkness",
+      "url": "https://www.goodreads.com/book/show/231681636",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "A Dowry of Blood (A Dowry of Blood, #1)",
-      "url": "https://www.goodreads.com/book/show/56666839",
+      "title": "What Stalks the Deep (Sworn Soldier, #3)",
+      "url": "https://www.goodreads.com/book/show/222376665",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Our Share of Night",
-      "url": "https://www.goodreads.com/book/show/61111034",
+      "title": "Coffin Moon",
+      "url": "https://www.goodreads.com/book/show/222419255",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Our Wives Under the Sea",
-      "url": "https://www.goodreads.com/book/show/58724816",
+      "title": "Dark Sisters",
+      "url": "https://www.goodreads.com/book/show/222376679",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "We Used to Live Here",
-      "url": "https://www.goodreads.com/book/show/199798006",
+      "title": "The Haunting of Paynes Hollow",
+      "url": "https://www.goodreads.com/book/show/222377103",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Eyes Are the Best Part",
-      "url": "https://www.goodreads.com/book/show/195703882",
+      "title": "This House Will Feed",
+      "url": "https://www.goodreads.com/book/show/232209447",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Diavola",
-      "url": "https://www.goodreads.com/book/show/157035866",
+      "title": "Breathe In, Bleed Out",
+      "url": "https://www.goodreads.com/book/show/221490948",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Lone Women",
-      "url": "https://www.goodreads.com/book/show/60460704",
+      "title": "Nothing Tastes as Good",
+      "url": "https://www.goodreads.com/book/show/235992833",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Monstrilio",
-      "url": "https://www.goodreads.com/book/show/62888191",
+      "title": "You Did Nothing Wrong",
+      "url": "https://www.goodreads.com/book/show/231126846",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Devil Takes You Home",
-      "url": "https://www.goodreads.com/book/show/58978299",
+      "title": "The First Time I Saw Him (Hannah Hall, #2)",
+      "url": "https://www.goodreads.com/book/show/236156146",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "How High We Go in the Dark",
-      "url": "https://www.goodreads.com/book/show/57850265",
+      "title": "Nash Falls (Walter Nash, #1)",
+      "url": "https://www.goodreads.com/book/show/228646251",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The School for Good Mothers",
-      "url": "https://www.goodreads.com/book/show/57846320",
+      "title": "Dead in the Water",
+      "url": "https://www.goodreads.com/book/show/230794673",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Expert of Subtle Revisions",
-      "url": "https://www.goodreads.com/book/show/214986234",
+      "title": "The Merge",
+      "url": "https://www.goodreads.com/book/show/223614634",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "There Is No Antimemetics Division",
-      "url": "https://www.goodreads.com/book/show/223362266",
+      "title": "Detour (Detour, #1)",
+      "url": "https://www.goodreads.com/book/show/235699937",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Service Model",
-      "url": "https://www.goodreads.com/book/show/195790861",
+      "title": "Local Heavens",
+      "url": "https://www.goodreads.com/book/show/230809549",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Blueprint",
-      "url": "https://www.goodreads.com/book/show/199248447",
+      "title": "All That We See or Seem (Julia Z, #1)",
+      "url": "https://www.goodreads.com/book/show/224004657",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Stardust Grail",
-      "url": "https://www.goodreads.com/book/show/195791479",
+      "title": "The Iron Garden Sutra (The Cosmic Wheel, #1)",
+      "url": "https://www.goodreads.com/book/show/229139787",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Sky Full of Elephants",
-      "url": "https://www.goodreads.com/book/show/207293815",
+      "title": "Slow Gods",
+      "url": "https://www.goodreads.com/book/show/223296158",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Singer Distance",
-      "url": "https://www.goodreads.com/book/show/60583990",
+      "title": "Fake Skating",
+      "url": "https://www.goodreads.com/book/show/223262140",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Other Valley",
-      "url": "https://www.goodreads.com/book/show/176450755",
+      "title": "Hazelthorn",
+      "url": "https://www.goodreads.com/book/show/220909040",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Mechanize My Hands to War",
-      "url": "https://www.goodreads.com/book/show/202104262",
+      "title": "Falling Like Leaves (Bramble Falls, #1)",
+      "url": "https://www.goodreads.com/book/show/218873208",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Doppelganger: A Trip into the Mirror World",
-      "url": "https://www.goodreads.com/book/show/138505710",
+      "title": "The House Saphir",
+      "url": "https://www.goodreads.com/book/show/221604746",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Poverty, by America",
-      "url": "https://www.goodreads.com/book/show/61358638",
+      "title": "Sisters in the Wind",
+      "url": "https://www.goodreads.com/book/show/225699546",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "How to Say Babylon",
-      "url": "https://www.goodreads.com/book/show/62919742",
+      "title": "The Scammer",
+      "url": "https://www.goodreads.com/book/show/223338983",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Hijab Butch Blues",
-      "url": "https://www.goodreads.com/book/show/61111274",
+      "title": "Beth Is Dead",
+      "url": "https://www.goodreads.com/book/show/235991966",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Black AF History: The Un-Whitewashed Story of America",
-      "url": "https://www.goodreads.com/book/show/55959466",
+      "title": "A Stage Set for Villains",
+      "url": "https://www.goodreads.com/book/show/239780635",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "King: A Life",
-      "url": "https://www.goodreads.com/book/show/62039291",
+      "title": "The Swan&apos;s Daughter",
+      "url": "https://www.goodreads.com/book/show/228393488",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
-      "url": "https://www.goodreads.com/book/show/61714633",
+      "title": "Never Ever After (Never Ever After, #1)",
+      "url": "https://www.goodreads.com/book/show/223296202",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Kingdom, the Power, and the Glory: American Evangelicals in an Age of Extremism",
-      "url": "https://www.goodreads.com/book/show/127653704",
+      "title": "The Sun and the Starmaker",
+      "url": "https://www.goodreads.com/book/show/222168124",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Nuclear War: A Scenario",
-      "url": "https://www.goodreads.com/book/show/182733784",
+      "title": "Queen of Faces (Queen of Faces, #1)",
+      "url": "https://www.goodreads.com/book/show/231779652",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Message",
-      "url": "https://www.goodreads.com/book/show/210943364",
+      "title": "Enshittification: Why Everything Suddenly Got Worse and What to Do About It",
+      "url": "https://www.goodreads.com/book/show/222376640",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "There's Always This Year: On Basketball and Ascension",
-      "url": "https://www.goodreads.com/book/show/181346634",
+      "title": "Separation of Church and Hate: A Sane Person&apos;s Guide to Taking Back the Bible from Fundamentalists, Fascists, and Flock-Fleecing Frauds",
+      "url": "https://www.goodreads.com/book/show/220160840",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "When the Sea Came Alive: An Oral History of D-Day",
-      "url": "https://www.goodreads.com/book/show/199797834",
+      "title": "The Art of Spending Money: Simple Choices for a Richer Life",
+      "url": "https://www.goodreads.com/book/show/231148075",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Demon of Unrest: A Saga of Hubris, Heartbreak, and Heroism at the Dawn of the Civil War",
-      "url": "https://www.goodreads.com/book/show/195608683",
+      "title": "The Tragedy of True Crime: Four Guilty Men and the Stories That Define Us",
+      "url": "https://www.goodreads.com/book/show/222376732",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Challenger: A True Story of Heroism and Disaster on the Edge of Space",
-      "url": "https://www.goodreads.com/book/show/199798785",
+      "title": "End of Days: Ruby Ridge, the Apocalypse, and the Unmaking of America",
+      "url": "https://www.goodreads.com/book/show/235629746",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land",
-      "url": "https://www.goodreads.com/book/show/199393033",
+      "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
+      "url": "https://www.goodreads.com/book/show/228646231",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
-      "url": "https://www.goodreads.com/book/show/191746386",
+      "title": "Football",
+      "url": "https://www.goodreads.com/book/show/239522729",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Cobalt Red: How the Blood of the Congo Powers Our Lives",
-      "url": "https://www.goodreads.com/book/show/60784614",
+      "title": "Writing Creativity and Soul",
+      "url": "https://www.goodreads.com/book/show/223854654",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
-      "url": "https://www.goodreads.com/book/show/43868109",
+      "title": "Scream With Me: Horror Films and the Rise of American Feminism, 1968-1980",
+      "url": "https://www.goodreads.com/book/show/224003717",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "How the Word Is Passed: A Reckoning with the History of Slavery Across America",
-      "url": "https://www.goodreads.com/book/show/55643287",
+      "title": "Chasing Evil: Shocking Crimes, Supernatural Forces, and an FBI Agent’s Search for Hope and Justice",
+      "url": "https://www.goodreads.com/book/show/211003709",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Crying in H Mart",
-      "url": "https://www.goodreads.com/book/show/54814676",
+      "title": "99 Ways to Die: And How to Avoid Them",
+      "url": "https://www.goodreads.com/book/show/231126833",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "House of Sticks",
-      "url": "https://www.goodreads.com/book/show/55710553",
+      "title": "Strangers: A Memoir of Marriage",
+      "url": "https://www.goodreads.com/book/show/231108670",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "A Swim in a Pond in the Rain: In Which Four Russians Give a Master Class on Writing, Reading, and Life",
-      "url": "https://www.goodreads.com/book/show/55290026",
+      "title": "Awake",
+      "url": "https://www.goodreads.com/book/show/224004520",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Disordered Cosmos: A Journey into Dark Matter, Spacetime, and Dreams Deferred",
-      "url": "https://www.goodreads.com/book/show/54455629",
+      "title": "Finding My Way",
+      "url": "https://www.goodreads.com/book/show/235364773",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Paradise: One Town's Struggle to Survive an American Wildfire",
-      "url": "https://www.goodreads.com/book/show/56024292",
+      "title": "All the Way to the River",
+      "url": "https://www.goodreads.com/book/show/223405886",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Baldwin: A Love Story",
-      "url": "https://www.goodreads.com/book/show/217387674",
+      "title": "Book of Lives: A Memoir of Sorts",
+      "url": "https://www.goodreads.com/book/show/223854625",
       "challenges": [
-        "Editors' Picks",
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "A Marriage at Sea: A True Story of Love, Obsession, and Shipwreck",
-      "url": "https://www.goodreads.com/book/show/220239083",
+      "title": "Homeschooled: A Memoir",
+      "url": "https://www.goodreads.com/book/show/233333691",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation",
-      "url": "https://www.goodreads.com/book/show/228142780",
+      "title": "Paper Girl: A Memoir of Home and Family in a Fractured America",
+      "url": "https://www.goodreads.com/book/show/223362031",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
-      "url": "https://www.goodreads.com/book/show/223436601",
+      "title": "Vagabond",
+      "url": "https://www.goodreads.com/book/show/225819054",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "One Day, Everyone Will Have Always Been Against This",
-      "url": "https://www.goodreads.com/book/show/213870084",
+      "title": "A Hymn to Life: Shame Has to Change Sides",
+      "url": "https://www.goodreads.com/book/show/236066320",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
-      "url": "https://www.goodreads.com/book/show/220341389",
+      "title": "The Irish Goodbye: Micro-Memoirs",
+      "url": "https://www.goodreads.com/book/show/233411621",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny",
-      "url": "https://www.goodreads.com/book/show/220481360",
+      "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
+      "url": "https://www.goodreads.com/book/show/211179569",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "I'm Glad My Mom Died",
-      "url": "https://www.goodreads.com/book/show/59366244",
+      "title": "Family of Spies",
+      "url": "https://www.goodreads.com/book/show/222376793",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "River of the Gods: Genius, Courage and Betrayal in the Search for the Source of the Nile",
-      "url": "https://www.goodreads.com/book/show/58777696",
+      "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
+      "url": "https://www.goodreads.com/book/show/226573163",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Song of the Cell: An Exploration of Medicine and the New Human",
-      "url": "https://www.goodreads.com/book/show/60321392",
+      "title": "We the People: A History of the U.S. Constitution",
+      "url": "https://www.goodreads.com/book/show/223736225",
       "challenges": [
-        "Editors' Picks"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Correspondent",
-      "url": "https://www.goodreads.com/book/show/223001257",
+      "title": "The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery",
+      "url": "https://www.goodreads.com/book/show/222376731",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "People Like Us",
-      "url": "https://www.goodreads.com/book/show/221251749",
+      "title": "We Survived the Night",
+      "url": "https://www.goodreads.com/book/show/223854579",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Discipline",
-      "url": "https://www.goodreads.com/book/show/231681778",
+      "title": "Motherland: A Feminist History of Modern Russia, from Revolution to Autocracy",
+      "url": "https://www.goodreads.com/book/show/199793344",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Death of the Author",
-      "url": "https://www.goodreads.com/book/show/214283593",
+      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare&apos;s Greatest Rival",
+      "url": "https://www.goodreads.com/book/show/223736238",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "The Award",
-      "url": "https://www.goodreads.com/book/show/228665865",
+      "title": "American Struggle: Democracy, Dissent, and the Pursuit of a More Perfect Union: An Anthology",
+      "url": "https://www.goodreads.com/book/show/234352805",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Son of Nobody",
-      "url": "https://www.goodreads.com/book/show/233411679",
+      "title": "The Sea Captain&apos;s Wife",
+      "url": "https://www.goodreads.com/book/show/222376483",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Is This a Cry for Help?",
-      "url": "https://www.goodreads.com/book/show/235993013",
+      "title": "History Matters",
+      "url": "https://www.goodreads.com/book/show/228062187",
       "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     },
     {
-      "title": "Love by the Book",
-      "url": "https://www.goodreads.com/book/show/231127042",
+      "title": "How to Kill a Witch: The Patriarchy&apos;s Guide to Silencing Women",
+      "url": "https://www.goodreads.com/book/show/222476092",
       "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Lost Book of Elizabeth Barton",
-      "url": "https://www.goodreads.com/book/show/231126959",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Adjunct",
-      "url": "https://www.goodreads.com/book/show/235992288",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The City and Its Uncertain Walls",
-      "url": "https://www.goodreads.com/book/show/209192695",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "More Than Enough",
-      "url": "https://www.goodreads.com/book/show/234943545",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Our Missing Hearts",
-      "url": "https://www.goodreads.com/book/show/60149573",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Writers & Lovers",
-      "url": "https://www.goodreads.com/book/show/45289222",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Ending Writes Itself",
-      "url": "https://www.goodreads.com/book/show/236447384",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Woman Down",
-      "url": "https://www.goodreads.com/book/show/241458703",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Yellowface",
-      "url": "https://www.goodreads.com/book/show/62047984",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Harlem Rhapsody",
-      "url": "https://www.goodreads.com/book/show/212806640",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Bitter Sweet",
-      "url": "https://www.goodreads.com/book/show/220239023",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Queens of Crime",
-      "url": "https://www.goodreads.com/book/show/211003830",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "After Hours at Dooryard Books",
-      "url": "https://www.goodreads.com/book/show/240719965",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Colored Television",
-      "url": "https://www.goodreads.com/book/show/201102398",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Book Lovers",
-      "url": "https://www.goodreads.com/book/show/58690308",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Astral Library",
-      "url": "https://www.goodreads.com/book/show/235289982",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "This Kingdom Will Not Kill Me (Maggie the Undying, #1)",
-      "url": "https://www.goodreads.com/book/show/231680045",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book Witch",
-      "url": "https://www.goodreads.com/book/show/238226952",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "How to Write a Love Story",
-      "url": "https://www.goodreads.com/book/show/236847870",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Murder Your Darlings",
-      "url": "https://www.goodreads.com/book/show/231388851",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "A Novel Love Story",
-      "url": "https://www.goodreads.com/book/show/199261152",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Glowing Hours",
-      "url": "https://www.goodreads.com/book/show/232794118",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "It's Me They Follow",
-      "url": "https://www.goodreads.com/book/show/222904031",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Ladies in Hating (Belvoir's Library, #3)",
-      "url": "https://www.goodreads.com/book/show/222376849",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Quiet Librarian",
-      "url": "https://www.goodreads.com/book/show/214175092",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Library of Fates",
-      "url": "https://www.goodreads.com/book/show/223421690",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Missing Pages",
-      "url": "https://www.goodreads.com/book/show/227991193",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Busybody Book Club",
-      "url": "https://www.goodreads.com/book/show/218153882",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book of Lost Hours",
-      "url": "https://www.goodreads.com/book/show/220161572",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "How to Grieve Like a Victorian: A funny, heartwarming love story – A Library Journal Best Book of 2025 Romantic Comedy Fiction Novel",
-      "url": "https://www.goodreads.com/book/show/220140292",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Book of Forbidden Words",
-      "url": "https://www.goodreads.com/book/show/234313845",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Unwritten Rules of Magic",
-      "url": "https://www.goodreads.com/book/show/231127286",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Disorientation",
-      "url": "https://www.goodreads.com/book/show/58350424",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book Eaters",
-      "url": "https://www.goodreads.com/book/show/58724745",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Write Off",
-      "url": "https://www.goodreads.com/book/show/238227084",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Malice House",
-      "url": "https://www.goodreads.com/book/show/59851359",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Who Is Maud Dixon?",
-      "url": "https://www.goodreads.com/book/show/52320705",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "By Any Other Name",
-      "url": "https://www.goodreads.com/book/show/203337138",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "How to Survive a Horror Story",
-      "url": "https://www.goodreads.com/book/show/219542927",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Reading List",
-      "url": "https://www.goodreads.com/book/show/55276648",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Welcome to the Hyunam-dong Bookshop",
-      "url": "https://www.goodreads.com/book/show/199437939",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "How to Read a Book",
-      "url": "https://www.goodreads.com/book/show/62365896",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Personal Librarian",
-      "url": "https://www.goodreads.com/book/show/55333938",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Bookstore Diaries",
-      "url": "https://www.goodreads.com/book/show/234041217",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book Tour",
-      "url": "https://www.goodreads.com/book/show/235699965",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Secret Book Society",
-      "url": "https://www.goodreads.com/book/show/222850723",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Last Word",
-      "url": "https://www.goodreads.com/book/show/61767163",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "You Are Fatally Invited",
-      "url": "https://www.goodreads.com/book/show/213243937",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Jane and Dan at the End of the World",
-      "url": "https://www.goodreads.com/book/show/214268974",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Bookbinder's Secret",
-      "url": "https://www.goodreads.com/book/show/231127283",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Ghost Town",
-      "url": "https://www.goodreads.com/book/show/235991946",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Not in My Book",
-      "url": "https://www.goodreads.com/book/show/203194039",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Lula Dean's Little Library of Banned Books",
-      "url": "https://www.goodreads.com/book/show/200987258",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Echo of Old Books",
-      "url": "https://www.goodreads.com/book/show/62060282",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Ink Blood Sister Scribe",
-      "url": "https://www.goodreads.com/book/show/62854842",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "A Lady for All Seasons",
-      "url": "https://www.goodreads.com/book/show/236115757",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Finest Print",
-      "url": "https://www.goodreads.com/book/show/219298188",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Watermark",
-      "url": "https://www.goodreads.com/book/show/216190434",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Sisters of Book Row",
-      "url": "https://www.goodreads.com/book/show/235672415",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Finders Keepers",
-      "url": "https://www.goodreads.com/book/show/227948521",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "That's Not How It Happened",
-      "url": "https://www.goodreads.com/book/show/226388148",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book of Records",
-      "url": "https://www.goodreads.com/book/show/218569917",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Charmed Library",
-      "url": "https://www.goodreads.com/book/show/229098217",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Dictionary of Lost Words",
-      "url": "https://www.goodreads.com/book/show/54814839",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "What You Are Looking for Is in the Library",
-      "url": "https://www.goodreads.com/book/show/91274427",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Paris Library",
-      "url": "https://www.goodreads.com/book/show/52761909",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book That Wouldn’t Burn (The Library Trilogy, #1)",
-      "url": "https://www.goodreads.com/book/show/61612864",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "No Two Persons",
-      "url": "https://www.goodreads.com/book/show/60196684",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Banned Bookshop of Maggie Banks",
-      "url": "https://www.goodreads.com/book/show/60305890",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Thank You for Listening",
-      "url": "https://www.goodreads.com/book/show/59314703",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Battle of the Bookstores",
-      "url": "https://www.goodreads.com/book/show/218460257",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Seven Days in June",
-      "url": "https://www.goodreads.com/book/show/57378707",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Cemetery of Untold Stories",
-      "url": "https://www.goodreads.com/book/show/195820829",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Neighbor Favor (The Greene Sisters, #1)",
-      "url": "https://www.goodreads.com/book/show/61111295",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Twyford Code",
-      "url": "https://www.goodreads.com/book/show/61411926",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "By the Book (Meant to Be, #2)",
-      "url": "https://www.goodreads.com/book/show/58950845",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Once Upon a Time in Dollywood",
-      "url": "https://www.goodreads.com/book/show/223854466",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Or What You Will",
-      "url": "https://www.goodreads.com/book/show/45174884",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Everyone on This Train Is a Suspect (Ernest Cunningham, #2)",
-      "url": "https://www.goodreads.com/book/show/167006698",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "This Book Won't Burn",
-      "url": "https://www.goodreads.com/book/show/198493806",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Marble Hall Murders (Susan Ryeland, #3)",
-      "url": "https://www.goodreads.com/book/show/217432789",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book Censor's Library",
-      "url": "https://www.goodreads.com/book/show/175678711",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book Club for Troublesome Women",
-      "url": "https://www.goodreads.com/book/show/216052751",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Idea Machine: How Books Built Our World and Shape Our Future",
-      "url": "https://www.goodreads.com/book/show/223358375",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "How to Read Now",
-      "url": "https://www.goodreads.com/book/show/60018643",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Every Day I Read: 53 Ways to Get Closer to Books",
-      "url": "https://www.goodreads.com/book/show/223319316",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Black-Owned: The Revolutionary Life of the Black Bookstore",
-      "url": "https://www.goodreads.com/book/show/226744092",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "A Danger to the Minds of Young Girls: Margaret C. Anderson, Book Bans, and the Fight to Modernize Literature",
-      "url": "https://www.goodreads.com/book/show/220160124",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "That Librarian: The Fight Against Book Banning in America",
-      "url": "https://www.goodreads.com/book/show/203579067",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "These Precious Days: Essays",
-      "url": "https://www.goodreads.com/book/show/56922687",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Unread: A Memoir of Learning (and Loving) to Read on TikTok",
-      "url": "https://www.goodreads.com/book/show/235629842",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "One Aladdin Two Lamps",
-      "url": "https://www.goodreads.com/book/show/234100962",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Jane Austen's Bookshelf",
-      "url": "https://www.goodreads.com/book/show/214152206",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Bad Indians Book Club: Reading at the Edge of a Thousand Worlds",
-      "url": "https://www.goodreads.com/book/show/222850887",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Bookshop: A History of the American Bookstore",
-      "url": "https://www.goodreads.com/book/show/201751300",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Bookish: How Reading Shapes Our Lives",
-      "url": "https://www.goodreads.com/book/show/235992758",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Monsters in the Archives: My Year of Fear with Stephen King",
-      "url": "https://www.goodreads.com/book/show/239151034",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Ex Libris: 100+ Books to Read and Reread",
-      "url": "https://www.goodreads.com/book/show/51151753",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Why We Read: On Bookworms, Libraries, and Just One More Page Before Lights Out – A Hilarious Guide for Book Lovers and Lifelong Readers",
-      "url": "https://www.goodreads.com/book/show/127975811",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "A Swim in a Pond in the Rain",
-      "url": "https://www.goodreads.com/book/show/53487237",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Gather Me: A Memoir in Praise of the Books That Saved Me",
-      "url": "https://www.goodreads.com/book/show/60372120",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Read Dangerously: The Subversive Power of Literature in Troubled Times",
-      "url": "https://www.goodreads.com/book/show/49867396",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Bibliophobia",
-      "url": "https://www.goodreads.com/book/show/212806663",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Book and Dagger: How Scholars and Librarians Became the Unlikely Spies of World War II",
-      "url": "https://www.goodreads.com/book/show/199793672",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "101 Horror Books to Read Before You're Murdered",
-      "url": "https://www.goodreads.com/book/show/61963198",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Genius of Judy: How Judy Blume Rewrote Childhood for All of Us",
-      "url": "https://www.goodreads.com/book/show/199797799",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "On Morrison",
-      "url": "https://www.goodreads.com/book/show/232207640",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The CIA Book Club: The Secret Mission to Win the Cold War with Forbidden Literature",
-      "url": "https://www.goodreads.com/book/show/222292403",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Toni Morrison Book Club",
-      "url": "https://www.goodreads.com/book/show/52062356",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Unfinished Business: Notes of a Chronic Re-reader",
-      "url": "https://www.goodreads.com/book/show/45892264",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Orwell's Roses",
-      "url": "https://www.goodreads.com/book/show/56557019",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Fear Less: Poetry in Perilous Times",
-      "url": "https://www.goodreads.com/book/show/223736217",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Let the Poets Govern: A Declaration of Freedom",
-      "url": "https://www.goodreads.com/book/show/235699935",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Shut Up and Read: A Memoir from Harriett’s Bookshop",
-      "url": "https://www.goodreads.com/book/show/236844744",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Judy Blume: A Life",
-      "url": "https://www.goodreads.com/book/show/236116694",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Positive Obsession: The Life and Times of Octavia E. Butler",
-      "url": "https://www.goodreads.com/book/show/221228026",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Gertrude Stein: An Afterlife",
-      "url": "https://www.goodreads.com/book/show/224003754",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Mark Twain",
-      "url": "https://www.goodreads.com/book/show/219158874",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "In the Margins: On the Pleasures of Reading and Writing",
-      "url": "https://www.goodreads.com/book/show/58949461",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Unabridged: The Thrill of (and Threat to) the Modern Dictionary",
-      "url": "https://www.goodreads.com/book/show/228110298",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Writing During the Apocalypse: Reflections on the Great Unraveling",
-      "url": "https://www.goodreads.com/book/show/230791895",
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "The Book-Makers: A History of the Book in Eighteen Lives",
-      "url": "https://www.goodreads.com/book/show/195430889",
-      "challenges": [
-        "Books on Books"
+        "Trending Books"
       ]
     }
   ]

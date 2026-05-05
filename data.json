@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-01T13:11:22.931Z",
+  "lastUpdated": "2026-05-05T12:18:04.311Z",
   "challenges": [
     {
       "id": "AAPI Heritage",
@@ -42,6 +42,7 @@
     {
       "title": "The Last of Earth",
       "url": "https://www.goodreads.com/book/show/231363155",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -49,6 +50,7 @@
     {
       "title": "My Dear You",
       "url": "https://www.goodreads.com/book/show/238226950",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -56,6 +58,7 @@
     {
       "title": "Dreamt I Found You",
       "url": "https://www.goodreads.com/book/show/239680392",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -63,6 +66,7 @@
     {
       "title": "Discipline",
       "url": "https://www.goodreads.com/book/show/231681778",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Books on Books"
@@ -71,6 +75,7 @@
     {
       "title": "Under Water",
       "url": "https://www.goodreads.com/book/show/236772855",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -78,6 +83,7 @@
     {
       "title": "All the World Can Hold",
       "url": "https://www.goodreads.com/book/show/235991949",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -85,6 +91,7 @@
     {
       "title": "Japanese Gothic",
       "url": "https://www.goodreads.com/book/show/233333688",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -92,6 +99,7 @@
     {
       "title": "Honey in the Wound",
       "url": "https://www.goodreads.com/book/show/235992600",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -99,6 +107,7 @@
     {
       "title": "The Age of Calamities",
       "url": "https://www.goodreads.com/book/show/231126882",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -106,6 +115,7 @@
     {
       "title": "A Midnight Pastry Shop Called Hwawoldang",
       "url": "https://www.goodreads.com/book/show/231388861",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -113,6 +123,7 @@
     {
       "title": "The Elsewhere Express",
       "url": "https://www.goodreads.com/book/show/232149892",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -121,6 +132,7 @@
     {
       "title": "How to Commit a Postcolonial Murder",
       "url": "https://www.goodreads.com/book/show/231266757",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -128,6 +140,7 @@
     {
       "title": "The Poet Empress",
       "url": "https://www.goodreads.com/book/show/231680079",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -136,6 +149,7 @@
     {
       "title": "A Beast Slinks Towards Beijing",
       "url": "https://www.goodreads.com/book/show/232241619",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -143,6 +157,7 @@
     {
       "title": "And the Ancestors Sing",
       "url": "https://www.goodreads.com/book/show/230600972",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -150,13 +165,15 @@
     {
       "title": "Bad Asians",
       "url": "https://www.goodreads.com/book/show/231126783",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "I Love You Don&apos;t Die",
+      "title": "I Love You Don't Die",
       "url": "https://www.goodreads.com/book/show/236643256",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -164,6 +181,7 @@
     {
       "title": "Crown City (Japantown Mystery #3)",
       "url": "https://www.goodreads.com/book/show/234353362",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -171,6 +189,7 @@
     {
       "title": "Hooked",
       "url": "https://www.goodreads.com/book/show/238969853",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -178,6 +197,7 @@
     {
       "title": "The Take",
       "url": "https://www.goodreads.com/book/show/235404665",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -185,6 +205,7 @@
     {
       "title": "Molka",
       "url": "https://www.goodreads.com/book/show/228398323",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -192,6 +213,7 @@
     {
       "title": "The Subtle Art of Folding Space",
       "url": "https://www.goodreads.com/book/show/231127269",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -199,6 +221,7 @@
     {
       "title": "Boring Asian Female",
       "url": "https://www.goodreads.com/book/show/239433082",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -206,6 +229,7 @@
     {
       "title": "Livonia Chow Mein",
       "url": "https://www.goodreads.com/book/show/235992038",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -213,6 +237,7 @@
     {
       "title": "The Plans I Have for You",
       "url": "https://www.goodreads.com/book/show/235991889",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -220,6 +245,7 @@
     {
       "title": "The Valley of Vengeful Ghosts",
       "url": "https://www.goodreads.com/book/show/235672472",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -227,6 +253,7 @@
     {
       "title": "American Han",
       "url": "https://www.goodreads.com/book/show/238142763",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -234,6 +261,7 @@
     {
       "title": "Whidbey",
       "url": "https://www.goodreads.com/book/show/236079795",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Community Picks"
@@ -242,6 +270,7 @@
     {
       "title": "The Pohaku",
       "url": "https://www.goodreads.com/book/show/232735601",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -249,6 +278,7 @@
     {
       "title": "Rebel English Academy",
       "url": "https://www.goodreads.com/book/show/234101021",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -256,6 +286,7 @@
     {
       "title": "The Legend of the Nine-Tailed Fox",
       "url": "https://www.goodreads.com/book/show/235992696",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -263,6 +294,7 @@
     {
       "title": "The Girl with a Thousand Faces",
       "url": "https://www.goodreads.com/book/show/240019948",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -270,6 +302,7 @@
     {
       "title": "The Obake Code",
       "url": "https://www.goodreads.com/book/show/234313856",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -277,13 +310,15 @@
     {
       "title": "Just Friends",
       "url": "https://www.goodreads.com/book/show/235991978",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "Questions 27 &amp; 28",
+      "title": "Questions 27 & 28",
       "url": "https://www.goodreads.com/book/show/231387327",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -291,6 +326,7 @@
     {
       "title": "Celestial Lights",
       "url": "https://www.goodreads.com/book/show/232234360",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -298,6 +334,7 @@
     {
       "title": "Sakura",
       "url": "https://www.goodreads.com/book/show/235672425",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -305,6 +342,7 @@
     {
       "title": "A Killer in the Family",
       "url": "https://www.goodreads.com/book/show/231126949",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -312,6 +350,7 @@
     {
       "title": "Cleo Dang Would Rather Be Dead",
       "url": "https://www.goodreads.com/book/show/235992395",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -319,6 +358,7 @@
     {
       "title": "Ms. Mebel Goes Back to the Chopping Block",
       "url": "https://www.goodreads.com/book/show/239433100",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -326,6 +366,7 @@
     {
       "title": "Double Happiness",
       "url": "https://www.goodreads.com/book/show/240381682",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -333,6 +374,7 @@
     {
       "title": "Everyday Movement",
       "url": "https://www.goodreads.com/book/show/233717203",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -340,6 +382,7 @@
     {
       "title": "Enemies to Lovers",
       "url": "https://www.goodreads.com/book/show/238179132",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -347,6 +390,7 @@
     {
       "title": "Flashlight",
       "url": "https://www.goodreads.com/book/show/219743621",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -354,6 +398,7 @@
     {
       "title": "Mrs. Shim Is a Killer",
       "url": "https://www.goodreads.com/book/show/239132025",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -361,6 +406,7 @@
     {
       "title": "The Midnight Taxi",
       "url": "https://www.goodreads.com/book/show/233717189",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -368,6 +414,7 @@
     {
       "title": "Greedy",
       "url": "https://www.goodreads.com/book/show/234352794",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -375,6 +422,7 @@
     {
       "title": "Superfan",
       "url": "https://www.goodreads.com/book/show/231127415",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -382,6 +430,7 @@
     {
       "title": "Read Between the Lies",
       "url": "https://www.goodreads.com/book/show/239827370",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -389,6 +438,7 @@
     {
       "title": "The Fourth Princess",
       "url": "https://www.goodreads.com/book/show/234621445",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -396,13 +446,15 @@
     {
       "title": "Rings of Fate (Curses and Crowns, #1)",
       "url": "https://www.goodreads.com/book/show/203938054",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "One &amp; Only",
+      "title": "One & Only",
       "url": "https://www.goodreads.com/book/show/238872971",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -411,6 +463,7 @@
     {
       "title": "Burn the Sea",
       "url": "https://www.goodreads.com/book/show/238615737",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -418,6 +471,7 @@
     {
       "title": "The Killing Spell",
       "url": "https://www.goodreads.com/book/show/224004023",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -425,6 +479,7 @@
     {
       "title": "That Which Feeds Us",
       "url": "https://www.goodreads.com/book/show/241675506",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -432,6 +487,7 @@
     {
       "title": "This Is Where the Serpent Lives",
       "url": "https://www.goodreads.com/book/show/231363119",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -439,6 +495,7 @@
     {
       "title": "Missing Sam",
       "url": "https://www.goodreads.com/book/show/232884526",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Community Picks"
@@ -447,6 +504,7 @@
     {
       "title": "Minbak",
       "url": "https://www.goodreads.com/book/show/235793220",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -454,6 +512,7 @@
     {
       "title": "Sisters in Yellow",
       "url": "https://www.goodreads.com/book/show/237693055",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -461,6 +520,7 @@
     {
       "title": "The Complex",
       "url": "https://www.goodreads.com/book/show/236116680",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -468,6 +528,7 @@
     {
       "title": "The Emperor of Gladness",
       "url": "https://www.goodreads.com/book/show/219848315",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -475,6 +536,7 @@
     {
       "title": "Bat Eater and Other Names for Cora Zeng",
       "url": "https://www.goodreads.com/book/show/218185743",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Editors' Picks"
@@ -483,13 +545,15 @@
     {
       "title": "Katabasis",
       "url": "https://www.goodreads.com/book/show/210191773",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "Vera Wong&apos;s Guide to Snooping [On a Dead Man] (Vera Wong, #2)",
+      "title": "Vera Wong's Guide to Snooping [On a Dead Man] (Vera Wong, #2)",
       "url": "https://www.goodreads.com/book/show/215805924",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -497,6 +561,7 @@
     {
       "title": "Julie Chan Is Dead",
       "url": "https://www.goodreads.com/book/show/220195725",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -504,6 +569,7 @@
     {
       "title": "Audition",
       "url": "https://www.goodreads.com/book/show/216247518",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -511,6 +577,7 @@
     {
       "title": "The English Problem",
       "url": "https://www.goodreads.com/book/show/212806722",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -518,6 +585,7 @@
     {
       "title": "Detective Aunty (Kausar Khan Investigates, #1)",
       "url": "https://www.goodreads.com/book/show/217223352",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -525,6 +593,7 @@
     {
       "title": "The Lotus Shoes",
       "url": "https://www.goodreads.com/book/show/213888716",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -532,6 +601,7 @@
     {
       "title": "Old Soul",
       "url": "https://www.goodreads.com/book/show/211178725",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -539,6 +609,7 @@
     {
       "title": "Break Room",
       "url": "https://www.goodreads.com/book/show/241408957",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -546,6 +617,7 @@
     {
       "title": "Homeseeking",
       "url": "https://www.goodreads.com/book/show/223422252",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Marathon Reader"
@@ -554,6 +626,7 @@
     {
       "title": "Mỹ Documents",
       "url": "https://www.goodreads.com/book/show/216247494",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -561,6 +634,7 @@
     {
       "title": "I Leave It Up to You",
       "url": "https://www.goodreads.com/book/show/214399236",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -568,6 +642,7 @@
     {
       "title": "The Family Recipe",
       "url": "https://www.goodreads.com/book/show/214208247",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -575,6 +650,7 @@
     {
       "title": "The Matchmaker",
       "url": "https://www.goodreads.com/book/show/212806630",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -582,6 +658,7 @@
     {
       "title": "Our Beautiful Boys",
       "url": "https://www.goodreads.com/book/show/214986231",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -589,6 +666,7 @@
     {
       "title": "Immaculate Conception",
       "url": "https://www.goodreads.com/book/show/217453576",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -596,6 +674,7 @@
     {
       "title": "Luminous",
       "url": "https://www.goodreads.com/book/show/214151232",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -603,6 +682,7 @@
     {
       "title": "Disappoint Me",
       "url": "https://www.goodreads.com/book/show/218153678",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -610,6 +690,7 @@
     {
       "title": "The Book of Records",
       "url": "https://www.goodreads.com/book/show/218569917",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Books on Books"
@@ -618,6 +699,7 @@
     {
       "title": "Awake in the Floating City",
       "url": "https://www.goodreads.com/book/show/217453585",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -625,6 +707,7 @@
     {
       "title": "Blob: A Love Story",
       "url": "https://www.goodreads.com/book/show/212994452",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -632,6 +715,7 @@
     {
       "title": "Saltcrop",
       "url": "https://www.goodreads.com/book/show/222376600",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -640,6 +724,7 @@
     {
       "title": "Immortal",
       "url": "https://www.goodreads.com/book/show/211642122",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -647,6 +732,7 @@
     {
       "title": "Yours, Eventually",
       "url": "https://www.goodreads.com/book/show/216522680",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -654,6 +740,7 @@
     {
       "title": "Water Moon",
       "url": "https://www.goodreads.com/book/show/211479192",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -661,6 +748,7 @@
     {
       "title": "We Do Not Part",
       "url": "https://www.goodreads.com/book/show/205436018",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -668,6 +756,7 @@
     {
       "title": "The Phoenix Pencil Company",
       "url": "https://www.goodreads.com/book/show/220652184",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -675,6 +764,7 @@
     {
       "title": "Vanishing World",
       "url": "https://www.goodreads.com/book/show/219300660",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -682,6 +772,7 @@
     {
       "title": "The South",
       "url": "https://www.goodreads.com/book/show/217387871",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -689,6 +780,7 @@
     {
       "title": "The Original Daughter",
       "url": "https://www.goodreads.com/book/show/217245582",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -696,6 +788,7 @@
     {
       "title": "Alchemised",
       "url": "https://www.goodreads.com/book/show/222490389",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Marathon Reader",
@@ -705,6 +798,7 @@
     {
       "title": "The Loneliness of Sonia and Sunny",
       "url": "https://www.goodreads.com/book/show/222683974",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Marathon Reader",
@@ -714,6 +808,7 @@
     {
       "title": "Midnight Timetable: A Novel in Ghost Stories",
       "url": "https://www.goodreads.com/book/show/223296389",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -721,6 +816,7 @@
     {
       "title": "Loved One",
       "url": "https://www.goodreads.com/book/show/221473262",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -728,6 +824,7 @@
     {
       "title": "Best Offer Wins",
       "url": "https://www.goodreads.com/book/show/231126811",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -736,6 +833,7 @@
     {
       "title": "A Guardian and a Thief",
       "url": "https://www.goodreads.com/book/show/232207672",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -744,6 +842,7 @@
     {
       "title": "What Hunger",
       "url": "https://www.goodreads.com/book/show/219445683",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -751,6 +850,7 @@
     {
       "title": "These Memories Do Not Belong to Us",
       "url": "https://www.goodreads.com/book/show/221452836",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -758,6 +858,7 @@
     {
       "title": "Moderation",
       "url": "https://www.goodreads.com/book/show/221251742",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -765,13 +866,15 @@
     {
       "title": "Lightbreakers",
       "url": "https://www.goodreads.com/book/show/226743876",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "I&apos;ll Follow You",
+      "title": "I'll Follow You",
       "url": "https://www.goodreads.com/book/show/234481515",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -779,6 +882,7 @@
     {
       "title": "The Satisfaction Café",
       "url": "https://www.goodreads.com/book/show/220160649",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -786,6 +890,7 @@
     {
       "title": "The Memory Hunters (The Consecrated, #1)",
       "url": "https://www.goodreads.com/book/show/219236780",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -793,6 +898,7 @@
     {
       "title": "Where Are You Really From",
       "url": "https://www.goodreads.com/book/show/221754305",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -800,6 +906,7 @@
     {
       "title": "Wanting",
       "url": "https://www.goodreads.com/book/show/220517410",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -807,6 +914,7 @@
     {
       "title": "Gingko Season",
       "url": "https://www.goodreads.com/book/show/218569834",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -814,6 +922,7 @@
     {
       "title": "Light and Thread",
       "url": "https://www.goodreads.com/book/show/230422844",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -821,13 +930,15 @@
     {
       "title": "Who We Are Becoming Matters: The Courage, Wisdom, and Aloha We Need in a Timeplace of Collapse",
       "url": "https://www.goodreads.com/book/show/233717430",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "We Mend with Gold: An Immigrant Daughter&apos;s Reckoning with American Christianity",
+      "title": "We Mend with Gold: An Immigrant Daughter's Reckoning with American Christianity",
       "url": "https://www.goodreads.com/book/show/235848745",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -835,13 +946,15 @@
     {
       "title": "Eat Bitter: A Story About Guts, and Food",
       "url": "https://www.goodreads.com/book/show/240490880",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "A Place for What We Lose: A Daughter&apos;s Return to Tule Lake",
+      "title": "A Place for What We Lose: A Daughter's Return to Tule Lake",
       "url": "https://www.goodreads.com/book/show/242215799",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -849,13 +962,15 @@
     {
       "title": "A Room in Bombay: A Memoir",
       "url": "https://www.goodreads.com/book/show/233411607",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "Life After Ambition: A &quot;Good Enough&quot; Memoir",
+      "title": "Life After Ambition: A \"Good Enough\" Memoir",
       "url": "https://www.goodreads.com/book/show/235992837",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -863,6 +978,7 @@
     {
       "title": "The Other Side of Change: Who We Become When Life Makes Other Plans",
       "url": "https://www.goodreads.com/book/show/231404078",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -870,6 +986,7 @@
     {
       "title": "Strangers in the Land: Exclusion, Belonging, and the Epic Story of the Chinese in America",
       "url": "https://www.goodreads.com/book/show/217245552",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -877,13 +994,15 @@
     {
       "title": "Fetishized: A Reckoning with Yellow Fever, Feminism, and Beauty",
       "url": "https://www.goodreads.com/book/show/221754280",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
     },
     {
-      "title": "Kuleana: A Story of Family, Land, and Legacy in Old Hawai&apos;i",
+      "title": "Kuleana: A Story of Family, Land, and Legacy in Old Hawai'i",
       "url": "https://www.goodreads.com/book/show/217388255",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -891,6 +1010,7 @@
     {
       "title": "Asian/Other: Life, Poems, and the Problem of Memoir",
       "url": "https://www.goodreads.com/book/show/213395485",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -898,6 +1018,7 @@
     {
       "title": "Water Mirror Echo: Bruce Lee and the Making of Asian America – A Powerful Story from Counterculture to Hollywood Legend",
       "url": "https://www.goodreads.com/book/show/222904071",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -905,6 +1026,7 @@
     {
       "title": "Mother Mary Comes to Me",
       "url": "https://www.goodreads.com/book/show/224004055",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Trending Books"
@@ -913,6 +1035,7 @@
     {
       "title": "Bibliophobia",
       "url": "https://www.goodreads.com/book/show/212806663",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage",
         "Books on Books"
@@ -921,6 +1044,7 @@
     {
       "title": "Accidentally on Purpose",
       "url": "https://www.goodreads.com/book/show/218075335",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -928,6 +1052,7 @@
     {
       "title": "Restaurant Kid: A Memoir of Family and Belonging",
       "url": "https://www.goodreads.com/book/show/214151670",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -935,6 +1060,7 @@
     {
       "title": "Good Soil: The Education of an Accidental Farmhand",
       "url": "https://www.goodreads.com/book/show/215361966",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -942,6 +1068,7 @@
     {
       "title": "Clam Down: A Metamorphosis",
       "url": "https://www.goodreads.com/book/show/218460348",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -949,6 +1076,7 @@
     {
       "title": "Things in Nature Merely Grow",
       "url": "https://www.goodreads.com/book/show/221164555",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -956,6 +1084,7 @@
     {
       "title": "Year of the Water Horse: A Memoir",
       "url": "https://www.goodreads.com/book/show/224003979",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -963,6 +1092,7 @@
     {
       "title": "Firstborn: A Memoir",
       "url": "https://www.goodreads.com/book/show/214986210",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -970,6 +1100,7 @@
     {
       "title": "The True Happiness Company: How a Girl Like Me Falls for a Cult Like That",
       "url": "https://www.goodreads.com/book/show/215361994",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -977,6 +1108,7 @@
     {
       "title": "Unassimilable: An Asian Diasporic Manifesto for the Twenty-First Century – A Hard-Hitting Scholar-Activist Memoir on Revolutionary Politics",
       "url": "https://www.goodreads.com/book/show/211642057",
+      "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
       ]
@@ -984,6 +1116,7 @@
     {
       "title": "The Correspondent",
       "url": "https://www.goodreads.com/book/show/223001257",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -991,6 +1124,7 @@
     {
       "title": "People Like Us",
       "url": "https://www.goodreads.com/book/show/221251749",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -998,6 +1132,7 @@
     {
       "title": "What We Can Know",
       "url": "https://www.goodreads.com/book/show/223854881",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1006,6 +1141,7 @@
     {
       "title": "Death of the Author",
       "url": "https://www.goodreads.com/book/show/214283593",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1013,6 +1149,7 @@
     {
       "title": "The Award",
       "url": "https://www.goodreads.com/book/show/228665865",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1020,6 +1157,7 @@
     {
       "title": "Son of Nobody",
       "url": "https://www.goodreads.com/book/show/233411679",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1027,6 +1165,7 @@
     {
       "title": "Is This a Cry for Help?",
       "url": "https://www.goodreads.com/book/show/235993013",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1034,6 +1173,7 @@
     {
       "title": "Love by the Book",
       "url": "https://www.goodreads.com/book/show/231127042",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1041,6 +1181,7 @@
     {
       "title": "The Lost Book of Elizabeth Barton",
       "url": "https://www.goodreads.com/book/show/231126959",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1048,6 +1189,7 @@
     {
       "title": "The Adjunct",
       "url": "https://www.goodreads.com/book/show/235992288",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1055,6 +1197,7 @@
     {
       "title": "We Love You, Bunny (Bunny, #2)",
       "url": "https://www.goodreads.com/book/show/220595449",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1063,6 +1206,7 @@
     {
       "title": "Trust",
       "url": "https://www.goodreads.com/book/show/58210933",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Editors' Picks"
@@ -1071,6 +1215,7 @@
     {
       "title": "The City and Its Uncertain Walls",
       "url": "https://www.goodreads.com/book/show/209192695",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1078,6 +1223,7 @@
     {
       "title": "More Than Enough",
       "url": "https://www.goodreads.com/book/show/234943545",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1085,13 +1231,15 @@
     {
       "title": "Our Missing Hearts",
       "url": "https://www.goodreads.com/book/show/60149573",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "Writers &amp; Lovers",
+      "title": "Writers & Lovers",
       "url": "https://www.goodreads.com/book/show/45289222",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1099,6 +1247,7 @@
     {
       "title": "The Ending Writes Itself",
       "url": "https://www.goodreads.com/book/show/236447384",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1106,6 +1255,7 @@
     {
       "title": "Woman Down",
       "url": "https://www.goodreads.com/book/show/241458703",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1113,6 +1263,7 @@
     {
       "title": "How to Get Away with Murder",
       "url": "https://www.goodreads.com/book/show/231126906",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Community Picks",
@@ -1122,6 +1273,7 @@
     {
       "title": "Yellowface",
       "url": "https://www.goodreads.com/book/show/62047984",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1129,6 +1281,7 @@
     {
       "title": "Harlem Rhapsody",
       "url": "https://www.goodreads.com/book/show/212806640",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1136,6 +1289,7 @@
     {
       "title": "Bitter Sweet",
       "url": "https://www.goodreads.com/book/show/220239023",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1143,6 +1297,7 @@
     {
       "title": "The Queens of Crime",
       "url": "https://www.goodreads.com/book/show/211003830",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1150,6 +1305,7 @@
     {
       "title": "After Hours at Dooryard Books",
       "url": "https://www.goodreads.com/book/show/240719965",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1157,6 +1313,7 @@
     {
       "title": "Colored Television",
       "url": "https://www.goodreads.com/book/show/201102398",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1164,6 +1321,7 @@
     {
       "title": "Book Lovers",
       "url": "https://www.goodreads.com/book/show/58690308",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1171,6 +1329,7 @@
     {
       "title": "The Astral Library",
       "url": "https://www.goodreads.com/book/show/235289982",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1179,6 +1338,7 @@
     {
       "title": "This Kingdom Will Not Kill Me (Maggie the Undying, #1)",
       "url": "https://www.goodreads.com/book/show/231680045",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1186,6 +1346,7 @@
     {
       "title": "The Book Witch",
       "url": "https://www.goodreads.com/book/show/238226952",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1193,6 +1354,7 @@
     {
       "title": "How to Write a Love Story",
       "url": "https://www.goodreads.com/book/show/236847870",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1200,6 +1362,7 @@
     {
       "title": "Murder Your Darlings",
       "url": "https://www.goodreads.com/book/show/231388851",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1207,6 +1370,7 @@
     {
       "title": "The Everlasting",
       "url": "https://www.goodreads.com/book/show/226850464",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Editors' Picks",
@@ -1216,6 +1380,7 @@
     {
       "title": "A Novel Love Story",
       "url": "https://www.goodreads.com/book/show/199261152",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1223,6 +1388,7 @@
     {
       "title": "The Glowing Hours",
       "url": "https://www.goodreads.com/book/show/232794118",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1230,6 +1396,7 @@
     {
       "title": "The Ghostwriter",
       "url": "https://www.goodreads.com/book/show/218644981",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Community Picks",
@@ -1237,15 +1404,17 @@
       ]
     },
     {
-      "title": "It&apos;s Me They Follow",
+      "title": "It's Me They Follow",
       "url": "https://www.goodreads.com/book/show/222904031",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "Ladies in Hating (Belvoir&apos;s Library, #3)",
+      "title": "Ladies in Hating (Belvoir's Library, #3)",
       "url": "https://www.goodreads.com/book/show/222376849",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1253,6 +1422,7 @@
     {
       "title": "The Lost Story of Eva Fuentes",
       "url": "https://www.goodreads.com/book/show/220239094",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1261,6 +1431,7 @@
     {
       "title": "The Quiet Librarian",
       "url": "https://www.goodreads.com/book/show/214175092",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1268,6 +1439,7 @@
     {
       "title": "The Library of Fates",
       "url": "https://www.goodreads.com/book/show/223421690",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1275,6 +1447,7 @@
     {
       "title": "The Missing Pages",
       "url": "https://www.goodreads.com/book/show/227991193",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1282,6 +1455,7 @@
     {
       "title": "The Busybody Book Club",
       "url": "https://www.goodreads.com/book/show/218153882",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1289,6 +1463,7 @@
     {
       "title": "The Book of Lost Hours",
       "url": "https://www.goodreads.com/book/show/220161572",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1296,6 +1471,7 @@
     {
       "title": "How to Grieve Like a Victorian: A funny, heartwarming love story – A Library Journal Best Book of 2025 Romantic Comedy Fiction Novel",
       "url": "https://www.goodreads.com/book/show/220140292",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1303,6 +1479,7 @@
     {
       "title": "Cloud Cuckoo Land",
       "url": "https://www.goodreads.com/book/show/56783258",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Editors' Picks",
@@ -1312,6 +1489,7 @@
     {
       "title": "The Sentence",
       "url": "https://www.goodreads.com/book/show/56816904",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Editors' Picks"
@@ -1320,6 +1498,7 @@
     {
       "title": "Book of Forbidden Words",
       "url": "https://www.goodreads.com/book/show/234313845",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1327,6 +1506,7 @@
     {
       "title": "The Unwritten Rules of Magic",
       "url": "https://www.goodreads.com/book/show/231127286",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1334,6 +1514,7 @@
     {
       "title": "Disorientation",
       "url": "https://www.goodreads.com/book/show/58350424",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1341,6 +1522,7 @@
     {
       "title": "The Book Eaters",
       "url": "https://www.goodreads.com/book/show/58724745",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1348,6 +1530,7 @@
     {
       "title": "The Write Off",
       "url": "https://www.goodreads.com/book/show/238227084",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1355,6 +1538,7 @@
     {
       "title": "Malice House",
       "url": "https://www.goodreads.com/book/show/59851359",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1362,6 +1546,7 @@
     {
       "title": "Who Is Maud Dixon?",
       "url": "https://www.goodreads.com/book/show/52320705",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1369,6 +1554,7 @@
     {
       "title": "By Any Other Name",
       "url": "https://www.goodreads.com/book/show/203337138",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1376,6 +1562,7 @@
     {
       "title": "How to Survive a Horror Story",
       "url": "https://www.goodreads.com/book/show/219542927",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1383,6 +1570,7 @@
     {
       "title": "The Reading List",
       "url": "https://www.goodreads.com/book/show/55276648",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1390,6 +1578,7 @@
     {
       "title": "Welcome to the Hyunam-dong Bookshop",
       "url": "https://www.goodreads.com/book/show/199437939",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1397,6 +1586,7 @@
     {
       "title": "How to Read a Book",
       "url": "https://www.goodreads.com/book/show/62365896",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1404,6 +1594,7 @@
     {
       "title": "The Personal Librarian",
       "url": "https://www.goodreads.com/book/show/55333938",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1411,6 +1602,7 @@
     {
       "title": "The Bookstore Diaries",
       "url": "https://www.goodreads.com/book/show/234041217",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1418,6 +1610,7 @@
     {
       "title": "The Book Tour",
       "url": "https://www.goodreads.com/book/show/235699965",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1425,6 +1618,7 @@
     {
       "title": "The Secret Book Society",
       "url": "https://www.goodreads.com/book/show/222850723",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1432,6 +1626,7 @@
     {
       "title": "The Last Word",
       "url": "https://www.goodreads.com/book/show/61767163",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1439,6 +1634,7 @@
     {
       "title": "You Are Fatally Invited",
       "url": "https://www.goodreads.com/book/show/213243937",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1446,13 +1642,15 @@
     {
       "title": "Jane and Dan at the End of the World",
       "url": "https://www.goodreads.com/book/show/214268974",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "The Bookbinder&apos;s Secret",
+      "title": "The Bookbinder's Secret",
       "url": "https://www.goodreads.com/book/show/231127283",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1460,6 +1658,7 @@
     {
       "title": "Ghost Town",
       "url": "https://www.goodreads.com/book/show/235991946",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1467,13 +1666,15 @@
     {
       "title": "Not in My Book",
       "url": "https://www.goodreads.com/book/show/203194039",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "Lula Dean&apos;s Little Library of Banned Books",
+      "title": "Lula Dean's Little Library of Banned Books",
       "url": "https://www.goodreads.com/book/show/200987258",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1481,6 +1682,7 @@
     {
       "title": "The Echo of Old Books",
       "url": "https://www.goodreads.com/book/show/62060282",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1488,6 +1690,7 @@
     {
       "title": "Ink Blood Sister Scribe",
       "url": "https://www.goodreads.com/book/show/62854842",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1495,6 +1698,7 @@
     {
       "title": "A Lady for All Seasons",
       "url": "https://www.goodreads.com/book/show/236115757",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1502,6 +1706,7 @@
     {
       "title": "The Finest Print",
       "url": "https://www.goodreads.com/book/show/219298188",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1509,6 +1714,7 @@
     {
       "title": "The Watermark",
       "url": "https://www.goodreads.com/book/show/216190434",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1516,6 +1722,7 @@
     {
       "title": "The Sisters of Book Row",
       "url": "https://www.goodreads.com/book/show/235672415",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1523,6 +1730,7 @@
     {
       "title": "This Book Made Me Think of You",
       "url": "https://www.goodreads.com/book/show/232794526",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1531,13 +1739,15 @@
     {
       "title": "Finders Keepers",
       "url": "https://www.goodreads.com/book/show/227948521",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "That&apos;s Not How It Happened",
+      "title": "That's Not How It Happened",
       "url": "https://www.goodreads.com/book/show/226388148",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1545,6 +1755,7 @@
     {
       "title": "An Academic Affair",
       "url": "https://www.goodreads.com/book/show/224003821",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Trending Books"
@@ -1553,6 +1764,7 @@
     {
       "title": "The Charmed Library",
       "url": "https://www.goodreads.com/book/show/229098217",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1560,6 +1772,7 @@
     {
       "title": "The Dictionary of Lost Words",
       "url": "https://www.goodreads.com/book/show/54814839",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1567,6 +1780,7 @@
     {
       "title": "What You Are Looking for Is in the Library",
       "url": "https://www.goodreads.com/book/show/91274427",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1574,6 +1788,7 @@
     {
       "title": "The Paris Library",
       "url": "https://www.goodreads.com/book/show/52761909",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1581,6 +1796,7 @@
     {
       "title": "The Book That Wouldn’t Burn (The Library Trilogy, #1)",
       "url": "https://www.goodreads.com/book/show/61612864",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1588,6 +1804,7 @@
     {
       "title": "No Two Persons",
       "url": "https://www.goodreads.com/book/show/60196684",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1595,6 +1812,7 @@
     {
       "title": "The Plot (The Book Series, #1)",
       "url": "https://www.goodreads.com/book/show/55315487",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Community Picks"
@@ -1603,6 +1821,7 @@
     {
       "title": "The Banned Bookshop of Maggie Banks",
       "url": "https://www.goodreads.com/book/show/60305890",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1610,6 +1829,7 @@
     {
       "title": "Thank You for Listening",
       "url": "https://www.goodreads.com/book/show/59314703",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1617,6 +1837,7 @@
     {
       "title": "The Book of Form and Emptiness",
       "url": "https://www.goodreads.com/book/show/57004637",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Marathon Reader"
@@ -1625,6 +1846,7 @@
     {
       "title": "Battle of the Bookstores",
       "url": "https://www.goodreads.com/book/show/218460257",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1632,6 +1854,7 @@
     {
       "title": "Seven Days in June",
       "url": "https://www.goodreads.com/book/show/57378707",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1639,6 +1862,7 @@
     {
       "title": "The Cemetery of Untold Stories",
       "url": "https://www.goodreads.com/book/show/195820829",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1646,6 +1870,7 @@
     {
       "title": "The Neighbor Favor (The Greene Sisters, #1)",
       "url": "https://www.goodreads.com/book/show/61111295",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1653,6 +1878,7 @@
     {
       "title": "The Twyford Code",
       "url": "https://www.goodreads.com/book/show/61411926",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1660,6 +1886,7 @@
     {
       "title": "By the Book (Meant to Be, #2)",
       "url": "https://www.goodreads.com/book/show/58950845",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1667,6 +1894,7 @@
     {
       "title": "Once Upon a Time in Dollywood",
       "url": "https://www.goodreads.com/book/show/223854466",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1674,6 +1902,7 @@
     {
       "title": "Or What You Will",
       "url": "https://www.goodreads.com/book/show/45174884",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1681,13 +1910,15 @@
     {
       "title": "Everyone on This Train Is a Suspect (Ernest Cunningham, #2)",
       "url": "https://www.goodreads.com/book/show/167006698",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "This Book Won&apos;t Burn",
+      "title": "This Book Won't Burn",
       "url": "https://www.goodreads.com/book/show/198493806",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1695,13 +1926,15 @@
     {
       "title": "Marble Hall Murders (Susan Ryeland, #3)",
       "url": "https://www.goodreads.com/book/show/217432789",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "The Book Censor&apos;s Library",
+      "title": "The Book Censor's Library",
       "url": "https://www.goodreads.com/book/show/175678711",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1709,6 +1942,7 @@
     {
       "title": "The Book Club for Troublesome Women",
       "url": "https://www.goodreads.com/book/show/216052751",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1716,6 +1950,7 @@
     {
       "title": "The Idea Machine: How Books Built Our World and Shape Our Future",
       "url": "https://www.goodreads.com/book/show/223358375",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1723,6 +1958,7 @@
     {
       "title": "How to Read Now",
       "url": "https://www.goodreads.com/book/show/60018643",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1730,6 +1966,7 @@
     {
       "title": "Every Day I Read: 53 Ways to Get Closer to Books",
       "url": "https://www.goodreads.com/book/show/223319316",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1737,6 +1974,7 @@
     {
       "title": "Black-Owned: The Revolutionary Life of the Black Bookstore",
       "url": "https://www.goodreads.com/book/show/226744092",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1744,6 +1982,7 @@
     {
       "title": "A Danger to the Minds of Young Girls: Margaret C. Anderson, Book Bans, and the Fight to Modernize Literature",
       "url": "https://www.goodreads.com/book/show/220160124",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1751,6 +1990,7 @@
     {
       "title": "That Librarian: The Fight Against Book Banning in America",
       "url": "https://www.goodreads.com/book/show/203579067",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1758,6 +1998,7 @@
     {
       "title": "These Precious Days: Essays",
       "url": "https://www.goodreads.com/book/show/56922687",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1765,6 +2006,7 @@
     {
       "title": "Unread: A Memoir of Learning (and Loving) to Read on TikTok",
       "url": "https://www.goodreads.com/book/show/235629842",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1772,13 +2014,15 @@
     {
       "title": "One Aladdin Two Lamps",
       "url": "https://www.goodreads.com/book/show/234100962",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "Jane Austen&apos;s Bookshelf",
+      "title": "Jane Austen's Bookshelf",
       "url": "https://www.goodreads.com/book/show/214152206",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1786,6 +2030,7 @@
     {
       "title": "Bad Indians Book Club: Reading at the Edge of a Thousand Worlds",
       "url": "https://www.goodreads.com/book/show/222850887",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1793,6 +2038,7 @@
     {
       "title": "The Bookshop: A History of the American Bookstore",
       "url": "https://www.goodreads.com/book/show/201751300",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1800,6 +2046,7 @@
     {
       "title": "Bookish: How Reading Shapes Our Lives",
       "url": "https://www.goodreads.com/book/show/235992758",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1807,6 +2054,7 @@
     {
       "title": "Monsters in the Archives: My Year of Fear with Stephen King",
       "url": "https://www.goodreads.com/book/show/239151034",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1814,6 +2062,7 @@
     {
       "title": "Ex Libris: 100+ Books to Read and Reread",
       "url": "https://www.goodreads.com/book/show/51151753",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1821,6 +2070,7 @@
     {
       "title": "Why We Read: On Bookworms, Libraries, and Just One More Page Before Lights Out – A Hilarious Guide for Book Lovers and Lifelong Readers",
       "url": "https://www.goodreads.com/book/show/127975811",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1828,13 +2078,16 @@
     {
       "title": "A Swim in a Pond in the Rain",
       "url": "https://www.goodreads.com/book/show/53487237",
+      "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Editors' Picks"
       ]
     },
     {
       "title": "Gather Me: A Memoir in Praise of the Books That Saved Me",
       "url": "https://www.goodreads.com/book/show/60372120",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1842,6 +2095,7 @@
     {
       "title": "Read Dangerously: The Subversive Power of Literature in Troubled Times",
       "url": "https://www.goodreads.com/book/show/49867396",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1849,13 +2103,15 @@
     {
       "title": "Book and Dagger: How Scholars and Librarians Became the Unlikely Spies of World War II",
       "url": "https://www.goodreads.com/book/show/199793672",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "101 Horror Books to Read Before You&apos;re Murdered",
+      "title": "101 Horror Books to Read Before You're Murdered",
       "url": "https://www.goodreads.com/book/show/61963198",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1863,6 +2119,7 @@
     {
       "title": "The Genius of Judy: How Judy Blume Rewrote Childhood for All of Us",
       "url": "https://www.goodreads.com/book/show/199797799",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1870,6 +2127,7 @@
     {
       "title": "On Morrison",
       "url": "https://www.goodreads.com/book/show/232207640",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1877,6 +2135,7 @@
     {
       "title": "The CIA Book Club: The Secret Mission to Win the Cold War with Forbidden Literature",
       "url": "https://www.goodreads.com/book/show/222292403",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1884,6 +2143,7 @@
     {
       "title": "The Toni Morrison Book Club",
       "url": "https://www.goodreads.com/book/show/52062356",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1891,13 +2151,15 @@
     {
       "title": "Unfinished Business: Notes of a Chronic Re-reader",
       "url": "https://www.goodreads.com/book/show/45892264",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "Orwell&apos;s Roses",
+      "title": "Orwell's Roses",
       "url": "https://www.goodreads.com/book/show/56557019",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1905,6 +2167,7 @@
     {
       "title": "Fear Less: Poetry in Perilous Times",
       "url": "https://www.goodreads.com/book/show/223736217",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1912,6 +2175,7 @@
     {
       "title": "Let the Poets Govern: A Declaration of Freedom",
       "url": "https://www.goodreads.com/book/show/235699935",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1919,6 +2183,7 @@
     {
       "title": "Shut Up and Read: A Memoir from Harriett’s Bookshop",
       "url": "https://www.goodreads.com/book/show/236844744",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1926,6 +2191,7 @@
     {
       "title": "Judy Blume: A Life",
       "url": "https://www.goodreads.com/book/show/236116694",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1933,6 +2199,7 @@
     {
       "title": "Positive Obsession: The Life and Times of Octavia E. Butler",
       "url": "https://www.goodreads.com/book/show/221228026",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1940,6 +2207,7 @@
     {
       "title": "Gertrude Stein: An Afterlife",
       "url": "https://www.goodreads.com/book/show/224003754",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1947,6 +2215,7 @@
     {
       "title": "Baldwin: A Love Story",
       "url": "https://www.goodreads.com/book/show/217387674",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books",
         "Editors' Picks"
@@ -1955,6 +2224,7 @@
     {
       "title": "Mark Twain",
       "url": "https://www.goodreads.com/book/show/219158874",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1962,6 +2232,7 @@
     {
       "title": "In the Margins: On the Pleasures of Reading and Writing",
       "url": "https://www.goodreads.com/book/show/58949461",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1969,6 +2240,7 @@
     {
       "title": "Unabridged: The Thrill of (and Threat to) the Modern Dictionary",
       "url": "https://www.goodreads.com/book/show/228110298",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1976,6 +2248,7 @@
     {
       "title": "Writing During the Apocalypse: Reflections on the Great Unraveling",
       "url": "https://www.goodreads.com/book/show/230791895",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
@@ -1983,13 +2256,15 @@
     {
       "title": "The Book-Makers: A History of the Book in Eighteen Lives",
       "url": "https://www.goodreads.com/book/show/195430889",
+      "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
       ]
     },
     {
-      "title": "It&apos;s Not Her",
+      "title": "It's Not Her",
       "url": "https://www.goodreads.com/book/show/230443142",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks",
@@ -1999,13 +2274,15 @@
     {
       "title": "This Story Might Save Your Life",
       "url": "https://www.goodreads.com/book/show/231126887",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "My Husband&apos;s Wife",
+      "title": "My Husband's Wife",
       "url": "https://www.goodreads.com/book/show/231127462",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2014,6 +2291,7 @@
     {
       "title": "Dear Debbie",
       "url": "https://www.goodreads.com/book/show/238365535",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2022,6 +2300,7 @@
     {
       "title": "Anatomy of an Alibi",
       "url": "https://www.goodreads.com/book/show/239052933",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2030,6 +2309,7 @@
     {
       "title": "Strangers in the Villa",
       "url": "https://www.goodreads.com/book/show/238142885",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2037,6 +2317,7 @@
     {
       "title": "Her Last Breath",
       "url": "https://www.goodreads.com/book/show/234313865",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2045,6 +2326,7 @@
     {
       "title": "The Keeper (Cal Hooper, #3)",
       "url": "https://www.goodreads.com/book/show/238227104",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2052,6 +2334,7 @@
     {
       "title": "Little One",
       "url": "https://www.goodreads.com/book/show/238142754",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2059,6 +2342,7 @@
     {
       "title": "Not Quite Dead Yet",
       "url": "https://www.goodreads.com/book/show/220223963",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2066,6 +2350,7 @@
     {
       "title": "We Are All Guilty Here (North Falls, #1)",
       "url": "https://www.goodreads.com/book/show/221544394",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2073,6 +2358,7 @@
     {
       "title": "The Widow",
       "url": "https://www.goodreads.com/book/show/229004506",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2081,6 +2367,7 @@
     {
       "title": "The Impossible Fortune (Thursday Murder Club, #5)",
       "url": "https://www.goodreads.com/book/show/222292420",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2088,6 +2375,7 @@
     {
       "title": "Heartwood",
       "url": "https://www.goodreads.com/book/show/220259184",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2096,6 +2384,7 @@
     {
       "title": "The Intruder",
       "url": "https://www.goodreads.com/book/show/231819058",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2103,13 +2392,15 @@
     {
       "title": "King of Ashes",
       "url": "https://www.goodreads.com/book/show/219833252",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "She Didn&apos;t See It Coming",
+      "title": "She Didn't See It Coming",
       "url": "https://www.goodreads.com/book/show/220999092",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2117,13 +2408,15 @@
     {
       "title": "Forget Me Not",
       "url": "https://www.goodreads.com/book/show/217387937",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "Don&apos;t Let Him In",
+      "title": "Don't Let Him In",
       "url": "https://www.goodreads.com/book/show/220160814",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2131,6 +2424,7 @@
     {
       "title": "The Secret of Secrets (Robert Langdon, #6)",
       "url": "https://www.goodreads.com/book/show/223889699",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Trending Books"
@@ -2139,6 +2433,7 @@
     {
       "title": "The God of the Woods",
       "url": "https://www.goodreads.com/book/show/199700434",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2147,6 +2442,7 @@
     {
       "title": "All the Colors of the Dark",
       "url": "https://www.goodreads.com/book/show/203019740",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2154,6 +2450,7 @@
     {
       "title": "Listen for the Lie",
       "url": "https://www.goodreads.com/book/show/127279000",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2161,6 +2458,7 @@
     {
       "title": "We Solve Murders (We Solve Murders, #1)",
       "url": "https://www.goodreads.com/book/show/219449299",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2168,6 +2466,7 @@
     {
       "title": "First Lie Wins",
       "url": "https://www.goodreads.com/book/show/164444179",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2175,6 +2474,7 @@
     {
       "title": "The Return of Ellie Black",
       "url": "https://www.goodreads.com/book/show/199798460",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2183,6 +2483,7 @@
     {
       "title": "Darling Girls",
       "url": "https://www.goodreads.com/book/show/127280429",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2190,6 +2491,7 @@
     {
       "title": "Home Is Where the Bodies Are",
       "url": "https://www.goodreads.com/book/show/194020321",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2197,13 +2499,15 @@
     {
       "title": "The Last Party",
       "url": "https://www.goodreads.com/book/show/205837684",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "The Most Wonderful Crime of the Year",
+      "title": "The Most Wonderful Crime of the Year (Kiss, Merry, Kill, #1)",
       "url": "https://www.goodreads.com/book/show/199531989",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2211,6 +2515,7 @@
     {
       "title": "The Boyfriend",
       "url": "https://www.goodreads.com/book/show/208503280",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2218,6 +2523,7 @@
     {
       "title": "The Last Murder at the End of the World",
       "url": "https://www.goodreads.com/book/show/136276877",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2225,6 +2531,7 @@
     {
       "title": "None of This Is True",
       "url": "https://www.goodreads.com/book/show/62334530",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2232,6 +2539,7 @@
     {
       "title": "The Only One Left",
       "url": "https://www.goodreads.com/book/show/62703226",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2240,6 +2548,7 @@
     {
       "title": "Bright Young Women",
       "url": "https://www.goodreads.com/book/show/101124639",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2248,13 +2557,15 @@
     {
       "title": "All the Dangerous Things",
       "url": "https://www.goodreads.com/book/show/60784636",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "Vera Wong&apos;s Unsolicited Advice for Murderers (Vera Wong, #1)",
+      "title": "Vera Wong's Unsolicited Advice for Murderers (Vera Wong, #1)",
       "url": "https://www.goodreads.com/book/show/61827543",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2263,6 +2574,7 @@
     {
       "title": "What Lies in the Woods",
       "url": "https://www.goodreads.com/book/show/60784373",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2270,6 +2582,7 @@
     {
       "title": "Kill for Me, Kill for You",
       "url": "https://www.goodreads.com/book/show/176451879",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2277,6 +2590,7 @@
     {
       "title": "The Drowning Woman",
       "url": "https://www.goodreads.com/book/show/62874245",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2284,6 +2598,7 @@
     {
       "title": "The Quiet Tenant",
       "url": "https://www.goodreads.com/book/show/61897971",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2291,6 +2606,7 @@
     {
       "title": "All the Sinners Bleed",
       "url": "https://www.goodreads.com/book/show/61884832",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2299,6 +2615,7 @@
     {
       "title": "Happiness Falls",
       "url": "https://www.goodreads.com/book/show/75495002",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2307,6 +2624,7 @@
     {
       "title": "Homecoming",
       "url": "https://www.goodreads.com/book/show/61683285",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2314,6 +2632,7 @@
     {
       "title": "The Maid (Molly the Maid, #1)",
       "url": "https://www.goodreads.com/book/show/55196813",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2321,6 +2640,7 @@
     {
       "title": "A Flicker in the Dark",
       "url": "https://www.goodreads.com/book/show/57693172",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2328,6 +2648,7 @@
     {
       "title": "Wrong Place Wrong Time",
       "url": "https://www.goodreads.com/book/show/59947696",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2335,6 +2656,7 @@
     {
       "title": "All Good People Here",
       "url": "https://www.goodreads.com/book/show/60142750",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2342,6 +2664,7 @@
     {
       "title": "The It Girl",
       "url": "https://www.goodreads.com/book/show/59345249",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2349,6 +2672,7 @@
     {
       "title": "Notes on an Execution",
       "url": "https://www.goodreads.com/book/show/57773248",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2356,6 +2680,7 @@
     {
       "title": "The Overnight Guest",
       "url": "https://www.goodreads.com/book/show/60164470",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
         "Editors' Picks"
@@ -2364,6 +2689,7 @@
     {
       "title": "Things We Do in the Dark",
       "url": "https://www.goodreads.com/book/show/58724802",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2371,6 +2697,7 @@
     {
       "title": "Killers of a Certain Age (Killers of a Certain Age, #1)",
       "url": "https://www.goodreads.com/book/show/60149532",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2378,6 +2705,7 @@
     {
       "title": "Strange Sally Diamond",
       "url": "https://www.goodreads.com/book/show/62918724",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2385,6 +2713,7 @@
     {
       "title": "Daisy Darker",
       "url": "https://www.goodreads.com/book/show/59808050",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2392,6 +2721,7 @@
     {
       "title": "Everyone in My Family Has Killed Someone (Ernest Cunningham, #1)",
       "url": "https://www.goodreads.com/book/show/60879779",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2399,6 +2729,7 @@
     {
       "title": "The Last Thing He Told Me (Hannah Hall, #1)",
       "url": "https://www.goodreads.com/book/show/58744977",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2406,6 +2737,7 @@
     {
       "title": "Razorblade Tears",
       "url": "https://www.goodreads.com/book/show/57660923",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2413,6 +2745,7 @@
     {
       "title": "Rock Paper Scissors",
       "url": "https://www.goodreads.com/book/show/56269064",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2420,6 +2753,7 @@
     {
       "title": "Local Woman Missing",
       "url": "https://www.goodreads.com/book/show/57361474",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2427,6 +2761,7 @@
     {
       "title": "The Push",
       "url": "https://www.goodreads.com/book/show/52476830",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2434,6 +2769,7 @@
     {
       "title": "Harlem Shuffle (The Harlem Trilogy, #1)",
       "url": "https://www.goodreads.com/book/show/54626223",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2441,6 +2777,7 @@
     {
       "title": "The Night She Disappeared",
       "url": "https://www.goodreads.com/book/show/55922299",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2448,6 +2785,7 @@
     {
       "title": "We Begin at the End",
       "url": "https://www.goodreads.com/book/show/50279680",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2455,6 +2793,7 @@
     {
       "title": "The Good Lie",
       "url": "https://www.goodreads.com/book/show/56238004",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2462,6 +2801,7 @@
     {
       "title": "Billy Summers",
       "url": "https://www.goodreads.com/book/show/56852407",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2469,6 +2809,7 @@
     {
       "title": "These Silent Woods",
       "url": "https://www.goodreads.com/book/show/56268973",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2476,6 +2817,7 @@
     {
       "title": "The Guest List",
       "url": "https://www.goodreads.com/book/show/52656911",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2483,6 +2825,7 @@
     {
       "title": "The Perfect Marriage",
       "url": "https://www.goodreads.com/book/show/223688351",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2490,13 +2833,15 @@
     {
       "title": "The Thursday Murder Club (Thursday Murder Club, #1)",
       "url": "https://www.goodreads.com/book/show/46000520",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "His &amp; Hers",
+      "title": "His & Hers",
       "url": "https://www.goodreads.com/book/show/45885495",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2504,6 +2849,7 @@
     {
       "title": "Home Before Dark",
       "url": "https://www.goodreads.com/book/show/50833559",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2511,6 +2857,7 @@
     {
       "title": "The Last Flight",
       "url": "https://www.goodreads.com/book/show/52652923",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2518,6 +2865,7 @@
     {
       "title": "What Lies Between Us",
       "url": "https://www.goodreads.com/book/show/51497008",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2525,6 +2873,7 @@
     {
       "title": "Little Secrets",
       "url": "https://www.goodreads.com/book/show/45046683",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2532,6 +2881,7 @@
     {
       "title": "Long Bright River",
       "url": "https://www.goodreads.com/book/show/43834909",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2539,6 +2889,7 @@
     {
       "title": "The Searcher (Cal Hooper, #1)",
       "url": "https://www.goodreads.com/book/show/52661162",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2546,6 +2897,7 @@
     {
       "title": "The Boy from the Woods (Wilde, #1)",
       "url": "https://www.goodreads.com/book/show/51204046",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2553,6 +2905,7 @@
     {
       "title": "Winter Counts",
       "url": "https://www.goodreads.com/book/show/48678117",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2560,6 +2913,7 @@
     {
       "title": "The Silent Patient",
       "url": "https://www.goodreads.com/book/show/40097951",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2567,6 +2921,7 @@
     {
       "title": "The Turn of the Key",
       "url": "https://www.goodreads.com/book/show/42080142",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2574,6 +2929,7 @@
     {
       "title": "Lock Every Door",
       "url": "https://www.goodreads.com/book/show/41837243",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2581,6 +2937,7 @@
     {
       "title": "My Lovely Wife",
       "url": "https://www.goodreads.com/book/show/39796904",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2588,6 +2945,7 @@
     {
       "title": "When She Returned",
       "url": "https://www.goodreads.com/book/show/43807935",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2595,6 +2953,7 @@
     {
       "title": "The Chain",
       "url": "https://www.goodreads.com/book/show/42779092",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2602,6 +2961,7 @@
     {
       "title": "Someone We Know",
       "url": "https://www.goodreads.com/book/show/43982433",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2609,6 +2969,7 @@
     {
       "title": "The Lost Man",
       "url": "https://www.goodreads.com/book/show/39863488",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2616,6 +2977,7 @@
     {
       "title": "Miracle Creek",
       "url": "https://www.goodreads.com/book/show/40121959",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2623,6 +2985,7 @@
     {
       "title": "The Family Upstairs (The Family Upstairs, #1)",
       "url": "https://www.goodreads.com/book/show/43822820",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2630,6 +2993,7 @@
     {
       "title": "Run Away",
       "url": "https://www.goodreads.com/book/show/40697540",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2637,6 +3001,7 @@
     {
       "title": "The Whisper Man",
       "url": "https://www.goodreads.com/book/show/41940236",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2644,6 +3009,7 @@
     {
       "title": "The Woman in the Window",
       "url": "https://www.goodreads.com/book/show/40389527",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2651,6 +3017,7 @@
     {
       "title": "The 7½ Deaths of Evelyn Hardcastle",
       "url": "https://www.goodreads.com/book/show/36337550",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2658,6 +3025,7 @@
     {
       "title": "The Outsider (Holly Gibney #1)",
       "url": "https://www.goodreads.com/book/show/36124936",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2665,6 +3033,7 @@
     {
       "title": "My Sister, the Serial Killer",
       "url": "https://www.goodreads.com/book/show/38819868",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2672,6 +3041,7 @@
     {
       "title": "Verity",
       "url": "https://www.goodreads.com/book/show/41957126",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2679,6 +3049,7 @@
     {
       "title": "The Wife Between Us",
       "url": "https://www.goodreads.com/book/show/34189556",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2686,6 +3057,7 @@
     {
       "title": "The Widows of Malabar Hill (Perveen Mistry, #1)",
       "url": "https://www.goodreads.com/book/show/35133064",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2693,6 +3065,7 @@
     {
       "title": "The Chalk Man",
       "url": "https://www.goodreads.com/book/show/35356382",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2700,6 +3073,7 @@
     {
       "title": "The Broken Girls",
       "url": "https://www.goodreads.com/book/show/35305625",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2707,6 +3081,7 @@
     {
       "title": "The Last Time I Lied",
       "url": "https://www.goodreads.com/book/show/36750068",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2714,6 +3089,7 @@
     {
       "title": "Then She Was Gone",
       "url": "https://www.goodreads.com/book/show/35297426",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2721,6 +3097,7 @@
     {
       "title": "Jar of Hearts",
       "url": "https://www.goodreads.com/book/show/36315374",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2728,6 +3105,7 @@
     {
       "title": "The Last Mrs. Parrish (Mrs. Parrish, #1)",
       "url": "https://www.goodreads.com/book/show/34043643",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2735,6 +3113,7 @@
     {
       "title": "The Good Daughter (Good Daughter, #1)",
       "url": "https://www.goodreads.com/book/show/33230889",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2742,6 +3121,7 @@
     {
       "title": "No Exit",
       "url": "https://www.goodreads.com/book/show/35522836",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2749,6 +3129,7 @@
     {
       "title": "Behind Her Eyes",
       "url": "https://www.goodreads.com/book/show/28965131",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2756,6 +3137,7 @@
     {
       "title": "Stillhouse Lake (Stillhouse Lake, #1)",
       "url": "https://www.goodreads.com/book/show/33128934",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2763,6 +3145,7 @@
     {
       "title": "I Am Watching You",
       "url": "https://www.goodreads.com/book/show/34914739",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2770,6 +3153,7 @@
     {
       "title": "Final Girls",
       "url": "https://www.goodreads.com/book/show/32796253",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2777,6 +3161,7 @@
     {
       "title": "Camino Island (Camino Island, #1)",
       "url": "https://www.goodreads.com/book/show/34121119",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2784,6 +3169,7 @@
     {
       "title": "The Breakdown",
       "url": "https://www.goodreads.com/book/show/31450633",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2791,13 +3177,15 @@
     {
       "title": "The Dry (Aaron Falk, #1)",
       "url": "https://www.goodreads.com/book/show/28220971",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
     },
     {
-      "title": "Don&apos;t Let Go",
+      "title": "Don't Let Go",
       "url": "https://www.goodreads.com/book/show/34001659",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2805,6 +3193,7 @@
     {
       "title": "Magpie Murders (Susan Ryeland, #1)",
       "url": "https://www.goodreads.com/book/show/32075854",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2812,6 +3201,7 @@
     {
       "title": "The Woman in Cabin 10 (Lo Blacklock #1)",
       "url": "https://www.goodreads.com/book/show/233770059",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2819,6 +3209,7 @@
     {
       "title": "Behind Closed Doors",
       "url": "https://www.goodreads.com/book/show/29437949",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2826,6 +3217,7 @@
     {
       "title": "The Couple Next Door",
       "url": "https://www.goodreads.com/book/show/28815474",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2833,6 +3225,7 @@
     {
       "title": "All the Missing Girls",
       "url": "https://www.goodreads.com/book/show/23212667",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2840,6 +3233,7 @@
     {
       "title": "The Whistler (The Whistler, #1)",
       "url": "https://www.goodreads.com/book/show/29236280",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2847,6 +3241,7 @@
     {
       "title": "Fool Me Once (Detective Sami Kierce, #1)",
       "url": "https://www.goodreads.com/book/show/26109394",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2854,6 +3249,7 @@
     {
       "title": "Before the Fall",
       "url": "https://www.goodreads.com/book/show/40670008",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2861,6 +3257,7 @@
     {
       "title": "A Great Reckoning (Chief Inspector Armand Gamache, #12)",
       "url": "https://www.goodreads.com/book/show/28220985",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2868,6 +3265,7 @@
     {
       "title": "Gone Girl",
       "url": "https://www.goodreads.com/book/show/19288043",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2875,6 +3273,7 @@
     {
       "title": "The Girl on the Train",
       "url": "https://www.goodreads.com/book/show/22557272",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2882,6 +3281,7 @@
     {
       "title": "Pretty Girls",
       "url": "https://www.goodreads.com/book/show/25574782",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2889,6 +3289,7 @@
     {
       "title": "Big Little Lies (Big Little Lies, #1)",
       "url": "https://www.goodreads.com/book/show/33516773",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2896,6 +3297,7 @@
     {
       "title": "Mr. Mercedes (Bill Hodges #1)",
       "url": "https://www.goodreads.com/book/show/18775247",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2903,6 +3305,7 @@
     {
       "title": "Before I Go to Sleep",
       "url": "https://www.goodreads.com/book/show/9736930",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2910,6 +3313,7 @@
     {
       "title": "The Snowman (Harry Hole, #7)",
       "url": "https://www.goodreads.com/book/show/9572203",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2917,6 +3321,7 @@
     {
       "title": "Sharp Objects",
       "url": "https://www.goodreads.com/book/show/18045891",
+      "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
       ]
@@ -2924,6 +3329,7 @@
     {
       "title": "Wild Dark Shore",
       "url": "https://www.goodreads.com/book/show/211004089",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2931,13 +3337,15 @@
     {
       "title": "Intermezzo",
       "url": "https://www.goodreads.com/book/show/208931300",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Margo&apos;s Got Money Troubles",
+      "title": "Margo's Got Money Troubles",
       "url": "https://www.goodreads.com/book/show/199534613",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2945,6 +3353,7 @@
     {
       "title": "Martyr!",
       "url": "https://www.goodreads.com/book/show/139400713",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2952,6 +3361,7 @@
     {
       "title": "Tom Lake",
       "url": "https://www.goodreads.com/book/show/63241104",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2959,6 +3369,7 @@
     {
       "title": "Nightcrawling",
       "url": "https://www.goodreads.com/book/show/58537371",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2966,6 +3377,7 @@
     {
       "title": "Cursed Daughters",
       "url": "https://www.goodreads.com/book/show/227429747",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -2974,6 +3386,7 @@
     {
       "title": "Olga Dies Dreaming",
       "url": "https://www.goodreads.com/book/show/57693171",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -2981,6 +3394,7 @@
     {
       "title": "Demon Copperhead",
       "url": "https://www.goodreads.com/book/show/60194162",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Marathon Reader"
@@ -2989,6 +3403,7 @@
     {
       "title": "The Bee Sting",
       "url": "https://www.goodreads.com/book/show/62039166",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Marathon Reader"
@@ -2997,6 +3412,7 @@
     {
       "title": "Junie",
       "url": "https://www.goodreads.com/book/show/212806648",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3004,6 +3420,7 @@
     {
       "title": "The Lion Women of Tehran",
       "url": "https://www.goodreads.com/book/show/199798217",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3011,6 +3428,7 @@
     {
       "title": "The Safekeep",
       "url": "https://www.goodreads.com/book/show/199798201",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3018,6 +3436,7 @@
     {
       "title": "Kin",
       "url": "https://www.goodreads.com/book/show/241126800",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3026,6 +3445,7 @@
     {
       "title": "There Are Rivers in the Sky",
       "url": "https://www.goodreads.com/book/show/202468422",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3033,6 +3453,7 @@
     {
       "title": "Keeper of Lost Children",
       "url": "https://www.goodreads.com/book/show/235992421",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3041,6 +3462,7 @@
     {
       "title": "The Frozen River",
       "url": "https://www.goodreads.com/book/show/112975658",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3048,14 +3470,16 @@
     {
       "title": "The Covenant of Water",
       "url": "https://www.goodreads.com/book/show/180357146",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Marathon Reader"
       ]
     },
     {
-      "title": "Burn Down Master&apos;s House",
+      "title": "Burn Down Master's House",
       "url": "https://www.goodreads.com/book/show/232209360",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3064,6 +3488,7 @@
     {
       "title": "Glorious Exploits",
       "url": "https://www.goodreads.com/book/show/127278133",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3071,6 +3496,7 @@
     {
       "title": "Loot",
       "url": "https://www.goodreads.com/book/show/63836365",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3078,6 +3504,7 @@
     {
       "title": "The Violin Conspiracy",
       "url": "https://www.goodreads.com/book/show/58386733",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3085,6 +3512,7 @@
     {
       "title": "When the Tides Held the Moon",
       "url": "https://www.goodreads.com/book/show/213075628",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3092,6 +3520,7 @@
     {
       "title": "The Shots You Take",
       "url": "https://www.goodreads.com/book/show/210202493",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3099,6 +3528,7 @@
     {
       "title": "August Lane",
       "url": "https://www.goodreads.com/book/show/221179148",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3106,6 +3536,7 @@
     {
       "title": "The Heart Principle (The Kiss Quotient, #3)",
       "url": "https://www.goodreads.com/book/show/50056075",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3113,6 +3544,7 @@
     {
       "title": "Wild Rain (Women Who Dare, #2)",
       "url": "https://www.goodreads.com/book/show/43701060",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3120,6 +3552,7 @@
     {
       "title": "An Island Princess Starts a Scandal (Las Leonas, #2)",
       "url": "https://www.goodreads.com/book/show/63028658",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3127,6 +3560,7 @@
     {
       "title": "Bride (Bride, #1)",
       "url": "https://www.goodreads.com/book/show/181344829",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3134,6 +3568,7 @@
     {
       "title": "Funny Story",
       "url": "https://www.goodreads.com/book/show/194802722",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3141,6 +3576,7 @@
     {
       "title": "Trial of the Sun Queen (Artefacts of Ouranos, #1)",
       "url": "https://www.goodreads.com/book/show/191755077",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3148,6 +3584,7 @@
     {
       "title": "A Lady for a Duke",
       "url": "https://www.goodreads.com/book/show/57007967",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3155,6 +3592,7 @@
     {
       "title": "A Love Song for Ricki Wilde",
       "url": "https://www.goodreads.com/book/show/173404023",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3162,6 +3600,7 @@
     {
       "title": "Tusk Love",
       "url": "https://www.goodreads.com/book/show/219848368",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3169,6 +3608,7 @@
     {
       "title": "The Raven Scholar (Eternal Path Trilogy, #1)",
       "url": "https://www.goodreads.com/book/show/217182392",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Marathon Reader"
@@ -3177,6 +3617,7 @@
     {
       "title": "Mad Sisters of Esi",
       "url": "https://www.goodreads.com/book/show/221254185",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3184,6 +3625,7 @@
     {
       "title": "Metal from Heaven",
       "url": "https://www.goodreads.com/book/show/205762592",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3191,6 +3633,7 @@
     {
       "title": "The Starseekers",
       "url": "https://www.goodreads.com/book/show/231127196",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3198,6 +3641,7 @@
     {
       "title": "The Saint of Bright Doors",
       "url": "https://www.goodreads.com/book/show/61884985",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3205,6 +3649,7 @@
     {
       "title": "The Jasmine Throne (The Burning Kingdoms, #1)",
       "url": "https://www.goodreads.com/book/show/50523477",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3212,6 +3657,7 @@
     {
       "title": "The Will of the Many (Hierarchy, #1)",
       "url": "https://www.goodreads.com/book/show/58416952",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3219,6 +3665,7 @@
     {
       "title": "The Witch Roads (The Witch Roads, #1)",
       "url": "https://www.goodreads.com/book/show/217388109",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3226,6 +3673,7 @@
     {
       "title": "An Arcane Inheritance",
       "url": "https://www.goodreads.com/book/show/222476126",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3234,6 +3682,7 @@
     {
       "title": "The Shadow of the Gods (The Bloodsworn Saga, #1)",
       "url": "https://www.goodreads.com/book/show/52694527",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3241,6 +3690,7 @@
     {
       "title": "The Summer War",
       "url": "https://www.goodreads.com/book/show/222683998",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3248,6 +3698,7 @@
     {
       "title": "The Reformatory",
       "url": "https://www.goodreads.com/book/show/62919847",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Marathon Reader"
@@ -3256,6 +3707,7 @@
     {
       "title": "The Buffalo Hunter Hunter",
       "url": "https://www.goodreads.com/book/show/214565614",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3263,6 +3715,7 @@
     {
       "title": "A Dowry of Blood (A Dowry of Blood, #1)",
       "url": "https://www.goodreads.com/book/show/56666839",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3270,6 +3723,7 @@
     {
       "title": "Our Share of Night",
       "url": "https://www.goodreads.com/book/show/61111034",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3277,6 +3731,7 @@
     {
       "title": "Our Wives Under the Sea",
       "url": "https://www.goodreads.com/book/show/58724816",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3284,6 +3739,7 @@
     {
       "title": "We Used to Live Here",
       "url": "https://www.goodreads.com/book/show/199798006",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3291,6 +3747,7 @@
     {
       "title": "The Eyes Are the Best Part",
       "url": "https://www.goodreads.com/book/show/195703882",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3298,6 +3755,7 @@
     {
       "title": "Diavola",
       "url": "https://www.goodreads.com/book/show/157035866",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3305,6 +3763,7 @@
     {
       "title": "Lone Women",
       "url": "https://www.goodreads.com/book/show/60460704",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3312,6 +3771,7 @@
     {
       "title": "Monstrilio",
       "url": "https://www.goodreads.com/book/show/62888191",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3319,6 +3779,7 @@
     {
       "title": "The Devil Takes You Home",
       "url": "https://www.goodreads.com/book/show/58978299",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3326,6 +3787,7 @@
     {
       "title": "How High We Go in the Dark",
       "url": "https://www.goodreads.com/book/show/57850265",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3333,6 +3795,7 @@
     {
       "title": "The School for Good Mothers",
       "url": "https://www.goodreads.com/book/show/57846320",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3340,6 +3803,7 @@
     {
       "title": "The Expert of Subtle Revisions",
       "url": "https://www.goodreads.com/book/show/214986234",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3347,6 +3811,7 @@
     {
       "title": "There Is No Antimemetics Division",
       "url": "https://www.goodreads.com/book/show/223362266",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3354,6 +3819,7 @@
     {
       "title": "Service Model",
       "url": "https://www.goodreads.com/book/show/195790861",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3361,6 +3827,7 @@
     {
       "title": "The Blueprint",
       "url": "https://www.goodreads.com/book/show/199248447",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3368,6 +3835,7 @@
     {
       "title": "The Stardust Grail",
       "url": "https://www.goodreads.com/book/show/195791479",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3375,6 +3843,7 @@
     {
       "title": "Sky Full of Elephants",
       "url": "https://www.goodreads.com/book/show/207293815",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3382,6 +3851,7 @@
     {
       "title": "Singer Distance",
       "url": "https://www.goodreads.com/book/show/60583990",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3389,6 +3859,7 @@
     {
       "title": "The Other Valley",
       "url": "https://www.goodreads.com/book/show/176450755",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3396,6 +3867,7 @@
     {
       "title": "Operation Bounce House",
       "url": "https://www.goodreads.com/book/show/233717212",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3404,6 +3876,7 @@
     {
       "title": "Mechanize My Hands to War",
       "url": "https://www.goodreads.com/book/show/202104262",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3411,6 +3884,7 @@
     {
       "title": "Doppelganger: A Trip into the Mirror World",
       "url": "https://www.goodreads.com/book/show/138505710",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3418,6 +3892,7 @@
     {
       "title": "Poverty, by America",
       "url": "https://www.goodreads.com/book/show/61358638",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3425,6 +3900,7 @@
     {
       "title": "How to Say Babylon",
       "url": "https://www.goodreads.com/book/show/62919742",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3432,6 +3908,7 @@
     {
       "title": "Hijab Butch Blues",
       "url": "https://www.goodreads.com/book/show/61111274",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3439,6 +3916,7 @@
     {
       "title": "Black AF History: The Un-Whitewashed Story of America",
       "url": "https://www.goodreads.com/book/show/55959466",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3446,6 +3924,7 @@
     {
       "title": "King: A Life",
       "url": "https://www.goodreads.com/book/show/62039291",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3453,6 +3932,7 @@
     {
       "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
       "url": "https://www.goodreads.com/book/show/61714633",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3460,6 +3940,7 @@
     {
       "title": "The Kingdom, the Power, and the Glory: American Evangelicals in an Age of Extremism",
       "url": "https://www.goodreads.com/book/show/127653704",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3467,6 +3948,7 @@
     {
       "title": "Nuclear War: A Scenario",
       "url": "https://www.goodreads.com/book/show/182733784",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3474,13 +3956,15 @@
     {
       "title": "The Message",
       "url": "https://www.goodreads.com/book/show/210943364",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "There&apos;s Always This Year: On Basketball and Ascension",
+      "title": "There's Always This Year: On Basketball and Ascension",
       "url": "https://www.goodreads.com/book/show/181346634",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3488,6 +3972,7 @@
     {
       "title": "When the Sea Came Alive: An Oral History of D-Day",
       "url": "https://www.goodreads.com/book/show/199797834",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3495,6 +3980,7 @@
     {
       "title": "The Demon of Unrest: A Saga of Hubris, Heartbreak, and Heroism at the Dawn of the Civil War",
       "url": "https://www.goodreads.com/book/show/195608683",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3502,6 +3988,7 @@
     {
       "title": "Challenger: A True Story of Heroism and Disaster on the Edge of Space",
       "url": "https://www.goodreads.com/book/show/199798785",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3509,6 +3996,7 @@
     {
       "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land",
       "url": "https://www.goodreads.com/book/show/199393033",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3516,6 +4004,7 @@
     {
       "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
       "url": "https://www.goodreads.com/book/show/191746386",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3523,6 +4012,7 @@
     {
       "title": "Cobalt Red: How the Blood of the Congo Powers Our Lives",
       "url": "https://www.goodreads.com/book/show/60784614",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3530,6 +4020,7 @@
     {
       "title": "Empire of Pain: The Secret History of the Sackler Dynasty",
       "url": "https://www.goodreads.com/book/show/43868109",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3537,6 +4028,7 @@
     {
       "title": "How the Word Is Passed: A Reckoning with the History of Slavery Across America",
       "url": "https://www.goodreads.com/book/show/55643287",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3544,6 +4036,7 @@
     {
       "title": "Crying in H Mart",
       "url": "https://www.goodreads.com/book/show/54814676",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3551,6 +4044,7 @@
     {
       "title": "House of Sticks",
       "url": "https://www.goodreads.com/book/show/55710553",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3558,28 +4052,24 @@
     {
       "title": "Replaceable You: Adventures in Human Anatomy",
       "url": "https://www.goodreads.com/book/show/223736287",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
       ]
     },
     {
-      "title": "A Swim in a Pond in the Rain: In Which Four Russians Give a Master Class on Writing, Reading, and Life",
-      "url": "https://www.goodreads.com/book/show/55290026",
-      "challenges": [
-        "Editors' Picks"
-      ]
-    },
-    {
       "title": "The Disordered Cosmos: A Journey into Dark Matter, Spacetime, and Dreams Deferred",
       "url": "https://www.goodreads.com/book/show/54455629",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "Paradise: One Town&apos;s Struggle to Survive an American Wildfire",
+      "title": "Paradise: One Town's Struggle to Survive an American Wildfire",
       "url": "https://www.goodreads.com/book/show/56024292",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3587,6 +4077,7 @@
     {
       "title": "A Marriage at Sea: A True Story of Love, Obsession, and Shipwreck",
       "url": "https://www.goodreads.com/book/show/220239083",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3594,13 +4085,16 @@
     {
       "title": "1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation",
       "url": "https://www.goodreads.com/book/show/228142780",
+      "isKindleUnlimited": false,
       "challenges": [
-        "Editors' Picks"
+        "Editors' Picks",
+        "Trending Books"
       ]
     },
     {
-      "title": "Nobody&apos;s Girl: A Memoir of Surviving Abuse and Fighting for Justice",
+      "title": "Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice",
       "url": "https://www.goodreads.com/book/show/193388653",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks",
         "Trending Books"
@@ -3609,6 +4103,7 @@
     {
       "title": "Careless People: A Cautionary Tale of Power, Greed, and Lost Idealism",
       "url": "https://www.goodreads.com/book/show/223436601",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3616,6 +4111,7 @@
     {
       "title": "One Day, Everyone Will Have Always Been Against This",
       "url": "https://www.goodreads.com/book/show/213870084",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3623,6 +4119,7 @@
     {
       "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
       "url": "https://www.goodreads.com/book/show/220341389",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3630,13 +4127,15 @@
     {
       "title": "The New Age of Sexism: How AI and Emerging Technologies Are Reinventing Misogyny",
       "url": "https://www.goodreads.com/book/show/220481360",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
     },
     {
-      "title": "I&apos;m Glad My Mom Died",
+      "title": "I'm Glad My Mom Died",
       "url": "https://www.goodreads.com/book/show/59366244",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3644,6 +4143,7 @@
     {
       "title": "River of the Gods: Genius, Courage and Betrayal in the Search for the Source of the Nile",
       "url": "https://www.goodreads.com/book/show/58777696",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3651,6 +4151,7 @@
     {
       "title": "The Song of the Cell: An Exploration of Medicine and the New Human",
       "url": "https://www.goodreads.com/book/show/60321392",
+      "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
       ]
@@ -3658,6 +4159,7 @@
     {
       "title": "Middlemarch",
       "url": "https://www.goodreads.com/book/show/24612058",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3665,6 +4167,7 @@
     {
       "title": "Bleak House",
       "url": "https://www.goodreads.com/book/show/1984",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3672,6 +4175,7 @@
     {
       "title": "The Brothers Karamazov",
       "url": "https://www.goodreads.com/book/show/62585959",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3679,6 +4183,7 @@
     {
       "title": "War and Peace",
       "url": "https://www.goodreads.com/book/show/290979",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3686,6 +4191,7 @@
     {
       "title": "The Count of Monte Cristo",
       "url": "https://www.goodreads.com/book/show/7126",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3693,6 +4199,7 @@
     {
       "title": "Jane Eyre",
       "url": "https://www.goodreads.com/book/show/59701670",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3700,6 +4207,7 @@
     {
       "title": "Les Misérables",
       "url": "https://www.goodreads.com/book/show/24280",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3707,6 +4215,7 @@
     {
       "title": "Crime and Punishment",
       "url": "https://www.goodreads.com/book/show/17879",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3714,6 +4223,7 @@
     {
       "title": "North and South",
       "url": "https://www.goodreads.com/book/show/512710",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3721,6 +4231,7 @@
     {
       "title": "Villette",
       "url": "https://www.goodreads.com/book/show/31173",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3728,6 +4239,7 @@
     {
       "title": "David Copperfield",
       "url": "https://www.goodreads.com/book/show/58696",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3735,6 +4247,7 @@
     {
       "title": "Moby-Dick",
       "url": "https://www.goodreads.com/book/show/59450521",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3742,6 +4255,7 @@
     {
       "title": "The Romance of the Three Kingdoms",
       "url": "https://www.goodreads.com/book/show/38213087",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3749,6 +4263,7 @@
     {
       "title": "The Woman in White",
       "url": "https://www.goodreads.com/book/show/15994527",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3756,6 +4271,7 @@
     {
       "title": "The Odyssey",
       "url": "https://www.goodreads.com/book/show/34068470",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3763,6 +4279,7 @@
     {
       "title": "Don Quixote",
       "url": "https://www.goodreads.com/book/show/3835",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3770,6 +4287,7 @@
     {
       "title": "The Lord of the Rings",
       "url": "https://www.goodreads.com/book/show/59522680",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3777,6 +4295,7 @@
     {
       "title": "Lonesome Dove (Lonesome Dove, #1)",
       "url": "https://www.goodreads.com/book/show/56346987",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3784,6 +4303,7 @@
     {
       "title": "Ulysses",
       "url": "https://www.goodreads.com/book/show/338798",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3791,6 +4311,7 @@
     {
       "title": "East of Eden",
       "url": "https://www.goodreads.com/book/show/55378851",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3798,6 +4319,7 @@
     {
       "title": "Gravity’s Rainbow",
       "url": "https://www.goodreads.com/book/show/415",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3805,6 +4327,7 @@
     {
       "title": "Infinite Jest (30th Anniversary Edition)",
       "url": "https://www.goodreads.com/book/show/236584512",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3812,6 +4335,7 @@
     {
       "title": "Dune (Dune, #1)",
       "url": "https://www.goodreads.com/book/show/44767458",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3819,6 +4343,7 @@
     {
       "title": "The Stand",
       "url": "https://www.goodreads.com/book/show/149267",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3826,6 +4351,7 @@
     {
       "title": "The Name of the Rose",
       "url": "https://www.goodreads.com/book/show/119073",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3833,6 +4359,7 @@
     {
       "title": "Possession",
       "url": "https://www.goodreads.com/book/show/19172275",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3840,6 +4367,7 @@
     {
       "title": "The Pillars of the Earth (Kingsbridge, #1)",
       "url": "https://www.goodreads.com/book/show/5043",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3847,6 +4375,7 @@
     {
       "title": "Cryptonomicon",
       "url": "https://www.goodreads.com/book/show/77584",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3854,13 +4383,15 @@
     {
       "title": "The Secret History",
       "url": "https://www.goodreads.com/book/show/29044",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
     },
     {
-      "title": "Midnight&apos;s Children",
+      "title": "Midnight's Children",
       "url": "https://www.goodreads.com/book/show/9124721",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3868,6 +4399,7 @@
     {
       "title": "Doomsday Book (Oxford Time Travel, #1)",
       "url": "https://www.goodreads.com/book/show/24983",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3875,6 +4407,7 @@
     {
       "title": "A Suitable Boy (A Bridge of Leaves, #1)",
       "url": "https://www.goodreads.com/book/show/50365",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3882,6 +4415,7 @@
     {
       "title": "Little, Big",
       "url": "https://www.goodreads.com/book/show/90619",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3889,6 +4423,7 @@
     {
       "title": "A Fine Balance",
       "url": "https://www.goodreads.com/book/show/42629850",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3896,6 +4431,7 @@
     {
       "title": "Native Son",
       "url": "https://www.goodreads.com/book/show/75569005",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3903,6 +4439,7 @@
     {
       "title": "Almanac of the Dead",
       "url": "https://www.goodreads.com/book/show/52385",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3910,6 +4447,7 @@
     {
       "title": "I Hotel",
       "url": "https://www.goodreads.com/book/show/7084002",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3917,6 +4455,7 @@
     {
       "title": "2666",
       "url": "https://www.goodreads.com/book/show/3115359",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3924,13 +4463,15 @@
     {
       "title": "The Historian",
       "url": "https://www.goodreads.com/book/show/30236962",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
     },
     {
-      "title": "Jonathan Strange &amp; Mr Norrell",
+      "title": "Jonathan Strange & Mr Norrell",
       "url": "https://www.goodreads.com/book/show/76852",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3938,6 +4479,7 @@
     {
       "title": "The Luminaries",
       "url": "https://www.goodreads.com/book/show/17333230",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3945,13 +4487,15 @@
     {
       "title": "Cloud Atlas",
       "url": "https://www.goodreads.com/book/show/49628",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
     },
     {
-      "title": "The Amazing Adventures of Kavalier &amp; Clay",
+      "title": "The Amazing Adventures of Kavalier & Clay",
       "url": "https://www.goodreads.com/book/show/3985",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3959,6 +4503,7 @@
     {
       "title": "House of Leaves",
       "url": "https://www.goodreads.com/book/show/337907",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3966,6 +4511,7 @@
     {
       "title": "1Q84 (1Q84, #1-3)",
       "url": "https://www.goodreads.com/book/show/10357575",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3973,6 +4519,7 @@
     {
       "title": "Life After Life (Todd Family, #1)",
       "url": "https://www.goodreads.com/book/show/15790842",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3980,6 +4527,7 @@
     {
       "title": "The Hands of the Emperor (Lays of the Hearth-Fire, #1)",
       "url": "https://www.goodreads.com/book/show/43525897",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3987,6 +4535,7 @@
     {
       "title": "Praiseworthy",
       "url": "https://www.goodreads.com/book/show/181866973",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -3994,6 +4543,7 @@
     {
       "title": "Wellness",
       "url": "https://www.goodreads.com/book/show/65650229",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4001,6 +4551,7 @@
     {
       "title": "Great Circle",
       "url": "https://www.goodreads.com/book/show/54976986",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4008,6 +4559,7 @@
     {
       "title": "Fingersmith",
       "url": "https://www.goodreads.com/book/show/48730027",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4015,6 +4567,7 @@
     {
       "title": "The Ministry for the Future",
       "url": "https://www.goodreads.com/book/show/50998056",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4022,6 +4575,7 @@
     {
       "title": "Fox",
       "url": "https://www.goodreads.com/book/show/219441105",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4029,6 +4583,7 @@
     {
       "title": "Workhorse",
       "url": "https://www.goodreads.com/book/show/211004034",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4036,6 +4591,7 @@
     {
       "title": "The School of Night",
       "url": "https://www.goodreads.com/book/show/222683896",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4043,6 +4599,7 @@
     {
       "title": "The Spear Cuts Through Water",
       "url": "https://www.goodreads.com/book/show/58258967",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4050,6 +4607,7 @@
     {
       "title": "The Goldfinch",
       "url": "https://www.goodreads.com/book/show/17333223",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4057,6 +4615,7 @@
     {
       "title": "A Brief History of Seven Killings",
       "url": "https://www.goodreads.com/book/show/20893314",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4064,6 +4623,7 @@
     {
       "title": "The Overstory",
       "url": "https://www.goodreads.com/book/show/40180098",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4071,6 +4631,7 @@
     {
       "title": "The Lincoln Highway",
       "url": "https://www.goodreads.com/book/show/57109107",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4078,6 +4639,7 @@
     {
       "title": "Ducks, Newburyport",
       "url": "https://www.goodreads.com/book/show/45735014",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4085,6 +4647,7 @@
     {
       "title": "The Deluge",
       "url": "https://www.goodreads.com/book/show/60806778",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4092,6 +4655,7 @@
     {
       "title": "All the Light We Cannot See",
       "url": "https://www.goodreads.com/book/show/18143977",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4099,6 +4663,7 @@
     {
       "title": "The Old Drift",
       "url": "https://www.goodreads.com/book/show/40060700",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4106,6 +4671,7 @@
     {
       "title": "The Bright Sword",
       "url": "https://www.goodreads.com/book/show/201750794",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4113,6 +4679,7 @@
     {
       "title": "The Wayfinder",
       "url": "https://www.goodreads.com/book/show/222631694",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4120,6 +4687,7 @@
     {
       "title": "Ours",
       "url": "https://www.goodreads.com/book/show/195095780",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4127,6 +4695,7 @@
     {
       "title": "Septology",
       "url": "https://www.goodreads.com/book/show/123088008",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4134,6 +4703,7 @@
     {
       "title": "Middlesex",
       "url": "https://www.goodreads.com/book/show/6624506",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4141,6 +4711,7 @@
     {
       "title": "Babel",
       "url": "https://www.goodreads.com/book/show/57945316",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4148,6 +4719,7 @@
     {
       "title": "The Love Songs of W.E.B. Du Bois",
       "url": "https://www.goodreads.com/book/show/51183428",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4155,6 +4727,7 @@
     {
       "title": "Wolf Hall (Thomas Cromwell, #1)",
       "url": "https://www.goodreads.com/book/show/7826803",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4162,6 +4735,7 @@
     {
       "title": "4 3 2 1",
       "url": "https://www.goodreads.com/book/show/30244626",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4169,6 +4743,7 @@
     {
       "title": "The Books of Jacob",
       "url": "https://www.goodreads.com/book/show/65678329",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4176,6 +4751,7 @@
     {
       "title": "The Witch Elm",
       "url": "https://www.goodreads.com/book/show/46007673",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4183,6 +4759,7 @@
     {
       "title": "The Parisian",
       "url": "https://www.goodreads.com/book/show/50756352",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4190,6 +4767,7 @@
     {
       "title": "The Grace of Kings (The Dandelion Dynasty, #1)",
       "url": "https://www.goodreads.com/book/show/18952341",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4197,6 +4775,7 @@
     {
       "title": "The Strength of the Few (Hierarchy, #2)",
       "url": "https://www.goodreads.com/book/show/169485073",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader",
         "Trending Books"
@@ -4205,6 +4784,7 @@
     {
       "title": "Bury Our Bones in the Midnight Soil",
       "url": "https://www.goodreads.com/book/show/213263148",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4212,6 +4792,7 @@
     {
       "title": "Perdido Street Station",
       "url": "https://www.goodreads.com/book/show/867383",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4219,6 +4800,7 @@
     {
       "title": "Bubblegum",
       "url": "https://www.goodreads.com/book/show/45695101",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4226,6 +4808,7 @@
     {
       "title": "The Whalebone Theatre",
       "url": "https://www.goodreads.com/book/show/59900661",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4233,6 +4816,7 @@
     {
       "title": "The Absolute Book",
       "url": "https://www.goodreads.com/book/show/54735156",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4240,6 +4824,7 @@
     {
       "title": "Wanderers",
       "url": "https://www.goodreads.com/book/show/34019083",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4247,6 +4832,7 @@
     {
       "title": "Outlander (Outlander, #1)",
       "url": "https://www.goodreads.com/book/show/36145713",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4254,6 +4840,7 @@
     {
       "title": "The Terror",
       "url": "https://www.goodreads.com/book/show/3974",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4261,6 +4848,7 @@
     {
       "title": "The Last Samurai",
       "url": "https://www.goodreads.com/book/show/26889853",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4268,6 +4856,7 @@
     {
       "title": "The Blind Assassin",
       "url": "https://www.goodreads.com/book/show/78433",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4275,6 +4864,7 @@
     {
       "title": "The Night Circus",
       "url": "https://www.goodreads.com/book/show/9361589",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4282,6 +4872,7 @@
     {
       "title": "A Little Life",
       "url": "https://www.goodreads.com/book/show/22822858",
+      "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
       ]
@@ -4289,6 +4880,7 @@
     {
       "title": "Heart the Lover",
       "url": "https://www.goodreads.com/book/show/228110489",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4296,6 +4888,7 @@
     {
       "title": "Lost Lambs",
       "url": "https://www.goodreads.com/book/show/231127175",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4303,6 +4896,7 @@
     {
       "title": "Half His Age",
       "url": "https://www.goodreads.com/book/show/240424526",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4310,6 +4904,7 @@
     {
       "title": "Vigil",
       "url": "https://www.goodreads.com/book/show/238873074",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4317,6 +4912,7 @@
     {
       "title": "Before I Forget",
       "url": "https://www.goodreads.com/book/show/222376558",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4324,6 +4920,7 @@
     {
       "title": "Where the Wildflowers Grow",
       "url": "https://www.goodreads.com/book/show/222476127",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4331,6 +4928,7 @@
     {
       "title": "Good People",
       "url": "https://www.goodreads.com/book/show/233717140",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4338,6 +4936,7 @@
     {
       "title": "So Old, So Young",
       "url": "https://www.goodreads.com/book/show/235992675",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4345,6 +4944,7 @@
     {
       "title": "Buckeye",
       "url": "https://www.goodreads.com/book/show/221251828",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4352,6 +4952,7 @@
     {
       "title": "The Mad Wife",
       "url": "https://www.goodreads.com/book/show/223665360",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4359,6 +4960,7 @@
     {
       "title": "Canticle",
       "url": "https://www.goodreads.com/book/show/223957541",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4366,6 +4968,7 @@
     {
       "title": "The Seven Daughters of Dupree",
       "url": "https://www.goodreads.com/book/show/235992776",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4373,6 +4976,7 @@
     {
       "title": "Women of a Promiscuous Nature",
       "url": "https://www.goodreads.com/book/show/232209420",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4380,6 +4984,7 @@
     {
       "title": "Lady Tremaine",
       "url": "https://www.goodreads.com/book/show/231126977",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4387,6 +4992,7 @@
     {
       "title": "A Far-Flung Life",
       "url": "https://www.goodreads.com/book/show/238252741",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4394,6 +5000,7 @@
     {
       "title": "Cleopatra",
       "url": "https://www.goodreads.com/book/show/234943561",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4401,20 +5008,23 @@
     {
       "title": "I, Medusa",
       "url": "https://www.goodreads.com/book/show/228537678",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "Brigands &amp; Breadknives (Legends &amp; Lattes, #2)",
+      "title": "Brigands & Breadknives (Legends & Lattes, #2)",
       "url": "https://www.goodreads.com/book/show/222376572",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "Agnes Aubert&apos;s Mystical Cat Shelter",
+      "title": "Agnes Aubert's Mystical Cat Shelter",
       "url": "https://www.goodreads.com/book/show/234352814",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4422,6 +5032,7 @@
     {
       "title": "The Red Winter",
       "url": "https://www.goodreads.com/book/show/231679954",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4429,6 +5040,7 @@
     {
       "title": "King Sorrow",
       "url": "https://www.goodreads.com/book/show/223420465",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4436,6 +5048,7 @@
     {
       "title": "Snake-Eater",
       "url": "https://www.goodreads.com/book/show/226957129",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4443,6 +5056,7 @@
     {
       "title": "In Her Own League",
       "url": "https://www.goodreads.com/book/show/230926478",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4450,13 +5064,15 @@
     {
       "title": "No Matter What",
       "url": "https://www.goodreads.com/book/show/236772706",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "The Night We Met (Say You&apos;ll Remember Me, #2)",
+      "title": "The Night We Met (Say You'll Remember Me, #2)",
       "url": "https://www.goodreads.com/book/show/231801371",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4464,6 +5080,7 @@
     {
       "title": "Tourist Season (The Seasons of Carnage Trilogy, #1)",
       "url": "https://www.goodreads.com/book/show/231299870",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4471,6 +5088,7 @@
     {
       "title": "In Your Dreams (When in Rome, #4)",
       "url": "https://www.goodreads.com/book/show/231148139",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4478,6 +5096,7 @@
     {
       "title": "And Now, Back to You (Heartstrings, #2)",
       "url": "https://www.goodreads.com/book/show/217513554",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4485,6 +5104,7 @@
     {
       "title": "The Defender (Gods of the Game, #2)",
       "url": "https://www.goodreads.com/book/show/223428403",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4492,6 +5112,7 @@
     {
       "title": "How to Kill a Guy in Ten Dates",
       "url": "https://www.goodreads.com/book/show/235991925",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4499,6 +5120,7 @@
     {
       "title": "The Wild Card (Vancouver Storm, #5)",
       "url": "https://www.goodreads.com/book/show/232794931",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4506,6 +5128,7 @@
     {
       "title": "Daggermouth (The Heart, #1)",
       "url": "https://www.goodreads.com/book/show/239960837",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4513,6 +5136,7 @@
     {
       "title": "Half City (Harker Academy, #1)",
       "url": "https://www.goodreads.com/book/show/233717187",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4520,6 +5144,7 @@
     {
       "title": "Mate (Bride, #2)",
       "url": "https://www.goodreads.com/book/show/228256271",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4527,6 +5152,7 @@
     {
       "title": "Wild Reverence",
       "url": "https://www.goodreads.com/book/show/222376906",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4534,6 +5160,7 @@
     {
       "title": "Our Vicious Oaths",
       "url": "https://www.goodreads.com/book/show/224057573",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4541,6 +5168,7 @@
     {
       "title": "A Vow in Vengeance (Immortal Desires, #1)",
       "url": "https://www.goodreads.com/book/show/230614708",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4548,6 +5176,7 @@
     {
       "title": "Graceless Heart (The Spellbound History, #1)",
       "url": "https://www.goodreads.com/book/show/231126993",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4555,6 +5184,7 @@
     {
       "title": "We Who Will Die (Empire of Blood, #1)",
       "url": "https://www.goodreads.com/book/show/225910699",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4562,13 +5192,15 @@
     {
       "title": "Violet Thistlewaite Is Not a Villain Anymore",
       "url": "https://www.goodreads.com/book/show/228142770",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "Wicked Onyx (The Veritas Legacy, #1)",
+      "title": "Wicked Onyx (The Veritas Legacy #1)",
       "url": "https://www.goodreads.com/book/show/236161369",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4576,6 +5208,7 @@
     {
       "title": "Good Spirits (Ghosted, #1)",
       "url": "https://www.goodreads.com/book/show/222279220",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4583,13 +5216,15 @@
     {
       "title": "Play Nice",
       "url": "https://www.goodreads.com/book/show/222419303",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "You Weren&apos;t Meant to Be Human",
+      "title": "You Weren't Meant to Be Human",
       "url": "https://www.goodreads.com/book/show/224004327",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4597,6 +5232,7 @@
     {
       "title": "A Box Full of Darkness",
       "url": "https://www.goodreads.com/book/show/231681636",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4604,6 +5240,7 @@
     {
       "title": "What Stalks the Deep (Sworn Soldier, #3)",
       "url": "https://www.goodreads.com/book/show/222376665",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4611,6 +5248,7 @@
     {
       "title": "Coffin Moon",
       "url": "https://www.goodreads.com/book/show/222419255",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4618,6 +5256,7 @@
     {
       "title": "Dark Sisters",
       "url": "https://www.goodreads.com/book/show/222376679",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4625,6 +5264,7 @@
     {
       "title": "The Haunting of Paynes Hollow",
       "url": "https://www.goodreads.com/book/show/222377103",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4632,6 +5272,7 @@
     {
       "title": "This House Will Feed",
       "url": "https://www.goodreads.com/book/show/232209447",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4639,6 +5280,7 @@
     {
       "title": "Breathe In, Bleed Out",
       "url": "https://www.goodreads.com/book/show/221490948",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4646,6 +5288,7 @@
     {
       "title": "Nothing Tastes as Good",
       "url": "https://www.goodreads.com/book/show/235992833",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4653,6 +5296,7 @@
     {
       "title": "You Did Nothing Wrong",
       "url": "https://www.goodreads.com/book/show/231126846",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4660,6 +5304,7 @@
     {
       "title": "The First Time I Saw Him (Hannah Hall, #2)",
       "url": "https://www.goodreads.com/book/show/236156146",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4667,6 +5312,7 @@
     {
       "title": "Nash Falls (Walter Nash, #1)",
       "url": "https://www.goodreads.com/book/show/228646251",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4674,6 +5320,7 @@
     {
       "title": "Dead in the Water",
       "url": "https://www.goodreads.com/book/show/230794673",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4681,6 +5328,7 @@
     {
       "title": "The Merge",
       "url": "https://www.goodreads.com/book/show/223614634",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4688,6 +5336,7 @@
     {
       "title": "Detour (Detour, #1)",
       "url": "https://www.goodreads.com/book/show/235699937",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4695,6 +5344,7 @@
     {
       "title": "Local Heavens",
       "url": "https://www.goodreads.com/book/show/230809549",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4702,6 +5352,7 @@
     {
       "title": "All That We See or Seem (Julia Z, #1)",
       "url": "https://www.goodreads.com/book/show/224004657",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4709,6 +5360,7 @@
     {
       "title": "The Iron Garden Sutra (The Cosmic Wheel, #1)",
       "url": "https://www.goodreads.com/book/show/229139787",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4716,6 +5368,7 @@
     {
       "title": "Slow Gods",
       "url": "https://www.goodreads.com/book/show/223296158",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4723,6 +5376,7 @@
     {
       "title": "Fake Skating",
       "url": "https://www.goodreads.com/book/show/223262140",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4730,6 +5384,7 @@
     {
       "title": "Hazelthorn",
       "url": "https://www.goodreads.com/book/show/220909040",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4737,6 +5392,7 @@
     {
       "title": "Falling Like Leaves (Bramble Falls, #1)",
       "url": "https://www.goodreads.com/book/show/218873208",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4744,6 +5400,7 @@
     {
       "title": "The House Saphir",
       "url": "https://www.goodreads.com/book/show/221604746",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4751,6 +5408,7 @@
     {
       "title": "Sisters in the Wind",
       "url": "https://www.goodreads.com/book/show/225699546",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4758,6 +5416,7 @@
     {
       "title": "The Scammer",
       "url": "https://www.goodreads.com/book/show/223338983",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4765,6 +5424,7 @@
     {
       "title": "Beth Is Dead",
       "url": "https://www.goodreads.com/book/show/235991966",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4772,13 +5432,15 @@
     {
       "title": "A Stage Set for Villains",
       "url": "https://www.goodreads.com/book/show/239780635",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "The Swan&apos;s Daughter",
+      "title": "The Swan's Daughter",
       "url": "https://www.goodreads.com/book/show/228393488",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4786,6 +5448,7 @@
     {
       "title": "Never Ever After (Never Ever After, #1)",
       "url": "https://www.goodreads.com/book/show/223296202",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4793,6 +5456,7 @@
     {
       "title": "The Sun and the Starmaker",
       "url": "https://www.goodreads.com/book/show/222168124",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4800,6 +5464,7 @@
     {
       "title": "Queen of Faces (Queen of Faces, #1)",
       "url": "https://www.goodreads.com/book/show/231779652",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4807,13 +5472,15 @@
     {
       "title": "Enshittification: Why Everything Suddenly Got Worse and What to Do About It",
       "url": "https://www.goodreads.com/book/show/222376640",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "Separation of Church and Hate: A Sane Person&apos;s Guide to Taking Back the Bible from Fundamentalists, Fascists, and Flock-Fleecing Frauds",
+      "title": "Separation of Church and Hate: A Sane Person's Guide to Taking Back the Bible from Fundamentalists, Fascists, and Flock-Fleecing Frauds",
       "url": "https://www.goodreads.com/book/show/220160840",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4821,6 +5488,7 @@
     {
       "title": "The Art of Spending Money: Simple Choices for a Richer Life",
       "url": "https://www.goodreads.com/book/show/231148075",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4828,6 +5496,7 @@
     {
       "title": "The Tragedy of True Crime: Four Guilty Men and the Stories That Define Us",
       "url": "https://www.goodreads.com/book/show/222376732",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4835,6 +5504,7 @@
     {
       "title": "End of Days: Ruby Ridge, the Apocalypse, and the Unmaking of America",
       "url": "https://www.goodreads.com/book/show/235629746",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4842,6 +5512,7 @@
     {
       "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
       "url": "https://www.goodreads.com/book/show/228646231",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4849,6 +5520,7 @@
     {
       "title": "Football",
       "url": "https://www.goodreads.com/book/show/239522729",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4856,6 +5528,7 @@
     {
       "title": "Writing Creativity and Soul",
       "url": "https://www.goodreads.com/book/show/223854654",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4863,6 +5536,7 @@
     {
       "title": "Scream With Me: Horror Films and the Rise of American Feminism, 1968-1980",
       "url": "https://www.goodreads.com/book/show/224003717",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4870,6 +5544,7 @@
     {
       "title": "Chasing Evil: Shocking Crimes, Supernatural Forces, and an FBI Agent’s Search for Hope and Justice",
       "url": "https://www.goodreads.com/book/show/211003709",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4877,6 +5552,7 @@
     {
       "title": "99 Ways to Die: And How to Avoid Them",
       "url": "https://www.goodreads.com/book/show/231126833",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4884,6 +5560,7 @@
     {
       "title": "Strangers: A Memoir of Marriage",
       "url": "https://www.goodreads.com/book/show/231108670",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4891,6 +5568,7 @@
     {
       "title": "Awake",
       "url": "https://www.goodreads.com/book/show/224004520",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4898,6 +5576,7 @@
     {
       "title": "Finding My Way",
       "url": "https://www.goodreads.com/book/show/235364773",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4905,6 +5584,7 @@
     {
       "title": "All the Way to the River",
       "url": "https://www.goodreads.com/book/show/223405886",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4912,6 +5592,7 @@
     {
       "title": "Book of Lives: A Memoir of Sorts",
       "url": "https://www.goodreads.com/book/show/223854625",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4919,6 +5600,7 @@
     {
       "title": "Homeschooled: A Memoir",
       "url": "https://www.goodreads.com/book/show/233333691",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4926,6 +5608,7 @@
     {
       "title": "Paper Girl: A Memoir of Home and Family in a Fractured America",
       "url": "https://www.goodreads.com/book/show/223362031",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4933,6 +5616,7 @@
     {
       "title": "Vagabond",
       "url": "https://www.goodreads.com/book/show/225819054",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4940,6 +5624,7 @@
     {
       "title": "A Hymn to Life: Shame Has to Change Sides",
       "url": "https://www.goodreads.com/book/show/236066320",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4947,13 +5632,7 @@
     {
       "title": "The Irish Goodbye: Micro-Memoirs",
       "url": "https://www.goodreads.com/book/show/233411621",
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
-      "url": "https://www.goodreads.com/book/show/211179569",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4961,6 +5640,7 @@
     {
       "title": "Family of Spies",
       "url": "https://www.goodreads.com/book/show/222376793",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4968,6 +5648,7 @@
     {
       "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
       "url": "https://www.goodreads.com/book/show/226573163",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4975,6 +5656,7 @@
     {
       "title": "We the People: A History of the U.S. Constitution",
       "url": "https://www.goodreads.com/book/show/223736225",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4982,6 +5664,7 @@
     {
       "title": "The Zorg: A Tale of Greed and Murder That Inspired the Abolition of Slavery",
       "url": "https://www.goodreads.com/book/show/222376731",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4989,6 +5672,7 @@
     {
       "title": "We Survived the Night",
       "url": "https://www.goodreads.com/book/show/223854579",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -4996,13 +5680,15 @@
     {
       "title": "Motherland: A Feminist History of Modern Russia, from Revolution to Autocracy",
       "url": "https://www.goodreads.com/book/show/199793344",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare&apos;s Greatest Rival",
+      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare's Greatest Rival",
       "url": "https://www.goodreads.com/book/show/223736238",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -5010,13 +5696,15 @@
     {
       "title": "American Struggle: Democracy, Dissent, and the Pursuit of a More Perfect Union: An Anthology",
       "url": "https://www.goodreads.com/book/show/234352805",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "The Sea Captain&apos;s Wife",
+      "title": "The Sea Captain's Wife",
       "url": "https://www.goodreads.com/book/show/222376483",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
@@ -5024,13 +5712,15 @@
     {
       "title": "History Matters",
       "url": "https://www.goodreads.com/book/show/228062187",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]
     },
     {
-      "title": "How to Kill a Witch: The Patriarchy&apos;s Guide to Silencing Women",
+      "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
       "url": "https://www.goodreads.com/book/show/222476092",
+      "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
       ]

@@ -1,6 +1,12 @@
 {
-  "lastUpdated": "2026-05-05T12:18:04.311Z",
+  "lastUpdated": "2026-05-11T13:56:08.131Z",
   "challenges": [
+    {
+      "id": "Summer Reading",
+      "name": "Summer Reading",
+      "url": "https://www.goodreads.com/blog/show/3094",
+      "count": 78
+    },
     {
       "id": "AAPI Heritage",
       "name": "AAPI Heritage",
@@ -26,6 +32,12 @@
       "count": 120
     },
     {
+      "id": "Escapist Reads",
+      "name": "Escapist Reads",
+      "url": "https://www.goodreads.com/blog/show/3095",
+      "count": 112
+    },
+    {
       "id": "Marathon Reader",
       "name": "Marathon Reader",
       "url": "https://www.goodreads.com/blog/show/3087",
@@ -39,6 +51,644 @@
     }
   ],
   "books": [
+    {
+      "title": "Margo's Got Money Troubles",
+      "url": "https://www.goodreads.com/book/show/199796715",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Project Hail Mary",
+      "url": "https://www.goodreads.com/book/show/240732259",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Remarkably Bright Creatures",
+      "url": "https://www.goodreads.com/book/show/59710157",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Hamnet",
+      "url": "https://www.goodreads.com/book/show/240643126",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Wuthering Heights",
+      "url": "https://www.goodreads.com/book/show/243803036",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "A Knight of the Seven Kingdoms (The Tales of Dunk and Egg #1-3)",
+      "url": "https://www.goodreads.com/book/show/242552236",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Testaments (The Handmaid's Tale, #2)",
+      "url": "https://www.goodreads.com/book/show/42975172",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Running Man",
+      "url": "https://www.goodreads.com/book/show/237828922",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "People We Meet on Vacation",
+      "url": "https://www.goodreads.com/book/show/55076069",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "H is for Hawk",
+      "url": "https://www.goodreads.com/book/show/24353103",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Stranger",
+      "url": "https://www.goodreads.com/book/show/49552",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "His & Hers",
+      "url": "https://www.goodreads.com/book/show/45885495",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Reminders of Him",
+      "url": "https://www.goodreads.com/book/show/231816096",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Regretting You",
+      "url": "https://www.goodreads.com/book/show/44582454",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Broken",
+      "url": "https://www.goodreads.com/book/show/48549741",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Postmortem (Kay Scarpetta)",
+      "url": "https://www.goodreads.com/book/show/240129935",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Revenge Wears Prada: The Devil Returns (The Devil Wears Prada, #2)",
+      "url": "https://www.goodreads.com/book/show/16130307",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Finding Her Edge",
+      "url": "https://www.goodreads.com/book/show/228690557",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Heated Rivalry (Game Changers, #2)",
+      "url": "https://www.goodreads.com/book/show/220966494",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Seven Dials Mystery",
+      "url": "https://www.goodreads.com/book/show/18882134",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "url": "https://www.goodreads.com/book/show/8127528",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "An Offer From a Gentleman (Bridgertons, #3)",
+      "url": "https://www.goodreads.com/book/show/59340141",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Last Thing He Told Me (Hannah Hall, #1)",
+      "url": "https://www.goodreads.com/book/show/54981009",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "The Housemaid",
+      "url": "https://www.goodreads.com/book/show/241914792",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Vladimir",
+      "url": "https://www.goodreads.com/book/show/57846324",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Imperfect Women",
+      "url": "https://www.goodreads.com/book/show/51335230",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Enchanted Wood",
+      "url": "https://www.goodreads.com/book/show/247050698",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Hunting Wives",
+      "url": "https://www.goodreads.com/book/show/56276432",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "One Piece, Vol. 1: Romance Dawn",
+      "url": "https://www.goodreads.com/book/show/19007070",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Cold Storage",
+      "url": "https://www.goodreads.com/book/show/52331718",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Shift (Silo, #2)",
+      "url": "https://www.goodreads.com/book/show/17306293",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The House of the Spirits",
+      "url": "https://www.goodreads.com/book/show/242147368",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Go Tell the Bees That I Am Gone (Outlander, #9)",
+      "url": "https://www.goodreads.com/book/show/57699848",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Vineland (The inspiration for One Battle After Another)",
+      "url": "https://www.goodreads.com/book/show/19189189",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Train Dreams",
+      "url": "https://www.goodreads.com/book/show/12991188",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Long Walk",
+      "url": "https://www.goodreads.com/book/show/234382975",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Woman in Cabin 10 (Lo Blacklock #1)",
+      "url": "https://www.goodreads.com/book/show/233770059",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Mickey7 (Mickey7, #1)",
+      "url": "https://www.goodreads.com/book/show/212900322",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Thursday Murder Club (Thursday Murder Club #1)",
+      "url": "https://www.goodreads.com/book/show/231936454",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "If It Bleeds (Holly Gibney #2)",
+      "url": "https://www.goodreads.com/book/show/46015758",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "I Know What You Did Last Summer",
+      "url": "https://www.goodreads.com/book/show/52879412",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "We Were Liars",
+      "url": "https://www.goodreads.com/book/show/39673241",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Washington Black",
+      "url": "https://www.goodreads.com/book/show/55170243",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Caught Stealing (Hank Thompson, #1)",
+      "url": "https://www.goodreads.com/book/show/232771797",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Long Bright River",
+      "url": "https://www.goodreads.com/book/show/43834909",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Sunrise on the Reaping (The Hunger Games, #0.5)",
+      "url": "https://www.goodreads.com/book/show/214331246",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Odyssey",
+      "url": "https://www.goodreads.com/book/show/34068470",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "The Deal (Off-Campus, #1)",
+      "url": "https://www.goodreads.com/book/show/246648060",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Verity",
+      "url": "https://www.goodreads.com/book/show/59336248",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Every Summer After",
+      "url": "https://www.goodreads.com/book/show/60026536",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Lord of the Flies",
+      "url": "https://www.goodreads.com/book/show/244718309",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Dog Stars: The hope-filled story of a world changed by global catastrophe",
+      "url": "https://www.goodreads.com/book/show/18872154",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Dune Messiah (Dune, #2)",
+      "url": "https://www.goodreads.com/book/show/8117883",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Bodyguard",
+      "url": "https://www.goodreads.com/book/show/58724801",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Sense and Sensibility",
+      "url": "https://www.goodreads.com/book/show/14935",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Magician's Nephew (The Chronicles of Narnia Book 1)",
+      "url": "https://www.goodreads.com/book/show/209133298",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Five-Star Weekend",
+      "url": "https://www.goodreads.com/book/show/62921348",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Cape Fear",
+      "url": "https://www.goodreads.com/book/show/37799979",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Three Bags Full (The Sheep Detectives Movie Tie-in Edition) (A Sheep Detective Story)",
+      "url": "https://www.goodreads.com/book/show/247726892",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Book of Magic (Practical Magic, #2)",
+      "url": "https://www.goodreads.com/book/show/56898179",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Carrie",
+      "url": "https://www.goodreads.com/book/show/228158106",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Incidents Around the House",
+      "url": "https://www.goodreads.com/book/show/199757490",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Girls Like Girls",
+      "url": "https://www.goodreads.com/book/show/61885082",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Animal Farm",
+      "url": "https://www.goodreads.com/book/show/156698496",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Heartstopper: Volume Six (Heartstopper, #6)",
+      "url": "https://www.goodreads.com/book/show/125120424",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Klara and the Sun",
+      "url": "https://www.goodreads.com/book/show/54120408",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Love Hypothesis",
+      "url": "https://www.goodreads.com/book/show/56732449",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "East of Eden",
+      "url": "https://www.goodreads.com/book/show/55378851",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "Little House in the Big Woods (Little House, #1)",
+      "url": "https://www.goodreads.com/book/show/8337",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Good Girl, Bad Blood (A Good Girl's Guide to Murder, #2)",
+      "url": "https://www.goodreads.com/book/show/54631738",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "You Deserve Each Other (You Deserve Each Other, #1)",
+      "url": "https://www.goodreads.com/book/show/50027029",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Husbands",
+      "url": "https://www.goodreads.com/book/show/193781998",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Fire & Blood (A Targaryen History, #1)",
+      "url": "https://www.goodreads.com/book/show/216439581",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "Wildwood (Wildwood Chronicles, #1)",
+      "url": "https://www.goodreads.com/book/show/11106405",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "It Happened One Summer (Bellinger Sisters, #1)",
+      "url": "https://www.goodreads.com/book/show/55659629",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Vampire Lestat (The Vampire Chronicles, #2)",
+      "url": "https://www.goodreads.com/book/show/9741769",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
+    {
+      "title": "The Good Daughter (The Good Daughter, #1)",
+      "url": "https://www.goodreads.com/book/show/33406197",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "I Will Find You",
+      "url": "https://www.goodreads.com/book/show/61392437",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Summer Reading"
+      ]
+    },
     {
       "title": "The Last of Earth",
       "url": "https://www.goodreads.com/book/show/231363155",
@@ -85,7 +735,8 @@
       "url": "https://www.goodreads.com/book/show/235991949",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -93,7 +744,8 @@
       "url": "https://www.goodreads.com/book/show/233333688",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -223,7 +875,8 @@
       "url": "https://www.goodreads.com/book/show/239433082",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -352,7 +1005,8 @@
       "url": "https://www.goodreads.com/book/show/235992395",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -628,7 +1282,8 @@
       "url": "https://www.goodreads.com/book/show/216247494",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -1102,7 +1757,8 @@
       "url": "https://www.goodreads.com/book/show/215361994",
       "isKindleUnlimited": false,
       "challenges": [
-        "AAPI Heritage"
+        "AAPI Heritage",
+        "Escapist Reads"
       ]
     },
     {
@@ -1175,7 +1831,8 @@
       "url": "https://www.goodreads.com/book/show/231127042",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1340,7 +1997,8 @@
       "url": "https://www.goodreads.com/book/show/231680045",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1374,6 +2032,7 @@
       "challenges": [
         "Books on Books",
         "Editors' Picks",
+        "Escapist Reads",
         "Trending Books"
       ]
     },
@@ -1382,7 +2041,8 @@
       "url": "https://www.goodreads.com/book/show/199261152",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1564,7 +2224,8 @@
       "url": "https://www.goodreads.com/book/show/219542927",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1644,7 +2305,8 @@
       "url": "https://www.goodreads.com/book/show/214268974",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1766,7 +2428,8 @@
       "url": "https://www.goodreads.com/book/show/229098217",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -1904,7 +2567,8 @@
       "url": "https://www.goodreads.com/book/show/45174884",
       "isKindleUnlimited": false,
       "challenges": [
-        "Books on Books"
+        "Books on Books",
+        "Escapist Reads"
       ]
     },
     {
@@ -2320,6 +2984,7 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
+        "Escapist Reads",
         "Trending Books"
       ]
     },
@@ -2336,7 +3001,8 @@
       "url": "https://www.goodreads.com/book/show/238142754",
       "isKindleUnlimited": false,
       "challenges": [
-        "Community Picks"
+        "Community Picks",
+        "Escapist Reads"
       ]
     },
     {
@@ -2418,7 +3084,8 @@
       "url": "https://www.goodreads.com/book/show/220160814",
       "isKindleUnlimited": false,
       "challenges": [
-        "Community Picks"
+        "Community Picks",
+        "Escapist Reads"
       ]
     },
     {
@@ -2436,7 +3103,8 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Community Picks",
-        "Editors' Picks"
+        "Editors' Picks",
+        "Escapist Reads"
       ]
     },
     {
@@ -2727,14 +3395,6 @@
       ]
     },
     {
-      "title": "The Last Thing He Told Me (Hannah Hall, #1)",
-      "url": "https://www.goodreads.com/book/show/58744977",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "Razorblade Tears",
       "url": "https://www.goodreads.com/book/show/57660923",
       "isKindleUnlimited": false,
@@ -2831,22 +3491,6 @@
       ]
     },
     {
-      "title": "The Thursday Murder Club (Thursday Murder Club, #1)",
-      "url": "https://www.goodreads.com/book/show/46000520",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
-      "title": "His & Hers",
-      "url": "https://www.goodreads.com/book/show/45885495",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "Home Before Dark",
       "url": "https://www.goodreads.com/book/show/50833559",
       "isKindleUnlimited": false,
@@ -2873,14 +3517,6 @@
     {
       "title": "Little Secrets",
       "url": "https://www.goodreads.com/book/show/45046683",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
-      "title": "Long Bright River",
-      "url": "https://www.goodreads.com/book/show/43834909",
       "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
@@ -3039,14 +3675,6 @@
       ]
     },
     {
-      "title": "Verity",
-      "url": "https://www.goodreads.com/book/show/41957126",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "The Wife Between Us",
       "url": "https://www.goodreads.com/book/show/34189556",
       "isKindleUnlimited": false,
@@ -3105,14 +3733,6 @@
     {
       "title": "The Last Mrs. Parrish (Mrs. Parrish, #1)",
       "url": "https://www.goodreads.com/book/show/34043643",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
-      "title": "The Good Daughter (Good Daughter, #1)",
-      "url": "https://www.goodreads.com/book/show/33230889",
       "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
@@ -3199,14 +3819,6 @@
       ]
     },
     {
-      "title": "The Woman in Cabin 10 (Lo Blacklock #1)",
-      "url": "https://www.goodreads.com/book/show/233770059",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "Behind Closed Doors",
       "url": "https://www.goodreads.com/book/show/29437949",
       "isKindleUnlimited": false,
@@ -3267,7 +3879,8 @@
       "url": "https://www.goodreads.com/book/show/19288043",
       "isKindleUnlimited": false,
       "challenges": [
-        "Community Picks"
+        "Community Picks",
+        "Escapist Reads"
       ]
     },
     {
@@ -3337,14 +3950,6 @@
     {
       "title": "Intermezzo",
       "url": "https://www.goodreads.com/book/show/208931300",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Editors' Picks"
-      ]
-    },
-    {
-      "title": "Margo's Got Money Troubles",
-      "url": "https://www.goodreads.com/book/show/199534613",
       "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
@@ -4079,7 +4684,8 @@
       "url": "https://www.goodreads.com/book/show/220239083",
       "isKindleUnlimited": false,
       "challenges": [
-        "Editors' Picks"
+        "Editors' Picks",
+        "Escapist Reads"
       ]
     },
     {
@@ -4157,6 +4763,726 @@
       ]
     },
     {
+      "title": "Nonesuch",
+      "url": "https://www.goodreads.com/book/show/235992117",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Throwback",
+      "url": "https://www.goodreads.com/book/show/59642596",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "To Say Nothing of the Dog (Oxford Time Travel, #2)",
+      "url": "https://www.goodreads.com/book/show/77773",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "This Weekend Doesn't End Well for Anyone (The Vacation Mysteries, #3)",
+      "url": "https://www.goodreads.com/book/show/239695584",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Our Perfect Storm",
+      "url": "https://www.goodreads.com/book/show/239703816",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Paris Match",
+      "url": "https://www.goodreads.com/book/show/238227070",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Dinner for Vampires: Life on a Cult TV Show (While Also in an Actual Cult!)",
+      "url": "https://www.goodreads.com/book/show/208840265",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "How Bad Things Can Get",
+      "url": "https://www.goodreads.com/book/show/220481345",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Long Live Evil (Time of Iron, #1)",
+      "url": "https://www.goodreads.com/book/show/201626991",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Book of Doors",
+      "url": "https://www.goodreads.com/book/show/212755912",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Unlikely Escape of Uriah Heep",
+      "url": "https://www.goodreads.com/book/show/50365831",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Bullet Swallower",
+      "url": "https://www.goodreads.com/book/show/123847255",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Road to Ruin (Magebike Courier, #1)",
+      "url": "https://www.goodreads.com/book/show/199898107",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Murder Road",
+      "url": "https://www.goodreads.com/book/show/196614815",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Gideon the Ninth (The Locked Tomb, #1)",
+      "url": "https://www.goodreads.com/book/show/42036538",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Deep Sky",
+      "url": "https://www.goodreads.com/book/show/61884842",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Atmosphere",
+      "url": "https://www.goodreads.com/book/show/220817728",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Switch",
+      "url": "https://www.goodreads.com/book/show/48842183",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Go Gentle",
+      "url": "https://www.goodreads.com/book/show/239152335",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Dear Monica Lewinsky",
+      "url": "https://www.goodreads.com/book/show/238766796",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Sky Daddy",
+      "url": "https://www.goodreads.com/book/show/216247489",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Escape Room",
+      "url": "https://www.goodreads.com/book/show/41150380",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Escape Game",
+      "url": "https://www.goodreads.com/book/show/236226582",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Dungeon Crawler Carl (Dungeon Crawler Carl, #1)",
+      "url": "https://www.goodreads.com/book/show/211721806",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Escape!",
+      "url": "https://www.goodreads.com/book/show/232206245",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Winging It with You",
+      "url": "https://www.goodreads.com/book/show/218695891",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Small Game",
+      "url": "https://www.goodreads.com/book/show/60277011",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "One Perfect Couple",
+      "url": "https://www.goodreads.com/book/show/199798953",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "American Fantasy",
+      "url": "https://www.goodreads.com/book/show/239051491",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Without a Clue",
+      "url": "https://www.goodreads.com/book/show/237353718",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Birnam Wood",
+      "url": "https://www.goodreads.com/book/show/60784757",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "North Woods",
+      "url": "https://www.goodreads.com/book/show/71872930",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "When the Forest Breathes: Renewal and Resilience in the Natural World",
+      "url": "https://www.goodreads.com/book/show/237693014",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Island Club",
+      "url": "https://www.goodreads.com/book/show/231126880",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Isola",
+      "url": "https://www.goodreads.com/book/show/212806636",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "John of John",
+      "url": "https://www.goodreads.com/book/show/235260861",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Mom Brain: A Novel",
+      "url": "https://www.goodreads.com/book/show/237353814",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Cleopatra",
+      "url": "https://www.goodreads.com/book/show/234943561",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Yesteryear",
+      "url": "https://www.goodreads.com/book/show/238226942",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Wind Knows My Name",
+      "url": "https://www.goodreads.com/book/show/62583516",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The East Indian",
+      "url": "https://www.goodreads.com/book/show/62919367",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Infinite Sadness of Small Appliances",
+      "url": "https://www.goodreads.com/book/show/235991934",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
+      "url": "https://www.goodreads.com/book/show/228646231",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Automatic Noodle",
+      "url": "https://www.goodreads.com/book/show/217388015",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Love Is an Algorithm",
+      "url": "https://www.goodreads.com/book/show/231507405",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Strangers: A Memoir of Marriage",
+      "url": "https://www.goodreads.com/book/show/231108670",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Every Rising Sun",
+      "url": "https://www.goodreads.com/book/show/61884971",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Spinning Silver",
+      "url": "https://www.goodreads.com/book/show/36896898",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Pillagers' Guide to Arctic Pianos",
+      "url": "https://www.goodreads.com/book/show/240114399",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Terror",
+      "url": "https://www.goodreads.com/book/show/3974",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "White River Crossing",
+      "url": "https://www.goodreads.com/book/show/222175369",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Adult Braces: Driving Myself Sane",
+      "url": "https://www.goodreads.com/book/show/237373333",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Road to Tender Hearts",
+      "url": "https://www.goodreads.com/book/show/218460347",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Star Shipped",
+      "url": "https://www.goodreads.com/book/show/235672421",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "This Land Is Your Land: A Road Trip Through U.S. History",
+      "url": "https://www.goodreads.com/book/show/235992561",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Ocean's Godori",
+      "url": "https://www.goodreads.com/book/show/196262577",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Six of Crows (Six of Crows, #1)",
+      "url": "https://www.goodreads.com/book/show/23437156",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Victim",
+      "url": "https://www.goodreads.com/book/show/177185976",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Everyone in This Bank Is a Thief (Ernest Cunningham, #4)",
+      "url": "https://www.goodreads.com/book/show/231692454",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Lost Lambs",
+      "url": "https://www.goodreads.com/book/show/231127175",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Pride and Prejudice",
+      "url": "https://www.goodreads.com/book/show/1885",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "We Don't Talk About Carol",
+      "url": "https://www.goodreads.com/book/show/218460356",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Spare",
+      "url": "https://www.goodreads.com/book/show/62296528",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Wild: From Lost to Found on the Pacific Crest Trail",
+      "url": "https://www.goodreads.com/book/show/12262741",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Art of Loving You (The Forever Falling, #2)",
+      "url": "https://www.goodreads.com/book/show/238873042",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Mendell Station",
+      "url": "https://www.goodreads.com/book/show/218359661",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Caretaker",
+      "url": "https://www.goodreads.com/book/show/235993046",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "House of Splinters",
+      "url": "https://www.goodreads.com/book/show/234073951",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Hacienda",
+      "url": "https://www.goodreads.com/book/show/57840571",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Safari Murder Party",
+      "url": "https://www.goodreads.com/book/show/240382299",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Discontent",
+      "url": "https://www.goodreads.com/book/show/237687965",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Black Buck",
+      "url": "https://www.goodreads.com/book/show/53091994",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Not Safe for Work",
+      "url": "https://www.goodreads.com/book/show/218372272",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Behind You Is the Sea",
+      "url": "https://www.goodreads.com/book/show/134221617",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Eli Harpo's Adventure to the Afterlife",
+      "url": "https://www.goodreads.com/book/show/98653915",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Good People",
+      "url": "https://www.goodreads.com/book/show/233717140",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "These Impossible Things",
+      "url": "https://www.goodreads.com/book/show/59228196",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Ghost Women",
+      "url": "https://www.goodreads.com/book/show/234943661",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "200 Monas",
+      "url": "https://www.goodreads.com/book/show/238142661",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Cry Havoc",
+      "url": "https://www.goodreads.com/book/show/231692492",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Tainted Cup (Shadow of the Leviathan, #1)",
+      "url": "https://www.goodreads.com/book/show/150247395",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Witch Queen Rising",
+      "url": "https://www.goodreads.com/book/show/223120417",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Swordheart (Swordheart, #1)",
+      "url": "https://www.goodreads.com/book/show/218613120",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Keeper of Magical Things",
+      "url": "https://www.goodreads.com/book/show/223854454",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Parable of the Sower",
+      "url": "https://www.goodreads.com/book/show/115559438",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Daggermouth (The Heart, #1)",
+      "url": "https://www.goodreads.com/book/show/247928235",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "So Old, So Young",
+      "url": "https://www.goodreads.com/book/show/235992675",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "The Wilderness",
+      "url": "https://www.goodreads.com/book/show/222658339",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "My Friends",
+      "url": "https://www.goodreads.com/book/show/217163697",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Escapist Reads"
+      ]
+    },
+    {
       "title": "Middlemarch",
       "url": "https://www.goodreads.com/book/show/24612058",
       "isKindleUnlimited": false,
@@ -4183,14 +5509,6 @@
     {
       "title": "War and Peace",
       "url": "https://www.goodreads.com/book/show/290979",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
-      "title": "The Count of Monte Cristo",
-      "url": "https://www.goodreads.com/book/show/7126",
       "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
@@ -4269,14 +5587,6 @@
       ]
     },
     {
-      "title": "The Odyssey",
-      "url": "https://www.goodreads.com/book/show/34068470",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
       "title": "Don Quixote",
       "url": "https://www.goodreads.com/book/show/3835",
       "isKindleUnlimited": false,
@@ -4303,14 +5613,6 @@
     {
       "title": "Ulysses",
       "url": "https://www.goodreads.com/book/show/338798",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
-      "title": "East of Eden",
-      "url": "https://www.goodreads.com/book/show/55378851",
       "isKindleUnlimited": false,
       "challenges": [
         "Marathon Reader"
@@ -4838,14 +6140,6 @@
       ]
     },
     {
-      "title": "The Terror",
-      "url": "https://www.goodreads.com/book/show/3974",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Marathon Reader"
-      ]
-    },
-    {
       "title": "The Last Samurai",
       "url": "https://www.goodreads.com/book/show/26889853",
       "isKindleUnlimited": false,
@@ -4886,14 +6180,6 @@
       ]
     },
     {
-      "title": "Lost Lambs",
-      "url": "https://www.goodreads.com/book/show/231127175",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
       "title": "Half His Age",
       "url": "https://www.goodreads.com/book/show/240424526",
       "isKindleUnlimited": false,
@@ -4920,22 +6206,6 @@
     {
       "title": "Where the Wildflowers Grow",
       "url": "https://www.goodreads.com/book/show/222476127",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Good People",
-      "url": "https://www.goodreads.com/book/show/233717140",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "So Old, So Young",
-      "url": "https://www.goodreads.com/book/show/235992675",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
@@ -4992,14 +6262,6 @@
     {
       "title": "A Far-Flung Life",
       "url": "https://www.goodreads.com/book/show/238252741",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Cleopatra",
-      "url": "https://www.goodreads.com/book/show/234943561",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
@@ -5120,14 +6382,6 @@
     {
       "title": "The Wild Card (Vancouver Storm, #5)",
       "url": "https://www.goodreads.com/book/show/232794931",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Daggermouth (The Heart, #1)",
-      "url": "https://www.goodreads.com/book/show/239960837",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
@@ -5510,14 +6764,6 @@
       ]
     },
     {
-      "title": "If Anyone Builds It, Everyone Dies: Why Superhuman AI Would Kill Us All",
-      "url": "https://www.goodreads.com/book/show/228646231",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
       "title": "Football",
       "url": "https://www.goodreads.com/book/show/239522729",
       "isKindleUnlimited": false,
@@ -5552,14 +6798,6 @@
     {
       "title": "99 Ways to Die: And How to Avoid Them",
       "url": "https://www.goodreads.com/book/show/231126833",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Strangers: A Memoir of Marriage",
-      "url": "https://www.goodreads.com/book/show/231108670",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"

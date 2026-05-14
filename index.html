@@ -105,22 +105,45 @@
 
   .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
-  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; }
-  .book-card { padding: 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); display: flex; flex-direction: column; justify-content: space-between; gap: 12px; transition: .15s; box-shadow: var(--shadow-soft); }
-  .book-card:hover { border-color: var(--primary); transform: translateY(-2px); }
-  .book-card.avoid { border-left: 4px solid var(--destructive); opacity: 0.7; }
-  .book-card.optimal { border-left: 4px solid var(--primary); }
+  /* UPDATED: BOOK GALLERY / CARD LAYOUT */
+  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
   
-  .book-title { font-weight: 700; font-size: 14px; color: var(--fg); display: inline-block; line-height: 1.3;}
+  .book-card { 
+    padding: 16px; border: 1px solid var(--border); border-radius: 12px; 
+    background: var(--card); display: flex; flex-direction: column; gap: 8px; 
+    transition: .15s; box-shadow: var(--shadow-soft); height: 100%;
+  }
+  .book-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(15,18,40,.08); }
+  .book-card.avoid { border-color: var(--destructive); opacity: 0.65; }
+  .book-card.optimal { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
+  
+  .book-cover-wrapper { width: 100%; display: flex; justify-content: center; margin-bottom: 6px; }
+  .book-cover { 
+    width: 130px; height: 195px; object-fit: cover; border-radius: 4px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); background: var(--muted);
+  }
+  
+  .book-info { flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+  .book-title { 
+    font-weight: 700; font-size: 15px; color: var(--fg); line-height: 1.3; 
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
   .book-title:hover { color: var(--primary); text-decoration: underline; }
+  .book-author { font-size: 13px; color: var(--muted-fg); margin-top: 4px; }
   
-  .tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .ku-badge { 
+    font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+    background: var(--warning-soft); color: var(--warning); padding: 3px 6px; 
+    border-radius: 4px; margin-top: 8px; display: inline-block;
+  }
+
+  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 10px; }
   .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: 0.15s;}
   .tag:hover { background: var(--border); color: var(--fg); }
   .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
 
   .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; }
-  .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 8px 10px; transition: .15s; }
+  .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 10px 10px; transition: .15s; }
   .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
   .status-group button.active.inc { background: var(--success); color: #fff; }
   .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
@@ -351,19 +374,43 @@
 <script>
 // --- GLOBAL STATE ---
 const FALLBACK_DATA = {
-    lastUpdated: new Date().toISOString(),
-    challenges: [
-        { id: "fallback_1", name: "Sample: Mystery Tropes", url: "#", count: 3 },
-        { id: "fallback_2", name: "Sample: Sci-Fi Epics", url: "#", count: 3 },
-        { id: "fallback_3", name: "Sample: Staff Picks", url: "#", count: 3 }
-    ],
-    books: [
-        { title: "The Martian", url: "https://www.goodreads.com/book/show/18007564-the-martian", challenges: ["fallback_2", "fallback_3"] },
-        { title: "Dune", url: "https://www.goodreads.com/book/show/44767458-dune", challenges: ["fallback_2"] },
-        { title: "Gone Girl", url: "https://www.goodreads.com/book/show/19288043-gone-girl", challenges: ["fallback_1", "fallback_3"] },
-        { title: "The Silent Patient", url: "https://www.goodreads.com/book/show/40097951-the-silent-patient", challenges: ["fallback_1"] },
-        { title: "Project Hail Mary", url: "https://www.goodreads.com/book/show/54493401-project-hail-mary", challenges: ["fallback_1", "fallback_2", "fallback_3"] }
-    ]
+  "lastUpdated": "2026-05-14T09:49:45.639Z",
+  "challenges": [
+    { "id": "AAPI Heritage", "name": "AAPI Heritage", "url": "https://www.goodreads.com/blog/show/3048", "count": 132 },
+    { "id": "Books on Books", "name": "Books on Books", "url": "https://www.goodreads.com/blog/show/3090", "count": 144 },
+    { "id": "Community Picks", "name": "Community Picks", "url": "https://www.goodreads.com/blog/show/3093", "count": 136 },
+    { "id": "Editors' Picks", "name": "Editors' Picks", "url": "https://www.goodreads.com/blog/show/3089", "count": 120 },
+    { "id": "Escapist Reads", "name": "Escapist Reads", "url": "https://www.goodreads.com/blog/show/3095", "count": 112 },
+    { "id": "Marathon Reader", "name": "Marathon Reader", "url": "https://www.goodreads.com/blog/show/3087", "count": 100 },
+    { "id": "Summer Reading", "name": "Summer Reading", "url": "https://www.goodreads.com/blog/show/3094", "count": 78 },
+    { "id": "Trending Books", "name": "Trending Books", "url": "https://www.goodreads.com/blog/show/3079", "count": 140 }
+  ],
+  "books": [
+    {
+      "title": "The Last of Earth",
+      "author": "Deepa Anappara",
+      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "url": "https://www.goodreads.com/book/show/231363155",
+      "isKindleUnlimited": false,
+      "challenges": ["AAPI Heritage"]
+    },
+    {
+      "title": "My Dear You",
+      "author": "Rachel Khong",
+      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "url": "https://www.goodreads.com/book/show/238226950",
+      "isKindleUnlimited": false,
+      "challenges": ["AAPI Heritage", "Trending Books"]
+    },
+    {
+      "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
+      "author": "Zoe Venditozzi, Claire Mitchell",
+      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+      "url": "https://www.goodreads.com/book/show/222476092",
+      "isKindleUnlimited": true,
+      "challenges": ["Trending Books", "Editors' Picks"]
+    }
+  ]
 };
 
 let baseDatabase = { challenges: [], books: [] }; 
@@ -462,7 +509,13 @@ function buildRawDatabase() {
             const bId = 'b_' + safeId(cb.title);
             let existing = rawDatabase.books.find(b => b.id === bId);
             if (!existing) {
-                existing = { id: bId, title: cb.title, url: cb.url || '#', challenges: [] };
+                existing = { 
+                  id: bId, title: cb.title, url: cb.url || '#', 
+                  author: "Unknown Author",
+                  coverUrl: "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+                  isKindleUnlimited: false,
+                  challenges: [] 
+                };
                 rawDatabase.books.push(existing);
             }
             if (!existing.challenges.includes(cId)) existing.challenges.push(cId);
@@ -670,6 +723,40 @@ function resolveChallengeName(id) {
     return c ? c.name : id;
 }
 
+// Book Card helper utilizing native `loading="lazy"` and explicit dimensions to avoid layout shifts
+function generateBookCardHTML(b, isOptimal = false, uncoveredSet = new Set()) {
+  const s = bookStatus[b.id];
+  const avoidClass = s === 'exclude' ? 'avoid' : '';
+  const optimalClass = s === 'include' || isOptimal ? 'optimal' : '';
+  
+  const coverUrl = b.coverUrl || 'https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png';
+  const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
+  const kuHtml = b.isKindleUnlimited ? `<div class="ku-badge">Kindle Unlimited</div>` : '';
+
+  const tagsHtml = b.categories.map(c => `
+    <span class="tag ${uncoveredSet.has(c) ? 'danger' : ''}" data-locate="sidebar-chal-${safeId(c)}">
+      ${escapeHtml(resolveChallengeName(c))}
+    </span>
+  `).join('');
+
+  return `
+    <div class="book-card ${avoidClass} ${optimalClass}">
+      <div class="book-cover-wrapper">
+         <img class="book-cover" src="${escapeHtml(coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
+      </div>
+      <div class="book-info">
+        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
+        ${authorHtml}
+        ${kuHtml}
+        <div class="tags">${tagsHtml}</div>
+      </div>
+      <div style="margin-top:auto; width: 100%; padding-top: 10px;">
+        ${statusButtonsHTML(b.id)}
+      </div>
+    </div>
+  `;
+}
+
 function renderLibrary() {
   const total = activeData.books.length;
   const inc = activeData.books.filter(b => bookStatus[b.id] === 'include').length;
@@ -689,15 +776,8 @@ function renderLibrary() {
     }).sort((a,b) => a.title.localeCompare(b.title));
     
   const lb = $('list-books');
-  lb.innerHTML = books.map(b => `
-    <div class="book-card ${bookStatus[b.id] === 'exclude' ? 'avoid' : ''}">
-      <div>
-        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-        <div class="tags">${b.categories.map(c => `<span class="tag" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('')}</div>
-      </div>
-      <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
-    </div>
-  `).join('') || '<div class="empty"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
+  lb.innerHTML = books.map(b => generateBookCardHTML(b, false)).join('') 
+    || '<div class="empty" style="grid-column: 1 / -1;"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
 }
 
 function renderResults(mode = 'overlap', forceRandom = false) {
@@ -781,15 +861,7 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   } else if (!selected.length) {
       html += '<div class="empty">No books available for this path.</div>';
   } else {
-      html += `<div class="book-grid">` + selected.map(b => `
-        <div class="book-card optimal">
-            <div>
-                <a class="book-title" href="${b.url}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-                <div class="tags">${b.categories.map(c=>`<span class="tag ${uncovered.has(c)?'danger':''}" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('')}</div>
-            </div>
-            <div style="margin-top:10px;">${statusButtonsHTML(b.id)}</div>
-        </div>
-      `).join('') + `</div>`;
+      html += `<div class="book-grid">` + selected.map(b => generateBookCardHTML(b, true, uncovered)).join('') + `</div>`;
   }
 
   $('output-optimal').innerHTML = html;
@@ -802,7 +874,8 @@ function renderSheet() {
     if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
     const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
     sec.books.forEach((b, idx) => {
-      html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a></td></tr>`;
+      const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+      html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
     });
   });
   tbody.innerHTML = html;
@@ -875,7 +948,8 @@ $('btn-copy-optimal').addEventListener('click', async () => {
   let md = '### 📚 My Optimal Reading List\n\n';
   lastOptimal.selected.forEach(b => {
     const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
-    md += `- [${b.title}](${b.url}) *(Covers: ${tags})*\n`;
+    const authorStr = b.author ? ` by ${b.author}` : '';
+    md += `- [${b.title}](${b.url})${authorStr} *(Covers: ${tags})*\n`;
   });
   try { await navigator.clipboard.writeText(md); toast('List copied as markdown', 'success'); } catch { toast('Could not copy', 'error'); }
 });
@@ -889,8 +963,10 @@ $('btn-copy-sheet').addEventListener('click', async () => {
     const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
     sec.books.forEach((b, idx) => {
       const cat = idx === 0 ? label : '';
-      html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a></td></tr>`;
-      plain += `${cat}\t${b.title}\n`;
+      const authorText = b.author ? ` <span style="color:#6b7185;font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+      const plainAuthor = b.author ? ` by ${b.author}` : '';
+      html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
+      plain += `${cat}\t${b.title}${plainAuthor}\n`;
     });
   });
   html += '</tbody></table>';

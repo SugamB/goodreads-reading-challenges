@@ -499,7 +499,13 @@ let coversVisible = true;
 
 // --- HELPERS ---
 const $ = (id) => document.getElementById(id);
-const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&','<':'<','>':'>','"':'"',"'":'''}[c]));
+const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;'
+}[c]));
 const safeId = (s) => btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
 function toast(msg, kind='') {

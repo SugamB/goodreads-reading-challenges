@@ -4,7 +4,9 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Goodreads Challenge Optimizer</title>
-<meta name="description" content="Select your Goodreads reading challenges, discover overlaps, and optimize your reading list." />
+<meta name="description" content="Master your reading goals: instantly find book overlaps to fast-track your challenges, or map out a completely unique reading list." />
+<!-- Book Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
 <style>
   :root {
     --bg: #f6f7fb; --fg: #16182b; --muted-fg: #6b7185; --card: #ffffff;
@@ -28,16 +30,20 @@
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
+  /* Global Hide Covers Class */
+  body.hide-covers .book-cover-wrapper { display: none !important; }
+
   /* Header */
   header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
-  .header-inner { max-width: 1400px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .header-inner { max-width: 1550px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .brand { display: flex; align-items: center; gap: 10px; }
-  .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); }
+  .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); flex-shrink: 0; }
   .brand h1 { font-size: 15px; margin: 0; font-weight: 700; }
-  .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); }
-  .header-actions { display: flex; align-items: center; gap: 6px; }
+  .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+  .header-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end;}
 
-  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s;}
+  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s; white-space: nowrap; background: var(--card); color: var(--fg);}
+  .header-link:hover { background: var(--muted); }
   .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent); color: #ff5e5b; border-color: color-mix(in oklab, #ff5e5b 30%, transparent); }
   .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent); }
   
@@ -53,17 +59,19 @@
   /* Pro Badge */
   .badge-pro { background: linear-gradient(135deg, #fbbf24, #d97706); color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; text-shadow: 0 1px 1px rgba(0,0,0,0.2); vertical-align: middle; }
 
-  /* Dashboard Layout */
-  .dashboard { display: grid; grid-template-columns: 340px 1fr; gap: 24px; max-width: 1400px; margin: 0 auto; padding: 24px 20px; align-items: start; }
+  /* Dashboard Layout (3 Columns) */
+  .dashboard { display: grid; grid-template-columns: 280px 1fr 280px; gap: 24px; max-width: 1550px; margin: 0 auto; padding: 24px 20px; align-items: start; }
   
-  /* Sidebar (Challenges) */
+  /* Sidebars (Left & Right) */
   .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; opacity: 0; transition: opacity 0.3s; }
   .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; }
   .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
   .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); display: flex; align-items: center; gap: 8px;}
+  
+  /* Left Sidebar Elements */
   .sidebar-filters { display: flex; gap: 6px; width: 100%; }
-  .sidebar-filters input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; }
-  .sidebar-filters select { width: 90px; padding: 8px 6px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; }
+  .sidebar-filters input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; min-width: 0;}
+  .sidebar-filters select { width: 90px; padding: 8px 6px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; flex-shrink: 0;}
   .sidebar-actions { display: flex; gap: 6px; }
   .sidebar-actions button { flex: 1; }
   
@@ -71,7 +79,7 @@
   .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); position: relative; }
   .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
   .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
-  .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; }
+  .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; flex-shrink: 0;}
   .challenge-info { flex-grow: 1; padding-right: 20px;}
   .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
   .challenge-info span { font-size: 11px; color: var(--muted-fg); }
@@ -85,6 +93,21 @@
   .challenge-item.highlight { animation: pulse 1.6s ease-out; }
   @keyframes pulse { 0% { background: var(--card); } 20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); } 100% { background: var(--card); } }
 
+  /* Right Sidebar (Promo) Elements */
+  .promo-sidebar { gap: 16px; }
+  .promo-card { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; gap: 10px;}
+  .promo-card h3 { margin: 0; font-size: 14px; color: var(--fg); display: flex; align-items: center; gap: 6px;}
+  .promo-card p { margin: 0; font-size: 12px; color: var(--muted-fg); line-height: 1.5;}
+  .promo-card .row-btns { display: flex; gap: 8px; width: 100%;}
+  .promo-card .row-btns .btn { flex: 1; }
+  
+  .support-btn { border: none !important; color: #fff !important; font-weight: bold; flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;}
+  .support-btn.kofi { background: #FF5E5B !important; }
+  .support-btn.kofi:hover { background: #F15451 !important; }
+  .support-btn.paypal { background: #0079C1 !important; }
+  .support-btn.paypal:hover { background: #00609A !important; }
+  .support-logo { height: 16px; object-fit: contain; }
+
   /* Main Content Area */
   .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
   .workspace-tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--muted); padding: 8px 12px 0 12px; gap: 4px; overflow-x: auto; border-radius: var(--radius) var(--radius) 0 0; }
@@ -97,7 +120,7 @@
   .workspace-title p { margin: 4px 0 0 0; font-size: 12px; color: var(--muted-fg); }
   
   .filter-row { display: flex; gap: 8px; width: 100%; max-width: 500px; }
-  .filter-row .search { flex: 1; position: relative; } 
+  .filter-row .search { flex: 1; position: relative; min-width: 0; } 
   .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
   .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
   .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
@@ -105,8 +128,8 @@
 
   .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
-  /* UPDATED: BOOK GALLERY / CARD LAYOUT */
-  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+  /* Book Gallery / Card Layout */
+  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
   
   .book-card { 
     padding: 16px; border: 1px solid var(--border); border-radius: 12px; 
@@ -118,9 +141,10 @@
   .book-card.optimal { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
   
   .book-cover-wrapper { width: 100%; display: flex; justify-content: center; margin-bottom: 6px; }
+  .book-cover-wrapper a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;}
+  .book-cover-wrapper a:hover { transform: scale(1.03); }
   .book-cover { 
-    width: 130px; height: 195px; object-fit: cover; border-radius: 4px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); background: var(--muted);
+    width: 130px; height: 195px; object-fit: cover; display: block; background: var(--muted);
   }
   
   .book-info { flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
@@ -153,7 +177,7 @@
   .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
   .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
   .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
-  .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; grid-column: 1/-1;}
   .empty .icon { font-size: 32px; }
 
   table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; background: var(--card); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-soft); }
@@ -176,13 +200,6 @@
   .modal-body textarea { min-height: 150px; resize: vertical; white-space: pre; }
   .modal-foot { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 10px; background: var(--muted); border-radius: 0 0 12px 12px;}
 
-  /* Pro Modal Specific */
-  .pro-modal .icon-large { font-size: 48px; margin-bottom: 10px; }
-  .pro-modal p { color: var(--muted-fg); line-height: 1.5; font-size: 14px; margin-bottom: 24px;}
-  .pro-actions { display: flex; flex-direction: column; gap: 12px; }
-  .pro-actions .row-btns { display: flex; gap: 10px; flex-wrap: wrap;}
-  .pro-actions .row-btns .btn { flex: 1; min-width: 140px; }
-
   #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 200; }
   .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
   .toast.success { background: var(--success); color: #fff; }
@@ -193,12 +210,19 @@
   .mobile-toggle { display: none; }
 
   /* Responsive Mobile Design */
+  @media (max-width: 1200px) {
+    /* Stack right sidebar underneath the main workspace, converting it to a horizontal flex/grid row */
+    .dashboard { grid-template-columns: 280px 1fr; }
+    .promo-sidebar { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: stretch; position: static; margin-top: 10px;}
+    .promo-sidebar .sidebar-header { grid-column: 1 / -1; margin-bottom: -4px;}
+  }
   @media (max-width: 900px) {
     .link-label { display: none; }
     .mobile-toggle { display: inline-flex; }
-    .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
-    .sidebar.open { transform: translateX(0); }
+    .sidebar.left-sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
+    .sidebar.left-sidebar.open { transform: translateX(0); }
     .sidebar-backdrop.open { display: block; opacity: 1; }
+    .dashboard { grid-template-columns: 1fr; padding: 16px 12px; }
     .workspace-header { flex-direction: column; align-items: flex-start; }
     .filter-row { max-width: 100%; }
     .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
@@ -214,20 +238,22 @@
       <div class="brand-mark">📚</div>
       <div>
         <h1>Challenge Optimizer</h1>
-        <p id="last-updated">Loading...</p>
+        <p id="last-updated">Master your reading goals.</p>
       </div>
     </div>
     <div class="header-actions">
-      <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">☕ <span class="link-label">Buy me a coffee</span></a>
-      <a href="mailto:sugambkt@gmail.com?subject=Goodreads Optimizer Feedback" class="header-link ghost">💬 <span class="link-label">Feedback</span></a>
+      <!-- Show/Hide Covers button properly inheriting font color -->
+      <button class="header-link" id="btn-toggle-covers">🖼️ <span class="link-label">Hide Covers</span></button>
+      <a href="https://docs.google.com/spreadsheets/d/1nJRnxdy-pKL1IzD3rzJd5UD7v9hlpk2hPnEVe7xQBeM/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="header-link">📊 <span class="link-label">Spreadsheet</span></a>
       <button class="btn icon ghost" id="theme-toggle">🌙</button>
     </div>
   </div>
 </header>
 
 <div class="dashboard">
+  <!-- Left Sidebar -->
   <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-  <aside class="sidebar" id="sidebar">
+  <aside class="sidebar left-sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Challenges</h2>
       <button class="btn ghost sm" id="btn-add-custom" title="Add your own reading list">➕ Custom List <span class="badge-pro">PRO</span></button>
@@ -253,6 +279,7 @@
     </div>
   </aside>
 
+  <!-- Main Content Area -->
   <main class="workspace hidden" id="workspace">
     <div class="workspace-tabs">
       <button id="tab-library" class="active">📚 Master Library</button>
@@ -324,6 +351,46 @@
       <p>Pick at least one challenge from the sidebar to start optimizing your reading list.</p>
     </div>
   </main>
+
+  <!-- Right Sidebar (Developer Tools & Support) - Becomes bottom grid on mobile -->
+  <aside class="sidebar promo-sidebar">
+    <div class="sidebar-header">
+      <h2>Also from Developer:</h2>
+    </div>
+    
+    <!-- Extension Promo -->
+    <div class="promo-card">
+      <h3>📖 Goodreads Book Details</h3>
+      <p>Display book details and descriptions right under the covers. No need to click or hover. Enhance your Goodreads experience instantly.</p>
+      <div class="row-btns">
+         <a href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec" target="_blank" rel="noopener noreferrer" class="btn sm outline">Chrome</a>
+         <a href="https://addons.mozilla.org/en-US/firefox/addon/goodreads-book-details/" target="_blank" rel="noopener noreferrer" class="btn sm outline">Firefox</a>
+      </div>
+    </div>
+
+    <!-- Spreadsheet Details -->
+    <div class="promo-card">
+      <h3>📊 Spreadsheet</h3>
+      <p>I have made a spreadsheet to list all the books in each challenge. The first sheet has all the books for each challenge in a clickable format to easily go to Goodreads page for book details. The second sheet has the overlap combo.</p>
+      <div class="row-btns">
+         <a href="https://docs.google.com/spreadsheets/d/1nJRnxdy-pKL1IzD3rzJd5UD7v9hlpk2hPnEVe7xQBeM/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="btn sm outline">Open Spreadsheet</a>
+      </div>
+    </div>
+
+    <!-- Support / Donation -->
+    <div class="promo-card">
+      <h3>❤️ Support the developer</h3>
+      <p>If this tool saves you time, please consider buying me a coffee!</p>
+      <div class="row-btns" style="margin-top:auto;">
+         <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="btn sm support-btn kofi">
+            <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png" alt="Ko-fi" class="support-logo"> Ko-fi
+         </a>
+         <a href="https://www.paypal.com/paypalme/SugamB" target="_blank" rel="noopener noreferrer" class="btn sm support-btn paypal">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal" class="support-logo"> PayPal
+         </a>
+      </div>
+    </div>
+  </aside>
 </div>
 
 <!-- Modal: Custom List -->
@@ -340,7 +407,9 @@
       </div>
       <div>
         <label>Books (One per line, or Markdown list)</label>
-        <textarea id="custom-books" placeholder="- [Atomic Habits](https://goodreads.com/...)&#10;- Project Hail Mary&#10;The Hobbit"></textarea>
+        <textarea id="custom-books" placeholder="- [Atomic Habits](https://goodreads.com/...)
+- Project Hail Mary
+The Hobbit"></textarea>
       </div>
       <input type="hidden" id="custom-id" />
     </div>
@@ -357,12 +426,12 @@
     <div class="icon-large">🎁</div>
     <h2 style="margin: 0 0 12px 0; color: var(--fg);">"Pro" Feature Unlocked!</h2>
     <p>Don't worry, every feature here is 100% free! I built this tool to help readers easily plan their goals.</p>
-    <p>If this tool saves you time, please consider buying me a coffee or sharing your feedback to help me improve it.</p>
+    <p>If this tool saves you time, please consider buying me a coffee or checking out my Chrome extension to support my work!</p>
     
     <div class="pro-actions">
       <div class="row-btns">
-        <a href="https://ko-fi.com/unikuez" target="_blank" title="If this tool saves you time, please consider buying me a coffee!" class="btn coffee-link" style="border:none; color:#fff !important; background:#ff5e5b !important;">☕ Buy me a coffee</a>
-        <a href="mailto:sugambkt@gmail.com?subject=Goodreads Optimizer Feedback" class="btn outline">💬 Send Feedback</a>
+        <a href="https://ko-fi.com/unikuez" target="_blank" class="btn support-btn kofi">☕ Buy me a coffee</a>
+        <a href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec" target="_blank" class="btn outline">📖 Get Extension</a>
       </div>
       <button class="btn ghost" id="btn-continue-pro" style="margin-top: 8px;">Continue to feature →</button>
     </div>
@@ -426,10 +495,11 @@ let currentTab = 'library';
 let search = '';
 let statusFilter = 'all';
 let currentOptimalMode = 'overlap';
+let coversVisible = true;
 
 // --- HELPERS ---
 const $ = (id) => document.getElementById(id);
-const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&','<':'<','>':'>','"':'"',"'":'''}[c]));
 const safeId = (s) => btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
 function toast(msg, kind='') {
@@ -442,7 +512,7 @@ function toast(msg, kind='') {
   setTimeout(() => el.remove(), 2600);
 }
 
-// --- THEME & MOBILE MENU ---
+// --- THEME & COVERS TOGGLES ---
 $('theme-toggle').addEventListener('click', () => {
   const isDark = document.documentElement.classList.toggle('dark');
   $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
@@ -452,6 +522,15 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
     $('theme-toggle').textContent = '☀️';
 }
 
+$('btn-toggle-covers').addEventListener('click', () => {
+  coversVisible = !coversVisible;
+  document.body.classList.toggle('hide-covers', !coversVisible);
+  $('btn-toggle-covers').innerHTML = coversVisible 
+    ? `🖼️ <span class="link-label">Hide Covers</span>` 
+    : `🖼️ <span class="link-label">Show Covers</span>`;
+});
+
+// --- MOBILE MENU ---
 $('btn-menu').addEventListener('click', () => {
     $('sidebar').classList.add('open');
     $('sidebar-backdrop').classList.add('open');
@@ -483,12 +562,9 @@ async function loadData() {
     const res = await fetch('data.json');
     if (!res.ok) throw new Error("Could not load data.json");
     baseDatabase = await res.json();
-    const dt = new Date(baseDatabase.lastUpdated);
-    $('last-updated').textContent = `Last synced: ${dt.toLocaleDateString()} ${dt.toLocaleTimeString()}`;
   } catch (err) {
     console.warn("Using fallback data for local testing.");
     baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA));
-    $('last-updated').textContent = "Using offline sample data.";
   }
   
   const stored = localStorage.getItem('gr_custom_lists');
@@ -742,7 +818,9 @@ function generateBookCardHTML(b, isOptimal = false, uncoveredSet = new Set()) {
   return `
     <div class="book-card ${avoidClass} ${optimalClass}">
       <div class="book-cover-wrapper">
-         <img class="book-cover" src="${escapeHtml(coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
+         <a href="${escapeHtml(b.url)}" target="_blank" data-stop>
+           <img class="book-cover" src="${escapeHtml(coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
+         </a>
       </div>
       <div class="book-info">
         <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
@@ -849,11 +927,11 @@ function renderResults(mode = 'overlap', forceRandom = false) {
   let html = '';
   
   if (mode === 'single' && failedSingleCategories.length > 0) {
-      html += `<div class="banner warn"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
+      html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
   }
   
   if (uncovered.size > 0 && mode === 'overlap') {
-      html += `<div class="banner warn"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
+      html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
   }
 
   if (activeCats.size === 0) {

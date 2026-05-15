@@ -1,1078 +1,1240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Goodreads Challenge Optimizer</title>
-<meta name="description" content="Master your reading goals: instantly find book overlaps to fast-track your challenges, or map out a completely unique reading list." />
-<!-- Book Favicon -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-<style>
-  :root {
-    --bg: #f6f7fb; --fg: #16182b; --muted-fg: #6b7185; --card: #ffffff;
-    --border: #e4e6ee; --muted: #f1f2f7; --accent: #eef0fb; --primary: #5b67e8;
-    --primary-fg: #ffffff; --primary-soft: #eceffd; --success: #16a34a;
-    --success-soft: #e6f6ec; --warning: #d97706; --warning-soft: #fdf2da;
-    --destructive: #dc2626; --destructive-soft: #fde8e8; --radius: 12px;
-    --shadow-soft: 0 1px 2px rgba(15,18,40,.04), 0 6px 18px rgba(15,18,40,.05);
-    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  }
-  html.dark {
-    --bg: #11131c; --fg: #f1f2f7; --muted-fg: #9aa0b5; --card: #1a1d2a;
-    --border: #2a2e40; --muted: #1f2230; --accent: #262a3d; --primary: #818cf8;
-    --primary-fg: #11131c; --primary-soft: #232846; --success: #4ade80;
-    --success-soft: #1f3328; --warning: #fbbf24; --warning-soft: #3b2e16;
-    --destructive: #f87171; --destructive-soft: #3a1f1f;
-  }
-  *, *::before, *::after { box-sizing: border-box; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;}
-  a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; outline: none; }
-  ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goodreads Challenge Optimizer</title>
+    <meta
+      name="description"
+      content="Master your reading goals: instantly find book overlaps to fast-track your challenges, or map out a completely unique reading list."
+    />
+    <!-- Book Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>"
+    />
+    <style>
+      :root {
+        --bg: #f6f7fb; --fg: #16182b; --muted-fg: #6b7185; --card: #ffffff;
+        --border: #e4e6ee; --muted: #f1f2f7; --accent: #eef0fb; --primary: #5b67e8;
+        --primary-fg: #ffffff; --primary-soft: #eceffd; --success: #16a34a;
+        --success-soft: #e6f6ec; --warning: #d97706; --warning-soft: #fdf2da;
+        --destructive: #dc2626; --destructive-soft: #fde8e8; --radius: 12px;
+        --shadow-soft: 0 1px 2px rgba(15,18,40,.04), 0 6px 18px rgba(15,18,40,.05);
+        --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      html.dark {
+        --bg: #11131c; --fg: #f1f2f7; --muted-fg: #9aa0b5; --card: #1a1d2a;
+        --border: #2a2e40; --muted: #1f2230; --accent: #262a3d; --primary: #818cf8;
+        --primary-fg: #11131c; --primary-soft: #232846; --success: #4ade80;
+        --success-soft: #1f3328; --warning: #fbbf24; --warning-soft: #3b2e16;
+        --destructive: #f87171; --destructive-soft: #3a1f1f;
+      }
+      *, *::before, *::after { box-sizing: border-box; }
+      body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;}
+      a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; outline: none; }
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
-  /* Global Hide Covers Class */
-  body.hide-covers .book-cover-wrapper { display: none !important; }
+      /* Global Hide Covers Class */
+      body.hide-covers .book-cover-wrapper { display: none !important; }
 
-  /* Header */
-  header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
-  .header-inner { max-width: 1550px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
-  .brand { display: flex; align-items: center; gap: 10px; }
-  .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); flex-shrink: 0; }
-  .brand h1 { font-size: 15px; margin: 0; font-weight: 700; }
-  .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
-  .header-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end;}
+      /* Header */
+      header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
+      .header-inner { max-width: 1550px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .brand { display: flex; align-items: center; gap: 10px; }
+      .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); flex-shrink: 0; }
+      .brand h1 { font-size: 15px; margin: 0; font-weight: 700; }
+      .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+      .header-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end;}
 
-  .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s; white-space: nowrap; background: var(--card); color: var(--fg);}
-  .header-link:hover { background: var(--muted); }
-  .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent); color: #ff5e5b; border-color: color-mix(in oklab, #ff5e5b 30%, transparent); }
-  .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent); }
-  
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
-  .btn:hover { filter: brightness(.95); }
-  .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
-  .btn.outline:hover { background: var(--muted); }
-  .btn.ghost { background: transparent; color: var(--muted-fg); border: 1px solid transparent; }
-  .btn.ghost:hover { background: var(--muted); color: var(--fg); }
-  .btn.sm { padding: 6px 10px; font-size: 12px; }
-  .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
+      .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s; white-space: nowrap; background: var(--card); color: var(--fg);}
+      .header-link:hover { background: var(--muted); }
+      .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent); color: #ff5e5b; border-color: color-mix(in oklab, #ff5e5b 30%, transparent); }
+      .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent); }
 
-  /* Pro Badge */
-  .badge-pro { background: linear-gradient(135deg, #fbbf24, #d97706); color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; text-shadow: 0 1px 1px rgba(0,0,0,0.2); vertical-align: middle; }
+      .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
+      .btn:hover { filter: brightness(.95); }
+      .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
+      .btn.outline:hover { background: var(--muted); }
+      .btn.ghost { background: transparent; color: var(--muted-fg); border: 1px solid transparent; }
+      .btn.ghost:hover { background: var(--muted); color: var(--fg); }
+      .btn.sm { padding: 6px 10px; font-size: 12px; }
+      .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
 
-  /* Dashboard Layout (3 Columns) */
-  .dashboard { display: grid; grid-template-columns: 280px 1fr 280px; gap: 24px; max-width: 1550px; margin: 0 auto; padding: 24px 20px; align-items: start; }
-  
-  /* Sidebars (Left & Right) */
-  .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; opacity: 0; transition: opacity 0.3s; }
-  .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; }
-  .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
-  .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); display: flex; align-items: center; gap: 8px;}
-  
-  /* Left Sidebar Elements */
-  .sidebar-filters { display: flex; gap: 6px; width: 100%; }
-  .sidebar-filters input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; min-width: 0;}
-  .sidebar-filters select { width: 90px; padding: 8px 6px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; flex-shrink: 0;}
-  .sidebar-actions { display: flex; gap: 6px; }
-  .sidebar-actions button { flex: 1; }
-  
-  .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 220px); overflow-y: auto; padding-right: 4px; }
-  .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); position: relative; }
-  .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
-  .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
-  .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; flex-shrink: 0;}
-  .challenge-info { flex-grow: 1; padding-right: 20px;}
-  .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
-  .challenge-info span { font-size: 11px; color: var(--muted-fg); }
-  
-  .chal-actions { position: absolute; right: 8px; top: 10px; display: flex; gap: 2px; opacity: 0.3; transition: 0.2s;}
-  .challenge-item:hover .chal-actions { opacity: 1; }
-  .chal-actions button { background: transparent; border: none; font-size: 13px; padding: 4px; border-radius: 4px; cursor: pointer; color: var(--muted-fg); }
-  .chal-actions button:hover { background: var(--border); color: var(--fg); }
-  .chal-actions button.delete:hover { background: var(--destructive-soft); color: var(--destructive); }
+      /* Pro Badge */
+      .badge-pro { background: linear-gradient(135deg, #fbbf24, #d97706); color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; text-shadow: 0 1px 1px rgba(0,0,0,0.2); vertical-align: middle; }
 
-  .challenge-item.highlight { animation: pulse 1.6s ease-out; }
-  @keyframes pulse { 0% { background: var(--card); } 20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); } 100% { background: var(--card); } }
+      /* Dashboard Layout (3 Columns) */
+      .dashboard { display: grid; grid-template-columns: 280px 1fr 280px; gap: 24px; max-width: 1550px; margin: 0 auto; padding: 24px 20px; align-items: start; }
 
-  /* Right Sidebar (Promo) Elements */
-  .promo-sidebar { gap: 16px; }
-  .promo-card { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; gap: 10px;}
-  .promo-card h3 { margin: 0; font-size: 14px; color: var(--fg); display: flex; align-items: center; gap: 6px;}
-  .promo-card p { margin: 0; font-size: 12px; color: var(--muted-fg); line-height: 1.5;}
-  .promo-card .row-btns { display: flex; gap: 8px; width: 100%;}
-  .promo-card .row-btns .btn { flex: 1; }
-  
-  .support-btn { border: none !important; color: #fff !important; font-weight: bold; flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;}
-  .support-btn.kofi { background: #FF5E5B !important; }
-  .support-btn.kofi:hover { background: #F15451 !important; }
-  .support-btn.paypal { background: #0079C1 !important; }
-  .support-btn.paypal:hover { background: #00609A !important; }
-  .support-logo { height: 16px; object-fit: contain; }
+      /* Sidebars (Left & Right) */
+      .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; opacity: 0; transition: opacity 0.3s; }
+      .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; }
+      .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
+      .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); display: flex; align-items: center; gap: 8px;}
 
-  /* Main Content Area */
-  .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
-  .workspace-tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--muted); padding: 8px 12px 0 12px; gap: 4px; overflow-x: auto; border-radius: var(--radius) var(--radius) 0 0; }
-  .workspace-tabs button { background: transparent; border: 1px solid transparent; border-bottom: none; padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--muted-fg); border-radius: 8px 8px 0 0; transition: .15s; white-space: nowrap; }
-  .workspace-tabs button:hover { color: var(--fg); background: color-mix(in oklab, var(--card) 50%, transparent); }
-  .workspace-tabs button.active { background: var(--card); color: var(--fg); border-color: var(--border); box-shadow: 0 -2px 0 var(--primary) inset; }
+      /* Left Sidebar Elements */
+      .sidebar-filters { display: flex; gap: 6px; width: 100%; }
+      .sidebar-filters input { flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; min-width: 0;}
+      .sidebar-filters select { width: 90px; padding: 8px 6px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--fg); font-size: 12px; outline: none; flex-shrink: 0;}
+      .sidebar-actions { display: flex; gap: 6px; }
+      .sidebar-actions button { flex: 1; }
 
-  .workspace-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-  .workspace-title h3 { margin: 0; font-size: 16px; }
-  .workspace-title p { margin: 4px 0 0 0; font-size: 12px; color: var(--muted-fg); }
-  
-  .filter-row { display: flex; gap: 8px; width: 100%; max-width: 500px; }
-  .filter-row .search { flex: 1; position: relative; min-width: 0; } 
-  .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
-  .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
-  .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
-  .filter-row select { width: 120px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
+      .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 220px); overflow-y: auto; padding-right: 4px; }
+      .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); position: relative; }
+      .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
+      .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
+      .challenge-item input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--primary); pointer-events: none; flex-shrink: 0;}
+      .challenge-info { flex-grow: 1; padding-right: 20px;}
+      .challenge-info strong { display: block; font-size: 13px; color: var(--fg); }
+      .challenge-info span { font-size: 11px; color: var(--muted-fg); }
 
-  .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
+      .chal-actions { position: absolute; right: 8px; top: 10px; display: flex; gap: 2px; opacity: 0.3; transition: 0.2s;}
+      .challenge-item:hover .chal-actions { opacity: 1; }
+      .chal-actions button { background: transparent; border: none; font-size: 13px; padding: 4px; border-radius: 4px; cursor: pointer; color: var(--muted-fg); }
+      .chal-actions button:hover { background: var(--border); color: var(--fg); }
+      .chal-actions button.delete:hover { background: var(--destructive-soft); color: var(--destructive); }
 
-  /* Book Gallery / Card Layout */
-  .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
-  
-  .book-card { 
-    padding: 16px; border: 1px solid var(--border); border-radius: 12px; 
-    background: var(--card); display: flex; flex-direction: column; gap: 8px; 
-    transition: .15s; box-shadow: var(--shadow-soft); height: 100%;
-  }
-  .book-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(15,18,40,.08); }
-  .book-card.avoid { border-color: var(--destructive); opacity: 0.65; }
-  .book-card.optimal { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
-  
-  .book-cover-wrapper { width: 100%; display: flex; justify-content: center; margin-bottom: 6px; }
-  .book-cover-wrapper a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;}
-  .book-cover-wrapper a:hover { transform: scale(1.03); }
-  .book-cover { 
-    width: 130px; height: 195px; object-fit: cover; display: block; background: var(--muted);
-  }
-  
-  .book-info { flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
-  .book-title { 
-    font-weight: 700; font-size: 15px; color: var(--fg); line-height: 1.3; 
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
-  }
-  .book-title:hover { color: var(--primary); text-decoration: underline; }
-  .book-author { font-size: 13px; color: var(--muted-fg); margin-top: 4px; }
-  
-  .ku-badge { 
-    font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
-    background: var(--warning-soft); color: var(--warning); padding: 3px 6px; 
-    border-radius: 4px; margin-top: 8px; display: inline-block;
-  }
+      .challenge-item.highlight { animation: pulse 1.6s ease-out; }
+      @keyframes pulse { 0% { background: var(--card); } 20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); } 100% { background: var(--card); } }
 
-  .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 10px; }
-  .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: 0.15s;}
-  .tag:hover { background: var(--border); color: var(--fg); }
-  .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
+      /* Right Sidebar (Promo) Elements */
+      .promo-sidebar { gap: 16px; }
+      .promo-card { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; gap: 10px;}
+      .promo-card h3 { margin: 0; font-size: 14px; color: var(--fg); display: flex; align-items: center; gap: 6px;}
+      .promo-card p { margin: 0; font-size: 12px; color: var(--muted-fg); line-height: 1.5;}
+      .promo-card .row-btns { display: flex; gap: 8px; width: 100%;}
+      .promo-card .row-btns .btn { flex: 1; }
 
-  .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; }
-  .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 10px 10px; transition: .15s; }
-  .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
-  .status-group button.active.inc { background: var(--success); color: #fff; }
-  .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
-  .status-group button.active.exc { background: var(--destructive); color: #fff; }
-  .status-group button:not(:last-child) { border-right: 1px solid var(--border); }
+      .support-btn { border: none !important; color: #fff !important; font-weight: bold; flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;}
+      .support-btn.kofi { background: #FF5E5B !important; }
+      .support-btn.kofi:hover { background: #F15451 !important; }
+      .support-btn.paypal { background: #0079C1 !important; }
+      .support-btn.paypal:hover { background: #00609A !important; }
+      .support-logo { height: 16px; object-fit: contain; }
 
-  .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
-  .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
-  .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
-  .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; grid-column: 1/-1;}
-  .empty .icon { font-size: 32px; }
+      /* Main Content Area */
+      .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
+      .workspace-tabs { display: flex; border-bottom: 1px solid var(--border); background: var(--muted); padding: 8px 12px 0 12px; gap: 4px; overflow-x: auto; border-radius: var(--radius) var(--radius) 0 0; }
+      .workspace-tabs button { background: transparent; border: 1px solid transparent; border-bottom: none; padding: 10px 16px; font-size: 13px; font-weight: 600; color: var(--muted-fg); border-radius: 8px 8px 0 0; transition: .15s; white-space: nowrap; }
+      .workspace-tabs button:hover { color: var(--fg); background: color-mix(in oklab, var(--card) 50%, transparent); }
+      .workspace-tabs button.active { background: var(--card); color: var(--fg); border-color: var(--border); box-shadow: 0 -2px 0 var(--primary) inset; }
 
-  table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; background: var(--card); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-soft); }
-  table.sheet th { background: var(--muted); border-bottom: 1px solid var(--border); padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .05em; }
-  table.sheet td { border-bottom: 1px solid var(--border); padding: 12px 16px; vertical-align: top; }
-  table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 45%; }
-  table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
-  table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
+      .workspace-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+      .workspace-title h3 { margin: 0; font-size: 16px; }
+      .workspace-title p { margin: 4px 0 0 0; font-size: 12px; color: var(--muted-fg); }
 
-  /* Modals */
-  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.2s; padding: 20px; backdrop-filter: blur(4px);}
-  .modal-overlay.active { opacity: 1; pointer-events: auto; }
-  .modal { background: var(--card); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: translateY(20px); transition: 0.2s; display: flex; flex-direction: column; max-height: 90vh;}
-  .modal-overlay.active .modal { transform: translateY(0); }
-  .modal-head { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-  .modal-head h3 { margin: 0; font-size: 16px; }
-  .modal-body { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
-  .modal-body label { font-size: 12px; font-weight: 600; color: var(--fg); display: block; margin-bottom: 4px; }
-  .modal-body input, .modal-body textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-family: inherit; font-size: 13px; }
-  .modal-body textarea { min-height: 150px; resize: vertical; white-space: pre; }
-  .modal-foot { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 10px; background: var(--muted); border-radius: 0 0 12px 12px;}
+      .filter-row { display: flex; gap: 8px; width: 100%; max-width: 500px; }
+      .filter-row .search { flex: 1; position: relative; min-width: 0; }
+      .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
+      .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
+      .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
+      .filter-row select { width: 120px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
 
-  #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 200; }
-  .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
-  .toast.success { background: var(--success); color: #fff; }
-  .toast.error { background: var(--destructive); color: #fff; }
-  @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+      .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
-  .hidden { display: none !important; }
-  .mobile-toggle { display: none; }
+      /* Book Gallery / Card Layout */
+      .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
 
-  /* Responsive Mobile Design */
-  @media (max-width: 1200px) {
-    /* Stack right sidebar underneath the main workspace, converting it to a horizontal flex/grid row */
-    .dashboard { grid-template-columns: 280px 1fr; }
-    .promo-sidebar { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: stretch; position: static; margin-top: 10px;}
-    .promo-sidebar .sidebar-header { grid-column: 1 / -1; margin-bottom: -4px;}
-  }
-  @media (max-width: 900px) {
-    .link-label { display: none; }
-    .mobile-toggle { display: inline-flex; }
-    .sidebar.left-sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
-    .sidebar.left-sidebar.open { transform: translateX(0); }
-    .sidebar-backdrop.open { display: block; opacity: 1; }
-    .dashboard { grid-template-columns: 1fr; padding: 16px 12px; }
-    .workspace-header { flex-direction: column; align-items: flex-start; }
-    .filter-row { max-width: 100%; }
-    .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
-  }
-</style>
-</head>
-<body>
+      .book-card {
+        padding: 16px; border: 1px solid var(--border); border-radius: 12px;
+        background: var(--card); display: flex; flex-direction: column; gap: 8px;
+        transition: .15s; box-shadow: var(--shadow-soft); height: 100%;
+      }
+      .book-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(15,18,40,.08); }
+      .book-card.avoid { border-color: var(--destructive); opacity: 0.65; }
+      .book-card.optimal { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
 
-<header class="app">
-  <div class="header-inner">
-    <div class="brand">
-      <button class="btn icon ghost mobile-toggle" id="btn-menu" aria-label="Menu">☰</button>
-      <div class="brand-mark">📚</div>
-      <div>
-        <h1>Challenge Optimizer</h1>
-        <p id="last-updated">Master your reading goals.</p>
-      </div>
-    </div>
-    <div class="header-actions">
-      <!-- Show/Hide Covers button properly inheriting font color -->
-      <button class="header-link" id="btn-toggle-covers">🖼️ <span class="link-label">Hide Covers</span></button>
-      <a href="https://docs.google.com/spreadsheets/d/1nJRnxdy-pKL1IzD3rzJd5UD7v9hlpk2hPnEVe7xQBeM/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="header-link">📊 <span class="link-label">Spreadsheet</span></a>
-      <button class="btn icon ghost" id="theme-toggle">🌙</button>
-    </div>
-  </div>
-</header>
+      .book-cover-wrapper { width: 100%; display: flex; justify-content: center; margin-bottom: 6px; }
+      .book-cover-wrapper a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;}
+      .book-cover-wrapper a:hover { transform: scale(1.03); }
+      .book-cover {
+        width: 130px; height: 195px; object-fit: cover; display: block; background: var(--muted);
+      }
 
-<div class="dashboard">
-  <!-- Left Sidebar -->
-  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-  <aside class="sidebar left-sidebar" id="sidebar">
-    <div class="sidebar-header">
-      <h2>Challenges</h2>
-      <button class="btn ghost sm" id="btn-add-custom" title="Add your own reading list">➕ Custom List <span class="badge-pro">PRO</span></button>
-    </div>
-    
-    <div class="sidebar-filters">
-       <input type="text" id="search-challenges" placeholder="Search challenges...">
-       <select id="filter-challenges">
-         <option value="all">All</option>
-         <option value="selected">Selected</option>
-         <option value="unselected">Unselected</option>
-       </select>
-    </div>
+      .book-info { flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
+      .book-title {
+        font-weight: 700; font-size: 15px; color: var(--fg); line-height: 1.3;
+        display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      }
+      .book-title:hover { color: var(--primary); text-decoration: underline; }
+      .book-author { font-size: 13px; color: var(--muted-fg); margin-top: 4px; }
 
-    <div class="sidebar-actions">
-      <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
-      <button class="btn outline sm" id="btn-select-all">Select All</button>
-    </div>
-    <div style="font-size: 11px; color: var(--muted-fg); text-align: right;" id="sidebar-counts">0 / 0 selected</div>
+      .ku-badge {
+        font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px;
+        background: var(--warning-soft); color: var(--warning); padding: 3px 6px;
+        border-radius: 4px; margin-top: 8px; display: inline-block;
+      }
 
-    <div id="challenge-grid" class="challenge-list">
-      <!-- Injected via JS -->
-    </div>
-  </aside>
+      .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; margin-top: 10px; }
+      .tag { font-size: 10.5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--muted); color: var(--muted-fg); cursor: pointer; transition: 0.15s;}
+      .tag:hover { background: var(--border); color: var(--fg); }
+      .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
 
-  <!-- Main Content Area -->
-  <main class="workspace hidden" id="workspace">
-    <div class="workspace-tabs">
-      <button id="tab-library" class="active">📚 Master Library</button>
-      <button id="tab-optimal">✨ Optimal Path</button>
-      <button id="tab-spreadsheet">▦ Spreadsheet <span class="badge-pro">PRO</span></button>
-    </div>
+      .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; }
+      .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 10px 10px; transition: .15s; }
+      .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
+      .status-group button.active.inc { background: var(--success); color: #fff; }
+      .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
+      .status-group button.active.exc { background: var(--destructive); color: #fff; }
+      .status-group button:not(:last-child) { border-right: 1px solid var(--border); }
 
-    <!-- LIBRARY VIEW -->
-    <div id="view-library">
-      <div class="workspace-header">
-        <div class="workspace-title">
-          <h3>Configure Books</h3>
-          <p id="library-stats">Showing books from selected challenges.</p>
+      .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
+      .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
+      .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
+      .empty { text-align: center; padding: 48px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; gap: 12px; grid-column: 1/-1;}
+      .empty .icon { font-size: 32px; }
+
+      table.sheet { border-collapse: collapse; width: 100%; font-size: 13px; background: var(--card); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-soft); }
+      table.sheet th { background: var(--muted); border-bottom: 1px solid var(--border); padding: 12px 16px; text-align: left; font-size: 11px; font-weight: 700; color: var(--muted-fg); text-transform: uppercase; letter-spacing: .05em; }
+      table.sheet td { border-bottom: 1px solid var(--border); padding: 12px 16px; vertical-align: top; }
+      table.sheet td.cat { font-weight: 600; border-right: 1px solid var(--border); width: 45%; }
+      table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
+      table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
+
+      /* Modals */
+      .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.2s; padding: 20px; backdrop-filter: blur(4px);}
+      .modal-overlay.active { opacity: 1; pointer-events: auto; }
+      .modal { background: var(--card); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: translateY(20px); transition: 0.2s; display: flex; flex-direction: column; max-height: 90vh;}
+      .modal-overlay.active .modal { transform: translateY(0); }
+      .modal-head { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+      .modal-head h3 { margin: 0; font-size: 16px; }
+      .modal-body { padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; }
+      .modal-body label { font-size: 12px; font-weight: 600; color: var(--fg); display: block; margin-bottom: 4px; }
+      .modal-body input, .modal-body textarea { width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-family: inherit; font-size: 13px; }
+      .modal-body textarea { min-height: 150px; resize: vertical; white-space: pre; }
+      .modal-foot { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 10px; background: var(--muted); border-radius: 0 0 12px 12px;}
+
+      #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 200; }
+      .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
+      .toast.success { background: var(--success); color: #fff; }
+      .toast.error { background: var(--destructive); color: #fff; }
+      @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+      .hidden { display: none !important; }
+      .mobile-toggle { display: none; }
+
+      /* Responsive Mobile Design */
+      @media (max-width: 1200px) {
+        /* Stack right sidebar underneath the main workspace, converting it to a horizontal flex/grid row */
+        .dashboard { grid-template-columns: 280px 1fr; }
+        .promo-sidebar { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: stretch; position: static; margin-top: 10px;}
+        .promo-sidebar .sidebar-header { grid-column: 1 / -1; margin-bottom: -4px;}
+      }
+      @media (max-width: 900px) {
+        .link-label { display: none; }
+        .mobile-toggle { display: inline-flex; }
+        .sidebar.left-sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
+        .sidebar.left-sidebar.open { transform: translateX(0); }
+        .sidebar-backdrop.open { display: block; opacity: 1; }
+        .dashboard { grid-template-columns: 1fr; padding: 16px 12px; }
+        .workspace-header { flex-direction: column; align-items: flex-start; }
+        .filter-row { max-width: 100%; }
+        .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app">
+      <div class="header-inner">
+        <div class="brand">
+          <button
+            class="btn icon ghost mobile-toggle"
+            id="btn-menu"
+            aria-label="Menu"
+          >
+            ☰
+          </button>
+          <div class="brand-mark">📚</div>
+          <div>
+            <h1>Challenge Optimizer</h1>
+            <p id="last-updated">Master your reading goals.</p>
+          </div>
         </div>
-        <div class="filter-row">
-          <div class="search"><input id="search-input" type="text" placeholder="Search titles..." /></div>
-          <select id="status-filter">
-            <option value="all">All Status</option>
-            <option value="include">📌 Must Read</option>
-            <option value="exclude">✕ Avoid</option>
+        <div class="header-actions">
+          <!-- Show/Hide Covers button properly inheriting font color -->
+          <button class="header-link" id="btn-toggle-covers">
+            🖼️ <span class="link-label">Hide Covers</span>
+          </button>
+          <a
+            href="https://ko-fi.com/s/977521c88d"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="header-link"
+            >📊 <span class="link-label">Spreadsheet</span></a
+          >
+          <button class="btn icon ghost" id="theme-toggle">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <!-- Left Sidebar -->
+      <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+      <aside class="sidebar left-sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h2>Challenges</h2>
+          <button
+            class="btn ghost sm"
+            id="btn-add-custom"
+            title="Add your own reading list"
+          >
+            ➕ Custom List <span class="badge-pro">PRO</span>
+          </button>
+        </div>
+
+        <div class="sidebar-filters">
+          <input
+            type="text"
+            id="search-challenges"
+            placeholder="Search challenges..."
+          />
+          <select id="filter-challenges">
+            <option value="all">All</option>
+            <option value="selected">Selected</option>
+            <option value="unselected">Unselected</option>
           </select>
         </div>
-        <button class="btn ghost sm" id="btn-reset" title="Reset Read/Avoid statuses">🔄 Reset</button>
-      </div>
-      <div class="workspace-content">
-        <div class="book-grid" id="list-books"></div>
-      </div>
-    </div>
 
-    <!-- OPTIMAL PATH VIEW -->
-    <div id="view-optimal" class="hidden">
-      <div class="workspace-header">
-        <div class="workspace-title">
-          <h3>Optimal Reading List</h3>
-          <p id="optimal-stats">The smallest set of books to hit your goals.</p>
+        <div class="sidebar-actions">
+          <button class="btn ghost sm" id="btn-clear-selection">Clear</button>
+          <button class="btn outline sm" id="btn-select-all">Select All</button>
         </div>
-        <div style="display:flex; gap:8px; flex-wrap:wrap;">
-          <button class="btn ghost sm" id="btn-shuffle-overlap" title="Find a path using overlapping books">🎲 Alternate (Overlaps)</button>
-          <button class="btn ghost sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">🎲 Alternate (No Overlaps)</button>
-          <button class="btn outline sm" id="btn-copy-optimal">📋 Copy List</button>
+        <div
+          style="font-size: 11px; color: var(--muted-fg); text-align: right;"
+          id="sidebar-counts"
+        >
+          0 / 0 selected
         </div>
-      </div>
-      <div class="workspace-content" id="output-optimal"></div>
-    </div>
 
-    <!-- SPREADSHEET VIEW -->
-    <div id="view-spreadsheet" class="hidden">
-      <div class="workspace-header">
-        <div class="workspace-title">
-          <h3>Overlap Spreadsheet</h3>
-          <p id="convert-sub">0 overlap groups found.</p>
+        <div id="challenge-grid" class="challenge-list">
+          <!-- Injected via JS -->
         </div>
-        <button class="btn outline sm" id="btn-copy-sheet">📋 Copy for Excel</button>
-      </div>
-      <div class="workspace-content" style="padding: 0;">
-        <table class="sheet">
-          <thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead>
-          <tbody id="sheet-body"></tbody>
-        </table>
-      </div>
-    </div>
-  </main>
+      </aside>
 
-  <!-- Empty State -->
-  <main class="workspace" id="workspace-empty" style="justify-content: center;">
-    <div class="empty" style="border:none;">
-      <div class="icon">👈</div>
-      <h2>Select your challenges</h2>
-      <p>Pick at least one challenge from the sidebar to start optimizing your reading list.</p>
-    </div>
-  </main>
+      <!-- Main Content Area -->
+      <main class="workspace hidden" id="workspace">
+        <div class="workspace-tabs">
+          <button id="tab-library" class="active">📚 Master Library</button>
+          <button id="tab-optimal">✨ Optimal Path</button>
+          <button id="tab-spreadsheet">
+            ▦ Spreadsheet <span class="badge-pro">PRO</span>
+          </button>
+        </div>
 
-  <!-- Right Sidebar (Developer Tools & Support) - Becomes bottom grid on mobile -->
-  <aside class="sidebar promo-sidebar">
-    <div class="sidebar-header">
-      <h2>Also from Developer:</h2>
-    </div>
-    
-    <!-- Extension Promo -->
-    <div class="promo-card">
-      <h3>📖 Goodreads Book Details</h3>
-      <p>Display book details and descriptions right under the covers. No need to click or hover. Enhance your Goodreads experience instantly.</p>
-      <div class="row-btns">
-         <a href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec" target="_blank" rel="noopener noreferrer" class="btn sm outline">Chrome</a>
-         <a href="https://addons.mozilla.org/en-US/firefox/addon/goodreads-book-details/" target="_blank" rel="noopener noreferrer" class="btn sm outline">Firefox</a>
-      </div>
+        <!-- LIBRARY VIEW -->
+        <div id="view-library">
+          <div class="workspace-header">
+            <div class="workspace-title">
+              <h3>Configure Books</h3>
+              <p id="library-stats">Showing books from selected challenges.</p>
+            </div>
+            <div class="filter-row">
+              <div class="search">
+                <input
+                  id="search-input"
+                  type="text"
+                  placeholder="Search titles..."
+                />
+              </div>
+              <select id="status-filter">
+                <option value="all">All Status</option>
+                <option value="include">📌 Must Read</option>
+                <option value="exclude">✕ Avoid</option>
+              </select>
+            </div>
+            <button
+              class="btn ghost sm"
+              id="btn-reset"
+              title="Reset Read/Avoid statuses"
+            >
+              🔄 Reset
+            </button>
+          </div>
+          <div class="workspace-content">
+            <div class="book-grid" id="list-books"></div>
+          </div>
+        </div>
+
+        <!-- OPTIMAL PATH VIEW -->
+        <div id="view-optimal" class="hidden">
+          <div class="workspace-header">
+            <div class="workspace-title">
+              <h3>Optimal Reading List</h3>
+              <p id="optimal-stats">
+                The smallest set of books to hit your goals.
+              </p>
+            </div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <button
+                class="btn ghost sm"
+                id="btn-shuffle-overlap"
+                title="Find a path using overlapping books"
+              >
+                🎲 Alternate (Overlaps)
+              </button>
+              <button
+                class="btn ghost sm"
+                id="btn-shuffle-single"
+                title="Force exactly 1 distinct book per challenge"
+              >
+                🎲 Alternate (No Overlaps)
+              </button>
+              <button class="btn outline sm" id="btn-copy-optimal">
+                📋 Copy List
+              </button>
+            </div>
+          </div>
+          <div class="workspace-content" id="output-optimal"></div>
+        </div>
+
+        <!-- SPREADSHEET VIEW -->
+        <div id="view-spreadsheet" class="hidden">
+          <div class="workspace-header">
+            <div class="workspace-title">
+              <h3>Overlap Spreadsheet</h3>
+              <p id="convert-sub">0 overlap groups found.</p>
+            </div>
+            <button class="btn outline sm" id="btn-copy-sheet">
+              📋 Copy for Excel
+            </button>
+          </div>
+          <div class="workspace-content" style="padding: 0;">
+            <table class="sheet">
+              <thead>
+                <tr>
+                  <th>Challenge Combination</th>
+                  <th>Common Books</th>
+                </tr>
+              </thead>
+              <tbody id="sheet-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+      <!-- Empty State -->
+      <main
+        class="workspace"
+        id="workspace-empty"
+        style="justify-content: center;"
+      >
+        <div class="empty" style="border:none;">
+          <div class="icon">👈</div>
+          <h2>Select your challenges</h2>
+          <p>
+            Pick at least one challenge from the sidebar to start optimizing
+            your reading list.
+          </p>
+        </div>
+      </main>
+
+      <!-- Right Sidebar (Developer Tools & Support) - Becomes bottom grid on mobile -->
+      <aside class="sidebar promo-sidebar">
+        <div class="sidebar-header">
+          <h2>Also from Developer:</h2>
+        </div>
+
+        <!-- Extension Promo -->
+        <div class="promo-card">
+          <h3>📖 Goodreads Book Details</h3>
+          <p>
+            Display book details and descriptions right under the covers. No
+            need to click or hover. Enhance your Goodreads experience instantly.
+          </p>
+          <div class="row-btns">
+            <a
+              href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn sm outline"
+              >Chrome</a
+            >
+            <a
+              href="https://addons.mozilla.org/en-US/firefox/addon/goodreads-book-details/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn sm outline"
+              >Firefox</a
+            >
+          </div>
+        </div>
+
+        <!-- Spreadsheet Details -->
+        <div class="promo-card">
+          <h3>📊 Spreadsheet</h3>
+          <p>
+            Rich data tables for every challenge for 2026 Spring challenge.
+            Author, ratings, pages, genres, publication year & more. Smart
+            overlaps matrix + optimal reading suggestions. Filterable, sortable,
+            and yours forever (make your own copy). Updated as new mystery
+            challenges revealed.
+          </p>
+          <div class="row-btns">
+            <a
+              href="https://ko-fi.com/s/977521c88d"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn sm outline"
+              >Open Spreadsheet</a
+            >
+          </div>
+        </div>
+
+        <!-- Support / Donation -->
+        <div class="promo-card">
+          <h3>❤️ Support the developer</h3>
+          <p>
+            If this tool saves you time, please consider buying me a coffee!
+          </p>
+          <div class="row-btns" style="margin-top:auto;">
+            <a
+              href="https://ko-fi.com/unikuez"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn sm support-btn kofi"
+            >
+              <img
+                src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png"
+                alt="Ko-fi"
+                class="support-logo"
+              />
+              Ko-fi
+            </a>
+            <a
+              href="https://www.paypal.com/paypalme/SugamB"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn sm support-btn paypal"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png"
+                alt="PayPal"
+                class="support-logo"
+              />
+              PayPal
+            </a>
+          </div>
+        </div>
+      </aside>
     </div>
 
-    <!-- Spreadsheet Details -->
-    <div class="promo-card">
-      <h3>📊 Spreadsheet</h3>
-      <p>I have made a spreadsheet to list all the books in each challenge. The first sheet has all the books for each challenge in a clickable format to easily go to Goodreads page for book details. The second sheet has the overlap combo.</p>
-      <div class="row-btns">
-         <a href="https://docs.google.com/spreadsheets/d/1nJRnxdy-pKL1IzD3rzJd5UD7v9hlpk2hPnEVe7xQBeM/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" class="btn sm outline">Open Spreadsheet</a>
-      </div>
-    </div>
-
-    <!-- Support / Donation -->
-    <div class="promo-card">
-      <h3>❤️ Support the developer</h3>
-      <p>If this tool saves you time, please consider buying me a coffee!</p>
-      <div class="row-btns" style="margin-top:auto;">
-         <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="btn sm support-btn kofi">
-            <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png" alt="Ko-fi" class="support-logo"> Ko-fi
-         </a>
-         <a href="https://www.paypal.com/paypalme/SugamB" target="_blank" rel="noopener noreferrer" class="btn sm support-btn paypal">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal" class="support-logo"> PayPal
-         </a>
-      </div>
-    </div>
-  </aside>
-</div>
-
-<!-- Modal: Custom List -->
-<div class="modal-overlay" id="custom-modal">
-  <div class="modal">
-    <div class="modal-head">
-      <h3 id="modal-title">Add Custom List</h3>
-      <button class="btn icon ghost" id="btn-close-modal">✕</button>
-    </div>
-    <div class="modal-body">
-      <div>
-        <label>List Name</label>
-        <input type="text" id="custom-name" placeholder="e.g., My TBR 2026" autocomplete="off" />
-      </div>
-      <div>
-        <label>Books (One per line, or Markdown list)</label>
-        <textarea id="custom-books" placeholder="- [Atomic Habits](https://goodreads.com/...)
+    <!-- Modal: Custom List -->
+    <div class="modal-overlay" id="custom-modal">
+      <div class="modal">
+        <div class="modal-head">
+          <h3 id="modal-title">Add Custom List</h3>
+          <button class="btn icon ghost" id="btn-close-modal">✕</button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <label>List Name</label>
+            <input
+              type="text"
+              id="custom-name"
+              placeholder="e.g., My TBR 2026"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label>Books (One per line, or Markdown list)</label>
+            <textarea
+              id="custom-books"
+              placeholder="- [Atomic Habits](https://goodreads.com/...)
 - Project Hail Mary
-The Hobbit"></textarea>
-      </div>
-      <input type="hidden" id="custom-id" />
-    </div>
-    <div class="modal-foot">
-      <button class="btn ghost" id="btn-cancel-modal">Cancel</button>
-      <button class="btn" id="btn-save-custom">Save List</button>
-    </div>
-  </div>
-</div>
-
-<!-- Modal: Pro Feature Unlock -->
-<div class="modal-overlay" id="pro-modal">
-  <div class="modal pro-modal" style="text-align: center; max-width: 420px; padding: 30px 20px;">
-    <div class="icon-large">🎁</div>
-    <h2 style="margin: 0 0 12px 0; color: var(--fg);">"Pro" Feature Unlocked!</h2>
-    <p>Don't worry, every feature here is 100% free! I built this tool to help readers easily plan their goals.</p>
-    <p>If this tool saves you time, please consider buying me a coffee or checking out my Chrome extension to support my work!</p>
-    
-    <div class="pro-actions">
-      <div class="row-btns">
-        <a href="https://ko-fi.com/unikuez" target="_blank" class="btn support-btn kofi">☕ Buy me a coffee</a>
-        <a href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec" target="_blank" class="btn outline">📖 Get Extension</a>
-      </div>
-      <button class="btn ghost" id="btn-continue-pro" style="margin-top: 8px;">Continue to feature →</button>
-    </div>
-  </div>
-</div>
-
-<div id="toast-host"></div>
-
-<script>
-// --- GLOBAL STATE ---
-const FALLBACK_DATA = {
-  "lastUpdated": "2026-05-14T09:49:45.639Z",
-  "challenges": [
-    { "id": "AAPI Heritage", "name": "AAPI Heritage", "url": "https://www.goodreads.com/blog/show/3048", "count": 132 },
-    { "id": "Books on Books", "name": "Books on Books", "url": "https://www.goodreads.com/blog/show/3090", "count": 144 },
-    { "id": "Community Picks", "name": "Community Picks", "url": "https://www.goodreads.com/blog/show/3093", "count": 136 },
-    { "id": "Editors' Picks", "name": "Editors' Picks", "url": "https://www.goodreads.com/blog/show/3089", "count": 120 },
-    { "id": "Escapist Reads", "name": "Escapist Reads", "url": "https://www.goodreads.com/blog/show/3095", "count": 112 },
-    { "id": "Marathon Reader", "name": "Marathon Reader", "url": "https://www.goodreads.com/blog/show/3087", "count": 100 },
-    { "id": "Summer Reading", "name": "Summer Reading", "url": "https://www.goodreads.com/blog/show/3094", "count": 78 },
-    { "id": "Trending Books", "name": "Trending Books", "url": "https://www.goodreads.com/blog/show/3079", "count": 140 }
-  ],
-  "books": [
-    {
-      "title": "The Last of Earth",
-      "author": "Deepa Anappara",
-      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-      "url": "https://www.goodreads.com/book/show/231363155",
-      "isKindleUnlimited": false,
-      "challenges": ["AAPI Heritage"]
-    },
-    {
-      "title": "My Dear You",
-      "author": "Rachel Khong",
-      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-      "url": "https://www.goodreads.com/book/show/238226950",
-      "isKindleUnlimited": false,
-      "challenges": ["AAPI Heritage", "Trending Books"]
-    },
-    {
-      "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
-      "author": "Zoe Venditozzi, Claire Mitchell",
-      "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-      "url": "https://www.goodreads.com/book/show/222476092",
-      "isKindleUnlimited": true,
-      "challenges": ["Trending Books", "Editors' Picks"]
-    }
-  ]
-};
-
-let baseDatabase = { challenges: [], books: [] }; 
-let rawDatabase = { challenges: [], books: [] }; 
-let customLists = {}; 
-
-let selectedChallenges = new Set();
-let activeData = { sections: [], books: [], categories: [] };
-let bookStatus = {}; 
-let lastOptimal = { selected: [], uncovered: [] };
-
-let currentTab = 'library';
-let search = '';
-let statusFilter = 'all';
-let currentOptimalMode = 'overlap';
-let coversVisible = true;
-
-// --- HELPERS ---
-const $ = (id) => document.getElementById(id);
-const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
-  '"': '&quot;',
-  "'": '&#39;'
-}[c]));
-const safeId = (s) => btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
-
-function toast(msg, kind='') {
-  const host = $('toast-host');
-  const el = document.createElement('div');
-  el.className = 'toast ' + kind;
-  el.textContent = msg;
-  host.appendChild(el);
-  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; }, 2200);
-  setTimeout(() => el.remove(), 2600);
-}
-
-// --- THEME & COVERS TOGGLES ---
-$('theme-toggle').addEventListener('click', () => {
-  const isDark = document.documentElement.classList.toggle('dark');
-  $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
-});
-if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.classList.add('dark');
-    $('theme-toggle').textContent = '☀️';
-}
-
-$('btn-toggle-covers').addEventListener('click', () => {
-  coversVisible = !coversVisible;
-  document.body.classList.toggle('hide-covers', !coversVisible);
-  $('btn-toggle-covers').innerHTML = coversVisible 
-    ? `🖼️ <span class="link-label">Hide Covers</span>` 
-    : `🖼️ <span class="link-label">Show Covers</span>`;
-});
-
-// --- MOBILE MENU ---
-$('btn-menu').addEventListener('click', () => {
-    $('sidebar').classList.add('open');
-    $('sidebar-backdrop').classList.add('open');
-});
-$('sidebar-backdrop').addEventListener('click', () => {
-    $('sidebar').classList.remove('open');
-    $('sidebar-backdrop').classList.remove('open');
-});
-
-// --- PRO FEATURE LOGIC ---
-let pendingProCallback = null;
-function handleProFeature(callback) {
-    if (localStorage.getItem('gr_pro_unlocked')) {
-        callback();
-    } else {
-        pendingProCallback = callback;
-        $('pro-modal').classList.add('active');
-    }
-}
-$('btn-continue-pro').addEventListener('click', () => {
-    localStorage.setItem('gr_pro_unlocked', 'true');
-    $('pro-modal').classList.remove('active');
-    if (pendingProCallback) pendingProCallback();
-});
-
-// --- DATA LOADING & MERGING ---
-async function loadData() {
-  try {
-    const res = await fetch('data.json');
-    if (!res.ok) throw new Error("Could not load data.json");
-    baseDatabase = await res.json();
-  } catch (err) {
-    console.warn("Using fallback data for local testing.");
-    baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA));
-  }
-  
-  const stored = localStorage.getItem('gr_custom_lists');
-  if (stored) {
-      try { customLists = JSON.parse(stored); } catch(e) { customLists = {}; }
-  }
-  buildRawDatabase();
-}
-
-function buildRawDatabase() {
-    rawDatabase = JSON.parse(JSON.stringify(baseDatabase));
-    rawDatabase.books.forEach(b => { b.id = 'b_' + safeId(b.title); });
-
-    for (const [cId, cData] of Object.entries(customLists)) {
-        rawDatabase.challenges.unshift({ id: cId, name: cData.name, url: "#", count: cData.books.length, isCustom: true });
-        
-        cData.books.forEach(cb => {
-            const bId = 'b_' + safeId(cb.title);
-            let existing = rawDatabase.books.find(b => b.id === bId);
-            if (!existing) {
-                existing = { 
-                  id: bId, title: cb.title, url: cb.url || '#', 
-                  author: "Unknown Author",
-                  coverUrl: "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-                  isKindleUnlimited: false,
-                  challenges: [] 
-                };
-                rawDatabase.books.push(existing);
-            }
-            if (!existing.challenges.includes(cId)) existing.challenges.push(cId);
-        });
-    }
-    
-    renderChallengeGrid();
-    recomputeActiveData();
-}
-
-// --- SIDEBAR RENDERING ---
-function renderChallengeGrid() {
-  const grid = $('challenge-grid');
-  const q = $('search-challenges').value.toLowerCase();
-  const f = $('filter-challenges').value;
-  
-  const html = rawDatabase.challenges.map(c => {
-    const isSelected = selectedChallenges.has(c.id);
-    if (f === 'selected' && !isSelected) return '';
-    if (f === 'unselected' && isSelected) return '';
-    if (q && !c.name.toLowerCase().includes(q)) return '';
-
-    const customActions = c.isCustom ? `
-      <button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button>
-      <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>
-    ` : '';
-
-    return `
-      <div class="challenge-item ${isSelected ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}">
-        <input type="checkbox" ${isSelected ? 'checked' : ''} />
-        <div class="challenge-info">
-          <strong>${c.isCustom ? '⭐ ' : ''}${escapeHtml(c.name)}</strong>
-          <span>${c.count} books</span>
+The Hobbit"
+            ></textarea>
+          </div>
+          <input type="hidden" id="custom-id" />
         </div>
-        <div class="chal-actions">
-            ${customActions}
-            <button class="copy-list-btn" title="Copy to clipboard" data-id="${escapeHtml(c.id)}">📋</button>
+        <div class="modal-foot">
+          <button class="btn ghost" id="btn-cancel-modal">Cancel</button>
+          <button class="btn" id="btn-save-custom">Save List</button>
         </div>
       </div>
-    `;
-  }).join('');
-  
-  grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px; border:none;">No challenges match filter.</div>';
-  $('sidebar-counts').textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
-}
-
-$('search-challenges').addEventListener('input', renderChallengeGrid);
-$('filter-challenges').addEventListener('change', renderChallengeGrid);
-
-$('challenge-grid').addEventListener('click', async (e) => {
-    const btn = e.target.closest('button');
-    if (btn) {
-        e.stopPropagation();
-        const chalId = btn.getAttribute('data-id');
-        
-        if (btn.classList.contains('copy-list-btn')) {
-            const chalMeta = rawDatabase.challenges.find(c => c.id === chalId);
-            const books = rawDatabase.books.filter(b => b.challenges.includes(chalId));
-            let txt = `=HYPERLINK("${chalMeta.url}", "${escapeHtml(chalMeta.name)} (${books.length} books)")\n`;
-            books.forEach(b => { txt += `=HYPERLINK("${b.url}", "${b.title.replace(/"/g, '""')}")\n`; });
-            try { await navigator.clipboard.writeText(txt); toast('List copied!', 'success'); } catch { toast('Failed to copy', 'error'); }
-            return;
-        }
-        
-        if (btn.classList.contains('delete')) {
-            if (confirm("Delete this custom list?")) {
-                delete customLists[chalId];
-                selectedChallenges.delete(chalId);
-                localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
-                buildRawDatabase();
-                toast('List deleted', 'success');
-            }
-            return;
-        }
-
-        if (btn.classList.contains('edit')) {
-            const cData = customLists[chalId];
-            $('custom-id').value = chalId;
-            $('custom-name').value = cData.name;
-            $('custom-books').value = cData.books.map(b => b.url !== '#' ? `- [${b.title}](${b.url})` : b.title).join('\n');
-            $('modal-title').textContent = "Edit Custom List";
-            $('custom-modal').classList.add('active');
-            return;
-        }
-    }
-
-    const item = e.target.closest('.challenge-item');
-    if (!item) return;
-    const id = item.getAttribute('data-id');
-
-    if (selectedChallenges.has(id)) selectedChallenges.delete(id);
-    else selectedChallenges.add(id);
-    
-    renderChallengeGrid();
-    recomputeActiveData();
-});
-
-$('btn-select-all').addEventListener('click', () => { rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); renderChallengeGrid(); recomputeActiveData(); });
-$('btn-clear-selection').addEventListener('click', () => { selectedChallenges.clear(); renderChallengeGrid(); recomputeActiveData(); });
-
-// --- CUSTOM LIST MODAL (PRO) ---
-$('btn-add-custom').addEventListener('click', () => {
-    handleProFeature(() => {
-        $('custom-id').value = ''; $('custom-name').value = ''; $('custom-books').value = '';
-        $('modal-title').textContent = "Add Custom List";
-        $('custom-modal').classList.add('active');
-    });
-});
-
-$('btn-close-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
-$('btn-cancel-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
-
-$('btn-save-custom').addEventListener('click', () => {
-    const name = $('custom-name').value.trim();
-    const text = $('custom-books').value.trim();
-    if (!name || !text) return toast("Please provide a name and at least one book.", "error");
-
-    const id = $('custom-id').value || 'c_custom_' + Date.now();
-    const lines = text.split('\n').map(l => l.trim()).filter(l => l);
-    
-    const parsedBooks = lines.map(line => {
-        const mdMatch = line.match(/\[(.*?)\]\((.*?)\)/);
-        if (mdMatch) return { title: mdMatch[1].trim(), url: mdMatch[2].trim() };
-        return { title: line.replace(/^[-*•]\s+/, '').trim(), url: '#' };
-    });
-
-    customLists[id] = { name, books: parsedBooks };
-    localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
-    
-    $('custom-modal').classList.remove('active');
-    selectedChallenges.add(id); 
-    buildRawDatabase();
-    toast("Custom list saved!", "success");
-});
-
-// --- COMPUTE OVERLAPS AND STATE ON THE FLY ---
-function getSubsets(array, minSize = 2) {
-    const result = [];
-    const n = array.length;
-    for (let i = 1; i < 1 << n; i++) {
-        const subset = [];
-        for (let j = 0; j < n; j++) if ((i >> j) & 1) subset.push(array[j]);
-        if (subset.length >= minSize) result.push(subset);
-    }
-    return result;
-}
-
-function recomputeActiveData() {
-  if (selectedChallenges.size === 0) {
-    $('workspace').classList.add('hidden');
-    $('workspace-empty').classList.remove('hidden');
-    if(window.innerWidth < 900) { $('sidebar').classList.remove('open'); $('sidebar-backdrop').classList.remove('open'); }
-    return;
-  }
-  
-  $('workspace').classList.remove('hidden');
-  $('workspace-empty').classList.add('hidden');
-
-  activeData.categories = Array.from(selectedChallenges);
-  activeData.books = [];
-  const overlapMap = new Map();
-
-  rawDatabase.books.forEach(b => {
-    const relevantCats = b.challenges.filter(c => selectedChallenges.has(c));
-    if (relevantCats.length > 0) {
-      const workingBook = { ...b, categories: relevantCats };
-      activeData.books.push(workingBook);
-      if (!bookStatus[b.id]) bookStatus[b.id] = 'neutral';
-      
-      if (relevantCats.length >= 2) {
-        const subsets = getSubsets(relevantCats, 2);
-        subsets.forEach(subset => {
-          const key = subset.sort().join(" + ");
-          if(!overlapMap.has(key)) overlapMap.set(key, { categories: subset, books: [] });
-          overlapMap.get(key).books.push(workingBook);
-        });
-      }
-    }
-  });
-
-  activeData.sections = Array.from(overlapMap.values()).sort((a,b) => {
-    if (b.categories.length !== a.categories.length) return b.categories.length - a.categories.length;
-    return b.books.length - a.books.length;
-  });
-
-  renderAll();
-}
-
-// --- RENDERING LOGIC ---
-function renderAll() { renderLibrary(); renderResults(currentOptimalMode, false); renderSheet(); }
-
-function statusButtonsHTML(bookId) {
-  const s = bookStatus[bookId] || 'neutral';
-  return `
-    <div class="status-group" data-stop>
-      <button class="inc ${s==='include'?'active':''}" data-status-set="${bookId}" data-status="include" title="Force algorithm to include this book">📌 Must Read</button>
-      <button class="neu ${s==='neutral'?'active':''}" data-status-set="${bookId}" data-status="neutral">Auto</button>
-      <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude" title="Prevent algorithm from using this book">✕ Avoid</button>
     </div>
-  `;
-}
 
-function resolveChallengeName(id) {
-    const c = rawDatabase.challenges.find(x => x.id === id);
-    return c ? c.name : id;
-}
+    <!-- Modal: Pro Feature Unlock -->
+    <div class="modal-overlay" id="pro-modal">
+      <div
+        class="modal pro-modal"
+        style="text-align: center; max-width: 420px; padding: 30px 20px;"
+      >
+        <div class="icon-large">🎁</div>
+        <h2 style="margin: 0 0 12px 0; color: var(--fg);">
+          "Pro" Feature Unlocked!
+        </h2>
+        <p>
+          Don't worry, every feature here is 100% free! I built this tool to
+          help readers easily plan their goals.
+        </p>
+        <p>
+          If this tool saves you time, please consider buying me a coffee or
+          checking out my Chrome extension to support my work!
+        </p>
 
-// Book Card helper utilizing native `loading="lazy"` and explicit dimensions to avoid layout shifts
-function generateBookCardHTML(b, isOptimal = false, uncoveredSet = new Set()) {
-  const s = bookStatus[b.id];
-  const avoidClass = s === 'exclude' ? 'avoid' : '';
-  const optimalClass = s === 'include' || isOptimal ? 'optimal' : '';
-  
-  const coverUrl = b.coverUrl || 'https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png';
-  const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
-  const kuHtml = b.isKindleUnlimited ? `<div class="ku-badge">Kindle Unlimited</div>` : '';
-
-  const tagsHtml = b.categories.map(c => `
-    <span class="tag ${uncoveredSet.has(c) ? 'danger' : ''}" data-locate="sidebar-chal-${safeId(c)}">
-      ${escapeHtml(resolveChallengeName(c))}
-    </span>
-  `).join('');
-
-  return `
-    <div class="book-card ${avoidClass} ${optimalClass}">
-      <div class="book-cover-wrapper">
-         <a href="${escapeHtml(b.url)}" target="_blank" data-stop>
-           <img class="book-cover" src="${escapeHtml(coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
-         </a>
-      </div>
-      <div class="book-info">
-        <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
-        ${authorHtml}
-        ${kuHtml}
-        <div class="tags">${tagsHtml}</div>
-      </div>
-      <div style="margin-top:auto; width: 100%; padding-top: 10px;">
-        ${statusButtonsHTML(b.id)}
+        <div class="pro-actions">
+          <div class="row-btns">
+            <a
+              href="https://ko-fi.com/unikuez"
+              target="_blank"
+              class="btn support-btn kofi"
+              >☕ Buy me a coffee</a
+            >
+            <a
+              href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec"
+              target="_blank"
+              class="btn outline"
+              >📖 Get Extension</a
+            >
+          </div>
+          <button
+            class="btn ghost"
+            id="btn-continue-pro"
+            style="margin-top: 8px;"
+          >
+            Continue to feature →
+          </button>
+        </div>
       </div>
     </div>
-  `;
-}
 
-function renderLibrary() {
-  const total = activeData.books.length;
-  const inc = activeData.books.filter(b => bookStatus[b.id] === 'include').length;
-  const exc = activeData.books.filter(b => bookStatus[b.id] === 'exclude').length;
-  
-  $('library-stats').textContent = `${total} Total Books | 📌 ${inc} Must Read | ✕ ${exc} Avoided`;
+    <div id="toast-host"></div>
 
-  const q = search.toLowerCase();
-  const books = activeData.books
-    .filter(b => b.title.toLowerCase().includes(q))
-    .filter(b => {
-      const s = bookStatus[b.id];
-      if (statusFilter === 'all') return true;
-      if (statusFilter === 'include') return s === 'include';
-      if (statusFilter === 'exclude') return s === 'exclude';
-      return true;
-    }).sort((a,b) => a.title.localeCompare(b.title));
-    
-  const lb = $('list-books');
-  lb.innerHTML = books.map(b => generateBookCardHTML(b, false)).join('') 
-    || '<div class="empty" style="grid-column: 1 / -1;"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
-}
+    <script>
+      // --- GLOBAL STATE ---
+      const FALLBACK_DATA = {
+        "lastUpdated": "2026-05-14T09:49:45.639Z",
+        "challenges": [
+          { "id": "AAPI Heritage", "name": "AAPI Heritage", "url": "https://www.goodreads.com/blog/show/3048", "count": 132 },
+          { "id": "Books on Books", "name": "Books on Books", "url": "https://www.goodreads.com/blog/show/3090", "count": 144 },
+          { "id": "Community Picks", "name": "Community Picks", "url": "https://www.goodreads.com/blog/show/3093", "count": 136 },
+          { "id": "Editors' Picks", "name": "Editors' Picks", "url": "https://www.goodreads.com/blog/show/3089", "count": 120 },
+          { "id": "Escapist Reads", "name": "Escapist Reads", "url": "https://www.goodreads.com/blog/show/3095", "count": 112 },
+          { "id": "Marathon Reader", "name": "Marathon Reader", "url": "https://www.goodreads.com/blog/show/3087", "count": 100 },
+          { "id": "Summer Reading", "name": "Summer Reading", "url": "https://www.goodreads.com/blog/show/3094", "count": 78 },
+          { "id": "Trending Books", "name": "Trending Books", "url": "https://www.goodreads.com/blog/show/3079", "count": 140 }
+        ],
+        "books": [
+          {
+            "title": "The Last of Earth",
+            "author": "Deepa Anappara",
+            "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+            "url": "https://www.goodreads.com/book/show/231363155",
+            "isKindleUnlimited": false,
+            "challenges": ["AAPI Heritage"]
+          },
+          {
+            "title": "My Dear You",
+            "author": "Rachel Khong",
+            "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+            "url": "https://www.goodreads.com/book/show/238226950",
+            "isKindleUnlimited": false,
+            "challenges": ["AAPI Heritage", "Trending Books"]
+          },
+          {
+            "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
+            "author": "Zoe Venditozzi, Claire Mitchell",
+            "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+            "url": "https://www.goodreads.com/book/show/222476092",
+            "isKindleUnlimited": true,
+            "challenges": ["Trending Books", "Editors' Picks"]
+          }
+        ]
+      };
 
-function renderResults(mode = 'overlap', forceRandom = false) {
-  currentOptimalMode = mode;
-  const activeCats = new Set(activeData.categories);
-  const uncovered = new Set(activeCats);
-  const selected = [];
-  let available = [];
-  let failedSingleCategories = []; 
+      let baseDatabase = { challenges: [], books: [] };
+      let rawDatabase = { challenges: [], books: [] };
+      let customLists = {};
 
-  // 1. Process "Must Read"
-  activeData.books.forEach(b => {
-    if (bookStatus[b.id] === 'include') {
-      selected.push(b);
-      b.categories.forEach(c => uncovered.delete(c));
-    } else if (bookStatus[b.id] !== 'exclude') {
-      available.push(b);
-    }
-  });
+      let selectedChallenges = new Set();
+      let activeData = { sections: [], books: [], categories: [] };
+      let bookStatus = {};
+      let lastOptimal = { selected: [], uncovered: [] };
 
-  if (mode === 'overlap') {
-      while (uncovered.size > 0 && available.length > 0) {
-        const catCounts = {};
-        uncovered.forEach(c => catCounts[c] = 0);
-        available.forEach(b => { b.categories.forEach(c => { if (uncovered.has(c)) catCounts[c]++; }); });
+      let currentTab = 'library';
+      let search = '';
+      let statusFilter = 'all';
+      let currentOptimalMode = 'overlap';
+      let coversVisible = true;
 
-        let bestBook = null;
-        let maxCov = 0;
-        let candidates = [];
+      // --- HELPERS ---
+      const $ = (id) => document.getElementById(id);
+      const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[c]));
+      const safeId = (s) => btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
 
-        for (const b of available) {
-          const covCats = b.categories.filter(c => uncovered.has(c));
-          const cov = covCats.length;
-          if (cov === 0) continue;
-
-          if (cov > maxCov) { maxCov = cov; candidates = [b]; } 
-          else if (cov === maxCov) { candidates.push(b); }
-        }
-
-        if (candidates.length === 0) break;
-        bestBook = forceRandom ? candidates[Math.floor(Math.random() * candidates.length)] : candidates[0];
-        
-        selected.push(bestBook);
-        bestBook.categories.forEach(c => uncovered.delete(c));
-        available = available.filter(b => b.id !== bestBook.id);
+      function toast(msg, kind='') {
+        const host = $('toast-host');
+        const el = document.createElement('div');
+        el.className = 'toast ' + kind;
+        el.textContent = msg;
+        host.appendChild(el);
+        setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; }, 2200);
+        setTimeout(() => el.remove(), 2600);
       }
-      
-  } else if (mode === 'single') {
-      const pureBooks = available.filter(b => b.categories.length === 1);
-      const tempUncovered = Array.from(uncovered);
-      for (const c of tempUncovered) {
-          if (!uncovered.has(c)) continue; 
-          const cands = pureBooks.filter(b => b.categories.includes(c));
-          if (cands.length > 0) {
-              const pick = cands[Math.floor(Math.random() * cands.length)];
-              selected.push(pick);
-              uncovered.delete(c);
-              const index = pureBooks.findIndex(b => b.id === pick.id);
-              if(index !== -1) pureBooks.splice(index, 1);
+
+      // --- THEME & COVERS TOGGLES ---
+      $('theme-toggle').addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
+      });
+      if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+          $('theme-toggle').textContent = '☀️';
+      }
+
+      $('btn-toggle-covers').addEventListener('click', () => {
+        coversVisible = !coversVisible;
+        document.body.classList.toggle('hide-covers', !coversVisible);
+        $('btn-toggle-covers').innerHTML = coversVisible
+          ? `🖼️ <span class="link-label">Hide Covers</span>`
+          : `🖼️ <span class="link-label">Show Covers</span>`;
+      });
+
+      // --- MOBILE MENU ---
+      $('btn-menu').addEventListener('click', () => {
+          $('sidebar').classList.add('open');
+          $('sidebar-backdrop').classList.add('open');
+      });
+      $('sidebar-backdrop').addEventListener('click', () => {
+          $('sidebar').classList.remove('open');
+          $('sidebar-backdrop').classList.remove('open');
+      });
+
+      // --- PRO FEATURE LOGIC ---
+      let pendingProCallback = null;
+      function handleProFeature(callback) {
+          if (localStorage.getItem('gr_pro_unlocked')) {
+              callback();
           } else {
-              failedSingleCategories.push(c);
+              pendingProCallback = callback;
+              $('pro-modal').classList.add('active');
           }
       }
-  }
+      $('btn-continue-pro').addEventListener('click', () => {
+          localStorage.setItem('gr_pro_unlocked', 'true');
+          $('pro-modal').classList.remove('active');
+          if (pendingProCallback) pendingProCallback();
+      });
 
-  lastOptimal = { selected, uncovered: Array.from(uncovered) };
-  $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${selected.length} Books (${mode === 'single' ? 'No overlaps allowed' : 'Maximized overlaps'})`;
+      // --- DATA LOADING & MERGING ---
+      async function loadData() {
+        try {
+          const res = await fetch('data.json');
+          if (!res.ok) throw new Error("Could not load data.json");
+          baseDatabase = await res.json();
+        } catch (err) {
+          console.warn("Using fallback data for local testing.");
+          baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA));
+        }
 
-  let html = '';
-  
-  if (mode === 'single' && failedSingleCategories.length > 0) {
-      html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
-  }
-  
-  if (uncovered.size > 0 && mode === 'overlap') {
-      html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
-  }
+        const stored = localStorage.getItem('gr_custom_lists');
+        if (stored) {
+            try { customLists = JSON.parse(stored); } catch(e) { customLists = {}; }
+        }
+        buildRawDatabase();
+      }
 
-  if (activeCats.size === 0) {
-      html += '<div class="empty">No challenges selected.</div>';
-  } else if (!selected.length) {
-      html += '<div class="empty">No books available for this path.</div>';
-  } else {
-      html += `<div class="book-grid">` + selected.map(b => generateBookCardHTML(b, true, uncovered)).join('') + `</div>`;
-  }
+      function buildRawDatabase() {
+          rawDatabase = JSON.parse(JSON.stringify(baseDatabase));
+          rawDatabase.books.forEach(b => { b.id = 'b_' + safeId(b.title); });
 
-  $('output-optimal').innerHTML = html;
-}
+          for (const [cId, cData] of Object.entries(customLists)) {
+              rawDatabase.challenges.unshift({ id: cId, name: cData.name, url: "#", count: cData.books.length, isCustom: true });
 
-function renderSheet() {
-  const tbody = $('sheet-body');
-  let html = '';
-  activeData.sections.forEach((sec, i) => {
-    if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
-    const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
-    sec.books.forEach((b, idx) => {
-      const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
-      html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
-    });
-  });
-  tbody.innerHTML = html;
-  $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
-}
+              cData.books.forEach(cb => {
+                  const bId = 'b_' + safeId(cb.title);
+                  let existing = rawDatabase.books.find(b => b.id === bId);
+                  if (!existing) {
+                      existing = {
+                        id: bId, title: cb.title, url: cb.url || '#',
+                        author: "Unknown Author",
+                        coverUrl: "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
+                        isKindleUnlimited: false,
+                        challenges: []
+                      };
+                      rawDatabase.books.push(existing);
+                  }
+                  if (!existing.challenges.includes(cId)) existing.challenges.push(cId);
+              });
+          }
 
-// --- EVENT DELEGATION FOR UI INTERACTIONS ---
-document.body.addEventListener('click', (e) => {
-  const stopParent = e.target.closest('[data-stop]');
-  
-  const setBtn = e.target.closest('[data-status-set]');
-  if (setBtn) {
-    e.preventDefault(); e.stopPropagation();
-    bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
-    renderAll();
-    return;
-  }
-  
-  const loc = e.target.closest('[data-locate]');
-  if (loc) {
-    if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
-    e.stopPropagation();
-    
-    if(window.innerWidth < 900) { $('sidebar').classList.add('open'); $('sidebar-backdrop').classList.add('open'); }
+          renderChallengeGrid();
+          recomputeActiveData();
+      }
 
-    const id = loc.getAttribute('data-locate');
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      el.classList.remove('highlight');
-      void el.offsetWidth;
-      el.classList.add('highlight');
-    }
-  }
-});
+      // --- SIDEBAR RENDERING ---
+      function renderChallengeGrid() {
+        const grid = $('challenge-grid');
+        const q = $('search-challenges').value.toLowerCase();
+        const f = $('filter-challenges').value;
 
-// --- TAB NAVIGATIONS ---
-function switchTab(tab) {
-    currentTab = tab;
-    ['library', 'optimal', 'spreadsheet'].forEach(t => {
-        $(`tab-${t}`).classList.toggle('active', t === tab);
-        $(`view-${t}`).classList.toggle('hidden', t !== tab);
-    });
-}
-$('tab-library').addEventListener('click', () => switchTab('library'));
-$('tab-optimal').addEventListener('click', () => switchTab('optimal'));
+        const html = rawDatabase.challenges.map(c => {
+          const isSelected = selectedChallenges.has(c.id);
+          if (f === 'selected' && !isSelected) return '';
+          if (f === 'unselected' && isSelected) return '';
+          if (q && !c.name.toLowerCase().includes(q)) return '';
 
-// PRO SPREADSHEET TAB
-$('tab-spreadsheet').addEventListener('click', () => {
-    handleProFeature(() => switchTab('spreadsheet'));
-});
+          const customActions = c.isCustom ? `
+            <button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button>
+            <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>
+          ` : '';
 
-$('search-input').addEventListener('input', (e) => { search = e.target.value; renderLibrary(); });
-$('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLibrary(); });
+          return `
+            <div class="challenge-item ${isSelected ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}">
+              <input type="checkbox" ${isSelected ? 'checked' : ''} />
+              <div class="challenge-info">
+                <strong>${c.isCustom ? '⭐ ' : ''}${escapeHtml(c.name)}</strong>
+                <span>${c.count} books</span>
+              </div>
+              <div class="chal-actions">
+                  ${customActions}
+                  <button class="copy-list-btn" title="Copy to clipboard" data-id="${escapeHtml(c.id)}">📋</button>
+              </div>
+            </div>
+          `;
+        }).join('');
 
-$('btn-reset').addEventListener('click', () => {
-  bookStatus = {};
-  $('search-input').value = ''; search = '';
-  $('status-filter').value = 'all'; statusFilter = 'all';
-  renderAll();
-  toast('Filters reset', 'success');
-});
+        grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px; border:none;">No challenges match filter.</div>';
+        $('sidebar-counts').textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
+      }
 
-$('btn-shuffle-overlap').addEventListener('click', () => renderResults('overlap', true));
-$('btn-shuffle-single').addEventListener('click', () => renderResults('single', true));
+      $('search-challenges').addEventListener('input', renderChallengeGrid);
+      $('filter-challenges').addEventListener('change', renderChallengeGrid);
 
-// --- ROBUST COPY LOGIC ---
-$('btn-copy-optimal').addEventListener('click', async () => {
-  if (!lastOptimal.selected.length) return;
-  let md = '### 📚 My Optimal Reading List\n\n';
-  lastOptimal.selected.forEach(b => {
-    const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
-    const authorStr = b.author ? ` by ${b.author}` : '';
-    md += `- [${b.title}](${b.url})${authorStr} *(Covers: ${tags})*\n`;
-  });
-  try { await navigator.clipboard.writeText(md); toast('List copied as markdown', 'success'); } catch { toast('Could not copy', 'error'); }
-});
+      $('challenge-grid').addEventListener('click', async (e) => {
+          const btn = e.target.closest('button');
+          if (btn) {
+              e.stopPropagation();
+              const chalId = btn.getAttribute('data-id');
 
-$('btn-copy-sheet').addEventListener('click', async () => {
-  let html = '<table><thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead><tbody>';
-  let plain = 'Challenge Combination\tCommon Books\n';
-  
-  activeData.sections.forEach((sec, i) => {
-    if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
-    const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
-    sec.books.forEach((b, idx) => {
-      const cat = idx === 0 ? label : '';
-      const authorText = b.author ? ` <span style="color:#6b7185;font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
-      const plainAuthor = b.author ? ` by ${b.author}` : '';
-      html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
-      plain += `${cat}\t${b.title}${plainAuthor}\n`;
-    });
-  });
-  html += '</tbody></table>';
+              if (btn.classList.contains('copy-list-btn')) {
+                  const chalMeta = rawDatabase.challenges.find(c => c.id === chalId);
+                  const books = rawDatabase.books.filter(b => b.challenges.includes(chalId));
+                  let txt = `=HYPERLINK("${chalMeta.url}", "${escapeHtml(chalMeta.name)} (${books.length} books)")\n`;
+                  books.forEach(b => { txt += `=HYPERLINK("${b.url}", "${b.title.replace(/"/g, '""')}")\n`; });
+                  try { await navigator.clipboard.writeText(txt); toast('List copied!', 'success'); } catch { toast('Failed to copy', 'error'); }
+                  return;
+              }
 
-  try {
-    if (navigator.clipboard && window.ClipboardItem) {
-      await navigator.clipboard.write([
-        new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([plain], { type: 'text/plain' }) })
-      ]);
-    } else { await navigator.clipboard.writeText(plain); }
-    toast('Copied — paste into Excel or Sheets', 'success');
-  } catch {
-    const range = document.createRange();
-    range.selectNodeContents(document.querySelector('table.sheet'));
-    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
-    try { document.execCommand('copy'); toast('Copied!', 'success'); } catch { toast('Could not copy', 'error'); }
-    sel.removeAllRanges();
-  }
-});
+              if (btn.classList.contains('delete')) {
+                  if (confirm("Delete this custom list?")) {
+                      delete customLists[chalId];
+                      selectedChallenges.delete(chalId);
+                      localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
+                      buildRawDatabase();
+                      toast('List deleted', 'success');
+                  }
+                  return;
+              }
 
-// Start the app
-loadData();
-</script>
-</body>
+              if (btn.classList.contains('edit')) {
+                  const cData = customLists[chalId];
+                  $('custom-id').value = chalId;
+                  $('custom-name').value = cData.name;
+                  $('custom-books').value = cData.books.map(b => b.url !== '#' ? `- [${b.title}](${b.url})` : b.title).join('\n');
+                  $('modal-title').textContent = "Edit Custom List";
+                  $('custom-modal').classList.add('active');
+                  return;
+              }
+          }
+
+          const item = e.target.closest('.challenge-item');
+          if (!item) return;
+          const id = item.getAttribute('data-id');
+
+          if (selectedChallenges.has(id)) selectedChallenges.delete(id);
+          else selectedChallenges.add(id);
+
+          renderChallengeGrid();
+          recomputeActiveData();
+      });
+
+      $('btn-select-all').addEventListener('click', () => { rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); renderChallengeGrid(); recomputeActiveData(); });
+      $('btn-clear-selection').addEventListener('click', () => { selectedChallenges.clear(); renderChallengeGrid(); recomputeActiveData(); });
+
+      // --- CUSTOM LIST MODAL (PRO) ---
+      $('btn-add-custom').addEventListener('click', () => {
+          handleProFeature(() => {
+              $('custom-id').value = ''; $('custom-name').value = ''; $('custom-books').value = '';
+              $('modal-title').textContent = "Add Custom List";
+              $('custom-modal').classList.add('active');
+          });
+      });
+
+      $('btn-close-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
+      $('btn-cancel-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
+
+      $('btn-save-custom').addEventListener('click', () => {
+          const name = $('custom-name').value.trim();
+          const text = $('custom-books').value.trim();
+          if (!name || !text) return toast("Please provide a name and at least one book.", "error");
+
+          const id = $('custom-id').value || 'c_custom_' + Date.now();
+          const lines = text.split('\n').map(l => l.trim()).filter(l => l);
+
+          const parsedBooks = lines.map(line => {
+              const mdMatch = line.match(/\[(.*?)\]\((.*?)\)/);
+              if (mdMatch) return { title: mdMatch[1].trim(), url: mdMatch[2].trim() };
+              return { title: line.replace(/^[-*•]\s+/, '').trim(), url: '#' };
+          });
+
+          customLists[id] = { name, books: parsedBooks };
+          localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
+
+          $('custom-modal').classList.remove('active');
+          selectedChallenges.add(id);
+          buildRawDatabase();
+          toast("Custom list saved!", "success");
+      });
+
+      // --- COMPUTE OVERLAPS AND STATE ON THE FLY ---
+      function getSubsets(array, minSize = 2) {
+          const result = [];
+          const n = array.length;
+          for (let i = 1; i < 1 << n; i++) {
+              const subset = [];
+              for (let j = 0; j < n; j++) if ((i >> j) & 1) subset.push(array[j]);
+              if (subset.length >= minSize) result.push(subset);
+          }
+          return result;
+      }
+
+      function recomputeActiveData() {
+        if (selectedChallenges.size === 0) {
+          $('workspace').classList.add('hidden');
+          $('workspace-empty').classList.remove('hidden');
+          if(window.innerWidth < 900) { $('sidebar').classList.remove('open'); $('sidebar-backdrop').classList.remove('open'); }
+          return;
+        }
+
+        $('workspace').classList.remove('hidden');
+        $('workspace-empty').classList.add('hidden');
+
+        activeData.categories = Array.from(selectedChallenges);
+        activeData.books = [];
+        const overlapMap = new Map();
+
+        rawDatabase.books.forEach(b => {
+          const relevantCats = b.challenges.filter(c => selectedChallenges.has(c));
+          if (relevantCats.length > 0) {
+            const workingBook = { ...b, categories: relevantCats };
+            activeData.books.push(workingBook);
+            if (!bookStatus[b.id]) bookStatus[b.id] = 'neutral';
+
+            if (relevantCats.length >= 2) {
+              const subsets = getSubsets(relevantCats, 2);
+              subsets.forEach(subset => {
+                const key = subset.sort().join(" + ");
+                if(!overlapMap.has(key)) overlapMap.set(key, { categories: subset, books: [] });
+                overlapMap.get(key).books.push(workingBook);
+              });
+            }
+          }
+        });
+
+        activeData.sections = Array.from(overlapMap.values()).sort((a,b) => {
+          if (b.categories.length !== a.categories.length) return b.categories.length - a.categories.length;
+          return b.books.length - a.books.length;
+        });
+
+        renderAll();
+      }
+
+      // --- RENDERING LOGIC ---
+      function renderAll() { renderLibrary(); renderResults(currentOptimalMode, false); renderSheet(); }
+
+      function statusButtonsHTML(bookId) {
+        const s = bookStatus[bookId] || 'neutral';
+        return `
+          <div class="status-group" data-stop>
+            <button class="inc ${s==='include'?'active':''}" data-status-set="${bookId}" data-status="include" title="Force algorithm to include this book">📌 Must Read</button>
+            <button class="neu ${s==='neutral'?'active':''}" data-status-set="${bookId}" data-status="neutral">Auto</button>
+            <button class="exc ${s==='exclude'?'active':''}" data-status-set="${bookId}" data-status="exclude" title="Prevent algorithm from using this book">✕ Avoid</button>
+          </div>
+        `;
+      }
+
+      function resolveChallengeName(id) {
+          const c = rawDatabase.challenges.find(x => x.id === id);
+          return c ? c.name : id;
+      }
+
+      // Book Card helper utilizing native `loading="lazy"` and explicit dimensions to avoid layout shifts
+      function generateBookCardHTML(b, isOptimal = false, uncoveredSet = new Set()) {
+        const s = bookStatus[b.id];
+        const avoidClass = s === 'exclude' ? 'avoid' : '';
+        const optimalClass = s === 'include' || isOptimal ? 'optimal' : '';
+
+        const coverUrl = b.coverUrl || 'https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png';
+        const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
+        const kuHtml = b.isKindleUnlimited ? `<div class="ku-badge">Kindle Unlimited</div>` : '';
+
+        const tagsHtml = b.categories.map(c => `
+          <span class="tag ${uncoveredSet.has(c) ? 'danger' : ''}" data-locate="sidebar-chal-${safeId(c)}">
+            ${escapeHtml(resolveChallengeName(c))}
+          </span>
+        `).join('');
+
+        return `
+          <div class="book-card ${avoidClass} ${optimalClass}">
+            <div class="book-cover-wrapper">
+               <a href="${escapeHtml(b.url)}" target="_blank" data-stop>
+                 <img class="book-cover" src="${escapeHtml(coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
+               </a>
+            </div>
+            <div class="book-info">
+              <a class="book-title" href="${escapeHtml(b.url)}" target="_blank" data-stop>${escapeHtml(b.title)}</a>
+              ${authorHtml}
+              ${kuHtml}
+              <div class="tags">${tagsHtml}</div>
+            </div>
+            <div style="margin-top:auto; width: 100%; padding-top: 10px;">
+              ${statusButtonsHTML(b.id)}
+            </div>
+          </div>
+        `;
+      }
+
+      function renderLibrary() {
+        const total = activeData.books.length;
+        const inc = activeData.books.filter(b => bookStatus[b.id] === 'include').length;
+        const exc = activeData.books.filter(b => bookStatus[b.id] === 'exclude').length;
+
+        $('library-stats').textContent = `${total} Total Books | 📌 ${inc} Must Read | ✕ ${exc} Avoided`;
+
+        const q = search.toLowerCase();
+        const books = activeData.books
+          .filter(b => b.title.toLowerCase().includes(q))
+          .filter(b => {
+            const s = bookStatus[b.id];
+            if (statusFilter === 'all') return true;
+            if (statusFilter === 'include') return s === 'include';
+            if (statusFilter === 'exclude') return s === 'exclude';
+            return true;
+          }).sort((a,b) => a.title.localeCompare(b.title));
+
+        const lb = $('list-books');
+        lb.innerHTML = books.map(b => generateBookCardHTML(b, false)).join('')
+          || '<div class="empty" style="grid-column: 1 / -1;"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
+      }
+
+      function renderResults(mode = 'overlap', forceRandom = false) {
+        currentOptimalMode = mode;
+        const activeCats = new Set(activeData.categories);
+        const uncovered = new Set(activeCats);
+        const selected = [];
+        let available = [];
+        let failedSingleCategories = [];
+
+        // 1. Process "Must Read"
+        activeData.books.forEach(b => {
+          if (bookStatus[b.id] === 'include') {
+            selected.push(b);
+            b.categories.forEach(c => uncovered.delete(c));
+          } else if (bookStatus[b.id] !== 'exclude') {
+            available.push(b);
+          }
+        });
+
+        if (mode === 'overlap') {
+            while (uncovered.size > 0 && available.length > 0) {
+              const catCounts = {};
+              uncovered.forEach(c => catCounts[c] = 0);
+              available.forEach(b => { b.categories.forEach(c => { if (uncovered.has(c)) catCounts[c]++; }); });
+
+              let bestBook = null;
+              let maxCov = 0;
+              let candidates = [];
+
+              for (const b of available) {
+                const covCats = b.categories.filter(c => uncovered.has(c));
+                const cov = covCats.length;
+                if (cov === 0) continue;
+
+                if (cov > maxCov) { maxCov = cov; candidates = [b]; }
+                else if (cov === maxCov) { candidates.push(b); }
+              }
+
+              if (candidates.length === 0) break;
+              bestBook = forceRandom ? candidates[Math.floor(Math.random() * candidates.length)] : candidates[0];
+
+              selected.push(bestBook);
+              bestBook.categories.forEach(c => uncovered.delete(c));
+              available = available.filter(b => b.id !== bestBook.id);
+            }
+
+        } else if (mode === 'single') {
+            const pureBooks = available.filter(b => b.categories.length === 1);
+            const tempUncovered = Array.from(uncovered);
+            for (const c of tempUncovered) {
+                if (!uncovered.has(c)) continue;
+                const cands = pureBooks.filter(b => b.categories.includes(c));
+                if (cands.length > 0) {
+                    const pick = cands[Math.floor(Math.random() * cands.length)];
+                    selected.push(pick);
+                    uncovered.delete(c);
+                    const index = pureBooks.findIndex(b => b.id === pick.id);
+                    if(index !== -1) pureBooks.splice(index, 1);
+                } else {
+                    failedSingleCategories.push(c);
+                }
+            }
+        }
+
+        lastOptimal = { selected, uncovered: Array.from(uncovered) };
+        $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${selected.length} Books (${mode === 'single' ? 'No overlaps allowed' : 'Maximized overlaps'})`;
+
+        let html = '';
+
+        if (mode === 'single' && failedSingleCategories.length > 0) {
+            html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
+        }
+
+        if (uncovered.size > 0 && mode === 'overlap') {
+            html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${Array.from(uncovered).map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try un-excluding some books in the Library.</small></div></div>`;
+        }
+
+        if (activeCats.size === 0) {
+            html += '<div class="empty">No challenges selected.</div>';
+        } else if (!selected.length) {
+            html += '<div class="empty">No books available for this path.</div>';
+        } else {
+            html += `<div class="book-grid">` + selected.map(b => generateBookCardHTML(b, true, uncovered)).join('') + `</div>`;
+        }
+
+        $('output-optimal').innerHTML = html;
+      }
+
+      function renderSheet() {
+        const tbody = $('sheet-body');
+        let html = '';
+        activeData.sections.forEach((sec, i) => {
+          if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
+          const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
+          sec.books.forEach((b, idx) => {
+            const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+            html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${b.url}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
+          });
+        });
+        tbody.innerHTML = html;
+        $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
+      }
+
+      // --- EVENT DELEGATION FOR UI INTERACTIONS ---
+      document.body.addEventListener('click', (e) => {
+        const stopParent = e.target.closest('[data-stop]');
+
+        const setBtn = e.target.closest('[data-status-set]');
+        if (setBtn) {
+          e.preventDefault(); e.stopPropagation();
+          bookStatus[setBtn.dataset.statusSet] = setBtn.dataset.status;
+          renderAll();
+          return;
+        }
+
+        const loc = e.target.closest('[data-locate]');
+        if (loc) {
+          if (stopParent && stopParent !== loc && stopParent.contains(e.target)) return;
+          e.stopPropagation();
+
+          if(window.innerWidth < 900) { $('sidebar').classList.add('open'); $('sidebar-backdrop').classList.add('open'); }
+
+          const id = loc.getAttribute('data-locate');
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            el.classList.remove('highlight');
+            void el.offsetWidth;
+            el.classList.add('highlight');
+          }
+        }
+      });
+
+      // --- TAB NAVIGATIONS ---
+      function switchTab(tab) {
+          currentTab = tab;
+          ['library', 'optimal', 'spreadsheet'].forEach(t => {
+              $(`tab-${t}`).classList.toggle('active', t === tab);
+              $(`view-${t}`).classList.toggle('hidden', t !== tab);
+          });
+      }
+      $('tab-library').addEventListener('click', () => switchTab('library'));
+      $('tab-optimal').addEventListener('click', () => switchTab('optimal'));
+
+      // PRO SPREADSHEET TAB
+      $('tab-spreadsheet').addEventListener('click', () => {
+          handleProFeature(() => switchTab('spreadsheet'));
+      });
+
+      $('search-input').addEventListener('input', (e) => { search = e.target.value; renderLibrary(); });
+      $('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLibrary(); });
+
+      $('btn-reset').addEventListener('click', () => {
+        bookStatus = {};
+        $('search-input').value = ''; search = '';
+        $('status-filter').value = 'all'; statusFilter = 'all';
+        renderAll();
+        toast('Filters reset', 'success');
+      });
+
+      $('btn-shuffle-overlap').addEventListener('click', () => renderResults('overlap', true));
+      $('btn-shuffle-single').addEventListener('click', () => renderResults('single', true));
+
+      // --- ROBUST COPY LOGIC ---
+      $('btn-copy-optimal').addEventListener('click', async () => {
+        if (!lastOptimal.selected.length) return;
+        let md = '### 📚 My Optimal Reading List\n\n';
+        lastOptimal.selected.forEach(b => {
+          const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
+          const authorStr = b.author ? ` by ${b.author}` : '';
+          md += `- [${b.title}](${b.url})${authorStr} *(Covers: ${tags})*\n`;
+        });
+        try { await navigator.clipboard.writeText(md); toast('List copied as markdown', 'success'); } catch { toast('Could not copy', 'error'); }
+      });
+
+      $('btn-copy-sheet').addEventListener('click', async () => {
+        let html = '<table><thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead><tbody>';
+        let plain = 'Challenge Combination\tCommon Books\n';
+
+        activeData.sections.forEach((sec, i) => {
+          if (i > 0) { html += '<tr><td></td><td></td></tr>'; plain += '\n'; }
+          const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
+          sec.books.forEach((b, idx) => {
+            const cat = idx === 0 ? label : '';
+            const authorText = b.author ? ` <span style="color:#6b7185;font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+            const plainAuthor = b.author ? ` by ${b.author}` : '';
+            html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url)}">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
+            plain += `${cat}\t${b.title}${plainAuthor}\n`;
+          });
+        });
+        html += '</tbody></table>';
+
+        try {
+          if (navigator.clipboard && window.ClipboardItem) {
+            await navigator.clipboard.write([
+              new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([plain], { type: 'text/plain' }) })
+            ]);
+          } else { await navigator.clipboard.writeText(plain); }
+          toast('Copied — paste into Excel or Sheets', 'success');
+        } catch {
+          const range = document.createRange();
+          range.selectNodeContents(document.querySelector('table.sheet'));
+          const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+          try { document.execCommand('copy'); toast('Copied!', 'success'); } catch { toast('Could not copy', 'error'); }
+          sel.removeAllRanges();
+        }
+      });
+
+      // Start the app
+      loadData();
+    </script>
+  </body>
 </html>

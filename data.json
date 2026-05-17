@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-14T10:03:37.609Z",
+  "lastUpdated": "2026-05-17T12:06:20.287Z",
   "challenges": [
     {
       "id": "AAPI Heritage",
@@ -41,7 +41,7 @@
       "id": "Summer Reading",
       "name": "Summer Reading",
       "url": "https://www.goodreads.com/blog/show/3094",
-      "count": 78
+      "count": 77
     },
     {
       "id": "Trending Books",
@@ -7548,16 +7548,6 @@
       "author": "George Orwell",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1684384878i/156698496.jpg",
       "url": "https://www.goodreads.com/book/show/156698496",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Summer Reading"
-      ]
-    },
-    {
-      "title": "Heartstopper: Volume Six (Heartstopper, #6)",
-      "author": "Alice Oseman",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773331083i/125120424.jpg",
-      "url": "https://www.goodreads.com/book/show/125120424",
       "isKindleUnlimited": false,
       "challenges": [
         "Summer Reading"

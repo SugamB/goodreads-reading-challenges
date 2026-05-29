@@ -1,6 +1,12 @@
 {
-  "lastUpdated": "2026-05-17T12:06:20.287Z",
+  "lastUpdated": "2026-05-29T14:04:34.402Z",
   "challenges": [
+    {
+      "id": "Pride Month",
+      "name": "Pride Month",
+      "url": "https://www.goodreads.com/blog/show/3085",
+      "count": 160
+    },
     {
       "id": "AAPI Heritage",
       "name": "AAPI Heritage",
@@ -51,6 +57,1641 @@
     }
   ],
   "books": [
+    {
+      "title": "John of John",
+      "author": "Douglas   Stuart",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1777987045i/235260861.jpg",
+      "url": "https://www.goodreads.com/book/show/235260861",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "There's Only One Sin in Hollywood",
+      "author": "Rasheed Newson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758807201i/240019818.jpg",
+      "url": "https://www.goodreads.com/book/show/240019818",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "They All Fall in Love at the End",
+      "author": "Haili Blassingame",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760887051i/242974680.jpg",
+      "url": "https://www.goodreads.com/book/show/242974680",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "All Them Dogs",
+      "author": "Djamel White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753152609i/217114261.jpg",
+      "url": "https://www.goodreads.com/book/show/217114261",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Open Era",
+      "author": "Edward Schmit",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761631478i/240118875.jpg",
+      "url": "https://www.goodreads.com/book/show/240118875",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "I Love You Don't Die",
+      "author": "Jade Song",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752161422i/236643256.jpg",
+      "url": "https://www.goodreads.com/book/show/236643256",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Night Night Fawn",
+      "author": "Jordy Rosenberg",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753844444i/235699978.jpg",
+      "url": "https://www.goodreads.com/book/show/235699978",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Star Shipped",
+      "author": "Cat Sebastian",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757076317i/235672421.jpg",
+      "url": "https://www.goodreads.com/book/show/235672421",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "So Old, So Young",
+      "author": "Grant Ginder",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394013i/235992675.jpg",
+      "url": "https://www.goodreads.com/book/show/235992675",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Escapist Reads",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Almost Life",
+      "author": "Kiran Millwood Hargrave",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394012i/235992657.jpg",
+      "url": "https://www.goodreads.com/book/show/235992657",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Kin",
+      "author": "Tayari Jones",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758077674i/241126800.jpg",
+      "url": "https://www.goodreads.com/book/show/241126800",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Meeting New People",
+      "author": "Daniel M. Lavery",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770013470i/241095733.jpg",
+      "url": "https://www.goodreads.com/book/show/241095733",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Lady for All Seasons",
+      "author": "T.J.   Alexander",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753237911i/236115757.jpg",
+      "url": "https://www.goodreads.com/book/show/236115757",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Is This a Cry for Help?",
+      "author": "Emily R. Austin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749393987i/235993013.jpg",
+      "url": "https://www.goodreads.com/book/show/235993013",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Missing Sam",
+      "author": "Thrity Umrigar",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750211638i/232884526.jpg",
+      "url": "https://www.goodreads.com/book/show/232884526",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "Hemlock",
+      "author": "Melissa Faliveno",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755881323i/232885503.jpg",
+      "url": "https://www.goodreads.com/book/show/232885503",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Muñeca",
+      "author": "Cynthia Gómez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763311954i/241125552.jpg",
+      "url": "https://www.goodreads.com/book/show/241125552",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Sweetbitter Song",
+      "author": "Rosie Hewlett",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758899699i/234069599.jpg",
+      "url": "https://www.goodreads.com/book/show/234069599",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Take Me With You",
+      "author": "Steven  Rowley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755748360i/240381489.jpg",
+      "url": "https://www.goodreads.com/book/show/240381489",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Canon",
+      "author": "Paige Lewis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755658374i/240381441.jpg",
+      "url": "https://www.goodreads.com/book/show/240381441",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Mad Eden: A Novel",
+      "author": "Morgan Thomas",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757369189i/241387528.jpg",
+      "url": "https://www.goodreads.com/book/show/241387528",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Burn Down Master's House",
+      "author": "Clay Cane",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750900704i/232209360.jpg",
+      "url": "https://www.goodreads.com/book/show/232209360",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Editors' Picks",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Girl's Girl",
+      "author": "Sonia  Feldman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763393309i/241125525.jpg",
+      "url": "https://www.goodreads.com/book/show/241125525",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Nothing Tastes as Good",
+      "author": "Luke Dumas",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749399493i/235992833.jpg",
+      "url": "https://www.goodreads.com/book/show/235992833",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Afternoon Hours of a Hermit",
+      "author": "Patrick Cottrell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753100456i/239132027.jpg",
+      "url": "https://www.goodreads.com/book/show/239132027",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Bone of My Bone",
+      "author": "Johanna van Veen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778583090i/242436812.jpg",
+      "url": "https://www.goodreads.com/book/show/242436812",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Tuxedo Society: A Novel",
+      "author": "Paul Rudnick",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760887089i/242974714.jpg",
+      "url": "https://www.goodreads.com/book/show/242974714",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Homebound",
+      "author": "Portia Elan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773741087i/242678102.jpg",
+      "url": "https://www.goodreads.com/book/show/242678102",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Make Me Better",
+      "author": "Sarah Gailey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756949657i/240019883.jpg",
+      "url": "https://www.goodreads.com/book/show/240019883",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Good Person",
+      "author": "Kirsten  King",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751337794i/237693310.jpg",
+      "url": "https://www.goodreads.com/book/show/237693310",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "All Us Saints",
+      "author": "Katherine Packert Burke",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757016918i/240310378.jpg",
+      "url": "https://www.goodreads.com/book/show/240310378",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "What We Are Seeking",
+      "author": "Cameron  Reed",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752287857i/231126944.jpg",
+      "url": "https://www.goodreads.com/book/show/231126944",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Being Aro: A Collection of Aromantic Fiction about Love, Connection, and Empowerment",
+      "author": "Madeline Dyer, Rosiee Thor, Ann Zhao",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763986765i/231928138.jpg",
+      "url": "https://www.goodreads.com/book/show/231928138",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Honor & Heresy",
+      "author": "Max Francis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758578610i/62991929.jpg",
+      "url": "https://www.goodreads.com/book/show/62991929",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Outer Country",
+      "author": "Davin Malasarn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754449522i/239779293.jpg",
+      "url": "https://www.goodreads.com/book/show/239779293",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Saturn Returning",
+      "author": "Kim Narby",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754089636i/239288050.jpg",
+      "url": "https://www.goodreads.com/book/show/239288050",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "See You at the Summit",
+      "author": "Jordyn Taylor",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749399463i/235993050.jpg",
+      "url": "https://www.goodreads.com/book/show/235993050",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Maidenheads: A Novel",
+      "author": "Benny B. Peterson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756269303i/240688568.jpg",
+      "url": "https://www.goodreads.com/book/show/240688568",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The House of Now and Then",
+      "author": "Edward  Underhill",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762521742i/240350695.jpg",
+      "url": "https://www.goodreads.com/book/show/240350695",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "No God but Us",
+      "author": "Bobuq Sayed",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764803285i/240748547.jpg",
+      "url": "https://www.goodreads.com/book/show/240748547",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Disaster Gay Detective Agency",
+      "author": "Lev A.C. Rosen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764293959i/240468383.jpg",
+      "url": "https://www.goodreads.com/book/show/240468383",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Our Ex's Wedding",
+      "author": "Taleen Voskuni",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745203582i/231681642.jpg",
+      "url": "https://www.goodreads.com/book/show/231681642",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Thirty Love",
+      "author": "Tom Vellner",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757386562i/236117115.jpg",
+      "url": "https://www.goodreads.com/book/show/236117115",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Shapes of Love",
+      "author": "L.V. Peñalba",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758738707i/240019850.jpg",
+      "url": "https://www.goodreads.com/book/show/240019850",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Ignore All Previous Instructions",
+      "author": "Ada Hoffmann",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760718825i/241272872.jpg",
+      "url": "https://www.goodreads.com/book/show/241272872",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Spoiled Milk",
+      "author": "Avery Curran",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749611976i/236115798.jpg",
+      "url": "https://www.goodreads.com/book/show/236115798",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Fox and the Devil",
+      "author": "Kiersten White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758250614i/236115775.jpg",
+      "url": "https://www.goodreads.com/book/show/236115775",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "We Burned So Bright",
+      "author": "T.J. Klune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1774364731i/231126885.jpg",
+      "url": "https://www.goodreads.com/book/show/231126885",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Murder Most Camp",
+      "author": "Nicolas DiDomizio",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754008400i/238940774.jpg",
+      "url": "https://www.goodreads.com/book/show/238940774",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Two Left Feet",
+      "author": "Kallie Emblidge",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748070967i/231363135.jpg",
+      "url": "https://www.goodreads.com/book/show/231363135",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Last First Kiss",
+      "author": "Julian Winters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760707695i/231127304.jpg",
+      "url": "https://www.goodreads.com/book/show/231127304",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Anderson in Bloom",
+      "author": "Jennifer Dugan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751803165i/235672468.jpg",
+      "url": "https://www.goodreads.com/book/show/235672468",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Puck",
+      "author": "Samantha  Allen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756870625i/241126623.jpg",
+      "url": "https://www.goodreads.com/book/show/241126623",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Plastic, Prism, Void: Part One",
+      "author": "Violet Allen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757713256i/239234467.jpg",
+      "url": "https://www.goodreads.com/book/show/239234467",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Summer Boy",
+      "author": "Philippe Besson, Sam Taylor",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760892954i/242977917.jpg",
+      "url": "https://www.goodreads.com/book/show/242977917",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Father Material (London Calling, #3)",
+      "author": "Alexis  Hall",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755328523i/61854803.jpg",
+      "url": "https://www.goodreads.com/book/show/61854803",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Playing for Keeps",
+      "author": "Alexandria Bellefleur",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753933839i/231127100.jpg",
+      "url": "https://www.goodreads.com/book/show/231127100",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Apparently, Sir Cameron Needs to Die",
+      "author": "Greer Stothers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748629221i/221205228.jpg",
+      "url": "https://www.goodreads.com/book/show/221205228",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "On Sundays She Picked Flowers",
+      "author": "Yah-Yah Scholfield",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394051i/235992397.jpg",
+      "url": "https://www.goodreads.com/book/show/235992397",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Get Over It, April Evans (Clover Lake, #2)",
+      "author": "Ashley Herring Blake",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749265016i/232794580.jpg",
+      "url": "https://www.goodreads.com/book/show/232794580",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Red Winter",
+      "author": "Cameron Sullivan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753559469i/231679954.jpg",
+      "url": "https://www.goodreads.com/book/show/231679954",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Wife Shaped Bodies",
+      "author": "Laura Cranehill",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749400685i/235992180.jpg",
+      "url": "https://www.goodreads.com/book/show/235992180",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Duke: A Novel",
+      "author": "Anna  Cowan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755328674i/222361588.jpg",
+      "url": "https://www.goodreads.com/book/show/222361588",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Pretend You're Dead and I Carry You",
+      "author": "Julián Delgado Lopera",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764880361i/241381448.jpg",
+      "url": "https://www.goodreads.com/book/show/241381448",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "How to Fake It in Society",
+      "author": "K.J. Charles",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749830828i/231126909.jpg",
+      "url": "https://www.goodreads.com/book/show/231126909",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "American Spirits",
+      "author": "Anna  Dorn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394004i/235991979.jpg",
+      "url": "https://www.goodreads.com/book/show/235991979",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Let's Not Go Overboard Here",
+      "author": "Erica Hendry",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759786029i/242445396.jpg",
+      "url": "https://www.goodreads.com/book/show/242445396",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Lost Book of Lancelot",
+      "author": "John  Glynn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760418168i/241039404.jpg",
+      "url": "https://www.goodreads.com/book/show/241039404",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Waiting on a Friend",
+      "author": "Natalie Adler",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756269322i/240688584.jpg",
+      "url": "https://www.goodreads.com/book/show/240688584",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Bloom",
+      "author": "Robbie Couch",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749399773i/235992797.jpg",
+      "url": "https://www.goodreads.com/book/show/235992797",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Bromantasy",
+      "author": "Máire Roche",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761878190i/241205550.jpg",
+      "url": "https://www.goodreads.com/book/show/241205550",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "That's What Friends Are For",
+      "author": "Wade Rouse",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759243381i/232737568.jpg",
+      "url": "https://www.goodreads.com/book/show/232737568",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Fat Swim: Fiction",
+      "author": "Emma Copley Eisenberg",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753844336i/239432849.jpg",
+      "url": "https://www.goodreads.com/book/show/239432849",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "City of Others (The DEUS Files, #1)",
+      "author": "Jared Poon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762203949i/232885486.jpg",
+      "url": "https://www.goodreads.com/book/show/232885486",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Aviary",
+      "author": "Maria Dong",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764305259i/242707590.jpg",
+      "url": "https://www.goodreads.com/book/show/242707590",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Whidbey",
+      "author": "T Kira Madden",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751916938i/236079795.jpg",
+      "url": "https://www.goodreads.com/book/show/236079795",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "More Like Enemigas",
+      "author": "Stephanie   Hope",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755253361i/227772353.jpg",
+      "url": "https://www.goodreads.com/book/show/227772353",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The South",
+      "author": "Tash Aw",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731456163i/217387871.jpg",
+      "url": "https://www.goodreads.com/book/show/217387871",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Lonely Crowds",
+      "author": "Stephanie Wambugu",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736955325i/221179051.jpg",
+      "url": "https://www.goodreads.com/book/show/221179051",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Book of Luke",
+      "author": "Lovell Holder",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1744846332i/231109687.jpg",
+      "url": "https://www.goodreads.com/book/show/231109687",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Next Time Will Be Our Turn",
+      "author": "Jesse Q. Sutanto",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1744082141i/227912363.jpg",
+      "url": "https://www.goodreads.com/book/show/227912363",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "As Many Souls as Stars",
+      "author": "Natasha Siegel",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742301452i/228383160.jpg",
+      "url": "https://www.goodreads.com/book/show/228383160",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Palaver",
+      "author": "Bryan Washington",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742483203i/222376682.jpg",
+      "url": "https://www.goodreads.com/book/show/222376682",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Like Family",
+      "author": "Erin O. White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751376673i/226747123.jpg",
+      "url": "https://www.goodreads.com/book/show/226747123",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Isle in the Silver Sea",
+      "author": "Tasha Suri",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740827191i/219134676.jpg",
+      "url": "https://www.goodreads.com/book/show/219134676",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "You Weren't Meant to Be Human",
+      "author": "Andrew Joseph White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756129048i/224004327.jpg",
+      "url": "https://www.goodreads.com/book/show/224004327",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Ladies in Hating (Belvoir's Library, #3)",
+      "author": "Alexandra Vasti",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736467181i/222376849.jpg",
+      "url": "https://www.goodreads.com/book/show/222376849",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "All of Us Murderers",
+      "author": "K.J. Charles",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747946488i/222476094.jpg",
+      "url": "https://www.goodreads.com/book/show/222476094",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Atmosphere",
+      "author": "Taylor Jenkins Reid",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730469032i/220817728.jpg",
+      "url": "https://www.goodreads.com/book/show/220817728",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "Bury Our Bones in the Midnight Soil",
+      "author": "V.E. Schwab, Victoria Schwab",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752327619i/215020997.jpg",
+      "url": "https://www.goodreads.com/book/show/215020997",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Marathon Reader"
+      ]
+    },
+    {
+      "title": "These Heathens",
+      "author": "Mia McKenzie",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735246683i/219301727.jpg",
+      "url": "https://www.goodreads.com/book/show/219301727",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Girls Girls Girls",
+      "author": "Shoshana von Blanckensee",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728227267i/219301745.jpg",
+      "url": "https://www.goodreads.com/book/show/219301745",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Winging It with You",
+      "author": "Chip Pons",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729524958i/218695891.jpg",
+      "url": "https://www.goodreads.com/book/show/218695891",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Escapist Reads"
+      ]
+    },
+    {
+      "title": "The Emperor of Gladness",
+      "author": "Ocean Vuong",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747142606i/219848315.jpg",
+      "url": "https://www.goodreads.com/book/show/219848315",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Disappoint Me",
+      "author": "Nicola Dinan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731337834i/218153678.jpg",
+      "url": "https://www.goodreads.com/book/show/218153678",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "The Incandescent",
+      "author": "Emily  Tesh",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723556679i/217387935.jpg",
+      "url": "https://www.goodreads.com/book/show/217387935",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Disco Witches of Fire Island",
+      "author": "Blair Fell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1771688872i/217248010.jpg",
+      "url": "https://www.goodreads.com/book/show/217248010",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Love in Focus",
+      "author": "Lyla Lee",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734629553i/218372269.jpg",
+      "url": "https://www.goodreads.com/book/show/218372269",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Sharp Endless Need",
+      "author": "Mac (Marisa) Crane",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728571357i/214537791.jpg",
+      "url": "https://www.goodreads.com/book/show/214537791",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Woodworking",
+      "author": "Emily St. James",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731853863i/217311813.jpg",
+      "url": "https://www.goodreads.com/book/show/217311813",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Lilac People",
+      "author": "Milo Todd",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722483278i/217045791.jpg",
+      "url": "https://www.goodreads.com/book/show/217045791",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Lessons in Magic and Disaster",
+      "author": "Charlie Jane Anders",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728609256i/217387772.jpg",
+      "url": "https://www.goodreads.com/book/show/217387772",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Black Flame",
+      "author": "Gretchen Felker-Martin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752682384i/212900404.jpg",
+      "url": "https://www.goodreads.com/book/show/212900404",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "When the Tides Held the Moon",
+      "author": "Venessa Vida Kelley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736287500i/213075628.jpg",
+      "url": "https://www.goodreads.com/book/show/213075628",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Open, Heaven",
+      "author": "Seán Hewitt",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722609066i/216634841.jpg",
+      "url": "https://www.goodreads.com/book/show/216634841",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "When the Harvest Comes",
+      "author": "Denne Michele Norris",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722113828i/216522695.jpg",
+      "url": "https://www.goodreads.com/book/show/216522695",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Language of Limbs",
+      "author": "Dylin Hardcastle",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1724813606i/218153837.jpg",
+      "url": "https://www.goodreads.com/book/show/218153837",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Expert of Subtle Revisions",
+      "author": "Kirsten Menger-Anderson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718765499i/214986234.jpg",
+      "url": "https://www.goodreads.com/book/show/214986234",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "A Family Matter",
+      "author": "Claire   Lynch",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754234338i/220161203.jpg",
+      "url": "https://www.goodreads.com/book/show/220161203",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Futbolista",
+      "author": "Jonny Garza Villa",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1725321851i/215748674.jpg",
+      "url": "https://www.goodreads.com/book/show/215748674",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Hungerstone",
+      "author": "Kat Dunn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1724718900i/212342605.jpg",
+      "url": "https://www.goodreads.com/book/show/212342605",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Fantasies of Future Things",
+      "author": "Doug     Jones",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719020895i/214151221.jpg",
+      "url": "https://www.goodreads.com/book/show/214151221",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Stag Dance",
+      "author": "Torrey Peters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723042164i/215362032.jpg",
+      "url": "https://www.goodreads.com/book/show/215362032",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Fundamentally",
+      "author": "Nussaibah Younis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1724179089i/213870133.jpg",
+      "url": "https://www.goodreads.com/book/show/213870133",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "I Leave It Up to You",
+      "author": "Jinwoo Chong",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719889851i/214399236.jpg",
+      "url": "https://www.goodreads.com/book/show/214399236",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Loca",
+      "author": "Alejandro  Heredia",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717696496i/214151927.jpg",
+      "url": "https://www.goodreads.com/book/show/214151927",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Say Nephew: On Boyhood, Unclehood, and Queer Mentorship",
+      "author": "Steven Pfau",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756267561i/240687482.jpg",
+      "url": "https://www.goodreads.com/book/show/240687482",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Pride and Prejudices: Queer Lives and the Law",
+      "author": "Keio Yoshida",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749598864i/228915429.jpg",
+      "url": "https://www.goodreads.com/book/show/228915429",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "No Fats, No Fems: A Guide to Queer Empathy and Unpacking Prejudice",
+      "author": "Max Hovey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770399924i/240351095.jpg",
+      "url": "https://www.goodreads.com/book/show/240351095",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Salt Lakes: An Unnatural History",
+      "author": "Caroline Tracey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750130238i/233411509.jpg",
+      "url": "https://www.goodreads.com/book/show/233411509",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Black Queer History of the United States (ReVisioning History)",
+      "author": "C. Riley Snorton, Darius Bost",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746563765i/231681148.jpg",
+      "url": "https://www.goodreads.com/book/show/231681148",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Ugly: A Letter to My Daughter",
+      "author": "Stephanie Fairyington",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754449483i/239779283.jpg",
+      "url": "https://www.goodreads.com/book/show/239779283",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Double Dutch Fuss: A Memoir",
+      "author": "Phill Branch",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765573064i/240687154.jpg",
+      "url": "https://www.goodreads.com/book/show/240687154",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Memoirs of a Gay Shah: My Story of Family, Fame, and Becoming a King",
+      "author": "Reza Farahan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753308362i/216594944.jpg",
+      "url": "https://www.goodreads.com/book/show/216594944",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Conversion Therapy Dropout: A Queer Story of Faith and Belonging",
+      "author": "Timothy Schraeder Rodriguez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768012032i/235848714.jpg",
+      "url": "https://www.goodreads.com/book/show/235848714",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Lesbian Bar Chronicles: The Living History and Hopeful Future of America's Dyke Dives and Sapphic Spaces",
+      "author": "Rachel Karp",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756352558i/240686799.jpg",
+      "url": "https://www.goodreads.com/book/show/240686799",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Spawning Season: An Experiment in Queer Parenthood",
+      "author": "Joseph Osmundson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761327151i/240310441.jpg",
+      "url": "https://www.goodreads.com/book/show/240310441",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "What I Made for Dinner: A Memoir",
+      "author": "Krys Malcolm Belc",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764840536i/244776027.jpg",
+      "url": "https://www.goodreads.com/book/show/244776027",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Inspiration Porn: Essays",
+      "author": "Ryan O'Connell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763581044i/240019535.jpg",
+      "url": "https://www.goodreads.com/book/show/240019535",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Mighty Real: A History of LGBTQ Music, 1969-2000",
+      "author": "Barry  Walters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755140061i/240114576.jpg",
+      "url": "https://www.goodreads.com/book/show/240114576",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Big Baby: On Endings, Beginnings, and an Interdimensional Cat",
+      "author": "Kevin James Thornton",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759851821i/242445215.jpg",
+      "url": "https://www.goodreads.com/book/show/242445215",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "A Room in Bombay: A Memoir",
+      "author": "Manil Suri",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751070362i/233411607.jpg",
+      "url": "https://www.goodreads.com/book/show/233411607",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "One Aladdin Two Lamps",
+      "author": "Jeanette Winterson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751723888i/234100962.jpg",
+      "url": "https://www.goodreads.com/book/show/234100962",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "Genderqueer Menopause: Navigating Menopause for Trans, Gender-Nonconforming, Genderfluid, and Other Queer-Bodied Folx",
+      "author": "Lasara Firefox Allen, Marie Benkley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1744939037i/231363751.jpg",
+      "url": "https://www.goodreads.com/book/show/231363751",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "How Queer Bookshops Changed the World",
+      "author": "A.J.  West",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760821342i/242952673.jpg",
+      "url": "https://www.goodreads.com/book/show/242952673",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Devout: Losing My Faith to Find Myself",
+      "author": "David Archuleta",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753289465i/217223354.jpg",
+      "url": "https://www.goodreads.com/book/show/217223354",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Healing the Oppressed Body: A Therapeutic Guide for Radical Self-Liberation",
+      "author": "Andrea Gutiérrez-Glik",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752634984i/235699068.jpg",
+      "url": "https://www.goodreads.com/book/show/235699068",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "All the Way to the River",
+      "author": "Elizabeth Gilbert",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736999462i/223405886.jpg",
+      "url": "https://www.goodreads.com/book/show/223405886",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Trending Books"
+      ]
+    },
+    {
+      "title": "Actress of a Certain Age: My Twenty-Year Trail to Overnight Success",
+      "author": "Jeff Hiller",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730640072i/220902134.jpg",
+      "url": "https://www.goodreads.com/book/show/220902134",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Dry Season: A Memoir of Pleasure in a Year Without Sex",
+      "author": "Melissa Febos",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735859722i/218461430.jpg",
+      "url": "https://www.goodreads.com/book/show/218461430",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Forest Euphoria: The Abounding Queerness of Nature",
+      "author": "Patricia Ononiwu Kaishian",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746846646i/215612512.jpg",
+      "url": "https://www.goodreads.com/book/show/215612512",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "So Many Stars: An Oral History of Trans, Nonbinary, Genderqueer, and Two-Spirit People of Color",
+      "author": "Caro De Robertis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726038892i/218372243.jpg",
+      "url": "https://www.goodreads.com/book/show/218372243",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Marsha: The Joy and Defiance of Marsha P. Johnson",
+      "author": "Tourmaline",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729801855i/217927404.jpg",
+      "url": "https://www.goodreads.com/book/show/217927404",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Baldwin: A Love Story",
+      "author": "Nicholas Boggs",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760526681i/217387674.jpg",
+      "url": "https://www.goodreads.com/book/show/217387674",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books",
+        "Editors' Picks"
+      ]
+    },
+    {
+      "title": "Paper Doll: Notes from a Late Bloomer",
+      "author": "Dylan Mulvaney",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1727312874i/219486384.jpg",
+      "url": "https://www.goodreads.com/book/show/219486384",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "So Gay for You: Friendship, Found Family, and the Show That Started It All",
+      "author": "Leisha Hailey, Kate Moennig",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726293239i/217388362.jpg",
+      "url": "https://www.goodreads.com/book/show/217388362",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Dad Rock That Made Me a Woman",
+      "author": "Niko Stratis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733174822i/217873806.jpg",
+      "url": "https://www.goodreads.com/book/show/217873806",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Alligator Tears: A Memoir in Essays",
+      "author": "Edgar Gomez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1715484009i/213243970.jpg",
+      "url": "https://www.goodreads.com/book/show/213243970",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Hello Stranger: Musings on Modern Intimacies",
+      "author": "Manuel Betancourt",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1713152270i/211401550.jpg",
+      "url": "https://www.goodreads.com/book/show/211401550",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "All the Parts We Exile",
+      "author": "Roza Nozari",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734238393i/216136052.jpg",
+      "url": "https://www.goodreads.com/book/show/216136052",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Good Soil: The Education of an Accidental Farmhand",
+      "author": "Jeff Chu",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1725506566i/215361966.jpg",
+      "url": "https://www.goodreads.com/book/show/215361966",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "AAPI Heritage"
+      ]
+    },
+    {
+      "title": "Trauma Plot: A Life",
+      "author": "Jamie Hood",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723659933i/213618152.jpg",
+      "url": "https://www.goodreads.com/book/show/213618152",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Slayers, Every One of Us: How One Girl in All the World Showed Us How to Hold On",
+      "author": "Kristin Russo, Jenny Owen Youngs",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718232338i/211004154.jpg",
+      "url": "https://www.goodreads.com/book/show/211004154",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "To Belong Here: A New Generation of Queer, Trans, and Two-Spirit Appalachian Writers (Appalachian Futures Black Native & Queer Voices)",
+      "author": "Rae Garringer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719010543i/213604313.jpg",
+      "url": "https://www.goodreads.com/book/show/213604313",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Uncanny Valley Girls: Essays on Horror, Survival, and Love – A Literary Hub Most Anticipated Memoir on Trans Identity and Gender",
+      "author": "Zefyr Lisowski",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739669322i/223339016.jpg",
+      "url": "https://www.goodreads.com/book/show/223339016",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Gertrude Stein: An Afterlife",
+      "author": "Francesca Wade",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747237573i/224003754.jpg",
+      "url": "https://www.goodreads.com/book/show/224003754",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month",
+        "Books on Books"
+      ]
+    },
+    {
+      "title": "The Einstein of Sex: Dr. Magnus Hirschfeld, Visionary of Weimar Berlin",
+      "author": "Daniel Brook",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719009084i/213395517.jpg",
+      "url": "https://www.goodreads.com/book/show/213395517",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Adulting for Amateurs: Misadventures of a Geriatric Millennial",
+      "author": "Jess H. Gutierrez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753152617i/239152347.jpg",
+      "url": "https://www.goodreads.com/book/show/239152347",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "Dining Out: First Dates, Defiant Nights, and Last Call Disco Fries at America's Gay Restaurants",
+      "author": "Erik Piepenburg",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734596187i/220175369.jpg",
+      "url": "https://www.goodreads.com/book/show/220175369",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
+    {
+      "title": "The Intermediaries: A Weimar Story",
+      "author": "Brandy Schillace",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737688865i/218569830.jpg",
+      "url": "https://www.goodreads.com/book/show/218569830",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Pride Month"
+      ]
+    },
     {
       "title": "The Last of Earth",
       "author": "Deepa Anappara",
@@ -217,16 +1858,6 @@
       ]
     },
     {
-      "title": "I Love You Don't Die",
-      "author": "Jade Song",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752161422i/236643256.jpg",
-      "url": "https://www.goodreads.com/book/show/236643256",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
       "title": "Crown City (Japantown Mystery #3)",
       "author": "Naomi Hirahara",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753557477i/234353362.jpg",
@@ -325,17 +1956,6 @@
       "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
-      ]
-    },
-    {
-      "title": "Whidbey",
-      "author": "T Kira Madden",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751916938i/236079795.jpg",
-      "url": "https://www.goodreads.com/book/show/236079795",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage",
-        "Community Picks"
       ]
     },
     {
@@ -621,17 +2241,6 @@
       ]
     },
     {
-      "title": "Missing Sam",
-      "author": "Thrity Umrigar",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750211638i/232884526.jpg",
-      "url": "https://www.goodreads.com/book/show/232884526",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage",
-        "Community Picks"
-      ]
-    },
-    {
       "title": "Minbak",
       "author": "Ela Lee",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759909547i/235793220.jpg",
@@ -656,16 +2265,6 @@
       "author": "Karan Mahajan",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754621632i/236116680.jpg",
       "url": "https://www.goodreads.com/book/show/236116680",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
-      "title": "The Emperor of Gladness",
-      "author": "Ocean Vuong",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747142606i/219848315.jpg",
-      "url": "https://www.goodreads.com/book/show/219848315",
       "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
@@ -795,16 +2394,6 @@
       ]
     },
     {
-      "title": "I Leave It Up to You",
-      "author": "Jinwoo Chong",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719889851i/214399236.jpg",
-      "url": "https://www.goodreads.com/book/show/214399236",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
       "title": "The Family Recipe",
       "author": "Carolyn Huynh",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1720031331i/214208247.jpg",
@@ -849,16 +2438,6 @@
       "author": "Silvia Park",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719941305i/214151232.jpg",
       "url": "https://www.goodreads.com/book/show/214151232",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
-      "title": "Disappoint Me",
-      "author": "Nicola Dinan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731337834i/218153678.jpg",
-      "url": "https://www.goodreads.com/book/show/218153678",
       "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
@@ -961,16 +2540,6 @@
       "author": "Sayaka Murata, Ginny Tapley Takemori",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733963833i/219300660.jpg",
       "url": "https://www.goodreads.com/book/show/219300660",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
-      "title": "The South",
-      "author": "Tash Aw",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731456163i/217387871.jpg",
-      "url": "https://www.goodreads.com/book/show/217387871",
       "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
@@ -1203,16 +2772,6 @@
       ]
     },
     {
-      "title": "A Room in Bombay: A Memoir",
-      "author": "Manil Suri",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751070362i/233411607.jpg",
-      "url": "https://www.goodreads.com/book/show/233411607",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
       "title": "Life After Ambition: A \"Good Enough\" Memoir",
       "author": "Amil Niazi",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394006i/235992837.jpg",
@@ -1319,16 +2878,6 @@
       "author": "Rachel Phan",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730640085i/214151670.jpg",
       "url": "https://www.goodreads.com/book/show/214151670",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "AAPI Heritage"
-      ]
-    },
-    {
-      "title": "Good Soil: The Education of an Accidental Farmhand",
-      "author": "Jeff Chu",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1725506566i/215361966.jpg",
-      "url": "https://www.goodreads.com/book/show/215361966",
       "isKindleUnlimited": false,
       "challenges": [
         "AAPI Heritage"
@@ -1451,16 +3000,6 @@
       "author": "Yann Martel",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753453851i/233411679.jpg",
       "url": "https://www.goodreads.com/book/show/233411679",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Is This a Cry for Help?",
-      "author": "Emily R. Austin",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749393987i/235993013.jpg",
-      "url": "https://www.goodreads.com/book/show/235993013",
       "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
@@ -1764,16 +3303,6 @@
       "author": "Jeannine A. Cook",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750089269i/222904031.jpg",
       "url": "https://www.goodreads.com/book/show/222904031",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Ladies in Hating (Belvoir's Library, #3)",
-      "author": "Alexandra Vasti",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736467181i/222376849.jpg",
-      "url": "https://www.goodreads.com/book/show/222376849",
       "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
@@ -2120,16 +3649,6 @@
       "author": "Emma Törzs",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685457125i/62854842.jpg",
       "url": "https://www.goodreads.com/book/show/62854842",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "A Lady for All Seasons",
-      "author": "T.J.   Alexander",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753237911i/236115757.jpg",
-      "url": "https://www.goodreads.com/book/show/236115757",
       "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
@@ -2522,16 +4041,6 @@
       ]
     },
     {
-      "title": "One Aladdin Two Lamps",
-      "author": "Jeanette Winterson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751723888i/234100962.jpg",
-      "url": "https://www.goodreads.com/book/show/234100962",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
       "title": "Jane Austen's Bookshelf",
       "author": "Rebecca Romney",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719020957i/214152206.jpg",
@@ -2760,27 +4269,6 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Books on Books"
-      ]
-    },
-    {
-      "title": "Gertrude Stein: An Afterlife",
-      "author": "Francesca Wade",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747237573i/224003754.jpg",
-      "url": "https://www.goodreads.com/book/show/224003754",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books"
-      ]
-    },
-    {
-      "title": "Baldwin: A Love Story",
-      "author": "Nicholas Boggs",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760526681i/217387674.jpg",
-      "url": "https://www.goodreads.com/book/show/217387674",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Books on Books",
-        "Editors' Picks"
       ]
     },
     {
@@ -4307,17 +5795,6 @@
       ]
     },
     {
-      "title": "Kin",
-      "author": "Tayari Jones",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758077674i/241126800.jpg",
-      "url": "https://www.goodreads.com/book/show/241126800",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Editors' Picks",
-        "Trending Books"
-      ]
-    },
-    {
       "title": "There Are Rivers in the Sky",
       "author": "Elif Shafak",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1708964601i/202468422.jpg",
@@ -4360,17 +5837,6 @@
       ]
     },
     {
-      "title": "Burn Down Master's House",
-      "author": "Clay Cane",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750900704i/232209360.jpg",
-      "url": "https://www.goodreads.com/book/show/232209360",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Editors' Picks",
-        "Trending Books"
-      ]
-    },
-    {
       "title": "Glorious Exploits",
       "author": "Ferdia  Lennon",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1691418622i/127278133.jpg",
@@ -4395,16 +5861,6 @@
       "author": "Brendan Slocumb",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1628523857i/58386733.jpg",
       "url": "https://www.goodreads.com/book/show/58386733",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Editors' Picks"
-      ]
-    },
-    {
-      "title": "When the Tides Held the Moon",
-      "author": "Venessa Vida Kelley",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736287500i/213075628.jpg",
-      "url": "https://www.goodreads.com/book/show/213075628",
       "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
@@ -4758,16 +6214,6 @@
       "author": "Jessamine Chan",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639314979i/57846320.jpg",
       "url": "https://www.goodreads.com/book/show/57846320",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Editors' Picks"
-      ]
-    },
-    {
-      "title": "The Expert of Subtle Revisions",
-      "author": "Kirsten Menger-Anderson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718765499i/214986234.jpg",
-      "url": "https://www.goodreads.com/book/show/214986234",
       "isKindleUnlimited": false,
       "challenges": [
         "Editors' Picks"
@@ -5391,16 +6837,6 @@
       ]
     },
     {
-      "title": "Atmosphere",
-      "author": "Taylor Jenkins Reid",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730469032i/220817728.jpg",
-      "url": "https://www.goodreads.com/book/show/220817728",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Escapist Reads"
-      ]
-    },
-    {
       "title": "The Switch",
       "author": "Beth O'Leary",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1585639107i/48842183.jpg",
@@ -5475,16 +6911,6 @@
       "author": "Stephen  Fishbach",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754937496i/232206245.jpg",
       "url": "https://www.goodreads.com/book/show/232206245",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Escapist Reads"
-      ]
-    },
-    {
-      "title": "Winging It with You",
-      "author": "Chip Pons",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729524958i/218695891.jpg",
-      "url": "https://www.goodreads.com/book/show/218695891",
       "isKindleUnlimited": false,
       "challenges": [
         "Escapist Reads"
@@ -5575,16 +7001,6 @@
       "author": "Allegra Goodman",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718997232i/212806636.jpg",
       "url": "https://www.goodreads.com/book/show/212806636",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Escapist Reads"
-      ]
-    },
-    {
-      "title": "John of John",
-      "author": "Douglas   Stuart",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1777987045i/235260861.jpg",
-      "url": "https://www.goodreads.com/book/show/235260861",
       "isKindleUnlimited": false,
       "challenges": [
         "Escapist Reads"
@@ -5759,16 +7175,6 @@
       "author": "Annie  Hartnett",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729826481i/218460347.jpg",
       "url": "https://www.goodreads.com/book/show/218460347",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Escapist Reads"
-      ]
-    },
-    {
-      "title": "Star Shipped",
-      "author": "Cat Sebastian",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757076317i/235672421.jpg",
-      "url": "https://www.goodreads.com/book/show/235672421",
       "isKindleUnlimited": false,
       "challenges": [
         "Escapist Reads"
@@ -6102,17 +7508,6 @@
       "author": "H.M.  Wolfe",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1774961536i/247928235.jpg",
       "url": "https://www.goodreads.com/book/show/247928235",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Escapist Reads",
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "So Old, So Young",
-      "author": "Grant Ginder",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749394013i/235992675.jpg",
-      "url": "https://www.goodreads.com/book/show/235992675",
       "isKindleUnlimited": false,
       "challenges": [
         "Escapist Reads",
@@ -6921,16 +8316,6 @@
       "challenges": [
         "Marathon Reader",
         "Trending Books"
-      ]
-    },
-    {
-      "title": "Bury Our Bones in the Midnight Soil",
-      "author": "V.E. Schwab",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732122609i/213263148.jpg",
-      "url": "https://www.goodreads.com/book/show/213263148",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Marathon Reader"
       ]
     },
     {
@@ -7814,16 +9199,6 @@
       ]
     },
     {
-      "title": "The Red Winter",
-      "author": "Cameron Sullivan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753559469i/231679954.jpg",
-      "url": "https://www.goodreads.com/book/show/231679954",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
       "title": "King Sorrow",
       "author": "Joe  Hill",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737022301i/223420465.jpg",
@@ -8044,16 +9419,6 @@
       ]
     },
     {
-      "title": "You Weren't Meant to Be Human",
-      "author": "Andrew Joseph White",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756129048i/224004327.jpg",
-      "url": "https://www.goodreads.com/book/show/224004327",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
       "title": "A Box Full of Darkness",
       "author": "Simone St. James",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745689479i/231681636.jpg",
@@ -8118,16 +9483,6 @@
       "author": "Brian  McAuley",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740597995i/221490948.jpg",
       "url": "https://www.goodreads.com/book/show/221490948",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "Nothing Tastes as Good",
-      "author": "Luke Dumas",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749399493i/235992833.jpg",
-      "url": "https://www.goodreads.com/book/show/235992833",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"
@@ -8468,16 +9823,6 @@
       "author": "Malala Yousafzai",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750867005i/235364773.jpg",
       "url": "https://www.goodreads.com/book/show/235364773",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Trending Books"
-      ]
-    },
-    {
-      "title": "All the Way to the River",
-      "author": "Elizabeth Gilbert",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736999462i/223405886.jpg",
-      "url": "https://www.goodreads.com/book/show/223405886",
       "isKindleUnlimited": false,
       "challenges": [
         "Trending Books"

@@ -749,7 +749,14 @@
         }
       } catch (e) { console.warn("Failed to load local state", e); }
     }
-
+    function applyTheme() {
+      const saved = localStorage.getItem('gr_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const isDark = saved ? saved === 'dark' : prefersDark;
+      
+      document.documentElement.classList.toggle('dark', isDark);
+      $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
+    }
     // --- INITIALIZATION ---
     async function init() {
       try {
@@ -764,11 +771,12 @@
       loadState();
       buildRawDatabase();
       
-      if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          document.documentElement.classList.add('dark');
-          $('theme-toggle').textContent = '☀️';
-      }
-
+      // if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      //     document.documentElement.classList.add('dark');
+      //     $('theme-toggle').textContent = '☀️';
+      // }
+      applyTheme();
+      
       // Close custom dropdowns on outside clicks
       document.addEventListener('click', (e) => {
         const wrap1 = $('shelf-dropdown-wrapper');
@@ -804,6 +812,7 @@
     $('theme-toggle').addEventListener('click', () => {
       const isDark = document.documentElement.classList.toggle('dark');
       $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
+      localStorage.setItem('gr_theme', isDark ? 'dark' : 'light');
     });
 
     $('btn-toggle-covers').addEventListener('click', () => {

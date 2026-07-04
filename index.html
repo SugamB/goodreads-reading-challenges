@@ -788,10 +788,15 @@
     }
 
     function evaluateImportGlow() {
+        const btn = $('btn-import-csv-header');
         if (!csvImportTimestamp && selectedChallenges.size > 0) {
-            $('btn-import-csv-header').classList.add('glow-btn');
+            btn.classList.add('glow-btn');
+            // Glow only for 3 seconds on page load
+            setTimeout(() => {
+                btn.classList.remove('glow-btn');
+            }, 3000);
         } else {
-            $('btn-import-csv-header').classList.remove('glow-btn');
+            btn.classList.remove('glow-btn');
         }
     }
 

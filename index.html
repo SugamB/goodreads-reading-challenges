@@ -27,6 +27,8 @@
       --destructive: #dc2626; --destructive-soft: #fde8e8; --radius: 12px;
       --shadow-soft: 0 1px 2px rgba(15,18,40,.04), 0 6px 18px rgba(15,18,40,.05);
       --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --grid-cols: auto-fill;
+      --grid-min: 180px;
     }
     html.dark {
       --bg: #11131c; --fg: #f1f2f7; --muted-fg: #9aa0b5; --card: #1a1d2a;
@@ -36,7 +38,7 @@
       --destructive: #f87171; --destructive-soft: #3a1f1f;
     }
     *, *::before, *::after { box-sizing: border-box; }
-    body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden;}
+    body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); font-family: var(--font); -webkit-font-smoothing: antialiased; min-height: 100vh; overflow-x: hidden; scroll-behavior: smooth;}
     a { color: inherit; text-decoration: none; } button { font-family: inherit; cursor: pointer; outline: none; }
     ::-webkit-scrollbar { width: 8px; height: 8px; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
@@ -45,24 +47,17 @@
     body.hide-covers .book-cover-wrapper { display: none !important; }
     .hidden { display: none !important; }
 
-    /* Radiant Glow Animation */
-    @keyframes pulse-glow {
-        0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 60%, transparent); }
-        70% { box-shadow: 0 0 0 10px transparent; }
-        100% { box-shadow: 0 0 0 0 transparent; }
-    }
+    /* Animations */
+    @keyframes pulse-glow { 0% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 60%, transparent); } 70% { box-shadow: 0 0 0 10px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
     .glow-btn { animation: pulse-glow 2s infinite; }
-
-    /* Success Highlight Pulse Animation */
-    @keyframes filter-pulse {
-      0% { border-color: var(--primary); box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 40%, transparent); }
-      50% { border-color: var(--primary); box-shadow: 0 0 0 8px color-mix(in oklab, var(--primary) 25%, transparent); }
-      100% { border-color: var(--border); box-shadow: 0 0 0 0 transparent; }
-    }
+    @keyframes filter-pulse { 0% { border-color: var(--primary); box-shadow: 0 0 0 0 color-mix(in oklab, var(--primary) 40%, transparent); } 50% { border-color: var(--primary); box-shadow: 0 0 0 8px color-mix(in oklab, var(--primary) 25%, transparent); } 100% { border-color: var(--border); box-shadow: 0 0 0 0 transparent; } }
     .filter-highlight { animation: filter-pulse 2s ease-in-out 2; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .spinner { border: 4px solid var(--border); border-top: 4px solid var(--primary); border-radius: 50%; width: 36px; height: 36px; animation: spin 1s linear infinite; margin: 0 auto 12px; }
 
     /* Header */
     header.app { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(10px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--border); }
+    header.app.tour-active-header { z-index: 1001; }
     .header-inner { max-width: 1550px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
     .brand { display: flex; align-items: center; gap: 10px; }
     .brand-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--primary); color: var(--primary-fg); display: grid; place-items: center; font-size: 18px; box-shadow: var(--shadow-soft); flex-shrink: 0; }
@@ -70,29 +65,31 @@
     .brand p { font-size: 11px; margin: 0; color: var(--muted-fg); display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
     .header-actions { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end;}
 
-    .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s; white-space: nowrap; background: var(--card); color: var(--fg);}
-    .header-link:hover { background: var(--muted); }
-    .import-btn { background: var(--primary-soft); color: var(--primary); border-color: var(--primary); }
-    .import-btn:hover { background: var(--primary); color: var(--primary-fg); }
+    .header-link { font-size: 12px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 6px; transition: .15s; white-space: nowrap; background: var(--card); color: var(--fg); cursor: pointer;}
+    .header-link:hover:not(:disabled) { background: var(--muted); }
     
     .coffee-link { background: color-mix(in oklab, #ff5e5b 12%, transparent); color: #ff5e5b; border-color: color-mix(in oklab, #ff5e5b 30%, transparent); }
     .coffee-link:hover { background: color-mix(in oklab, #ff5e5b 20%, transparent); }
 
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; transition: .15s; background: var(--primary); color: var(--primary-fg); }
-    .btn:hover { filter: brightness(.95); }
+    .btn:hover:not(:disabled) { filter: brightness(.95); }
     .btn.outline { background: var(--card); color: var(--fg); border-color: var(--border); }
-    .btn.outline:hover { background: var(--muted); }
+    .btn.outline:hover:not(:disabled) { background: var(--muted); }
     .btn.ghost { background: transparent; color: var(--muted-fg); border: 1px solid transparent; }
-    .btn.ghost:hover { background: var(--muted); color: var(--fg); }
+    .btn.ghost:hover:not(:disabled) { background: var(--muted); color: var(--fg); }
     .btn.sm { padding: 6px 10px; font-size: 12px; }
     .btn.icon { padding: 6px; width: 32px; height: 32px; justify-content: center; }
+    
+    .btn-success { background: var(--success) !important; color: #fff !important; border-color: var(--success) !important; }
 
-    .badge-pro { background: linear-gradient(135deg, #fbbf24, #d97706); color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; text-shadow: 0 1px 1px rgba(0,0,0,0.2); vertical-align: middle; }
+    .help-icon { display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; border: 2px solid currentColor; font-weight: 800; font-size: 12px; color: inherit; }
+    .badge-new { background: #ff5e5b; color: #fff; font-size: 9px; padding: 2px 5px; border-radius: 4px; font-weight: 800; letter-spacing: 0.5px; margin-left: 6px; vertical-align: middle; }
 
     /* Dashboard Layout */
     .dashboard { display: grid; grid-template-columns: 280px 1fr 280px; gap: 24px; max-width: 1550px; margin: 0 auto; padding: 24px 20px; align-items: start; }
     .sidebar-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 40; opacity: 0; transition: opacity 0.3s; }
     .sidebar { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 88px; align-self: start; }
+    .sidebar.left-sidebar.tour-active-sidebar { z-index: 1001; }
     .sidebar-header { display: flex; justify-content: space-between; align-items: flex-end; }
     .sidebar-header h2 { font-size: 16px; margin: 0; color: var(--fg); display: flex; align-items: center; gap: 8px;}
 
@@ -103,7 +100,7 @@
     .sidebar-actions { display: flex; gap: 6px; }
     .sidebar-actions button { flex: 1; }
     
-    .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 220px); overflow-y: auto; padding-right: 4px; }
+    .challenge-list { display: flex; flex-direction: column; gap: 8px; max-height: calc(100vh - 240px); overflow-y: auto; padding-right: 4px; }
     .challenge-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); cursor: pointer; transition: 0.15s; box-shadow: var(--shadow-soft); position: relative; }
     .challenge-item:hover { border-color: var(--primary); transform: translateY(-1px); }
     .challenge-item.selected { background: var(--primary-soft); border-color: var(--primary); }
@@ -116,8 +113,6 @@
     .chal-actions button { background: transparent; border: none; font-size: 13px; padding: 4px; border-radius: 4px; cursor: pointer; color: var(--muted-fg); }
     .chal-actions button:hover { background: var(--border); color: var(--fg); }
     .chal-actions button.delete:hover { background: var(--destructive-soft); color: var(--destructive); }
-    .challenge-item.highlight { animation: pulse 1.6s ease-out; }
-    @keyframes pulse { 0% { background: var(--card); } 20% { background: color-mix(in oklab, var(--warning) 30%, var(--card)); box-shadow: 0 0 0 3px var(--warning); } 100% { background: var(--card); } }
 
     /* Right Sidebar (Promo) */
     .promo-sidebar { gap: 16px; }
@@ -129,9 +124,6 @@
     .support-btn { border: none !important; color: #fff !important; font-weight: bold; flex: 1; display: flex; align-items: center; justify-content: center; gap: 6px;}
     .support-btn.kofi { background: #FF5E5B !important; }
     .support-btn.kofi:hover { background: #F15451 !important; }
-    .support-btn.paypal { background: #0079C1 !important; }
-    .support-btn.paypal:hover { background: #00609A !important; }
-    .support-logo { height: 16px; object-fit: contain; }
 
     /* Main Workspace */
     .workspace { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-soft); display: flex; flex-direction: column; min-height: calc(100vh - 120px); }
@@ -144,12 +136,21 @@
     .workspace-title h3 { margin: 0; font-size: 16px; }
     .workspace-title p { margin: 4px 0 0 0; font-size: 12px; color: var(--muted-fg); }
 
+    /* Shared Unified Filter Bar */
+    .workspace-filter-bar { padding: 16px 20px; border-bottom: 1px solid var(--border); background: var(--card); display: flex; flex-direction: column; gap: 12px; }
     .filter-row { display: flex; gap: 8px; width: 100%; flex-wrap: wrap; align-items: center; }
-    .filter-row .search { flex: 1; position: relative; min-width: 150px; }
+    .filter-row .search { flex: 1; position: relative; min-width: 180px; }
     .filter-row .search input { width: 100%; padding: 8px 12px 8px 30px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; }
     .filter-row .search input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px color-mix(in oklab, var(--primary) 22%, transparent); }
     .filter-row .search::before { content: "🔍"; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 12px; opacity: .6; }
-    .filter-row select { min-width: 120px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; cursor:pointer;}
+    
+    .btn-import-csv { background: var(--primary-soft); color: var(--primary); border: 1px solid var(--primary); font-weight: 600; }
+    .btn-import-csv:hover { background: var(--primary); color: var(--primary-fg); }
+    .btn-import-csv.has-imported { background: var(--muted); border-color: var(--border); color: var(--fg); }
+
+    /* Advanced Filters Section */
+    .adv-filters { display: flex; gap: 8px; flex-wrap: wrap; width: 100%; margin-top: 2px; align-items: center;}
+    .adv-filters select { min-width: 130px; flex-shrink: 0; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--fg); font-size: 13px; outline: none; cursor:pointer;}
 
     /* Toggle Switch */
     .toggle-container { display: inline-flex; align-items: center; cursor: pointer; gap: 8px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); user-select: none; transition: 0.2s;}
@@ -178,6 +179,14 @@
     .dropdown-list label:hover { background: var(--muted); }
     .dropdown-list input[type="checkbox"] { margin-top: 2px; accent-color: var(--primary); cursor: pointer;}
 
+    /* Active Filter Pills */
+    .filter-pills-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 4px; }
+    .filter-pills-container { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .filter-pill { display: inline-flex; align-items: center; gap: 6px; background: var(--accent); border: 1px solid var(--border); padding: 4px 10px; border-radius: 99px; font-size: 11px; font-weight: 600; color: var(--fg); }
+    .filter-pill-clear { background: transparent; border: none; color: var(--muted-fg); cursor: pointer; font-size: 12px; padding: 0; display: flex; align-items: center; justify-content: center; width: 14px; height: 14px; border-radius: 50%; }
+    .filter-pill-clear:hover { color: var(--destructive); background: var(--destructive-soft); }
+
+    /* Workspace Content Area */
     .workspace-content { padding: 20px; flex-grow: 1; overflow-y: auto; background: var(--bg); border-radius: 0 0 var(--radius) var(--radius); }
 
     /* Accordions */
@@ -193,21 +202,21 @@
     .count-badge { display: inline-block; background: var(--border); color: var(--fg); font-size: 11px; padding: 2px 8px; border-radius: 999px; font-weight: 700;}
 
     /* Book Gallery / Card Layout */
-    .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+    .book-grid { display: grid; grid-template-columns: repeat(var(--grid-cols), minmax(var(--grid-min), 1fr)); gap: 16px; }
     .book-card { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); display: flex; flex-direction: column; gap: 8px; transition: .15s; box-shadow: var(--shadow-soft); height: 100%; }
     .book-card:hover { border-color: var(--primary); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(15,18,40,.08); }
     .book-card.avoid { border-color: var(--destructive); opacity: 0.65; }
     .book-card.optimal { border-color: var(--primary); box-shadow: 0 0 0 1px var(--primary); }
 
     .book-cover-wrapper { width: 100%; display: flex; justify-content: center; margin-bottom: 6px; }
-    .book-cover-wrapper a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s;}
+    .book-cover-wrapper a { display: block; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.2s; width: 100%; max-width: 140px; }
     .book-cover-wrapper a:hover { transform: scale(1.03); }
-    .book-cover { width: 130px; height: 195px; object-fit: cover; display: block; background: var(--muted); }
+    .book-cover { width: 100%; aspect-ratio: 2/3; height: auto; object-fit: cover; display: block; background: var(--muted); }
 
     .book-info { flex-grow: 1; display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; }
-    .book-title { font-weight: 700; font-size: 15px; color: var(--fg); line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .book-title { font-weight: 700; font-size: 14px; color: var(--fg); line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .book-title:hover { color: var(--primary); text-decoration: underline; }
-    .book-author { font-size: 13px; color: var(--muted-fg); margin-top: 4px; }
+    .book-author { font-size: 12px; color: var(--muted-fg); margin-top: 4px; }
     
     .shelf-badge { display: inline-block; font-size: 10px; font-weight: 700; background: color-mix(in oklab, var(--primary) 15%, transparent); color: var(--primary); padding: 3px 8px; border-radius: 6px; margin-top: 6px; }
 
@@ -216,17 +225,18 @@
     .tag:hover { background: var(--border); color: var(--fg); }
     .tag.danger { color: var(--destructive); border-color: color-mix(in oklab, var(--destructive) 35%, var(--border)); background: var(--destructive-soft); }
 
-    .status-group { display: inline-flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; }
-    .status-group button { flex: 1; border: none; background: transparent; font-size: 11.5px; font-weight: 700; color: var(--muted-fg); padding: 10px 10px; transition: .15s; }
+    .status-group { display: flex; background: var(--muted); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; width: 100%; flex-wrap: wrap; }
+    .status-group button { flex: 1; min-width: 33%; border: none; background: transparent; font-size: 10px; font-weight: 700; color: var(--muted-fg); padding: 8px 4px; transition: .15s; }
     .status-group button:hover { background: color-mix(in oklab, var(--border) 50%, transparent); color: var(--fg); }
     .status-group button.active.inc { background: var(--success); color: #fff; }
     .status-group button.active.neu { background: var(--muted-fg); color: var(--bg); }
     .status-group button.active.exc { background: var(--destructive); color: #fff; }
     .status-group button:not(:last-child) { border-right: 1px solid var(--border); }
 
-    .banner { display: flex; gap: 12px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
+    .banner { display: flex; flex-direction: column; gap: 8px; padding: 14px; border-left: 4px solid var(--primary); border-radius: 8px; background: var(--primary-soft); font-size: 13px; margin-bottom: 16px; box-shadow: var(--shadow-soft); }
     .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
     .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
+    .banner.error { border-left-color: var(--destructive); background: var(--destructive-soft); }
     
     .empty { text-align: center; padding: 60px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; grid-column: 1/-1;}
     .empty .icon { font-size: 32px; }
@@ -238,19 +248,31 @@
     table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
     table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
 
-    /* Footer & FAQ */
-    .faq-section { max-width: 800px; margin: 40px auto 20px; padding: 0 20px; }
-    .faq-section h2 { font-size: 20px; text-align: center; margin-bottom: 24px; color: var(--fg); }
-    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: var(--shadow-soft); }
-    .faq-item summary { font-weight: 700; font-size: 14px; padding: 16px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: "+"; font-size: 16px; color: var(--primary); transition: 0.3s; }
-    .faq-item[open] summary::after { transform: rotate(45deg); }
-    .faq-item p { padding: 0 16px 16px; margin: 0; font-size: 13px; color: var(--muted-fg); line-height: 1.6; }
+    /* Alternate Mode Indicator Badge */
+    .algo-indicator { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; background: var(--primary-soft); color: var(--primary); padding: 6px 12px; border-radius: 8px; border: 1px solid color-mix(in oklab, var(--primary) 30%, transparent); }
+    .algo-indicator.single { background: var(--warning-soft); color: var(--warning); border-color: color-mix(in oklab, var(--warning) 30%, transparent); }
 
-    footer.site-footer { text-align: center; padding: 30px 20px; font-size: 11px; color: var(--muted-fg); border-top: 1px solid var(--border); max-width: 1550px; margin: 0 auto; line-height: 1.5; }
+    /* Toast System */
+    .toast-container { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 9999; pointer-events: none; }
+    .toast { background: var(--card); color: var(--fg); border-left: 4px solid var(--primary); padding: 12px 16px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-size: 13px; display: flex; align-items: center; gap: 10px; pointer-events: auto; animation: slideInToast 0.25s ease-out; border: 1px solid var(--border); max-width: 350px; }
+    .toast.error { border-left-color: var(--destructive); }
+    .toast.success { border-left-color: var(--success); }
+    @keyframes slideInToast { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
-    /* Modals */
+    /* Footer & FAQ Section Style Fixes */
+    .faq-section { max-width: 850px; margin: 60px auto 40px; padding: 0 24px; }
+    .faq-section h2 { font-size: 22px; text-align: center; margin-bottom: 28px; color: var(--fg); font-weight: 800; letter-spacing: -0.02em; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 14px; box-shadow: var(--shadow-soft); transition: border-color 0.2s, box-shadow 0.2s; overflow: hidden; }
+    .faq-item:hover { border-color: color-mix(in oklab, var(--primary) 50%, var(--border)); box-shadow: 0 4px 12px rgba(15,18,40,0.03); }
+    .faq-item summary { font-weight: 700; font-size: 14.5px; padding: 16px 20px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .faq-item summary::after { content: "➔"; font-size: 12px; color: var(--primary); transition: transform 0.2s ease; }
+    .faq-item[open] summary { border-bottom: 1px solid var(--border); background: var(--muted); }
+    .faq-item[open] summary::after { transform: rotate(90deg); }
+    .faq-item p { padding: 16px 20px; margin: 0; font-size: 13.5px; color: var(--muted-fg); line-height: 1.6; background: var(--bg); border-bottom-left-radius: 9px; border-bottom-right-radius: 9px; }
+
+    footer.site-footer { text-align: center; padding: 40px 24px; font-size: 12px; color: var(--muted-fg); border-top: 1px solid var(--border); max-width: 1550px; margin: 40px auto 0; line-height: 1.6; }
+
+    /* Action Modal Unified System */
     .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 100; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: 0.2s; padding: 20px; backdrop-filter: blur(4px);}
     .modal-overlay.active { opacity: 1; pointer-events: auto; }
     .modal { background: var(--card); border: 1px solid var(--border); border-radius: 12px; width: 100%; max-width: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); transform: translateY(20px); transition: 0.2s; display: flex; flex-direction: column; max-height: 90vh;}
@@ -263,31 +285,54 @@
     .modal-body textarea { min-height: 150px; resize: vertical; white-space: pre; }
     .modal-foot { padding: 16px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 10px; background: var(--muted); border-radius: 0 0 12px 12px;}
     
-    #toast-host { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 8px; z-index: 200; }
-    .toast { padding: 12px 16px; border-radius: 8px; background: var(--fg); color: var(--bg); font-size: 13px; font-weight: 600; box-shadow: var(--shadow-soft); animation: slidein .2s ease-out; }
-    .toast.success { background: var(--success); color: #fff; }
-    .toast.error { background: var(--destructive); color: #fff; }
-    @keyframes slidein { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    /* Tour Tooltip Styles */
+    #tour-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.65); z-index: 1000; display: none; backdrop-filter: blur(2px); }
+    #tour-overlay.active { display: block; }
+    
+    #tour-tooltip { position: absolute; background: var(--card); border: 1px solid var(--primary); border-radius: 12px; padding: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.3); z-index: 1002; width: 320px; max-width: calc(100vw - 24px); flex-direction: column; gap: 12px; display: none; box-sizing: border-box; }
+    #tour-tooltip.active { display: flex; } 
+    
+    #tour-tooltip::after { content: ""; position: absolute; width: 16px; height: 16px; background: var(--card); border: 1px solid var(--primary); transform: rotate(45deg); z-index: -1; }
+    #tour-tooltip.arrow-top::after { top: -9px; left: 20px; border-bottom: none; border-right: none; }
+    #tour-tooltip.arrow-bottom::after { bottom: -9px; left: 20px; border-top: none; border-left: none; }
+    #tour-tooltip.arrow-left::after { left: -9px; top: 20px; border-top: none; border-right: none; }
+    #tour-tooltip.arrow-right::after { right: -9px; top: 20px; border-bottom: none; border-left: none; }
+    #tour-title { margin: 0; font-size: 15px; color: var(--fg); font-weight: 700; }
+    #tour-text { margin: 0; font-size: 13px; color: var(--muted-fg); line-height: 1.5; }
+    
+    .tour-menu-btn { display: block; width: 100%; text-align: left; padding: 6px 12px; margin-bottom: 4px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--fg); font-size: 12px; font-weight: 600; cursor: pointer; transition: 0.15s; }
+    .tour-menu-btn:hover { border-color: var(--primary); background: var(--primary-soft); }
+
+    .tour-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; }
+    .tour-dots { display: flex; gap: 4px; flex-wrap: wrap; max-width: 150px; justify-content: center; }
+    .tour-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--border); transition: 0.2s; border: none; padding: 0; cursor: pointer;}
+    .tour-dot:hover { background: var(--muted-fg); }
+    .tour-dot.active { background: var(--primary); }
+    .tour-highlight { position: relative; z-index: 1001 !important; pointer-events: none; }
 
     .mobile-toggle { display: none; }
 
+    /* Media Queries for Layout & Responsiveness */
     @media (max-width: 1200px) {
       .dashboard { grid-template-columns: 280px 1fr; }
-      /* Prevent sticky clipping */
       .sidebar.left-sidebar { position: static; }
       .promo-sidebar { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: stretch; position: static; margin-top: 10px;}
       .promo-sidebar .sidebar-header { grid-column: 1 / -1; margin-bottom: -4px;}
     }
+    @media (max-width: 1024px) {
+      .book-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important; }
+    }
     @media (max-width: 900px) {
-      .link-label { display: none; }
       .mobile-toggle { display: inline-flex; }
       .sidebar.left-sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 320px; max-width: 85vw; background: var(--bg); z-index: 50; padding: 20px; transform: translateX(-100%); transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); overflow-y: auto; border-right: 1px solid var(--border); margin: 0; }
       .sidebar.left-sidebar.open { transform: translateX(0); }
       .sidebar-backdrop.open { display: block; opacity: 1; }
-      .dashboard { grid-template-columns: 1fr; padding: 16px 12px; }
-      .workspace-header { flex-direction: column; align-items: flex-start; }
-      .filter-row { max-width: 100%; }
+      .header-inner { padding: 12px 16px; }
+      .dashboard { grid-template-columns: 1fr; padding: 16px 16px; }
       .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
+    }
+    @media (max-width: 480px) {
+      .book-grid { grid-template-columns: repeat(auto-fill, minmax(115px, 1fr)) !important; }
     }
   </style>
 </head>
@@ -306,21 +351,13 @@
         <!-- Hidden file input for CSV -->
         <input type="file" id="csv-upload" accept=".csv" style="display:none;" />
         
-        <!-- Action Buttons (Hidden until challenges are selected) -->
-        <button class="header-link req-chal hidden" id="btn-toggle-covers">
-          🖼️ <span class="link-label">Hide Covers</span>
-        </button>
-        <a href="https://docs.google.com/spreadsheets/d/1ZRbS90wP0HeZn2agfq-Iv_O8PZvgcWQBITPsENMQfMY" target="_blank" rel="noopener noreferrer" class="header-link req-chal hidden">
-          📊 <span class="link-label">Spreadsheet</span>
+        <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link tour-target-support">
+          ☕ <span class="link-label" style="display:inline;">Support</span>
         </a>
-        <button class="header-link import-btn req-chal hidden" id="btn-import-csv-header" title="Upload Goodreads CSV">
-          📂 <span class="link-label">Import Library</span>
+        <button class="btn icon ghost tour-target-theme" id="theme-toggle" title="Toggle Theme">🌙</button>
+        <button class="btn icon ghost tour-target-help" id="btn-start-tour" title="Help & Guided Tour">
+          <span class="help-icon">?</span>
         </button>
-
-        <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="header-link coffee-link">
-          ☕ <span class="link-label">Buy Me a Coffee</span>
-        </a>
-        <button class="btn icon ghost" id="theme-toggle">🌙</button>
       </div>
     </div>
   </header>
@@ -328,17 +365,22 @@
   <div class="dashboard">
     <!-- Left Sidebar -->
     <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
-    <aside class="sidebar left-sidebar" id="sidebar">
-      <div class="sidebar-header">
-        <h2>Challenges</h2>
-        <button class="btn ghost sm" id="btn-add-custom" title="Add your own reading list">
-          ➕ Custom List <span class="badge-pro">PRO</span>
-        </button>
+    <aside class="sidebar left-sidebar tour-target-sidebar" id="sidebar">
+      <div class="sidebar-header" style="flex-direction: column; align-items: stretch; gap: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <h2>Challenges</h2>
+          <button class="btn ghost sm" id="btn-add-custom" title="Add your own reading list">
+            ➕ Custom List
+          </button>
+        </div>
+        <div id="last-updated-display" style="font-size: 10px; color: var(--muted-fg); margin-top: 2px;">
+          <!-- Loaded from database -->
+        </div>
       </div>
 
       <div class="sidebar-filters">
         <input type="text" id="search-challenges" placeholder="Search challenges..." />
-        <select id="filter-challenges">
+        <select id="filter-challenges" aria-label="Filter challenges">
           <option value="all">All</option>
           <option value="selected">Selected</option>
           <option value="unselected">Unselected</option>
@@ -356,143 +398,138 @@
       </div>
     </aside>
 
-    <!-- Main Content Area -->
+    <!-- Main Workspace Area -->
     <main class="workspace hidden" id="workspace">
-      <div class="workspace-tabs">
-        <button id="tab-library" class="active">📚 Master Library</button>
-        <button id="tab-optimal">✨ Optimal Path</button>
-        <button id="tab-spreadsheet">▦ All Overlaps <span class="badge-pro">PRO</span></button>
+      <div class="workspace-tabs tour-target-tabs">
+        <button id="tab-library" class="active tour-target-tab-lib">📚 Browse Books</button>
+        <button id="tab-optimal" class="tour-target-tab-opt">✨ Optimized List</button>
+        <button id="tab-spreadsheet" class="tour-target-tab-sheet">▦ Spreadsheet</button>
       </div>
 
-      <!-- LIBRARY VIEW -->
-      <section id="view-library">
-        <div class="workspace-header">
-          <div class="workspace-title" style="flex: 1 1 100%;">
-            <h3 style="display:flex; align-items:center; gap:10px;">Configure Books</h3>
-            <p id="library-stats" style="margin-top: 6px; font-size: 13px; color: var(--muted-fg);">
-              <!-- Injected via JS -->
-            </p>
+      <!-- SHARED UNIFIED WORKSPACE FILTER BAR -->
+      <div class="workspace-filter-bar tour-target-adv-filters" id="shared-filter-bar">
+        <!-- First Row: Global Search, Import & Library Filter -->
+        <div class="filter-row">
+          <div class="search">
+            <input id="search-input" type="text" placeholder="Search titles or authors..." aria-label="Search titles or authors" />
           </div>
           
-          <!-- Filter Row -->
-          <div class="filter-row" style="margin-top:8px;">
-            
-            <!-- Library Toggle -->
-            <label class="toggle-container hidden" id="library-toggle-wrapper" title="Only show books found in your selected shelves">
-              <input type="checkbox" id="library-toggle-checkbox">
-              <div class="toggle-track"></div>
-              <span class="toggle-label">Filter by My Library</span>
-            </label>
+          <button class="btn sm import-btn btn-import-csv tour-target-import" id="btn-import-csv" title="Upload Goodreads CSV">
+            📂 Import Goodreads CSV
+          </button>
 
-            <!-- Custom Shelf Dropdown -->
-            <div class="dropdown-wrapper hidden" id="shelf-dropdown-wrapper">
-              <button class="dropdown-btn" id="btn-shelf-dropdown">
-                📚 Library Shelves <span style="font-size:10px">▼</span>
-              </button>
-              <div class="dropdown-menu" id="shelf-dropdown-menu">
-                <div class="dropdown-actions">
-                  <button id="btn-shelf-all">Select All</button>
-                  <button id="btn-shelf-none">Unselect All</button>
-                </div>
-                <div class="dropdown-list" id="shelf-checkbox-list">
-                  <!-- Injected via JS -->
-                </div>
+          <!-- Library Filter Interface -->
+          <label class="toggle-container hidden" id="library-toggle-wrapper" title="Only show books found in your selected shelves">
+            <input type="checkbox" id="library-toggle-checkbox">
+            <div class="toggle-track"></div>
+            <span class="toggle-label">Filter by My Library</span>
+          </label>
+
+          <div class="dropdown-wrapper hidden" id="shelf-dropdown-wrapper">
+            <button class="dropdown-btn" id="btn-shelf-dropdown" aria-haspopup="true" aria-expanded="false">
+              📚 Library Shelves <span style="font-size:10px">▼</span>
+            </button>
+            <div class="dropdown-menu" id="shelf-dropdown-menu" role="menu">
+              <div class="dropdown-actions">
+                <button id="btn-shelf-all">Select All</button>
+                <button id="btn-shelf-none">Unselect All</button>
+              </div>
+              <div class="dropdown-list" id="shelf-checkbox-list">
+                <!-- Injected via JS -->
               </div>
             </div>
-
-            <!-- Highly Visible Clear Data Button -->
-            <button class="btn outline sm hidden" id="btn-clear-library" style="border-color: var(--destructive); color: var(--destructive); background: var(--destructive-soft);" title="Permanently delete imported CSV data">
-              ❌ Clear Library
-            </button>
-
-            <div class="search">
-              <input id="search-input" type="text" placeholder="Search titles or authors..." />
-            </div>
-            
-            <select id="group-by-filter">
-              <option value="challenge">Group by: Challenge</option>
-              <option value="overlap">Group by: Overlap Count</option>
-            </select>
-            
-            <select id="overlap-filter">
-              <option value="all">All (unique + overlaps)</option>
-              <option value="overlap">Overlaps Books Only</option>
-              <option value="single">Unique Books Only</option>
-            </select>
-            
-            <select id="status-filter">
-              <option value="all">Status: All</option>
-              <option value="include">📌 Must Read</option>
-              <option value="exclude">✕ Avoid</option>
-            </select>
-
           </div>
           
-          <!-- Actions Row -->
-          <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: 8px;">
-            <div style="display:flex; gap: 8px;">
-              <button class="btn ghost sm" id="btn-expand-all">➕ Expand All</button>
-              <button class="btn ghost sm" id="btn-collapse-all">➖ Collapse All</button>
-            </div>
-            <button class="btn ghost sm" id="btn-reset" title="Reset Read/Avoid statuses">🔄 Reset Filters</button>
-          </div>
+          <button class="btn outline sm hidden" id="btn-clear-library" style="border-color: var(--destructive); color: var(--destructive); background: var(--destructive-soft);" title="Permanently delete imported CSV data">
+            ❌ Clear Library
+          </button>
+        </div>
+
+        <!-- Second Row: Advanced Settings -->
+        <div class="adv-filters" id="adv-filters-section">
+          <select id="group-by-filter" class="only-browse" aria-label="Group books by">
+            <option value="challenge">Group by: Challenge</option>
+            <option value="overlap">Group by: Overlap Count</option>
+          </select>
+          
+          <select id="overlap-filter" class="only-browse" aria-label="Filter by overlap">
+            <option value="all">All (unique + overlaps)</option>
+            <option value="overlap">Overlaps Books Only</option>
+            <option value="single">Unique Books Only</option>
+          </select>
+          
+          <select id="status-filter" class="only-browse" aria-label="Filter by status">
+            <option value="all">Status: All</option>
+            <option value="include">📌 Must Read</option>
+            <option value="exclude">✕ Avoid</option>
+          </select>
+          
+          <select id="grid-size-filter" aria-label="Book Grid Size">
+            <option value="auto">Grid: Auto (Responsive)</option>
+            <option value="2">Grid: 2 Columns</option>
+            <option value="3">Grid: 3 Columns</option>
+            <option value="4">Grid: 4 Columns</option>
+            <option value="5">Grid: 5 Columns</option>
+            <option value="6">Grid: 6 Columns</option>
+          </select>
+          
+          <label class="toggle-container" title="Show or hide book cover images" style="margin-left: auto;">
+            <input type="checkbox" id="btn-toggle-covers">
+            <div class="toggle-track"></div>
+            <span class="toggle-label">Hide Covers</span>
+          </label>
+        </div>
+
+        <!-- Third Row: Active Filter Pills & Reset Button -->
+        <div class="filter-pills-row" id="filter-pills-row">
+          <div id="filter-pills-container" class="filter-pills-container hidden"></div>
+          <button class="btn ghost sm hidden" id="btn-reset" title="Reset all active filters and book statuses">🔄 Reset Filters</button>
+        </div>
+      </div>
+
+      <!-- BROWSE BOOKS VIEW -->
+      <section id="view-library">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px 0 20px; background: var(--bg);">
+          <div id="library-stats" style="font-size: 13px; color: var(--muted-fg);"></div>
+          <button class="btn ghost sm" id="btn-toggle-accordions">➖ Collapse All</button>
         </div>
         
         <div class="workspace-content">
           <div id="list-books"></div>
+          
+          <!-- Support Banner -->
+          <div class="banner ok" style="margin-top: 40px; border-radius: 8px;">
+              <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                  <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
+                  <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
+              </div>
+          </div>
         </div>
       </section>
 
-      <!-- OPTIMAL PATH VIEW -->
+      <!-- OPTIMIZED LIST VIEW -->
       <section id="view-optimal" class="hidden">
-        <div class="workspace-header">
-          <div class="workspace-title" style="flex: 1 1 100%;">
-            <h3>Optimal Reading List</h3>
-            <p id="optimal-stats">The smallest set of books to hit your goals.</p>
-          </div>
-          
-          <div class="filter-row" style="margin-top:8px;">
-            <!-- Replicated Synced Library Toggle -->
-            <label class="toggle-container hidden" id="optimal-library-toggle-wrapper" title="Only show books found in your selected shelves">
-              <input type="checkbox" id="optimal-library-toggle-checkbox">
-              <div class="toggle-track"></div>
-              <span class="toggle-label">Filter by My Library</span>
-            </label>
-
-            <!-- Replicated Synced Custom Shelf Dropdown -->
-            <div class="dropdown-wrapper hidden" id="optimal-shelf-dropdown-wrapper">
-              <button class="dropdown-btn" id="btn-optimal-shelf-dropdown">
-                📚 Library Shelves <span style="font-size:10px">▼</span>
+        <div style="padding: 16px 20px 0 20px; background: var(--bg); display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px dashed var(--border); padding-bottom: 12px;">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <button class="btn outline sm" id="btn-shuffle-overlap" title="Find a new path using overlapping books">
+                🎲 Alternate (Overlaps)
               </button>
-              <div class="dropdown-menu" id="optimal-shelf-dropdown-menu">
-                <div class="dropdown-actions">
-                  <button id="btn-optimal-shelf-all">Select All</button>
-                  <button id="btn-optimal-shelf-none">Unselect All</button>
-                </div>
-                <div class="dropdown-list" id="optimal-shelf-checkbox-list">
-                  <!-- Injected via JS -->
-                </div>
-              </div>
+              <button class="btn outline sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">
+                🎲 Alternate (No Overlaps)
+              </button>
+              <button class="btn outline sm btn-copy-action" id="btn-copy-optimal">
+                📋 Copy List
+              </button>
             </div>
-
-            <!-- Replicated Synced Clear Data Button -->
-            <button class="btn outline sm hidden" id="btn-clear-library-optimal" style="border-color: var(--destructive); color: var(--destructive); background: var(--destructive-soft);" title="Permanently delete imported CSV data">
-              ❌ Clear Library
-            </button>
-          </div>
-
-          <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px; width:100%;">
-            <button class="btn outline sm" id="btn-shuffle-overlap" title="Find a new path using overlapping books">
-              🎲 Alternate (Overlaps)
-            </button>
-            <button class="btn outline sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">
-              🎲 Alternate (No Overlaps)
-            </button>
-            <button class="btn outline sm" id="btn-copy-optimal">
-              📋 Copy List
-            </button>
+            
+            <!-- Dynamic Algorithm Mode Indicator & Stats -->
+            <div id="optimal-algo-indicator" class="algo-indicator">
+              <!-- Injected via JS -->
+            </div>
           </div>
         </div>
+
         <div class="workspace-content" id="output-optimal"></div>
       </section>
 
@@ -503,9 +540,17 @@
             <h3>Overlap Spreadsheet</h3>
             <p id="convert-sub">0 overlap groups found.</p>
           </div>
-          <button class="btn outline sm" id="btn-copy-sheet">📋 Copy for Excel</button>
+          <button class="btn outline sm btn-copy-action" id="btn-copy-sheet">📋 Copy for Excel</button>
         </div>
-        <div class="workspace-content" style="padding: 0;">
+        
+        <div class="banner ok" style="margin: 16px; border-radius: 8px;">
+            <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
+                <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
+            </div>
+        </div>
+
+        <div class="workspace-content" style="padding: 0 20px 20px 20px;">
           <table class="sheet">
             <thead>
               <tr>
@@ -546,18 +591,6 @@
           <a href="https://docs.google.com/spreadsheets/d/1ZRbS90wP0HeZn2agfq-Iv_O8PZvgcWQBITPsENMQfMY" target="_blank" rel="noopener noreferrer" class="btn sm outline">Open Spreadsheet</a>
         </div>
       </div>
-      <div class="promo-card">
-        <h3>❤️ Support the developer</h3>
-        <p>If this tool saves you time, please consider buying me a coffee!</p>
-        <div class="row-btns" style="margin-top:auto;">
-          <a href="https://ko-fi.com/unikuez" target="_blank" rel="noopener noreferrer" class="btn sm support-btn kofi">
-            <img src="https://storage.ko-fi.com/cdn/brandasset/v2/kofi_symbol.png" alt="Ko-fi" class="support-logo" /> Ko-fi
-          </a>
-          <a href="https://www.paypal.com/paypalme/SugamB" target="_blank" rel="noopener noreferrer" class="btn sm support-btn paypal">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png" alt="PayPal" class="support-logo" /> PayPal
-          </a>
-        </div>
-      </div>
     </aside>
   </div>
 
@@ -570,15 +603,15 @@
     </details>
     <details class="faq-item">
       <summary>How do I find overlapping books for my reading challenge?</summary>
-      <p>Simply select the challenges or lists you are participating in from the sidebar. The tool automatically analyzes the book pools and groups them in the <strong>All Overlaps</strong> tab, showing you exactly which books fulfill two, three, or more prompts at once.</p>
+      <p>Simply select the challenges or lists you are participating in from the sidebar. The tool automatically analyzes the book pools and groups them in the <strong>Spreadsheet</strong> tab, showing you exactly which books fulfill two, three, or more prompts at once.</p>
     </details>
     <details class="faq-item">
       <summary>Can I import my Goodreads library?</summary>
-      <p>Yes! Once you select a challenge, click the <strong>Import Library</strong> button in the top right to upload your Goodreads CSV export file. The tool will securely parse your shelves locally and let you filter the Master Library to only show books you already own or have marked as "To Be Read" (TBR).</p>
+      <p>Yes! Click the <strong>Import Goodreads CSV</strong> button inside the workspace to upload your Goodreads CSV export file. The tool will securely parse your shelves locally and let you filter the Master Library to only show books you already own or have marked as "To Be Read" (TBR).</p>
     </details>
     <details class="faq-item">
-      <summary>What does the "Optimal Path" feature do?</summary>
-      <p>The <strong>Optimal Path</strong> algorithm calculates the absolute smallest number of books required to complete all your selected challenges. By prioritizing books with the highest overlaps, it gives you a highly efficient reading list. You can also enforce a "No Overlaps" rule if you prefer reading a distinct book for every prompt.</p>
+      <summary>What does the "Optimized List" feature do?</summary>
+      <p>The <strong>Optimized List</strong> algorithm calculates a highly optimized reading list to complete all your selected challenges. By prioritizing books with the highest overlaps, it saves you time. You can also enforce a "No Overlaps" rule if you prefer reading a distinct book for every prompt.</p>
     </details>
   </section>
 
@@ -596,11 +629,11 @@
       </div>
       <div class="modal-body">
         <div>
-          <label>List Name</label>
+          <label for="custom-name">List Name</label>
           <input type="text" id="custom-name" placeholder="e.g., My TBR 2026" autocomplete="off" />
         </div>
         <div>
-          <label>Books (One per line, or Markdown list)</label>
+          <label for="custom-books">Books (One per line, or Markdown list)</label>
           <textarea id="custom-books" placeholder="- [Atomic Habits](https://goodreads.com/...)&#10;- Project Hail Mary&#10;The Hobbit"></textarea>
         </div>
         <input type="hidden" id="custom-id" />
@@ -612,27 +645,37 @@
     </div>
   </div>
 
-  <!-- Modal: Pro Feature Unlock -->
-  <div class="modal-overlay" id="pro-modal">
-    <div class="modal pro-modal" style="text-align: center; max-width: 420px; padding: 30px 20px;">
-      <div class="icon-large" style="font-size: 32px; margin-bottom:12px;">🎁</div>
-      <h2 style="margin: 0 0 12px 0; color: var(--fg);">"Pro" Feature Unlocked!</h2>
-      <p style="font-size:14px; margin-bottom: 20px;">Every feature here is 100% free! I built this tool to help readers easily plan their goals.</p>
-      <p style="font-size:13px; color:var(--muted-fg); margin-bottom:24px;">If this saves you time, please consider buying me a coffee or checking out my Chrome extension!</p>
-      <div class="row-btns">
-        <a href="https://ko-fi.com/unikuez" target="_blank" class="btn support-btn kofi" style="width:100%; margin-bottom:8px;">☕ Buy me a coffee</a>
-        <a href="https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec" target="_blank" class="btn outline" style="width:100%;">📖 Get Extension</a>
+  <!-- Unified Action Modal -->
+  <div class="modal-overlay" id="action-modal-overlay">
+    <div class="modal" style="max-width: 400px; text-align: center;">
+      <div class="modal-head" style="justify-content: flex-end; border-bottom:none; padding-bottom: 0;">
+        <button class="btn icon ghost" id="btn-close-action-modal">✕</button>
       </div>
-      <button class="btn ghost" id="btn-continue-pro" style="margin-top: 16px; width:100%;">Continue to feature →</button>
+      <div class="modal-body" id="action-modal-body" style="padding: 10px 30px 40px;">
+        <!-- Dynamic Content injected via JS -->
+      </div>
     </div>
   </div>
 
-  <div id="toast-host"></div>
+  <!-- Tour Elements -->
+  <div id="tour-overlay"></div>
+  <div id="tour-tooltip">
+    <h3 id="tour-title"></h3>
+    <p id="tour-text"></p>
+    <div class="tour-nav">
+      <button class="btn sm outline" id="btn-tour-prev">Back</button>
+      <div class="tour-dots" id="tour-dots"></div>
+      <button class="btn sm" id="btn-tour-next">Next</button>
+    </div>
+    <div style="text-align: right; margin-top: 4px;">
+      <button class="btn ghost sm" id="btn-tour-skip" style="font-size: 11px;">Skip Tour</button>
+    </div>
+  </div>
 
   <script>
     // --- GLOBAL DATA ---
     const FALLBACK_DATA = {
-      "lastUpdated": "2026-05-14T09:49:45.639Z",
+      "lastUpdated": "2026-07-01T07:21:44.670Z",
       "challenges": [
         { "id": "AAPI Heritage", "name": "AAPI Heritage", "url": "https://www.goodreads.com/blog/show/3048", "count": 132 },
         { "id": "Books on Books", "name": "Books on Books", "url": "https://www.goodreads.com/blog/show/3090", "count": 144 },
@@ -662,7 +705,7 @@
         },
         {
           "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
-          "author": "Zoe Venditozzi, Claire Mitchell",
+          "author": "Zoe Venditozzi",
           "coverUrl": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
           "url": "https://www.goodreads.com/book/show/222476092",
           "isKindleUnlimited": true,
@@ -676,7 +719,9 @@
     
     let customLists = {};
     let selectedChallenges = new Set();
+    let seenChallenges = new Set();
     let bookStatus = {};
+    let collapsedCats = new Set();
     
     // CSV Library State
     let userLibraryMap = new Map(); 
@@ -699,20 +744,97 @@
     let libraryOnlyFilterActive = false;
     let coversVisible = true;
 
+    // DOM Helpers
     const $ = (id) => document.getElementById(id);
     const escapeHtml = (s) => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
     const safeId = (s) => btoa(unescape(encodeURIComponent(s))).replace(/[^a-zA-Z0-9]/g, '');
-    const normTitle = (s) => (s||'').toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    const addEvt = (id, evt, cb) => {
+        const el = $(id);
+        if (el) el.addEventListener(evt, cb);
+    };
+    
+    const normTitle = (s) => {
+        if (!s) return '';
+        return s.normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "") 
+                .replace(/\(.*?\)/g, "")
+                .toLowerCase()
+                .replace(/[^a-z0-9 ]/g, "")
+                .replace(/\s+/g, " ")
+                .trim();
+    };
 
-    function toast(msg, kind='') {
-      const host = $('toast-host');
-      const el = document.createElement('div');
-      el.className = 'toast ' + kind;
-      el.textContent = msg;
-      host.appendChild(el);
-      setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity .3s'; }, 2200);
-      setTimeout(() => el.remove(), 2600);
+    // Unified Light Toast System
+    function showToast(message, type = 'success') {
+        let container = $('toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'toast-container';
+            container.className = 'toast-container';
+            document.body.appendChild(container);
+        }
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        const icon = type === 'success' ? '✅' : (type === 'error' ? '❌' : 'ℹ️');
+        toast.innerHTML = `
+            <span style="font-size:16px;">${icon}</span>
+            <div style="flex-grow:1;">${message}</div>
+            <button style="background:transparent; border:none; color:var(--muted-fg); cursor:pointer; font-size:14px; padding:0 4px;" onclick="this.parentElement.remove()">✕</button>
+        `;
+        container.appendChild(toast);
+        setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transition = 'opacity 0.3s';
+            setTimeout(() => toast.remove(), 300);
+        }, 3500);
     }
+
+    // Modal Manager for Heavy Workflows
+    let modalTimeout = null;
+    function showModal(title, text, isError = false, loading = false) {
+        clearTimeout(modalTimeout);
+        const overlay = $('action-modal-overlay');
+        const body = $('action-modal-body');
+        
+        let iconHtml = '';
+        if (loading) iconHtml = `<div class="spinner"></div>`;
+        else iconHtml = `<div style="font-size:40px; margin-bottom:12px;">${isError ? '❌' : '✅'}</div>`;
+        
+        const color = isError ? 'var(--destructive)' : (loading ? 'var(--fg)' : 'var(--success)');
+        
+        body.innerHTML = `
+            ${iconHtml}
+            <h3 style="margin:0 0 8px; color: ${color};">${title}</h3>
+            <p style="margin:0; font-size:14px; color:var(--muted-fg);">${text}</p>
+            ${isError ? `<button class="btn outline" style="margin-top:20px;" onclick="document.getElementById('action-modal-overlay').classList.remove('active')">Close</button>` : ''}
+        `;
+        overlay.classList.add('active');
+
+        if (!isError && !loading) {
+            modalTimeout = setTimeout(() => {
+                overlay.classList.remove('active');
+            }, 2500);
+        }
+    }
+
+    async function copyToClipboard(text, btnEl) {
+        try {
+            await navigator.clipboard.writeText(text);
+            const originalText = btnEl.innerHTML;
+            btnEl.innerHTML = '✅ Copied!';
+            btnEl.classList.add('btn-success');
+            showToast("Copied to clipboard successfully.");
+            setTimeout(() => {
+                btnEl.innerHTML = originalText;
+                btnEl.classList.remove('btn-success');
+            }, 2000);
+        } catch {
+            showToast('Could not copy to clipboard.', 'error');
+        }
+    }
+
+    addEvt('btn-close-action-modal', 'click', () => $('action-modal-overlay').classList.remove('active'));
 
     // --- STATE PERSISTENCE ---
     function saveState() {
@@ -721,8 +843,13 @@
         bookStatus: bookStatus,
         selectedShelves: Array.from(selectedShelves),
         availableShelves: Array.from(availableShelves),
-        libraryOnlyFilterActive: libraryOnlyFilterActive
+        libraryOnlyFilterActive: libraryOnlyFilterActive,
+        seenChallenges: Array.from(seenChallenges)
       }));
+    }
+
+    function saveAccordionState() {
+        localStorage.setItem('gr_collapsed_cats', JSON.stringify(Array.from(collapsedCats)));
     }
 
     function loadState() {
@@ -738,7 +865,11 @@
           if (p.selectedShelves) selectedShelves = new Set(p.selectedShelves);
           if (p.availableShelves) availableShelves = new Set(p.availableShelves);
           if (p.libraryOnlyFilterActive) libraryOnlyFilterActive = p.libraryOnlyFilterActive;
+          if (p.seenChallenges) seenChallenges = new Set(p.seenChallenges);
         }
+
+        const savedColl = localStorage.getItem('gr_collapsed_cats');
+        if (savedColl) collapsedCats = new Set(JSON.parse(savedColl));
 
         const csvData = localStorage.getItem('gr_csv_library');
         if (csvData) {
@@ -749,14 +880,17 @@
         }
       } catch (e) { console.warn("Failed to load local state", e); }
     }
+
     function applyTheme() {
       const saved = localStorage.getItem('gr_theme');
       const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       const isDark = saved ? saved === 'dark' : prefersDark;
       
       document.documentElement.classList.toggle('dark', isDark);
-      $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
+      const icon = $('theme-toggle');
+      if(icon) icon.textContent = isDark ? '☀️' : '🌙';
     }
+
     // --- INITIALIZATION ---
     async function init() {
       try {
@@ -764,78 +898,121 @@
         if (!res.ok) throw new Error("Could not load data.json");
         baseDatabase = await res.json();
       } catch (err) {
-        console.warn("Using fallback data for local testing.");
+        console.warn("Using fallback database data.");
         baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA));
       }
 
       loadState();
-      buildRawDatabase();
+
+      let foundNew = false;
+      baseDatabase.challenges.forEach(c => {
+          if (!seenChallenges.has(c.id) && seenChallenges.size > 0) {
+              c.isNew = true;
+              foundNew = true;
+          }
+      });
       
-      // if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      //     document.documentElement.classList.add('dark');
-      //     $('theme-toggle').textContent = '☀️';
-      // }
+      baseDatabase.challenges.forEach(c => seenChallenges.add(c.id));
+      if(foundNew || seenChallenges.size === 0) saveState();
+
+      buildRawDatabase();
       applyTheme();
       
-      // Close custom dropdowns on outside clicks
+      // Setup Display Date
+      if (baseDatabase.lastUpdated) {
+          const dt = new Date(baseDatabase.lastUpdated);
+          const formatted = dt.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+          const upEl = $('last-updated-display');
+          if (upEl) upEl.textContent = `List updated: ${formatted}`;
+      }
+      
       document.addEventListener('click', (e) => {
-        const wrap1 = $('shelf-dropdown-wrapper');
-        const menu1 = $('shelf-dropdown-menu');
-        if (wrap1 && !wrap1.contains(e.target)) {
-          menu1.classList.remove('show');
-        }
-        
-        const wrap2 = $('optimal-shelf-dropdown-wrapper');
-        const menu2 = $('optimal-shelf-dropdown-menu');
-        if (wrap2 && !wrap2.contains(e.target)) {
-          menu2.classList.remove('show');
+        const wrap = $('shelf-dropdown-wrapper');
+        const menu = $('shelf-dropdown-menu');
+        if (wrap && menu && !wrap.contains(e.target)) {
+            menu.classList.remove('show');
+            $('btn-shelf-dropdown')?.setAttribute('aria-expanded', 'false');
         }
       });
       
+      document.body.addEventListener('toggle', (e) => {
+        if (e.target.tagName === 'DETAILS' && e.target.classList.contains('cat-accordion')) {
+            const id = e.target.dataset.catId;
+            if(e.target.open) collapsedCats.delete(id);
+            else collapsedCats.add(id);
+            saveAccordionState();
+            syncToggleAllButton();
+        }
+      }, true);
+
       evaluateImportGlow();
+
+      if (!localStorage.getItem('gr_tour_completed')) {
+          setTimeout(startTour, 400);
+      }
     }
 
     function evaluateImportGlow() {
-        const btn = $('btn-import-csv-header');
-        if (!csvImportTimestamp && selectedChallenges.size > 0) {
-            btn.classList.add('glow-btn');
-            // Glow only for 3 seconds on page load
-            setTimeout(() => {
+        const btn = $('btn-import-csv');
+        if (btn) {
+            if (!csvImportTimestamp && selectedChallenges.size > 0) {
+                btn.classList.add('glow-btn');
+                setTimeout(() => { btn.classList.remove('glow-btn'); }, 4000);
+            } else {
                 btn.classList.remove('glow-btn');
-            }, 3000);
-        } else {
-            btn.classList.remove('glow-btn');
+            }
         }
     }
 
-    // --- UI TOGGLES & PRO MODAL ---
-    $('theme-toggle').addEventListener('click', () => {
+    // --- UI TOGGLES BINDING ---
+    addEvt('theme-toggle', 'click', () => {
       const isDark = document.documentElement.classList.toggle('dark');
       $('theme-toggle').textContent = isDark ? '☀️' : '🌙';
       localStorage.setItem('gr_theme', isDark ? 'dark' : 'light');
     });
 
-    $('btn-toggle-covers').addEventListener('click', () => {
-      coversVisible = !coversVisible;
+    addEvt('btn-toggle-covers', 'change', (e) => {
+      coversVisible = !e.target.checked;
       document.body.classList.toggle('hide-covers', !coversVisible);
-      $('btn-toggle-covers').innerHTML = coversVisible ? `🖼️ <span class="link-label">Hide Covers</span>` : `🖼️ <span class="link-label">Show Covers</span>`;
     });
 
-    $('btn-menu').addEventListener('click', () => { $('sidebar').classList.add('open'); $('sidebar-backdrop').classList.add('open'); });
-    $('sidebar-backdrop').addEventListener('click', () => { $('sidebar').classList.remove('open'); $('sidebar-backdrop').classList.remove('open'); });
+    addEvt('grid-size-filter', 'change', (e) => {
+        const v = e.target.value;
+        if (v === 'auto') {
+            document.documentElement.style.setProperty('--grid-cols', 'auto-fill');
+            document.documentElement.style.setProperty('--grid-min', '180px');
+        } else {
+            document.documentElement.style.setProperty('--grid-cols', v);
+            document.documentElement.style.setProperty('--grid-min', '140px');
+        }
+    });
 
-    $('btn-expand-all').addEventListener('click', () => document.querySelectorAll('.cat-accordion').forEach(el => el.open = true));
-    $('btn-collapse-all').addEventListener('click', () => document.querySelectorAll('.cat-accordion').forEach(el => el.open = false));
-
-    let pendingProCallback = null;
-    function handleProFeature(callback) {
-      if (localStorage.getItem('gr_pro_unlocked')) callback();
-      else { pendingProCallback = callback; $('pro-modal').classList.add('active'); }
+    addEvt('btn-menu', 'click', () => { $('sidebar')?.classList.add('open'); $('sidebar-backdrop')?.classList.add('open'); });
+    addEvt('sidebar-backdrop', 'click', () => { $('sidebar')?.classList.remove('open'); $('sidebar-backdrop')?.classList.remove('open'); });
+    
+    function syncToggleAllButton() {
+        const anyClosed = collapsedCats.size > 0;
+        const btn = $('btn-toggle-accordions');
+        if(btn) btn.innerHTML = anyClosed ? '➕ Expand All' : '➖ Collapse All';
     }
-    $('btn-continue-pro').addEventListener('click', () => {
-      localStorage.setItem('gr_pro_unlocked', 'true');
-      $('pro-modal').classList.remove('active');
-      if (pendingProCallback) pendingProCallback();
+
+    addEvt('btn-toggle-accordions', 'click', () => {
+        const isMostlyCollapsed = collapsedCats.size > 0;
+        const els = document.querySelectorAll('.cat-accordion');
+        
+        if (isMostlyCollapsed) {
+            els.forEach(el => el.open = true);
+            collapsedCats.clear();
+        } else {
+            els.forEach(el => el.open = false);
+            activeData.sections.forEach((sec, i) => {
+                const label = sec.categories.length === 1 ? sec.categories[0] : `overlap_${i}`;
+                collapsedCats.add(label); 
+            });
+            activeData.categories.forEach(c => collapsedCats.add(c));
+        }
+        saveAccordionState();
+        syncToggleAllButton();
     });
 
     // --- CSV PARSING & UPLOAD ---
@@ -853,92 +1030,84 @@
       return ret.filter(r => r.join('').trim().length > 0);
     }
 
-    $('btn-import-csv-header').addEventListener('click', () => $('csv-upload').click());
+    addEvt('btn-import-csv', 'click', () => $('csv-upload')?.click());
     
     function updateLibraryUIState() {
       const hasLibrary = userLibraryMap.size > 0;
+      const toggleWrapper = $('library-toggle-wrapper');
+      const dropdownWrapper = $('shelf-dropdown-wrapper');
+      const clearBtn = $('btn-clear-library');
+      const checkbox = $('library-toggle-checkbox');
+      const importBtn = $('btn-import-csv');
       
-      // Update UI for BOTH Tab Filter bars simultaneously
-      ['library', 'optimal'].forEach(tabPrefix => {
-         const isLibTab = tabPrefix === 'library';
-         const toggleWrapper = $(isLibTab ? 'library-toggle-wrapper' : 'optimal-library-toggle-wrapper');
-         const dropdownWrapper = $(isLibTab ? 'shelf-dropdown-wrapper' : 'optimal-shelf-dropdown-wrapper');
-         const clearBtn = $(isLibTab ? 'btn-clear-library' : 'btn-clear-library-optimal');
-         const checkbox = $(isLibTab ? 'library-toggle-checkbox' : 'optimal-library-toggle-checkbox');
-         
-         if (hasLibrary) {
-             toggleWrapper.classList.remove('hidden');
-             dropdownWrapper.classList.remove('hidden');
-             clearBtn.classList.remove('hidden');
-             checkbox.checked = libraryOnlyFilterActive;
-             
-             if (libraryOnlyFilterActive) {
-                 toggleWrapper.classList.add('active');
-                 dropdownWrapper.classList.remove('disabled');
-             } else {
-                 toggleWrapper.classList.remove('active');
-                 dropdownWrapper.classList.add('disabled');
-             }
-         } else {
-             toggleWrapper.classList.add('hidden');
-             dropdownWrapper.classList.add('hidden');
-             clearBtn.classList.add('hidden');
-         }
-      });
-
-      if(hasLibrary) {
+      if (hasLibrary) {
+          toggleWrapper?.classList.remove('hidden');
+          dropdownWrapper?.classList.remove('hidden');
+          clearBtn?.classList.remove('hidden');
+          if (checkbox) checkbox.checked = libraryOnlyFilterActive;
+          if (importBtn) {
+              importBtn.innerHTML = "📂 Import New CSV";
+              importBtn.classList.add("has-imported");
+          }
+          
+          if (libraryOnlyFilterActive) {
+              toggleWrapper?.classList.add('active');
+              dropdownWrapper?.classList.remove('disabled');
+              if (selectedShelves.size === 0 && availableShelves.size > 0) {
+                  availableShelves.forEach(s => selectedShelves.add(s));
+              }
+          } else {
+              toggleWrapper?.classList.remove('active');
+              dropdownWrapper?.classList.add('disabled');
+          }
           populateShelfDropdown();
+      } else {
+          toggleWrapper?.classList.add('hidden');
+          dropdownWrapper?.classList.add('hidden');
+          clearBtn?.classList.add('hidden');
+          if (importBtn) {
+              importBtn.innerHTML = "📂 Import Goodreads CSV";
+              importBtn.classList.remove("has-imported");
+          }
       }
     }
 
-    // Sync state and run triggers instantly when library checkboxes are clicked
-    ['library-toggle-checkbox', 'optimal-library-toggle-checkbox'].forEach(id => {
-       $(id).addEventListener('change', (e) => {
-           libraryOnlyFilterActive = e.target.checked;
-           saveState();
-           updateLibraryUIState();
-           renderAll();
-       });
+    addEvt('library-toggle-checkbox', 'change', (e) => {
+       libraryOnlyFilterActive = e.target.checked;
+       saveState();
+       updateLibraryUIState();
+       renderAll();
     });
 
-    // Custom Shelf Dropdown Logics
-    $('btn-shelf-dropdown').addEventListener('click', (e) => {
+    addEvt('btn-shelf-dropdown', 'click', () => {
        if(!libraryOnlyFilterActive) return; 
-       $('shelf-dropdown-menu').classList.toggle('show');
-    });
-
-    $('btn-optimal-shelf-dropdown').addEventListener('click', (e) => {
-       if(!libraryOnlyFilterActive) return; 
-       $('optimal-shelf-dropdown-menu').classList.toggle('show');
+       const menu = $('shelf-dropdown-menu');
+       const btn = $('btn-shelf-dropdown');
+       if(menu && btn) {
+           const isShowing = menu.classList.toggle('show');
+           btn.setAttribute('aria-expanded', isShowing);
+       }
     });
 
     function populateShelfDropdown() {
-      const listIds = ['shelf-checkbox-list', 'optimal-shelf-checkbox-list'];
-      
-      listIds.forEach(id => {
-          const list = $(id);
-          list.innerHTML = Array.from(availableShelves).sort().map(s => `
-            <label>
-              <input type="checkbox" value="${escapeHtml(s)}" class="shelf-cb" ${selectedShelves.has(s) || selectedShelves.size === 0 ? 'checked' : ''} />
-              ${escapeHtml(s)}
-            </label>
-          `).join('');
-      });
+      const list = $('shelf-checkbox-list');
+      if (!list) return;
+
+      list.innerHTML = Array.from(availableShelves).sort().map(s => `
+        <label>
+          <input type="checkbox" value="${escapeHtml(s)}" class="shelf-cb" 
+                ${selectedShelves.has(s) ? 'checked' : ''} />
+          ${escapeHtml(s)}
+        </label>
+      `).join('');
       
       updateShelfButtonText();
 
-      // Setup global real-time synchronization between both dropdowns
       document.querySelectorAll('.shelf-cb').forEach(cb => {
          cb.addEventListener('change', (e) => {
              const val = e.target.value;
-             const checked = e.target.checked;
-
-             if (checked) selectedShelves.add(val);
+             if (e.target.checked) selectedShelves.add(val);
              else selectedShelves.delete(val);
-
-             // Visually match checkboxes on both sides instantly
-             document.querySelectorAll(`.shelf-cb[value="${CSS.escape(val)}"]`).forEach(c => c.checked = checked);
-
              saveState();
              updateShelfButtonText();
              renderAll();
@@ -947,9 +1116,10 @@
     }
 
     function updateShelfButtonText() {
-       const count = selectedShelves.size === 0 ? availableShelves.size : selectedShelves.size;
-       $('btn-shelf-dropdown').innerHTML = `📚 Library Shelves (${count}) <span style="font-size:10px">▼</span>`;
-       $('btn-optimal-shelf-dropdown').innerHTML = `📚 Library Shelves (${count}) <span style="font-size:10px">▼</span>`;
+      const count = selectedShelves.size;
+      const label = `📚 Library Shelves (${count}) <span style="font-size:10px">▼</span>`;
+      const btn = $('btn-shelf-dropdown');
+      if (btn) btn.innerHTML = label;
     }
 
     function selectAllShelves() {
@@ -961,18 +1131,15 @@
 
     function unselectAllShelves() {
       document.querySelectorAll('.shelf-cb').forEach(cb => cb.checked = false);
-      selectedShelves.clear(); // Empty means 0 matched
+      selectedShelves.clear(); 
       saveState(); updateShelfButtonText(); renderAll();
     }
 
-    $('btn-shelf-all').addEventListener('click', selectAllShelves);
-    $('btn-optimal-shelf-all').addEventListener('click', selectAllShelves);
-    $('btn-shelf-none').addEventListener('click', unselectAllShelves);
-    $('btn-optimal-shelf-none').addEventListener('click', unselectAllShelves);
+    addEvt('btn-shelf-all', 'click', selectAllShelves);
+    addEvt('btn-shelf-none', 'click', unselectAllShelves);
 
-    // Global Clear Data function triggered from either tab
-    function clearLibraryData() {
-        if (confirm("Are you sure you want to permanently delete your imported Goodreads library data?")) {
+    addEvt('btn-clear-library', 'click', () => {
+        if (confirm("Permanently delete your imported library data from storage?")) {
             userLibraryMap.clear();
             availableShelves.clear();
             selectedShelves.clear();
@@ -983,78 +1150,84 @@
             localStorage.removeItem('gr_csv_imported_at');
             saveState();
             
-            // Hide library elements instantly
-            document.querySelectorAll('#library-toggle-wrapper, #optimal-library-toggle-wrapper, #shelf-dropdown-wrapper, #optimal-shelf-dropdown-wrapper, #btn-clear-library, #btn-clear-library-optimal').forEach(el => el.classList.add('hidden'));
-            
+            updateLibraryUIState();
             evaluateImportGlow();
-            toast("Library data successfully cleared", "success");
+            showToast("Library cleared successfully.");
             renderAll();
         }
-    }
+    });
 
-    $('btn-clear-library').addEventListener('click', (e) => { e.stopPropagation(); clearLibraryData(); });
-    $('btn-clear-library-optimal').addEventListener('click', (e) => { e.stopPropagation(); clearLibraryData(); });
-
-    $('csv-upload').addEventListener('change', (e) => {
+    addEvt('csv-upload', 'change', (e) => {
       const file = e.target.files[0];
       if (!file) return;
+      
+      showModal("Parsing CSV...", "Processing shelves locally...", false, true);
+
       const reader = new FileReader();
       reader.onload = (ev) => {
-        const rows = parseCSV(ev.target.result);
-        if(rows.length < 2) return toast("Invalid or empty CSV", "error");
-        
-        const headers = rows[0].map(h => h.trim().toLowerCase());
-        const tIdx = headers.indexOf('title');
-        const sIdx = headers.indexOf('bookshelves');
-        const exIdx = headers.indexOf('exclusive shelf');
-        
-        if (tIdx === -1) return toast("Could not find 'Title' column in CSV", "error");
+        setTimeout(() => {
+            try {
+                const rows = parseCSV(ev.target.result);
+                if(rows.length < 2) throw new Error("Invalid or empty CSV file.");
+                
+                const headers = rows[0].map(h => h.trim().toLowerCase());
+                const tIdx = headers.indexOf('title');
+                const sIdx = headers.indexOf('bookshelves');
+                const exIdx = headers.indexOf('exclusive shelf');
+                
+                if (tIdx === -1) throw new Error("Could not locate 'Title' column.");
 
-        userLibraryMap.clear();
-        availableShelves.clear();
-        selectedShelves.clear();
+                userLibraryMap.clear();
+                availableShelves.clear();
+                selectedShelves.clear();
 
-        for (let i = 1; i < rows.length; i++) {
-          const row = rows[i];
-          if(!row || row.length <= tIdx) continue;
-          
-          const title = row[tIdx];
-          if(!title) continue;
-          
-          let shelves = [];
-          if (sIdx !== -1 && row[sIdx]) shelves.push(...row[sIdx].split(',').map(s=>s.trim()));
-          if (exIdx !== -1 && row[exIdx]) shelves.push(row[exIdx].trim());
-          
-          shelves = [...new Set(shelves)].filter(Boolean);
-          shelves.forEach(s => availableShelves.add(s));
-          
-          const key = normTitle(title);
-          userLibraryMap.set(key, shelves);
-        }
-        
-        // Auto-select all shelves initially
-        availableShelves.forEach(s => selectedShelves.add(s));
-        libraryOnlyFilterActive = true; 
-        
-        csvImportTimestamp = Date.now();
-        localStorage.setItem('gr_csv_imported_at', csvImportTimestamp);
-        localStorage.setItem('gr_csv_library', JSON.stringify(Array.from(userLibraryMap.entries())));
-        
-        saveState();
-        $('csv-upload').value = ''; 
-        
-        evaluateImportGlow();
-        updateLibraryUIState();
-        toast("Library imported successfully!", "success");
+                for (let i = 1; i < rows.length; i++) {
+                  const row = rows[i];
+                  if(!row || row.length <= tIdx) continue;
+                  
+                  const title = row[tIdx];
+                  if(!title) continue;
+                  
+                  let shelves = [];
+                  if (sIdx !== -1 && row[sIdx]) shelves.push(...row[sIdx].split(',').map(s=>s.trim()));
+                  if (exIdx !== -1 && row[exIdx]) shelves.push(row[exIdx].trim());
+                  
+                  shelves = [...new Set(shelves)].filter(Boolean);
+                  shelves.forEach(s => availableShelves.add(s));
+                  
+                  const key = normTitle(title);
+                  userLibraryMap.set(key, shelves);
+                }
+                
+                availableShelves.forEach(s => selectedShelves.add(s));
+                libraryOnlyFilterActive = true; 
+                
+                csvImportTimestamp = Date.now();
+                localStorage.setItem('gr_csv_imported_at', csvImportTimestamp);
+                localStorage.setItem('gr_csv_library', JSON.stringify(Array.from(userLibraryMap.entries())));
+                
+                saveState();
+                
+                evaluateImportGlow();
+                updateLibraryUIState();
+                renderAll();
 
-        // UI Teaching Flow: Switch to Library, highlight filters on both tabs
-        switchTab('library');
-        document.querySelectorAll('#library-toggle-wrapper, #optimal-library-toggle-wrapper, #shelf-dropdown-wrapper, #optimal-shelf-dropdown-wrapper').forEach(el => {
-            el.classList.add('filter-highlight');
-            setTimeout(() => el.classList.remove('filter-highlight'), 4000);
-        });
-
-        renderAll();
+                // Close Loader Modal
+                $('action-modal-overlay').classList.remove('active');
+                showToast(`Indexed ${userLibraryMap.size} books successfully!`);
+                
+                if (selectedChallenges.size > 0) {
+                    switchTab('library');
+                    document.querySelectorAll('#library-toggle-wrapper, #shelf-dropdown-wrapper').forEach(el => {
+                        el.classList.add('filter-highlight');
+                        setTimeout(() => el.classList.remove('filter-highlight'), 3000);
+                    });
+                }
+            } catch (err) {
+                showModal("Import Failed", err.message, true);
+            }
+            $('csv-upload').value = ''; 
+        }, 50);
       };
       reader.readAsText(file);
     });
@@ -1070,25 +1243,23 @@
     function buildRawDatabase() {
       rawDatabase = JSON.parse(JSON.stringify(baseDatabase));
 
-      // CRUCIAL RECONSTRUCTION FIX: Initialize missing b.id properties on native books
       rawDatabase.books.forEach(b => {
-          b.id = 'b_' + safeId(b.title);
+          b.id = 'b_' + safeId(b.title + (b.author || ''));
       });
       
       for (const [cId, cData] of Object.entries(customLists)) {
           rawDatabase.challenges.unshift({ id: cId, name: cData.name, count: cData.books.length, isCustom: true });
           cData.books.forEach(cb => {
-              const bId = 'b_' + safeId(cb.title);
+              const bId = 'b_' + safeId(cb.title + (cb.author || ''));
               let existing = rawDatabase.books.find(b => b.id === bId);
               if (!existing) {
-                  existing = { id: bId, title: cb.title, url: cb.url || '#', author: "Unknown Author", coverUrl: "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png", challenges: [] };
+                  existing = { id: bId, title: cb.title, url: cb.url || '#', author: cb.author || "Unknown Author", coverUrl: "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png", challenges: [] };
                   rawDatabase.books.push(existing);
               }
               if (!existing.challenges.includes(cId)) existing.challenges.push(cId);
           });
       }
 
-      // If no library is actually loaded, force toggle states to false to avoid greedy path filtering traps
       if(userLibraryMap.size === 0) {
           libraryOnlyFilterActive = false;
       }
@@ -1100,8 +1271,12 @@
     // --- SIDEBAR ---
     function renderChallengeGrid() {
       const grid = $('challenge-grid');
-      const q = $('search-challenges').value.toLowerCase();
-      const f = $('filter-challenges').value;
+      const filterInput = $('search-challenges');
+      const selectFilter = $('filter-challenges');
+      if(!grid) return;
+      
+      const q = filterInput ? filterInput.value.toLowerCase() : '';
+      const f = selectFilter ? selectFilter.value : 'all';
 
       const html = rawDatabase.challenges.map(c => {
         const isSelected = selectedChallenges.has(c.id);
@@ -1110,12 +1285,13 @@
         if (q && !c.name.toLowerCase().includes(q)) return '';
 
         const customActions = c.isCustom ? `<button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button> <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>` : '';
+        const newBadge = c.isNew ? `<span class="badge-new">NEW</span>` : '';
 
         return `
           <div class="challenge-item ${isSelected ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}">
-            <input type="checkbox" ${isSelected ? 'checked' : ''} />
+            <input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" />
             <div class="challenge-info">
-              <strong>${c.isCustom ? '⭐ ' : ''}${escapeHtml(c.name)}</strong>
+              <strong>${c.isCustom ? '⭐ ' : ''}${escapeHtml(c.name)}${newBadge}</strong>
               <span>${c.count} books</span>
             </div>
             <div class="chal-actions">${customActions}</div>
@@ -1124,13 +1300,15 @@
       }).join('');
 
       grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px; border:none;">No challenges found.</div>';
-      $('sidebar-counts').textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
+      
+      const countEl = $('sidebar-counts');
+      if(countEl) countEl.textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
     }
 
-    $('search-challenges').addEventListener('input', renderChallengeGrid);
-    $('filter-challenges').addEventListener('change', renderChallengeGrid);
+    addEvt('search-challenges', 'input', renderChallengeGrid);
+    addEvt('filter-challenges', 'change', renderChallengeGrid);
 
-    $('challenge-grid').addEventListener('click', (e) => {
+    addEvt('challenge-grid', 'click', (e) => {
       const btn = e.target.closest('button');
       if (btn) {
           e.stopPropagation();
@@ -1142,18 +1320,20 @@
                   localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
                   saveState();
                   buildRawDatabase();
-                  toast('List deleted', 'success');
+                  showToast("Custom list removed.");
               }
           }
           if (btn.classList.contains('edit')) {
               const cData = customLists[chalId];
-              $('custom-id').value = chalId; $('custom-name').value = cData.name;
-              $('custom-books').value = cData.books.map(b => b.url !== '#' ? `- [${b.title}](${b.url})` : b.title).join('\n');
-              $('modal-title').textContent = "Edit Custom List";
-              $('custom-modal').classList.add('active');
+              if($('custom-id')) $('custom-id').value = chalId; 
+              if($('custom-name')) $('custom-name').value = cData.name;
+              if($('custom-books')) $('custom-books').value = cData.books.map(b => b.url !== '#' ? `- [${b.title}](${b.url})` : b.title).join('\n');
+              if($('modal-title')) $('modal-title').textContent = "Edit Custom List";
+              $('custom-modal')?.classList.add('active');
           }
           return;
       }
+      
       const item = e.target.closest('.challenge-item');
       if (!item) return;
       
@@ -1164,24 +1344,44 @@
       saveState();
       renderChallengeGrid();
       recomputeActiveData();
+
+      if (window.innerWidth < 900 && selectedChallenges.size > 0) {
+          $('sidebar')?.classList.remove('open');
+          $('sidebar-backdrop')?.classList.remove('open');
+      }
     });
 
-    $('btn-select-all').addEventListener('click', () => { rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); saveState(); renderChallengeGrid(); recomputeActiveData(); });
-    $('btn-clear-selection').addEventListener('click', () => { selectedChallenges.clear(); saveState(); renderChallengeGrid(); recomputeActiveData(); });
+    addEvt('btn-select-all', 'click', () => { 
+        rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); 
+        saveState(); renderChallengeGrid(); recomputeActiveData(); 
+        if (window.innerWidth < 900) { $('sidebar')?.classList.remove('open'); $('sidebar-backdrop')?.classList.remove('open'); }
+    });
+    addEvt('btn-clear-selection', 'click', () => { selectedChallenges.clear(); saveState(); renderChallengeGrid(); recomputeActiveData(); });
 
-    // Custom List Modals
-    $('btn-add-custom').addEventListener('click', () => handleProFeature(() => {
-      $('custom-id').value = ''; $('custom-name').value = ''; $('custom-books').value = '';
-      $('modal-title').textContent = "Add Custom List";
-      $('custom-modal').classList.add('active');
-    }));
-    $('btn-close-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
-    $('btn-cancel-modal').addEventListener('click', () => $('custom-modal').classList.remove('active'));
+    // Custom List Modal
+    addEvt('btn-add-custom', 'click', () => {
+      if($('custom-id')) $('custom-id').value = ''; 
+      if($('custom-name')) $('custom-name').value = ''; 
+      if($('custom-books')) $('custom-books').value = '';
+      if($('modal-title')) $('modal-title').textContent = "Add Custom List";
+      $('custom-modal')?.classList.add('active');
+    });
     
-    $('btn-save-custom').addEventListener('click', () => {
-      const name = $('custom-name').value.trim(), text = $('custom-books').value.trim();
-      if (!name || !text) return toast("Provide a name and at least one book.", "error");
-      const id = $('custom-id').value || 'c_custom_' + Date.now();
+    addEvt('btn-close-modal', 'click', () => $('custom-modal')?.classList.remove('active'));
+    addEvt('btn-cancel-modal', 'click', () => $('custom-modal')?.classList.remove('active'));
+    
+    addEvt('btn-save-custom', 'click', () => {
+      const nameEl = $('custom-name');
+      const textEl = $('custom-books');
+      if(!nameEl || !textEl) return;
+      
+      const name = nameEl.value.trim();
+      const text = textEl.value.trim();
+      if (!name || !text) return showToast("Provide a name and book list.", "error");
+      
+      const idInput = $('custom-id');
+      const id = (idInput && idInput.value) ? idInput.value : 'c_custom_' + Date.now();
+      
       const lines = text.split('\n').map(l => l.trim()).filter(l => l);
       
       const parsedBooks = lines.map(line => {
@@ -1191,36 +1391,30 @@
       
       customLists[id] = { name, books: parsedBooks };
       localStorage.setItem('gr_custom_lists', JSON.stringify(customLists));
-      $('custom-modal').classList.remove('active');
+      $('custom-modal')?.classList.remove('active');
       selectedChallenges.add(id);
       saveState();
       buildRawDatabase();
-      toast("Custom list saved!", "success");
+      showToast("Custom list saved!");
     });
 
-    // Esc key clears search input instantly
-    $('search-input').addEventListener('keydown', (e) => {
+    addEvt('search-input', 'keydown', (e) => {
         if(e.key === "Escape") {
-            $('search-input').value = '';
-            search = '';
-            renderLibrary();
+            const input = $('search-input');
+            if(input) { input.value = ''; search = ''; renderAll(); }
         }
     });
 
     // --- CORE LOGIC ---
     function recomputeActiveData() {
-      const els = document.querySelectorAll('.req-chal');
       if (selectedChallenges.size === 0) {
-        $('workspace').classList.add('hidden');
-        $('workspace-empty').classList.remove('hidden');
-        els.forEach(e => e.classList.add('hidden'));
-        if(window.innerWidth < 900) { $('sidebar').classList.remove('open'); $('sidebar-backdrop').classList.remove('open'); }
+        $('workspace')?.classList.add('hidden');
+        $('workspace-empty')?.classList.remove('hidden');
         return;
       }
       
-      $('workspace').classList.remove('hidden');
-      $('workspace-empty').classList.add('hidden');
-      els.forEach(e => e.classList.remove('hidden'));
+      $('workspace')?.classList.remove('hidden');
+      $('workspace-empty')?.classList.add('hidden');
       evaluateImportGlow();
 
       activeData.categories = Array.from(selectedChallenges);
@@ -1287,7 +1481,7 @@
         <div class="book-card ${avoidClass} ${optimalClass}">
           <div class="book-cover-wrapper">
              <a href="${escapeHtml(b.url||'#')}" target="_blank" data-stop>
-               <img class="book-cover" src="${escapeHtml(b.coverUrl)}" loading="lazy" width="130" height="195" alt="Cover" />
+               <img class="book-cover" src="${escapeHtml(b.coverUrl)}" loading="lazy" alt="Cover" />
              </a>
           </div>
           <div class="book-info">
@@ -1297,7 +1491,7 @@
             <div class="tags">${tagsHtml}</div>
           </div>
           <div style="margin-top:auto; width: 100%; padding-top: 10px;">
-            <div class="status-group" data-stop>
+            <div class="status-group tour-target-status" data-stop>
               <button class="inc ${s==='include'?'active':''}" data-status-set="${b.id}" data-status="include" title="Force algorithm to include this book">📌</button>
               <button class="neu ${s==='neutral'?'active':''}" data-status-set="${b.id}" data-status="neutral">Auto</button>
               <button class="exc ${s==='exclude'?'active':''}" data-status-set="${b.id}" data-status="exclude" title="Prevent algorithm from using this book">✕</button>
@@ -1312,45 +1506,45 @@
 
       const q = search.toLowerCase();
       const filteredBooks = activeData.books.filter(b => {
-        // Track stats unconditionally based on global set configuration
         if (b.categories.length > 1) overlapCount++; else uniqueCount++;
         if (bookStatus[b.id] === 'include') incCount++;
         if (bookStatus[b.id] === 'exclude') excCount++;
 
-        // Search
         const titleMatch = b.title.toLowerCase().includes(q);
         const authorMatch = b.author && b.author.toLowerCase().includes(q);
         if (q && !titleMatch && !authorMatch) return false;
         
-        // Status Filter
         const s = bookStatus[b.id];
         if (statusFilter === 'include' && s !== 'include') return false;
         if (statusFilter === 'exclude' && s !== 'exclude') return false;
 
-        // Overlap Filter
         if (overlapFilter === 'overlap' && b.categories.length === 1) return false;
         if (overlapFilter === 'single' && b.categories.length > 1) return false;
 
-        // Library Filter
         if (isLibActive && getMatchedShelves(b.title).length === 0) return false;
 
         return true;
       });
 
-      // Update Library Stats Bar
-      $('library-stats').innerHTML = `<strong>${activeData.books.length}</strong> Total &nbsp;|&nbsp; 🔗 <strong>${overlapCount}</strong> Overlap &nbsp;|&nbsp; 🔀 <strong>${uniqueCount}</strong> Unique &nbsp;|&nbsp; 📌 <strong>${incCount}</strong> Must-Read &nbsp;|&nbsp; ✕ <strong>${excCount}</strong> Avoid`;
+      const statsEl = $('library-stats');
+      if(statsEl) statsEl.innerHTML = `<strong>${activeData.books.length}</strong> Total &nbsp;|&nbsp; 🔗 <strong>${overlapCount}</strong> Overlap &nbsp;|&nbsp; 🔀 <strong>${uniqueCount}</strong> Unique &nbsp;|&nbsp; 📌 <strong>${incCount}</strong> Must-Read &nbsp;|&nbsp; ✕ <strong>${excCount}</strong> Avoid`;
       
       let html = '';
       if(filteredBooks.length === 0) {
-          html = '<div class="empty" style="grid-column: 1 / -1;"><div class="icon">👻</div><h3>No books found</h3><p>Try clearing your search or filters.</p></div>';
+          let extraAction = isLibActive 
+            ? `<p style="margin:4px 0 0 0; font-size:12.5px; opacity:0.8;">Try disabling the "Filter by My Library" toggle or choosing different shelves.</p>` 
+            : `<p style="margin:4px 0 0 0; font-size:12.5px; opacity:0.8;">Try clearing your active search or setting different status filters.</p>`;
+          html = `<div class="empty" style="grid-column: 1 / -1;"><div class="icon">👻</div><h3>No books matched your criteria</h3>${extraAction}</div>`;
       } else {
           if (groupByFilter === 'challenge') {
               activeData.categories.forEach(catId => {
                   const catBooks = filteredBooks.filter(b => b.categories.includes(catId)).sort((a,b) => a.title.localeCompare(b.title));
                   if(catBooks.length === 0) return;
                   
+                  const isOpen = !collapsedCats.has(catId);
+                  
                   html += `
-                    <details class="cat-accordion" open>
+                    <details class="cat-accordion" data-cat-id="${catId}" ${isOpen ? 'open' : ''}>
                       <summary>
                         <div class="title-group">${escapeHtml(resolveChallengeName(catId))} <span class="count-badge">${catBooks.length}</span></div>
                       </summary>
@@ -1365,10 +1559,13 @@
               for (let i = maxOverlap; i >= 1; i--) {
                   const overlapBooks = filteredBooks.filter(b => b.categories.length === i).sort((a,b) => a.title.localeCompare(b.title));
                   if (overlapBooks.length === 0) continue;
+                  
                   const label = i === 1 ? `Matches 1 Challenge` : `Matches ${i} Challenges`;
+                  const idLabel = `overlap_${i}`;
+                  const isOpen = !collapsedCats.has(idLabel);
                   
                   html += `
-                    <details class="cat-accordion" open>
+                    <details class="cat-accordion" data-cat-id="${idLabel}" ${isOpen ? 'open' : ''}>
                       <summary>
                         <div class="title-group">${label} <span class="count-badge">${overlapBooks.length}</span></div>
                       </summary>
@@ -1380,10 +1577,11 @@
               }
           }
       }
-      $('list-books').innerHTML = html;
+      const listEl = $('list-books');
+      if(listEl) listEl.innerHTML = html;
+      syncToggleAllButton();
     }
 
-    // --- ORIGINAL OPTIMAL PATH ALGORITHM (WITH ADVANCED SHUFFLE VARIANCE) ---
     function generatePath(mode, forceRandom) {
       const activeCats = new Set(activeData.categories);
       const uncovered = new Set(activeCats);
@@ -1453,27 +1651,16 @@
 
     function renderResults(mode = 'overlap', forceRandom = false) {
       currentOptimalMode = mode;
-      
       let bestPath = null;
 
       if (forceRandom) {
           for(let i=0; i<15; i++) {
               const p = generatePath(mode, true);
-              if (!bestPath) {
-                  bestPath = p;
-                  continue;
-              }
+              if (!bestPath) { bestPath = p; continue; }
               
-              // We strictly want minimum uncovered categories.
-              if (p.uncovered.length < bestPath.uncovered.length) {
-                  bestPath = p;
-              } 
-              // If same coverage, we want fewer books.
+              if (p.uncovered.length < bestPath.uncovered.length) { bestPath = p; } 
               else if (p.uncovered.length === bestPath.uncovered.length) {
-                  if (p.selected.length < bestPath.selected.length) {
-                      bestPath = p;
-                  } 
-                  // If same coverage and same length, try to pick a different signature to ensure the "Shuffle" feels dynamic
+                  if (p.selected.length < bestPath.selected.length) { bestPath = p; } 
                   else if (p.selected.length === bestPath.selected.length && p.signature !== lastOptimalSignature && bestPath.signature === lastOptimalSignature) {
                       bestPath = p;
                   }
@@ -1487,18 +1674,31 @@
       lastOptimal = { selected: bestPath.selected, uncovered: bestPath.uncovered };
       
       const activeCats = new Set(activeData.categories);
-      $('optimal-stats').textContent = `Target: ${activeCats.size} Challenges | Path: ${bestPath.selected.length} Books (${mode === 'single' ? 'No overlaps allowed' : 'Maximized overlaps'})`;
+      
+      // Dynamic Algorithm indicator next to control buttons
+      const algoIndicator = $('optimal-algo-indicator');
+      if (algoIndicator) {
+          const isOverlap = mode === 'overlap';
+          algoIndicator.className = `algo-indicator ${isOverlap ? 'overlap' : 'single'}`;
+          algoIndicator.innerHTML = `
+              <span>${isOverlap ? '🔗 Maximized Overlaps' : '🔀 No Overlaps'}</span>
+              <span style="opacity:0.4;">|</span>
+              <span>Target: <strong>${activeCats.size}</strong> Goals</span>
+              <span style="opacity:0.4;">|</span>
+              <span>Selected: <strong>${bestPath.selected.length}</strong> Books</span>
+          `;
+      }
 
       let html = '';
 
       if (mode === 'single' && bestPath.failedSingleCategories.length > 0) {
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${bestPath.failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid" / filtered out.</small></div></div>`;
+          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${bestPath.failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
       }
 
       if (bestPath.uncovered.length > 0 && mode === 'overlap') {
           const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
-          const libHint = isLibActive ? `, or turning off the "Filter by My Library" toggle` : ``;
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges!</strong><br>Missing coverage for: <em>${bestPath.uncovered.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Try adjusting your active shelves or resetting excluded books${libHint}. There are no other available books in the database matching these specific prompts.</small></div></div>`;
+          const libHint = isLibActive ? `disabling the "Filter by My Library" toggle, or expanding your shelves selection` : `resetting excluded books, or adding more challenges`;
+          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges with current settings</strong><br>Missing coverage for: <em>${bestPath.uncovered.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Consider ${libHint} to find other potential matches.</small></div></div>`;
       }
 
       if (activeCats.size === 0) {
@@ -1508,14 +1708,24 @@
       } else {
           html += `<div class="book-grid">` + bestPath.selected.map(b => generateBookCardHTML(b, true, new Set(bestPath.uncovered))).join('') + `</div>`;
       }
+      
+      if(bestPath.selected.length > 0) {
+          html += `<div class="banner ok" style="grid-column: 1/-1; margin-top: 24px; border-radius: 8px;">
+              <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                  <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
+                  <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
+              </div>
+          </div>`;
+      }
 
-      $('output-optimal').innerHTML = html;
+      const outOpt = $('output-optimal');
+      if(outOpt) outOpt.innerHTML = html;
     }
 
-    $('btn-shuffle-overlap').addEventListener('click', () => renderResults('overlap', true));
-    $('btn-shuffle-single').addEventListener('click', () => renderResults('single', true));
+    addEvt('btn-shuffle-overlap', 'click', () => renderResults('overlap', true));
+    addEvt('btn-shuffle-single', 'click', () => renderResults('single', true));
 
-    $('btn-copy-optimal').addEventListener('click', async () => {
+    addEvt('btn-copy-optimal', 'click', async (e) => {
       if (!lastOptimal.selected.length) return;
       let md = '### 📚 My Optimal Reading List\n\n';
       lastOptimal.selected.forEach(b => {
@@ -1523,8 +1733,7 @@
         const authorStr = b.author ? ` by ${b.author}` : '';
         md += `- [${b.title}](${b.url||'#'})${authorStr} *(Covers: ${tags})*\n`;
       });
-      try { await navigator.clipboard.writeText(md); toast('List copied as markdown', 'success'); } 
-      catch { toast('Could not copy', 'error'); }
+      copyToClipboard(md, e.target);
     });
 
     function renderSheet() {
@@ -1537,13 +1746,98 @@
           html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${escapeHtml(b.url||'#')}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
         });
       });
-      $('sheet-body').innerHTML = html;
-      $('convert-sub').textContent = `${activeData.sections.length} overlap groups found.`;
+      const bodyEl = $('sheet-body');
+      if(bodyEl) bodyEl.innerHTML = html;
+      const subEl = $('convert-sub');
+      if(subEl) subEl.textContent = `${activeData.sections.length} overlap groups found.`;
     }
 
-    function renderAll() { renderLibrary(); renderResults(currentOptimalMode, false); renderSheet(); }
+    // Dynamic Filter Pills & Conditionally Rendered Reset Action
+    function renderFilterPills() {
+      const container = $('filter-pills-container');
+      if (!container) return;
 
-    // --- EVENTS ---
+      const pills = [];
+
+      if (search) {
+          pills.push({
+              label: `Search: "${search}"`,
+              clear: () => { search = ''; const el = $('search-input'); if(el) el.value = ''; renderAll(); }
+          });
+      }
+      if (statusFilter !== 'all') {
+          const labelMap = { 'include': '📌 Must Read', 'exclude': '✕ Avoid' };
+          pills.push({
+              label: labelMap[statusFilter] || statusFilter,
+              clear: () => { statusFilter = 'all'; const el = $('status-filter'); if(el) el.value = 'all'; renderAll(); }
+          });
+      }
+      if (overlapFilter !== 'all') {
+          const labelMap = { 'overlap': '🔗 Overlaps Only', 'single': '🔀 Unique Only' };
+          pills.push({
+              label: labelMap[overlapFilter] || overlapFilter,
+              clear: () => { overlapFilter = 'all'; const el = $('overlap-filter'); if(el) el.value = 'all'; renderAll(); }
+          });
+      }
+      if (libraryOnlyFilterActive && userLibraryMap.size > 0) {
+          pills.push({
+              label: `Library Only`,
+              clear: () => { libraryOnlyFilterActive = false; const el = $('library-toggle-checkbox'); if(el) el.checked = false; updateLibraryUIState(); renderAll(); }
+          });
+
+          if (selectedShelves.size < availableShelves.size && selectedShelves.size > 0) {
+              pills.push({
+                  label: `Shelves (${selectedShelves.size})`,
+                  clear: () => {
+                      availableShelves.forEach(s => selectedShelves.add(s));
+                      populateShelfDropdown();
+                      renderAll();
+                  }
+              });
+          }
+      }
+
+      const overrideCount = Object.values(bookStatus).filter(s => s !== 'neutral').length;
+      if (overrideCount > 0) {
+          pills.push({
+              label: `Custom Prefs (${overrideCount})`,
+              clear: () => { bookStatus = {}; renderAll(); }
+          });
+      }
+
+      if (pills.length === 0) {
+          container.innerHTML = '';
+          container.classList.add('hidden');
+          $('btn-reset')?.classList.add('hidden');
+          return;
+      }
+
+      container.classList.remove('hidden');
+      $('btn-reset')?.classList.remove('hidden');
+
+      container.innerHTML = pills.map((p, idx) => `
+          <span class="filter-pill">
+              ${escapeHtml(p.label)}
+              <button class="filter-pill-clear" data-pill-idx="${idx}" title="Clear this filter">✕</button>
+          </span>
+      `).join('');
+
+      container.querySelectorAll('.filter-pill-clear').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+              const idx = parseInt(e.target.getAttribute('data-pill-idx'), 10);
+              if (pills[idx]) pills[idx].clear();
+          });
+      });
+    }
+
+    function renderAll() { 
+        renderLibrary(); 
+        renderResults(currentOptimalMode, false); 
+        renderSheet(); 
+        renderFilterPills();
+    }
+
+    // --- EVENTS CONTINUED ---
     document.body.addEventListener('click', (e) => {
       const setBtn = e.target.closest('[data-status-set]');
       if (setBtn) {
@@ -1555,44 +1849,277 @@
       }
     });
 
-    $('search-input').addEventListener('input', (e) => { search = e.target.value; renderLibrary(); });
-    $('status-filter').addEventListener('change', (e) => { statusFilter = e.target.value; renderLibrary(); });
-    $('overlap-filter').addEventListener('change', (e) => { overlapFilter = e.target.value; renderLibrary(); });
-    $('group-by-filter').addEventListener('change', (e) => { groupByFilter = e.target.value; renderLibrary(); });
+    addEvt('search-input', 'input', (e) => { search = e.target.value; renderLibrary(); renderFilterPills(); });
+    addEvt('status-filter', 'change', (e) => { statusFilter = e.target.value; renderLibrary(); renderFilterPills(); });
+    addEvt('overlap-filter', 'change', (e) => { overlapFilter = e.target.value; renderLibrary(); renderFilterPills(); });
+    addEvt('group-by-filter', 'change', (e) => { groupByFilter = e.target.value; renderLibrary(); });
 
-    $('btn-reset').addEventListener('click', () => {
-      bookStatus = {}; $('search-input').value = ''; search = ''; 
-      $('status-filter').value = 'all'; statusFilter = 'all';
-      $('overlap-filter').value = 'all'; overlapFilter = 'all';
-      $('group-by-filter').value = 'challenge'; groupByFilter = 'challenge';
+    addEvt('btn-reset', 'click', () => {
+      bookStatus = {}; 
+      const searchInp = $('search-input'); if(searchInp) searchInp.value = ''; search = ''; 
+      const statusFilt = $('status-filter'); if(statusFilt) statusFilt.value = 'all'; statusFilter = 'all';
+      const overFilt = $('overlap-filter'); if(overFilt) overFilt.value = 'all'; overlapFilter = 'all';
+      const grpFilt = $('group-by-filter'); if(grpFilt) grpFilt.value = 'challenge'; groupByFilter = 'challenge';
+      
       libraryOnlyFilterActive = false;
       document.querySelectorAll('.shelf-cb').forEach(cb => cb.checked = true);
       selectedShelves.clear();
       availableShelves.forEach(s => selectedShelves.add(s));
-      saveState(); updateLibraryUIState(); renderAll(); toast('Filters reset', 'success');
+      saveState(); 
+      updateLibraryUIState(); 
+      renderAll(); 
+      showToast('All parameters reset.');
     });
 
     function switchTab(tab) {
       ['library', 'optimal', 'spreadsheet'].forEach(t => {
-          $(`tab-${t}`).classList.toggle('active', t === tab);
-          $(`view-${t}`).classList.toggle('hidden', t !== tab);
+          $(`tab-${t}`)?.classList.toggle('active', t === tab);
+          $(`view-${t}`)?.classList.toggle('hidden', t !== tab);
       });
-      if(tab === 'optimal') renderResults(currentOptimalMode, false);
-    }
-    $('tab-library').addEventListener('click', () => switchTab('library'));
-    $('tab-optimal').addEventListener('click', () => switchTab('optimal'));
-    $('tab-spreadsheet').addEventListener('click', () => handleProFeature(() => switchTab('spreadsheet')));
 
-    $('btn-copy-sheet').addEventListener('click', async () => {
+      const filterBar = $('shared-filter-bar');
+      if (filterBar) {
+          if (tab === 'spreadsheet') {
+              filterBar.classList.add('hidden');
+          } else {
+              filterBar.classList.remove('hidden');
+              
+              // Hide Browse-specific settings in optimal view contextually
+              const onlyBrowseEls = filterBar.querySelectorAll('.only-browse');
+              onlyBrowseEls.forEach(el => {
+                  el.classList.toggle('hidden', tab === 'optimal');
+              });
+          }
+      }
+
+      if (tab === 'optimal') renderResults(currentOptimalMode, false);
+    }
+    
+    addEvt('tab-library', 'click', () => switchTab('library'));
+    addEvt('tab-optimal', 'click', () => switchTab('optimal'));
+    addEvt('tab-spreadsheet', 'click', () => switchTab('spreadsheet'));
+
+    addEvt('btn-copy-sheet', 'click', async (e) => {
       let plain = 'Challenge Combination\tCommon Books\n';
       activeData.sections.forEach((sec, i) => {
         if (i > 0) plain += '\n';
         const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
         sec.books.forEach((b, idx) => { plain += `${idx === 0 ? label : ''}\t${b.title}${b.author ? ` by ${b.author}` : ''}\n`; });
       });
-      try { await navigator.clipboard.writeText(plain); toast('Copied for Excel', 'success'); } 
-      catch { toast('Could not copy', 'error'); }
+      copyToClipboard(plain, e.target);
     });
+
+    // --- ONBOARDING TOUR LOGIC ---
+    let tourStep = 0;
+    const tourSteps = [
+        { 
+          title: "Welcome to the Optimizer!", 
+          text: `Master your reading goals faster.<br><br>
+                 <strong style="color:var(--fg)">Jump to a section:</strong><br>
+                 <button class="tour-menu-btn" onclick="changeTourStep(1)">1. Selecting Challenges</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(2)">2. Exploring Data Tabs</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(7)">3. Directing the Algorithm</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(9)">4. Library & CSV Import</button>`,
+          target: null 
+        },
+        { 
+          title: "1. Select Challenges", 
+          text: "Start by selecting the reading challenges or lists you want to participate in.<br><br><em>(We've automatically selected all of them for this tour!)</em>", 
+          target: ".tour-target-sidebar", placement: "right",
+          onEnter: () => {
+              rawDatabase.challenges.forEach(c => selectedChallenges.add(c.id)); 
+              saveState(); renderChallengeGrid(); recomputeActiveData(); 
+          }
+        },
+        { title: "Explore: Browse Books", text: "<strong>Browse Books</strong> shows every single available book that fits your selected challenges.", target: ".tour-target-tab-lib", placement: "bottom", onEnter: () => switchTab('library') },
+        { title: "Explore: Optimized List", text: "<strong>Optimized List</strong> uses an algorithm to calculate the absolute smallest reading list necessary to complete your goals.", target: ".tour-target-tab-opt", placement: "bottom", onEnter: () => switchTab('optimal') },
+        { 
+          title: "Alternate Recommendations", 
+          text: "Want a different path? Use these buttons to explore alternate options:<br><br>" +
+               "🎲 <strong>Alternate (Overlaps):</strong> Re-runs the algorithm with a random seed to discover different high-overlap recommendations.<br>" +
+               "🎲 <strong>Alternate (No Overlaps):</strong> Recalculates the list ensuring exactly one unique, standalone book is selected for each prompt (no overlaps allowed).", 
+          target: "#btn-shuffle-overlap", placement: "bottom", 
+          onEnter: () => switchTab('optimal') 
+        },
+        { title: "Explore: Spreadsheet", text: "<strong>Spreadsheet</strong> displays every overlapping book combination in a neat table, ready to be copied into Excel.", target: ".tour-target-tab-sheet", placement: "bottom", onEnter: () => switchTab('spreadsheet') },
+        { 
+          title: "Filtering & Customizing", 
+          text: "Use these filters to search by Title/Author, group by overlaps, adjust grid size, or filter by Read/Avoid statuses.", 
+          target: ".tour-target-adv-filters", placement: "bottom", 
+          onEnter: () => switchTab('library') 
+        },
+        { 
+          title: "Directing the Algorithm", 
+          text: "You can control the algorithm manually on any book:<br><br>📌 <strong>Must Read:</strong> Forces the path to include this book.<br><strong>Auto:</strong> Lets the algorithm decide.<br>✕ <strong>Avoid:</strong> Banishes the book from your path entirely.", 
+          target: ".tour-target-status", placement: "bottom",
+          onEnter: () => {
+              document.querySelectorAll('.cat-accordion').forEach(el => el.open = true);
+          }
+        },
+        { title: "Import Goodreads CSV", text: "Click here to upload your Goodreads Export. We will cross-reference your personal shelves against the challenge data!", target: ".tour-target-import", placement: "bottom" },
+        { 
+          title: "Library Integration", 
+          text: "Once imported, these controls will appear! Toggle <strong>'Filter by My Library'</strong> to only see books you own, and use the dropdown to isolate specific shelves (like 'to-read').", 
+          target: "#library-toggle-wrapper", placement: "bottom",
+          onEnter: () => {
+              const wrp = $('library-toggle-wrapper');
+              const drp = $('shelf-dropdown-wrapper');
+              const clr = $('btn-clear-library');
+              if(wrp) wrp.classList.remove('hidden');
+              if(drp) { drp.classList.remove('hidden'); drp.classList.add('disabled'); }
+              if(clr) { clr.classList.remove('hidden'); clr.style.pointerEvents = 'none'; }
+          },
+          onLeave: () => {
+              updateLibraryUIState();
+              const clr = $('btn-clear-library');
+              if(clr) clr.style.pointerEvents = 'auto';
+          }
+        },
+        // { title: "Theme Toggle", text: "Prefer reading in the dark? Click here to switch between Light and Dark mode.", target: ".tour-target-theme", placement: "bottom" },
+        // { title: "Support Development", text: "This tool is completely free. If it helps you out, a coffee is always appreciated!", target: ".tour-target-support", placement: "bottom" },
+        // { title: "Need Help?", text: "You can click this question mark at any time to replay this tour.", target: ".tour-target-help", placement: "bottom" }
+    ];
+
+    function startTour() {
+        tourStep = 0;
+        $('tour-overlay')?.classList.add('active');
+        $('tour-tooltip')?.classList.add('active');
+        if (window.innerWidth < 900) { $('sidebar')?.classList.add('open'); }
+        renderTourStep();
+    }
+
+    function endTour() {
+        const step = tourSteps[tourStep];
+        if (step && step.onLeave) step.onLeave();
+        
+        $('tour-overlay')?.classList.remove('active');
+        const tt = $('tour-tooltip');
+        if(tt) {
+            tt.classList.remove('active');
+            tt.removeAttribute('style'); 
+        }
+        document.querySelector('header.app')?.classList.remove('tour-active-header');
+        document.querySelector('.sidebar.left-sidebar')?.classList.remove('tour-active-sidebar');
+        document.querySelectorAll('.tour-highlight').forEach(el => el.classList.remove('tour-highlight'));
+        if (window.innerWidth < 900) { $('sidebar')?.classList.remove('open'); }
+        localStorage.setItem('gr_tour_completed', 'true');
+    }
+
+    window.changeTourStep = function(newIndex) {
+        if(tourSteps[tourStep] && tourSteps[tourStep].onLeave) tourSteps[tourStep].onLeave();
+        tourStep = newIndex;
+        renderTourStep();
+    }
+
+    function renderTourStep() {
+        const step = tourSteps[tourStep];
+        if (step.onEnter) step.onEnter();
+
+        if($('tour-title')) $('tour-title').innerHTML = step.title;
+        if($('tour-text')) $('tour-text').innerHTML = step.text;
+        
+        const btnPrev = $('btn-tour-prev');
+        const btnNext = $('btn-tour-next');
+        if(btnPrev) btnPrev.disabled = tourStep === 0;
+        if(btnNext) btnNext.textContent = tourStep === tourSteps.length - 1 ? "Finish" : "Next";
+
+        const dots = $('tour-dots');
+        if(dots) dots.innerHTML = tourSteps.map((_, i) => `<button class="tour-dot ${i === tourStep ? 'active' : ''}" onclick="changeTourStep(${i})" title="${tourSteps[i].title}"></button>`).join('');
+
+        // Reset dynamic classes on container parents
+        document.querySelector('header.app')?.classList.remove('tour-active-header');
+        document.querySelector('.sidebar.left-sidebar')?.classList.remove('tour-active-sidebar');
+        document.querySelectorAll('.tour-highlight').forEach(el => el.classList.remove('tour-highlight'));
+        
+        const tt = $('tour-tooltip');
+        if(tt) {
+            tt.style.opacity = '0';
+            tt.style.transition = 'none';
+            tt.style.transform = 'none';
+            tt.style.left = '';
+            tt.style.top = '';
+            tt.style.right = '';
+            tt.style.bottom = '';
+        }
+
+        if (step.target) {
+            const el = document.querySelector(step.target);
+            if (el && tt) {
+                el.classList.add('tour-highlight');
+                
+                // Stacking context adjustments for sticky header or sidebar
+                if (el.closest('header.app')) {
+                    document.querySelector('header.app')?.classList.add('tour-active-header');
+                }
+                if (el.closest('.sidebar.left-sidebar')) {
+                    document.querySelector('.sidebar.left-sidebar')?.classList.add('tour-active-sidebar');
+                }
+
+                el.scrollIntoView({ behavior: 'instant', block: 'center' });
+                
+                const rect = el.getBoundingClientRect();
+                const scrollY = window.scrollY;
+                const scrollX = window.scrollX;
+                
+                tt.classList.remove('arrow-top', 'arrow-bottom', 'arrow-left', 'arrow-right');
+                let top, left;
+                const ttWidth = Math.min(320, window.innerWidth - 24);
+
+                if (window.innerWidth < 900) {
+                    left = (window.innerWidth - ttWidth) / 2;
+                    top = rect.bottom + scrollY + 12;
+                    tt.classList.add('arrow-top');
+                } else if (step.placement === 'right') {
+                    top = rect.top + scrollY;
+                    left = rect.right + scrollX + 16;
+                    tt.classList.add('arrow-left');
+                } else if (step.placement === 'bottom') {
+                    top = rect.bottom + scrollY + 16;
+                    left = rect.left + scrollX;
+                    tt.classList.add('arrow-top');
+                }
+                
+                if (step.placement === 'right' && (left + ttWidth > window.innerWidth)) {
+                    top = rect.bottom + scrollY + 16;
+                    left = rect.left + scrollX;
+                    tt.classList.remove('arrow-left');
+                    tt.classList.add('arrow-top');
+                }
+                if(left < 12) left = 12;
+                if(left + ttWidth > window.innerWidth - 12) left = window.innerWidth - ttWidth - 12;
+
+                tt.style.top = `${top}px`;
+                tt.style.left = `${left}px`;
+                
+                setTimeout(() => {
+                    tt.style.transition = 'opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1)';
+                    tt.style.opacity = '1';
+                }, 50);
+            }
+        } else if(tt) {
+            tt.classList.remove('arrow-top', 'arrow-bottom', 'arrow-left', 'arrow-right');
+            tt.style.top = '50%';
+            tt.style.left = '50%';
+            tt.style.transform = 'translate(-50%, -50%)';
+            
+            setTimeout(() => {
+                tt.style.transition = 'opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1)';
+                tt.style.opacity = '1';
+            }, 50);
+        }
+        
+        if(tt && !tt.classList.contains('active')) tt.classList.add('active');
+    }
+
+    addEvt('btn-tour-next', 'click', () => {
+        if (tourStep < tourSteps.length - 1) changeTourStep(tourStep + 1); 
+        else endTour();
+    });
+    addEvt('btn-tour-prev', 'click', () => {
+        if (tourStep > 0) changeTourStep(tourStep - 1);
+    });
+    addEvt('btn-tour-skip', 'click', endTour);
+    addEvt('btn-start-tour', 'click', startTour);
 
     // Boot
     init();

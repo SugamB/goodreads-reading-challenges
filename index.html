@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <!-- Meta Tags -->
+  <!-- SEO & Social Meta Tags -->
   <title>Goodreads Challenge Optimizer | Master Your Reading Goals</title>
   <meta name="description" content="Instantly find book overlaps to fast-track your Goodreads challenges, import your own library, and map out the ultimate optimal reading list." />
   <meta name="keywords" content="Goodreads, Reading Challenge, Book Tracker, Reading Goals, Book Overlap, TBR Optimizer" />
@@ -446,7 +446,17 @@
         </div>
 
         <!-- Second Row: Advanced Settings -->
+
         <div class="adv-filters" id="adv-filters-section">
+          <select id="grid-size-filter" aria-label="Book Grid Size">
+            <option value="auto">Grid: Auto (Responsive)</option>
+            <option value="2">Grid: 2 Columns</option>
+            <option value="3">Grid: 3 Columns</option>
+            <option value="4">Grid: 4 Columns</option>
+            <option value="5">Grid: 5 Columns</option>
+            <option value="6">Grid: 6 Columns</option>
+          </select>
+          
           <select id="group-by-filter" class="only-browse" aria-label="Group books by">
             <option value="challenge">Group by: Challenge</option>
             <option value="overlap">Group by: Overlap Count</option>
@@ -464,14 +474,6 @@
             <option value="exclude">✕ Avoid</option>
           </select>
           
-          <select id="grid-size-filter" aria-label="Book Grid Size">
-            <option value="auto">Grid: Auto (Responsive)</option>
-            <option value="2">Grid: 2 Columns</option>
-            <option value="3">Grid: 3 Columns</option>
-            <option value="4">Grid: 4 Columns</option>
-            <option value="5">Grid: 5 Columns</option>
-            <option value="6">Grid: 6 Columns</option>
-          </select>
           
           <label class="toggle-container" title="Show or hide book cover images" style="margin-left: auto;">
             <input type="checkbox" id="btn-toggle-covers">

@@ -1,10 +1,10 @@
 # Goodreads Challenge Optimizer 📚
 
-A fast, client-side web application that helps readers plan their Goodreads reading challenges. By analyzing your selected reading lists, the app finds overlapping books and generates the mathematically shortest path (or a completely distinct path) to hit all your reading goals.
+A fast, client-side web application that helps readers plan their Seasonal Goodreads reading challenges. By analyzing your selected reading lists, the app finds overlapping books and generates the mathematically shortest path (or a completely distinct path) to hit all your reading goals.
 
 ## ✨ Features
 
-* **Master Library (Gallery View):** Browse books from your selected challenges with cover art, authors, and Kindle Unlimited tags.
+* **Master Library (Gallery View):** Browse books from your selected challenges with cover art and authors.
 * **Smart Optimizer:** Automatically calculate the fewest number of books needed to complete all selected challenges.
 * **Status Toggles:** Mark books as "📌 Must Read" to force them into the algorithm, or "✕ Avoid" to exclude them.
 * **Overlap Spreadsheet:** View and copy a clean breakdown of exactly which books overlap between which challenges.

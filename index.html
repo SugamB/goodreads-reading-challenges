@@ -330,11 +330,99 @@
       .header-inner { padding: 12px 16px; }
       .dashboard { grid-template-columns: 1fr; padding: 16px 16px; }
       .workspace { min-height: calc(100vh - 80px); border-radius: 0; border-left: none; border-right: none;}
+      #grid-size-filter { display: none !important; }
     }
     @media (max-width: 480px) {
       .book-grid { grid-template-columns: repeat(auto-fill, minmax(115px, 1fr)) !important; }
     }
   </style>
+<!-- Structured Data: Combined FAQ & HowTo Snippet -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the Goodreads Challenge Optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Goodreads Challenge Optimizer is a lightweight planning tool designed to help readers organize their To-Be-Read (TBR) lists for seasonal and custom reading challenges. By mapping out books that fulfill multiple categories, it helps you finish your reading goals with fewer books."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find overlapping books for seasonal reading prompts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select your active challenges from the sidebar. The tool identifies common books across your choices, organizing them in the Overlap Spreadsheet tab to show you exactly which books satisfy two, three, or more prompts simultaneously."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I plan a challenge list with zero book overlaps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If you prefer to read a distinct, unique book for every single category, go to the Optimal Reading Path tab and click 'Alternate (No Overlaps)'. The optimization engine recalculates your plan to ensure exactly one unique book is recommended per challenge prompt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I optimize only my remaining, uncompleted challenges?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As you complete prompts throughout the season, simply uncheck those completed challenges in the left sidebar. The tool dynamically updates the catalog and re-runs the optimization algorithm based solely on your remaining active prompts."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Optimize Your Goodreads Reading Challenge List",
+      "description": "A step-by-step guide to using the Challenge Optimizer to find book overlaps, cross-reference your personal library, and generate an optimal seasonal TBR reading list.",
+      "totalTime": "PT2M",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Select Your Active Reading Challenges",
+          "text": "Select the seasonal Goodreads reading challenges or custom lists you want to complete from the tracker sidebar to load the matching books."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Browse Books and Categories",
+          "text": "Explore the Browse Books tab to view all eligible titles, categorized either by individual challenge or grouped by overlap density."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Configure Reading Preferences",
+          "text": "Direct the recommendation algorithm by marking preferred books as 'Must Read' (📌) or filtering out books you want to avoid (✕)."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Import Your Goodreads Library",
+          "text": "Upload your official Goodreads CSV export file to locally map your personal bookshelves (such as 'to-read' or 'owned') directly onto active prompts."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Calculate Your Optimal Reading Path",
+          "text": "Switch to the Optimized List tab to generate the absolute smallest combination of books needed to satisfy every selected prompt."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Discover Alternate Paths",
+          "text": "Use the Alternate options to recalculate recommended overlaps dynamically, or enforce a strict No Overlaps rule to read distinct books."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Export Your Generated Plan",
+          "text": "Copy your final optimized reading list formatted in Markdown to your personal files, or copy the tabular layout from the Spreadsheet tab straight into Excel."
+        }
+      ]
+    }
+  ]
+  </script>
 </head>
 <body>
   <header class="app">
@@ -401,9 +489,9 @@
     <!-- Main Workspace Area -->
     <main class="workspace hidden" id="workspace">
       <div class="workspace-tabs tour-target-tabs">
-        <button id="tab-library" class="active tour-target-tab-lib">📚 Browse Books</button>
-        <button id="tab-optimal" class="tour-target-tab-opt">✨ Optimized List</button>
-        <button id="tab-spreadsheet" class="tour-target-tab-sheet">▦ Spreadsheet</button>
+        <button id="tab-library" class="active tour-target-tab-lib">📚 Browse Books & Overlaps</button>
+        <button id="tab-optimal" class="tour-target-tab-opt">✨ Optimal Reading Path</button>
+        <button id="tab-spreadsheet" class="tour-target-tab-sheet">▦ Overlap Spreadsheet</button>
       </div>
 
       <!-- SHARED UNIFIED WORKSPACE FILTER BAR -->
@@ -456,6 +544,13 @@
             <option value="5">Grid: 5 Columns</option>
             <option value="6">Grid: 6 Columns</option>
           </select>
+
+          <button class="btn outline sm only-optimal hidden" id="btn-shuffle-overlap" title="Find a new path using overlapping books">
+            🎲 Alternate (Overlaps)
+          </button>
+          <button class="btn outline sm only-optimal hidden" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">
+            🎲 Alternate (No Overlaps)
+          </button>
           
           <select id="group-by-filter" class="only-browse" aria-label="Group books by">
             <option value="challenge">Group by: Challenge</option>
@@ -511,24 +606,20 @@
 
       <!-- OPTIMIZED LIST VIEW -->
       <section id="view-optimal" class="hidden">
-        <div style="padding: 16px 20px 0 20px; background: var(--bg); display: flex; flex-direction: column; gap: 12px;">
+        <!-- Changed padding to 12px to match Browse Books perfectly -->
+        <div style="padding: 12px 20px 0 20px; background: var(--bg);">
           <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px dashed var(--border); padding-bottom: 12px;">
-            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-              <button class="btn outline sm" id="btn-shuffle-overlap" title="Find a new path using overlapping books">
-                🎲 Alternate (Overlaps)
-              </button>
-              <button class="btn outline sm" id="btn-shuffle-single" title="Force exactly 1 distinct book per challenge">
-                🎲 Alternate (No Overlaps)
-              </button>
-              <button class="btn outline sm btn-copy-action" id="btn-copy-optimal">
-                📋 Copy List
-              </button>
-            </div>
             
-            <!-- Dynamic Algorithm Mode Indicator & Stats -->
+            <!-- Left Side: Dynamic Algorithm Mode Indicator & Stats -->
             <div id="optimal-algo-indicator" class="algo-indicator">
               <!-- Injected via JS -->
             </div>
+            
+            <!-- Right Side: Copy Action Button -->
+            <button class="btn outline sm btn-copy-action" id="btn-copy-optimal">
+              📋 Copy List
+            </button>
+            
           </div>
         </div>
 
@@ -596,24 +687,33 @@
     </aside>
   </div>
 
-  <!-- FAQ Section -->
+<!-- FAQ Section -->
   <section class="faq-section">
-    <h2>Frequently Asked Questions</h2>
+    <h2>Goodreads Challenge Optimizer Help & FAQ</h2>
+    
     <details class="faq-item">
       <summary>What is the Goodreads Challenge Optimizer?</summary>
-      <p>The Challenge Optimizer is a free, web-based tool designed to help readers efficiently complete their reading goals. It identifies books that fit into multiple prompts simultaneously, allowing you to maximize your reading overlaps and finish challenges faster.</p>
+      <p>The Goodreads Challenge Optimizer is a lightweight planning tool designed to help readers organize their To-Be-Read (TBR) lists for seasonal and custom reading challenges. By mapping out books that fulfill multiple categories, it helps you finish your reading goals with fewer books.</p>
     </details>
+    
     <details class="faq-item">
-      <summary>How do I find overlapping books for my reading challenge?</summary>
-      <p>Simply select the challenges or lists you are participating in from the sidebar. The tool automatically analyzes the book pools and groups them in the <strong>Spreadsheet</strong> tab, showing you exactly which books fulfill two, three, or more prompts at once.</p>
+      <summary>How do I find overlapping books for seasonal reading prompts?</summary>
+      <p>Select your active challenges from the sidebar. The tool identifies common books across your choices, organizing them in the <strong>Overlap Spreadsheet</strong> tab to show you exactly which books satisfy two, three, or more prompts simultaneously.</p>
     </details>
+    
     <details class="faq-item">
-      <summary>Can I import my Goodreads library?</summary>
-      <p>Yes! Click the <strong>Import Goodreads CSV</strong> button inside the workspace to upload your Goodreads CSV export file. The tool will securely parse your shelves locally and let you filter the Master Library to only show books you already own or have marked as "To Be Read" (TBR).</p>
+      <summary>Can I plan a challenge list with zero book overlaps?</summary>
+      <p>Yes. If you prefer to read a distinct, unique book for every single category, go to the <strong>Optimal Reading Path</strong> tab and click <strong>"Alternate (No Overlaps)"</strong>. The optimization engine recalculates your plan to ensure exactly one unique book is recommended per challenge prompt.</p>
     </details>
+
     <details class="faq-item">
-      <summary>What does the "Optimized List" feature do?</summary>
-      <p>The <strong>Optimized List</strong> algorithm calculates a highly optimized reading list to complete all your selected challenges. By prioritizing books with the highest overlaps, it saves you time. You can also enforce a "No Overlaps" rule if you prefer reading a distinct book for every prompt.</p>
+      <summary>How can I optimize only my remaining, uncompleted challenges?</summary>
+      <p>As you complete prompts throughout the season, simply uncheck those completed challenges in the left sidebar. The tool dynamically updates the <strong>Browse Books</strong> catalog and re-runs the optimization algorithm based solely on your remaining active prompts.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>How does the Goodreads CSV Import work?</summary>
+      <p>Clicking <strong>Import Goodreads CSV</strong> allows you to upload your personal exported library file. Our parser processes your shelves locally in your browser. This enables you to cross-reference your own TBR shelves or owned books against the challenge list to find matches you already own.</p>
     </details>
   </section>
 
@@ -724,7 +824,9 @@
     let seenChallenges = new Set();
     let bookStatus = {};
     let collapsedCats = new Set();
-    
+    let isBulkToggling = false; // Lock to prevent event storms during bulk updates
+    let isManualTour = false;
+
     // CSV Library State
     let userLibraryMap = new Map(); 
     let availableShelves = new Set();
@@ -938,6 +1040,7 @@
       });
       
       document.body.addEventListener('toggle', (e) => {
+        if (isBulkToggling) return; // Ignore event if bulk toggling is active
         if (e.target.tagName === 'DETAILS' && e.target.classList.contains('cat-accordion')) {
             const id = e.target.dataset.catId;
             if(e.target.open) collapsedCats.delete(id);
@@ -993,26 +1096,34 @@
     addEvt('sidebar-backdrop', 'click', () => { $('sidebar')?.classList.remove('open'); $('sidebar-backdrop')?.classList.remove('open'); });
     
     function syncToggleAllButton() {
-        const anyClosed = collapsedCats.size > 0;
+        const els = document.querySelectorAll('.cat-accordion');
+        if (els.length === 0) return;
+        
+        // If at least one active accordion on screen is closed, offer "Expand All"
+        const anyClosed = Array.from(els).some(el => !el.open);
         const btn = $('btn-toggle-accordions');
         if(btn) btn.innerHTML = anyClosed ? '➕ Expand All' : '➖ Collapse All';
-    }
+          }
 
     addEvt('btn-toggle-accordions', 'click', () => {
-        const isMostlyCollapsed = collapsedCats.size > 0;
         const els = document.querySelectorAll('.cat-accordion');
+        if (els.length === 0) return;
+
+        const anyClosed = Array.from(els).some(el => !el.open);
         
-        if (isMostlyCollapsed) {
-            els.forEach(el => el.open = true);
-            collapsedCats.clear();
-        } else {
-            els.forEach(el => el.open = false);
-            activeData.sections.forEach((sec, i) => {
-                const label = sec.categories.length === 1 ? sec.categories[0] : `overlap_${i}`;
-                collapsedCats.add(label); 
-            });
-            activeData.categories.forEach(c => collapsedCats.add(c));
-        }
+        isBulkToggling = true; // Enable lock to block redundant toggle events
+
+        els.forEach(el => {
+            el.open = anyClosed; // Open all if any were closed, otherwise collapse all
+            const id = el.dataset.catId;
+            if (anyClosed) {
+                collapsedCats.delete(id);
+            } else {
+                collapsedCats.add(id);
+            }
+        });
+
+        isBulkToggling = false; // Disable lock
         saveAccordionState();
         syncToggleAllButton();
     });
@@ -1768,7 +1879,7 @@
           });
       }
       if (statusFilter !== 'all') {
-          const labelMap = { 'include': '📌 Must Read', 'exclude': '✕ Avoid' };
+          const labelMap = { 'include': 'Status: Must Read', 'exclude': 'Status: Avoid' };
           pills.push({
               label: labelMap[statusFilter] || statusFilter,
               clear: () => { statusFilter = 'all'; const el = $('status-filter'); if(el) el.value = 'all'; renderAll(); }
@@ -1799,11 +1910,39 @@
           }
       }
 
-      const overrideCount = Object.values(bookStatus).filter(s => s !== 'neutral').length;
-      if (overrideCount > 0) {
+      // const overrideCount = Object.values(bookStatus).filter(s => s !== 'neutral').length;
+      // if (overrideCount > 0) {
+      //     pills.push({
+      //         label: `Custom Prefs (${overrideCount})`,
+      //         clear: () => { bookStatus = {}; renderAll(); }
+      //     });
+      // }
+      const mustReadCount = Object.values(bookStatus).filter(s => s === 'include').length;
+      const avoidCount = Object.values(bookStatus).filter(s => s === 'exclude').length;
+
+      if (mustReadCount > 0) {
           pills.push({
-              label: `Custom Prefs (${overrideCount})`,
-              clear: () => { bookStatus = {}; renderAll(); }
+              label: `📌 Must Read (${mustReadCount})`,
+              clear: () => {
+                  for (const id in bookStatus) {
+                      if (bookStatus[id] === 'include') bookStatus[id] = 'neutral';
+                  }
+                  saveState();
+                  renderAll();
+              }
+          });
+      }
+
+      if (avoidCount > 0) {
+          pills.push({
+              label: `✕ Avoid (${avoidCount})`,
+              clear: () => {
+                  for (const id in bookStatus) {
+                      if (bookStatus[id] === 'exclude') bookStatus[id] = 'neutral';
+                  }
+                  saveState();
+                  renderAll();
+              }
           });
       }
 
@@ -1886,17 +2025,23 @@
           } else {
               filterBar.classList.remove('hidden');
               
-              // Hide Browse-specific settings in optimal view contextually
+              // Hide/Show Browse-specific settings contextually
               const onlyBrowseEls = filterBar.querySelectorAll('.only-browse');
               onlyBrowseEls.forEach(el => {
                   el.classList.toggle('hidden', tab === 'optimal');
+              });
+
+              // Hide/Show Optimal-specific settings contextually
+              const onlyOptimalEls = filterBar.querySelectorAll('.only-optimal');
+              onlyOptimalEls.forEach(el => {
+                  el.classList.toggle('hidden', tab !== 'optimal');
               });
           }
       }
 
       if (tab === 'optimal') renderResults(currentOptimalMode, false);
     }
-    
+
     addEvt('tab-library', 'click', () => switchTab('library'));
     addEvt('tab-optimal', 'click', () => switchTab('optimal'));
     addEvt('tab-spreadsheet', 'click', () => switchTab('spreadsheet'));
@@ -1916,12 +2061,13 @@
     const tourSteps = [
         { 
           title: "Welcome to the Optimizer!", 
-          text: `Master your reading goals faster.<br><br>
-                 <strong style="color:var(--fg)">Jump to a section:</strong><br>
-                 <button class="tour-menu-btn" onclick="changeTourStep(1)">1. Selecting Challenges</button>
-                 <button class="tour-menu-btn" onclick="changeTourStep(2)">2. Exploring Data Tabs</button>
-                 <button class="tour-menu-btn" onclick="changeTourStep(7)">3. Directing the Algorithm</button>
-                 <button class="tour-menu-btn" onclick="changeTourStep(9)">4. Library & CSV Import</button>`,
+          text: "This tool helps you find the most efficient reading path to complete your selected challenges.<br><br>Click 'Next' to begin the tour.",
+          // text: `Master your reading goals faster.<br><br>
+          //        <strong style="color:var(--fg)">Jump to a section:</strong><br>
+          //        <button class="tour-menu-btn" onclick="changeTourStep(1)">1. Selecting Challenges</button>
+          //        <button class="tour-menu-btn" onclick="changeTourStep(2)">2. Exploring Data Tabs</button>
+          //        <button class="tour-menu-btn" onclick="changeTourStep(7)">3. Directing the Algorithm</button>
+          //        <button class="tour-menu-btn" onclick="changeTourStep(9)">4. Library & CSV Import</button>`,
           target: null 
         },
         { 
@@ -1986,7 +2132,7 @@
         tourStep = 0;
         $('tour-overlay')?.classList.add('active');
         $('tour-tooltip')?.classList.add('active');
-        if (window.innerWidth < 900) { $('sidebar')?.classList.add('open'); }
+        // if (window.innerWidth < 900) { $('sidebar')?.classList.add('open'); }
         renderTourStep();
     }
 
@@ -2004,6 +2150,8 @@
         document.querySelector('.sidebar.left-sidebar')?.classList.remove('tour-active-sidebar');
         document.querySelectorAll('.tour-highlight').forEach(el => el.classList.remove('tour-highlight'));
         if (window.innerWidth < 900) { $('sidebar')?.classList.remove('open'); }
+        
+        isManualTour = false;
         localStorage.setItem('gr_tour_completed', 'true');
     }
 
@@ -2015,11 +2163,35 @@
 
     function renderTourStep() {
         const step = tourSteps[tourStep];
+        // Sync the mobile sidebar state to the current tour step
+        if (window.innerWidth < 900) {
+            if (tourStep === 1) {
+                $('sidebar')?.classList.add('open');
+                $('sidebar-backdrop')?.classList.add('open');
+            } else {
+                $('sidebar')?.classList.remove('open');
+                $('sidebar-backdrop')?.classList.remove('open');
+            }
+        }
         if (step.onEnter) step.onEnter();
 
         if($('tour-title')) $('tour-title').innerHTML = step.title;
-        if($('tour-text')) $('tour-text').innerHTML = step.text;
-        
+        // if($('tour-text')) $('tour-text').innerHTML = step.text;
+        if (tourStep === 0) {
+            let content = step.text;
+            if (isManualTour) {
+                content += `<br><br>
+                 <strong style="color:var(--fg)">Jump to a section:</strong><br>
+                 <button class="tour-menu-btn" onclick="changeTourStep(1)">1. Selecting Challenges</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(2)">2. Exploring Data Tabs</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(7)">3. Directing the Algorithm</button>
+                 <button class="tour-menu-btn" onclick="changeTourStep(9)">4. Library & CSV Import</button>`;
+            }
+            if($('tour-text')) $('tour-text').innerHTML = content;
+        } else {
+            if($('tour-text')) $('tour-text').innerHTML = step.text;
+        }
+
         const btnPrev = $('btn-tour-prev');
         const btnNext = $('btn-tour-next');
         if(btnPrev) btnPrev.disabled = tourStep === 0;
@@ -2121,7 +2293,10 @@
         if (tourStep > 0) changeTourStep(tourStep - 1);
     });
     addEvt('btn-tour-skip', 'click', endTour);
-    addEvt('btn-start-tour', 'click', startTour);
+    addEvt('btn-start-tour', 'click', () => {
+        isManualTour = true;
+        startTour();
+    });
 
     // Boot
     init();

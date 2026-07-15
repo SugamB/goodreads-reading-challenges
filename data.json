@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-01T07:21:44.670Z",
+  "lastUpdated": "2026-07-15T07:02:34.741Z",
   "challenges": [
     {
-      "id": "Fact or Fiction",
-      "name": "Fact or Fiction",
-      "url": "https://www.goodreads.com/blog/show/3139",
-      "count": 90
+      "id": "Literally Summer",
+      "name": "Literally Summer",
+      "url": "https://www.goodreads.com/blog/show/3146",
+      "count": 91
     },
     {
       "id": "Challenge Faves",
@@ -26,6 +26,12 @@
       "count": 144
     },
     {
+      "id": "Fact or Fiction",
+      "name": "Fact or Fiction",
+      "url": "https://www.goodreads.com/blog/show/3139",
+      "count": 90
+    },
+    {
       "id": "Staff Shelves",
       "name": "Staff Shelves",
       "url": "https://www.goodreads.com/blog/show/3129",
@@ -40,925 +46,914 @@
   ],
   "books": [
     {
-      "title": "The Women",
+      "title": "One Summer in Savannah",
+      "author": "Terah Shelton Harris",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1668526318i/63327797.jpg",
+      "url": "https://www.goodreads.com/book/show/63327797",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer (Seasonal Quartet, #4)",
+      "author": "Ali Smith",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1619421211i/56215038.jpg",
+      "url": "https://www.goodreads.com/book/show/56215038",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Prodigal Summer",
+      "author": "Barbara Kingsolver",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1426308771i/14249.jpg",
+      "url": "https://www.goodreads.com/book/show/14249",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Sisters",
+      "author": "Judy Blume",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1690983928i/57233514.jpg",
+      "url": "https://www.goodreads.com/book/show/57233514",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Book",
+      "author": "Tove Jansson, Thomas Teal, Kathryn Davis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758424485i/2263969.jpg",
+      "url": "https://www.goodreads.com/book/show/2263969",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer on State Street",
+      "author": "Toya Wolfe",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1648412987i/58884738.jpg",
+      "url": "https://www.goodreads.com/book/show/58884738",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer",
+        "Community Picks"
+      ]
+    },
+    {
+      "title": "The Summer Tree (The Fionavar Tapestry #1)",
+      "author": "Guy Gavriel Kay",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556219218i/45303189.jpg",
+      "url": "https://www.goodreads.com/book/show/45303189",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer in the City",
+      "author": "Gianfranco Calligarich, André Aciman, Howard Curtis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1597694311i/54785501.jpg",
+      "url": "https://www.goodreads.com/book/show/54785501",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "These Summer Storms",
+      "author": "Sarah MacLean",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735591316i/220273379.jpg",
+      "url": "https://www.goodreads.com/book/show/220273379",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Just for the Summer (Part of Your World, #3)",
+      "author": "Abby Jimenez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742475239i/195820807.jpg",
+      "url": "https://www.goodreads.com/book/show/195820807",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Problematic Summer Romance (Not in Love, #2)",
+      "author": "Ali Hazelwood",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745430233i/228691356.jpg",
+      "url": "https://www.goodreads.com/book/show/228691356",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Every Summer After (Barry's Bay, #1)",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1641279566i/60026536.jpg",
+      "url": "https://www.goodreads.com/book/show/60026536",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "This Summer Will Be Different",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694006777i/197577126.jpg",
+      "url": "https://www.goodreads.com/book/show/197577126",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Golden Summer (Barry's Bay, #2)",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723652503i/217245639.jpg",
+      "url": "https://www.goodreads.com/book/show/217245639",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Scandal of the Summer",
+      "author": "Alexandra Vasti",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763555106i/240019961.jpg",
+      "url": "https://www.goodreads.com/book/show/240019961",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Burnout Summer",
+      "author": "Jenna Ramirez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756004171i/240019684.jpg",
+      "url": "https://www.goodreads.com/book/show/240019684",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Girlfriend (Heart Beach, #1)",
+      "author": "Kristina Forest",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761078587i/241434385.jpg",
+      "url": "https://www.goodreads.com/book/show/241434385",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer's Never Over",
+      "author": "Darby Bozeman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761655308i/241435570.jpg",
+      "url": "https://www.goodreads.com/book/show/241435570",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of the Serpent",
+      "author": "Cecilia Eudave, Robin Myers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735252621i/218462028.jpg",
+      "url": "https://www.goodreads.com/book/show/218462028",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Kakigori Summer",
+      "author": "Emily Itami",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741504553i/218671811.jpg",
+      "url": "https://www.goodreads.com/book/show/218671811",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Italian Summer",
+      "author": "Rebecca Serle",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626799802i/58438583.jpg",
+      "url": "https://www.goodreads.com/book/show/58438583",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "28 Summers",
+      "author": "Elin Hilderbrand",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1572261156i/52588078.jpg",
+      "url": "https://www.goodreads.com/book/show/52588078",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of '69",
+      "author": "Elin Hilderbrand",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1540085775i/42283286.jpg",
+      "url": "https://www.goodreads.com/book/show/42283286",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Same Time Next Summer",
+      "author": "Annabel Monaghan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685352063i/62562931.jpg",
+      "url": "https://www.goodreads.com/book/show/62562931",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Romance",
+      "author": "Annabel Monaghan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698303672i/198563734.jpg",
+      "url": "https://www.goodreads.com/book/show/198563734",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "It Happened One Summer (Bellinger Sisters, #1)",
+      "author": "Tessa Bailey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1604991895i/55659629.jpg",
+      "url": "https://www.goodreads.com/book/show/55659629",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Cece Downing's Start Over Summer: A Novel",
+      "author": "Soon Wiley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760502633i/241903933.jpg",
+      "url": "https://www.goodreads.com/book/show/241903933",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Cicada Summer",
+      "author": "Erica McKeen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698497390i/200893734.jpg",
+      "url": "https://www.goodreads.com/book/show/200893734",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Island",
       "author": "Kristin Hannah",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733493019i/127305853.jpg",
-      "url": "https://www.goodreads.com/book/show/127305853",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631974037i/59020335.jpg",
+      "url": "https://www.goodreads.com/book/show/59020335",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Angel Down",
-      "author": "Daniel Kraus",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778522455i/220160849.jpg",
-      "url": "https://www.goodreads.com/book/show/220160849",
+      "title": "The Summer War",
+      "author": "Naomi Novik",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747927269i/222683998.jpg",
+      "url": "https://www.goodreads.com/book/show/222683998",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "In Memoriam",
-      "author": "Alice Winn",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1670866445i/59948520.jpg",
-      "url": "https://www.goodreads.com/book/show/59948520",
+      "title": "Cool for the Summer",
+      "author": "Dahlia Adler",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600876925i/50748473.jpg",
+      "url": "https://www.goodreads.com/book/show/50748473",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Personal Librarian",
-      "author": "Marie Benedict, Victoria Christopher Murray",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610646708i/55333938.jpg",
-      "url": "https://www.goodreads.com/book/show/55333938",
+      "title": "Summer State of Mind",
+      "author": "Kristy Woodson Harvey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761743260i/242986076.jpg",
+      "url": "https://www.goodreads.com/book/show/242986076",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "A Long Petal of the Sea",
-      "author": "Isabel Allende, Nick Caistor, Amanda Hopkinson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600456282i/45897568.jpg",
-      "url": "https://www.goodreads.com/book/show/45897568",
+      "title": "The Summer Fun Massacre",
+      "author": "Craig DiLouie",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760034451i/242482129.jpg",
+      "url": "https://www.goodreads.com/book/show/242482129",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Great Circle",
-      "author": "Maggie Shipstead",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631650934i/58997456.jpg",
-      "url": "https://www.goodreads.com/book/show/58997456",
+      "title": "The Summer of Bitter and Sweet",
+      "author": "Jen  Ferguson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1633353998i/58782872.jpg",
+      "url": "https://www.goodreads.com/book/show/58782872",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "A Gentleman in Moscow",
-      "author": "Amor Towles",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718915012i/34066798.jpg",
-      "url": "https://www.goodreads.com/book/show/34066798",
+      "title": "The Summer Guests (The Martini Club, #2)",
+      "author": "Tess Gerritsen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719496280i/199223892.jpg",
+      "url": "https://www.goodreads.com/book/show/199223892",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Calamity Club",
-      "author": "Kathryn Stockett",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763049143i/228820257.jpg",
-      "url": "https://www.goodreads.com/book/show/228820257",
+      "title": "That Summer Feeling",
+      "author": "Bridget Morrissey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1660915528i/61984828.jpg",
+      "url": "https://www.goodreads.com/book/show/61984828",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Chart Toppers"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Trust",
-      "author": "Hernan Diaz",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631246461i/58210933.jpg",
-      "url": "https://www.goodreads.com/book/show/58210933",
+      "title": "Curvy Girl Summer (Curve, #1)",
+      "author": "Danielle Allen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701283368i/154986013.jpg",
+      "url": "https://www.goodreads.com/book/show/154986013",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "This Tender Land",
-      "author": "William Kent Krueger",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526433i/25813942.jpg",
-      "url": "https://www.goodreads.com/book/show/25813942",
+      "title": "Summer Sons",
+      "author": "Lee Mandelo",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1611852989i/53290204.jpg",
+      "url": "https://www.goodreads.com/book/show/53290204",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Daughters of Shandong",
-      "author": "Eve J. Chung",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1692281423i/195888874.jpg",
-      "url": "https://www.goodreads.com/book/show/195888874",
+      "title": "Till Summer Do Us Part",
+      "author": "Meghan Quinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750687903i/227081370.jpg",
+      "url": "https://www.goodreads.com/book/show/227081370",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "We Were the Lucky Ones",
-      "author": "Georgia Hunter",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1471282781i/30267929.jpg",
-      "url": "https://www.goodreads.com/book/show/30267929",
+      "title": "That Summer",
+      "author": "Jennifer Weiner",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1605290558i/55467800.jpg",
+      "url": "https://www.goodreads.com/book/show/55467800",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Isola",
-      "author": "Allegra Goodman",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718997232i/212806636.jpg",
-      "url": "https://www.goodreads.com/book/show/212806636",
+      "title": "Summers at the Saint",
+      "author": "Mary Kay Andrews",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697249850i/195790574.jpg",
+      "url": "https://www.goodreads.com/book/show/195790574",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Shuggie Bain",
-      "author": "Douglas   Stuart",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1602094778i/52741293.jpg",
-      "url": "https://www.goodreads.com/book/show/52741293",
+      "title": "Slasher Summer",
+      "author": "E.L. Chen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761199364i/243003247.jpg",
+      "url": "https://www.goodreads.com/book/show/243003247",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Safekeep",
-      "author": "Yael van der Wouden",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698870566i/199798201.jpg",
-      "url": "https://www.goodreads.com/book/show/199798201",
+      "title": "The Summer She Went Missing",
+      "author": "Chelsea Ichaso",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722962856i/157020084.jpg",
+      "url": "https://www.goodreads.com/book/show/157020084",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Henna Artist (The Jaipur Trilogy, #1)",
-      "author": "Alka Joshi",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1588690086i/50607466.jpg",
-      "url": "https://www.goodreads.com/book/show/50607466",
+      "title": "The Summer Job",
+      "author": "Lizzy Dent",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609707285i/56533763.jpg",
+      "url": "https://www.goodreads.com/book/show/56533763",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Nickel Boys",
-      "author": "Colson Whitehead",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1593115396i/42270835.jpg",
-      "url": "https://www.goodreads.com/book/show/42270835",
+      "title": "The Summer I Turned Pretty (The Summer I Turned Pretty, #1)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1496784224i/35380161.jpg",
+      "url": "https://www.goodreads.com/book/show/35380161",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Small Things Like These",
-      "author": "Claire Keegan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734631773i/58662236.jpg",
-      "url": "https://www.goodreads.com/book/show/58662236",
+      "title": "It's Not Summer Without You (Summer, #2)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651389070i/60911707.jpg",
+      "url": "https://www.goodreads.com/book/show/60911707",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Hamnet",
-      "author": "Maggie O'Farrell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1589286085i/48677123.jpg",
-      "url": "https://www.goodreads.com/book/show/48677123",
+      "title": "We'll Always Have Summer (Summer, #3)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651007400i/60889030.jpg",
+      "url": "https://www.goodreads.com/book/show/60889030",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Lion Women of Tehran",
-      "author": "Marjan Kamali",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719409771i/199798217.jpg",
-      "url": "https://www.goodreads.com/book/show/199798217",
+      "title": "Hurricane Summer",
+      "author": "Asha Ashanti Bromfield",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1601135894i/54860490.jpg",
+      "url": "https://www.goodreads.com/book/show/54860490",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Weyward",
-      "author": "Emilia Hart",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1677756582i/60654349.jpg",
-      "url": "https://www.goodreads.com/book/show/60654349",
+      "title": "Summer Bird Blue",
+      "author": "Akemi Dawn Bowman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1516638251i/35716237.jpg",
+      "url": "https://www.goodreads.com/book/show/35716237",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Take My Hand",
-      "author": "Dolen Perkins-Valdez",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626449299i/55650158.jpg",
-      "url": "https://www.goodreads.com/book/show/55650158",
+      "title": "Summer Girls",
+      "author": "Jennifer Dugan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726678760i/218153897.jpg",
+      "url": "https://www.goodreads.com/book/show/218153897",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Covenant of Water",
-      "author": "Abraham   Verghese",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1687600746i/180357146.jpg",
-      "url": "https://www.goodreads.com/book/show/180357146",
+      "title": "The Summer Share",
+      "author": "Jenn McKinlay",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756350548i/240688508.jpg",
+      "url": "https://www.goodreads.com/book/show/240688508",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Heaven & Earth Grocery Store",
-      "author": "James   McBride",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685350945i/65678550.jpg",
-      "url": "https://www.goodreads.com/book/show/65678550",
+      "title": "Summer Official",
+      "author": "Rebekah Weatherspoon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753612571i/239044085.jpg",
+      "url": "https://www.goodreads.com/book/show/239044085",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Yellow Wife",
-      "author": "Sadeqa  Johnson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1608477179i/54304031.jpg",
-      "url": "https://www.goodreads.com/book/show/54304031",
+      "title": "Rules for the Summer",
+      "author": "Meghan Quinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767964732i/246346502.jpg",
+      "url": "https://www.goodreads.com/book/show/246346502",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Lessons in Chemistry",
-      "author": "Bonnie Garmus",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1634748496i/58065033.jpg",
-      "url": "https://www.goodreads.com/book/show/58065033",
+      "title": "The Summer Swap",
+      "author": "Sarah   Morgan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1704388195i/200830601.jpg",
+      "url": "https://www.goodreads.com/book/show/200830601",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Lady Tan's Circle of Women",
-      "author": "Lisa See",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1683735261i/62919732.jpg",
-      "url": "https://www.goodreads.com/book/show/62919732",
+      "title": "Summers at Castle Auburn",
+      "author": "Sharon Shinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388592909i/345660.jpg",
+      "url": "https://www.goodreads.com/book/show/345660",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Mountains Sing",
-      "author": "Nguyễn Phan Quế Mai",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1584656214i/49631287.jpg",
-      "url": "https://www.goodreads.com/book/show/49631287",
+      "title": "Last Summer Boys",
+      "author": "Bill Rivers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1644531551i/59595743.jpg",
+      "url": "https://www.goodreads.com/book/show/59595743",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Land",
-      "author": "Maggie O'Farrell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764056109i/241126782.jpg",
-      "url": "https://www.goodreads.com/book/show/241126782",
+      "title": "The Summer House",
+      "author": "James  Patterson, Brendan DuBois",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579614036i/52588702.jpg",
+      "url": "https://www.goodreads.com/book/show/52588702",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Chart Toppers"
+        "Literally Summer"
       ]
     },
     {
-      "title": "A Calamity of Souls",
-      "author": "David Baldacci",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701965291i/198494052.jpg",
-      "url": "https://www.goodreads.com/book/show/198494052",
+      "title": "Last Summer at the Golden Hotel",
+      "author": "Elyssa Friedland",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610174760i/56600650.jpg",
+      "url": "https://www.goodreads.com/book/show/56600650",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "West with Giraffes",
+      "title": "The Summer Wives",
+      "author": "Beatriz Williams",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1509586304i/36381085.jpg",
+      "url": "https://www.goodreads.com/book/show/36381085",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Broken Rules",
+      "author": "K.L. Walther",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600698670i/49259788.jpg",
+      "url": "https://www.goodreads.com/book/show/49259788",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Second Chances",
+      "author": "K.L. Walther",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760794997i/240407143.jpg",
+      "url": "https://www.goodreads.com/book/show/240407143",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Invincible Summer of Juniper Jones",
+      "author": "Daven McQueen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1591212434i/53805921.jpg",
+      "url": "https://www.goodreads.com/book/show/53805921",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summers Between Us",
+      "author": "Noreen Nanja",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733491913i/216420350.jpg",
+      "url": "https://www.goodreads.com/book/show/216420350",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer's Echo",
+      "author": "Robbi Renee",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745983256i/223966189.jpg",
+      "url": "https://www.goodreads.com/book/show/223966189",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of Love",
+      "author": "Kerri Maher",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760066607i/242512714.jpg",
+      "url": "https://www.goodreads.com/book/show/242512714",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Last Summer",
+      "author": "Kate   Spencer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707934151i/200121624.jpg",
+      "url": "https://www.goodreads.com/book/show/200121624",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Mockingbird Summer",
       "author": "Lynda Rutledge",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609183326i/56449476.jpg",
-      "url": "https://www.goodreads.com/book/show/56449476",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698162909i/175531639.jpg",
+      "url": "https://www.goodreads.com/book/show/175531639",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Kin",
-      "author": "Tayari Jones",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758077674i/241126800.jpg",
-      "url": "https://www.goodreads.com/book/show/241126800",
+      "title": "Long Past Summer",
+      "author": "Noué Kirwan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639087319i/59633171.jpg",
+      "url": "https://www.goodreads.com/book/show/59633171",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Chart Toppers"
+        "Literally Summer"
       ]
     },
     {
-      "title": "All the Colors of the Dark",
-      "author": "Chris  Whitaker",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719171667i/215153740.jpg",
-      "url": "https://www.goodreads.com/book/show/215153740",
+      "title": "The Summer of Everything",
+      "author": "Julian Winters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579364383i/50156232.jpg",
+      "url": "https://www.goodreads.com/book/show/50156232",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The God of the Woods",
-      "author": "Liz    Moore",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717970538i/199698485.jpg",
-      "url": "https://www.goodreads.com/book/show/199698485",
+      "title": "Have a Great Summer",
+      "author": "Francesca  Cocchi",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1776091714i/240687423.jpg",
+      "url": "https://www.goodreads.com/book/show/240687423",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Mexican Gothic",
-      "author": "Silvia Moreno-Garcia",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1607462569i/53152636.jpg",
-      "url": "https://www.goodreads.com/book/show/53152636",
+      "title": "Summerland Cove",
+      "author": "Ellen Baker",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767739861i/241125639.jpg",
+      "url": "https://www.goodreads.com/book/show/241125639",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Giver of Stars",
-      "author": "Jojo Moyes",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1572879113i/43925876.jpg",
-      "url": "https://www.goodreads.com/book/show/43925876",
+      "title": "The Last Days of Summer",
+      "author": "Sarra Manning",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766792621i/240351088.jpg",
+      "url": "https://www.goodreads.com/book/show/240351088",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Buffalo Hunter Hunter",
-      "author": "Stephen Graham Jones",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1779114576i/214565614.jpg",
-      "url": "https://www.goodreads.com/book/show/214565614",
+      "title": "The Summer We Ran",
+      "author": "Audrey  Ingram",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737171011i/217204390.jpg",
+      "url": "https://www.goodreads.com/book/show/217204390",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Horse",
-      "author": "Geraldine Brooks",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639948376i/59109077.jpg",
-      "url": "https://www.goodreads.com/book/show/59109077",
+      "title": "Last Summer at Maine Chance",
+      "author": "Jessica  Everett",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755716158i/238940766.jpg",
+      "url": "https://www.goodreads.com/book/show/238940766",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Atmosphere",
-      "author": "Taylor Jenkins Reid",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730469032i/220817728.jpg",
-      "url": "https://www.goodreads.com/book/show/220817728",
+      "title": "Stars, Stripes & Summer Nights",
+      "author": "Celeste Dador, C.C. Dador",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760640364i/241673483.jpg",
+      "url": "https://www.goodreads.com/book/show/241673483",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves",
-        "Staff Shelves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Night Watchman",
-      "author": "Louise Erdrich",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1560805539i/46206688.jpg",
-      "url": "https://www.goodreads.com/book/show/46206688",
+      "title": "That Last Carolina Summer",
+      "author": "Karen   White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732333257i/218171641.jpg",
+      "url": "https://www.goodreads.com/book/show/218171641",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Now I Surrender",
-      "author": "Álvaro Enrigue, Natasha Wimmer",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754450697i/238614756.jpg",
-      "url": "https://www.goodreads.com/book/show/238614756",
+      "title": "Lost in the Summer of '69",
+      "author": "Eliza Knight",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757161093i/235315091.jpg",
+      "url": "https://www.goodreads.com/book/show/235315091",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Beasts of a Little Land",
-      "author": "Juhea Kim",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1614930101i/57151981.jpg",
-      "url": "https://www.goodreads.com/book/show/57151981",
+      "title": "Ms. V's Hot Girl Summer",
+      "author": "A.H. Cunningham",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718912593i/209770893.jpg",
+      "url": "https://www.goodreads.com/book/show/209770893",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Great Believers",
-      "author": "Rebecca Makkai",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556229367i/45304101.jpg",
-      "url": "https://www.goodreads.com/book/show/45304101",
+      "title": "The Summer I Found You",
+      "author": "Jennifer     O'Brien",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762536515i/222420098.jpg",
+      "url": "https://www.goodreads.com/book/show/222420098",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Berry Pickers",
-      "author": "Amanda    Peters",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1677605623i/123036004.jpg",
-      "url": "https://www.goodreads.com/book/show/123036004",
+      "title": "The Summer Guest",
+      "author": "Justin Cronin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1320533001i/79673.jpg",
+      "url": "https://www.goodreads.com/book/show/79673",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Small Mercies",
-      "author": "Dennis Lehane",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1675645342i/61812308.jpg",
-      "url": "https://www.goodreads.com/book/show/61812308",
+      "title": "Our Extraordinary Summer (Hobby Island #2)",
+      "author": "Lori Wilde",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753286539i/239134047.jpg",
+      "url": "https://www.goodreads.com/book/show/239134047",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Only Plane in the Sky: An Oral History of 9/11",
-      "author": "Garrett M. Graff",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526203i/43821991.jpg",
-      "url": "https://www.goodreads.com/book/show/43821991",
+      "title": "Our Secret Summer",
+      "author": "R.S. Grey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756881539i/241087288.jpg",
+      "url": "https://www.goodreads.com/book/show/241087288",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "How the Word Is Passed: A Reckoning with the History of Slavery Across America",
-      "author": "Clint   Smith",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1603917194i/55643287.jpg",
-      "url": "https://www.goodreads.com/book/show/55643287",
+      "title": "Summer on Sag Harbor",
+      "author": "Sunny Hostin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1682346184i/50496906.jpg",
+      "url": "https://www.goodreads.com/book/show/50496906",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "We the People: A History of the U.S. Constitution",
-      "author": "Jill Lepore",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1738432343i/223736225.jpg",
-      "url": "https://www.goodreads.com/book/show/223736225",
+      "title": "Summer in the City of Roses",
+      "author": "Michelle Ruiz Keil",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1612312366i/56253675.jpg",
+      "url": "https://www.goodreads.com/book/show/56253675",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Black AF History: The Un-Whitewashed Story of America",
-      "author": "Michael Harriot",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1623377719i/55959466.jpg",
-      "url": "https://www.goodreads.com/book/show/55959466",
+      "title": "The Lost Summer: A Novel (Haven Cliff Book 2)",
+      "author": "Wendy Corsi Staub",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761583515i/226964184.jpg",
+      "url": "https://www.goodreads.com/book/show/226964184",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Native Nations: A Millennium in North America",
-      "author": "Kathleen DuVal",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773261748i/186881205.jpg",
-      "url": "https://www.goodreads.com/book/show/186881205",
+      "title": "One Summer: America, 1927",
+      "author": "Bill Bryson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626349855i/18680077.jpg",
+      "url": "https://www.goodreads.com/book/show/18680077",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation",
-      "author": "Andrew Ross Sorkin",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755785045i/228142780.jpg",
-      "url": "https://www.goodreads.com/book/show/228142780",
+      "title": "Liliana's Invincible Summer: A Sister's Search for Justice",
+      "author": "Cristina Rivera Garza",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1662440397i/61111247.jpg",
+      "url": "https://www.goodreads.com/book/show/61111247",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "Pride and Pleasure: The Schuyler Sisters in an Age of Revolution",
-      "author": "Amanda Vaill",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778948008i/222376494.jpg",
-      "url": "https://www.goodreads.com/book/show/222376494",
+      "title": "Summer for the Gods: The Scopes Trial and America's Continuing Debate Over Science and Religion",
+      "author": "Edward J. Larson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1571698372l/52594917.jpg",
+      "url": "https://www.goodreads.com/book/show/52594917",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz",
-      "author": "Erik Larson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722528916i/51187948.jpg",
-      "url": "https://www.goodreads.com/book/show/51187948",
+      "title": "The Boys of Summer (Harperperennial Modern Classics)",
+      "author": "Roger Kahn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1332817055i/11773879.jpg",
+      "url": "https://www.goodreads.com/book/show/11773879",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Radium Girls: The Dark Story of America’s Shining Women",
-      "author": "Kate  Moore",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1496007867i/31409135.jpg",
-      "url": "https://www.goodreads.com/book/show/31409135",
+      "title": "Summer of '49",
+      "author": "David Halberstam",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1429807453i/75411.jpg",
+      "url": "https://www.goodreads.com/book/show/75411",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves"
+        "Literally Summer"
       ]
     },
     {
-      "title": "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
-      "author": "Hallie Rubenhold",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1602343785i/37570548.jpg",
-      "url": "https://www.goodreads.com/book/show/37570548",
+      "title": "Summer of '71: Five Months That Changed America",
+      "author": "John A. Jenkins",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768063695i/240687486.jpg",
+      "url": "https://www.goodreads.com/book/show/240687486",
       "isKindleUnlimited": false,
       "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "A Woman of No Importance: The Untold Story of the American Spy Who Helped Win World War II",
-      "author": "Sonia Purnell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1539165474i/40595446.jpg",
-      "url": "https://www.goodreads.com/book/show/40595446",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
-      "author": "Adam Higginbotham",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1545577007i/40538681.jpg",
-      "url": "https://www.goodreads.com/book/show/40538681",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Bomber Mafia: A Dream, a Temptation, and the Longest Night of the Second World War",
-      "author": "Malcolm Gladwell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1616697844i/57007687.jpg",
-      "url": "https://www.goodreads.com/book/show/57007687",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Chaos: Charles Manson, the CIA, and the Secret History of the Sixties",
-      "author": "Tom O'Neill",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1543561687i/43015073.jpg",
-      "url": "https://www.goodreads.com/book/show/43015073",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "How to Hide an Empire: A History of the Greater United States",
-      "author": "Daniel Immerwahr",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1627757585i/40121985.jpg",
-      "url": "https://www.goodreads.com/book/show/40121985",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Say Nothing: A True Story of Murder and Memory in Northern Ireland",
-      "author": "Patrick Radden Keefe",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1537315266i/40163119.jpg",
-      "url": "https://www.goodreads.com/book/show/40163119",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves"
-      ]
-    },
-    {
-      "title": "The Heartbeat of Wounded Knee: Native America from 1890 to the Present",
-      "author": "David Treuer",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1535688244i/41574287.jpg",
-      "url": "https://www.goodreads.com/book/show/41574287",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The British Are Coming: The War for America, Lexington to Princeton, 1775-1777",
-      "author": "Rick Atkinson, John Sterling",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1538524326i/41812830.jpg",
-      "url": "https://www.goodreads.com/book/show/41812830",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Night Flyer: Harriet Tubman and the Faith Dreams of a Free People",
-      "author": "Tiya Miles, Henry Louis Gates Jr.",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740925819i/201866614.jpg",
-      "url": "https://www.goodreads.com/book/show/201866614",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "History Matters",
-      "author": "David McCullough, Dorie McCullough Lawson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746967528i/228062187.jpg",
-      "url": "https://www.goodreads.com/book/show/228062187",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "King of Kings: The Iranian Revolution—A Story of Hubris, Delusion and Catastrophic Miscalculation",
-      "author": "Scott Anderson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732139359i/221251857.jpg",
-      "url": "https://www.goodreads.com/book/show/221251857",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Jane Austen's Bookshelf",
-      "author": "Rebecca Romney",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719020957i/214152206.jpg",
-      "url": "https://www.goodreads.com/book/show/214152206",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Master Slave Husband Wife: An Epic Journey from Slavery to Freedom",
-      "author": "Ilyon Woo",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1673499674i/61272711.jpg",
-      "url": "https://www.goodreads.com/book/show/61272711",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "King: A Life",
-      "author": "Jonathan Eig",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1710155592i/62039291.jpg",
-      "url": "https://www.goodreads.com/book/show/62039291",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Six: The Untold Story of America's First Women Astronauts",
-      "author": "Loren Grush",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1686761136i/101160753.jpg",
-      "url": "https://www.goodreads.com/book/show/101160753",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "A Fever in the Heartland: The Ku Klux Klan's Plot to Take Over America, and the Woman Who Stopped Them",
-      "author": "Timothy Egan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1659417830i/61423989.jpg",
-      "url": "https://www.goodreads.com/book/show/61423989",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Mark Twain",
-      "author": "Ron Chernow",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726282923i/219158874.jpg",
-      "url": "https://www.goodreads.com/book/show/219158874",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare's Greatest Rival",
-      "author": "Stephen Greenblatt",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748634362i/223736238.jpg",
-      "url": "https://www.goodreads.com/book/show/223736238",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Bookshop: A History of the American Bookstore",
-      "author": "Evan Friss",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1705935887i/201751300.jpg",
-      "url": "https://www.goodreads.com/book/show/201751300",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land",
-      "author": "Rebecca Nagle",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718899849i/199393033.jpg",
-      "url": "https://www.goodreads.com/book/show/199393033",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Madness: Race and Insanity in a Jim Crow Asylum",
-      "author": "Antonia Hylton",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1700681997i/145624993.jpg",
-      "url": "https://www.goodreads.com/book/show/145624993",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Westerners: Mythmaking and Belonging on the American Frontier",
-      "author": "Megan Kate Nelson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749393987i/235992714.jpg",
-      "url": "https://www.goodreads.com/book/show/235992714",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Small and the Mighty: Twelve Unsung Americans Who Changed the Course of History, from the Founding to the Civil Rights Movement",
-      "author": "Sharon McMahon",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1711238684i/203956674.jpg",
-      "url": "https://www.goodreads.com/book/show/203956674",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis",
-      "author": "Jonathan Blitzer",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697736195i/145624514.jpg",
-      "url": "https://www.goodreads.com/book/show/145624514",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Motherland: A Feminist History of Modern Russia, from Revolution to Autocracy",
-      "author": "Julia Ioffe",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719708497i/199793344.jpg",
-      "url": "https://www.goodreads.com/book/show/199793344",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "A Flower Traveled in My Blood",
-      "author": "Haley Cohen Gilliland",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736355509i/220161038.jpg",
-      "url": "https://www.goodreads.com/book/show/220161038",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "When the Sea Came Alive: An Oral History of D-Day",
-      "author": "Garrett M. Graff",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1711030488i/199797834.jpg",
-      "url": "https://www.goodreads.com/book/show/199797834",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
-      "author": "Hampton Sides",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694286652i/191746386.jpg",
-      "url": "https://www.goodreads.com/book/show/191746386",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction",
-        "Staff Shelves"
-      ]
-    },
-    {
-      "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
-      "author": "David Grann",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1659407155i/61714633.jpg",
-      "url": "https://www.goodreads.com/book/show/61714633",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves",
-        "Staff Shelves"
-      ]
-    },
-    {
-      "title": "River of the Gods: Genius, Courage and Betrayal in the Search for the Source of the Nile",
-      "author": "Candice Millard",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1635789021i/58777696.jpg",
-      "url": "https://www.goodreads.com/book/show/58777696",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
-      "author": "John U. Bacon",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747808948i/223736260.jpg",
-      "url": "https://www.goodreads.com/book/show/223736260",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction",
-        "Challenge Faves"
-      ]
-    },
-    {
-      "title": "A Black Queer History of the United States (ReVisioning History)",
-      "author": "C. Riley Snorton, Darius Bost",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746563765i/231681148.jpg",
-      "url": "https://www.goodreads.com/book/show/231681148",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Carthage: A New History",
-      "author": "Eve MacDonald",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751070074i/233411550.jpg",
-      "url": "https://www.goodreads.com/book/show/233411550",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "Unruly: The Ridiculous History of England's Kings and Queens",
-      "author": "David   Mitchell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1684764813i/152034931.jpg",
-      "url": "https://www.goodreads.com/book/show/152034931",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
-      ]
-    },
-    {
-      "title": "No One’s Coming: The Rogue Heroes Our Government Turns to When There’s Nowhere Else to Turn",
-      "author": "Kevin Hazzard",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751942729i/238142686.jpg",
-      "url": "https://www.goodreads.com/book/show/238142686",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Fact or Fiction"
+        "Literally Summer"
       ]
     },
     {
@@ -1012,6 +1007,18 @@
       "challenges": [
         "Challenge Faves",
         "Chart Toppers"
+      ]
+    },
+    {
+      "title": "Atmosphere",
+      "author": "Taylor Jenkins Reid",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750186858i/236746136.jpg",
+      "url": "https://www.goodreads.com/book/show/236746136",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction",
+        "Staff Shelves"
       ]
     },
     {
@@ -1160,6 +1167,30 @@
       ]
     },
     {
+      "title": "The Women",
+      "author": "Kristin Hannah",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733493019i/127305853.jpg",
+      "url": "https://www.goodreads.com/book/show/127305853",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "Hamnet",
+      "author": "Maggie O'Farrell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1589286085i/48677123.jpg",
+      "url": "https://www.goodreads.com/book/show/48677123",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
       "title": "The Seven Husbands of Evelyn Hugo",
       "author": "Taylor Jenkins Reid",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1664458703i/32620332.jpg",
@@ -1288,6 +1319,18 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Challenge Faves"
+      ]
+    },
+    {
+      "title": "The God of the Woods",
+      "author": "Liz    Moore",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717970538i/199698485.jpg",
+      "url": "https://www.goodreads.com/book/show/199698485",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction",
+        "Staff Shelves"
       ]
     },
     {
@@ -1889,6 +1932,17 @@
       ]
     },
     {
+      "title": "The Buffalo Hunter Hunter",
+      "author": "Stephen Graham Jones",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1779114576i/214565614.jpg",
+      "url": "https://www.goodreads.com/book/show/214565614",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction"
+      ]
+    },
+    {
       "title": "A Box Full of Darkness",
       "author": "Simone St. James",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745689479i/231681636.jpg",
@@ -2172,6 +2226,40 @@
       ]
     },
     {
+      "title": "The Wager: A Tale of Shipwreck, Mutiny and Murder",
+      "author": "David Grann",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1659407155i/61714633.jpg",
+      "url": "https://www.goodreads.com/book/show/61714633",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "1929: Inside the Greatest Crash in History – and How It Shattered a Nation",
+      "author": "Andrew Ross Sorkin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755784997i/211179569.jpg",
+      "url": "https://www.goodreads.com/book/show/211179569",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Say Nothing: A True Story of Murder and Memory in Northern Ireland",
+      "author": "Patrick Radden Keefe",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1537315266i/40163119.jpg",
+      "url": "https://www.goodreads.com/book/show/40163119",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction"
+      ]
+    },
+    {
       "title": "Killers of the Flower Moon: The Osage Murders and the Birth of the FBI",
       "author": "David Grann",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1474610956i/29496196.jpg",
@@ -2209,6 +2297,28 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Challenge Faves"
+      ]
+    },
+    {
+      "title": "The Radium Girls: The Dark Story of America’s Shining Women",
+      "author": "Kate  Moore",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1496007867i/31409135.jpg",
+      "url": "https://www.goodreads.com/book/show/31409135",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Gales of November: The Untold Story of the Edmund Fitzgerald",
+      "author": "John U. Bacon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740473762i/226573163.jpg",
+      "url": "https://www.goodreads.com/book/show/226573163",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Challenge Faves",
+        "Fact or Fiction"
       ]
     },
     {
@@ -2344,6 +2454,28 @@
       ]
     },
     {
+      "title": "Kin",
+      "author": "Tayari Jones",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758077674i/241126800.jpg",
+      "url": "https://www.goodreads.com/book/show/241126800",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Chart Toppers",
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Calamity Club",
+      "author": "Kathryn Stockett",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763049143i/228820257.jpg",
+      "url": "https://www.goodreads.com/book/show/228820257",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Chart Toppers",
+        "Fact or Fiction"
+      ]
+    },
+    {
       "title": "Keeper of Lost Children",
       "author": "Sadeqa  Johnson",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770236844i/235992421.jpg",
@@ -2391,6 +2523,17 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Chart Toppers"
+      ]
+    },
+    {
+      "title": "Land",
+      "author": "Maggie O'Farrell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764056109i/241126782.jpg",
+      "url": "https://www.goodreads.com/book/show/241126782",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Chart Toppers",
+        "Fact or Fiction"
       ]
     },
     {
@@ -4484,16 +4627,6 @@
       ]
     },
     {
-      "title": "Last Summer on State Street",
-      "author": "Toya Wolfe",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1648412987i/58884738.jpg",
-      "url": "https://www.goodreads.com/book/show/58884738",
-      "isKindleUnlimited": false,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "Hope You Are Satisfied",
       "author": "Tania Malik",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1666908107i/59818068.jpg",
@@ -4901,6 +5034,780 @@
       "isKindleUnlimited": false,
       "challenges": [
         "Community Picks"
+      ]
+    },
+    {
+      "title": "Angel Down",
+      "author": "Daniel Kraus",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778522455i/220160849.jpg",
+      "url": "https://www.goodreads.com/book/show/220160849",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "In Memoriam",
+      "author": "Alice Winn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1670866445i/59948520.jpg",
+      "url": "https://www.goodreads.com/book/show/59948520",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Personal Librarian",
+      "author": "Marie Benedict, Victoria Christopher Murray",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610646708i/55333938.jpg",
+      "url": "https://www.goodreads.com/book/show/55333938",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Long Petal of the Sea",
+      "author": "Isabel Allende, Nick Caistor, Amanda Hopkinson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600456282i/45897568.jpg",
+      "url": "https://www.goodreads.com/book/show/45897568",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Great Circle",
+      "author": "Maggie Shipstead",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631650934i/58997456.jpg",
+      "url": "https://www.goodreads.com/book/show/58997456",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Gentleman in Moscow",
+      "author": "Amor Towles",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718915012i/34066798.jpg",
+      "url": "https://www.goodreads.com/book/show/34066798",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "Trust",
+      "author": "Hernan Diaz",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631246461i/58210933.jpg",
+      "url": "https://www.goodreads.com/book/show/58210933",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "This Tender Land",
+      "author": "William Kent Krueger",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526433i/25813942.jpg",
+      "url": "https://www.goodreads.com/book/show/25813942",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Daughters of Shandong",
+      "author": "Eve J. Chung",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1692281423i/195888874.jpg",
+      "url": "https://www.goodreads.com/book/show/195888874",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "We Were the Lucky Ones",
+      "author": "Georgia Hunter",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1471282781i/30267929.jpg",
+      "url": "https://www.goodreads.com/book/show/30267929",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Isola",
+      "author": "Allegra Goodman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718997232i/212806636.jpg",
+      "url": "https://www.goodreads.com/book/show/212806636",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Shuggie Bain",
+      "author": "Douglas   Stuart",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1602094778i/52741293.jpg",
+      "url": "https://www.goodreads.com/book/show/52741293",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Safekeep",
+      "author": "Yael van der Wouden",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698870566i/199798201.jpg",
+      "url": "https://www.goodreads.com/book/show/199798201",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Henna Artist (The Jaipur Trilogy, #1)",
+      "author": "Alka Joshi",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1588690086i/50607466.jpg",
+      "url": "https://www.goodreads.com/book/show/50607466",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Nickel Boys",
+      "author": "Colson Whitehead",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1593115396i/42270835.jpg",
+      "url": "https://www.goodreads.com/book/show/42270835",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Small Things Like These",
+      "author": "Claire Keegan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734631773i/58662236.jpg",
+      "url": "https://www.goodreads.com/book/show/58662236",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Lion Women of Tehran",
+      "author": "Marjan Kamali",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719409771i/199798217.jpg",
+      "url": "https://www.goodreads.com/book/show/199798217",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "Weyward",
+      "author": "Emilia Hart",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1677756582i/60654349.jpg",
+      "url": "https://www.goodreads.com/book/show/60654349",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Take My Hand",
+      "author": "Dolen Perkins-Valdez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626449299i/55650158.jpg",
+      "url": "https://www.goodreads.com/book/show/55650158",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Covenant of Water",
+      "author": "Abraham   Verghese",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1687600746i/180357146.jpg",
+      "url": "https://www.goodreads.com/book/show/180357146",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Heaven & Earth Grocery Store",
+      "author": "James   McBride",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685350945i/65678550.jpg",
+      "url": "https://www.goodreads.com/book/show/65678550",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Yellow Wife",
+      "author": "Sadeqa  Johnson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1608477179i/54304031.jpg",
+      "url": "https://www.goodreads.com/book/show/54304031",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Lessons in Chemistry",
+      "author": "Bonnie Garmus",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1634748496i/58065033.jpg",
+      "url": "https://www.goodreads.com/book/show/58065033",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "Lady Tan's Circle of Women",
+      "author": "Lisa See",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1683735261i/62919732.jpg",
+      "url": "https://www.goodreads.com/book/show/62919732",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Mountains Sing",
+      "author": "Nguyễn Phan Quế Mai",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1584656214i/49631287.jpg",
+      "url": "https://www.goodreads.com/book/show/49631287",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Calamity of Souls",
+      "author": "David Baldacci",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701965291i/198494052.jpg",
+      "url": "https://www.goodreads.com/book/show/198494052",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "West with Giraffes",
+      "author": "Lynda Rutledge",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609183326i/56449476.jpg",
+      "url": "https://www.goodreads.com/book/show/56449476",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "All the Colors of the Dark",
+      "author": "Chris  Whitaker",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719171667i/215153740.jpg",
+      "url": "https://www.goodreads.com/book/show/215153740",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Mexican Gothic",
+      "author": "Silvia Moreno-Garcia",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1607462569i/53152636.jpg",
+      "url": "https://www.goodreads.com/book/show/53152636",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Giver of Stars",
+      "author": "Jojo Moyes",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1572879113i/43925876.jpg",
+      "url": "https://www.goodreads.com/book/show/43925876",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Horse",
+      "author": "Geraldine Brooks",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639948376i/59109077.jpg",
+      "url": "https://www.goodreads.com/book/show/59109077",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Night Watchman",
+      "author": "Louise Erdrich",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1560805539i/46206688.jpg",
+      "url": "https://www.goodreads.com/book/show/46206688",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Now I Surrender",
+      "author": "Álvaro Enrigue, Natasha Wimmer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754450697i/238614756.jpg",
+      "url": "https://www.goodreads.com/book/show/238614756",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Beasts of a Little Land",
+      "author": "Juhea Kim",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1614930101i/57151981.jpg",
+      "url": "https://www.goodreads.com/book/show/57151981",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Great Believers",
+      "author": "Rebecca Makkai",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556229367i/45304101.jpg",
+      "url": "https://www.goodreads.com/book/show/45304101",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Berry Pickers",
+      "author": "Amanda    Peters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1677605623i/123036004.jpg",
+      "url": "https://www.goodreads.com/book/show/123036004",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Small Mercies",
+      "author": "Dennis Lehane",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1675645342i/61812308.jpg",
+      "url": "https://www.goodreads.com/book/show/61812308",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Only Plane in the Sky: An Oral History of 9/11",
+      "author": "Garrett M. Graff",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1565526203i/43821991.jpg",
+      "url": "https://www.goodreads.com/book/show/43821991",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "How the Word Is Passed: A Reckoning with the History of Slavery Across America",
+      "author": "Clint   Smith",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1603917194i/55643287.jpg",
+      "url": "https://www.goodreads.com/book/show/55643287",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "We the People: A History of the U.S. Constitution",
+      "author": "Jill Lepore",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1738432343i/223736225.jpg",
+      "url": "https://www.goodreads.com/book/show/223736225",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Black AF History: The Un-Whitewashed Story of America",
+      "author": "Michael Harriot",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1623377719i/55959466.jpg",
+      "url": "https://www.goodreads.com/book/show/55959466",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Native Nations: A Millennium in North America",
+      "author": "Kathleen DuVal",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773261748i/186881205.jpg",
+      "url": "https://www.goodreads.com/book/show/186881205",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Pride and Pleasure: The Schuyler Sisters in an Age of Revolution",
+      "author": "Amanda Vaill",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778948008i/222376494.jpg",
+      "url": "https://www.goodreads.com/book/show/222376494",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz",
+      "author": "Erik Larson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722528916i/51187948.jpg",
+      "url": "https://www.goodreads.com/book/show/51187948",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Five: The Untold Lives of the Women Killed by Jack the Ripper",
+      "author": "Hallie Rubenhold",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1602343785i/37570548.jpg",
+      "url": "https://www.goodreads.com/book/show/37570548",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Woman of No Importance: The Untold Story of the American Spy Who Helped Win World War II",
+      "author": "Sonia Purnell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1539165474i/40595446.jpg",
+      "url": "https://www.goodreads.com/book/show/40595446",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
+      "author": "Adam Higginbotham",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1545577007i/40538681.jpg",
+      "url": "https://www.goodreads.com/book/show/40538681",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Bomber Mafia: A Dream, a Temptation, and the Longest Night of the Second World War",
+      "author": "Malcolm Gladwell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1616697844i/57007687.jpg",
+      "url": "https://www.goodreads.com/book/show/57007687",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Chaos: Charles Manson, the CIA, and the Secret History of the Sixties",
+      "author": "Tom O'Neill",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1543561687i/43015073.jpg",
+      "url": "https://www.goodreads.com/book/show/43015073",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "How to Hide an Empire: A History of the Greater United States",
+      "author": "Daniel Immerwahr",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1627757585i/40121985.jpg",
+      "url": "https://www.goodreads.com/book/show/40121985",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Heartbeat of Wounded Knee: Native America from 1890 to the Present",
+      "author": "David Treuer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1535688244i/41574287.jpg",
+      "url": "https://www.goodreads.com/book/show/41574287",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The British Are Coming: The War for America, Lexington to Princeton, 1775-1777",
+      "author": "Rick Atkinson, John Sterling",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1538524326i/41812830.jpg",
+      "url": "https://www.goodreads.com/book/show/41812830",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Night Flyer: Harriet Tubman and the Faith Dreams of a Free People",
+      "author": "Tiya Miles, Henry Louis Gates Jr.",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740925819i/201866614.jpg",
+      "url": "https://www.goodreads.com/book/show/201866614",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "History Matters",
+      "author": "David McCullough, Dorie McCullough Lawson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746967528i/228062187.jpg",
+      "url": "https://www.goodreads.com/book/show/228062187",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "King of Kings: The Iranian Revolution—A Story of Hubris, Delusion and Catastrophic Miscalculation",
+      "author": "Scott Anderson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732139359i/221251857.jpg",
+      "url": "https://www.goodreads.com/book/show/221251857",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Jane Austen's Bookshelf",
+      "author": "Rebecca Romney",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719020957i/214152206.jpg",
+      "url": "https://www.goodreads.com/book/show/214152206",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Master Slave Husband Wife: An Epic Journey from Slavery to Freedom",
+      "author": "Ilyon Woo",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1673499674i/61272711.jpg",
+      "url": "https://www.goodreads.com/book/show/61272711",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "King: A Life",
+      "author": "Jonathan Eig",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1710155592i/62039291.jpg",
+      "url": "https://www.goodreads.com/book/show/62039291",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Six: The Untold Story of America's First Women Astronauts",
+      "author": "Loren Grush",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1686761136i/101160753.jpg",
+      "url": "https://www.goodreads.com/book/show/101160753",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Fever in the Heartland: The Ku Klux Klan's Plot to Take Over America, and the Woman Who Stopped Them",
+      "author": "Timothy Egan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1659417830i/61423989.jpg",
+      "url": "https://www.goodreads.com/book/show/61423989",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Mark Twain",
+      "author": "Ron Chernow",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726282923i/219158874.jpg",
+      "url": "https://www.goodreads.com/book/show/219158874",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Dark Renaissance: The Dangerous Times and Fatal Genius of Shakespeare's Greatest Rival",
+      "author": "Stephen Greenblatt",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748634362i/223736238.jpg",
+      "url": "https://www.goodreads.com/book/show/223736238",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Bookshop: A History of the American Bookstore",
+      "author": "Evan Friss",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1705935887i/201751300.jpg",
+      "url": "https://www.goodreads.com/book/show/201751300",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land",
+      "author": "Rebecca Nagle",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718899849i/199393033.jpg",
+      "url": "https://www.goodreads.com/book/show/199393033",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Madness: Race and Insanity in a Jim Crow Asylum",
+      "author": "Antonia Hylton",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1700681997i/145624993.jpg",
+      "url": "https://www.goodreads.com/book/show/145624993",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Westerners: Mythmaking and Belonging on the American Frontier",
+      "author": "Megan Kate Nelson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749393987i/235992714.jpg",
+      "url": "https://www.goodreads.com/book/show/235992714",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Small and the Mighty: Twelve Unsung Americans Who Changed the Course of History, from the Founding to the Civil Rights Movement",
+      "author": "Sharon McMahon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1711238684i/203956674.jpg",
+      "url": "https://www.goodreads.com/book/show/203956674",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Everyone Who Is Gone Is Here: The United States, Central America, and the Making of a Crisis",
+      "author": "Jonathan Blitzer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697736195i/145624514.jpg",
+      "url": "https://www.goodreads.com/book/show/145624514",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Motherland: A Feminist History of Modern Russia, from Revolution to Autocracy",
+      "author": "Julia Ioffe",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719708497i/199793344.jpg",
+      "url": "https://www.goodreads.com/book/show/199793344",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Flower Traveled in My Blood",
+      "author": "Haley Cohen Gilliland",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1736355509i/220161038.jpg",
+      "url": "https://www.goodreads.com/book/show/220161038",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "When the Sea Came Alive: An Oral History of D-Day",
+      "author": "Garrett M. Graff",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1711030488i/199797834.jpg",
+      "url": "https://www.goodreads.com/book/show/199797834",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "The Wide Wide Sea: Imperial Ambition, First Contact and the Fateful Final Voyage of Captain James Cook",
+      "author": "Hampton Sides",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694286652i/191746386.jpg",
+      "url": "https://www.goodreads.com/book/show/191746386",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction",
+        "Staff Shelves"
+      ]
+    },
+    {
+      "title": "River of the Gods: Genius, Courage and Betrayal in the Search for the Source of the Nile",
+      "author": "Candice Millard",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1635789021i/58777696.jpg",
+      "url": "https://www.goodreads.com/book/show/58777696",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "A Black Queer History of the United States (ReVisioning History)",
+      "author": "C. Riley Snorton, Darius Bost",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746563765i/231681148.jpg",
+      "url": "https://www.goodreads.com/book/show/231681148",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Carthage: A New History",
+      "author": "Eve MacDonald",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751070074i/233411550.jpg",
+      "url": "https://www.goodreads.com/book/show/233411550",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "Unruly: The Ridiculous History of England's Kings and Queens",
+      "author": "David   Mitchell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1684764813i/152034931.jpg",
+      "url": "https://www.goodreads.com/book/show/152034931",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "No One’s Coming: The Rogue Heroes Our Government Turns to When There’s Nowhere Else to Turn",
+      "author": "Kevin Hazzard",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751942729i/238142686.jpg",
+      "url": "https://www.goodreads.com/book/show/238142686",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Fact or Fiction"
       ]
     },
     {

@@ -311,7 +311,24 @@
     .tour-highlight { position: relative; z-index: 1001 !important; pointer-events: none; }
 
     .mobile-toggle { display: none; }
+    
+    .btn:disabled { opacity: 0.5; pointer-events: none; filter: grayscale(1); cursor: not-allowed; }
+    /* High-contrast highlight for sidebar items */
+    @keyframes sidebar-pulse { 
+        0% { background-color: var(--card); border-color: var(--border); } 
+        50% { background-color: var(--warning-soft); border-color: var(--warning); box-shadow: 0 0 0 4px color-mix(in oklab, var(--warning) 30%, transparent); } 
+        100% { background-color: var(--card); border-color: var(--border); } 
+    }
+    .sidebar-highlight { animation: sidebar-pulse 1.5s ease-in-out; }
+    
+    /* External link icon for challenges */
+    .chal-actions a.chal-link { display: inline-flex; align-items: center; justify-content: center; background: transparent; border: none; font-size: 13px; padding: 4px; border-radius: 4px; cursor: pointer; color: var(--muted-fg); text-decoration: none; }
+    .chal-actions a.chal-link:hover { background: var(--border); color: var(--fg); }
 
+    /* Clickable filter pill labels */
+    .filter-pill-label { cursor: pointer; padding: 2px 0; }
+    .filter-pill-label:hover { text-decoration: underline; }
+    
     /* Media Queries for Layout & Responsiveness */
     @media (max-width: 1200px) {
       .dashboard { grid-template-columns: 280px 1fr; }
@@ -498,7 +515,7 @@
       <div class="workspace-filter-bar tour-target-adv-filters" id="shared-filter-bar">
         <!-- First Row: Global Search, Import & Library Filter -->
         <div class="filter-row">
-          <div class="search">
+          <div class="search only-browse">
             <input id="search-input" type="text" placeholder="Search titles or authors..." aria-label="Search titles or authors" />
           </div>
           
@@ -1406,7 +1423,12 @@
         if (f === 'unselected' && isSelected) return '';
         if (q && !c.name.toLowerCase().includes(q)) return '';
 
-        const customActions = c.isCustom ? `<button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button> <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>` : '';
+        // Move the link to the actions array instead of next to the title
+        const extLink = c.url && c.url !== '#' ? `<a href="${escapeHtml(c.url)}" target="_blank" class="chal-link" title="Visit Challenge Source">🔗</a>` : '';
+        const copyAction = `<button class="copy-chal" data-id="${escapeHtml(c.id)}" title="Copy all books in this challenge">📋</button>`;
+        
+        // Group all actions together
+        const customActions = extLink + copyAction + (c.isCustom ? ` <button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">✏️</button> <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">🗑️</button>` : '');
         const newBadge = c.isNew ? `<span class="badge-new">NEW</span>` : '';
 
         return `
@@ -1431,10 +1453,33 @@
     addEvt('filter-challenges', 'change', renderChallengeGrid);
 
     addEvt('challenge-grid', 'click', (e) => {
+      // Prevent toggling if the external link was clicked
+      if (e.target.closest('a.chal-link')) return; 
+
       const btn = e.target.closest('button');
+
       if (btn) {
           e.stopPropagation();
           const chalId = btn.getAttribute('data-id');
+          // Handle Copying a specific challenge's book list
+          if (btn.classList.contains('copy-chal')) {
+              const cName = resolveChallengeName(chalId);
+              // Fetch all books that belong to this challenge, sorted alphabetically
+              const cBooks = rawDatabase.books.filter(b => b.challenges.includes(chalId)).sort((a,b) => a.title.localeCompare(b.title));
+              
+              let md = `### 📚 ${cName}\n\n`;
+              let html = `📚 ${escapeHtml(cName)}`;
+              
+              cBooks.forEach(b => {
+                  const authorStr = b.author ? ` by ${b.author}` : '';
+                  md += `- [${b.title}](${b.url||'#'})${authorStr}\n`;
+                  html += `<li style="margin-bottom:8px;"><a href="${escapeHtml(b.url||'#')}"><strong>${escapeHtml(b.title)}</strong></a>${escapeHtml(authorStr)}</li>`;
+              });
+              html += '</ul>';
+              
+              copyToClipboard(md, btn, html);
+              return;
+          }
           if (btn.classList.contains('delete')) {
               if (confirm("Delete this custom list?")) {
                   delete customLists[chalId];
@@ -1801,9 +1846,17 @@
       const algoIndicator = $('optimal-algo-indicator');
       if (algoIndicator) {
           const isOverlap = mode === 'overlap';
-          algoIndicator.className = `algo-indicator ${isOverlap ? 'overlap' : 'single'}`;
+          const hasOverlaps = activeData.sections.length > 0;
+          
+          // Smart Label Logic
+          let modeLabel = isOverlap 
+              ? (hasOverlaps ? '🔗 Maximized Overlaps' : '🔗 No Overlaps Available') 
+              : '🔀 No Overlaps';
+          
+          // Use the orange warning style if forced into single mode due to 0 overlaps
+          algoIndicator.className = `algo-indicator ${isOverlap && hasOverlaps ? 'overlap' : 'single'}`;
           algoIndicator.innerHTML = `
-              <span>${isOverlap ? '🔗 Maximized Overlaps' : '🔀 No Overlaps'}</span>
+              <span>${modeLabel}</span>
               <span style="opacity:0.4;">|</span>
               <span>Target: <strong>${activeCats.size}</strong> Goals</span>
               <span style="opacity:0.4;">|</span>
@@ -1814,13 +1867,15 @@
       let html = '';
 
       if (mode === 'single' && bestPath.failedSingleCategories.length > 0) {
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br>No standalone books exist for: <em>${bestPath.failedSingleCategories.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
+          const tagsHtml = bestPath.failedSingleCategories.map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
+          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">No standalone books exist for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
       }
 
       if (bestPath.uncovered.length > 0 && mode === 'overlap') {
           const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
           const libHint = isLibActive ? `disabling the "Filter by My Library" toggle, or expanding your shelves selection` : `resetting excluded books, or adding more challenges`;
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges with current settings</strong><br>Missing coverage for: <em>${bestPath.uncovered.map(c => resolveChallengeName(c)).map(escapeHtml).join(', ')}</em>.<br><small>Consider ${libHint} to find other potential matches.</small></div></div>`;
+          const tagsHtml = bestPath.uncovered.map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
+          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges with current settings</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">Missing coverage for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Consider ${libHint} to find other potential matches.</small></div></div>`;
       }
 
       if (activeCats.size === 0) {
@@ -1842,8 +1897,15 @@
 
       const outOpt = $('output-optimal');
       if(outOpt) outOpt.innerHTML = html;
+      
+      // Update Alternate Button States based on available overlaps
+      const overlapBtn = $('btn-shuffle-overlap');
+      if (overlapBtn) {
+          const hasOverlaps = activeData.sections.length > 0;
+          overlapBtn.disabled = !hasOverlaps;
+          overlapBtn.title = hasOverlaps ? "Find a new path using overlapping books" : "No overlapping books available in current selection";
+      }
     }
-
     addEvt('btn-shuffle-overlap', 'click', () => renderResults('overlap', true));
     addEvt('btn-shuffle-single', 'click', () => renderResults('single', true));
 
@@ -1858,58 +1920,119 @@
       copyToClipboard(md, e.target);
     });
 
-    function renderSheet() {
-      let html = '';
-      activeData.sections.forEach((sec, i) => {
-        if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
-        const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
-        sec.books.forEach((b, idx) => {
-          const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
-          html += `<tr><td class="cat">${idx===0?escapeHtml(label):''}</td><td><a href="${escapeHtml(b.url||'#')}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
-        });
-      });
-      const bodyEl = $('sheet-body');
-      if(bodyEl) bodyEl.innerHTML = html;
-      const subEl = $('convert-sub');
-      if(subEl) subEl.textContent = `${activeData.sections.length} overlap groups found.`;
+    function getChallengeHtml(id) {
+        const c = rawDatabase.challenges.find(x => x.id === id);
+        const name = escapeHtml(c ? c.name : id);
+        return (c && c.url && c.url !== '#') ? `<a href="${escapeHtml(c.url)}" target="_blank">${name}</a>` : name;
     }
 
+    function renderSheet() {
+      const container = document.querySelector('#view-spreadsheet .workspace-content');
+      const subEl = $('convert-sub');
+      
+      // Handle Empty State natively (hides the table headers completely)
+      if (activeData.sections.length === 0) {
+          if (container) {
+              container.innerHTML = `<div class="empty" style="border: none; padding-top: 40px; grid-column: 1/-1;"><div class="icon">👻</div><h3>No overlaps found</h3><p style="margin:4px 0 0; font-size:13px; color:var(--muted-fg);">Try selecting more challenges to find common books.</p></div>`;
+          }
+          if (subEl) subEl.innerHTML = `<strong>0</strong> overlap groups found.`;
+          return;
+      }
+
+      let html = '<table class="sheet"><thead><tr><th>Challenge Combination</th><th>Common Books</th></tr></thead><tbody id="sheet-body">';
+      let totalCombos = 0;
+      let maxOverlap = 0;
+      let overlappingBooksCount = new Set();
+      
+      activeData.sections.forEach((sec, i) => {
+        if (i > 0) html += '<tr class="spacer"><td colspan="2"></td></tr>';
+        
+        const labelHtml = `${sec.categories.map(c => getChallengeHtml(c)).join(' + ')} <br><span style="font-size:11px;color:var(--muted-fg);font-weight:normal;">(Common: ${sec.books.length} books)</span>`;
+        
+        // Accumulate Stats
+        totalCombos += sec.books.length;
+        if (sec.categories.length > maxOverlap) maxOverlap = sec.categories.length;
+
+        sec.books.forEach((b, idx) => {
+          overlappingBooksCount.add(b.id); // Add to Set to calculate total overlapping books
+          const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+          html += `<tr><td class="cat">${idx===0?labelHtml:''}</td><td><a href="${escapeHtml(b.url||'#')}" target="_blank">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
+        });
+      });
+      html += '</tbody></table>';
+      
+      if (container) container.innerHTML = html;
+      
+      // Update Subtitle with Rich Stats
+      if (subEl) {
+          subEl.innerHTML = `Overlap groups: <strong>${activeData.sections.length}</strong> combinations &nbsp;|&nbsp; Overlapping books: <strong>${overlappingBooksCount.size} </strong>books &nbsp;|&nbsp; Max overlap: <strong>${maxOverlap}</strong> Challenges`;
+      }
+    }
     // Dynamic Filter Pills & Conditionally Rendered Reset Action
     function renderFilterPills() {
       const container = $('filter-pills-container');
       if (!container) return;
 
       const pills = [];
+      const isBrowseTab = !$('view-library').classList.contains('hidden');
 
-      if (search) {
+      // Helper to draw user attention to the specific filter control
+      const highlightControl = (id) => {
+          const el = $(id);
+          if (el) {
+              // Only switch tabs if the element specifically belongs to the Browse tab
+              if (el.closest('.only-browse') && $('view-library').classList.contains('hidden')) {
+                  switchTab('library');
+              }
+              
+              if (el.tagName !== 'DIV' && el.tagName !== 'LABEL') el.focus();
+              
+              // Apply the high-contrast orange animation
+              el.classList.remove('sidebar-highlight');
+              void el.offsetWidth; 
+              el.classList.add('sidebar-highlight');
+              setTimeout(() => el.classList.remove('sidebar-highlight'), 1500);
+          }
+      };
+
+      if (isBrowseTab && search) {
           pills.push({
               label: `Search: "${search}"`,
+              onClick: () => highlightControl('search-input'),
               clear: () => { search = ''; const el = $('search-input'); if(el) el.value = ''; renderAll(); }
           });
       }
-      if (statusFilter !== 'all') {
+      if (isBrowseTab && statusFilter !== 'all') {
           const labelMap = { 'include': 'Status: Must Read', 'exclude': 'Status: Avoid' };
           pills.push({
               label: labelMap[statusFilter] || statusFilter,
+              onClick: () => highlightControl('status-filter'),
               clear: () => { statusFilter = 'all'; const el = $('status-filter'); if(el) el.value = 'all'; renderAll(); }
           });
       }
-      if (overlapFilter !== 'all') {
+      if (isBrowseTab && overlapFilter !== 'all') {
           const labelMap = { 'overlap': '🔗 Overlaps Only', 'single': '🔀 Unique Only' };
           pills.push({
               label: labelMap[overlapFilter] || overlapFilter,
+              onClick: () => highlightControl('overlap-filter'),
               clear: () => { overlapFilter = 'all'; const el = $('overlap-filter'); if(el) el.value = 'all'; renderAll(); }
           });
       }
       if (libraryOnlyFilterActive && userLibraryMap.size > 0) {
           pills.push({
               label: `Library Only`,
+              onClick: () => highlightControl('library-toggle-wrapper'),
               clear: () => { libraryOnlyFilterActive = false; const el = $('library-toggle-checkbox'); if(el) el.checked = false; updateLibraryUIState(); renderAll(); }
           });
 
           if (selectedShelves.size < availableShelves.size && selectedShelves.size > 0) {
               pills.push({
                   label: `Shelves (${selectedShelves.size})`,
+                  onClick: () => { 
+                      const menu = $('shelf-dropdown-menu');
+                      if(menu && !menu.classList.contains('show')) $('btn-shelf-dropdown')?.click();
+                      highlightControl('shelf-dropdown-wrapper'); 
+                  },
                   clear: () => {
                       availableShelves.forEach(s => selectedShelves.add(s));
                       populateShelfDropdown();
@@ -1919,39 +2042,22 @@
           }
       }
 
-      // const overrideCount = Object.values(bookStatus).filter(s => s !== 'neutral').length;
-      // if (overrideCount > 0) {
-      //     pills.push({
-      //         label: `Custom Prefs (${overrideCount})`,
-      //         clear: () => { bookStatus = {}; renderAll(); }
-      //     });
-      // }
-      const mustReadCount = Object.values(bookStatus).filter(s => s === 'include').length;
-      const avoidCount = Object.values(bookStatus).filter(s => s === 'exclude').length;
-
-      if (mustReadCount > 0) {
+      const activeMustReads = activeData.books.filter(b => bookStatus[b.id] === 'include');
+      const activeAvoids = activeData.books.filter(b => bookStatus[b.id] === 'exclude');
+      
+      if (activeMustReads.length > 0) {
           pills.push({
-              label: `📌 Must Read (${mustReadCount})`,
-              clear: () => {
-                  for (const id in bookStatus) {
-                      if (bookStatus[id] === 'include') bookStatus[id] = 'neutral';
-                  }
-                  saveState();
-                  renderAll();
-              }
+              label: `📌 Must Read (${activeMustReads.length})`,
+              onClick: () => highlightControl('status-filter'),
+              clear: () => { activeMustReads.forEach(b => { bookStatus[b.id] = 'neutral'; }); saveState(); renderAll(); }
           });
       }
 
-      if (avoidCount > 0) {
+      if (activeAvoids.length > 0) {
           pills.push({
-              label: `✕ Avoid (${avoidCount})`,
-              clear: () => {
-                  for (const id in bookStatus) {
-                      if (bookStatus[id] === 'exclude') bookStatus[id] = 'neutral';
-                  }
-                  saveState();
-                  renderAll();
-              }
+              label: `✕ Avoid (${activeAvoids.length})`,
+              onClick: () => highlightControl('status-filter'),
+              clear: () => { activeAvoids.forEach(b => { bookStatus[b.id] = 'neutral'; }); saveState(); renderAll(); }
           });
       }
 
@@ -1967,7 +2073,7 @@
 
       container.innerHTML = pills.map((p, idx) => `
           <span class="filter-pill">
-              ${escapeHtml(p.label)}
+              <span class="filter-pill-label" data-pill-idx="${idx}">${escapeHtml(p.label)}</span>
               <button class="filter-pill-clear" data-pill-idx="${idx}" title="Clear this filter">✕</button>
           </span>
       `).join('');
@@ -1978,7 +2084,19 @@
               if (pills[idx]) pills[idx].clear();
           });
       });
+      
+      container.querySelectorAll('.filter-pill-label').forEach(lbl => {
+          lbl.addEventListener('click', (e) => {
+              e.stopPropagation(); // VERY IMPORTANT: Prevents the global document click listener from instantly closing dropdowns
+              const idx = parseInt(e.target.getAttribute('data-pill-idx'), 10);
+              if (pills[idx] && pills[idx].onClick) {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  pills[idx].onClick();
+              }
+          });
+      });
     }
+
 
     function renderAll() { 
         renderLibrary(); 
@@ -1989,6 +2107,7 @@
 
     // --- EVENTS CONTINUED ---
     document.body.addEventListener('click', (e) => {
+      // 1. Status overrides
       const setBtn = e.target.closest('[data-status-set]');
       if (setBtn) {
         e.preventDefault(); e.stopPropagation();
@@ -1996,6 +2115,27 @@
         saveState();
         renderAll();
         return;
+      }
+      
+      // 2. Clickable Tags linking to sidebar
+      const tag = e.target.closest('.tag[data-locate]');
+      if (tag) {
+          e.preventDefault(); e.stopPropagation();
+          const targetEl = document.getElementById(tag.getAttribute('data-locate'));
+          
+          if (targetEl) {
+              if (window.innerWidth < 900) {
+                  $('sidebar')?.classList.add('open');
+                  $('sidebar-backdrop')?.classList.add('open');
+              }
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              
+              // Use the new high-contrast animation
+              targetEl.classList.remove('sidebar-highlight');
+              setTimeout(() => targetEl.classList.add('sidebar-highlight'), 10);
+              setTimeout(() => targetEl.classList.remove('sidebar-highlight'), 1510);
+          }
+          return;
       }
     });
 
@@ -2049,6 +2189,7 @@
       }
 
       if (tab === 'optimal') renderResults(currentOptimalMode, false);
+      renderFilterPills(); // Re-evaluate which pills belong on the screen
     }
 
     addEvt('tab-library', 'click', () => switchTab('library'));
@@ -2064,20 +2205,26 @@
             html += '<tr><td></td><td></td></tr>'; 
             plain += '\n'; 
         }
-        const label = `${sec.categories.map(c => resolveChallengeName(c)).join(' + ')} (Common: ${sec.books.length} books)`;
+        
+        // Rich HTML uses the link helper, Plain uses standard resolution
+        const richLabel = sec.categories.map(c => getChallengeHtml(c)).join(' + ') + ` (Common: ${sec.books.length} books)`;
+        const plainLabel = sec.categories.map(c => resolveChallengeName(c)).join(' + ') + ` (Common: ${sec.books.length} books)`;
+
         sec.books.forEach((b, idx) => { 
-          const cat = idx === 0 ? label : '';
-          const authorText = b.author ? ` <span style="color:var(--muted-fg);font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
+          const catRich = idx === 0 ? richLabel : '';
+          const catPlain = idx === 0 ? plainLabel : '';
+          const authorText = b.author ? ` <span style="color:#6b7185;font-size:11px;">by ${escapeHtml(b.author)}</span>` : '';
           
-          html += `<tr><td>${escapeHtml(cat)}</td><td><a href="${escapeHtml(b.url||'#')}">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
-          plain += `${cat}\t${b.title}${b.author ? ` by ${b.author}` : ''}\n`; 
+          html += `<tr><td>${catRich}</td><td><a href="${escapeHtml(b.url||'#')}">${escapeHtml(b.title)}</a>${authorText}</td></tr>`;
+          plain += `${catPlain}\t${b.title}${b.author ? ` by ${b.author}` : ''}\n`; 
         });
       });
       html += '</tbody></table>';
 
-      // Pass both the plain text and the rich HTML to our upgraded helper
       copyToClipboard(plain, e.target, html);
     });
+
+
     // --- ONBOARDING TOUR LOGIC ---
     let tourStep = 0;
     const tourSteps = [

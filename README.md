@@ -8,6 +8,7 @@ A fast, client-side web application that helps readers plan their Seasonal Goodr
 * **Smart Optimizer:** Automatically calculate the fewest number of books needed to complete all selected challenges.
 * **Status Toggles:** Mark books as "📌 Must Read" to force them into the algorithm, or "✕ Avoid" to exclude them.
 * **Overlap Spreadsheet:** View and copy a clean breakdown of exactly which books overlap between which challenges.
+* **Goodreads Library Import:** Upload Goodreads CSV + filter by your shelves/TBR
 * **Custom Lists:** Add your own personal TBR (To Be Read) lists via text or Markdown.
 * **Fully Local & Responsive:** Completely local, fully responsive design, and built-in Light/Dark mode.
 

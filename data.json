@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-15T07:02:34.741Z",
+  "lastUpdated": "2026-07-21T05:36:59.035Z",
   "challenges": [
     {
       "id": "Literally Summer",
       "name": "Literally Summer",
       "url": "https://www.goodreads.com/blog/show/3146",
-      "count": 91
+      "count": 93
     },
     {
       "id": "Challenge Faves",
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "title": "The Summer Tree (The Fionavar Tapestry #1)",
+      "title": "The Summer Tree (The Fionavar Tapestry, #1)",
       "author": "Guy Gavriel Kay",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556219218i/45303189.jpg",
       "url": "https://www.goodreads.com/book/show/45303189",
@@ -121,6 +121,16 @@
       "author": "Gianfranco Calligarich, André Aciman, Howard Curtis",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1597694311i/54785501.jpg",
       "url": "https://www.goodreads.com/book/show/54785501",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer",
+      "author": "Edith Wharton, Laura Rattray",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1458680280i/26261738.jpg",
+      "url": "https://www.goodreads.com/book/show/26261738",
       "isKindleUnlimited": false,
       "challenges": [
         "Literally Summer"
@@ -199,7 +209,7 @@
     {
       "title": "Burnout Summer",
       "author": "Jenna Ramirez",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756004171i/240019684.jpg",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1784294727i/240019684.jpg",
       "url": "https://www.goodreads.com/book/show/240019684",
       "isKindleUnlimited": false,
       "challenges": [
@@ -831,6 +841,16 @@
       "author": "Jennifer     O'Brien",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762536515i/222420098.jpg",
       "url": "https://www.goodreads.com/book/show/222420098",
+      "isKindleUnlimited": false,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer House",
+      "author": "Keri Beevis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1671274741i/63112300.jpg",
+      "url": "https://www.goodreads.com/book/show/63112300",
       "isKindleUnlimited": false,
       "challenges": [
         "Literally Summer"

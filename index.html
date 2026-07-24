@@ -1982,30 +1982,63 @@
     addEvt('btn-shuffle-single', 'click', () => renderResults('single', true));
 
     addEvt('btn-copy-optimal', 'click', async (e) => {
-      if (!lastOptimal.selected.length) return;
-      
-      const totalPages = lastOptimal.selected.reduce((s, b) => s + (b.pages || 0), 0);
-      const ratedBooks = lastOptimal.selected.filter(b => b.rating != null);
-      const avgRating = ratedBooks.length > 0 ? (ratedBooks.reduce((s, b) => s + b.rating, 0) / ratedBooks.length).toFixed(2) : null;
+        if (!lastOptimal.selected.length) return;
 
-      let md = `### 📚 My Optimal Reading List (${lastOptimal.selected.length} books`;
-      if (totalPages > 0) md += `, ~${totalPages.toLocaleString()} pages`;
-      if (avgRating) md += `, avg ⭐ ${avgRating}`;
-      md += ')\n\n';
+        const totalPages = lastOptimal.selected.reduce((s, b) => s + (b.pages || 0), 0);
+        const ratedBooks = lastOptimal.selected.filter(b => b.rating != null);
+        const avgRating = ratedBooks.length
+            ? (ratedBooks.reduce((s, b) => s + b.rating, 0) / ratedBooks.length).toFixed(2)
+            : null;
 
-      lastOptimal.selected.forEach(b => {
-        const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
-        const authorStr = b.author ? ` by ${b.author}` : '';
-        const metaParts = [];
-        if (b.rating) metaParts.push(`⭐ ${b.rating.toFixed(2)}`);
-        if (b.pages) metaParts.push(`${b.pages} pages`);
-        const metaStr = metaParts.length > 0 ? ` — ${metaParts.join(', ')}` : '';
+        // ---------- Goal Calculations ----------
+        const totalGoals = activeData.categories.length;
+        const coveredGoals = totalGoals - (lastOptimal.uncovered ? lastOptimal.uncovered.length : 0);
+        const goalsStr = totalGoals > 0 ? `, covers ${coveredGoals}/${totalGoals} goals` : '';
 
-        md += `- [${b.title}](${b.url||'#'})${authorStr}${metaStr} *(Covers: ${tags})*\n`;
-      });
-      copyToClipboard(md, e.target);
+        // ---------- Plain Text ----------
+        let text = `My Optimal Reading List (${lastOptimal.selected.length} books`;
+        if (totalPages > 0) text += `, ~${totalPages.toLocaleString()} pages`;
+        if (avgRating) text += `, avg ⭐ ${avgRating}`;
+        text += `${goalsStr})\n\n`;
+
+        // ---------- HTML ----------
+        let html = `My Optimal Reading List (${lastOptimal.selected.length} books`;
+
+        if (totalPages > 0) html += `, ~${totalPages.toLocaleString()} pages`;
+        if (avgRating) html += `, avg ⭐ ${avgRating}`;
+        html += `${goalsStr})<ul>`;
+
+        lastOptimal.selected.forEach(b => {
+            const tags = b.categories.map(c => resolveChallengeName(c)).join(', ');
+            const authorStr = b.author ? ` by ${b.author}` : '';
+
+            const metaParts = [];
+            if (b.rating) metaParts.push(`⭐ ${b.rating.toFixed(2)}`);
+            if (b.pages) metaParts.push(`${b.pages} pages`);
+
+            const metaText = metaParts.length ? ` — ${metaParts.join(', ')}` : '';
+            const metaHtml = metaParts.length ? ` &mdash; ${metaParts.join(', ')}` : '';
+
+            // Plain text
+            text += `• ${b.title}${authorStr}${metaText} (Covers: ${tags})\n`;
+
+            // HTML
+            html += `
+                <li>
+                    <a href="${b.url || '#'}">${b.title}</a>
+                    ${authorStr}
+                    ${metaHtml}
+                    <br>
+                    <em>(Covers: ${tags})</em>
+                </li>
+            `;
+        });
+
+        html += `</ul>`;
+
+        copyToClipboard(text, e.target, html);
     });
-
+    
     function getChallengeHtml(id) {
         const c = rawDatabase.challenges.find(x => x.id === id);
         const name = escapeHtml(c ? c.name : id);

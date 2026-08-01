@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-24T13:37:39.397Z",
+  "lastUpdated": "2026-08-01T07:11:51.279Z",
   "challenges": [
     {
-      "id": "Literally Summer",
-      "name": "Literally Summer",
-      "url": "https://www.goodreads.com/blog/show/3146",
-      "count": 93
+      "id": "Summer Encore",
+      "name": "Summer Encore",
+      "url": "https://www.goodreads.com/blog/show/3142",
+      "count": 100
     },
     {
       "id": "Challenge Faves",
@@ -32,6 +32,12 @@
       "count": 90
     },
     {
+      "id": "Literally Summer",
+      "name": "Literally Summer",
+      "url": "https://www.goodreads.com/blog/show/3146",
+      "count": 93
+    },
+    {
       "id": "Staff Shelves",
       "name": "Staff Shelves",
       "url": "https://www.goodreads.com/blog/show/3129",
@@ -46,214 +52,653 @@
   ],
   "books": [
     {
-      "title": "One Summer in Savannah",
-      "author": "Terah Shelton Harris",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1668526318i/63327797.jpg",
-      "url": "https://www.goodreads.com/book/show/63327797",
+      "title": "Whistler",
+      "author": "Ann Patchett",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761863582i/242693052.jpg",
+      "url": "https://www.goodreads.com/book/show/242693052",
       "isKindleUnlimited": false,
-      "pages": 464,
-      "rating": 4.13,
-      "ratingCount": 34485,
-      "reviewCount": 4205,
+      "pages": 304,
+      "rating": 4.41,
+      "ratingCount": 94346,
+      "reviewCount": 13034,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore",
+        "Chart Toppers"
       ]
     },
     {
-      "title": "Summer (Seasonal Quartet, #4)",
-      "author": "Ali Smith",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1619421211i/56215038.jpg",
-      "url": "https://www.goodreads.com/book/show/56215038",
+      "title": "The Shampoo Effect",
+      "author": "Jenny   Jackson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1782399771i/242252957.jpg",
+      "url": "https://www.goodreads.com/book/show/242252957",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.8,
+      "ratingCount": 29893,
+      "reviewCount": 4130,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Girl's Girl",
+      "author": "Sonia  Feldman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763393309i/241125525.jpg",
+      "url": "https://www.goodreads.com/book/show/241125525",
+      "isKindleUnlimited": false,
+      "pages": 256,
+      "rating": 3.72,
+      "ratingCount": 7037,
+      "reviewCount": 2046,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Everything was Beautiful and Nothing Hurt",
+      "author": "Ben   Reeves",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1775142254i/242975495.jpg",
+      "url": "https://www.goodreads.com/book/show/242975495",
+      "isKindleUnlimited": false,
+      "pages": 256,
+      "rating": 4.06,
+      "ratingCount": 9222,
+      "reviewCount": 2686,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Country People",
+      "author": "Daniel       Mason",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759907823i/242518677.jpg",
+      "url": "https://www.goodreads.com/book/show/242518677",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.79,
+      "ratingCount": 3490,
+      "reviewCount": 926,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Good Parts",
+      "author": "Evann Normandin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1775745033i/243502814.jpg",
+      "url": "https://www.goodreads.com/book/show/243502814",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 4.14,
+      "ratingCount": 820,
+      "reviewCount": 490,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Great Wherever",
+      "author": "Shannon Sanders",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759148135i/240019567.jpg",
+      "url": "https://www.goodreads.com/book/show/240019567",
+      "isKindleUnlimited": false,
+      "pages": 416,
+      "rating": 3.81,
+      "ratingCount": 1548,
+      "reviewCount": 409,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Everything to the Sea",
+      "author": "Alicia Upano",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762166622i/242733909.jpg",
+      "url": "https://www.goodreads.com/book/show/242733909",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.88,
+      "ratingCount": 364,
+      "reviewCount": 171,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Long Island Girls",
+      "author": "Gabrielle Korn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754915548i/240019834.jpg",
+      "url": "https://www.goodreads.com/book/show/240019834",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 3.97,
+      "ratingCount": 793,
+      "reviewCount": 377,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Contrapposto",
+      "author": "Dave Eggers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768245055i/243315571.jpg",
+      "url": "https://www.goodreads.com/book/show/243315571",
+      "isKindleUnlimited": false,
+      "pages": 432,
+      "rating": 4.16,
+      "ratingCount": 2332,
+      "reviewCount": 487,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The New People",
+      "author": "Andrea Uptmor",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773474181i/243502762.jpg",
+      "url": "https://www.goodreads.com/book/show/243502762",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 4.12,
+      "ratingCount": 163,
+      "reviewCount": 71,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Little Wonder",
+      "author": "Sophie Chen Keller",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769659692i/244969627.jpg",
+      "url": "https://www.goodreads.com/book/show/244969627",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 4.16,
+      "ratingCount": 3253,
+      "reviewCount": 464,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Land",
+      "author": "Maggie O'Farrell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764056109i/241126782.jpg",
+      "url": "https://www.goodreads.com/book/show/241126782",
       "isKindleUnlimited": false,
       "pages": 400,
-      "rating": 4.02,
-      "ratingCount": 12989,
-      "reviewCount": 1904,
+      "rating": 4.27,
+      "ratingCount": 22614,
+      "reviewCount": 3691,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore",
+        "Chart Toppers",
+        "Fact or Fiction"
       ]
     },
     {
-      "title": "Prodigal Summer",
-      "author": "Barbara Kingsolver",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1426308771i/14249.jpg",
-      "url": "https://www.goodreads.com/book/show/14249",
+      "title": "Meet Me in Paris",
+      "author": "Kristin Harmel",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760893066i/242978006.jpg",
+      "url": "https://www.goodreads.com/book/show/242978006",
       "isKindleUnlimited": false,
-      "pages": 444,
-      "rating": 4.05,
-      "ratingCount": 133009,
-      "reviewCount": 9785,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Sisters",
-      "author": "Judy Blume",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1690983928i/57233514.jpg",
-      "url": "https://www.goodreads.com/book/show/57233514",
-      "isKindleUnlimited": false,
-      "pages": 399,
-      "rating": 3.84,
-      "ratingCount": 139722,
-      "reviewCount": 8732,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Book",
-      "author": "Tove Jansson, Thomas Teal, Kathryn Davis",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758424485i/2263969.jpg",
-      "url": "https://www.goodreads.com/book/show/2263969",
-      "isKindleUnlimited": false,
-      "pages": 170,
-      "rating": 3.99,
-      "ratingCount": 61666,
-      "reviewCount": 8647,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Last Summer on State Street",
-      "author": "Toya Wolfe",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1648412987i/58884738.jpg",
-      "url": "https://www.goodreads.com/book/show/58884738",
-      "isKindleUnlimited": false,
-      "pages": 212,
+      "pages": 368,
       "rating": 4.21,
-      "ratingCount": 13189,
-      "reviewCount": 1825,
+      "ratingCount": 917,
+      "reviewCount": 445,
       "challenges": [
-        "Literally Summer",
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Daughters of the Sun and Moon",
+      "author": "Lisa See",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760887963i/242975698.jpg",
+      "url": "https://www.goodreads.com/book/show/242975698",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 4.23,
+      "ratingCount": 8005,
+      "reviewCount": 1261,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Lady X",
+      "author": "Molly Fader",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754449528i/239779282.jpg",
+      "url": "https://www.goodreads.com/book/show/239779282",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 4.27,
+      "ratingCount": 590,
+      "reviewCount": 238,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "A Pair of Aces",
+      "author": "Marie Benedict, Victoria Christopher Murray",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761147126i/242002398.jpg",
+      "url": "https://www.goodreads.com/book/show/242002398",
+      "isKindleUnlimited": false,
+      "pages": 390,
+      "rating": 4.04,
+      "ratingCount": 10362,
+      "reviewCount": 1108,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Villa Coco",
+      "author": "Andrew Sean Greer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759895643i/241483206.jpg",
+      "url": "https://www.goodreads.com/book/show/241483206",
+      "isKindleUnlimited": false,
+      "pages": 288,
+      "rating": 3.68,
+      "ratingCount": 8408,
+      "reviewCount": 1344,
+      "challenges": [
+        "Summer Encore",
         "Community Picks"
       ]
     },
     {
-      "title": "The Summer Tree (The Fionavar Tapestry, #1)",
-      "author": "Guy Gavriel Kay",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556219218i/45303189.jpg",
-      "url": "https://www.goodreads.com/book/show/45303189",
+      "title": "An Infinite Love Story",
+      "author": "Chanel Cleeton",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763798656i/242512660.jpg",
+      "url": "https://www.goodreads.com/book/show/242512660",
       "isKindleUnlimited": false,
-      "pages": 396,
-      "rating": 3.95,
-      "ratingCount": 27100,
-      "reviewCount": 1940,
+      "pages": 352,
+      "rating": 4.03,
+      "ratingCount": 1609,
+      "reviewCount": 521,
       "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Lost in the Summer of '69",
+      "author": "Eliza Knight",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757161093i/235315091.jpg",
+      "url": "https://www.goodreads.com/book/show/235315091",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.99,
+      "ratingCount": 1138,
+      "reviewCount": 342,
+      "challenges": [
+        "Summer Encore",
         "Literally Summer"
       ]
     },
     {
-      "title": "Last Summer in the City",
-      "author": "Gianfranco Calligarich, André Aciman, Howard Curtis",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1597694311i/54785501.jpg",
-      "url": "https://www.goodreads.com/book/show/54785501",
+      "title": "Liberty Street",
+      "author": "Heather     Marshall",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765474978i/241716311.jpg",
+      "url": "https://www.goodreads.com/book/show/241716311",
       "isKindleUnlimited": false,
-      "pages": 192,
+      "pages": 480,
+      "rating": 4.46,
+      "ratingCount": 5852,
+      "reviewCount": 1162,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "There's Only One Sin in Hollywood",
+      "author": "Rasheed Newson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758807201i/240019818.jpg",
+      "url": "https://www.goodreads.com/book/show/240019818",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 4.04,
+      "ratingCount": 1073,
+      "reviewCount": 280,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Half Life",
+      "author": "Rachel Beanland",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760893200i/242978168.jpg",
+      "url": "https://www.goodreads.com/book/show/242978168",
+      "isKindleUnlimited": false,
+      "pages": 480,
+      "rating": 4.04,
+      "ratingCount": 655,
+      "reviewCount": 339,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Henry Tudor Must Die",
+      "author": "Jillian  Laine",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761769973i/240650771.jpg",
+      "url": "https://www.goodreads.com/book/show/240650771",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.9,
+      "ratingCount": 384,
+      "reviewCount": 234,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "It Could Have Been Her",
+      "author": "Lisa Jewell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765383671i/242974649.jpg",
+      "url": "https://www.goodreads.com/book/show/242974649",
+      "isKindleUnlimited": false,
+      "pages": 373,
+      "rating": 3.77,
+      "ratingCount": 29100,
+      "reviewCount": 4577,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Getting Away with Murder",
+      "author": "Shari Lapena",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761719547i/243316711.jpg",
+      "url": "https://www.goodreads.com/book/show/243316711",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.73,
+      "ratingCount": 2185,
+      "reviewCount": 711,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Housewife",
+      "author": "Natalie Barelli",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758909883i/240468435.jpg",
+      "url": "https://www.goodreads.com/book/show/240468435",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.93,
+      "ratingCount": 19314,
+      "reviewCount": 3112,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Hot Girl Murder Club",
+      "author": "Ashley Winstead",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762895514i/240019887.jpg",
+      "url": "https://www.goodreads.com/book/show/240019887",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.6,
+      "ratingCount": 3250,
+      "reviewCount": 1512,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Nine Lives",
+      "author": "Catherine Steadman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763147208i/241125221.jpg",
+      "url": "https://www.goodreads.com/book/show/241125221",
+      "isKindleUnlimited": false,
+      "pages": 291,
+      "rating": 3.77,
+      "ratingCount": 3665,
+      "reviewCount": 889,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Heather",
+      "author": "Caitlin Mullen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1784221254i/240019660.jpg",
+      "url": "https://www.goodreads.com/book/show/240019660",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.9,
+      "ratingCount": 5753,
+      "reviewCount": 1158,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Pretty Dead Things",
+      "author": "Kelsey  Cox",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758371366i/240019831.jpg",
+      "url": "https://www.goodreads.com/book/show/240019831",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.85,
+      "ratingCount": 6029,
+      "reviewCount": 1743,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Death Row Club",
+      "author": "V.A. Vazquez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760888039i/242975756.jpg",
+      "url": "https://www.goodreads.com/book/show/242975756",
+      "isKindleUnlimited": false,
+      "pages": 323,
+      "rating": 3.66,
+      "ratingCount": 1904,
+      "reviewCount": 691,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Summer's Never Over",
+      "author": "Darby Bozeman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761655308i/241435570.jpg",
+      "url": "https://www.goodreads.com/book/show/241435570",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.53,
+      "ratingCount": 11649,
+      "reviewCount": 1853,
+      "challenges": [
+        "Summer Encore",
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Intrigue",
+      "author": "Silvia Moreno-Garcia",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763620650i/242765290.jpg",
+      "url": "https://www.goodreads.com/book/show/242765290",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.98,
+      "ratingCount": 804,
+      "reviewCount": 338,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "With Friends Like You",
+      "author": "Amy Chozick",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769702248i/242764855.jpg",
+      "url": "https://www.goodreads.com/book/show/242764855",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.84,
+      "ratingCount": 283,
+      "reviewCount": 146,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Rules for Aging and Larceny",
+      "author": "Julia London",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1772122737i/242253990.jpg",
+      "url": "https://www.goodreads.com/book/show/242253990",
+      "isKindleUnlimited": false,
+      "pages": 353,
+      "rating": 3.96,
+      "ratingCount": 603,
+      "reviewCount": 208,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Romance Revival",
+      "author": "Christina Lauren",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765556810i/243080609.jpg",
+      "url": "https://www.goodreads.com/book/show/243080609",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.7,
+      "ratingCount": 13301,
+      "reviewCount": 3102,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Someday Garden",
+      "author": "Ashley Poston",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763530735i/242000418.jpg",
+      "url": "https://www.goodreads.com/book/show/242000418",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.88,
+      "ratingCount": 21213,
+      "reviewCount": 4999,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Harvest Season (The Seasons of Carnage Trilogy, #2)",
+      "author": "Brynne Weaver",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761154939i/242624490.jpg",
+      "url": "https://www.goodreads.com/book/show/242624490",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 4.16,
+      "ratingCount": 27782,
+      "reviewCount": 4384,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Missed Connection",
+      "author": "Tia Williams",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764684671i/241039981.jpg",
+      "url": "https://www.goodreads.com/book/show/241039981",
+      "isKindleUnlimited": false,
+      "pages": 326,
       "rating": 3.63,
-      "ratingCount": 11515,
-      "reviewCount": 1642,
+      "ratingCount": 7337,
+      "reviewCount": 1680,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Summer",
-      "author": "Edith Wharton, Laura Rattray",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1458680280i/26261738.jpg",
-      "url": "https://www.goodreads.com/book/show/26261738",
+      "title": "Every Version of You",
+      "author": "Natalie Messier",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1752198595i/235992376.jpg",
+      "url": "https://www.goodreads.com/book/show/235992376",
       "isKindleUnlimited": false,
-      "pages": 208,
-      "rating": 3.67,
-      "ratingCount": 20177,
-      "reviewCount": 2534,
+      "pages": 368,
+      "rating": 4.06,
+      "ratingCount": 3759,
+      "reviewCount": 1052,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "These Summer Storms",
-      "author": "Sarah MacLean",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735591316i/220273379.jpg",
-      "url": "https://www.goodreads.com/book/show/220273379",
+      "title": "The MASH Up",
+      "author": "Laura Marie Meyers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762486463i/242513544.jpg",
+      "url": "https://www.goodreads.com/book/show/242513544",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.92,
+      "ratingCount": 5053,
+      "reviewCount": 1670,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Extracurricular",
+      "author": "Rachel Lynn Solomon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760688561i/242764841.jpg",
+      "url": "https://www.goodreads.com/book/show/242764841",
       "isKindleUnlimited": false,
       "pages": 400,
       "rating": 3.74,
-      "ratingCount": 140564,
-      "reviewCount": 16159,
+      "ratingCount": 2846,
+      "reviewCount": 925,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Just for the Summer (Part of Your World, #3)",
-      "author": "Abby Jimenez",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742475239i/195820807.jpg",
-      "url": "https://www.goodreads.com/book/show/195820807",
-      "isKindleUnlimited": false,
-      "pages": 432,
-      "rating": 4.34,
-      "ratingCount": 1193883,
-      "reviewCount": 141331,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Problematic Summer Romance (Not in Love, #2)",
-      "author": "Ali Hazelwood",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745430233i/228691356.jpg",
-      "url": "https://www.goodreads.com/book/show/228691356",
+      "title": "In Stormy Weather",
+      "author": "Chelsea Curto",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761949187i/242985961.jpg",
+      "url": "https://www.goodreads.com/book/show/242985961",
       "isKindleUnlimited": false,
       "pages": 416,
-      "rating": 3.81,
-      "ratingCount": 333216,
-      "reviewCount": 51341,
+      "rating": 4.07,
+      "ratingCount": 14153,
+      "reviewCount": 5121,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Every Summer After (Barry's Bay, #1)",
-      "author": "Carley Fortune",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1641279566i/60026536.jpg",
-      "url": "https://www.goodreads.com/book/show/60026536",
-      "isKindleUnlimited": false,
-      "pages": 320,
-      "rating": 4.15,
-      "ratingCount": 1028011,
-      "reviewCount": 105683,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "This Summer Will Be Different",
-      "author": "Carley Fortune",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694006777i/197577126.jpg",
-      "url": "https://www.goodreads.com/book/show/197577126",
+      "title": "The Open Era",
+      "author": "Edward Schmit",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761631478i/240118875.jpg",
+      "url": "https://www.goodreads.com/book/show/240118875",
       "isKindleUnlimited": false,
       "pages": 368,
-      "rating": 3.94,
-      "ratingCount": 409859,
-      "reviewCount": 44974,
+      "rating": 3.89,
+      "ratingCount": 6014,
+      "reviewCount": 1646,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "One Golden Summer (Barry's Bay, #2)",
-      "author": "Carley Fortune",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723652503i/217245639.jpg",
-      "url": "https://www.goodreads.com/book/show/217245639",
+      "title": "The Very Definition of Love",
+      "author": "Sophia Benoit",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764699639i/240381483.jpg",
+      "url": "https://www.goodreads.com/book/show/240381483",
       "isKindleUnlimited": false,
-      "pages": 385,
-      "rating": 4.28,
-      "ratingCount": 574652,
-      "reviewCount": 69121,
+      "pages": 448,
+      "rating": 4.07,
+      "ratingCount": 2979,
+      "reviewCount": 1098,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
@@ -263,24 +708,11 @@
       "url": "https://www.goodreads.com/book/show/240019961",
       "isKindleUnlimited": false,
       "pages": 368,
-      "rating": 3.9,
-      "ratingCount": 2266,
-      "reviewCount": 1300,
+      "rating": 3.86,
+      "ratingCount": 2620,
+      "reviewCount": 1393,
       "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Burnout Summer",
-      "author": "Jenna Ramirez",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1784294727i/240019684.jpg",
-      "url": "https://www.goodreads.com/book/show/240019684",
-      "isKindleUnlimited": false,
-      "pages": 352,
-      "rating": 3.71,
-      "ratingCount": 1678,
-      "reviewCount": 603,
-      "challenges": [
+        "Summer Encore",
         "Literally Summer"
       ]
     },
@@ -291,347 +723,490 @@
       "url": "https://www.goodreads.com/book/show/241434385",
       "isKindleUnlimited": false,
       "pages": 400,
-      "rating": 4.11,
-      "ratingCount": 3009,
-      "reviewCount": 1190,
+      "rating": 4.09,
+      "ratingCount": 3526,
+      "reviewCount": 1316,
       "challenges": [
+        "Summer Encore",
         "Literally Summer"
       ]
     },
     {
-      "title": "Summer's Never Over",
-      "author": "Darby Bozeman",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761655308i/241435570.jpg",
-      "url": "https://www.goodreads.com/book/show/241435570",
+      "title": "The Unicorn Hunters",
+      "author": "Katherine Arden",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761163138i/241125269.jpg",
+      "url": "https://www.goodreads.com/book/show/241125269",
       "isKindleUnlimited": false,
       "pages": 368,
-      "rating": 3.55,
-      "ratingCount": 10239,
-      "reviewCount": 1658,
+      "rating": 3.92,
+      "ratingCount": 6444,
+      "reviewCount": 1969,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore",
+        "Chart Toppers"
       ]
     },
     {
-      "title": "The Summer of the Serpent",
-      "author": "Cecilia Eudave, Robin Myers",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735252621i/218462028.jpg",
-      "url": "https://www.goodreads.com/book/show/218462028",
-      "isKindleUnlimited": false,
-      "pages": 144,
-      "rating": 3.58,
-      "ratingCount": 571,
-      "reviewCount": 166,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Kakigori Summer",
-      "author": "Emily Itami",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741504553i/218671811.jpg",
-      "url": "https://www.goodreads.com/book/show/218671811",
-      "isKindleUnlimited": false,
-      "pages": 336,
-      "rating": 3.87,
-      "ratingCount": 1685,
-      "reviewCount": 320,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "One Italian Summer",
-      "author": "Rebecca Serle",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626799802i/58438583.jpg",
-      "url": "https://www.goodreads.com/book/show/58438583",
-      "isKindleUnlimited": false,
-      "pages": 255,
-      "rating": 3.59,
-      "ratingCount": 310077,
-      "reviewCount": 33963,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "28 Summers",
-      "author": "Elin Hilderbrand",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1572261156i/52588078.jpg",
-      "url": "https://www.goodreads.com/book/show/52588078",
-      "isKindleUnlimited": false,
-      "pages": 432,
-      "rating": 4.17,
-      "ratingCount": 290554,
-      "reviewCount": 24857,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer of '69",
-      "author": "Elin Hilderbrand",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1540085775i/42283286.jpg",
-      "url": "https://www.goodreads.com/book/show/42283286",
-      "isKindleUnlimited": false,
-      "pages": 432,
-      "rating": 3.95,
-      "ratingCount": 174416,
-      "reviewCount": 12898,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Same Time Next Summer",
-      "author": "Annabel Monaghan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685352063i/62562931.jpg",
-      "url": "https://www.goodreads.com/book/show/62562931",
-      "isKindleUnlimited": false,
-      "pages": 336,
-      "rating": 3.73,
-      "ratingCount": 157768,
-      "reviewCount": 18349,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Romance",
-      "author": "Annabel Monaghan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698303672i/198563734.jpg",
-      "url": "https://www.goodreads.com/book/show/198563734",
-      "isKindleUnlimited": false,
-      "pages": 321,
-      "rating": 4.01,
-      "ratingCount": 143195,
-      "reviewCount": 19902,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "It Happened One Summer (Bellinger Sisters, #1)",
-      "author": "Tessa Bailey",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1604991895i/55659629.jpg",
-      "url": "https://www.goodreads.com/book/show/55659629",
-      "isKindleUnlimited": false,
-      "pages": 397,
-      "rating": 3.89,
-      "ratingCount": 746543,
-      "reviewCount": 66893,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Cece Downing's Start Over Summer: A Novel",
-      "author": "Soon Wiley",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760502633i/241903933.jpg",
-      "url": "https://www.goodreads.com/book/show/241903933",
-      "isKindleUnlimited": false,
-      "pages": 364,
-      "rating": 3.3,
-      "ratingCount": 164,
-      "reviewCount": 73,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Cicada Summer",
-      "author": "Erica McKeen",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698497390i/200893734.jpg",
-      "url": "https://www.goodreads.com/book/show/200893734",
-      "isKindleUnlimited": false,
-      "pages": 272,
-      "rating": 3.33,
-      "ratingCount": 183,
-      "reviewCount": 57,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Island",
-      "author": "Kristin Hannah",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631974037i/59020335.jpg",
-      "url": "https://www.goodreads.com/book/show/59020335",
+      "title": "The Children",
+      "author": "Melissa Albert",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1779974979i/241096327.jpg",
+      "url": "https://www.goodreads.com/book/show/241096327",
       "isKindleUnlimited": false,
       "pages": 416,
-      "rating": 3.95,
-      "ratingCount": 144844,
-      "reviewCount": 7670,
+      "rating": 3.52,
+      "ratingCount": 9348,
+      "reviewCount": 2320,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer War",
-      "author": "Naomi Novik",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747927269i/222683998.jpg",
-      "url": "https://www.goodreads.com/book/show/222683998",
-      "isKindleUnlimited": false,
-      "pages": 144,
-      "rating": 3.96,
-      "ratingCount": 15172,
-      "reviewCount": 2756,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Cool for the Summer",
-      "author": "Dahlia Adler",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600876925i/50748473.jpg",
-      "url": "https://www.goodreads.com/book/show/50748473",
-      "isKindleUnlimited": false,
-      "pages": 272,
-      "rating": 3.74,
-      "ratingCount": 12704,
-      "reviewCount": 2687,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer State of Mind",
-      "author": "Kristy Woodson Harvey",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761743260i/242986076.jpg",
-      "url": "https://www.goodreads.com/book/show/242986076",
+      "title": "Sea of Charms (Spellshop, #3)",
+      "author": "Sarah Beth Durst",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757353853i/240323843.jpg",
+      "url": "https://www.goodreads.com/book/show/240323843",
       "isKindleUnlimited": false,
       "pages": 384,
-      "rating": 3.78,
-      "ratingCount": 7777,
-      "reviewCount": 1055,
+      "rating": 4.41,
+      "ratingCount": 2035,
+      "reviewCount": 1333,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer Fun Massacre",
-      "author": "Craig DiLouie",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760034451i/242482129.jpg",
-      "url": "https://www.goodreads.com/book/show/242482129",
+      "title": "This Immortal Heart",
+      "author": "Jennifer Saint",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765948584i/241471008.jpg",
+      "url": "https://www.goodreads.com/book/show/241471008",
       "isKindleUnlimited": false,
-      "pages": 300,
-      "rating": 3.45,
-      "ratingCount": 1322,
-      "reviewCount": 456,
+      "pages": 368,
+      "rating": 3.93,
+      "ratingCount": 1773,
+      "reviewCount": 618,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer of Bitter and Sweet: A Métis teen runs her family's ice-cream shack, faces her returning best friend King, and a father she can't forgive",
-      "author": "Jen  Ferguson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1633353998i/58782872.jpg",
-      "url": "https://www.goodreads.com/book/show/58782872",
-      "isKindleUnlimited": false,
-      "pages": 374,
-      "rating": 3.98,
-      "ratingCount": 2459,
-      "reviewCount": 437,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Guests (The Martini Club, #2)",
-      "author": "Tess Gerritsen",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719496280i/199223892.jpg",
-      "url": "https://www.goodreads.com/book/show/199223892",
-      "isKindleUnlimited": false,
-      "pages": 363,
-      "rating": 4.29,
-      "ratingCount": 48726,
-      "reviewCount": 2864,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "That Summer Feeling",
-      "author": "Bridget Morrissey",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1660915528i/61984828.jpg",
-      "url": "https://www.goodreads.com/book/show/61984828",
-      "isKindleUnlimited": false,
-      "pages": 336,
-      "rating": 3.7,
-      "ratingCount": 10013,
-      "reviewCount": 1909,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Curvy Girl Summer (Curve, #1)",
-      "author": "Danielle Allen",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701283368i/154986013.jpg",
-      "url": "https://www.goodreads.com/book/show/154986013",
-      "isKindleUnlimited": false,
-      "pages": 360,
-      "rating": 4.26,
-      "ratingCount": 26863,
-      "reviewCount": 4092,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Sons",
-      "author": "Lee Mandelo",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1611852989i/53290204.jpg",
-      "url": "https://www.goodreads.com/book/show/53290204",
-      "isKindleUnlimited": false,
-      "pages": 372,
-      "rating": 3.79,
-      "ratingCount": 14988,
-      "reviewCount": 3796,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Till Summer Do Us Part",
-      "author": "Meghan Quinn",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750687903i/227081370.jpg",
-      "url": "https://www.goodreads.com/book/show/227081370",
-      "isKindleUnlimited": false,
-      "pages": 432,
-      "rating": 3.97,
-      "ratingCount": 199020,
-      "reviewCount": 21616,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "That Summer",
-      "author": "Jennifer Weiner",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1605290558i/55467800.jpg",
-      "url": "https://www.goodreads.com/book/show/55467800",
-      "isKindleUnlimited": false,
-      "pages": 422,
-      "rating": 3.75,
-      "ratingCount": 94699,
-      "reviewCount": 6873,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summers at the Saint",
-      "author": "Mary Kay Andrews",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697249850i/195790574.jpg",
-      "url": "https://www.goodreads.com/book/show/195790574",
+      "title": "Fishbone Cinderella",
+      "author": "Elizabeth Lim",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768972009i/243315012.jpg",
+      "url": "https://www.goodreads.com/book/show/243315012",
       "isKindleUnlimited": false,
       "pages": 448,
-      "rating": 4.05,
-      "ratingCount": 62552,
-      "reviewCount": 6092,
+      "rating": 4.5,
+      "ratingCount": 922,
+      "reviewCount": 753,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Habits of the Sea",
+      "author": "Shea Ernshaw",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760887104i/242974736.jpg",
+      "url": "https://www.goodreads.com/book/show/242974736",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 3.9,
+      "ratingCount": 1574,
+      "reviewCount": 828,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Unmagical Life of Briar Jones",
+      "author": "Lex Croucher",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766485316i/241180733.jpg",
+      "url": "https://www.goodreads.com/book/show/241180733",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 4,
+      "ratingCount": 1527,
+      "reviewCount": 694,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Field Guide for the Formerly Villainous (Everyday Magic, #1)",
+      "author": "Autumn K. England",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759359162i/240468441.jpg",
+      "url": "https://www.goodreads.com/book/show/240468441",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.85,
+      "ratingCount": 2570,
+      "reviewCount": 799,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Reimagining of Thornwood House (The Magic of Iskendra, #1)",
+      "author": "Jaleigh Johnson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760640186i/241715943.jpg",
+      "url": "https://www.goodreads.com/book/show/241715943",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 4.3,
+      "ratingCount": 890,
+      "reviewCount": 256,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "A Tangled Magic",
+      "author": "Andrea Eames",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1776788817i/242982709.jpg",
+      "url": "https://www.goodreads.com/book/show/242982709",
+      "isKindleUnlimited": true,
+      "pages": null,
+      "rating": 3.97,
+      "ratingCount": 176,
+      "reviewCount": 153,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "We Hexed the Moon",
+      "author": "Mollyhall Seeley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760888370i/242970540.jpg",
+      "url": "https://www.goodreads.com/book/show/242970540",
+      "isKindleUnlimited": false,
+      "pages": 224,
+      "rating": 3.76,
+      "ratingCount": 1122,
+      "reviewCount": 345,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Dragon Has Some Complaints",
+      "author": "John Wiswell",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758685336i/242000700.jpg",
+      "url": "https://www.goodreads.com/book/show/242000700",
+      "isKindleUnlimited": false,
+      "pages": 388,
+      "rating": 4.01,
+      "ratingCount": 385,
+      "reviewCount": 257,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Sublimation",
+      "author": "Isabel J. Kim",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762800585i/240019879.jpg",
+      "url": "https://www.goodreads.com/book/show/240019879",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.65,
+      "ratingCount": 1916,
+      "reviewCount": 764,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Sixth Nik",
+      "author": "Daniel Kraus",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761936968i/243080644.jpg",
+      "url": "https://www.goodreads.com/book/show/243080644",
+      "isKindleUnlimited": false,
+      "pages": 464,
+      "rating": 3.84,
+      "ratingCount": 412,
+      "reviewCount": 185,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Obstetrix",
+      "author": "Naomi Kritzer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754915532i/240019643.jpg",
+      "url": "https://www.goodreads.com/book/show/240019643",
+      "isKindleUnlimited": false,
+      "pages": 195,
+      "rating": 3.67,
+      "ratingCount": 2358,
+      "reviewCount": 820,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Voyagers",
+      "author": "Meg Charlton",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1772172972i/241686756.jpg",
+      "url": "https://www.goodreads.com/book/show/241686756",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.79,
+      "ratingCount": 658,
+      "reviewCount": 183,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Mr. Yay",
+      "author": "Emily  Jane",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757485338i/241433994.jpg",
+      "url": "https://www.goodreads.com/book/show/241433994",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 4.06,
+      "ratingCount": 188,
+      "reviewCount": 74,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Traveler",
+      "author": "Joseph Eckert",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761356201i/240019609.jpg",
+      "url": "https://www.goodreads.com/book/show/240019609",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 4.04,
+      "ratingCount": 1100,
+      "reviewCount": 345,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Retro",
+      "author": "Jessica M. Goldstein",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762858373i/243039826.jpg",
+      "url": "https://www.goodreads.com/book/show/243039826",
+      "isKindleUnlimited": false,
+      "pages": 416,
+      "rating": 3.62,
+      "ratingCount": 612,
+      "reviewCount": 256,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Mudlark",
+      "author": "Mary Helen Specht",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761619012i/243039874.jpg",
+      "url": "https://www.goodreads.com/book/show/243039874",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.79,
+      "ratingCount": 57,
+      "reviewCount": 39,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Demon Star",
+      "author": "Jesse Aragon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755611762i/240360588.jpg",
+      "url": "https://www.goodreads.com/book/show/240360588",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 4.32,
+      "ratingCount": 365,
+      "reviewCount": 307,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Not with a Bang",
+      "author": "Temi Oh",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760888489i/242976017.jpg",
+      "url": "https://www.goodreads.com/book/show/242976017",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.56,
+      "ratingCount": 155,
+      "reviewCount": 62,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Green City Wars",
+      "author": "Adrian Tchaikovsky",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761018617i/240019842.jpg",
+      "url": "https://www.goodreads.com/book/show/240019842",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 4.03,
+      "ratingCount": 1304,
+      "reviewCount": 445,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "The Felicity Complex",
+      "author": "August Clarke",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1772505262i/243315119.jpg",
+      "url": "https://www.goodreads.com/book/show/243315119",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.78,
+      "ratingCount": 134,
+      "reviewCount": 97,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Marion",
+      "author": "Leah   Rowan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757955185i/240019608.jpg",
+      "url": "https://www.goodreads.com/book/show/240019608",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.83,
+      "ratingCount": 3169,
+      "reviewCount": 1302,
+      "challenges": [
+        "Summer Encore",
+        "Chart Toppers"
+      ]
+    },
+    {
+      "title": "Cross My Heart, I Hope You Die",
+      "author": "Mallory Arnold",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769451865i/241760634.jpg",
+      "url": "https://www.goodreads.com/book/show/241760634",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.8,
+      "ratingCount": 1557,
+      "reviewCount": 1001,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Dead But Dreaming of Electric Sheep",
+      "author": "Paul Tremblay",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761251818i/242232411.jpg",
+      "url": "https://www.goodreads.com/book/show/242232411",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.53,
+      "ratingCount": 1714,
+      "reviewCount": 575,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Fabulous Bodies",
+      "author": "Chuck Tingle",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760136884i/240019572.jpg",
+      "url": "https://www.goodreads.com/book/show/240019572",
+      "isKindleUnlimited": false,
+      "pages": 232,
+      "rating": 4,
+      "ratingCount": 3048,
+      "reviewCount": 1428,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Backstabbers",
+      "author": "Eliza Jabore",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760640327i/241125379.jpg",
+      "url": "https://www.goodreads.com/book/show/241125379",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.59,
+      "ratingCount": 1150,
+      "reviewCount": 498,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Headlights",
+      "author": "C.J. Leede",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761518149i/240019947.jpg",
+      "url": "https://www.goodreads.com/book/show/240019947",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.85,
+      "ratingCount": 3105,
+      "reviewCount": 1220,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Muñeca",
+      "author": "Cynthia Gómez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763311954i/241125552.jpg",
+      "url": "https://www.goodreads.com/book/show/241125552",
+      "isKindleUnlimited": false,
+      "pages": 176,
+      "rating": 3.84,
+      "ratingCount": 2234,
+      "reviewCount": 588,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "It Came from Neverland",
+      "author": "Cynthia Pelayo",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762232888i/241434036.jpg",
+      "url": "https://www.goodreads.com/book/show/241434036",
+      "isKindleUnlimited": false,
+      "pages": 288,
+      "rating": 3.87,
+      "ratingCount": 1068,
+      "reviewCount": 335,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Our Sister's Keeper",
+      "author": "Jasmine Holmes",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756475046i/239147548.jpg",
+      "url": "https://www.goodreads.com/book/show/239147548",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 4.29,
+      "ratingCount": 924,
+      "reviewCount": 408,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "A Fate Worse than Drowning",
+      "author": "Sarah L. Hawthorn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1765990679i/223665358.jpg",
+      "url": "https://www.goodreads.com/book/show/223665358",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.72,
+      "ratingCount": 282,
+      "reviewCount": 251,
+      "challenges": [
+        "Summer Encore"
       ]
     },
     {
@@ -641,711 +1216,250 @@
       "url": "https://www.goodreads.com/book/show/243003247",
       "isKindleUnlimited": false,
       "pages": 304,
-      "rating": 3.57,
-      "ratingCount": 2797,
-      "reviewCount": 909,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer She Went Missing",
-      "author": "Chelsea Ichaso",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722962856i/157020084.jpg",
-      "url": "https://www.goodreads.com/book/show/157020084",
-      "isKindleUnlimited": false,
-      "pages": 384,
-      "rating": 3.72,
-      "ratingCount": 15249,
-      "reviewCount": 1628,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Job",
-      "author": "Lizzy Dent",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609707285i/56533763.jpg",
-      "url": "https://www.goodreads.com/book/show/56533763",
-      "isKindleUnlimited": false,
-      "pages": 384,
       "rating": 3.53,
-      "ratingCount": 18446,
-      "reviewCount": 2499,
+      "ratingCount": 3618,
+      "reviewCount": 1108,
       "challenges": [
+        "Summer Encore",
         "Literally Summer"
       ]
     },
     {
-      "title": "The Summer I Turned Pretty (The Summer I Turned Pretty, #1)",
-      "author": "Jenny Han",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1496784224i/35380161.jpg",
-      "url": "https://www.goodreads.com/book/show/35380161",
-      "isKindleUnlimited": false,
-      "pages": 276,
-      "rating": 3.73,
-      "ratingCount": 1184427,
-      "reviewCount": 94871,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "It's Not Summer Without You (Summer, #2)",
-      "author": "Jenny Han",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651389070i/60911707.jpg",
-      "url": "https://www.goodreads.com/book/show/60911707",
-      "isKindleUnlimited": false,
-      "pages": 304,
-      "rating": 3.73,
-      "ratingCount": 758000,
-      "reviewCount": 51722,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "We'll Always Have Summer (Summer, #3)",
-      "author": "Jenny Han",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651007400i/60889030.jpg",
-      "url": "https://www.goodreads.com/book/show/60889030",
-      "isKindleUnlimited": false,
-      "pages": 290,
-      "rating": 3.77,
-      "ratingCount": 694937,
-      "reviewCount": 61566,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Hurricane Summer",
-      "author": "Asha Ashanti Bromfield",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1601135894i/54860490.jpg",
-      "url": "https://www.goodreads.com/book/show/54860490",
-      "isKindleUnlimited": false,
-      "pages": 400,
-      "rating": 4.25,
-      "ratingCount": 4555,
-      "reviewCount": 1169,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Bird Blue",
-      "author": "Akemi Dawn Bowman",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1516638251i/35716237.jpg",
-      "url": "https://www.goodreads.com/book/show/35716237",
-      "isKindleUnlimited": false,
-      "pages": 375,
-      "rating": 3.95,
-      "ratingCount": 5238,
-      "reviewCount": 1279,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Girls",
-      "author": "Jennifer Dugan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726678760i/218153897.jpg",
-      "url": "https://www.goodreads.com/book/show/218153897",
-      "isKindleUnlimited": false,
-      "pages": 320,
-      "rating": 3.61,
-      "ratingCount": 2528,
-      "reviewCount": 529,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Share",
-      "author": "Jenn McKinlay",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756350548i/240688508.jpg",
-      "url": "https://www.goodreads.com/book/show/240688508",
-      "isKindleUnlimited": false,
-      "pages": 368,
-      "rating": 3.66,
-      "ratingCount": 2207,
-      "reviewCount": 451,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer Official",
-      "author": "Rebekah Weatherspoon",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753612571i/239044085.jpg",
-      "url": "https://www.goodreads.com/book/show/239044085",
-      "isKindleUnlimited": false,
-      "pages": 288,
-      "rating": 3.82,
-      "ratingCount": 327,
-      "reviewCount": 142,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Rules for the Summer",
-      "author": "Meghan Quinn",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767964732i/246346502.jpg",
-      "url": "https://www.goodreads.com/book/show/246346502",
-      "isKindleUnlimited": false,
-      "pages": 587,
-      "rating": 3.87,
-      "ratingCount": 51414,
-      "reviewCount": 5652,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Swap",
-      "author": "Sarah   Morgan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1704388195i/200830601.jpg",
-      "url": "https://www.goodreads.com/book/show/200830601",
+      "title": "Carry Me to My Grave",
+      "author": "Christopher Golden",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754915522i/240019523.jpg",
+      "url": "https://www.goodreads.com/book/show/240019523",
       "isKindleUnlimited": false,
       "pages": 336,
-      "rating": 3.98,
-      "ratingCount": 9940,
-      "reviewCount": 1189,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summers at Castle Auburn",
-      "author": "Sharon Shinn",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388592909i/345660.jpg",
-      "url": "https://www.goodreads.com/book/show/345660",
-      "isKindleUnlimited": false,
-      "pages": 342,
-      "rating": 4.05,
-      "ratingCount": 12631,
-      "reviewCount": 1121,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Last Summer Boys",
-      "author": "Unknown Author",
-      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644531551l/59595743.jpg",
-      "url": "https://www.goodreads.com/book/show/59595743",
-      "isKindleUnlimited": false,
-      "pages": null,
-      "rating": null,
-      "ratingCount": null,
-      "reviewCount": null,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer House",
-      "author": "James  Patterson, Brendan DuBois",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579614036i/52588702.jpg",
-      "url": "https://www.goodreads.com/book/show/52588702",
-      "isKindleUnlimited": false,
-      "pages": 448,
-      "rating": 4.23,
-      "ratingCount": 61997,
-      "reviewCount": 2785,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Last Summer at the Golden Hotel",
-      "author": "Elyssa Friedland",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610174760i/56600650.jpg",
-      "url": "https://www.goodreads.com/book/show/56600650",
-      "isKindleUnlimited": false,
-      "pages": 384,
-      "rating": 3.74,
-      "ratingCount": 29776,
-      "reviewCount": 3301,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer Wives",
-      "author": "Beatriz Williams",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1509586304i/36381085.jpg",
-      "url": "https://www.goodreads.com/book/show/36381085",
-      "isKindleUnlimited": false,
-      "pages": 371,
-      "rating": 3.74,
-      "ratingCount": 50230,
-      "reviewCount": 4381,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer of Broken Rules",
-      "author": "K.L. Walther",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600698670i/49259788.jpg",
-      "url": "https://www.goodreads.com/book/show/49259788",
-      "isKindleUnlimited": false,
-      "pages": 359,
-      "rating": 3.88,
-      "ratingCount": 367679,
-      "reviewCount": 43735,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer of Second Chances",
-      "author": "K.L. Walther",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760794997i/240407143.jpg",
-      "url": "https://www.goodreads.com/book/show/240407143",
-      "isKindleUnlimited": false,
-      "pages": 400,
-      "rating": 3.78,
-      "ratingCount": 6833,
-      "reviewCount": 1261,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Invincible Summer of Juniper Jones",
-      "author": "Daven McQueen",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1591212434i/53805921.jpg",
-      "url": "https://www.goodreads.com/book/show/53805921",
-      "isKindleUnlimited": false,
-      "pages": 312,
-      "rating": 4.42,
-      "ratingCount": 3495,
-      "reviewCount": 922,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summers Between Us",
-      "author": "Noreen Nanja",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733491913i/216420350.jpg",
-      "url": "https://www.goodreads.com/book/show/216420350",
-      "isKindleUnlimited": false,
-      "pages": null,
-      "rating": 3.67,
-      "ratingCount": 2435,
-      "reviewCount": 414,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer's Echo",
-      "author": "Robbi Renee",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745983256i/223966189.jpg",
-      "url": "https://www.goodreads.com/book/show/223966189",
-      "isKindleUnlimited": false,
-      "pages": 304,
-      "rating": 4.32,
-      "ratingCount": 2836,
-      "reviewCount": 481,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer of Love",
-      "author": "Kerri Maher",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760066607i/242512714.jpg",
-      "url": "https://www.goodreads.com/book/show/242512714",
-      "isKindleUnlimited": false,
-      "pages": 368,
       "rating": 3.92,
-      "ratingCount": 170,
-      "reviewCount": 81,
+      "ratingCount": 437,
+      "reviewCount": 321,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "One Last Summer",
-      "author": "Kate   Spencer",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707934151i/200121624.jpg",
-      "url": "https://www.goodreads.com/book/show/200121624",
+      "title": "The Wreck of the Mentor: A True Story of Death, Despair, and Deliverance in the Age of Sail",
+      "author": "Eric Jay Dolin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760461040i/241381408.jpg",
+      "url": "https://www.goodreads.com/book/show/241381408",
       "isKindleUnlimited": false,
-      "pages": 320,
-      "rating": 3.47,
-      "ratingCount": 9184,
-      "reviewCount": 1470,
+      "pages": 272,
+      "rating": 3.68,
+      "ratingCount": 962,
+      "reviewCount": 182,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Mockingbird Summer",
-      "author": "Lynda Rutledge",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698162909i/175531639.jpg",
-      "url": "https://www.goodreads.com/book/show/175531639",
-      "isKindleUnlimited": false,
-      "pages": 303,
-      "rating": 4.21,
-      "ratingCount": 11519,
-      "reviewCount": 1045,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Long Past Summer",
-      "author": "Noué Kirwan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639087319i/59633171.jpg",
-      "url": "https://www.goodreads.com/book/show/59633171",
-      "isKindleUnlimited": false,
-      "pages": 448,
-      "rating": 3.53,
-      "ratingCount": 839,
-      "reviewCount": 179,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer of Everything",
-      "author": "Julian Winters",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579364383i/50156232.jpg",
-      "url": "https://www.goodreads.com/book/show/50156232",
-      "isKindleUnlimited": false,
-      "pages": 296,
-      "rating": 3.73,
-      "ratingCount": 1613,
-      "reviewCount": 366,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Have a Great Summer",
-      "author": "Francesca  Cocchi",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1776091714i/240687423.jpg",
-      "url": "https://www.goodreads.com/book/show/240687423",
-      "isKindleUnlimited": false,
-      "pages": 305,
-      "rating": 3.78,
-      "ratingCount": 3681,
-      "reviewCount": 734,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summerland Cove",
-      "author": "Ellen Baker",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767739861i/241125639.jpg",
-      "url": "https://www.goodreads.com/book/show/241125639",
-      "isKindleUnlimited": false,
-      "pages": 352,
-      "rating": 3.66,
-      "ratingCount": 1117,
-      "reviewCount": 315,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Last Days of Summer",
-      "author": "Sarra Manning",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766792621i/240351088.jpg",
-      "url": "https://www.goodreads.com/book/show/240351088",
-      "isKindleUnlimited": false,
-      "pages": 400,
-      "rating": 3.91,
-      "ratingCount": 867,
-      "reviewCount": 157,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Summer We Ran",
-      "author": "Audrey  Ingram",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737171011i/217204390.jpg",
-      "url": "https://www.goodreads.com/book/show/217204390",
+      "title": "Unreasonable Women: Three Stories of Violence, Imprisonment, and Extraordinary Survival",
+      "author": "Justine van der Leun",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770912483i/241096353.jpg",
+      "url": "https://www.goodreads.com/book/show/241096353",
       "isKindleUnlimited": false,
       "pages": 336,
-      "rating": 3.61,
-      "ratingCount": 18104,
-      "reviewCount": 2868,
+      "rating": 4.68,
+      "ratingCount": 297,
+      "reviewCount": 71,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Last Summer at Maine Chance",
-      "author": "Jessica  Everett",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755716158i/238940766.jpg",
-      "url": "https://www.goodreads.com/book/show/238940766",
+      "title": "In Deep Water: A True Story of Sharks, Survival, and Courage",
+      "author": "Michael J. Tougias",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778615329i/241392695.jpg",
+      "url": "https://www.goodreads.com/book/show/241392695",
       "isKindleUnlimited": false,
-      "pages": 448,
-      "rating": 4.09,
-      "ratingCount": 538,
-      "reviewCount": 85,
+      "pages": 304,
+      "rating": 4.19,
+      "ratingCount": 329,
+      "reviewCount": 169,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Stars, Stripes & Summer Nights",
-      "author": "Celeste Dador, C.C. Dador",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760640364i/241673483.jpg",
-      "url": "https://www.goodreads.com/book/show/241673483",
-      "isKindleUnlimited": false,
-      "pages": 320,
-      "rating": 3.71,
-      "ratingCount": 847,
-      "reviewCount": 270,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "That Last Carolina Summer",
-      "author": "Karen   White",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732333257i/218171641.jpg",
-      "url": "https://www.goodreads.com/book/show/218171641",
-      "isKindleUnlimited": false,
-      "pages": 352,
-      "rating": 4.11,
-      "ratingCount": 8163,
-      "reviewCount": 869,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Lost in the Summer of '69",
-      "author": "Eliza Knight",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757161093i/235315091.jpg",
-      "url": "https://www.goodreads.com/book/show/235315091",
+      "title": "Catch the Devil: A True Story of Murder, Deception, and Injustice on the Gulf Coast",
+      "author": "Pamela Colloff",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764056096i/242765263.jpg",
+      "url": "https://www.goodreads.com/book/show/242765263",
       "isKindleUnlimited": false,
       "pages": 320,
-      "rating": 4.01,
-      "ratingCount": 915,
-      "reviewCount": 293,
+      "rating": 4.35,
+      "ratingCount": 534,
+      "reviewCount": 120,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Ms. V's Hot Girl Summer",
-      "author": "A.H. Cunningham",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718912593i/209770893.jpg",
-      "url": "https://www.goodreads.com/book/show/209770893",
+      "title": "Biological War: A Scenario",
+      "author": "Annie Jacobsen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778177852i/243319478.jpg",
+      "url": "https://www.goodreads.com/book/show/243319478",
       "isKindleUnlimited": false,
-      "pages": 288,
-      "rating": 3.64,
-      "ratingCount": 520,
-      "reviewCount": 212,
+      "pages": 432,
+      "rating": 4.53,
+      "ratingCount": 190,
+      "reviewCount": 54,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer I Found You",
-      "author": "Jennifer     O'Brien",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762536515i/222420098.jpg",
-      "url": "https://www.goodreads.com/book/show/222420098",
+      "title": "Trash!: A Garbageman's Story",
+      "author": "Simon Paré-Poupart, Pablo Strauss",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760063362i/241717014.jpg",
+      "url": "https://www.goodreads.com/book/show/241717014",
+      "isKindleUnlimited": false,
+      "pages": 192,
+      "rating": 4.08,
+      "ratingCount": 7255,
+      "reviewCount": 1015,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "I'm a Lot: Surviving Myself and All the People I've Been",
+      "author": "Alison Leiby",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763796960i/243594473.jpg",
+      "url": "https://www.goodreads.com/book/show/243594473",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 4.22,
+      "ratingCount": 176,
+      "reviewCount": 47,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Freedom: Essays",
+      "author": "Zinzi Clemmons",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761275037i/241434369.jpg",
+      "url": "https://www.goodreads.com/book/show/241434369",
+      "isKindleUnlimited": false,
+      "pages": 256,
+      "rating": 3.97,
+      "ratingCount": 38,
+      "reviewCount": 9,
+      "challenges": [
+        "Summer Encore"
+      ]
+    },
+    {
+      "title": "Monster of a Land: On the Road in Search of Modern America",
+      "author": "Lauren  Hough",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763531021i/242381554.jpg",
+      "url": "https://www.goodreads.com/book/show/242381554",
       "isKindleUnlimited": false,
       "pages": 336,
-      "rating": 3.62,
-      "ratingCount": 557,
-      "reviewCount": 213,
+      "rating": 4.45,
+      "ratingCount": 217,
+      "reviewCount": 59,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer House",
-      "author": "Keri Beevis",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1671274741i/63112300.jpg",
-      "url": "https://www.goodreads.com/book/show/63112300",
+      "title": "The Kennedys and the Windsors: The Story of Two Dynasties, One Born, One Made",
+      "author": "Caroline Hallemann",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759806048i/241125401.jpg",
+      "url": "https://www.goodreads.com/book/show/241125401",
       "isKindleUnlimited": false,
-      "pages": 359,
-      "rating": 4.02,
-      "ratingCount": 27160,
-      "reviewCount": 1357,
+      "pages": 384,
+      "rating": 3.76,
+      "ratingCount": 346,
+      "reviewCount": 65,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Summer Guest",
-      "author": "Justin Cronin",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1320533001i/79673.jpg",
-      "url": "https://www.goodreads.com/book/show/79673",
+      "title": "A Resistance History of the United States",
+      "author": "Tad Stoermer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760501766i/241125399.jpg",
+      "url": "https://www.goodreads.com/book/show/241125399",
       "isKindleUnlimited": false,
-      "pages": 369,
-      "rating": 4.02,
-      "ratingCount": 7532,
-      "reviewCount": 948,
+      "pages": 368,
+      "rating": 4.24,
+      "ratingCount": 267,
+      "reviewCount": 83,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Our Extraordinary Summer (Hobby Island #2)",
-      "author": "Lori Wilde",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753286539i/239134047.jpg",
-      "url": "https://www.goodreads.com/book/show/239134047",
-      "isKindleUnlimited": false,
-      "pages": 377,
-      "rating": 3.85,
-      "ratingCount": 235,
-      "reviewCount": 123,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Our Secret Summer",
-      "author": "R.S. Grey",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756881539i/241087288.jpg",
-      "url": "https://www.goodreads.com/book/show/241087288",
-      "isKindleUnlimited": false,
-      "pages": 351,
-      "rating": 4,
-      "ratingCount": 12582,
-      "reviewCount": 1062,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer on Sag Harbor",
-      "author": "Sunny Hostin",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1682346184i/50496906.jpg",
-      "url": "https://www.goodreads.com/book/show/50496906",
-      "isKindleUnlimited": false,
-      "pages": 416,
-      "rating": 3.9,
-      "ratingCount": 4519,
-      "reviewCount": 438,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Summer in the City of Roses",
-      "author": "Michelle Ruiz Keil",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1612312366i/56253675.jpg",
-      "url": "https://www.goodreads.com/book/show/56253675",
-      "isKindleUnlimited": false,
-      "pages": 336,
-      "rating": 3.67,
-      "ratingCount": 570,
-      "reviewCount": 149,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "The Lost Summer: A Novel (Haven Cliff Book 2)",
-      "author": "Wendy Corsi Staub",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761583515i/226964184.jpg",
-      "url": "https://www.goodreads.com/book/show/226964184",
-      "isKindleUnlimited": false,
-      "pages": 357,
-      "rating": 4.11,
-      "ratingCount": 1226,
-      "reviewCount": 114,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "One Summer: America, 1927",
-      "author": "Bill Bryson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626349855i/18680077.jpg",
-      "url": "https://www.goodreads.com/book/show/18680077",
-      "isKindleUnlimited": false,
-      "pages": 545,
-      "rating": 4.1,
-      "ratingCount": 55708,
-      "reviewCount": 5884,
-      "challenges": [
-        "Literally Summer"
-      ]
-    },
-    {
-      "title": "Liliana's Invincible Summer: A Sister's Search for Justice",
-      "author": "Cristina Rivera Garza",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1662440397i/61111247.jpg",
-      "url": "https://www.goodreads.com/book/show/61111247",
+      "title": "Never Tell a Black Girl How to Black Girl: Essays",
+      "author": "Amena Brown",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767720279i/241715916.jpg",
+      "url": "https://www.goodreads.com/book/show/241715916",
       "isKindleUnlimited": false,
       "pages": 320,
-      "rating": 4.34,
-      "ratingCount": 27213,
-      "reviewCount": 5100,
+      "rating": 4.39,
+      "ratingCount": 92,
+      "reviewCount": 42,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Summer for the Gods: The Scopes Trial and America's Continuing Debate Over Science and Religion",
-      "author": "Edward J. Larson",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1571698372l/52594917.jpg",
-      "url": "https://www.goodreads.com/book/show/52594917",
+      "title": "The American School of Spies: The Archaeologists Who Fought the Nazis and Saved the Treasures of Ancient Greece",
+      "author": "Stephan Talty",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760064946i/241434371.jpg",
+      "url": "https://www.goodreads.com/book/show/241434371",
       "isKindleUnlimited": false,
-      "pages": 352,
-      "rating": 3.88,
-      "ratingCount": 2498,
-      "reviewCount": 239,
+      "pages": 320,
+      "rating": 4.04,
+      "ratingCount": 205,
+      "reviewCount": 44,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "The Boys of Summer: A Classic Sports Memoir of Jackie Robinson, the Brooklyn Dodgers, and Life After the Cheering Stopped (Harperperennial Modern Classics)",
-      "author": "Roger Kahn",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1332817055i/11773879.jpg",
-      "url": "https://www.goodreads.com/book/show/11773879",
+      "title": "Up All Night: A World History of Nightlife",
+      "author": "Imogen Willetts",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769554755i/241170059.jpg",
+      "url": "https://www.goodreads.com/book/show/241170059",
       "isKindleUnlimited": false,
-      "pages": 521,
-      "rating": 4.13,
-      "ratingCount": 12832,
-      "reviewCount": 599,
+      "pages": 384,
+      "rating": 4.14,
+      "ratingCount": 28,
+      "reviewCount": 12,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Summer of '49",
-      "author": "David Halberstam",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1429807453i/75411.jpg",
-      "url": "https://www.goodreads.com/book/show/75411",
+      "title": "This Is Also a Love Story: A Reporter's Search for Goodness in a Cruel World",
+      "author": "Sally  Hayden",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751515124i/235992838.jpg",
+      "url": "https://www.goodreads.com/book/show/235992838",
       "isKindleUnlimited": false,
-      "pages": 354,
-      "rating": 4.11,
-      "ratingCount": 10173,
-      "reviewCount": 419,
+      "pages": 304,
+      "rating": 4.3,
+      "ratingCount": 125,
+      "reviewCount": 36,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
-      "title": "Summer of '71: Five Months That Changed America",
-      "author": "John A. Jenkins",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768063695i/240687486.jpg",
-      "url": "https://www.goodreads.com/book/show/240687486",
+      "title": "All That's Unseen: An Appalachian Memoir",
+      "author": "Emilee Hackney",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761724701i/243319819.jpg",
+      "url": "https://www.goodreads.com/book/show/243319819",
       "isKindleUnlimited": false,
-      "pages": 448,
-      "rating": 4.12,
-      "ratingCount": 42,
-      "reviewCount": 20,
+      "pages": 384,
+      "rating": 4.35,
+      "ratingCount": 83,
+      "reviewCount": 41,
       "challenges": [
-        "Literally Summer"
+        "Summer Encore"
       ]
     },
     {
@@ -3323,20 +3437,6 @@
       ]
     },
     {
-      "title": "Whistler",
-      "author": "Ann Patchett",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761863582i/242693052.jpg",
-      "url": "https://www.goodreads.com/book/show/242693052",
-      "isKindleUnlimited": false,
-      "pages": 304,
-      "rating": 4.43,
-      "ratingCount": 75931,
-      "reviewCount": 10718,
-      "challenges": [
-        "Chart Toppers"
-      ]
-    },
-    {
       "title": "The Burning Side",
       "author": "Sarah Damoff",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760892947i/242977911.jpg",
@@ -3519,21 +3619,6 @@
       "reviewCount": 1508,
       "challenges": [
         "Chart Toppers"
-      ]
-    },
-    {
-      "title": "Land",
-      "author": "Maggie O'Farrell",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764056109i/241126782.jpg",
-      "url": "https://www.goodreads.com/book/show/241126782",
-      "isKindleUnlimited": false,
-      "pages": 400,
-      "rating": 4.27,
-      "ratingCount": 18051,
-      "reviewCount": 3027,
-      "challenges": [
-        "Chart Toppers",
-        "Fact or Fiction"
       ]
     },
     {
@@ -4201,20 +4286,6 @@
       ]
     },
     {
-      "title": "The Unicorn Hunters",
-      "author": "Katherine Arden",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761163138i/241125269.jpg",
-      "url": "https://www.goodreads.com/book/show/241125269",
-      "isKindleUnlimited": false,
-      "pages": 368,
-      "rating": 3.94,
-      "ratingCount": 5432,
-      "reviewCount": 1729,
-      "challenges": [
-        "Chart Toppers"
-      ]
-    },
-    {
       "title": "The Girl with a Thousand Faces",
       "author": "Sunyi Dean",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759374641i/240019948.jpg",
@@ -4552,20 +4623,6 @@
       "rating": 3.9,
       "ratingCount": 1723,
       "reviewCount": 576,
-      "challenges": [
-        "Chart Toppers"
-      ]
-    },
-    {
-      "title": "Marion",
-      "author": "Leah   Rowan",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757955185i/240019608.jpg",
-      "url": "https://www.goodreads.com/book/show/240019608",
-      "isKindleUnlimited": false,
-      "pages": 336,
-      "rating": 3.85,
-      "ratingCount": 2801,
-      "reviewCount": 1229,
       "challenges": [
         "Chart Toppers"
       ]
@@ -6371,20 +6428,6 @@
       ]
     },
     {
-      "title": "Villa Coco",
-      "author": "Andrew Sean Greer",
-      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759895643i/241483206.jpg",
-      "url": "https://www.goodreads.com/book/show/241483206",
-      "isKindleUnlimited": false,
-      "pages": 288,
-      "rating": 3.7,
-      "ratingCount": 6537,
-      "reviewCount": 1082,
-      "challenges": [
-        "Community Picks"
-      ]
-    },
-    {
       "title": "All That's Left Unsaid",
       "author": "Tracey Lien",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1658242138i/59856071.jpg",
@@ -6452,6 +6495,21 @@
       "reviewCount": 1157,
       "challenges": [
         "Community Picks"
+      ]
+    },
+    {
+      "title": "Last Summer on State Street",
+      "author": "Toya Wolfe",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1648412987i/58884738.jpg",
+      "url": "https://www.goodreads.com/book/show/58884738",
+      "isKindleUnlimited": false,
+      "pages": 212,
+      "rating": 4.21,
+      "ratingCount": 13189,
+      "reviewCount": 1825,
+      "challenges": [
+        "Community Picks",
+        "Literally Summer"
       ]
     },
     {
@@ -8108,6 +8166,1224 @@
       "reviewCount": 180,
       "challenges": [
         "Fact or Fiction"
+      ]
+    },
+    {
+      "title": "One Summer in Savannah",
+      "author": "Terah Shelton Harris",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1668526318i/63327797.jpg",
+      "url": "https://www.goodreads.com/book/show/63327797",
+      "isKindleUnlimited": false,
+      "pages": 464,
+      "rating": 4.13,
+      "ratingCount": 34485,
+      "reviewCount": 4205,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer (Seasonal Quartet, #4)",
+      "author": "Ali Smith",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1619421211i/56215038.jpg",
+      "url": "https://www.goodreads.com/book/show/56215038",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 4.02,
+      "ratingCount": 12989,
+      "reviewCount": 1904,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Prodigal Summer",
+      "author": "Barbara Kingsolver",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1426308771i/14249.jpg",
+      "url": "https://www.goodreads.com/book/show/14249",
+      "isKindleUnlimited": false,
+      "pages": 444,
+      "rating": 4.05,
+      "ratingCount": 133009,
+      "reviewCount": 9785,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Sisters",
+      "author": "Judy Blume",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1690983928i/57233514.jpg",
+      "url": "https://www.goodreads.com/book/show/57233514",
+      "isKindleUnlimited": false,
+      "pages": 399,
+      "rating": 3.84,
+      "ratingCount": 139722,
+      "reviewCount": 8732,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Book",
+      "author": "Tove Jansson, Thomas Teal, Kathryn Davis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758424485i/2263969.jpg",
+      "url": "https://www.goodreads.com/book/show/2263969",
+      "isKindleUnlimited": false,
+      "pages": 170,
+      "rating": 3.99,
+      "ratingCount": 61666,
+      "reviewCount": 8647,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Tree (The Fionavar Tapestry, #1)",
+      "author": "Guy Gavriel Kay",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1556219218i/45303189.jpg",
+      "url": "https://www.goodreads.com/book/show/45303189",
+      "isKindleUnlimited": false,
+      "pages": 396,
+      "rating": 3.95,
+      "ratingCount": 27100,
+      "reviewCount": 1940,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer in the City",
+      "author": "Gianfranco Calligarich, André Aciman, Howard Curtis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1597694311i/54785501.jpg",
+      "url": "https://www.goodreads.com/book/show/54785501",
+      "isKindleUnlimited": false,
+      "pages": 192,
+      "rating": 3.63,
+      "ratingCount": 11515,
+      "reviewCount": 1642,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer",
+      "author": "Edith Wharton, Laura Rattray",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1458680280i/26261738.jpg",
+      "url": "https://www.goodreads.com/book/show/26261738",
+      "isKindleUnlimited": false,
+      "pages": 208,
+      "rating": 3.67,
+      "ratingCount": 20177,
+      "reviewCount": 2534,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "These Summer Storms",
+      "author": "Sarah MacLean",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735591316i/220273379.jpg",
+      "url": "https://www.goodreads.com/book/show/220273379",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.74,
+      "ratingCount": 140564,
+      "reviewCount": 16159,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Just for the Summer (Part of Your World, #3)",
+      "author": "Abby Jimenez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742475239i/195820807.jpg",
+      "url": "https://www.goodreads.com/book/show/195820807",
+      "isKindleUnlimited": false,
+      "pages": 432,
+      "rating": 4.34,
+      "ratingCount": 1193883,
+      "reviewCount": 141331,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Problematic Summer Romance (Not in Love, #2)",
+      "author": "Ali Hazelwood",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745430233i/228691356.jpg",
+      "url": "https://www.goodreads.com/book/show/228691356",
+      "isKindleUnlimited": false,
+      "pages": 416,
+      "rating": 3.81,
+      "ratingCount": 333216,
+      "reviewCount": 51341,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Every Summer After (Barry's Bay, #1)",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1641279566i/60026536.jpg",
+      "url": "https://www.goodreads.com/book/show/60026536",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 4.15,
+      "ratingCount": 1028011,
+      "reviewCount": 105683,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "This Summer Will Be Different",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1694006777i/197577126.jpg",
+      "url": "https://www.goodreads.com/book/show/197577126",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.94,
+      "ratingCount": 409859,
+      "reviewCount": 44974,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Golden Summer (Barry's Bay, #2)",
+      "author": "Carley Fortune",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1723652503i/217245639.jpg",
+      "url": "https://www.goodreads.com/book/show/217245639",
+      "isKindleUnlimited": false,
+      "pages": 385,
+      "rating": 4.28,
+      "ratingCount": 574652,
+      "reviewCount": 69121,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Burnout Summer",
+      "author": "Jenna Ramirez",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1784294727i/240019684.jpg",
+      "url": "https://www.goodreads.com/book/show/240019684",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.71,
+      "ratingCount": 1678,
+      "reviewCount": 603,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of the Serpent",
+      "author": "Cecilia Eudave, Robin Myers",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735252621i/218462028.jpg",
+      "url": "https://www.goodreads.com/book/show/218462028",
+      "isKindleUnlimited": false,
+      "pages": 144,
+      "rating": 3.58,
+      "ratingCount": 571,
+      "reviewCount": 166,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Kakigori Summer",
+      "author": "Emily Itami",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741504553i/218671811.jpg",
+      "url": "https://www.goodreads.com/book/show/218671811",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.87,
+      "ratingCount": 1685,
+      "reviewCount": 320,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Italian Summer",
+      "author": "Rebecca Serle",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626799802i/58438583.jpg",
+      "url": "https://www.goodreads.com/book/show/58438583",
+      "isKindleUnlimited": false,
+      "pages": 255,
+      "rating": 3.59,
+      "ratingCount": 310077,
+      "reviewCount": 33963,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "28 Summers",
+      "author": "Elin Hilderbrand",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1572261156i/52588078.jpg",
+      "url": "https://www.goodreads.com/book/show/52588078",
+      "isKindleUnlimited": false,
+      "pages": 432,
+      "rating": 4.17,
+      "ratingCount": 290554,
+      "reviewCount": 24857,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of '69",
+      "author": "Elin Hilderbrand",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1540085775i/42283286.jpg",
+      "url": "https://www.goodreads.com/book/show/42283286",
+      "isKindleUnlimited": false,
+      "pages": 432,
+      "rating": 3.95,
+      "ratingCount": 174416,
+      "reviewCount": 12898,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Same Time Next Summer",
+      "author": "Annabel Monaghan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1685352063i/62562931.jpg",
+      "url": "https://www.goodreads.com/book/show/62562931",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.73,
+      "ratingCount": 157768,
+      "reviewCount": 18349,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Romance",
+      "author": "Annabel Monaghan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698303672i/198563734.jpg",
+      "url": "https://www.goodreads.com/book/show/198563734",
+      "isKindleUnlimited": false,
+      "pages": 321,
+      "rating": 4.01,
+      "ratingCount": 143195,
+      "reviewCount": 19902,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "It Happened One Summer (Bellinger Sisters, #1)",
+      "author": "Tessa Bailey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1604991895i/55659629.jpg",
+      "url": "https://www.goodreads.com/book/show/55659629",
+      "isKindleUnlimited": false,
+      "pages": 397,
+      "rating": 3.89,
+      "ratingCount": 746543,
+      "reviewCount": 66893,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Cece Downing's Start Over Summer: A Novel",
+      "author": "Soon Wiley",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760502633i/241903933.jpg",
+      "url": "https://www.goodreads.com/book/show/241903933",
+      "isKindleUnlimited": false,
+      "pages": 364,
+      "rating": 3.3,
+      "ratingCount": 164,
+      "reviewCount": 73,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Cicada Summer",
+      "author": "Erica McKeen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698497390i/200893734.jpg",
+      "url": "https://www.goodreads.com/book/show/200893734",
+      "isKindleUnlimited": false,
+      "pages": 272,
+      "rating": 3.33,
+      "ratingCount": 183,
+      "reviewCount": 57,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Island",
+      "author": "Kristin Hannah",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631974037i/59020335.jpg",
+      "url": "https://www.goodreads.com/book/show/59020335",
+      "isKindleUnlimited": false,
+      "pages": 416,
+      "rating": 3.95,
+      "ratingCount": 144844,
+      "reviewCount": 7670,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer War",
+      "author": "Naomi Novik",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747927269i/222683998.jpg",
+      "url": "https://www.goodreads.com/book/show/222683998",
+      "isKindleUnlimited": false,
+      "pages": 144,
+      "rating": 3.96,
+      "ratingCount": 15172,
+      "reviewCount": 2756,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Cool for the Summer",
+      "author": "Dahlia Adler",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600876925i/50748473.jpg",
+      "url": "https://www.goodreads.com/book/show/50748473",
+      "isKindleUnlimited": false,
+      "pages": 272,
+      "rating": 3.74,
+      "ratingCount": 12704,
+      "reviewCount": 2687,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer State of Mind",
+      "author": "Kristy Woodson Harvey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761743260i/242986076.jpg",
+      "url": "https://www.goodreads.com/book/show/242986076",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 3.78,
+      "ratingCount": 7777,
+      "reviewCount": 1055,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Fun Massacre",
+      "author": "Craig DiLouie",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760034451i/242482129.jpg",
+      "url": "https://www.goodreads.com/book/show/242482129",
+      "isKindleUnlimited": false,
+      "pages": 300,
+      "rating": 3.45,
+      "ratingCount": 1322,
+      "reviewCount": 456,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Bitter and Sweet: A Métis teen runs her family's ice-cream shack, faces her returning best friend King, and a father she can't forgive",
+      "author": "Jen  Ferguson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1633353998i/58782872.jpg",
+      "url": "https://www.goodreads.com/book/show/58782872",
+      "isKindleUnlimited": false,
+      "pages": 374,
+      "rating": 3.98,
+      "ratingCount": 2459,
+      "reviewCount": 437,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Guests (The Martini Club, #2)",
+      "author": "Tess Gerritsen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719496280i/199223892.jpg",
+      "url": "https://www.goodreads.com/book/show/199223892",
+      "isKindleUnlimited": false,
+      "pages": 363,
+      "rating": 4.29,
+      "ratingCount": 48726,
+      "reviewCount": 2864,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "That Summer Feeling",
+      "author": "Bridget Morrissey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1660915528i/61984828.jpg",
+      "url": "https://www.goodreads.com/book/show/61984828",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.7,
+      "ratingCount": 10013,
+      "reviewCount": 1909,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Curvy Girl Summer (Curve, #1)",
+      "author": "Danielle Allen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701283368i/154986013.jpg",
+      "url": "https://www.goodreads.com/book/show/154986013",
+      "isKindleUnlimited": false,
+      "pages": 360,
+      "rating": 4.26,
+      "ratingCount": 26863,
+      "reviewCount": 4092,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Sons",
+      "author": "Lee Mandelo",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1611852989i/53290204.jpg",
+      "url": "https://www.goodreads.com/book/show/53290204",
+      "isKindleUnlimited": false,
+      "pages": 372,
+      "rating": 3.79,
+      "ratingCount": 14988,
+      "reviewCount": 3796,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Till Summer Do Us Part",
+      "author": "Meghan Quinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750687903i/227081370.jpg",
+      "url": "https://www.goodreads.com/book/show/227081370",
+      "isKindleUnlimited": false,
+      "pages": 432,
+      "rating": 3.97,
+      "ratingCount": 199020,
+      "reviewCount": 21616,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "That Summer",
+      "author": "Jennifer Weiner",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1605290558i/55467800.jpg",
+      "url": "https://www.goodreads.com/book/show/55467800",
+      "isKindleUnlimited": false,
+      "pages": 422,
+      "rating": 3.75,
+      "ratingCount": 94699,
+      "reviewCount": 6873,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summers at the Saint",
+      "author": "Mary Kay Andrews",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697249850i/195790574.jpg",
+      "url": "https://www.goodreads.com/book/show/195790574",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 4.05,
+      "ratingCount": 62552,
+      "reviewCount": 6092,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer She Went Missing",
+      "author": "Chelsea Ichaso",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1722962856i/157020084.jpg",
+      "url": "https://www.goodreads.com/book/show/157020084",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 3.72,
+      "ratingCount": 15249,
+      "reviewCount": 1628,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Job",
+      "author": "Lizzy Dent",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609707285i/56533763.jpg",
+      "url": "https://www.goodreads.com/book/show/56533763",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 3.53,
+      "ratingCount": 18446,
+      "reviewCount": 2499,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer I Turned Pretty (The Summer I Turned Pretty, #1)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1496784224i/35380161.jpg",
+      "url": "https://www.goodreads.com/book/show/35380161",
+      "isKindleUnlimited": false,
+      "pages": 276,
+      "rating": 3.73,
+      "ratingCount": 1184427,
+      "reviewCount": 94871,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "It's Not Summer Without You (Summer, #2)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651389070i/60911707.jpg",
+      "url": "https://www.goodreads.com/book/show/60911707",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 3.73,
+      "ratingCount": 758000,
+      "reviewCount": 51722,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "We'll Always Have Summer (Summer, #3)",
+      "author": "Jenny Han",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1651007400i/60889030.jpg",
+      "url": "https://www.goodreads.com/book/show/60889030",
+      "isKindleUnlimited": false,
+      "pages": 290,
+      "rating": 3.77,
+      "ratingCount": 694937,
+      "reviewCount": 61566,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Hurricane Summer",
+      "author": "Asha Ashanti Bromfield",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1601135894i/54860490.jpg",
+      "url": "https://www.goodreads.com/book/show/54860490",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 4.25,
+      "ratingCount": 4555,
+      "reviewCount": 1169,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Bird Blue",
+      "author": "Akemi Dawn Bowman",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1516638251i/35716237.jpg",
+      "url": "https://www.goodreads.com/book/show/35716237",
+      "isKindleUnlimited": false,
+      "pages": 375,
+      "rating": 3.95,
+      "ratingCount": 5238,
+      "reviewCount": 1279,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Girls",
+      "author": "Jennifer Dugan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726678760i/218153897.jpg",
+      "url": "https://www.goodreads.com/book/show/218153897",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.61,
+      "ratingCount": 2528,
+      "reviewCount": 529,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Share",
+      "author": "Jenn McKinlay",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756350548i/240688508.jpg",
+      "url": "https://www.goodreads.com/book/show/240688508",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.66,
+      "ratingCount": 2207,
+      "reviewCount": 451,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer Official",
+      "author": "Rebekah Weatherspoon",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753612571i/239044085.jpg",
+      "url": "https://www.goodreads.com/book/show/239044085",
+      "isKindleUnlimited": false,
+      "pages": 288,
+      "rating": 3.82,
+      "ratingCount": 327,
+      "reviewCount": 142,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Rules for the Summer",
+      "author": "Meghan Quinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767964732i/246346502.jpg",
+      "url": "https://www.goodreads.com/book/show/246346502",
+      "isKindleUnlimited": false,
+      "pages": 587,
+      "rating": 3.87,
+      "ratingCount": 51414,
+      "reviewCount": 5652,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Swap",
+      "author": "Sarah   Morgan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1704388195i/200830601.jpg",
+      "url": "https://www.goodreads.com/book/show/200830601",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.98,
+      "ratingCount": 9940,
+      "reviewCount": 1189,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summers at Castle Auburn",
+      "author": "Sharon Shinn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1388592909i/345660.jpg",
+      "url": "https://www.goodreads.com/book/show/345660",
+      "isKindleUnlimited": false,
+      "pages": 342,
+      "rating": 4.05,
+      "ratingCount": 12631,
+      "reviewCount": 1121,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer Boys",
+      "author": "Unknown Author",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1644531551l/59595743.jpg",
+      "url": "https://www.goodreads.com/book/show/59595743",
+      "isKindleUnlimited": false,
+      "pages": null,
+      "rating": null,
+      "ratingCount": null,
+      "reviewCount": null,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer House",
+      "author": "James  Patterson, Brendan DuBois",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579614036i/52588702.jpg",
+      "url": "https://www.goodreads.com/book/show/52588702",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 4.23,
+      "ratingCount": 61997,
+      "reviewCount": 2785,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer at the Golden Hotel",
+      "author": "Elyssa Friedland",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1610174760i/56600650.jpg",
+      "url": "https://www.goodreads.com/book/show/56600650",
+      "isKindleUnlimited": false,
+      "pages": 384,
+      "rating": 3.74,
+      "ratingCount": 29776,
+      "reviewCount": 3301,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Wives",
+      "author": "Beatriz Williams",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1509586304i/36381085.jpg",
+      "url": "https://www.goodreads.com/book/show/36381085",
+      "isKindleUnlimited": false,
+      "pages": 371,
+      "rating": 3.74,
+      "ratingCount": 50230,
+      "reviewCount": 4381,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Broken Rules",
+      "author": "K.L. Walther",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1600698670i/49259788.jpg",
+      "url": "https://www.goodreads.com/book/show/49259788",
+      "isKindleUnlimited": false,
+      "pages": 359,
+      "rating": 3.88,
+      "ratingCount": 367679,
+      "reviewCount": 43735,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Second Chances",
+      "author": "K.L. Walther",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760794997i/240407143.jpg",
+      "url": "https://www.goodreads.com/book/show/240407143",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.78,
+      "ratingCount": 6833,
+      "reviewCount": 1261,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Invincible Summer of Juniper Jones",
+      "author": "Daven McQueen",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1591212434i/53805921.jpg",
+      "url": "https://www.goodreads.com/book/show/53805921",
+      "isKindleUnlimited": false,
+      "pages": 312,
+      "rating": 4.42,
+      "ratingCount": 3495,
+      "reviewCount": 922,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summers Between Us",
+      "author": "Noreen Nanja",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733491913i/216420350.jpg",
+      "url": "https://www.goodreads.com/book/show/216420350",
+      "isKindleUnlimited": false,
+      "pages": null,
+      "rating": 3.67,
+      "ratingCount": 2435,
+      "reviewCount": 414,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer's Echo",
+      "author": "Robbi Renee",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1745983256i/223966189.jpg",
+      "url": "https://www.goodreads.com/book/show/223966189",
+      "isKindleUnlimited": false,
+      "pages": 304,
+      "rating": 4.32,
+      "ratingCount": 2836,
+      "reviewCount": 481,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of Love",
+      "author": "Kerri Maher",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760066607i/242512714.jpg",
+      "url": "https://www.goodreads.com/book/show/242512714",
+      "isKindleUnlimited": false,
+      "pages": 368,
+      "rating": 3.92,
+      "ratingCount": 170,
+      "reviewCount": 81,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Last Summer",
+      "author": "Kate   Spencer",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1707934151i/200121624.jpg",
+      "url": "https://www.goodreads.com/book/show/200121624",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.47,
+      "ratingCount": 9184,
+      "reviewCount": 1470,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Mockingbird Summer",
+      "author": "Lynda Rutledge",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698162909i/175531639.jpg",
+      "url": "https://www.goodreads.com/book/show/175531639",
+      "isKindleUnlimited": false,
+      "pages": 303,
+      "rating": 4.21,
+      "ratingCount": 11519,
+      "reviewCount": 1045,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Long Past Summer",
+      "author": "Noué Kirwan",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1639087319i/59633171.jpg",
+      "url": "https://www.goodreads.com/book/show/59633171",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 3.53,
+      "ratingCount": 839,
+      "reviewCount": 179,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer of Everything",
+      "author": "Julian Winters",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1579364383i/50156232.jpg",
+      "url": "https://www.goodreads.com/book/show/50156232",
+      "isKindleUnlimited": false,
+      "pages": 296,
+      "rating": 3.73,
+      "ratingCount": 1613,
+      "reviewCount": 366,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Have a Great Summer",
+      "author": "Francesca  Cocchi",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1776091714i/240687423.jpg",
+      "url": "https://www.goodreads.com/book/show/240687423",
+      "isKindleUnlimited": false,
+      "pages": 305,
+      "rating": 3.78,
+      "ratingCount": 3681,
+      "reviewCount": 734,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summerland Cove",
+      "author": "Ellen Baker",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767739861i/241125639.jpg",
+      "url": "https://www.goodreads.com/book/show/241125639",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.66,
+      "ratingCount": 1117,
+      "reviewCount": 315,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Last Days of Summer",
+      "author": "Sarra Manning",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766792621i/240351088.jpg",
+      "url": "https://www.goodreads.com/book/show/240351088",
+      "isKindleUnlimited": false,
+      "pages": 400,
+      "rating": 3.91,
+      "ratingCount": 867,
+      "reviewCount": 157,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer We Ran",
+      "author": "Audrey  Ingram",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737171011i/217204390.jpg",
+      "url": "https://www.goodreads.com/book/show/217204390",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.61,
+      "ratingCount": 18104,
+      "reviewCount": 2868,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Last Summer at Maine Chance",
+      "author": "Jessica  Everett",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755716158i/238940766.jpg",
+      "url": "https://www.goodreads.com/book/show/238940766",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 4.09,
+      "ratingCount": 538,
+      "reviewCount": 85,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Stars, Stripes & Summer Nights",
+      "author": "Celeste Dador, C.C. Dador",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760640364i/241673483.jpg",
+      "url": "https://www.goodreads.com/book/show/241673483",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 3.71,
+      "ratingCount": 847,
+      "reviewCount": 270,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "That Last Carolina Summer",
+      "author": "Karen   White",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732333257i/218171641.jpg",
+      "url": "https://www.goodreads.com/book/show/218171641",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 4.11,
+      "ratingCount": 8163,
+      "reviewCount": 869,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Ms. V's Hot Girl Summer",
+      "author": "A.H. Cunningham",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718912593i/209770893.jpg",
+      "url": "https://www.goodreads.com/book/show/209770893",
+      "isKindleUnlimited": false,
+      "pages": 288,
+      "rating": 3.64,
+      "ratingCount": 520,
+      "reviewCount": 212,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer I Found You",
+      "author": "Jennifer     O'Brien",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1762536515i/222420098.jpg",
+      "url": "https://www.goodreads.com/book/show/222420098",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.62,
+      "ratingCount": 557,
+      "reviewCount": 213,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer House",
+      "author": "Keri Beevis",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1671274741i/63112300.jpg",
+      "url": "https://www.goodreads.com/book/show/63112300",
+      "isKindleUnlimited": false,
+      "pages": 359,
+      "rating": 4.02,
+      "ratingCount": 27160,
+      "reviewCount": 1357,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Summer Guest",
+      "author": "Justin Cronin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1320533001i/79673.jpg",
+      "url": "https://www.goodreads.com/book/show/79673",
+      "isKindleUnlimited": false,
+      "pages": 369,
+      "rating": 4.02,
+      "ratingCount": 7532,
+      "reviewCount": 948,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Our Extraordinary Summer (Hobby Island #2)",
+      "author": "Lori Wilde",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1753286539i/239134047.jpg",
+      "url": "https://www.goodreads.com/book/show/239134047",
+      "isKindleUnlimited": false,
+      "pages": 377,
+      "rating": 3.85,
+      "ratingCount": 235,
+      "reviewCount": 123,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Our Secret Summer",
+      "author": "R.S. Grey",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1756881539i/241087288.jpg",
+      "url": "https://www.goodreads.com/book/show/241087288",
+      "isKindleUnlimited": false,
+      "pages": 351,
+      "rating": 4,
+      "ratingCount": 12582,
+      "reviewCount": 1062,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer on Sag Harbor",
+      "author": "Sunny Hostin",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1682346184i/50496906.jpg",
+      "url": "https://www.goodreads.com/book/show/50496906",
+      "isKindleUnlimited": false,
+      "pages": 416,
+      "rating": 3.9,
+      "ratingCount": 4519,
+      "reviewCount": 438,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer in the City of Roses",
+      "author": "Michelle Ruiz Keil",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1612312366i/56253675.jpg",
+      "url": "https://www.goodreads.com/book/show/56253675",
+      "isKindleUnlimited": false,
+      "pages": 336,
+      "rating": 3.67,
+      "ratingCount": 570,
+      "reviewCount": 149,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Lost Summer: A Novel (Haven Cliff Book 2)",
+      "author": "Wendy Corsi Staub",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761583515i/226964184.jpg",
+      "url": "https://www.goodreads.com/book/show/226964184",
+      "isKindleUnlimited": false,
+      "pages": 357,
+      "rating": 4.11,
+      "ratingCount": 1226,
+      "reviewCount": 114,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "One Summer: America, 1927",
+      "author": "Bill Bryson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1626349855i/18680077.jpg",
+      "url": "https://www.goodreads.com/book/show/18680077",
+      "isKindleUnlimited": false,
+      "pages": 545,
+      "rating": 4.1,
+      "ratingCount": 55708,
+      "reviewCount": 5884,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Liliana's Invincible Summer: A Sister's Search for Justice",
+      "author": "Cristina Rivera Garza",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1662440397i/61111247.jpg",
+      "url": "https://www.goodreads.com/book/show/61111247",
+      "isKindleUnlimited": false,
+      "pages": 320,
+      "rating": 4.34,
+      "ratingCount": 27213,
+      "reviewCount": 5100,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer for the Gods: The Scopes Trial and America's Continuing Debate Over Science and Religion",
+      "author": "Edward J. Larson",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1571698372l/52594917.jpg",
+      "url": "https://www.goodreads.com/book/show/52594917",
+      "isKindleUnlimited": false,
+      "pages": 352,
+      "rating": 3.88,
+      "ratingCount": 2498,
+      "reviewCount": 239,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "The Boys of Summer: A Classic Sports Memoir of Jackie Robinson, the Brooklyn Dodgers, and Life After the Cheering Stopped (Harperperennial Modern Classics)",
+      "author": "Roger Kahn",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1332817055i/11773879.jpg",
+      "url": "https://www.goodreads.com/book/show/11773879",
+      "isKindleUnlimited": false,
+      "pages": 521,
+      "rating": 4.13,
+      "ratingCount": 12832,
+      "reviewCount": 599,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of '49",
+      "author": "David Halberstam",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1429807453i/75411.jpg",
+      "url": "https://www.goodreads.com/book/show/75411",
+      "isKindleUnlimited": false,
+      "pages": 354,
+      "rating": 4.11,
+      "ratingCount": 10173,
+      "reviewCount": 419,
+      "challenges": [
+        "Literally Summer"
+      ]
+    },
+    {
+      "title": "Summer of '71: Five Months That Changed America",
+      "author": "John A. Jenkins",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768063695i/240687486.jpg",
+      "url": "https://www.goodreads.com/book/show/240687486",
+      "isKindleUnlimited": false,
+      "pages": 448,
+      "rating": 4.12,
+      "ratingCount": 42,
+      "reviewCount": 20,
+      "challenges": [
+        "Literally Summer"
       ]
     },
     {

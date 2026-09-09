@@ -249,7 +249,18 @@
     .banner.warn { border-left-color: var(--warning); background: var(--warning-soft); }
     .banner.ok { border-left-color: var(--success); background: var(--success-soft); }
     .banner.error { border-left-color: var(--destructive); background: var(--destructive-soft); }
+
+    /* Wiggle Room / Lock Impact Banner */
+    .wiggle-banner { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--warning); border-radius: 8px; padding: 14px 16px; margin-bottom: 16px; box-shadow: var(--shadow-soft); font-size: 12.5px; }
+    .wiggle-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .wiggle-header strong { color: var(--fg); font-size: 13px; }
+    .wiggle-list { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+    .wiggle-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; background: var(--bg); padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border); }
+    .wiggle-unlock-btn { font-size: 11px; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--primary); background: var(--primary-soft); color: var(--primary); font-weight: 700; cursor: pointer; transition: 0.15s; }
+    .wiggle-unlock-btn:hover { background: var(--primary); color: #fff; }
     
+    .savings-badge { display: inline-flex; align-items: center; gap: 4px; background: var(--success-soft); color: var(--success); font-weight: 700; padding: 4px 8px; border-radius: 6px; font-size: 11.5px; }
+
     .empty { text-align: center; padding: 60px 20px; border: 2px dashed var(--border); border-radius: 12px; color: var(--muted-fg); font-size: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; grid-column: 1/-1;}
     .empty .icon { font-size: 32px; }
 
@@ -263,7 +274,7 @@
     table.sheet tr.spacer td { background: var(--bg); height: 12px; padding: 0; border: none; }
     table.sheet tr:hover td:not(.spacer) { background: var(--primary-soft); }
 
-    .algo-indicator { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; background: var(--primary-soft); color: var(--primary); padding: 6px 12px; border-radius: 8px; border: 1px solid color-mix(in oklab, var(--primary) 30%, transparent); flex-wrap: wrap; }
+    .algo-indicator { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 600; background: var(--primary-soft); color: var(--primary); padding: 8px 14px; border-radius: 8px; border: 1px solid color-mix(in oklab, var(--primary) 30%, transparent); flex-wrap: wrap; width: 100%; }
     .algo-indicator.single { background: var(--warning-soft); color: var(--warning); border-color: color-mix(in oklab, var(--warning) 30%, transparent); }
 
     /* Toast System */
@@ -467,7 +478,7 @@
           </button>
         </div>
 
-        <!-- Second Row: Advanced Settings & Sorting -->
+        <!-- Second Row: Advanced Settings, Grid & Optimal Mode Buttons -->
         <div class="adv-filters" id="adv-filters-section">
           <select id="grid-size-filter" aria-label="Book Grid Size">
             <option value="auto">Grid: Auto Resize</option>
@@ -478,6 +489,7 @@
             <option value="6">Grid: 6 Columns</option>
           </select>
 
+          <!-- RESTORED: Both Alternate Mode Buttons in their original top row -->
           <button class="btn outline sm only-optimal hidden" id="btn-shuffle-overlap" title="Find a new path using overlapping books">
             🎲 Alternate (Overlaps)
           </button>
@@ -485,6 +497,14 @@
             🎲 Alternate (No Overlaps)
           </button>
 
+          <!-- RESTORED: Minimize Total Pages Toggle in the same row -->
+          <label class="toggle-container only-optimal hidden" id="toggle-least-pages-container" title="Solves for the absolute minimum total pages across all selected challenges">
+            <input type="checkbox" id="toggle-least-pages">
+            <div class="toggle-track"></div>
+            <span class="toggle-label">⚡ Minimize Total Pages</span>
+          </label>
+
+          <!-- Browse-Only Filters -->
           <select id="sort-filter" class="only-browse" aria-label="Sort books by" title="Hotkey: Press 'S' to cycle sort modes">
             <option value="title-asc">Sort: Title (A→Z)</option>
             <option value="title-desc">Sort: Title (Z→A)</option>
@@ -513,12 +533,12 @@
             <option value="exclude">✕ Avoid</option>
           </select>
           
-                  <!-- Third Row: Smart Presets -->
-        <div class="preset-filters only-browse">
-          <button class="preset-btn" id="preset-quick-reads" title="Books under 250 pages sorted by rating">🔥 Quick Reads</button>
-          <button class="preset-btn" id="preset-hidden-gems" title="Rating 4.0+ with 100 to 10K ratings">💎 Hidden Gems</button>
-          <button class="preset-btn" id="preset-popular" title="Books with 100K+ ratings">📚 Popular Picks</button>
-        </div>
+          <!-- Third Row: Smart Presets -->
+          <div class="preset-filters only-browse">
+            <button class="preset-btn" id="preset-quick-reads" title="Books under 250 pages sorted by rating">🔥 Quick Reads</button>
+            <button class="preset-btn" id="preset-hidden-gems" title="Rating 4.0+ with 100 to 10K ratings">💎 Hidden Gems</button>
+            <button class="preset-btn" id="preset-popular" title="Books with 100K+ ratings">📚 Popular Picks</button>
+          </div>
 
           <label class="toggle-container" title="Show or hide book cover images" style="margin-left: auto;">
             <input type="checkbox" id="btn-toggle-covers">
@@ -536,6 +556,13 @@
 
       <!-- BROWSE BOOKS VIEW -->
       <section id="view-library">
+                  <div class="banner ok" style="margin: 10px; border-radius: 8px;">
+              <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                  <div><strong>❤️ Always up to date with the latest challenge!</strong><br><small>I manually update these lists every few weeks as new seasonal prompts drop, please consider supporting its development!</small></div>
+                  <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
+              </div>
+          </div>
+
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px 0 20px; background: var(--bg);">
           <div id="library-stats" style="font-size: 13px; color: var(--muted-fg);"></div>
           <button class="btn ghost sm" id="btn-toggle-accordions">➖ Collapse All</button>
@@ -546,7 +573,7 @@
           
           <div class="banner ok" style="margin-top: 40px; border-radius: 8px;">
               <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
-                  <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
+                  <div><strong>❤️ Always up to date with the latest challenge!</strong><br><small>I manually update these lists every few weeks as new seasonal prompts drop, please consider supporting its development!</small></div>
                   <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
               </div>
           </div>
@@ -555,28 +582,35 @@
 
       <!-- OPTIMIZED LIST VIEW -->
       <section id="view-optimal" class="hidden">
-          
-        <div style="padding: 12px 20px 0 20px; background: var(--bg);">
-          <div style="padding: 12px 20px 0 20px; background: var(--bg);">
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; border-bottom:1px dashed var(--border); padding-bottom:12px;">
-              <div id="optimal-algo-indicator" class="algo-indicator" style="flex:1;"></div>
-              <button
-                  class="btn outline sm btn-copy-action"
-                  id="btn-copy-optimal"
-                  style="align-self:flex-end; margin-top:20px;">
-                  📋 Copy List
-              </button>
+                <div class="banner ok" style="margin: 10px; border-radius: 8px;">
+            <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                <div><strong>❤️ Always up to date with the latest challenge!</strong><br><small>I manually update these lists every few weeks as new seasonal prompts drop, please consider supporting its development!</small></div>
+                <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
             </div>
+        </div>
+
+        <div style="padding: 16px 20px 0 20px; background: var(--bg);">
+          
+          <!-- Clean Summary Strip with Copy List -->
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; border-bottom:1px dashed var(--border); padding-bottom:14px; margin-bottom: 14px;">
+            <div id="optimal-algo-indicator" class="algo-indicator" style="flex:1;"></div>
+            <button class="btn outline sm btn-copy-action" id="btn-copy-optimal" style="align-self:stretch;">
+              📋 Copy List
+            </button>
           </div>
+
+          <!-- The "Wiggle Room" / Lock Impact Container -->
+          <div id="optimal-wiggle-container"></div>
+        </div>
 
         <div class="workspace-content" id="output-optimal"></div>
 
-          <div class="banner ok" style="margin-top: 40px; border-radius: 8px;">
-              <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
-                  <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
-                  <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
-              </div>
-          </div>
+        <div class="banner ok" style="margin: 20px; border-radius: 8px;">
+            <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
+                <div><strong>❤️ Always up to date with the latest challenge!</strong><br><small>I manually update these lists every few weeks as new seasonal prompts drop, please consider supporting its development!</small></div>
+                <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
+            </div>
+        </div>
       </section>
 
       <!-- SPREADSHEET VIEW -->
@@ -594,7 +628,7 @@
         
         <div class="banner ok" style="margin: 16px; border-radius: 8px;">
             <div style="display:flex; justify-content: space-between; align-items:center; flex-wrap: wrap; gap: 12px;">
-                <div><strong>❤️ Enjoying these features?</strong><br><small>If this tool saves you time, please consider supporting its development!</small></div>
+                <div><strong>❤️ Always up to date with the latest challenge!</strong><br><small>I manually update these lists every few weeks as new seasonal prompts drop, please consider supporting its development!</small></div>
                 <a href="https://ko-fi.com/unikuez" target="_blank" class="btn sm support-btn kofi" style="flex:none;">☕ Buy me a coffee</a>
             </div>
         </div>
@@ -657,18 +691,18 @@
     </details>
     
     <details class="faq-item">
-      <summary>How do I find overlapping books for seasonal reading prompts?</summary>
-      <p>Select your active challenges from the sidebar. The tool identifies common books across your choices, organizing them in the <strong>Overlap Spreadsheet</strong> tab to show you exactly which books satisfy two, three, or more prompts simultaneously.</p>
-    </details>
-    
-    <details class="faq-item">
-      <summary>Can I plan a challenge list with zero book overlaps?</summary>
-      <p>Yes. If you prefer to read a distinct, unique book for every single category, go to the <strong>Optimal Reading Path</strong> tab and click <strong>"Alternate (No Overlaps)"</strong>. The optimization engine recalculates your plan to ensure exactly one unique book is recommended per challenge prompt.</p>
+      <summary>How does the "Minimize Total Pages" optimization work?</summary>
+      <p>When activated, our engine solves a <strong>Weighted Set Cover</strong> problem by running 80 fast iterations behind the scenes. It targets books with the lowest page-to-challenge ratio to construct the absolute shortest reading path mathematically possible, without requiring you to keep refreshing.</p>
     </details>
 
     <details class="faq-item">
-      <summary>How can I optimize only my remaining, uncompleted challenges?</summary>
-      <p>As you complete prompts throughout the season, simply uncheck those completed challenges in the left sidebar. The tool dynamically updates the <strong>Browse Books</strong> catalog and re-runs the optimization algorithm based solely on your remaining active prompts.</p>
+      <summary>Can I plan a challenge list with zero book overlaps?</summary>
+      <p>Yes. If you prefer to read a distinct, unique book for every single category, click <strong>"Alternate (No Overlaps)"</strong>. The optimization engine recalculates your plan to ensure exactly one unique book is recommended per challenge prompt.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What is Lock Impact ("Wiggle Room") analysis?</summary>
+      <p>If you lock in "Must Read" books, the optimizer checks how many pages those commitments add compared to the absolute shortest path. It calculates the exact reading penalty of each locked book and lets you unlock them with one click if you want to save time.</p>
     </details>
 
     <details class="faq-item">
@@ -775,10 +809,11 @@
     let activeData = { sections: [], books: [], categories: [] };
     
     // Optimal path state
-    let currentOptimalMode = 'overlap';
+    let currentOptimalMode = 'overlap'; // 'overlap' or 'single'
+    let leastPagesMode = false;        // true: minimize pages, false: maximize coverage
     let lastOptimalSignature = '';
     let lastOptimal = { selected: [], uncovered: [] };
-    let userReadingSpeed = 30; // default 30 pgs/hr
+    let userReadingSpeed = 30;         // default 30 pgs/hr
 
     // Filter, Sort, & Spreadsheet States
     let search = '';
@@ -901,7 +936,9 @@
         availableShelves: Array.from(availableShelves),
         libraryOnlyFilterActive: libraryOnlyFilterActive,
         seenChallenges: Array.from(seenChallenges),
-        sortFilter: sortFilter
+        sortFilter: sortFilter,
+        currentOptimalMode: currentOptimalMode,
+        leastPagesMode: leastPagesMode
       }));
     }
 
@@ -927,6 +964,12 @@
             sortFilter = p.sortFilter;
             const sortEl = $('sort-filter');
             if (sortEl) sortEl.value = sortFilter;
+          }
+          if (p.currentOptimalMode) currentOptimalMode = p.currentOptimalMode;
+          if (typeof p.leastPagesMode === 'boolean') {
+            leastPagesMode = p.leastPagesMode;
+            const toggle = $('toggle-least-pages');
+            if (toggle) toggle.checked = leastPagesMode;
           }
         }
 
@@ -1062,6 +1105,12 @@
             document.documentElement.style.setProperty('--grid-cols', v);
             document.documentElement.style.setProperty('--grid-min', '140px');
         }
+    });
+
+    addEvt('toggle-least-pages', 'change', (e) => {
+        leastPagesMode = e.target.checked;
+        saveState();
+        renderResults(currentOptimalMode, false);
     });
 
     addEvt('btn-menu', 'click', () => { $('sidebar')?.classList.add('open'); $('sidebar-backdrop')?.classList.add('open'); });
@@ -1543,6 +1592,13 @@
       
       activeData.sections = Array.from(overlapMap.values()).sort((a,b) => b.categories.length !== a.categories.length ? b.categories.length - a.categories.length : b.books.length - a.books.length);
       
+      const overlapBtn = $('btn-shuffle-overlap');
+      if (overlapBtn) {
+          const hasOverlaps = activeData.sections.length > 0;
+          overlapBtn.disabled = !hasOverlaps;
+          overlapBtn.title = hasOverlaps ? "Find a new path using overlapping books" : "No overlapping books available in current selection";
+      }
+
       renderAll();
     }
 
@@ -1592,7 +1648,7 @@
 
       const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
       
-      // Metadata Row (⭐ 3.98 · 284K · 400p)
+      // Metadata Row
       const metaParts = [];
       if (b.rating != null) {
         const color = b.rating >= 4.0 ? 'var(--success)' : (b.rating >= 3.5 ? 'var(--warning)' : 'var(--destructive)');
@@ -1680,7 +1736,6 @@
         return true;
       });
 
-      // Sort Master List once before grouping
       filteredBooks = sortBooksList(filteredBooks);
 
       const ratedBooksAll = filteredBooks.filter(b => b.rating != null);
@@ -1767,17 +1822,25 @@
       syncToggleAllButton();
     }
 
-    function generatePath(mode, forceRandom) {
+    // ==========================================
+    // MULTI-PASS OPTIMIZER (OVERLAPS & NO OVERLAPS)
+    // ==========================================
+
+    function runSinglePass(mode, useLeastPages, forceRandom, lockedIdList = null) {
       const activeCats = new Set(activeData.categories);
       const uncovered = new Set(activeCats);
       const selected = [];
       let available = [];
-      let failedSingleCategories = [];
+      const failedSingleCategories = [];
       
       const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
 
+      const lockedIds = lockedIdList !== null ? new Set(lockedIdList) : new Set(
+        activeData.books.filter(b => bookStatus[b.id] === 'include').map(b => b.id)
+      );
+
       activeData.books.forEach(b => {
-        if (bookStatus[b.id] === 'include') {
+        if (lockedIds.has(b.id)) {
           selected.push(b);
           b.categories.forEach(c => uncovered.delete(c));
         } else if (bookStatus[b.id] !== 'exclude') {
@@ -1787,199 +1850,449 @@
       });
 
       if (mode === 'overlap') {
-          if(forceRandom) available.sort(() => Math.random() - 0.5);
+        if (forceRandom) available.sort(() => Math.random() - 0.5);
 
-          while (uncovered.size > 0 && available.length > 0) {
-            let maxCov = 0;
-            let candidates = [];
+        while (uncovered.size > 0 && available.length > 0) {
+          let bestScore = Infinity;
+          let maxCoverage = 0;
+          let candidates = [];
 
-            for (const b of available) {
-              const covCats = b.categories.filter(c => uncovered.has(c));
-              const cov = covCats.length;
-              if (cov === 0) continue;
+          for (const b of available) {
+            const covCats = b.categories.filter(c => uncovered.has(c));
+            const cov = covCats.length;
+            if (cov === 0) continue;
 
-              if (cov > maxCov) { maxCov = cov; candidates = [b]; }
-              else if (cov === maxCov) { candidates.push(b); }
-            }
-
-            if (candidates.length === 0) break;
-            
-            const bestBook = forceRandom 
-              ? candidates[Math.floor(Math.random() * candidates.length)] 
-              : candidates.sort((a, b) => (b.rating || 0) - (a.rating || 0))[0];
-
-            selected.push(bestBook);
-            bestBook.categories.forEach(c => uncovered.delete(c));
-            available = available.filter(b => b.id !== bestBook.id);
-          }
-      } else if (mode === 'single') {
-          const pureBooks = available.filter(b => b.categories.length === 1);
-          const tempUncovered = Array.from(uncovered);
-          
-          if(forceRandom) tempUncovered.sort(() => Math.random() - 0.5); 
-
-          for (const c of tempUncovered) {
-              if (!uncovered.has(c)) continue;
-              const cands = pureBooks.filter(b => b.categories.includes(c));
-              if (cands.length > 0) {
-                  const pick = forceRandom 
-                    ? cands[Math.floor(Math.random() * cands.length)] 
-                    : cands.sort((a, b) => (b.rating || 0) - (a.rating || 0))[0];
-                  selected.push(pick);
-                  uncovered.delete(c);
-                  const index = pureBooks.findIndex(b => b.id === pick.id);
-                  if(index !== -1) pureBooks.splice(index, 1);
-              } else {
-                  failedSingleCategories.push(c);
+            if (useLeastPages) {
+              const pages = b.pages || 320;
+              const cost = pages / cov;
+              if (cost < bestScore - 0.0001) {
+                bestScore = cost;
+                candidates = [b];
+              } else if (Math.abs(cost - bestScore) <= 0.0001) {
+                candidates.push(b);
               }
+            } else {
+              if (cov > maxCoverage) {
+                maxCoverage = cov;
+                candidates = [b];
+              } else if (cov === maxCoverage) {
+                candidates.push(b);
+              }
+            }
           }
+
+          if (candidates.length === 0) break;
+
+          const chosen = forceRandom 
+            ? candidates[Math.floor(Math.random() * candidates.length)]
+            : candidates.sort((a, b) => (b.rating || 0) - (a.rating || 0))[0];
+
+          selected.push(chosen);
+          chosen.categories.forEach(c => uncovered.delete(c));
+          available = available.filter(b => b.id !== chosen.id);
+        }
+      } else if (mode === 'single') {
+        // "No Overlaps" Mode: Target 1 distinct book per prompt
+        const pureBooks = available.filter(b => b.categories.length === 1);
+        const tempUncovered = Array.from(uncovered);
+        if (forceRandom) tempUncovered.sort(() => Math.random() - 0.5);
+
+        for (const c of tempUncovered) {
+          if (!uncovered.has(c)) continue;
+          const cands = pureBooks.filter(b => b.categories.includes(c));
+
+          if (cands.length > 0) {
+            const pick = forceRandom 
+              ? cands[Math.floor(Math.random() * cands.length)]
+              : cands.sort((a, b) => {
+                  if (useLeastPages) return (a.pages || 320) - (b.pages || 320);
+                  return (b.rating || 0) - (a.rating || 0);
+                })[0];
+
+            selected.push(pick);
+            uncovered.delete(c);
+            const index = pureBooks.findIndex(b => b.id === pick.id);
+            if (index !== -1) pureBooks.splice(index, 1);
+          } else {
+            failedSingleCategories.push(c);
+          }
+        }
       }
 
-      const sig = selected.map(b=>b.id).sort().join('|');
-      return { selected, uncovered: Array.from(uncovered), failedSingleCategories, signature: sig };
+      const totalPages = selected.reduce((sum, b) => sum + (b.pages || 0), 0);
+      const signature = selected.map(b => b.id).sort().join('|');
+
+      return {
+        selected,
+        uncovered: Array.from(uncovered),
+        failedSingleCategories,
+        totalPages,
+        bookCount: selected.length,
+        signature
+      };
     }
 
-    function renderResults(mode = 'overlap', forceRandom = false) {
-      currentOptimalMode = mode;
-      let bestPath = null;
+    // 80-run fast solver to eliminate manual refreshing
+    function solveOptimalPath(mode, useLeastPages, forceAlternate = false, lockedOverride = null) {
+      const iterations = (useLeastPages || forceAlternate) ? 80 : 1;
+      let bestResult = null;
 
-      if (forceRandom) {
-          for(let i=0; i<15; i++) {
-              const p = generatePath(mode, true);
-              if (!bestPath) { bestPath = p; continue; }
-              if (p.uncovered.length < bestPath.uncovered.length) { bestPath = p; } 
-              else if (p.uncovered.length === bestPath.uncovered.length) {
-                  if (p.selected.length < bestPath.selected.length) { bestPath = p; } 
-                  else if (p.selected.length === bestPath.selected.length && p.signature !== lastOptimalSignature && bestPath.signature === lastOptimalSignature) {
-                      bestPath = p;
-                  }
-              }
+      for (let i = 0; i < iterations; i++) {
+        const isRandom = i > 0 || forceAlternate;
+        const candidate = runSinglePass(mode, useLeastPages, isRandom, lockedOverride);
+
+        if (!bestResult) {
+          bestResult = candidate;
+          continue;
+        }
+
+        if (candidate.uncovered.length < bestResult.uncovered.length) {
+          bestResult = candidate;
+          continue;
+        }
+        if (candidate.uncovered.length > bestResult.uncovered.length) continue;
+
+        if (useLeastPages) {
+          if (candidate.totalPages < bestResult.totalPages) {
+            bestResult = candidate;
+          } else if (candidate.totalPages === bestResult.totalPages) {
+            if (candidate.bookCount < bestResult.bookCount) bestResult = candidate;
           }
+        } else {
+          if (candidate.bookCount < bestResult.bookCount) {
+            bestResult = candidate;
+          } else if (candidate.bookCount === bestResult.bookCount) {
+            if (candidate.totalPages < bestResult.totalPages) bestResult = candidate;
+          }
+        }
       }
-      
-      if(!bestPath) bestPath = generatePath(mode, forceRandom); 
-      
+
+      return bestResult;
+    }
+
+    // --- LOCK IMPACT / WIGGLE ROOM ANALYZER ---
+    function analyzeWiggleRoom(mode, currentBestPath) {
+      const lockedBooks = activeData.books.filter(b => bookStatus[b.id] === 'include');
+      if (lockedBooks.length === 0) return null;
+
+      const fullyUnlockedPath = solveOptimalPath(mode, true, false, []);
+      const penalty = currentBestPath.totalPages - fullyUnlockedPath.totalPages;
+
+      if (penalty <= 10) return null;
+
+      const wiggleOpportunities = [];
+
+      for (const lb of lockedBooks) {
+        const otherLocks = lockedBooks.filter(b => b.id !== lb.id).map(b => b.id);
+        const pathWithoutThisLock = solveOptimalPath(mode, true, false, otherLocks);
+        const saved = currentBestPath.totalPages - pathWithoutThisLock.totalPages;
+
+        if (saved >= 20) {
+          wiggleOpportunities.push({
+            book: lb,
+            pagesSaved: saved,
+            newTotalPages: pathWithoutThisLock.totalPages
+          });
+        }
+      }
+
+      wiggleOpportunities.sort((a, b) => b.pagesSaved - a.pagesSaved);
+
+      return {
+        totalPenalty: penalty,
+        opportunities: wiggleOpportunities,
+        absoluteMinPages: fullyUnlockedPath.totalPages
+      };
+    }
+
+// =========================================================================
+    // 4-STEP DIAGNOSTIC ENGINE: Identifies the exact culprit for No-Overlap collisions
+    // =========================================================================
+    function diagnoseSingleModeConflict(failedCats, bestPath) {
+      const activeCats = new Set(activeData.categories);
+      const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
+
+      // STEP 1: Check for Pinned Book Collision (The user's hard constraint)
+      const pinnedBooks = bestPath.selected.filter(b => bookStatus[b.id] === 'include');
+      for (const pb of pinnedBooks) {
+        const matchingCats = pb.categories.filter(c => activeCats.has(c));
+        if (matchingCats.length > 1) {
+          return {
+            type: 'pinned',
+            book: pb,
+            categories: matchingCats,
+            bookCount: bestPath.selected.length,
+            goalCount: activeCats.size
+          };
+        }
+      }
+
+      // STEP 2: Check if an 'Avoided' book was the only standalone option
+      for (const catId of failedCats) {
+        const avoidedBooks = rawDatabase.books.filter(b => {
+          if (bookStatus[b.id] !== 'exclude') return false;
+          if (!b.challenges.includes(catId)) return false;
+          const relevant = b.challenges.filter(c => activeCats.has(c));
+          return relevant.length === 1; // It was a true standalone option!
+        });
+
+        if (avoidedBooks.length > 0) {
+          return {
+            type: 'avoid',
+            book: avoidedBooks[0],
+            category: catId
+          };
+        }
+      }
+
+      // STEP 3: Check if the Library Filter starved the category
+      if (isLibActive) {
+        for (const catId of failedCats) {
+          const catalogStandalone = rawDatabase.books.filter(b => {
+            if (!b.challenges.includes(catId)) return false;
+            const relevant = b.challenges.filter(c => activeCats.has(c));
+            return relevant.length === 1;
+          });
+
+          if (catalogStandalone.length > 0) {
+            return {
+              type: 'library',
+              category: catId
+            };
+          }
+        }
+      }
+
+      // STEP 4: Intrinsic Catalog Overlap (Goodreads' fault)
+      const firstFailed = Array.from(failedCats)[0];
+      const booksInCat = rawDatabase.books.filter(b => b.challenges.includes(firstFailed));
+      const overlappingWith = new Set();
+
+      booksInCat.forEach(b => {
+        b.challenges.filter(c => activeCats.has(c) && c !== firstFailed).forEach(c => overlappingWith.add(c));
+      });
+
+      return {
+        type: 'catalog',
+        category: firstFailed,
+        overlappingCategories: Array.from(overlappingWith).slice(0, 2)
+      };
+    }
+
+    // =========================================================================
+    // OPTIMAL PATH RENDERER: Renders single, human-friendly status messages
+    // =========================================================================
+    function renderResults(mode = 'overlap', forceAlternate = false) {
+      currentOptimalMode = mode;
+      const bestPath = solveOptimalPath(mode, leastPagesMode, forceAlternate);
       lastOptimalSignature = bestPath.signature;
       lastOptimal = { selected: bestPath.selected, uncovered: bestPath.uncovered };
-      
+
       const activeCats = new Set(activeData.categories);
-      
       const totalPagesPath = bestPath.selected.reduce((sum, b) => sum + (b.pages || 0), 0);
       const ratedPathBooks = bestPath.selected.filter(b => b.rating != null);
-      const avgRatingPath = ratedPathBooks.length > 0 ? (ratedPathBooks.reduce((sum, b) => sum + b.rating, 0) / ratedPathBooks.length).toFixed(2) : null;
+      const avgRatingPath = ratedPathBooks.length > 0 
+        ? (ratedPathBooks.reduce((sum, b) => sum + b.rating, 0) / ratedPathBooks.length).toFixed(2) 
+        : null;
 
+      // Sort pinned (Must-Read) books directly to the front
+      const pinnedBooks = bestPath.selected.filter(b => bookStatus[b.id] === 'include');
+      const suggestedBooks = bestPath.selected.filter(b => bookStatus[b.id] !== 'include');
+
+      const finalDisplayList = [
+        ...sortBooksList(pinnedBooks),
+        ...sortBooksList(suggestedBooks)
+      ];
+
+      // Update button active styling in the top bar
+      const btnOver = $('btn-shuffle-overlap');
+      const btnSing = $('btn-shuffle-single');
+      if (btnOver && btnSing) {
+        btnOver.classList.toggle('btn-success', mode === 'overlap');
+        btnSing.classList.toggle('btn-success', mode === 'single');
+      }
+
+      // ROI Savings badge
+      let savingsHtml = '';
+      if (leastPagesMode) {
+        const standardBooksPath = solveOptimalPath(mode, false, false);
+        const diff = standardBooksPath.totalPages - totalPagesPath;
+        if (diff > 25) {
+          savingsHtml = `<span class="savings-badge">⚡ <strong>${diff.toLocaleString()} fewer pages</strong> than standard list</span>`;
+        }
+      }
+
+      // Clean Stats Header (No pgs/hr dropdown)
       const algoIndicator = $('optimal-algo-indicator');
-      // if (algoIndicator) {
-      //     const isOverlap = mode === 'overlap';
-      //     const hasOverlaps = activeData.sections.length > 0;
-      //     let modeLabel = isOverlap ? (hasOverlaps ? '🔗 Maximized Overlaps' : '🔗 No Overlaps Available') : '🔀 No Overlaps';
-          
-      //     algoIndicator.className = `algo-indicator ${isOverlap && hasOverlaps ? 'overlap' : 'single'}`;
-      //     algoIndicator.innerHTML = `
-      //         <span>${modeLabel}</span>
-      //         <span style="opacity:0.4;">|</span>
-      //         <span>Target: <strong>${activeCats.size}</strong> Goals</span>
-      //         <span style="opacity:0.4;">|</span>
-      //         <span>Selected: <strong>${bestPath.selected.length}</strong> Books</span>
-      //         ${totalPagesPath > 0 ? `<span style="opacity:0.4;">|</span><span>~<strong>${totalPagesPath.toLocaleString()}</strong> pages</span>` : ''}
-      //         ${avgRatingPath ? `<span style="opacity:0.4;">|</span><span>Avg ⭐ <strong>${avgRatingPath}</strong></span>` : ''}
-      //     `;
-      // }
+      if (algoIndicator) {
+        const isOverlap = mode === 'overlap';
+        const hasOverlaps = activeData.sections.length > 0;
+        let modeLabel = isOverlap 
+          ? (hasOverlaps ? '🔗 Maximized Overlaps' : '🔗 No Overlaps Available') 
+          : '🔀 No Overlaps (1 Book Per Challenge)';
+        
+        if (leastPagesMode) modeLabel += ' · ⚡ Least Pages';
+
+        algoIndicator.className = `algo-indicator ${isOverlap && hasOverlaps ? 'overlap' : 'single'}`;
+
+        algoIndicator.innerHTML = `
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%; flex-wrap:wrap; gap:8px;">
+            <div><strong>📖 ${modeLabel}</strong></div>
+            ${savingsHtml}
+          </div>
+
+          <div style="margin-top:6px; font-size:13px; display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+            <span><strong>${bestPath.selected.length}</strong> books <span style="opacity:0.4;">|</span></span>
+            ${totalPagesPath > 0 ? `<span>~<strong>${totalPagesPath.toLocaleString()}</strong> pages <span style="opacity:0.4;">|</span></span>` : ''}
+            ${avgRatingPath ? `<span>⭐ <strong>${avgRatingPath}</strong> <span style="opacity:0.4;">|</span></span>` : ''}
+            <span>Covers <strong>${activeCats.size - bestPath.uncovered.length}/${activeCats.size}</strong> goals</span>
+            ${pinnedBooks.length > 0 ? `<span style="margin-left:auto; color:var(--primary); font-weight:700;">📌 ${pinnedBooks.length} Pinned at top</span>` : ''}
+          </div>
+        `;
+      }
+
+      // Simplified Pacing Tip Box (Clean, no weird math deltas)
+      const wiggleContainer = $('optimal-wiggle-container');
+      if (wiggleContainer) {
+        if (leastPagesMode) {
+          const wiggleData = analyzeWiggleRoom(mode, bestPath);
+          if (wiggleData && wiggleData.opportunities.length > 0) {
+            wiggleContainer.innerHTML = `
+              <div class="wiggle-banner">
+                <div class="wiggle-header">
+                  <strong>💡 Pacing Tip for a Faster Challenge</strong>
+                </div>
+                <div style="color:var(--muted-fg); margin-bottom: 8px;">
+                  You have pinned some pretty long books! If you want to finish your goals faster, try unpinning these to let the planner pick shorter novellas:
+                </div>
+                <div class="wiggle-list">
+                  ${wiggleData.opportunities.map(op => `
+                    <div class="wiggle-item">
+                      <div>
+                        <strong>${escapeHtml(op.book.title)}</strong> 
+                        <span style="color:var(--muted-fg); font-size:11.5px;">(${op.book.pages || 'Unknown'} pages)</span>
+                      </div>
+                      <button class="wiggle-unlock-btn" data-unlock-id="${op.book.id}">Unpin Book</button>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            `;
+          } else {
+            wiggleContainer.innerHTML = '';
+          }
+        } else {
+          wiggleContainer.innerHTML = '';
+        }
+      }
 
       let html = '';
 
-      // if (mode === 'single' && bestPath.failedSingleCategories.length > 0) {
-      //     const tagsHtml = bestPath.failedSingleCategories.map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
-      //     html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">No standalone books exist for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Every available book in these challenges also overlaps with another active challenge, or has been marked "Avoid".</small></div></div>`;
-      // }
-      if (mode === 'single' && (bestPath.failedSingleCategories.length > 0 || bestPath.selected.some(b => b.categories.length > 1))) {
-          const failedCats = new Set([...bestPath.failedSingleCategories]);
-          bestPath.selected.filter(b => b.categories.length > 1).forEach(b => b.categories.forEach(c => failedCats.add(c)));
-          const tagsHtml = Array.from(failedCats).map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Could not find distinct books!</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">No standalone books exist for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Some available book in these challenges also overlaps with another active challenge, or has been marked "Avoid" or "Must Read".</small></div></div>`;
-      }
+      // DYNAMIC SINGLE-SENTENCE DIAGNOSTIC BANNER (Replaces the generic yellow warning)
+      const hasOverlapInSingle = bestPath.selected.some(b => b.categories.length > 1);
+      if (mode === 'single' && (bestPath.failedSingleCategories.length > 0 || hasOverlapInSingle)) {
+        const failedCats = new Set([...bestPath.failedSingleCategories]);
+        bestPath.selected.filter(b => b.categories.length > 1).forEach(b => b.categories.forEach(c => failedCats.add(c)));
 
-      if (bestPath.uncovered.length > 0 && mode === 'overlap') {
-          const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
-          const libHint = isLibActive ? `disabling the "Filter by My Library" toggle, or expanding your shelves selection` : `resetting excluded books, or adding more challenges`;
-          const tagsHtml = bestPath.uncovered.map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
-          html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges with current settings</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">Missing coverage for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Consider ${libHint} to find other potential matches.</small></div></div>`;
-      }
+        const conflict = diagnoseSingleModeConflict(failedCats, bestPath);
 
-      // Summary Card Banner with Interactive Reading Speed Calculator
-      if (bestPath.selected.length > 0) {
-          const estHours = totalPagesPath > 0 ? Math.round(totalPagesPath / userReadingSpeed) : null;
-          const isOverlap = mode === 'overlap';
-          const hasOverlaps = activeData.sections.length > 0;
-          let modeLabel = isOverlap ? (hasOverlaps ? '🔗 Maximized Overlaps' : '🔗 No Overlaps Available') : '🔀 No Overlaps';
-          
-          if (algoIndicator) {
-              const isOverlap = mode === 'overlap';
-              const hasOverlaps = activeData.sections.length > 0;
-              let modeLabel = isOverlap
-                  ? (hasOverlaps ? '🔗 Maximized Overlaps' : '🔗 No Overlaps Available')
-                  : '🔀 No Overlaps';
-
-              algoIndicator.className = `algo-indicator ${isOverlap && hasOverlaps ? 'overlap' : 'single'}`;
-
-          algoIndicator.innerHTML = `
-            <div>
-              <strong>📖 Your Reading Plan</strong> · ${modeLabel}
-            </div>
-
-            <div style="margin-top:6px; font-size:13px; display:flex; flex-wrap:wrap; gap:12px;">
-              <span><strong>${bestPath.selected.length}</strong> books <span style="opacity:0.4;">|</span> </span>
-              ${totalPagesPath > 0 ? `<span>~<strong>${totalPagesPath.toLocaleString()}</strong> pages <span style="opacity:0.4;">|</span> </span>` : ''}
-              ${avgRatingPath ? `<span>⭐ <strong>${avgRatingPath} </strong> <span style="opacity:0.4;">|</span> </span>` : ''}
-              <span>Covers <strong>${activeCats.size - bestPath.uncovered.length}/${activeCats.size}</strong> goals</span>
-
-              ${
-                estHours
-                  ? `<span>
-                      Reading Time: ~<strong>${estHours} hrs</strong>
-                      (at
-                      <select id="reading-speed-select" style="background:var(--bg); color:var(--fg); border:1px solid var(--border); border-radius:6px; padding:2px 6px; font-size:11px;">
-                        <option value="20" ${userReadingSpeed===20?'selected':''}>20</option>
-                        <option value="30" ${userReadingSpeed===30?'selected':''}>30</option>
-                        <option value="40" ${userReadingSpeed===40?'selected':''}>40</option>
-                        <option value="50" ${userReadingSpeed===50?'selected':''}>50</option>
-                      </select>
-                      pgs/hr)
-                    </span>`
-                  : ''
-              }
+        if (conflict.type === 'pinned') {
+          html += `
+            <div class="banner" style="grid-column: 1/-1; border-left-color: var(--primary); background: var(--primary-soft);">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                  <strong>ℹ️ Pinned Shortcut:</strong><br>
+                  Your pinned book <strong>${escapeHtml(conflict.book.title)}</strong> fulfills both <em>${conflict.categories.map(c => resolveChallengeName(c)).join(' and ')}</em>. 
+                  That’s why your plan only needs <strong>${conflict.bookCount} books</strong> instead of ${conflict.goalCount}!
+                </div>
+                <button class="btn outline sm" data-unlock-id="${conflict.book.id}" style="white-space:nowrap;">
+                  Unpin to split prompts
+                </button>
+              </div>
             </div>
           `;
-          }
+        } else if (conflict.type === 'avoid') {
+          html += `
+            <div class="banner warn" style="grid-column: 1/-1;">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <div>
+                  <strong>ℹ️ Filter Conflict:</strong><br>
+                  You marked <strong>${escapeHtml(conflict.book.title)}</strong> as "Avoid", but it was the only standalone option for <em>${escapeHtml(resolveChallengeName(conflict.category))}</em>.
+                </div>
+                <button class="btn outline sm" data-restore-id="${conflict.book.id}" style="white-space:nowrap;">
+                  Restore Book
+                </button>
+              </div>
+            </div>
+          `;
+        } else if (conflict.type === 'library') {
+          html += `
+            <div class="banner warn" style="grid-column: 1/-1;">
+              <div>
+                <strong>ℹ️ Library Shelves:</strong><br>
+                None of the standalone books for <em>${escapeHtml(resolveChallengeName(conflict.category))}</em> were found in your imported library. All your owned books for this prompt overlap with other challenges.
+              </div>
+            </div>
+          `;
+        } else if (conflict.type === 'catalog') {
+          const overlapNames = conflict.overlappingCategories.map(c => resolveChallengeName(c)).join(' and ');
+          html += `
+            <div class="banner warn" style="grid-column: 1/-1;">
+              <div>
+                <strong>ℹ️ Goodreads Catalog Overlap:</strong><br>
+                In Goodreads, every single book in <em>${escapeHtml(resolveChallengeName(conflict.category))}</em> also belongs to <em>${escapeHtml(overlapNames)}</em>.
+              </div>
+            </div>
+          `;
+        }
+      }
+
+      // Coverage warning
+      if (bestPath.uncovered.length > 0 && mode === 'overlap') {
+        const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
+        const libHint = isLibActive ? `disabling "Filter by My Library", or expanding your shelf selections` : `resetting excluded books, or adding more challenges`;
+        const tagsHtml = bestPath.uncovered.map(c => `<span class="tag" style="display:inline-block; margin:0 2px;" data-locate="sidebar-chal-${safeId(c)}">${escapeHtml(resolveChallengeName(c))}</span>`).join('');
+        html += `<div class="banner warn" style="grid-column: 1/-1;"><div><strong>⚠️ Cannot complete all challenges with current settings</strong><br><span style="display:inline-block; margin-top:6px; margin-bottom:2px;">Missing coverage for: ${tagsHtml}</span><br><small style="display:block; margin-top:4px; opacity:0.85;">Consider ${libHint} to find other potential matches.</small></div></div>`;
       }
 
       if (activeCats.size === 0) {
-          html += '<div class="empty">No challenges selected.</div>';
+        html += '<div class="empty">No challenges selected.</div>';
       } else if (!bestPath.selected.length) {
-          html += '<div class="empty">No books available for this path.</div>';
+        html += '<div class="empty">No books available for this path.</div>';
       } else {
-          html += `<div class="book-grid">` + sortBooksList(bestPath.selected).map(b => generateBookCardHTML(b, true, new Set(bestPath.uncovered))).join('') + `</div>`;
+        html += `<div class="book-grid">` + finalDisplayList.map(b => generateBookCardHTML(b, true, new Set(bestPath.uncovered))).join('') + `</div>`;
       }
 
       const outOpt = $('output-optimal');
-      if(outOpt) outOpt.innerHTML = html;
-
-      // Wire Reading Speed listener
-      addEvt('reading-speed-select', 'change', (e) => {
-        userReadingSpeed = parseInt(e.target.value, 10);
-        renderResults(currentOptimalMode, false);
-      });
-      
-      const overlapBtn = $('btn-shuffle-overlap');
-      if (overlapBtn) {
-          const hasOverlaps = activeData.sections.length > 0;
-          overlapBtn.disabled = !hasOverlaps;
-          overlapBtn.title = hasOverlaps ? "Find a new path using overlapping books" : "No overlapping books available in current selection";
-      }
+      if (outOpt) outOpt.innerHTML = html;
     }
+
+    // EVENT LISTENER: 1-Click "Restore Book" action for Avoided book conflicts
+    document.body.addEventListener('click', (e) => {
+      const restoreBtn = e.target.closest('[data-restore-id]');
+      if (restoreBtn) {
+        const bId = restoreBtn.getAttribute('data-restore-id');
+        bookStatus[bId] = 'neutral';
+        saveState();
+        showToast("Book restored to reading options!");
+        renderAll();
+      }
+    });
 
     addEvt('btn-shuffle-overlap', 'click', () => renderResults('overlap', true));
     addEvt('btn-shuffle-single', 'click', () => renderResults('single', true));
+
+    // Handle One-Click Unlocks from the Wiggle Banner
+    document.body.addEventListener('click', (e) => {
+      const unlockBtn = e.target.closest('[data-unlock-id]');
+      if (unlockBtn) {
+        const bId = unlockBtn.getAttribute('data-unlock-id');
+        bookStatus[bId] = 'neutral';
+        saveState();
+        showToast("Book unlocked! Recalculated path.");
+        renderAll();
+      }
+    });
 
     addEvt('btn-copy-optimal', 'click', async (e) => {
         if (!lastOptimal.selected.length) return;
@@ -1990,20 +2303,16 @@
             ? (ratedBooks.reduce((s, b) => s + b.rating, 0) / ratedBooks.length).toFixed(2)
             : null;
 
-        // ---------- Goal Calculations ----------
         const totalGoals = activeData.categories.length;
         const coveredGoals = totalGoals - (lastOptimal.uncovered ? lastOptimal.uncovered.length : 0);
         const goalsStr = totalGoals > 0 ? `, covers ${coveredGoals}/${totalGoals} goals` : '';
 
-        // ---------- Plain Text ----------
         let text = `My Optimal Reading List (${lastOptimal.selected.length} books`;
         if (totalPages > 0) text += `, ~${totalPages.toLocaleString()} pages`;
         if (avgRating) text += `, avg ⭐ ${avgRating}`;
         text += `${goalsStr})\n\n`;
 
-        // ---------- HTML ----------
         let html = `My Optimal Reading List (${lastOptimal.selected.length} books`;
-
         if (totalPages > 0) html += `, ~${totalPages.toLocaleString()} pages`;
         if (avgRating) html += `, avg ⭐ ${avgRating}`;
         html += `${goalsStr})<ul>`;
@@ -2019,10 +2328,7 @@
             const metaText = metaParts.length ? ` — ${metaParts.join(', ')}` : '';
             const metaHtml = metaParts.length ? ` &mdash; ${metaParts.join(', ')}` : '';
 
-            // Plain text
             text += `• ${b.title}${authorStr}${metaText} (Covers: ${tags})\n`;
-
-            // HTML
             html += `
                 <li>
                     <a href="${b.url || '#'}">${b.title}</a>
@@ -2035,7 +2341,6 @@
         });
 
         html += `</ul>`;
-
         copyToClipboard(text, e.target, html);
     });
     
@@ -2046,7 +2351,6 @@
     }
 
     // --- ENHANCED SPREADSHEET VIEW ---
-
     function renderSheet() {
       const container = document.querySelector('#view-spreadsheet .workspace-content');
       const subEl = $('convert-sub');
@@ -2059,7 +2363,6 @@
           return;
       }
 
-      // Update Column Sort Indicators
       document.querySelectorAll('#spreadsheet-table th[data-sheet-sort]').forEach(th => {
         const col = th.dataset.sheetSort;
         const icon = th.querySelector('.sort-icon');
@@ -2092,7 +2395,6 @@
         const labelHtml = `${sec.categories.map(c => getChallengeHtml(c)).join(' + ')} <br><span style="font-size:11px;color:var(--muted-fg);font-weight:normal;">(Common: ${sec.books.length} books)</span>`;
         if (sec.categories.length > maxOverlap) maxOverlap = sec.categories.length;
 
-        // Sort books within each section based on active sheetSort
         const sortedSecBooks = sortBooksList(sec.books, `${sheetSort.column}-${sheetSort.direction}`);
 
         sortedSecBooks.forEach((b, idx) => {
@@ -2117,7 +2419,6 @@
           subEl.innerHTML = `Overlap groups: <strong>${activeData.sections.length}</strong> combinations &nbsp;|&nbsp; Overlapping books: <strong>${overlappingBooksCount.size} </strong>books &nbsp;|&nbsp; Max overlap: <strong>${maxOverlap}</strong> Challenges`;
       }
 
-      // Re-attach header sort events
       document.querySelectorAll('#spreadsheet-table th[data-sheet-sort]').forEach(th => {
         th.addEventListener('click', (e) => {
           const col = e.currentTarget.dataset.sheetSort;
@@ -2467,8 +2768,8 @@
         { title: "Explore: Optimized List", text: "<strong>Optimized List</strong> uses an algorithm to calculate the absolute smallest reading list necessary to complete your goals.", target: ".tour-target-tab-opt", placement: "bottom", onEnter: () => switchTab('optimal') },
         { 
           title: "Alternate Recommendations", 
-          text: "Want a different path? Use these buttons to explore alternate options:<br><br>" +
-               "🎲 <strong>Alternate (Overlaps):</strong> Re-runs the algorithm with a random seed to discover different high-overlap recommendations.<br>" +
+          text: "Want a different path? Use these buttons in the filter bar to explore alternate options:<br><br>" +
+               "🎲 <strong>Alternate (Overlaps):</strong> Finds high-overlap recommendations.<br>" +
                "🎲 <strong>Alternate (No Overlaps):</strong> Recalculates the list ensuring exactly one unique, standalone book is selected for each prompt (no overlaps allowed).", 
           target: "#btn-shuffle-overlap", placement: "bottom", 
           onEnter: () => switchTab('optimal') 

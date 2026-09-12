@@ -169,7 +169,10 @@ ${rows}
 </details>`;
   }).join('\n');
   guide = replaceBetween(guide, '<!-- SHEET_COMBOS_START -->', '<!-- SHEET_COMBOS_END -->', comboHtml || '<p class="stats-row">No overlapping books this season.</p>');
-
+  
+  // 5) Inject privacy-friendly analytics (no cookies, GDPR compliant)
+  const analyticsTag = `<script data-goatcounter="https://sugamb.goatcounter.com/count" async src="//gc.zgo.at/count.js"><\/script>`;
+  guide = guide.replace('</head>', analyticsTag + '\n</head>');
   write('guide.html', guide);
   console.log(`✅ guide.html rebuilt — season "${season}", ${challenges.length} categories, ${books.length} books, ${combos.length} overlap combos.`);
 }

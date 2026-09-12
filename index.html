@@ -956,14 +956,16 @@ ${isError ? `<button class="btn outline" style="margin-top:20px;" onclick="docum
       setMeta('meta[property="og:title"]', fullTitle);
       setMeta('meta[name="twitter:title"]', fullTitle);
       const slot = $('season-chip-slot');
-      if (slot && end) {
+      const renderChip = () => {
+        if (!slot || !end) return;
         const days = Math.ceil((new Date(end) - Date.now()) / 86400000);
-        if (!isNaN(days)) {
-          slot.innerHTML = days > 0
-            ? `<span class="season-chip">⏳ Season ends in ${days} day${days === 1 ? '' : 's'}</span>`
-            : `<span class="season-chip" style="background:var(--muted); color:var(--muted-fg);">Season ended</span>`;
-        }
-      }
+        if (isNaN(days)) return;
+        slot.innerHTML = days > 0
+          ? `<span class="season-chip">⏳ Season ends in ${days} day${days === 1 ? '' : 's'}</span>`
+          : `<span class="season-chip" style="background:var(--muted); color:var(--muted-fg);">Season ended</span>`;
+      };
+      renderChip();
+      if (end) setInterval(renderChip, 60000); // refresh every 60s
     }
     // --- INITIALIZATION ---
     async function init() {

@@ -78,7 +78,7 @@ function deterministicPass(mode, useLeastPages, activeCatIds) {
   const failedSingleCategories = [];
   const orderNotes = [];
   const extraReads = [];
-  const available = books.filter(b => { const rel = (b.challenges || []).filter(c => activeCats.has(c)); return rel.length > 0 ? { ...b, categories: rel } : null; }).filter(Boolean);
+  const available = books.map(b => { const rel = (b.challenges || []).filter(c => activeCats.has(c)); return rel.length > 0 ? { ...b, categories: rel } : null; }).filter(Boolean);
   if (mode === 'overlap') {
     let pool = available.slice();
     while (uncovered.size > 0 && pool.length > 0) {
@@ -93,17 +93,8 @@ function deterministicPass(mode, useLeastPages, activeCatIds) {
       selected.push(chosen); chosen.categories.forEach(c => uncovered.delete(c)); pool = pool.filter(b => b.id !== chosen.id);
     }
   } else {
-    const takenCats = new Set();
-    const pureCount = c => available.filter(b => b.categories.length === 1 && b.categories[0] === c).length;
-    for (const pb of available) {
-      const freeCats = pb.categories.filter(c => uncovered.has(c) && !takenCats.has(c));
-      if (freeCats.length === 0) { if (pb.categories.some(c => uncovered.has(c))) { extraReads.push(pb); selected.push(pb); } continue; }
-      let best = freeCats[0], bestN = Infinity;
-      for (const c of freeCats) { const n = pureCount(c); if (n < bestN) { bestN = n; best = c; } }
-      takenCats.add(best); selected.push(pb); uncovered.delete(best);
-      const others = pb.categories.filter(c => c !== best && activeCats.has(c));
-      if (others.length > 0) orderNotes.push({ book: pb, collects: best, others });
-    }
+    // Mirror the app exactly: with no pins, single mode = standalone (pure) books only.
+    // Categories whose books all overlap cannot be covered in strict one-book-per-challenge mode.
     const pureBooks = available.filter(b => b.categories.length === 1);
     for (const c of Array.from(uncovered)) {
       if (!uncovered.has(c)) continue;

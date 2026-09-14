@@ -1320,7 +1320,7 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
       if (optimal) { btn.textContent = 'Done'; } else { btn.innerHTML = `Show <span id="sheet-count">${lastFilteredCount}</span> books`; }
     }
     async function init() {
-      try { const res = await fetch('data22.json'); if (!res.ok) throw new Error("Could not load data.json"); baseDatabase = await res.json(); }
+      try { const res = await fetch('data.json'); if (!res.ok) throw new Error("Could not load data.json"); baseDatabase = await res.json(); }
       catch (err) { console.warn("Using fallback database data."); baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA)); fallbackUsed = true; }
       $('boot-skeleton')?.remove();
       if (fallbackUsed) $('fallback-banner')?.classList.remove('hidden');

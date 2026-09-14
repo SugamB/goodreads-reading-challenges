@@ -5,10 +5,14 @@ on:
     branches: [ main ]
     paths:
       - 'data.json'
-      - 'guide.html'
+      - 'guide.template.html'
       - 'build-guide.js'
       - 'index.html'
       - '.github/workflows/build.yml'
+
+concurrency:
+  group: build-guide-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:

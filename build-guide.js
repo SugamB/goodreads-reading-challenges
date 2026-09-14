@@ -17,10 +17,13 @@ if (!guide) { console.error('[guide] template missing (guide.template.html / gui
 
 // --- marker injection ---
 function inject(html, name, content) {
-  const S = name + '_START', E = name + '_END';
-  const si = html.indexOf(S); if (si === -1) { console.warn('[guide] missing marker', name); return html; }
-  const so = si + S.length; const ei = html.indexOf(E, so); if (ei === -1) { console.warn('[guide] missing end marker', name); return html; }
-  return html.slice(0, so) + content + html.slice(ei);
+  const re = new RegExp(
+    '(?:<!--|/\\*)?\\s*' + name + '_START\\s*(?:-->|\\*/)?' +
+    '[\\s\\S]*?' +
+    '(?:<!--|/\\*)?\\s*' + name + '_END\\s*(?:-->|\\*/)?'
+  );
+  if (!re.test(html)) { console.warn('[guide] missing marker', name); return html; }
+  return html.replace(re, function () { return content; });
 }
 // --- extract design system from index.html ---
 function cssBlock(src, sel) { const i = src.indexOf(sel); if (i === -1) return ''; const j = src.indexOf('{', i); if (j === -1) return ''; let d = 0; for (let k = j; k < src.length; k++) { if (src[k] === '{') d++; else if (src[k] === '}') { d--; if (d === 0) return src.slice(i, k + 1); } } return ''; }

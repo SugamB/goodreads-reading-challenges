@@ -126,10 +126,10 @@ header.app.tour-active-header{z-index:1001}
 .challenge-item:hover{border-color:var(--primary);transform:translateY(-1px)}
 .challenge-item.selected{background:var(--primary-soft);border-color:var(--primary)}
 .challenge-item input[type="checkbox"]{width:16px;height:16px;margin-top:2px;accent-color:var(--primary);pointer-events:none;flex-shrink:0}
-.challenge-info{flex-grow:1;padding-right:20px}
+.challenge-info{flex-grow:1;padding-right:0;min-width:0}
 .challenge-info strong{display:block;font-size:13px;color:var(--fg)}
 .challenge-info span{font-size:11px;color:var(--muted-fg)}
-.chal-actions{position:absolute;right:8px;top:10px;display:flex;gap:2px;opacity:.3;transition:.2s}
+.chal-actions{display:flex;gap:2px;opacity:.35;transition:.2s;margin-left:auto;align-self:flex-start;flex-shrink:0}
 .challenge-item:hover .chal-actions{opacity:1}
 .chal-actions button{background:transparent;border:none;font-size:13px;padding:4px;border-radius:4px;cursor:pointer;color:var(--muted-fg);display:inline-flex}
 .chal-actions button:hover{background:var(--border);color:var(--fg)}
@@ -333,7 +333,7 @@ html.dark .savings-badge{ background:color-mix(in oklab,var(--success) 18%,var(-
 @media (max-width:1200px){.dashboard{grid-template-columns:280px 1fr}.sidebar.left-sidebar{position:static}.promo-sidebar{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:stretch;position:static;margin-top:10px}.promo-sidebar .sidebar-header{grid-column:1/-1;margin-bottom:-4px}.boot-skeleton .sk-side{width:220px}}
 @media (max-width:1024px){.book-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))!important}}
 @media (max-width:900px){.mobile-toggle{display:inline-flex}.sidebar.left-sidebar{position:fixed;top:0;left:0;bottom:0;width:320px;max-width:85vw;background:var(--bg);z-index:50;padding:20px;transform:translateX(-100%);transition:transform .3s cubic-bezier(.4,0,.2,1);overflow-y:auto;border-right:1px solid var(--border);margin:0}.sidebar.left-sidebar.open{transform:translateX(0)}.sidebar-backdrop.open{display:block;opacity:1}.header-inner{padding:12px 16px}.dashboard{grid-template-columns:1fr;padding:16px 16px}.workspace{min-height:calc(100vh - 80px);border-radius:0;border-left:none;border-right:none}#grid-size-filter{display:none!important}.boot-skeleton{flex-direction:column}.boot-skeleton .sk-side{width:100%}}
-@media (max-width:480px){.book-grid{grid-template-columns:repeat(auto-fill,minmax(115px,1fr))!important}}
+/* @media (max-width:480px){.book-grid{grid-template-columns:repeat(auto-fill,minmax(115px,1fr))!important}} */
 /* ============ MOBILE UX v6 (last, wins cascade) ============ */
 @media (max-width:900px){
 .header-actions .header-link,.header-actions #theme-toggle,.header-actions #btn-start-tour{display:none!important}
@@ -357,13 +357,12 @@ html.dark .savings-badge{ background:color-mix(in oklab,var(--success) 18%,var(-
 .quickstart .btn{align-self:flex-start;margin:6px 8px 0}
 .kofi-bottom{display:none!important}
 #view-spreadsheet .kofi-top{display:none!important}
-.support-btn.kofi{background:var(--primary)!important}
 .drawer-done{display:inline-flex}
 .challenge-item{padding:14px 12px;min-height:56px;align-items:center}
 .challenge-item input[type="checkbox"]{width:20px;height:20px;margin-top:0}
 .challenge-info strong{font-size:14px}
 .challenge-info span{font-size:12px}
-.chal-actions{opacity:.55;top:50%;transform:translateY(-50%)}
+.chal-actions{opacity:.6;align-self:center}
 .chal-actions button,.chal-actions a.chal-link{padding:8px;font-size:15px}
 .mobile-filter-backdrop{display:block}
 #header-menu-sheet{display:block}
@@ -394,7 +393,7 @@ html.dark .savings-badge{ background:color-mix(in oklab,var(--success) 18%,var(-
 .optimal-toolbar{display:flex;flex-wrap:wrap;gap:8px;padding:12px 16px 0;background:var(--bg)}
 .optimal-toolbar .btn{flex:1 1 40%;justify-content:center}
 .optimal-toolbar .toggle-container{flex-basis:100%;justify-content:space-between;flex-direction:row-reverse;padding:12px;border-radius:10px}
-.book-grid{grid-template-columns:repeat(2,1fr)!important;gap:12px!important}
+.book-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))!important;gap:12px!important}
 .book-card{padding:12px;border-radius:14px}
 .book-card:hover{transform:none}
 .book-cover-wrapper a{max-width:110px}
@@ -407,17 +406,16 @@ html.dark .savings-badge{ background:color-mix(in oklab,var(--success) 18%,var(-
 .tag-more{display:inline-flex}
 .status-group button{min-height:42px;font-size:10.5px;padding:8px 4px}
 #output-optimal{padding-bottom:88px}
-#output-optimal .book-grid{display:flex;flex-direction:column;gap:10px;counter-reset:itin}
-#output-optimal .book-card{display:grid;grid-template-columns:22px 52px 1fr auto;grid-template-areas:"num cover info side" ". cover status side";column-gap:10px;row-gap:8px;padding:12px;align-items:start}
-#output-optimal .book-card::before{counter-increment:itin;content:counter(itin);grid-area:num;width:22px;height:22px;margin-top:2px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted-fg);background:var(--muted)}
-#output-optimal .book-cover-wrapper{grid-area:cover;margin:0}
-#output-optimal .book-cover-wrapper a{max-width:52px;box-shadow:0 2px 6px rgba(0,0,0,.18)}
-#output-optimal .book-info{grid-area:info;align-items:flex-start;text-align:left}
-#output-optimal .tags{justify-content:flex-start;margin-top:6px}
+#output-optimal .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))!important;gap:12px!important;counter-reset:itin}
+#output-optimal .book-card{display:flex;flex-direction:column;gap:8px;padding:12px;border-radius:14px}
+#output-optimal .book-card::before{counter-increment:itin;content:counter(itin);position:absolute;top:8px;left:8px;z-index:6;width:22px;height:22px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--muted-fg);background:var(--card);box-shadow:var(--shadow-soft)}
+#output-optimal .card-side{display:flex;flex-direction:row;justify-content:flex-end;align-items:center;gap:6px;min-height:22px}
+#output-optimal .read-last-badge,#output-optimal .extra-read-badge{position:static;box-shadow:none;font-size:10px;padding:4px 8px;white-space:nowrap}
+#output-optimal .book-cover-wrapper{margin:0 0 6px}
+#output-optimal .book-cover-wrapper a{max-width:110px}
+#output-optimal .book-info{align-items:flex-start;text-align:left}
 #output-optimal .book-author{font-size:11px}
-#output-optimal .card-side{grid-area:side;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
-#output-optimal .read-last-badge,#output-optimal .extra-read-badge{position:static;box-shadow:none;font-size:10px;padding:5px 9px;white-space:nowrap}
-#output-optimal .status-wrap{grid-area:status;margin-top:0;padding-top:0}
+#output-optimal .tags{justify-content:flex-start;margin-top:8px}
 #btn-copy-optimal{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:45;padding:14px;font-size:14.5px;border-radius:14px;background:var(--card);color:var(--fg);border:1px solid var(--primary);box-shadow:0 8px 24px rgba(0,0,0,.28)}
 .copy-math{display:inline;font-weight:600;color:var(--muted-fg);font-size:12.5px}
 .algo-indicator{font-size:12px}
@@ -445,6 +443,10 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
 .toast-container{left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom))}
 .toast{max-width:100%}
 }
+.challenge-info strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.acc-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.qs-row strong{display:inline-flex;align-items:center;gap:5px}
+.qs-go{margin-left:auto;opacity:.55;transform:rotate(-90deg);flex-shrink:0}
 </style>
 </head>
 <body>
@@ -757,12 +759,9 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
     </aside>
     <main class="workspace hidden" id="workspace">
       <div class="quickstart mobile-only" id="mobile-quickstart">
-        <button class="qs-row" id="qs-1"><span class="qs-num">1</span><span><strong>Challenges</strong> — pick the lists
-            you're playing this season.</span></button>
-        <button class="qs-row" id="qs-2"><span class="qs-num">2</span><span><strong>Filter & Sort</strong> — search,
-            sort & presets live in the bottom sheet.</span></button>
-        <button class="qs-row" id="qs-3"><span class="qs-num">3</span><span><strong>Optimal → Copy</strong> — get the
-            shortest reading order and copy it.</span></button>
+        <button class="btn sm qs-row" id="qs-1"><span class="qs-num">1</span><span><strong><svg class="ic ic-sm" aria-hidden="true"><use href="#i-menu"/></svg> Challenges</strong> — open the menu, pick your lists, tap Done.</span><svg class="ic qs-go" aria-hidden="true"><use href="#i-chev-d"/></svg></button>
+        <button class="btn sm qs-row" id="qs-2"><span class="qs-num">2</span><span><strong><svg class="ic ic-sm" aria-hidden="true"><use href="#i-settings"/></svg> Filter & Sort</strong> — search, sort & presets in the bottom sheet.</span><svg class="ic qs-go" aria-hidden="true"><use href="#i-chev-d"/></svg></button>
+        <button class="btn sm qs-row" id="qs-3"><span class="qs-num">3</span><span><strong><svg class="ic ic-sm" aria-hidden="true"><use href="#i-spark"/></svg> Optimal → Copy</strong> — shortest reading order, one tap to copy.</span><svg class="ic qs-go" aria-hidden="true"><use href="#i-chev-d"/></svg></button>
         <button class="btn sm" id="btn-qs-dismiss">Got it</button>
       </div>
       <div id="fallback-banner" class="banner warn hidden" style="margin:12px 12px 0;">
@@ -1285,14 +1284,23 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
     }
     addEvt('season-chip-slot', 'click', (e) => { if (e.target.closest('.season-chip') && seasonChipExplain) showToast(IC('hour') + ' ' + seasonChipExplain); });
     function detectSeasonInfo() {
-      const d = baseDatabase || {}; let name = d.seasonName || d.season || null; seasonEndIso = d.seasonEnd || null;
-      if (!name) {
-        const haystack = ((d.challenges || []).map(c => (c.name || '') + ' ' + (c.id || '')).join(' ')) + ' ' + (d.title || ''); const m = haystack.match(/\b(Summer|Fall|Autumn|Winter|Spring)\b/i); const ym = haystack.match(/\b(20\d{2})\b/); const year = ym ? ym[1] : (d.lastUpdated ? String(new Date(d.lastUpdated).getFullYear()) : String(new Date().getFullYear()));
-        if (m) { name = `${m[1] === 'Autumn' ? 'Fall' : m[1]} ${year}`; } else { const ref = d.lastUpdated ? new Date(d.lastUpdated) : new Date(); const mo = ref.getMonth(); const season = (mo <= 1 || mo === 11) ? 'Winter' : (mo <= 4 ? 'Spring' : (mo <= 7 ? 'Summer' : 'Fall')); name = `${season} ${ref.getFullYear()}`; }
-      }
+      const d = baseDatabase || {}; let name = computeSeasonName(d); seasonEndIso = d.seasonEnd || null;
       const fullTitle = `${name} Goodreads Challenge Optimizer`; document.title = fullTitle;
       const setMeta = (sel, val) => { const el = document.querySelector(sel); if (el) el.setAttribute('content', val); };
       setMeta('meta[property="og:title"]', fullTitle); setMeta('meta[name="twitter:title"]', fullTitle); renderSeasonChip(); if (seasonEndIso) setInterval(renderSeasonChip, 60000);
+    }
+    function computeSeasonName(d){
+      let name = d.seasonName || d.season || null;
+      if (!name) {
+        const hay = ((d.challenges||[]).map(c=>(c.name||'')+' '+(c.id||'')).join(' '))+' '+(d.title||'');
+        const m = hay.match(/\b(Summer|Fall|Autumn|Winter|Spring)\b/i);
+        const ym = hay.match(/\b(20\d{2})\b/);
+        const year = ym ? ym[1] : (d.lastUpdated ? String(new Date(d.lastUpdated).getFullYear()) : String(new Date().getFullYear()));
+        if (m) name = `${m[1]==='Autumn'?'Fall':m[1]} ${year}`;
+        else { const ref = d.lastUpdated ? new Date(d.lastUpdated) : new Date(); const mo = ref.getMonth();
+          const s = (mo<=1||mo===11)?'Winter':(mo<=4?'Spring':(mo<=7?'Summer':'Fall')); name = `${s} ${ref.getFullYear()}`; }
+      }
+      return name;
     }
     function initStickyObserver() {
       const sentinel = $('sticky-sentinel'); const zone = $('sticky-zone-main'); if (!zone || !('IntersectionObserver' in window)) return;
@@ -1312,15 +1320,38 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
       if (optimal) { btn.textContent = 'Done'; } else { btn.innerHTML = `Show <span id="sheet-count">${lastFilteredCount}</span> books`; }
     }
     async function init() {
-      try { const res = await fetch('data.json'); if (!res.ok) throw new Error("Could not load data.json"); baseDatabase = await res.json(); }
+      try { const res = await fetch('data22.json'); if (!res.ok) throw new Error("Could not load data.json"); baseDatabase = await res.json(); }
       catch (err) { console.warn("Using fallback database data."); baseDatabase = JSON.parse(JSON.stringify(FALLBACK_DATA)); fallbackUsed = true; }
       $('boot-skeleton')?.remove();
       if (fallbackUsed) $('fallback-banner')?.classList.remove('hidden');
       loadState();
+      // --- Season reconciliation: prune ghost selections & auto-select on new season ---
+      const baseIds = new Set(baseDatabase.challenges.map(c=>c.id));
+      const customIds = new Set(Object.keys(customLists));
+      let reconciled = false, seasonChanged = false, prunedCount = 0;
+      selectedChallenges.forEach(id=>{ if(!baseIds.has(id)&&!customIds.has(id)){ selectedChallenges.delete(id); reconciled=true; } });
+      const bookIds = new Set(baseDatabase.books.map(b=>'b_'+safeId(b.title+(b.author||''))));
+      customIds.forEach(cid=>{(customLists[cid].books||[]).forEach(cb=>bookIds.add('b_'+safeId(cb.title+(cb.author||''))));});
+      Object.keys(bookStatus).forEach(k=>{ if(!bookIds.has(k)){ delete bookStatus[k]; reconciled=true; } });
+      const sig = computeSeasonName(baseDatabase);
+      const savedSig = localStorage.getItem('gr_season_sig');
+      if (savedSig && savedSig !== sig) { selectedChallenges = new Set([...baseIds, ...customIds]); seasonChanged = true; reconciled = true; }
+      // Self-heal: pruning wiped the entire selection (full season swap even though the
+      // computed label didn't change — e.g. forgotten seasonName) → reselect everything.
+      if (prunedCount > 0 && selectedChallenges.size === 0) {
+        selectedChallenges = new Set([...baseIds, ...customIds]);
+        seasonChanged = true;
+        reconciled = true;
+      }
+      localStorage.setItem('gr_season_sig', sig);
+      if (reconciled) saveState();
+      // --- End season reconciliation ---      
       if (firstVisit) { selectedChallenges = new Set([...baseDatabase.challenges.map(c => c.id), ...Object.keys(customLists)]); }
       let foundNew = false; baseDatabase.challenges.forEach(c => { if (!seenChallenges.has(c.id) && seenChallenges.size > 0) { c.isNew = true; foundNew = true; } });
       baseDatabase.challenges.forEach(c => seenChallenges.add(c.id)); if (foundNew || seenChallenges.size === 0) saveState();
-      buildRawDatabase(); applyTheme(); detectSeasonInfo(); updateShellMetrics(); updateSheetLabels(); initStickyObserver();
+      buildRawDatabase();
+      if (seasonChanged) showToast(IC('spark') + ` New season loaded — all ${baseDatabase.challenges.length} challenges selected.`);
+      applyTheme(); detectSeasonInfo(); updateShellMetrics(); updateSheetLabels(); initStickyObserver();
       window.addEventListener('resize', updateShellMetrics);
       if (localStorage.getItem('gr_mobile_qs')) $('mobile-quickstart')?.classList.add('dismissed');
       if (baseDatabase.lastUpdated) { const dt = new Date(baseDatabase.lastUpdated); const formatted = dt.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' }); const upEl = $('last-updated-display'); if (upEl) upEl.textContent = `List updated: ${formatted}`; }
@@ -1407,7 +1438,7 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
         const copyAction = `<button class="copy-chal" data-id="${escapeHtml(c.id)}" title="Copy all books in this challenge">${IC('copy')}</button>`;
         const customActions = extLink + copyAction + (c.isCustom ? ` <button class="edit" data-id="${escapeHtml(c.id)}" title="Edit Custom List">${IC('pencil')}</button> <button class="delete" data-id="${escapeHtml(c.id)}" title="Delete Custom List">${IC('trash')}</button>` : '');
         const newBadge = c.isNew ? `<span class="badge-new">NEW</span>` : '';
-        return `<div class="challenge-item ${isSel ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}" role="checkbox" aria-checked="${isSel}" tabindex="0"><input type="checkbox" ${isSel ? 'checked' : ''} tabindex="-1" aria-hidden="true" /><div class="challenge-info"><strong>${c.isCustom ? IC('star', 'ic-fill ic-sm') : ''}${escapeHtml(c.name)}${newBadge}</strong><span>${c.count} books</span></div><div class="chal-actions">${customActions}</div></div>`;
+        return `<div class="challenge-item ${isSel ? 'selected' : ''}" id="sidebar-chal-${safeId(c.id)}" data-id="${escapeHtml(c.id)}" role="checkbox" aria-checked="${isSel}" tabindex="0"><input type="checkbox" ${isSel ? 'checked' : ''} tabindex="-1" aria-hidden="true" /><div class="challenge-info"><strong title="${escapeHtml(c.name)}">${c.isCustom ? IC('star','ic-fill ic-sm') : ''}${escapeHtml(c.name)}</strong><span>${c.count} books${newBadge}</span></div><div class="chal-actions">${customActions}</div></div>`;
       }).join('');
       grid.innerHTML = html || '<div class="empty" style="padding: 20px 10px; font-size: 12px; border:none;">No challenges found.</div>';
       const ce = $('sidebar-counts'); if (ce) ce.textContent = `${selectedChallenges.size} / ${rawDatabase.challenges.length} selected`;
@@ -1493,7 +1524,7 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
             const rG = catBooks.filter(b => b.rating != null); const avgG = rG.length ? (rG.reduce((s, b) => s + b.rating, 0) / rG.length).toFixed(2) : null; const tpG = catBooks.reduce((s, b) => s + (b.pages || 0), 0);
             const gs = [avgG ? `avg ${IC('star', 'ic-fill ic-sm')} ${avgG}` : null, tpG > 0 ? `~${tpG.toLocaleString()} pages` : null].filter(Boolean).join(' · ');
             const gsHtml = gs ? `<span style="font-size:11px;color:var(--muted-fg);font-weight:normal;margin-left:8px;">${gs}</span>` : '';
-            html += `<details class="cat-accordion" data-cat-id="${catId}" ${isOpen ? 'open' : ''}><summary><div class="title-group">${escapeHtml(resolveChallengeName(catId))}<span class="count-badge">${catBooks.length}</span>${gsHtml}</div></summary><div class="accordion-content"><div class="book-grid">${catBooks.map(b => generateBookCardHTML(b)).join('')}</div></div></details>`;
+            html += `<details class="cat-accordion" data-cat-id="${catId}" ${isOpen ? 'open' : ''}><summary><div class="title-group"><span class="acc-name" title="${escapeHtml(resolveChallengeName(catId))}">${escapeHtml(resolveChallengeName(catId))}</span><span class="count-badge">${catBooks.length}</span>${gsHtml}</div></summary><div class="accordion-content"><div class="book-grid">${catBooks.map(b => generateBookCardHTML(b)).join('')}</div></div></details>`;
           });
         }
         else {
@@ -1502,7 +1533,7 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
             const rG = ob.filter(b => b.rating != null); const avgG = rG.length ? (rG.reduce((s, b) => s + b.rating, 0) / rG.length).toFixed(2) : null; const tpG = ob.reduce((s, b) => s + (b.pages || 0), 0);
             const gs = [avgG ? `avg ${IC('star', 'ic-fill ic-sm')} ${avgG}` : null, tpG > 0 ? `~${tpG.toLocaleString()} pages` : null].filter(Boolean).join(' · ');
             const gsHtml = gs ? `<span style="font-size:11px;color:var(--muted-fg);font-weight:normal;margin-left:8px;">${gs}</span>` : '';
-            html += `<details class="cat-accordion" data-cat-id="${idL}" ${isOpen ? 'open' : ''}><summary><div class="title-group">${label}<span class="count-badge">${ob.length}</span>${gsHtml}</div></summary><div class="accordion-content"><div class="book-grid">${ob.map(b => generateBookCardHTML(b)).join('')}</div></div></details>`;
+            html += `<details class="cat-accordion" data-cat-id="${idL}" ${isOpen ? 'open' : ''}><summary><div class="title-group"><span class="acc-name" title="${label}">${label}</span><span class="count-badge">${ob.length}</span>${gsHtml}</div></summary><div class="accordion-content"><div class="book-grid">${ob.map(b => generateBookCardHTML(b)).join('')}</div></div></details>`;
           }
         }
       }
@@ -1560,11 +1591,25 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
       }
       return best;
     }
-    function analyzeWiggleRoom(mode, cur) {
-      const locked = activeData.books.filter(b => bookStatus[b.id] === 'include'); if (locked.length === 0) return [];
-      const full = solveOptimalPath(mode, true, false); const penalty = cur.totalPages - full.totalPages; if (penalty <= 10) return []; const ops = [];
-      for (const lb of locked) { const others = locked.filter(b => b.id !== lb.id).map(b => b.id); const without = solveOptimalPath(mode, true, false, others); const saved = cur.totalPages - without.totalPages; if (saved >= 20) ops.push({ book: lb, pagesSaved: saved }); }
-      ops.sort((a, b) => b.pagesSaved - a.pagesSaved); return ops;
+    function analyzeWiggleRoom(mode, currentBestPath) {
+      const lockedBooks = activeData.books.filter(b => bookStatus[b.id] === 'include');
+      if (lockedBooks.length === 0) return [];
+      // Deterministic baseline: use single-pass (no randomization) for reproducible comparison.
+      // The user-visible path remains the 80-iteration randomized best; we just need a stable
+      // reference for deciding which locked books are HURTING the least-pages goal.
+      const currentLocked = runSinglePass(mode, true, false);
+      const fullyUnlocked = runSinglePass(mode, true, false, []);
+      const penalty = currentLocked.totalPages - fullyUnlocked.totalPages;
+      if (penalty <= 10) return [];
+      const ops = [];
+      for (const lb of lockedBooks) {
+        const otherLocks = lockedBooks.filter(b => b.id !== lb.id).map(b => b.id);
+        const pathWithout = runSinglePass(mode, true, false, otherLocks);
+        const saved = currentLocked.totalPages - pathWithout.totalPages;
+        if (saved >= 20) ops.push({ book: lb, pagesSaved: saved });
+      }
+      ops.sort((a, b) => b.pagesSaved - a.pagesSaved);
+      return ops;
     }
     function diagnoseSingleModeConflict(failedCats, bestPath) {
       const activeCats = new Set(activeData.categories); const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0;
@@ -1683,7 +1728,7 @@ details.cat-accordion>summary{padding:13px 14px;font-size:14px}
       });
       shown.forEach(sec => {
         const cid = comboIdFor(sec); const isOpen = q ? true : !collapsedCombos.has(cid); const sorted = sortBooksList(sec.books, `${sheetSort.column}-${sheetSort.direction}`);
-        cardsHtml += `<details class="combo-accordion" data-combo-id="${cid}" ${isOpen ? 'open' : ''}><summary><span>${escapeHtml(comboPlainFor(sec))}</span><span class="count-badge">${sec.books.length} book${sec.books.length === 1 ? '' : 's'}</span></summary>`;
+        cardsHtml += `<details class="combo-accordion" data-combo-id="${cid}" ${isOpen ? 'open' : ''}><summary><span class="acc-name" title="${escapeHtml(comboPlainFor(sec))}">${escapeHtml(comboPlainFor(sec))}</span><span class="count-badge">${sec.books.length} book${sec.books.length === 1 ? '' : 's'}</span></summary>`;
         sorted.forEach(b => { cardsHtml += `<a class="sc-row" href="${escapeHtml(b.url || '#')}" target="_blank"><span><span class="sc-title">${escapeHtml(b.title)}</span><span class="sc-author">${escapeHtml(b.author || 'Unknown author')}</span></span><span class="sc-meta">${b.pages ? b.pages + 'p · ' : ''}${b.rating ? IC('star', 'ic-fill ic-sm') + ' ' + b.rating.toFixed(2) : '—'}</span></a>`; });
         cardsHtml += '</details>';
       });

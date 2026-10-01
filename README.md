@@ -4,13 +4,15 @@ A fast, client-side web application that helps readers plan their Seasonal Goodr
 
 ## ✨ Features
 
-* **Master Library (Gallery View):** Browse books from your selected challenges with cover art and authors.
-* **Smart Optimizer:** Automatically calculate the fewest number of books needed to complete all selected challenges.
-* **Status Toggles:** Mark books as "📌 Must Read" to force them into the algorithm, or "✕ Avoid" to exclude them.
-* **Overlap Spreadsheet:** View and copy a clean breakdown of exactly which books overlap between which challenges.
-* **Goodreads Library Import:** Upload Goodreads CSV + filter by your shelves/TBR
-* **Custom Lists:** Add your own personal TBR (To Be Read) lists via text or Markdown.
-* **Fully Local & Responsive:** Completely local, fully responsive design, and built-in Light/Dark mode.
+* **Book gallery:** Browse every book in your challenges with covers, ratings and page counts.
+* **Genre filters:** Keep or skip whole genres with one click.
+* **Shortest list:** Get the fewest books that finish all your challenges.
+* **Your style:** One book per challenge, or fewest total pages — your call.
+* **Your rules:** Pin must-reads, block books you don't want. The plan listens.
+* **Overlap table:** See which books count for several challenges, and export to Excel.
+* **Your shelves:** Import your Goodreads CSV to plan with books you already own.
+* **Custom lists:** Add your own TBR in plain text or Markdown.
+* **Private:** Runs fully in your browser. Nothing is uploaded, ever.
 
 ---
 
@@ -18,14 +20,25 @@ A fast, client-side web application that helps readers plan their Seasonal Goodr
 
 
 ### 1. The Master Library
-<img width="1412" height="987" alt="image" src="https://github.com/user-attachments/assets/e733dc74-198e-43f5-9a37-4ca70019cfa4" />
+<img width="3456" height="1992" alt="image" src="https://github.com/user-attachments/assets/f06794b2-94b1-4253-baa2-619fdc12c9a5" />
+
+<img width="3456" height="1992" alt="image" src="https://github.com/user-attachments/assets/94cb4626-ecf8-46d5-bc9c-2424c188c61c" />
+
+<img width="3100" height="1618" alt="image" src="https://github.com/user-attachments/assets/88e9745a-4c3b-48e8-9d9d-0fcc15de644f" />
+
 
 ### 2. The Optimal Path
 [With Overlaps]
-<img width="1428" height="829" alt="image" src="https://github.com/user-attachments/assets/0e6724b5-0f0b-4918-bad2-30d669082978" />
+<img width="3100" height="1886" alt="image" src="https://github.com/user-attachments/assets/38b0cc64-b9ca-4ce4-b48e-cdae6c853f69" />
+<img width="3100" height="1800" alt="image" src="https://github.com/user-attachments/assets/3449329b-9047-402d-88b1-8e6dd53a3268" />
+
 
 [Without Overlaps]
-<img width="1298" height="990" alt="image" src="https://github.com/user-attachments/assets/fa4540dd-80c0-4176-93a5-58e4c0db5bf4" />
+<img width="3100" height="1784" alt="image" src="https://github.com/user-attachments/assets/09e6b949-5146-4791-910c-f476f0ca1d45" />
+<img width="3100" height="1754" alt="image" src="https://github.com/user-attachments/assets/007bb7fa-5885-4aec-99a6-fce404c93354" />
+
+
 
 ### 3. Spreadsheet Export
-<img width="1316" height="992" alt="image" src="https://github.com/user-attachments/assets/11d0452b-df6a-4e5b-bd47-0086dde566f1" />
+<img width="3456" height="1990" alt="image" src="https://github.com/user-attachments/assets/5a978e1a-d355-42b4-a31a-685a1d3c457f" />
+

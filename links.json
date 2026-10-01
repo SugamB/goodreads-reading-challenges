@@ -1,0 +1,10 @@
+{
+  "_comment": "Off-site links, editable without touching index.html. Fetched at boot; hardcoded hrefs in index.html are the fallback if this file is missing.",
+  "spreadsheet": "https://docs.google.com/spreadsheets/d/1_uI5kIjsnzVeS2sV0xYgwIpNCkuHGwkixZIATHoau08",
+  "kofi": "https://ko-fi.com/unikuez",
+  "guide": "./guide.html",
+  "chrome": "https://chromewebstore.google.com/detail/goodreads-book-details/ibfkohkcnddmeeibkopmcihnigjopdec",
+  "firefox": "https://addons.mozilla.org/en-US/firefox/addon/goodreads-book-details/",
+  "feedback_email": "mailto:sugambkt+websitefeedback@gmail.com?subject=Goodreads Optimizer Feedback",
+  "feedback_form": "https://forms.gle/VbwYqAEeadF7pJek8"
+}

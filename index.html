@@ -770,6 +770,11 @@ display:none}
 .gt-pill.exc .gt-x{color:var(--warning);border-left-color:color-mix(in oklab,var(--warning) 40%,transparent)}
 .gt-pill.exc .gt-x:hover{background:var(--warning);color:#111}
 .gt-note{font-size:11px;color:var(--muted-fg)}
+.hm-sub{display:flex;flex-direction:column}
+.hm-sub.hidden{display:none}
+.hm-sub-row{padding-left:46px;font-size:13.5px;color:var(--muted-fg)}
+.hm-chev{margin-left:auto;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;opacity:.7;transition:.15s}
+#btn-hm-feedback[aria-expanded="true"] .hm-chev{transform:rotate(180deg)}
 @media (max-width:900px){#feedback-menu{position:fixed!important;left:16px;right:16px;top:70px;width:auto!important;max-height:70vh;overflow:auto;z-index:80;box-shadow:0 12px 40px rgba(0,0,0,.45)}}
 .genre-tier #gt-clear{margin-left:auto}
 .gt-chip.exc{border-color:var(--warning);background:var(--warning-soft);color:var(--warning);text-decoration:line-through}
@@ -1127,7 +1132,7 @@ display:none}
                 <div class="filter-pills-row" id="filter-pills-row">
                     <div id="filter-pills-container" class="filter-pills-container hidden"></div>
                     <button class="btn ghost sm hidden" id="btn-reset"
-                        title="Reset all active filters and book statuses"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg> Reset Filters + Genres</button>
+                        title="Reset all active filters and book statuses"><svg class="ic" aria-hidden="true"><use href="#i-refresh"/></svg> Reset Filters</button>
                 </div>
                 <div class="sheet-foot mobile-only">
                     <button class="btn" id="btn-sheet-apply">Show <span id="sheet-count">0</span> books</button>
@@ -1225,7 +1230,11 @@ display:none}
                     class="ic ic-lg" aria-hidden="true">
                     <use href="#i-coffee" />
                 </svg> Support</a>
-            <button class="hm-row" id="btn-hm-feedback"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-message"/></svg> Feedback</button>
+            <button class="hm-row" id="btn-hm-feedback" aria-expanded="false"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-message"/></svg> Feedback <span class="hm-chev" aria-hidden="true"></span></button>
+            <div id="hm-feedback-sub" class="hm-sub hidden">
+                <a class="hm-row hm-sub-row" id="hm-fb-email" data-link="feedback_email" href="mailto:sugambkt+websitefeedback@gmail.com?subject=Goodreads Optimizer Feedback"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-message"/></svg> Email the developer</a>
+                <a class="hm-row hm-sub-row" id="hm-fb-form" data-link="feedback_form" href="https://forms.gle/VbwYqAEeadF7pJek8" target="_blank" rel="noopener noreferrer"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-heart"/></svg> Anonymous form (30s)</a>
+            </div>
             <button class="hm-row" id="btn-hm-theme"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-moon"/></svg> <span id="hm-theme-label">Theme: Dark</span></button>
             <button class="hm-row" id="btn-hm-help"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-help"/></svg> Help & Quick Start</button>
         </div>
@@ -1628,7 +1637,9 @@ display:none}
         document.addEventListener('click', e => { if (!e.target.isConnected) return; if (!e.target.closest('#btn-feedback') && !e.target.closest('#feedback-menu')) $('feedback-menu')?.classList.remove('show'); });
         addEvt('fb-form', 'click', () => track('feedback/form'));
         addEvt('fb-email', 'click', () => track('feedback/email'));
-        addEvt('btn-hm-feedback', 'click', () => { closeHeaderMenu(); setTimeout(() => $('btn-feedback')?.click(), 60); });
+        addEvt('btn-hm-feedback', 'click', () => { const sub = $('hm-feedback-sub'); const b = $('btn-hm-feedback'); const open = sub.classList.toggle('hidden') === false; b.setAttribute('aria-expanded', String(open)); track('feedback/open-mobile'); });
+        addEvt('hm-fb-email', 'click', () => { track('feedback/email'); closeHeaderMenu(); });
+        addEvt('hm-fb-form', 'click', () => { track('feedback/form'); closeHeaderMenu(); });
         addEvt('btn-hm-help', 'click', () => { closeHeaderMenu(); const qs = $('mobile-quickstart'); if (qs) { qs.classList.remove('dismissed'); setTimeout(() => qs.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80); } });
         addEvt('qs-1', 'click', openDrawer);
         addEvt('qs-2', 'click', openSheet);

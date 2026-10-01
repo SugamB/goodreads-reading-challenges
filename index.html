@@ -493,7 +493,7 @@ html.dark .savings-badge { background: color-mix(in oklab, var(--success) 18%, v
 .book-info { align-items: flex-start; text-align: left}
 .book-meta { justify-content: flex-start; text-align: left}
 .tags { justify-content: flex-start; margin-top: 8px}
-.tags>.tag:not(.tag-more):nth-child(n+3) { display: none}
+.tags>.tag:not(.tag-more):nth-child(n+4) { display: none}
 .tag-more { display: inline-flex}
 .gwrap .genre-tag:nth-child(n+2) { display: none}
 .gwrap.gopen .genre-tag { display: inline-flex}
@@ -555,8 +555,6 @@ body.show-genres .gwrap .genre-tag { display: inline-flex !important }
 .genre-toggle::after { content: "\25BE"; margin-left: 4px }
 .gwrap.gopen .genre-toggle::after,
 body.show-genres .genre-toggle::after { content: "\25B4" }
-body.tags-all .tags>.tag { display: inline-flex !important }
-body.tags-all .tag-more { display: none !important }
 #display-menu { width: 270px; padding: 10px; gap: 8px }
 #display-menu .dropdown-list { max-height: none }
 #grid-size-filter { display: none !important }
@@ -1775,7 +1773,7 @@ display:none}
             const gAll = normGenres(b.genres);
             const gChips = gAll.slice(0, 10).map((g, i) => `<span class="tag genre-tag${i >= 2 ? ' genre-xtra' : ''}" data-genre="${escapeHtml(gKey(g))}" title="Tap to filter by ${escapeHtml(g)}">${IC('tag', 'ic-sm')} ${escapeHtml(g)}</span>`).join('');
             const gwrap = gAll.length ? `<span class="gwrap"><button type="button" class="genre-toggle" data-genre-toggle="1" title="Show genres">Genres · ${gAll.length}</button>${gChips}</span>` : '';
-            const moreTag = b.categories.length > 2 ? `<span class="tag tag-more">+${b.categories.length - 2}</span>` : '';
+            const moreTag = b.categories.length > 3 ? `<span class="tag tag-more" title="Show all ${b.categories.length} challenges">+${b.categories.length - 3}</span>` : '';
             const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0; const matched = getMatchedShelves(b.title);
             const shelfHtml = (isLibActive && matched.length) ? `<div style="margin-top:4px;">${matched.map(s => `<span class="shelf-badge">Shelf: ${escapeHtml(s)}</span>`).join(' ')}</div>` : '';
             const isRL = extraBadge === 'read-last';

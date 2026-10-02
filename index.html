@@ -1703,7 +1703,7 @@ display:none}
 {  applyDisplay(false); }
 }
         function renderChallengeGrid() { __b: {
-            const grid = $('challenge-grid'); const fi = $('search-challenges'); const sf = $('filter-challenges'); if (!grid) break __b; const q = fi ? fi.value.toLowerCase() : ''; const f = sf ? sf.value : 'all';
+            const grid = $('challenge-grid'); const fi = $('search-challenges'); const sf = $('filter-challenges'); if (!grid) break __b; const q = fi ? fi.value.trim().toLowerCase() : ''; const f = sf ? sf.value : 'all';
             const html = [...rawDatabase.challenges].sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0)).map(c => {
                 const isSel = selectedChallenges.has(c.id); if (f === 'selected' && !isSel) return ''; if (f === 'unselected' && isSel) return ''; if (q && !c.name.toLowerCase().includes(q)) return '';
                 const extLink = c.url && c.url !== '#' ? `<a href="${escapeHtml(c.url)}" target="_blank" class="chal-link" title="Visit Challenge Source">${IC('link')}</a>` : '';
@@ -1781,7 +1781,7 @@ display:none}
             return `<div class="book-card ${avoidClass} ${optimalClass}"><div class="card-side">${badgeHtml}</div>${tooltipHtml}<div class="book-cover-wrapper"><a href="${escapeHtml(b.url || '#')}" target="_blank" data-stop><img class="book-cover" src="${escapeHtml(b.coverUrl)}" loading="lazy" decoding="async" alt="Cover" /></a></div><div class="book-info"><a class="book-title" href="${escapeHtml(b.url || '#')}" target="_blank" data-stop>${escapeHtml(b.title)}</a>${authorHtml}${metaHtml}${shelfHtml}<div class="tags">${visibleTags}${moreTag}${gwrap}</div></div><div class="status-wrap" style="margin-top:auto; width: 100%; padding-top: 10px;"><div class="status-group tour-target-status" data-stop><button class="inc ${s === 'include' ? 'active' : ''}" data-status-set="${b.id}" data-status="include" title="Force algorithm to include this book" aria-label="Must read">${IC('pin')}</button><button class="neu ${s === 'neutral' ? 'active' : ''}" data-status-set="${b.id}" data-status="neutral">Auto</button><button class="exc ${s === 'exclude' ? 'active' : ''}" data-status-set="${b.id}" data-status="exclude" title="Prevent algorithm from using this book" aria-label="Avoid">${IC('x')}</button></div></div></div>`;
         }
         function renderLibrary() {
-            let overlapCount = 0, uniqueCount = 0, incCount = 0, excCount = 0; const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0; const q = search.toLowerCase();
+            let overlapCount = 0, uniqueCount = 0, incCount = 0, excCount = 0; const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0; const q = search.trim().toLowerCase();
             let filteredBooks = applyGenreFilters(activeData.books).filter(b => {
                 const tm = b.title.toLowerCase().includes(q); const am = b.author && b.author.toLowerCase().includes(q); if (q && !tm && !am) return false; const s = bookStatus[b.id];
                 if (statusFilter === 'include' && s !== 'include') return false; if (statusFilter === 'exclude' && s !== 'exclude') return false; if (overlapFilter === 'overlap' && b.categories.length === 1) return false; if (overlapFilter === 'single' && b.categories.length > 1) return false;
@@ -2078,7 +2078,7 @@ display:none}
         }
         function renderGenreList() {
             const listEl = $('genre-checkbox-list'); if (!listEl) return;
-            const q = (($('genre-search') || {}).value || '').toLowerCase();
+            const q = (($('genre-search') || {}).value || '').trim().toLowerCase();
             const entries = [...genreIndex.entries()].filter(([k, v]) => !q || v.name.toLowerCase().includes(q)).sort((a, b) => b[1].count - a[1].count);
             listEl.innerHTML = entries.map(([k, v]) => {
                 const inc = genreInclude.has(k), exc = genreExclude.has(k);
@@ -2128,7 +2128,7 @@ display:none}
                     if (isMobile() && el.closest('#shared-filter-bar')) openSheet(); if (el.tagName !== 'DIV' && el.tagName !== 'LABEL') el.focus(); el.classList.remove('sidebar-highlight'); void el.offsetWidth; el.classList.add('sidebar-highlight'); setTimeout(() => el.classList.remove('sidebar-highlight'), 1500);
                 }
             };
-            if (isBrowse && search) { pills.push({ label: `Search: "${search}"`, onClick: () => highlightControl('search-input'), clear: () => { search = ''; syncSearchInputs(); renderAll(); } }); }
+            if (isBrowse && search.trim()) { pills.push({ label: `Search: "${search.trim()}"`, onClick: () => highlightControl('search-input'), clear: () => { search = ''; syncSearchInputs(); renderAll(); } }); }
             if (isBrowse && activePreset) {
                 const labels = { 'quick-reads': IC('flame', 'ic-sm') + ' Quick Reads (Under 250 pages)', 'hidden-gems': IC('gem', 'ic-sm') + ' Hidden Gems (4.0+ ★, 100–10K reviews)', 'popular': IC('trend', 'ic-sm') + ' Popular Picks (100K+ reviews)' };
                 pills.push({ label: labels[activePreset] || activePreset, onClick: () => highlightControl('preset-' + activePreset), clear: () => { activePreset = null; updatePresetButtons(); renderAll(); } });
@@ -2436,7 +2436,7 @@ if(e.target.closest('[data-gt-clearall]')){e.stopPropagation();genreInclude.clea
 if(e.target.closest('#gt-clear')){genreInclude.clear();genreExclude.clear();genreChanged();track('genre/clear');return;}
 if(e.target.closest('#gt-more')){bd.classList.add('open');displayPrefs.boardOpen=true;try{localStorage.setItem('gr_display',JSON.stringify(displayPrefs));}catch(err){}window.renderGenreBoard();return;}
 if(e.target.closest('#gt-mobile')){openSheet();setTimeout(()=>{$('btn-genre-dropdown')?.click();},90);track('genre/tier/mobile-open');return;}});
-bd.addEventListener('input',e=>{if(e.target.id==='gb-search'){bq=e.target.value.toLowerCase();window.renderGenreBoard();const ni=$('gb-search');if(ni){ni.focus();ni.setSelectionRange(ni.value.length,ni.value.length);}}});
+bd.addEventListener('input',e=>{if(e.target.id==='gb-search'){bq=e.target.value.trim().toLowerCase();window.renderGenreBoard();const ni=$('gb-search');if(ni){ni.focus();ni.setSelectionRange(ni.value.length,ni.value.length);}}});
 bd.addEventListener('click',e=>{if(e.target.closest('.gb-badge.live')){genreMatchAll=!genreMatchAll;genreChanged();showToast(IC('info')+' Matching '+(genreMatchAll?'ALL':'ANY')+' of your selected genres — '+(genreMatchAll?'books must carry every selected tag.':'books need at least one selected tag.'),'info');track('genre/match-'+(genreMatchAll?'all':'any')+'-badge');return;}
 if(e.target.closest('.ghelp')){showToast(HELP_G,'info');track('genre/help');return;}
 const tg=e.target.closest('#gb-toggle');if(tg){const open=!bd.classList.contains('open');bd.classList.toggle('open',open);displayPrefs.boardOpen=open;try{localStorage.setItem('gr_display',JSON.stringify(displayPrefs));}catch(err){}tg.setAttribute('aria-expanded',String(open));track('genre/board/'+(open?'open':'close'));if(open){requestAnimationFrame(()=>{const w=$('gb-well');const sel=w&&w.querySelector('.gb-chip.inc,.gb-chip.exc');if(sel){sel.scrollIntoView({block:'nearest'});sel.classList.add('sidebar-highlight');setTimeout(()=>sel.classList.remove('sidebar-highlight'),1200);}});}return;}

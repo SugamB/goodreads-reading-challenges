@@ -1424,6 +1424,7 @@ display:none}
         const addEvt = (id, evt, cb) => { const el = $(id); if (el) el.addEventListener(evt, cb); };
         function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
         const normTitle = s => { if (!s) return ''; return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\(.*?\)/g, "").toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\s+/g, " ").trim(); };
+        const normWS = s => String(s == null ? '' : s).toLowerCase().replace(/\s+/g, ' ').trim();
         function formatCompact(n) { if (n == null || isNaN(n)) return '—'; if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, '') + 'M'; if (n >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'K'; return String(n); }
         function attachToastHide(el) { el._t1 = setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.3s'; el._t2 = setTimeout(() => el.remove(), 300); }, 4200); }
         function showToast(message, type = 'success') {
@@ -1781,9 +1782,9 @@ display:none}
             return `<div class="book-card ${avoidClass} ${optimalClass}"><div class="card-side">${badgeHtml}</div>${tooltipHtml}<div class="book-cover-wrapper"><a href="${escapeHtml(b.url || '#')}" target="_blank" data-stop><img class="book-cover" src="${escapeHtml(b.coverUrl)}" loading="lazy" decoding="async" alt="Cover" /></a></div><div class="book-info"><a class="book-title" href="${escapeHtml(b.url || '#')}" target="_blank" data-stop>${escapeHtml(b.title)}</a>${authorHtml}${metaHtml}${shelfHtml}<div class="tags">${visibleTags}${moreTag}${gwrap}</div></div><div class="status-wrap" style="margin-top:auto; width: 100%; padding-top: 10px;"><div class="status-group tour-target-status" data-stop><button class="inc ${s === 'include' ? 'active' : ''}" data-status-set="${b.id}" data-status="include" title="Force algorithm to include this book" aria-label="Must read">${IC('pin')}</button><button class="neu ${s === 'neutral' ? 'active' : ''}" data-status-set="${b.id}" data-status="neutral">Auto</button><button class="exc ${s === 'exclude' ? 'active' : ''}" data-status-set="${b.id}" data-status="exclude" title="Prevent algorithm from using this book" aria-label="Avoid">${IC('x')}</button></div></div></div>`;
         }
         function renderLibrary() {
-            let overlapCount = 0, uniqueCount = 0, incCount = 0, excCount = 0; const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0; const q = search.trim().toLowerCase();
+            let overlapCount = 0, uniqueCount = 0, incCount = 0, excCount = 0; const isLibActive = libraryOnlyFilterActive && userLibraryMap.size > 0; const q = normWS(search);
             let filteredBooks = applyGenreFilters(activeData.books).filter(b => {
-                const tm = b.title.toLowerCase().includes(q); const am = b.author && b.author.toLowerCase().includes(q); if (q && !tm && !am) return false; const s = bookStatus[b.id];
+                const tm = normWS(b.title).includes(q); const am = b.author && normWS(b.author).includes(q); if (q && !tm && !am) return false; const s = bookStatus[b.id];
                 if (statusFilter === 'include' && s !== 'include') return false; if (statusFilter === 'exclude' && s !== 'exclude') return false; if (overlapFilter === 'overlap' && b.categories.length === 1) return false; if (overlapFilter === 'single' && b.categories.length > 1) return false;
                 if (isLibActive && getMatchedShelves(b.title).length === 0) return false;
                 if (activePreset === 'quick-reads') { if (!b.pages || b.pages > 250) return false; } else if (activePreset === 'hidden-gems') { if (!b.rating || b.rating < 4.0 || !b.ratingCount || b.ratingCount < 100 || b.ratingCount >= 10000) return false; } else if (activePreset === 'popular') { if (!b.ratingCount || b.ratingCount < 100000) return false; } return true;
@@ -2015,8 +2016,8 @@ display:none}
             if (comboSortMobile === 'most-books') { cardSections.sort((a, b) => b.books.length - a.books.length || b.categories.length - a.categories.length); }
             else if (comboSortMobile === 'az') { cardSections.sort((a, b) => comboPlainFor(a).localeCompare(comboPlainFor(b))); }
             else { cardSections.sort((a, b) => b.categories.length - a.categories.length || b.books.length - a.books.length); }
-            const q = comboSearch.trim().toLowerCase(); let shown = cardSections;
-            if (q) { shown = cardSections.filter(sec => comboPlainFor(sec).toLowerCase().includes(q) || sec.books.some(b => (b.title || '').toLowerCase().includes(q) || (b.author || '').toLowerCase().includes(q))); }
+            const q = normWS(comboSearch); let shown = cardSections;
+            if (q) { shown = cardSections.filter(sec => normWS(comboPlainFor(sec)).includes(q) || sec.books.some(b => normWS(b.title).includes(q) || normWS(b.author).includes(q))); }
             lastComboIds = cardSections.map(comboIdFor); if (collapsedCombos === null) { collapsedCombos = new Set(lastComboIds.slice(1)); saveComboState(); }
             const colOpts = [['title', 'Title'], ['pages', 'Pages'], ['rating', 'Rating'], ['ratingCount', 'Popularity'], ['reviewCount', 'Reviews']];
             const comboOpts = [['most-challenges', 'Most challenges'], ['most-books', 'Most books'], ['az', 'A–Z']];

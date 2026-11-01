@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-01T07:05:18.746Z",
+  "lastUpdated": "2026-11-01T07:08:39.333Z",
   "schemaVersion": 2,
   "challenges": [
     {
@@ -37,6 +37,12 @@
       "name": "Heart-Warmers",
       "url": "https://www.goodreads.com/blog/show/3187",
       "count": 92
+    },
+    {
+      "id": "Native Heritage",
+      "name": "Native Heritage",
+      "url": "https://www.goodreads.com/blog/show/3084",
+      "count": 92
     }
   ],
   "books": [
@@ -69,7 +75,7 @@
     },
     {
       "title": "John of John",
-      "author": "Douglas   Stuart",
+      "author": "Douglas Stuart",
       "url": "https://www.goodreads.com/book/show/235260861",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1777987045i/235260861.jpg",
       "pages": 416,
@@ -366,7 +372,7 @@
     },
     {
       "title": "The Tell: A Memoir",
-      "author": "Amy   Griffin",
+      "author": "Amy Griffin",
       "url": "https://www.goodreads.com/book/show/214537759",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741879955i/214537759.jpg",
       "pages": 288,
@@ -636,7 +642,7 @@
     },
     {
       "title": "Wellness",
-      "author": "Nathan  Hill",
+      "author": "Nathan Hill",
       "url": "https://www.goodreads.com/book/show/65650229",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1695742140i/65650229.jpg",
       "pages": 611,
@@ -663,7 +669,7 @@
     },
     {
       "title": "The Covenant of Water",
-      "author": "Abraham   Verghese",
+      "author": "Abraham Verghese",
       "url": "https://www.goodreads.com/book/show/180357146",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1687600746i/180357146.jpg",
       "pages": 715,
@@ -935,7 +941,7 @@
     },
     {
       "title": "The Sweetness of Water",
-      "author": "Nathan  Harris",
+      "author": "Nathan Harris",
       "url": "https://www.goodreads.com/book/show/54404602",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1593989595i/54404602.jpg",
       "pages": 368,
@@ -1098,7 +1104,7 @@
     },
     {
       "title": "Deacon King Kong",
-      "author": "James   McBride",
+      "author": "James McBride",
       "url": "https://www.goodreads.com/book/show/50888243",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1624746232i/50888243.jpg",
       "pages": 384,
@@ -1909,7 +1915,7 @@
       ]
     },
     {
-      "title": "The Good Earth  (House of Earth, #1)",
+      "title": "The Good Earth (House of Earth, #1)",
       "author": "Pearl S. Buck",
       "url": "https://www.goodreads.com/book/show/16173514",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1599059295i/16173514.jpg",
@@ -3851,7 +3857,7 @@
     },
     {
       "title": "A Vow in Vengeance (Immortal Desires, #1)",
-      "author": "Jaclyn  Rodriguez",
+      "author": "Jaclyn Rodriguez",
       "url": "https://www.goodreads.com/book/show/230614708",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748356653i/230614708.jpg",
       "pages": 471,
@@ -3882,9 +3888,9 @@
       "url": "https://www.goodreads.com/book/show/244671594",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764736329i/244671594.jpg",
       "pages": 416,
-      "rating": 4.19,
-      "ratingCount": 381,
-      "reviewCount": 223,
+      "rating": 3.99,
+      "ratingCount": 1034,
+      "reviewCount": 338,
       "genres": [
         "Horror",
         "Mystery",
@@ -3900,7 +3906,8 @@
       "publishedYear": null,
       "publishedMonth": 8,
       "challenges": [
-        "Hispanic Heritage"
+        "Hispanic Heritage",
+        "Native Heritage"
       ]
     },
     {
@@ -4816,7 +4823,7 @@
     },
     {
       "title": "rekt",
-      "author": "Alex  Gonzalez",
+      "author": "Alex Gonzalez",
       "url": "https://www.goodreads.com/book/show/215363519",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719373634i/215363519.jpg",
       "pages": 355,
@@ -5516,7 +5523,7 @@
     },
     {
       "title": "Cry for Me, Argentina: My Life as a Failed Child Star",
-      "author": "Tamara  Yajia",
+      "author": "Tamara Yajia",
       "url": "https://www.goodreads.com/book/show/217387918",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737057194i/217387918.jpg",
       "pages": 226,
@@ -5801,7 +5808,7 @@
     },
     {
       "title": "Anxious People",
-      "author": "Fredrik Backman, Neil   Smith",
+      "author": "Fredrik Backman, Neil Smith",
       "url": "https://www.goodreads.com/book/show/49127718",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1597575031i/49127718.jpg",
       "pages": 336,
@@ -5855,7 +5862,7 @@
     },
     {
       "title": "The Correspondent",
-      "author": "Virginia      Evans",
+      "author": "Virginia Evans",
       "url": "https://www.goodreads.com/book/show/223001257",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1735235942i/223001257.jpg",
       "pages": 285,
@@ -6314,7 +6321,7 @@
     },
     {
       "title": "The God of the Woods",
-      "author": "Liz    Moore",
+      "author": "Liz Moore",
       "url": "https://www.goodreads.com/book/show/199698485",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717970538i/199698485.jpg",
       "pages": 562,
@@ -6774,7 +6781,7 @@
     },
     {
       "title": "Severance",
-      "author": "Ling  Ma",
+      "author": "Ling Ma",
       "url": "https://www.goodreads.com/book/show/36348525",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1507060524i/36348525.jpg",
       "pages": 291,
@@ -7353,8 +7360,8 @@
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1779114576i/214565614.jpg",
       "pages": 448,
       "rating": 3.95,
-      "ratingCount": 70639,
-      "reviewCount": 14010,
+      "ratingCount": 76270,
+      "reviewCount": 14924,
       "genres": [
         "Horror",
         "Historical Fiction",
@@ -7371,12 +7378,13 @@
       "publishedMonth": 3,
       "challenges": [
         "Decade of Reads",
-        "Spine Tinglers"
+        "Spine Tinglers",
+        "Native Heritage"
       ]
     },
     {
       "title": "The Outsider (Holly Gibney, #1)",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/36124936",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1524596540i/36124936.jpg",
       "pages": 561,
@@ -7488,7 +7496,7 @@
     },
     {
       "title": "The Institute",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/43798285",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1549241208i/43798285.jpg",
       "pages": 561,
@@ -8489,7 +8497,7 @@
     },
     {
       "title": "Everything Is Tuberculosis: The History and Persistence of Our Deadliest Infection",
-      "author": "John  Green",
+      "author": "John Green",
       "url": "https://www.goodreads.com/book/show/220341389",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729825992i/220341389.jpg",
       "pages": 198,
@@ -8840,7 +8848,7 @@
     },
     {
       "title": "The First Witch of Boston",
-      "author": "Andrea  Catalano",
+      "author": "Andrea Catalano",
       "url": "https://www.goodreads.com/book/show/222794853",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739452020i/222794853.jpg",
       "pages": 326,
@@ -8894,7 +8902,7 @@
     },
     {
       "title": "Cackle",
-      "author": "Rachel   Harrison",
+      "author": "Rachel Harrison",
       "url": "https://www.goodreads.com/book/show/61058915",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1656931038i/61058915.jpg",
       "pages": 291,
@@ -8949,7 +8957,7 @@
     },
     {
       "title": "A Resistance of Witches",
-      "author": "Morgan   Ryan",
+      "author": "Morgan Ryan",
       "url": "https://www.goodreads.com/book/show/219848293",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731288127i/219848293.jpg",
       "pages": 416,
@@ -9063,8 +9071,8 @@
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1664815099i/60877589.jpg",
       "pages": 400,
       "rating": 3.75,
-      "ratingCount": 13000,
-      "reviewCount": 2268,
+      "ratingCount": 13138,
+      "reviewCount": 2292,
       "genres": [
         "Fantasy",
         "Fiction",
@@ -9112,7 +9120,7 @@
     },
     {
       "title": "Her Majesty's Royal Coven (Her Majesty's Royal Coven, #1)",
-      "author": "Juno  Dawson",
+      "author": "Juno Dawson",
       "url": "https://www.goodreads.com/book/show/59088433",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1653942624i/59088433.jpg",
       "pages": 448,
@@ -9139,7 +9147,7 @@
     },
     {
       "title": "The Year of the Witching (Bethel, #1)",
-      "author": "Alexis  Henderson",
+      "author": "Alexis Henderson",
       "url": "https://www.goodreads.com/book/show/49789629",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1576699031i/49789629.jpg",
       "pages": 368,
@@ -9220,7 +9228,7 @@
     },
     {
       "title": "The Last Witch",
-      "author": "C.J.  Cooke",
+      "author": "C.J. Cooke",
       "url": "https://www.goodreads.com/book/show/231769822",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751515024i/231769822.jpg",
       "pages": 352,
@@ -9545,7 +9553,7 @@
     },
     {
       "title": "The Nature of Witches",
-      "author": "Rachel  Griffin",
+      "author": "Rachel Griffin",
       "url": "https://www.goodreads.com/book/show/54717138",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1609270742i/54717138.jpg",
       "pages": 367,
@@ -10194,7 +10202,7 @@
     },
     {
       "title": "A Time of Witches",
-      "author": "Madeline  Martin",
+      "author": "Madeline Martin",
       "url": "https://www.goodreads.com/book/show/244196702",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770916895i/244196702.jpg",
       "pages": 380,
@@ -10303,7 +10311,7 @@
     },
     {
       "title": "Blacktail",
-      "author": "Scott  Hawkins",
+      "author": "Scott Hawkins",
       "url": "https://www.goodreads.com/book/show/245320375",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1782397961i/245320375.jpg",
       "pages": 288,
@@ -10384,7 +10392,7 @@
     },
     {
       "title": "Henry Tudor Must Die",
-      "author": "Jillian  Laine",
+      "author": "Jillian Laine",
       "url": "https://www.goodreads.com/book/show/240650771",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761769973i/240650771.jpg",
       "pages": 368,
@@ -10438,7 +10446,7 @@
     },
     {
       "title": "Death Card",
-      "author": "Jasmine   Smith",
+      "author": "Jasmine Smith",
       "url": "https://www.goodreads.com/book/show/243892394",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1763006406i/243892394.jpg",
       "pages": 304,
@@ -10945,7 +10953,7 @@
     },
     {
       "title": "How to Kill a Witch: The Patriarchy's Guide to Silencing Women",
-      "author": "Zoe Venditozzi, Claire   Mitchell",
+      "author": "Zoe Venditozzi, Claire Mitchell",
       "url": "https://www.goodreads.com/book/show/222476092",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1746641921i/222476092.jpg",
       "pages": 320,
@@ -11193,8 +11201,8 @@
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1617501345i/50704742.jpg",
       "pages": 432,
       "rating": 3.74,
-      "ratingCount": 1737,
-      "reviewCount": 327,
+      "ratingCount": 1749,
+      "reviewCount": 330,
       "genres": [
         "Nonfiction",
         "Essays",
@@ -11341,7 +11349,7 @@
     },
     {
       "title": "Frankenstein",
-      "author": "Mary Wollstonecraft Shelley, Charlotte  Gordon",
+      "author": "Mary Wollstonecraft Shelley, Charlotte Gordon",
       "url": "https://www.goodreads.com/book/show/35031085",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1631088473i/35031085.jpg",
       "pages": 260,
@@ -11368,7 +11376,7 @@
     },
     {
       "title": "The Shining",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/219603477",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1727405760i/219603477.jpg",
       "pages": 675,
@@ -11422,7 +11430,7 @@
     },
     {
       "title": "It",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/53026643",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1632431798i/53026643.jpg",
       "pages": 1174,
@@ -11449,7 +11457,7 @@
     },
     {
       "title": "The Stand",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/75366530",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1672219824i/75366530.jpg",
       "pages": 1211,
@@ -11476,7 +11484,7 @@
     },
     {
       "title": "Misery",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/27877139",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1451843098i/27877139.jpg",
       "pages": 368,
@@ -11503,7 +11511,7 @@
     },
     {
       "title": "Carrie",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/228158106",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739971429i/228158106.jpg",
       "pages": 306,
@@ -11557,7 +11565,7 @@
     },
     {
       "title": "Pet Sematary",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/45030607",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730548765i/45030607.jpg",
       "pages": 561,
@@ -11611,7 +11619,7 @@
     },
     {
       "title": "'Salem's Lot",
-      "author": "Stephen  King, Jerry N. Uelsmann",
+      "author": "Stephen King, Jerry N. Uelsmann",
       "url": "https://www.goodreads.com/book/show/7025587",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734104657i/7025587.jpg",
       "pages": 672,
@@ -11854,7 +11862,7 @@
     },
     {
       "title": "The Silence of the Lambs (Hannibal Lecter, #2)",
-      "author": "Thomas  Harris",
+      "author": "Thomas Harris",
       "url": "https://www.goodreads.com/book/show/9440817",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1412470830i/9440817.jpg",
       "pages": 384,
@@ -11908,7 +11916,7 @@
     },
     {
       "title": "Holly (Holly Gibney, #3)",
-      "author": "Stephen  King",
+      "author": "Stephen King",
       "url": "https://www.goodreads.com/book/show/65916344",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1674418461i/65916344.jpg",
       "pages": 449,
@@ -12367,7 +12375,7 @@
     },
     {
       "title": "Kiss Slay Replay",
-      "author": "Rachel   Harrison",
+      "author": "Rachel Harrison",
       "url": "https://www.goodreads.com/book/show/234746583",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1771952059i/234746583.jpg",
       "pages": 320,
@@ -12476,7 +12484,7 @@
     },
     {
       "title": "Marion",
-      "author": "Leah   Rowan",
+      "author": "Leah Rowan",
       "url": "https://www.goodreads.com/book/show/240019608",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757955185i/240019608.jpg",
       "pages": 336,
@@ -12666,7 +12674,7 @@
     },
     {
       "title": "Stay Buried",
-      "author": "Jennifer  McMahon",
+      "author": "Jennifer McMahon",
       "url": "https://www.goodreads.com/book/show/242977927",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760892962i/242977927.jpg",
       "pages": 383,
@@ -12882,7 +12890,7 @@
     },
     {
       "title": "Play Nice",
-      "author": "Rachel   Harrison",
+      "author": "Rachel Harrison",
       "url": "https://www.goodreads.com/book/show/222419303",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1755269292i/222419303.jpg",
       "pages": 325,
@@ -12909,7 +12917,7 @@
     },
     {
       "title": "Black Sheep",
-      "author": "Rachel   Harrison",
+      "author": "Rachel Harrison",
       "url": "https://www.goodreads.com/book/show/69704909",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1680293749i/69704909.jpg",
       "pages": 289,
@@ -12936,7 +12944,7 @@
     },
     {
       "title": "Such Sharp Teeth",
-      "author": "Rachel   Harrison",
+      "author": "Rachel Harrison",
       "url": "https://www.goodreads.com/book/show/60097467",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1656346347i/60097467.jpg",
       "pages": 336,
@@ -12968,8 +12976,8 @@
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1623264202i/55711617.jpg",
       "pages": 405,
       "rating": 3.5,
-      "ratingCount": 56898,
-      "reviewCount": 11135,
+      "ratingCount": 57003,
+      "reviewCount": 11154,
       "genres": [
         "Horror",
         "Fiction",
@@ -12995,8 +13003,8 @@
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1720470227i/199798522.jpg",
       "pages": 373,
       "rating": 3.47,
-      "ratingCount": 27795,
-      "reviewCount": 5838,
+      "ratingCount": 28315,
+      "reviewCount": 5916,
       "genres": [
         "Horror",
         "Fiction",
@@ -13012,7 +13020,8 @@
       "publishedYear": null,
       "publishedMonth": 7,
       "challenges": [
-        "Spine Tinglers"
+        "Spine Tinglers",
+        "Native Heritage"
       ]
     },
     {
@@ -13422,7 +13431,7 @@
     },
     {
       "title": "NOS4A2",
-      "author": "Joe  Hill",
+      "author": "Joe Hill",
       "url": "https://www.goodreads.com/book/show/15729539",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1369591617i/15729539.jpg",
       "pages": 704,
@@ -13449,7 +13458,7 @@
     },
     {
       "title": "Heart-Shaped Box: A Novel",
-      "author": "Joe  Hill",
+      "author": "Joe Hill",
       "url": "https://www.goodreads.com/book/show/75490898",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1677552867i/75490898.jpg",
       "pages": 448,
@@ -13476,7 +13485,7 @@
     },
     {
       "title": "Horns",
-      "author": "Joe  Hill",
+      "author": "Joe Hill",
       "url": "https://www.goodreads.com/book/show/6587879",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1402958805i/6587879.jpg",
       "pages": 370,
@@ -13503,7 +13512,7 @@
     },
     {
       "title": "The Fireman",
-      "author": "Joe  Hill",
+      "author": "Joe Hill",
       "url": "https://www.goodreads.com/book/show/29875363",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1478683499i/29875363.jpg",
       "pages": 768,
@@ -13530,7 +13539,7 @@
     },
     {
       "title": "The Winter People",
-      "author": "Jennifer  McMahon",
+      "author": "Jennifer McMahon",
       "url": "https://www.goodreads.com/book/show/18007535",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1377582922i/18007535.jpg",
       "pages": 317,
@@ -13557,7 +13566,7 @@
     },
     {
       "title": "The Invited",
-      "author": "Jennifer  McMahon",
+      "author": "Jennifer McMahon",
       "url": "https://www.goodreads.com/book/show/40065317",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1541824130i/40065317.jpg",
       "pages": 353,
@@ -13584,7 +13593,7 @@
     },
     {
       "title": "The Children on the Hill",
-      "author": "Jennifer  McMahon",
+      "author": "Jennifer McMahon",
       "url": "https://www.goodreads.com/book/show/58438554",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1650470600i/58438554.jpg",
       "pages": 338,
@@ -13611,7 +13620,7 @@
     },
     {
       "title": "The Drowning Kind",
-      "author": "Jennifer  McMahon",
+      "author": "Jennifer McMahon",
       "url": "https://www.goodreads.com/book/show/54303987",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1615933931i/54303987.jpg",
       "pages": 319,
@@ -13800,7 +13809,7 @@
     },
     {
       "title": "The Cloak and Dagger Club (A Cloak and Dagger Club Mystery, #1)",
-      "author": "Jackie  McMahon",
+      "author": "Jackie McMahon",
       "url": "https://www.goodreads.com/book/show/242764865",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760500940i/242764865.jpg",
       "pages": 368,
@@ -13987,7 +13996,7 @@
     },
     {
       "title": "Everyone in This Bank Is a Thief (Ernest Cunningham, #4)",
-      "author": "Benjamin   Stevenson",
+      "author": "Benjamin Stevenson",
       "url": "https://www.goodreads.com/book/show/231692454",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758558266i/231692454.jpg",
       "pages": 358,
@@ -14392,7 +14401,7 @@
     },
     {
       "title": "This Book Made Me Think of You",
-      "author": "Libby  Page",
+      "author": "Libby Page",
       "url": "https://www.goodreads.com/book/show/232794526",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754576850i/232794526.jpg",
       "pages": 407,
@@ -14419,7 +14428,7 @@
     },
     {
       "title": "By the Bootstraps (Starlight Ridge)",
-      "author": "Alexa  Martin",
+      "author": "Alexa Martin",
       "url": "https://www.goodreads.com/book/show/240687683",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1758964343i/240687683.jpg",
       "pages": 400,
@@ -14446,7 +14455,7 @@
     },
     {
       "title": "See You at the Sunset",
-      "author": "Susan  Lee",
+      "author": "Susan Lee",
       "url": "https://www.goodreads.com/book/show/241243500",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1767401637i/241243500.jpg",
       "pages": 320,
@@ -14608,7 +14617,7 @@
     },
     {
       "title": "The Last Page",
-      "author": "Katie  Holt",
+      "author": "Katie Holt",
       "url": "https://www.goodreads.com/book/show/236117098",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761597939i/236117098.jpg",
       "pages": 336,
@@ -14743,7 +14752,7 @@
     },
     {
       "title": "The Lord of the Wood",
-      "author": "E.M.   Anderson",
+      "author": "E.M. Anderson",
       "url": "https://www.goodreads.com/book/show/240963429",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760490724i/240963429.jpg",
       "pages": 448,
@@ -14900,7 +14909,7 @@
     },
     {
       "title": "Theo of Golden",
-      "author": "Allen  Levi",
+      "author": "Allen Levi",
       "url": "https://www.goodreads.com/book/show/242376245",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761744192i/242376245.jpg",
       "pages": 400,
@@ -15251,7 +15260,7 @@
     },
     {
       "title": "The Borrowed Life of Frederick Fife",
-      "author": "Anna  Johnston",
+      "author": "Anna Johnston",
       "url": "https://www.goodreads.com/book/show/204158999",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1714763834i/204158999.jpg",
       "pages": 336,
@@ -15547,7 +15556,7 @@
       ]
     },
     {
-      "title": "Whose Body?  (Lord Peter Wimsey, #1)",
+      "title": "Whose Body? (Lord Peter Wimsey, #1)",
       "author": "Dorothy L. Sayers",
       "url": "https://www.goodreads.com/book/show/18006728",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1443784236i/18006728.jpg",
@@ -15683,7 +15692,7 @@
     },
     {
       "title": "The Road to Tender Hearts",
-      "author": "Annie  Hartnett",
+      "author": "Annie Hartnett",
       "url": "https://www.goodreads.com/book/show/218460347",
       "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1729826481i/218460347.jpg",
       "pages": 384,
@@ -16003,6 +16012,2349 @@
       "publishedMonth": 7,
       "challenges": [
         "Heart-Warmers"
+      ]
+    },
+    {
+      "title": "The Birthing Tree",
+      "author": "Amanda Peters",
+      "url": "https://www.goodreads.com/book/show/249505926",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773111929i/249505926.jpg",
+      "pages": 304,
+      "rating": 4.04,
+      "ratingCount": 5746,
+      "reviewCount": 767,
+      "genres": [
+        "Historical Fiction",
+        "Fiction",
+        "Indigenous",
+        "Canada",
+        "Literary Fiction",
+        "Audiobook",
+        "Contemporary",
+        "Adult Fiction",
+        "Historical",
+        "Book Club"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Sunflower Season",
+      "author": "Danica Nava",
+      "url": "https://www.goodreads.com/book/show/246855019",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773292299i/246855019.jpg",
+      "pages": 356,
+      "rating": 4.01,
+      "ratingCount": 423,
+      "reviewCount": 340,
+      "genres": [
+        "Romance",
+        "Contemporary",
+        "Adult",
+        "Second Chance",
+        "Autumn",
+        "Contemporary Romance",
+        "Fiction",
+        "Indigenous",
+        "Adult Romance",
+        "Firefighters"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 11,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Python's Kiss",
+      "author": "Louise Erdrich",
+      "url": "https://www.goodreads.com/book/show/237100535",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750762011i/237100535.jpg",
+      "pages": 240,
+      "rating": 3.9,
+      "ratingCount": 3226,
+      "reviewCount": 585,
+      "genres": [
+        "Short Stories",
+        "Fiction",
+        "Indigenous",
+        "Native American",
+        "Literary Fiction",
+        "Fantasy",
+        "Magical Realism",
+        "Audiobook",
+        "Native Americans",
+        "Mythology"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Wisdom Corner (Virgil Wounded Horse, #2)",
+      "author": "David Heska Wanbli Weiden",
+      "url": "https://www.goodreads.com/book/show/242489001",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1759833269i/242489001.jpg",
+      "pages": 320,
+      "rating": 3.93,
+      "ratingCount": 826,
+      "reviewCount": 203,
+      "genres": [
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Mystery Thriller",
+        "Native American",
+        "Crime",
+        "Contemporary",
+        "Audiobook",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 7,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Treat Them as Buffalo",
+      "author": "Blair Palmer Yoxall",
+      "url": "https://www.goodreads.com/book/show/242181450",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1764162140i/242181450.jpg",
+      "pages": 404,
+      "rating": 3.4,
+      "ratingCount": 423,
+      "reviewCount": 88,
+      "genres": [
+        "Historical Fiction",
+        "Fiction",
+        "Westerns",
+        "Indigenous",
+        "Mystery",
+        "Historical",
+        "Canada",
+        "Adult",
+        "Audiobook",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Blood Relay",
+      "author": "Devon A. Mihesuah",
+      "url": "https://www.goodreads.com/book/show/223362285",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750992719i/223362285.jpg",
+      "pages": 336,
+      "rating": 3.85,
+      "ratingCount": 374,
+      "reviewCount": 93,
+      "genres": [
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Mystery Thriller",
+        "Native American",
+        "Crime",
+        "Suspense",
+        "Police",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Medicine Wheels",
+      "author": "Byron Graves",
+      "url": "https://www.goodreads.com/book/show/241095731",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761918058i/241095731.jpg",
+      "pages": 352,
+      "rating": 4.23,
+      "ratingCount": 241,
+      "reviewCount": 84,
+      "genres": [
+        "Sports",
+        "Young Adult",
+        "Indigenous",
+        "Fiction",
+        "Realistic Fiction",
+        "Contemporary",
+        "Romance",
+        "Family",
+        "Friendship",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "It Looks Like You in the Dark (Kobuk Valley)",
+      "author": "Mathilda Zeller",
+      "url": "https://www.goodreads.com/book/show/244947525",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769004645i/244947525.jpg",
+      "pages": 288,
+      "rating": 4.01,
+      "ratingCount": 396,
+      "reviewCount": 234,
+      "genres": [
+        "Horror",
+        "Indigenous",
+        "Thriller",
+        "Adult",
+        "Fiction",
+        "Paranormal",
+        "Mystery",
+        "Audiobook",
+        "Horror Thriller",
+        "Folklore"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Eagle in the Mountain (The Raven and Eagle #2)",
+      "author": "Caskey Russell",
+      "url": "https://www.goodreads.com/book/show/248263708",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1771594906i/248263708.jpg",
+      "pages": 446,
+      "rating": 4.17,
+      "ratingCount": 6,
+      "reviewCount": 5,
+      "genres": [
+        "Fantasy"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 11,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Back for Blood: Never Whistle at Night Part II: An Indigenous Horror Anthology",
+      "author": "Shane Hawk, Theodore C. Van Alst Jr., Jake Arrowtop, Sonia Marie Barry, Billy-Ray Belcourt, Kimberly Blaeser, Jessica Doe, Debra Magpie Earling, Alicia Elliott, Ramona Emerson, A.J. Eversole, Jessica Johns, Stephen Graham Jones, Shaawan Francis Keahna, Tommy Orange, Alina Pete, Mat RudeWalker, Jim Terry, Erica Tremblay, P.C. Verrone, Joshua Whitehead",
+      "url": "https://www.goodreads.com/book/show/245670672",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773111877i/245670672.jpg",
+      "pages": 368,
+      "rating": 4.06,
+      "ratingCount": 1207,
+      "reviewCount": 396,
+      "genres": [
+        "Horror",
+        "Short Stories",
+        "Indigenous",
+        "Fiction",
+        "Anthologies",
+        "Fantasy",
+        "Paranormal",
+        "Adult",
+        "Audiobook",
+        "Thriller"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Shards of Silence",
+      "author": "Brian Lee Young",
+      "url": "https://www.goodreads.com/book/show/239744778",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760176553i/239744778.jpg",
+      "pages": 336,
+      "rating": 4.29,
+      "ratingCount": 244,
+      "reviewCount": 83,
+      "genres": [
+        "Young Adult",
+        "Indigenous",
+        "Fiction",
+        "Audiobook",
+        "Contemporary",
+        "Family",
+        "Coming Of Age",
+        "Realistic Fiction",
+        "Native American",
+        "Teen"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Together We See",
+      "author": "Ari Tison",
+      "url": "https://www.goodreads.com/book/show/228342236",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751146382i/228342236.jpg",
+      "pages": 320,
+      "rating": 3.82,
+      "ratingCount": 248,
+      "reviewCount": 97,
+      "genres": [
+        "Mystery",
+        "Young Adult",
+        "Indigenous",
+        "Audiobook",
+        "Fiction",
+        "Mystery Thriller",
+        "Thriller",
+        "Grief",
+        "Family",
+        "Teen"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Another Name for Red",
+      "author": "Amber Blaeser-Wardzala",
+      "url": "https://www.goodreads.com/book/show/246553340",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1768448461i/246553340.jpg",
+      "pages": 320,
+      "rating": 4.14,
+      "ratingCount": 223,
+      "reviewCount": 93,
+      "genres": [
+        "Fiction",
+        "Mystery",
+        "Thriller",
+        "Mystery Thriller",
+        "Horror",
+        "Indigenous",
+        "Contemporary",
+        "Suspense",
+        "Literary Fiction",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Off the Reservation (The Only Good Indians, #2)",
+      "author": "Stephen Graham Jones",
+      "url": "https://www.goodreads.com/book/show/248283782",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1772465861i/248283782.jpg",
+      "pages": 416,
+      "rating": 4.09,
+      "ratingCount": 1241,
+      "reviewCount": 393,
+      "genres": [
+        "Horror",
+        "Fiction",
+        "Indigenous",
+        "Audiobook",
+        "Thriller",
+        "Fantasy",
+        "Adult",
+        "Historical Fiction",
+        "Native American",
+        "Mystery Thriller"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Red Ants: Stories",
+      "author": "Kimberly Blaeser",
+      "url": "https://www.goodreads.com/book/show/249594272",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1773309387i/249594272.jpg",
+      "pages": 272,
+      "rating": 3.65,
+      "ratingCount": 30,
+      "reviewCount": 12,
+      "genres": [
+        "Short Stories",
+        "Fiction",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Here for a Good Time",
+      "author": "Kim Spencer",
+      "url": "https://www.goodreads.com/book/show/227912383",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747275436i/227912383.jpg",
+      "pages": 256,
+      "rating": 3.47,
+      "ratingCount": 318,
+      "reviewCount": 72,
+      "genres": [
+        "Young Adult",
+        "Audiobook",
+        "Historical Fiction",
+        "Indigenous",
+        "Fiction",
+        "Family",
+        "Historical",
+        "Realistic Fiction",
+        "Romance",
+        "Coming Of Age"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "A Glacier's Guide to Dying",
+      "author": "Michelle Porter",
+      "url": "https://www.goodreads.com/book/show/249246513",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1784325847i/249246513.jpg",
+      "pages": 272,
+      "rating": 3.93,
+      "ratingCount": 69,
+      "reviewCount": 21,
+      "genres": [
+        "Fiction",
+        "Literary Fiction",
+        "Indigenous",
+        "Canada",
+        "Magical Realism",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 11,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Savage Lake",
+      "author": "Nick Medina",
+      "url": "https://www.goodreads.com/book/show/247571228",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1775876604i/247571228.jpg",
+      "pages": 336,
+      "rating": 3.93,
+      "ratingCount": 127,
+      "reviewCount": 85,
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Summer",
+        "Adult",
+        "Contemporary",
+        "Mystery Thriller",
+        "Adult Fiction"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Last Human Bear",
+      "author": "Greg Sarris",
+      "url": "https://www.goodreads.com/book/show/236220841",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1761172924i/236220841.jpg",
+      "pages": 384,
+      "rating": 4.12,
+      "ratingCount": 115,
+      "reviewCount": 44,
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Indigenous",
+        "Historical",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Ways We Converge (The Wayfinding Series Book 1)",
+      "author": "Collins Fox",
+      "url": "https://www.goodreads.com/book/show/236903614",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1750431425i/236903614.jpg",
+      "pages": 343,
+      "rating": 4.38,
+      "ratingCount": 58,
+      "reviewCount": 12,
+      "genres": [
+        "Romance",
+        "Second Chance Romance",
+        "Lesbian",
+        "LGBT",
+        "Contemporary",
+        "Queer Romance"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Little Spoons",
+      "author": "Diedre J Halbot",
+      "url": "https://www.goodreads.com/book/show/237422233",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770095004i/237422233.jpg",
+      "pages": 226,
+      "rating": 3.4,
+      "ratingCount": 46,
+      "reviewCount": 12,
+      "genres": [],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Eliza Sunshine",
+      "author": "Michelle Good",
+      "url": "https://www.goodreads.com/book/show/249621205",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1777602796i/249621205.jpg",
+      "pages": 359,
+      "rating": 4.48,
+      "ratingCount": 657,
+      "reviewCount": 120,
+      "genres": [
+        "Indigenous",
+        "Fiction",
+        "Historical Fiction",
+        "Canada",
+        "Audiobook",
+        "Literary Fiction",
+        "Book Club",
+        "Adult Fiction",
+        "Historical",
+        "Family"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Children of Owl",
+      "author": "Darcie Little Badger, Abigail Rajunov",
+      "url": "https://www.goodreads.com/book/show/239568420",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1770703335i/239568420.jpg",
+      "pages": 288,
+      "rating": 4.12,
+      "ratingCount": 63,
+      "reviewCount": 39,
+      "genres": [
+        "Fantasy",
+        "Young Adult",
+        "Indigenous",
+        "Mystery",
+        "Middle Grade",
+        "Contemporary",
+        "Fiction",
+        "Native American",
+        "Graphic Novels",
+        "Folklore"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Whistler",
+      "author": "Nick Medina",
+      "url": "https://www.goodreads.com/book/show/222925690",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739054012i/222925690.jpg",
+      "pages": 368,
+      "rating": 3.66,
+      "ratingCount": 1553,
+      "reviewCount": 342,
+      "genres": [
+        "Horror",
+        "Indigenous",
+        "Fiction",
+        "Mystery",
+        "Thriller",
+        "Paranormal",
+        "Audiobook",
+        "Adult",
+        "Supernatural",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Wayfinder",
+      "author": "Adam Johnson",
+      "url": "https://www.goodreads.com/book/show/222631694",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1743099799i/222631694.jpg",
+      "pages": 716,
+      "rating": 4.04,
+      "ratingCount": 4367,
+      "reviewCount": 835,
+      "genres": [
+        "Historical Fiction",
+        "Fiction",
+        "Fantasy",
+        "Historical",
+        "Magical Realism",
+        "Literary Fiction",
+        "Audiobook",
+        "Book Club",
+        "Adventure",
+        "Novels",
+        "Mythology"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "To the Moon and Back",
+      "author": "Eliana Ramage",
+      "url": "https://www.goodreads.com/book/show/224003731",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1757090441i/224003731.jpg",
+      "pages": 448,
+      "rating": 3.41,
+      "ratingCount": 13085,
+      "reviewCount": 1823,
+      "genres": [
+        "Fiction",
+        "LGBT",
+        "Indigenous",
+        "Contemporary",
+        "Audiobook",
+        "Literary Fiction",
+        "Historical Fiction",
+        "Queer",
+        "Space",
+        "Book Club"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Passing Through a Prairie Country",
+      "author": "Dennis E. Staples",
+      "url": "https://www.goodreads.com/book/show/214988436",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718769579i/214988436.jpg",
+      "pages": 272,
+      "rating": 2.95,
+      "ratingCount": 807,
+      "reviewCount": 176,
+      "genres": [
+        "Horror",
+        "Indigenous",
+        "Fiction",
+        "LGBT",
+        "Queer",
+        "Audiobook",
+        "Thriller",
+        "Adult",
+        "Paranormal",
+        "Mystery Thriller"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Devil Is a Southpaw",
+      "author": "Brandon Hobson",
+      "url": "https://www.goodreads.com/book/show/224096449",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1738473464i/224096449.jpg",
+      "pages": 347,
+      "rating": 3.05,
+      "ratingCount": 692,
+      "reviewCount": 164,
+      "genres": [
+        "Fiction",
+        "Indigenous",
+        "Literary Fiction",
+        "Mystery",
+        "Native American",
+        "Audiobook",
+        "Contemporary",
+        "Adult",
+        "Adult Fiction",
+        "The United States Of America",
+        "Horror"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Broken Fields (Cash Blackbear Mysteries, #4)",
+      "author": "Marcie R. Rendon",
+      "url": "https://www.goodreads.com/book/show/214274140",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717571336i/214274140.jpg",
+      "pages": 272,
+      "rating": 3.88,
+      "ratingCount": 3375,
+      "reviewCount": 367,
+      "genres": [
+        "Mystery",
+        "Fiction",
+        "Historical Fiction",
+        "Audiobook",
+        "Indigenous",
+        "Mystery Thriller",
+        "Native American",
+        "Crime",
+        "Thriller",
+        "Suspense"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Sisters in the Wind (Firekeeper's Daughter, #3)",
+      "author": "Angeline Boulley",
+      "url": "https://www.goodreads.com/book/show/225699546",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1739337634i/225699546.jpg",
+      "pages": 370,
+      "rating": 4.35,
+      "ratingCount": 14053,
+      "reviewCount": 2363,
+      "genres": [
+        "Young Adult",
+        "Mystery",
+        "Fiction",
+        "Audiobook",
+        "Indigenous",
+        "Thriller",
+        "Mystery Thriller",
+        "Contemporary",
+        "Native American",
+        "Book Club"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Waiting for the Long Night Moon: Stories",
+      "author": "Amanda Peters",
+      "url": "https://www.goodreads.com/book/show/213245164",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717520186i/213245164.jpg",
+      "pages": 256,
+      "rating": 3.88,
+      "ratingCount": 3956,
+      "reviewCount": 517,
+      "genres": [
+        "Short Stories",
+        "Fiction",
+        "Indigenous",
+        "Historical Fiction",
+        "Audiobook",
+        "Historical",
+        "Native American",
+        "Contemporary",
+        "Canada",
+        "Literary Fiction"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Haunting of Room 904",
+      "author": "Erika T. Wurth",
+      "url": "https://www.goodreads.com/book/show/211004028",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1716851426i/211004028.jpg",
+      "pages": 306,
+      "rating": 3.07,
+      "ratingCount": 4444,
+      "reviewCount": 914,
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Paranormal",
+        "Thriller",
+        "Fiction",
+        "Audiobook",
+        "Supernatural",
+        "Adult",
+        "Indigenous",
+        "Ghosts"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Old School Indian",
+      "author": "Aaron John Curtis",
+      "url": "https://www.goodreads.com/book/show/208523490",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731724943i/208523490.jpg",
+      "pages": 338,
+      "rating": 4.03,
+      "ratingCount": 2327,
+      "reviewCount": 419,
+      "genres": [
+        "Fiction",
+        "Indigenous",
+        "Native American",
+        "Contemporary",
+        "Literary Fiction",
+        "Audiobook",
+        "Adult",
+        "Historical Fiction",
+        "Realistic Fiction",
+        "Race"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Big Chief",
+      "author": "Jon Hickey",
+      "url": "https://www.goodreads.com/book/show/128075973",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1717697128i/128075973.jpg",
+      "pages": 320,
+      "rating": 3.58,
+      "ratingCount": 2490,
+      "reviewCount": 387,
+      "genres": [
+        "Fiction",
+        "Indigenous",
+        "Literary Fiction",
+        "Audiobook",
+        "Contemporary",
+        "Native American",
+        "Politics",
+        "Adult",
+        "Adult Fiction",
+        "Book Club"
+      ],
+      "publishedYear": null,
+      "publishedMonth": null,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Love Is a War Song",
+      "author": "Danica Nava",
+      "url": "https://www.goodreads.com/book/show/220687884",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1731022378i/220687884.jpg",
+      "pages": 336,
+      "rating": 3.73,
+      "ratingCount": 9700,
+      "reviewCount": 2307,
+      "genres": [
+        "Romance",
+        "Contemporary",
+        "Audiobook",
+        "Contemporary Romance",
+        "Fiction",
+        "Indigenous",
+        "Adult",
+        "Forced Proximity",
+        "Westerns",
+        "Enemies To Lovers"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 7,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Hole in the Sky",
+      "author": "Daniel H. Wilson",
+      "url": "https://www.goodreads.com/book/show/223362313",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1742307144i/223362313.jpg",
+      "pages": 268,
+      "rating": 3.46,
+      "ratingCount": 3036,
+      "reviewCount": 495,
+      "genres": [
+        "Science Fiction",
+        "Fiction",
+        "Horror",
+        "Indigenous",
+        "Audiobook",
+        "Aliens",
+        "Thriller",
+        "Fantasy",
+        "Adult",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "If the Dead Belong Here",
+      "author": "Carson Faust",
+      "url": "https://www.goodreads.com/book/show/222175392",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740374198i/222175392.jpg",
+      "pages": 400,
+      "rating": 3.5,
+      "ratingCount": 955,
+      "reviewCount": 212,
+      "genres": [
+        "Horror",
+        "Fiction",
+        "Indigenous",
+        "Mystery",
+        "Gothic",
+        "Thriller",
+        "Native American",
+        "Mystery Thriller",
+        "Adult",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Bone Thief (Syd Walker, #2)",
+      "author": "Vanessa Lillie",
+      "url": "https://www.goodreads.com/book/show/224082681",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741184357i/224082681.jpg",
+      "pages": 384,
+      "rating": 3.73,
+      "ratingCount": 2056,
+      "reviewCount": 418,
+      "genres": [
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Mystery Thriller",
+        "Indigenous",
+        "Audiobook",
+        "Suspense",
+        "Native American",
+        "Historical Fiction",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "We Can Never Leave",
+      "author": "H.E. Edgmon",
+      "url": "https://www.goodreads.com/book/show/217421166",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726001183i/217421166.jpg",
+      "pages": 306,
+      "rating": 3.23,
+      "ratingCount": 698,
+      "reviewCount": 293,
+      "genres": [
+        "Fantasy",
+        "Queer",
+        "Young Adult",
+        "Horror",
+        "LGBT",
+        "Mystery",
+        "Audiobook",
+        "Fiction",
+        "Paranormal",
+        "Indigenous"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "An Honored Vow (The Halfling Saga, #4)",
+      "author": "Melissa Blair",
+      "url": "https://www.goodreads.com/book/show/210721284",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1712267566i/210721284.jpg",
+      "pages": 425,
+      "rating": 3.95,
+      "ratingCount": 6065,
+      "reviewCount": 774,
+      "genres": [
+        "Fantasy",
+        "Romantasy",
+        "Audiobook",
+        "Romance",
+        "Magic",
+        "Fae",
+        "Fiction",
+        "LGBT",
+        "Queer",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 1,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Door on the Sea (The Raven and Eagle, #1)",
+      "author": "Caskey Russell",
+      "url": "https://www.goodreads.com/book/show/224003904",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1738726019i/224003904.jpg",
+      "pages": 400,
+      "rating": 3.82,
+      "ratingCount": 629,
+      "reviewCount": 174,
+      "genres": [
+        "Fantasy",
+        "Fiction",
+        "Indigenous",
+        "Adult",
+        "Native American",
+        "Mythology",
+        "Adventure",
+        "Epic Fantasy",
+        "Audiobook",
+        "High Fantasy"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The El",
+      "author": "Theodore C. Van Alst Jr.",
+      "url": "https://www.goodreads.com/book/show/221473213",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1733631424i/221473213.jpg",
+      "pages": 192,
+      "rating": 3.12,
+      "ratingCount": 770,
+      "reviewCount": 176,
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Contemporary",
+        "Indigenous",
+        "Audiobook",
+        "Literary Fiction",
+        "Historical",
+        "Novels",
+        "Adult Fiction",
+        "Novella"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Legendary Frybread Drive-In: Intertribal Stories",
+      "author": "Cynthia Leitich Smith, Kate Hart, Eric Gansworth, Marcella Bell, Darcie Little Badger, Karina Iceberg, Kaua Māhoe Adams, Andrea L. Rogers, Cheryl Isaacs, Christine Hartman Derr, Brian Lee Young, K.A. Cobell, Jen Ferguson, A.J. Eversole, Byron Graves, Angeline Boulley, David Alexander Robertson",
+      "url": "https://www.goodreads.com/book/show/221972569",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1732622519i/221972569.jpg",
+      "pages": 352,
+      "rating": 4.16,
+      "ratingCount": 2753,
+      "reviewCount": 568,
+      "genres": [
+        "Short Stories",
+        "Young Adult",
+        "Indigenous",
+        "Fiction",
+        "Audiobook",
+        "Anthologies",
+        "Contemporary",
+        "Fantasy",
+        "Magical Realism",
+        "Romance"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Small Ceremonies",
+      "author": "Kyle Edwards",
+      "url": "https://www.goodreads.com/book/show/215805816",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1726770247i/215805816.jpg",
+      "pages": 368,
+      "rating": 4.01,
+      "ratingCount": 931,
+      "reviewCount": 202,
+      "genres": [
+        "Fiction",
+        "Indigenous",
+        "Canada",
+        "Literary Fiction",
+        "Contemporary",
+        "Adult",
+        "Sports",
+        "Audiobook",
+        "Book Club",
+        "Novels"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Bones of a Giant",
+      "author": "Brian Thomas Isaac",
+      "url": "https://www.goodreads.com/book/show/218242688",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1738810680i/218242688.jpg",
+      "pages": 320,
+      "rating": 3.36,
+      "ratingCount": 459,
+      "reviewCount": 51,
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Indigenous",
+        "Canada",
+        "Drama",
+        "Native American",
+        "Adult",
+        "Audiobook",
+        "Coming Of Age",
+        "Adult Fiction"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Mask of the Deer Woman",
+      "author": "Laurie L. Dove",
+      "url": "https://www.goodreads.com/book/show/211953352",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1713757343i/211953352.jpg",
+      "pages": 325,
+      "rating": 3.64,
+      "ratingCount": 4043,
+      "reviewCount": 692,
+      "genres": [
+        "Mystery",
+        "Horror",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Mystery Thriller",
+        "Native American",
+        "Audiobook",
+        "Suspense",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 1,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Wandering Stars",
+      "author": "Tommy Orange",
+      "url": "https://www.goodreads.com/book/show/174147294",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1695837414i/174147294.jpg",
+      "pages": 336,
+      "rating": 3.8,
+      "ratingCount": 40780,
+      "reviewCount": 5972,
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Audiobook",
+        "Indigenous",
+        "Literary Fiction",
+        "Native American",
+        "Book Club",
+        "Historical",
+        "Contemporary",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Fire Exit",
+      "author": "Morgan Talty",
+      "url": "https://www.goodreads.com/book/show/197789783",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1695910751i/197789783.jpg",
+      "pages": 243,
+      "rating": 3.6,
+      "ratingCount": 9566,
+      "reviewCount": 1480,
+      "genres": [
+        "Fiction",
+        "Literary Fiction",
+        "Audiobook",
+        "Indigenous",
+        "Contemporary",
+        "Native American",
+        "Mystery",
+        "Book Club",
+        "Family",
+        "Novels"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Mighty Red",
+      "author": "Louise Erdrich",
+      "url": "https://www.goodreads.com/book/show/199793431",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1712837291i/199793431.jpg",
+      "pages": 369,
+      "rating": 3.8,
+      "ratingCount": 36893,
+      "reviewCount": 4339,
+      "genres": [
+        "Fiction",
+        "Historical Fiction",
+        "Audiobook",
+        "Literary Fiction",
+        "Book Club",
+        "Indigenous",
+        "Native American",
+        "Contemporary",
+        "Adult",
+        "Family",
+        "Adult Fiction"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Where They Last Saw Her",
+      "author": "Marcie R. Rendon",
+      "url": "https://www.goodreads.com/book/show/209419483",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1713284232i/209419483.jpg",
+      "pages": 336,
+      "rating": 3.87,
+      "ratingCount": 9203,
+      "reviewCount": 1270,
+      "genres": [
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Mystery Thriller",
+        "Audiobook",
+        "Native American",
+        "Contemporary",
+        "Book Club",
+        "Crime"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Exposure (Rita Todacheene, #2)",
+      "author": "Ramona Emerson",
+      "url": "https://www.goodreads.com/book/show/204642470",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1715035977i/204642470.jpg",
+      "pages": 280,
+      "rating": 3.85,
+      "ratingCount": 2916,
+      "reviewCount": 450,
+      "genres": [
+        "Mystery",
+        "Horror",
+        "Fiction",
+        "Indigenous",
+        "Thriller",
+        "Mystery Thriller",
+        "Native American",
+        "Crime",
+        "Audiobook",
+        "Suspense",
+        "Paranormal"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Truth According to Ember",
+      "author": "Danica Nava",
+      "url": "https://www.goodreads.com/book/show/201752567",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1702928650i/201752567.jpg",
+      "pages": 358,
+      "rating": 3.64,
+      "ratingCount": 10513,
+      "reviewCount": 2635,
+      "genres": [
+        "Romance",
+        "Contemporary",
+        "Fiction",
+        "Contemporary Romance",
+        "Audiobook",
+        "Indigenous",
+        "Adult",
+        "Rom Com",
+        "Native American",
+        "Workplace Romance"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Indian Burial Ground",
+      "author": "Nick Medina",
+      "url": "https://www.goodreads.com/book/show/192724951",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697246029i/192724951.jpg",
+      "pages": 370,
+      "rating": 3.59,
+      "ratingCount": 5088,
+      "reviewCount": 944,
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Fiction",
+        "Thriller",
+        "Indigenous",
+        "Fantasy",
+        "Mystery Thriller",
+        "Adult",
+        "Native American",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Cold",
+      "author": "Drew Hayden Taylor",
+      "url": "https://www.goodreads.com/book/show/128139837",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1682296959i/128139837.jpg",
+      "pages": 368,
+      "rating": 3.69,
+      "ratingCount": 1844,
+      "reviewCount": 278,
+      "genres": [
+        "Horror",
+        "Mystery",
+        "Fiction",
+        "Indigenous",
+        "Thriller",
+        "Mystery Thriller",
+        "Audiobook",
+        "Canada",
+        "Book Club",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 1,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Looking for Smoke",
+      "author": "K.A. Cobell",
+      "url": "https://www.goodreads.com/book/show/198530958",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1727983257i/198530958.jpg",
+      "pages": 416,
+      "rating": 3.94,
+      "ratingCount": 8309,
+      "reviewCount": 1106,
+      "genres": [
+        "Mystery",
+        "Young Adult",
+        "Thriller",
+        "Mystery Thriller",
+        "Audiobook",
+        "Fiction",
+        "Horror",
+        "Indigenous",
+        "Book Club",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "1666",
+      "author": "Lora Chilton",
+      "url": "https://www.goodreads.com/book/show/203106152",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1709916477i/203106152.jpg",
+      "pages": 201,
+      "rating": 4.22,
+      "ratingCount": 582,
+      "reviewCount": 133,
+      "genres": [
+        "Historical Fiction",
+        "Indigenous",
+        "Fiction",
+        "Native American",
+        "Historical",
+        "Native Americans",
+        "American History",
+        "American",
+        "Adult Fiction",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "A Constellation of Minor Bears",
+      "author": "Jen Ferguson",
+      "url": "https://www.goodreads.com/book/show/199531847",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1709351475i/199531847.jpg",
+      "pages": 340,
+      "rating": 3.68,
+      "ratingCount": 358,
+      "reviewCount": 78,
+      "genres": [
+        "Young Adult",
+        "Contemporary",
+        "Indigenous",
+        "Queer",
+        "LGBT",
+        "Fiction",
+        "Disability",
+        "Audiobook",
+        "Friendship",
+        "Coming Of Age"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Where Wolves Don't Die",
+      "author": "Anton Treuer",
+      "url": "https://www.goodreads.com/book/show/199108393",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1695433881i/199108393.jpg",
+      "pages": 320,
+      "rating": 4.16,
+      "ratingCount": 4393,
+      "reviewCount": 719,
+      "genres": [
+        "Young Adult",
+        "Fiction",
+        "Indigenous",
+        "Mystery",
+        "Audiobook",
+        "Native American",
+        "Contemporary",
+        "Realistic Fiction",
+        "Book Club",
+        "Coming Of Age"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Coexistence: Stories",
+      "author": "Billy-Ray Belcourt",
+      "url": "https://www.goodreads.com/book/show/200058329",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1697569386i/200058329.jpg",
+      "pages": 176,
+      "rating": 4.24,
+      "ratingCount": 1986,
+      "reviewCount": 461,
+      "genres": [
+        "Short Stories",
+        "Queer",
+        "Fiction",
+        "LGBT",
+        "Indigenous",
+        "Contemporary",
+        "Gay",
+        "Canada",
+        "Literary Fiction",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "All I See is Violence",
+      "author": "Angie Elita Newell",
+      "url": "https://www.goodreads.com/book/show/204259476",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1703268963i/204259476.jpg",
+      "pages": 322,
+      "rating": 3.99,
+      "ratingCount": 225,
+      "reviewCount": 92,
+      "genres": [
+        "Historical Fiction",
+        "Indigenous",
+        "Horror",
+        "Fiction",
+        "Native American",
+        "Contemporary",
+        "Historical",
+        "Adult",
+        "Politics",
+        "Race"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 1,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Prairie Edge",
+      "author": "Conor Kerr",
+      "url": "https://www.goodreads.com/book/show/195721010",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1693096281i/195721010.jpg",
+      "pages": 272,
+      "rating": 3.99,
+      "ratingCount": 2380,
+      "reviewCount": 382,
+      "genres": [
+        "Fiction",
+        "Indigenous",
+        "Mystery",
+        "Canada",
+        "Contemporary",
+        "Thriller",
+        "Literary Fiction",
+        "Book Club",
+        "Native American",
+        "Audiobook"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Chosen and The Damned: Native Americans and the Making of Race in the United States",
+      "author": "David J. Silverman",
+      "url": "https://www.goodreads.com/book/show/231387256",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747247100i/231387256.jpg",
+      "pages": 512,
+      "rating": 4.29,
+      "ratingCount": 91,
+      "reviewCount": 23,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Politics",
+        "Race",
+        "Indigenous",
+        "Historical",
+        "American History",
+        "Audiobook",
+        "Native Americans",
+        "Adult"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Indigenous Citizens: Native Americans' Fight for Sovereignty, 1776-2025",
+      "author": "Paul C. Rosier",
+      "url": "https://www.goodreads.com/book/show/233411537",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754291745i/233411537.jpg",
+      "pages": 368,
+      "rating": 4.16,
+      "ratingCount": 42,
+      "reviewCount": 6,
+      "genres": [
+        "History",
+        "Nonfiction",
+        "American History",
+        "Politics",
+        "Indigenous",
+        "Historical"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Free and the Dead: The Untold Story of the Black Seminole Chief, the Indigenous Rebel, and America's Forgotten War",
+      "author": "Jamie Holmes",
+      "url": "https://www.goodreads.com/book/show/235992040",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1749393999i/235992040.jpg",
+      "pages": 320,
+      "rating": 3.71,
+      "ratingCount": 79,
+      "reviewCount": 23,
+      "genres": [
+        "History",
+        "Nonfiction",
+        "American History",
+        "War",
+        "Indigenous",
+        "Biography",
+        "Native American"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Stealing America: The Hidden Story of Indigenous Slavery in U.S. History",
+      "author": "Linford D. Fisher",
+      "url": "https://www.goodreads.com/book/show/233411642",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1751046790i/233411642.jpg",
+      "pages": 560,
+      "rating": 4.38,
+      "ratingCount": 103,
+      "reviewCount": 43,
+      "genres": [
+        "History",
+        "Nonfiction",
+        "Native American",
+        "American History",
+        "Audiobook",
+        "Indigenous",
+        "Social Justice",
+        "Politics",
+        "The United States Of America",
+        "Indigenous History"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Hozho: A Navajo Nation Medicine Woman's Exploration of the Four Bodies of Existence for Balance and Self-Reclamation",
+      "author": "Granddaughter Crow",
+      "url": "https://www.goodreads.com/book/show/239784223",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1754707130i/239784223.jpg",
+      "pages": 168,
+      "rating": 5,
+      "ratingCount": 1,
+      "reviewCount": null,
+      "genres": [],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "A Voice Like Mine",
+      "author": "Deb Haaland",
+      "url": "https://www.goodreads.com/book/show/241125687",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769627680i/241125687.jpg",
+      "pages": 240,
+      "rating": 4.17,
+      "ratingCount": 349,
+      "reviewCount": 105,
+      "genres": [
+        "Memoir",
+        "Nonfiction",
+        "Politics",
+        "Indigenous",
+        "Biography",
+        "Womens",
+        "History",
+        "Audiobook",
+        "Biography Memoir",
+        "Historical"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 6,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Mother Earth Is Our Elder: A Northern Indigenous Perspective on the Climate Crisis",
+      "author": "Katłı̨̀à",
+      "url": "https://www.goodreads.com/book/show/242881880",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760688194i/242881880.jpg",
+      "pages": 379,
+      "rating": 4.02,
+      "ratingCount": 70,
+      "reviewCount": 12,
+      "genres": [
+        "Nonfiction",
+        "Nature",
+        "Science",
+        "Indigenous",
+        "Native American",
+        "Canada",
+        "Audiobook",
+        "Adult",
+        "Environment"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Savage Mind: An American Legacy",
+      "author": "David Treuer",
+      "url": "https://www.goodreads.com/book/show/246137497",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1778099072i/246137497.jpg",
+      "pages": 272,
+      "rating": 4.28,
+      "ratingCount": 56,
+      "reviewCount": 19,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Memoir",
+        "Indigenous",
+        "Biography",
+        "American",
+        "Politics",
+        "Social Justice",
+        "Historical",
+        "Sociology"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "When We Are Kin: The History and Future of Afro-Indigenous Solidarity",
+      "author": "Kyle T Mays",
+      "url": "https://www.goodreads.com/book/show/239147287",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760611722i/239147287.jpg",
+      "pages": 184,
+      "rating": 4.42,
+      "ratingCount": 19,
+      "reviewCount": 10,
+      "genres": [
+        "Indigenous",
+        "History",
+        "Nonfiction"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Our Knives Will Save Us: Dispatches from a White Mountain Apache Chef",
+      "author": "Nephi Craig",
+      "url": "https://www.goodreads.com/book/show/242764839",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1769750578i/242764839.jpg",
+      "pages": 368,
+      "rating": 4.34,
+      "ratingCount": 418,
+      "reviewCount": 80,
+      "genres": [
+        "Memoir",
+        "Nonfiction",
+        "Food",
+        "Indigenous",
+        "Native American",
+        "Biography",
+        "Cooking",
+        "Biography Memoir",
+        "Audiobook",
+        "History"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 7,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Theory of Water: Nishnaabe Maps to the Times Ahead",
+      "author": "Leanne Betasamosake Simpson",
+      "url": "https://www.goodreads.com/book/show/216522008",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741215409i/216522008.jpg",
+      "pages": 211,
+      "rating": 4.14,
+      "ratingCount": 896,
+      "reviewCount": 150,
+      "genres": [
+        "Nonfiction",
+        "Indigenous",
+        "Nature",
+        "Philosophy",
+        "Essays",
+        "Canada",
+        "Environment",
+        "Audiobook",
+        "Biography",
+        "Spirituality"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "A Steady Brightness of Being: Truths, Wisdom, and Love from Celebrated Indigenous Voices",
+      "author": "Sara Sinclair, Stephanie Sinclair",
+      "url": "https://www.goodreads.com/book/show/221996622",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1748503230i/221996622.jpg",
+      "pages": 192,
+      "rating": 4.28,
+      "ratingCount": 404,
+      "reviewCount": 76,
+      "genres": [
+        "Nonfiction",
+        "Indigenous",
+        "Essays",
+        "Nature",
+        "Native American",
+        "Short Stories",
+        "Adult",
+        "Canada",
+        "Race",
+        "Anthologies"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Medicine River: A Story of Survival and the Legacy of Indian Boarding Schools",
+      "author": "Mary Annette Pember",
+      "url": "https://www.goodreads.com/book/show/216750982",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1721780727i/216750982.jpg",
+      "pages": 304,
+      "rating": 3.91,
+      "ratingCount": 2182,
+      "reviewCount": 351,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Indigenous",
+        "Memoir",
+        "Native American",
+        "Audiobook",
+        "American History",
+        "Historical",
+        "Biography Memoir",
+        "Social Justice",
+        "Biography"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 4,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Nothing More of This Land: Community, Power, and the Search for Indigenous Identity",
+      "author": "Joseph V. Lee",
+      "url": "https://www.goodreads.com/book/show/220160508",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1730640108i/220160508.jpg",
+      "pages": 256,
+      "rating": 3.99,
+      "ratingCount": 716,
+      "reviewCount": 115,
+      "genres": [
+        "Nonfiction",
+        "Memoir",
+        "History",
+        "Indigenous",
+        "Native American",
+        "Biography",
+        "Audiobook",
+        "Biography Memoir",
+        "Race",
+        "Native Americans"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 7,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Knowing: How the Oppression of Indigenous Peoples Continues to Echo Today – A Native American History and Canadian Memoir of Intergenerational Trauma",
+      "author": "Tanya Talaga",
+      "url": "https://www.goodreads.com/book/show/217025938",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1743504646i/217025938.jpg",
+      "pages": 480,
+      "rating": 4.44,
+      "ratingCount": 1717,
+      "reviewCount": 258,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Indigenous",
+        "Canada",
+        "Politics",
+        "Audiobook",
+        "Memoir",
+        "Native American",
+        "Social Justice",
+        "Biography"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 7,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Bad Indians Book Club: Reading at the Edge of a Thousand Worlds",
+      "author": "Patty Krawec, Omar El Akkad",
+      "url": "https://www.goodreads.com/book/show/222850887",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1740882571i/222850887.jpg",
+      "pages": 231,
+      "rating": 4.07,
+      "ratingCount": 627,
+      "reviewCount": 145,
+      "genres": [
+        "Nonfiction",
+        "Indigenous",
+        "History",
+        "Books About Books",
+        "Audiobook",
+        "Race",
+        "Biography",
+        "Adult",
+        "Native American",
+        "Essays",
+        "Social Justice"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Beyond the Glittering World: An Anthology of Indigenous Feminisms and Futurisms",
+      "author": "Stacie Shannon Denetsosie, Kinsale Drake, Darcie Little Badger, Natalie Díaz, Moniquill Blackgoose, Ayling Dominguez, Danielle Shandiin Emerson, Heid E. Erdrich, Maritza N. Estrada, A.J. Eversole, Samah Serour Fadil, Chelsea T. Hicks, Dominique Daye Hunter, Pte San Win Little Whitema, Conley Lyons, Amber McCrary, Trisha Moquino, Shaina A. Nez, Andrea Rogers, Ha’åni Lucia Falo San Nicolas, jaye simpson, Arielle Twist, Amelia Vigil, Cheyenne Dakota Williams",
+      "url": "https://www.goodreads.com/book/show/222838229",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741744155i/222838229.jpg",
+      "pages": 200,
+      "rating": 4.04,
+      "ratingCount": 179,
+      "reviewCount": 34,
+      "genres": [
+        "Poetry",
+        "Indigenous",
+        "Short Stories",
+        "Anthologies",
+        "Nonfiction",
+        "Feminism",
+        "Native American",
+        "Speculative Fiction",
+        "Queer",
+        "LGBT",
+        "Essays"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 11,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Girl Warrior: On Coming of Age",
+      "author": "Joy Harjo",
+      "url": "https://www.goodreads.com/book/show/223736231",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1747354860i/223736231.jpg",
+      "pages": 176,
+      "rating": 4.23,
+      "ratingCount": 559,
+      "reviewCount": 104,
+      "genres": [
+        "Poetry",
+        "Memoir",
+        "Nonfiction",
+        "Indigenous",
+        "Native American",
+        "Biography",
+        "Biography Memoir",
+        "Essays",
+        "Feminism",
+        "Womens"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "We Survived the Night",
+      "author": "Julian Brave NoiseCat",
+      "url": "https://www.goodreads.com/book/show/223854579",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1741146575i/223854579.jpg",
+      "pages": 432,
+      "rating": 4.24,
+      "ratingCount": 1551,
+      "reviewCount": 305,
+      "genres": [
+        "Nonfiction",
+        "Memoir",
+        "History",
+        "Indigenous",
+        "Native American",
+        "Audiobook",
+        "Biography",
+        "Book Club",
+        "Biography Memoir",
+        "Politics"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Soft as Bones: A Memoir",
+      "author": "Chyana Marie Sage",
+      "url": "https://www.goodreads.com/book/show/210367079",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1734222482i/210367079.jpg",
+      "pages": 296,
+      "rating": 4.3,
+      "ratingCount": 576,
+      "reviewCount": 81,
+      "genres": [
+        "Memoir",
+        "Nonfiction",
+        "Indigenous",
+        "Poetry",
+        "Canada",
+        "Biography Memoir",
+        "Adult",
+        "Biography"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 5,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "First Nations Version Psalms and Proverbs: An Indigenous Bible Translation",
+      "author": "Terry M. Wildman, First Nations Version Translation Council",
+      "url": "https://www.goodreads.com/book/show/221286620",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1744262804i/221286620.jpg",
+      "pages": 192,
+      "rating": 4.62,
+      "ratingCount": 78,
+      "reviewCount": 28,
+      "genres": [
+        "Religion",
+        "Indigenous",
+        "Native American",
+        "Nonfiction",
+        "Faith",
+        "Mythology",
+        "Christianity",
+        "Theology"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Indian Card: Who Gets to Be Native in America",
+      "author": "Carrie Lowry Schuettpelz",
+      "url": "https://www.goodreads.com/book/show/203579143",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1713299881i/203579143.jpg",
+      "pages": 259,
+      "rating": 4.21,
+      "ratingCount": 1272,
+      "reviewCount": 268,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Indigenous",
+        "Native American",
+        "Politics",
+        "Audiobook",
+        "Social Justice",
+        "Race",
+        "Memoir",
+        "Native Americans"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Whiskey Tender: A Memoir",
+      "author": "Deborah Jackson Taffa",
+      "url": "https://www.goodreads.com/book/show/158649919",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1688417020i/158649919.jpg",
+      "pages": 304,
+      "rating": 4.1,
+      "ratingCount": 5315,
+      "reviewCount": 668,
+      "genres": [
+        "Memoir",
+        "Nonfiction",
+        "Indigenous",
+        "Native American",
+        "History",
+        "Audiobook",
+        "Biography Memoir",
+        "Biography",
+        "Book Club",
+        "Race"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 2,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "The Serviceberry: Abundance and Reciprocity in the Natural World",
+      "author": "Robin Wall Kimmerer, John Burgoyne",
+      "url": "https://www.goodreads.com/book/show/208840291",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1760641870i/208840291.jpg",
+      "pages": 112,
+      "rating": 4.26,
+      "ratingCount": 78101,
+      "reviewCount": 12380,
+      "genres": [
+        "Nonfiction",
+        "Nature",
+        "Audiobook",
+        "Science",
+        "Indigenous",
+        "Philosophy",
+        "Environment",
+        "Essays",
+        "Ecology",
+        "Book Club",
+        "Economics"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 11,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "By the Fire We Carry: The Generations-Long Fight for Justice on Native Land ― A Reported History of Native Land Rights",
+      "author": "Rebecca Nagle",
+      "url": "https://www.goodreads.com/book/show/199393033",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1718899849i/199393033.jpg",
+      "pages": 352,
+      "rating": 4.38,
+      "ratingCount": 5951,
+      "reviewCount": 904,
+      "genres": [
+        "Nonfiction",
+        "History",
+        "Indigenous",
+        "Audiobook",
+        "True Crime",
+        "Social Justice",
+        "Politics",
+        "Native American",
+        "Race",
+        "Historical"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 9,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Thunder Song: Essays",
+      "author": "Sasha taqwšəblu LaPointe",
+      "url": "https://www.goodreads.com/book/show/185767242",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1699390306i/185767242.jpg",
+      "pages": 238,
+      "rating": 4.36,
+      "ratingCount": 1515,
+      "reviewCount": 265,
+      "genres": [
+        "Essays",
+        "Nonfiction",
+        "Indigenous",
+        "Memoir",
+        "Queer",
+        "LGBT",
+        "Audiobook",
+        "Native American",
+        "Adult",
+        "Spirituality"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 3,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "My Life: Growing Up Native in America",
+      "author": "IllumiNative",
+      "url": "https://www.goodreads.com/book/show/207294564",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1715050476i/207294564.jpg",
+      "pages": 224,
+      "rating": 4.11,
+      "ratingCount": 454,
+      "reviewCount": 93,
+      "genres": [
+        "Nonfiction",
+        "Memoir",
+        "Indigenous",
+        "Essays",
+        "Native American",
+        "Anthologies",
+        "Poetry",
+        "Audiobook",
+        "Native Americans",
+        "Short Stories",
+        "Biography Memoir"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 10,
+      "challenges": [
+        "Native Heritage"
+      ]
+    },
+    {
+      "title": "Becoming Little Shell: A Landless Indian’s Journey Home",
+      "author": "Chris LaTray",
+      "url": "https://www.goodreads.com/book/show/203819410",
+      "coverUrl": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1716332131i/203819410.jpg",
+      "pages": 320,
+      "rating": 4.27,
+      "ratingCount": 753,
+      "reviewCount": 122,
+      "genres": [
+        "Memoir",
+        "Nonfiction",
+        "Indigenous",
+        "History",
+        "Native American",
+        "Biography",
+        "Audiobook",
+        "Biography Memoir",
+        "Race",
+        "Book Club",
+        "Native Americans"
+      ],
+      "publishedYear": null,
+      "publishedMonth": 8,
+      "challenges": [
+        "Native Heritage"
       ]
     }
   ],

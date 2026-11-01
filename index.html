@@ -1765,7 +1765,8 @@ display:none}
         }
         function generateBookCardHTML(b, isOptimal = false, uncoveredSet = new Set(), extraBadge = '') {
             const s = bookStatus[b.id]; const avoidClass = s === 'exclude' ? 'avoid' : ''; const optimalClass = s === 'include' || isOptimal ? 'optimal' : '';
-            const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
+            // const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml(b.author)}</div>` : '';
+            const authorHtml = b.author ? `<div class="book-author">by ${escapeHtml((() => { const authors = String(b.author).split(',').map(a => a.trim()); return authors.slice(0, 2).join(', ') + (authors.length > 2 ? '...' : ''); })())}</div>` : '';
             const metaParts = []; if (b.rating != null) { const color = b.rating >= 4.0 ? 'var(--success)' : (b.rating >= 3.5 ? 'var(--warning)' : 'var(--destructive)'); metaParts.push(`<span class="m-rating" style="color:${color};display:inline-flex;align-items:center;gap:3px;">${IC('star', 'ic-fill ic-sm')} ${b.rating.toFixed(2)}</span>`); }
             if (b.ratingCount != null) metaParts.push(`<span class="m-count">${formatCompact(b.ratingCount)}</span>`); if (b.pages != null) metaParts.push(`<span class="m-pages">${b.pages} pages</span>`); if (b.publishedYear) { const MN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']; const pm = Number(b.publishedMonth); metaParts.push(`<span class="m-pub">${pm >= 1 && pm <= 12 ? MN[pm - 1] + ' ' : (b.publishedMonth ? escapeHtml(b.publishedMonth) + ' ' : '')}${b.publishedYear}</span>`); }
             const metaHtml = metaParts.length ? `<div class="book-meta">${metaParts.join('')}</div>` : '';
